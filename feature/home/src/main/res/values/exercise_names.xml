@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icebreakers_exercise_name">Icebreakers</string>
+    <string name="finish_the_thought_exercise_name">Finish the thought</string>
+    <string name="the_key_to_small_talk_exercise_name">The key to small talk</string>
+    <string name="dating_route_exercise_name">Dating route</string>
+    <string name="farewell_remark_exercise_name">Farewell remark</string>
+</resources>
