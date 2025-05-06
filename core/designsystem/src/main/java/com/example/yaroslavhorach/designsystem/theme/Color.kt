@@ -13,7 +13,7 @@ val Menthol = Color(0x5EBBFF87)
 val OrangeLight = Color(0xFFFFA600)
 val OrangeDark = Color(0xFFFF8000)
 val Gainsboro = Color(0xFFDEDEDE)
-
+val DarkGray = Color(0xFFAAAAAA)
 
 internal val Cultured = Color(0xFFF5F5F5)
 internal val DarkLiver = Color(0xFF4D4D4D)
@@ -23,6 +23,5 @@ internal val Black10 = Color(0x1A000000)
 internal val AmericanSilver = Color(0xFFCFCFCF)
 internal val Calamansi = Color(0xFFFFF4F5)
 
-
 internal val BlackOlive = Color(0xFF3F3F3F)
-internal val BrightGray = Color(0xFFDFDFDF)
+internal val BrightGray = Color(0xFFF1F1F1)

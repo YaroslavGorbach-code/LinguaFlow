@@ -1,21 +1,12 @@
 package com.example.yaroslavhorach.designsystem.theme.components
 
-import android.util.Log
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
-import androidx.compose.animation.scaleIn
-import androidx.compose.animation.scaleOut
-import androidx.compose.animation.slideInVertically
-import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -26,7 +17,6 @@ import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -51,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toOffset
 import androidx.compose.ui.unit.toSize
 import androidx.compose.ui.zIndex
+import kotlin.math.abs
 import kotlin.math.roundToInt
 
 @Composable
@@ -69,7 +60,7 @@ fun Tooltip(
     enableFloatAnimation: Boolean = false,
     appearPosition: Offset?,
     onGloballyPositioned: (Rect, IntOffset) -> Unit = { _, _ -> },
-    onRequireRootTopPadding: (Float) -> Unit = {},
+    onRequireRootTopPadding: (Dp) -> Unit = {},
     content: @Composable () -> Unit
 ) {
     val density = LocalDensity.current
@@ -107,29 +98,27 @@ fun Tooltip(
             var y = (appearPosition?.y ?: 0f) - descriptionTooltipSize.value.height - bottomPadding.toPx()
 
             if (y < safeTopInset) {
-                val calculatedY = (safeTopInset + y).coerceAtLeast(safeTopInset)
+                if (visible) onRequireRootTopPadding((safeTopInset + abs(y)).toDp())
 
-                if (visible) onRequireRootTopPadding(calculatedY)
-
-                y = calculatedY + bottomPadding.toPx()
+                y = (safeTopInset + y).coerceAtLeast(safeTopInset)
+            } else {
+                onRequireRootTopPadding(0.dp)
             }
 
             triangleStart.floatValue = appearPosition?.x ?: 0f
             y
         }
-
-
     }
 
     val animatedX by animateFloatAsState(
         targetValue = targetX,
-        animationSpec = tween(durationMillis = 300),
+        animationSpec = tween(durationMillis = 100),
         label = "tooltip_x"
     )
 
     val animatedY by animateFloatAsState(
         targetValue = targetY,
-        animationSpec = tween(durationMillis = 300),
+        animationSpec = tween(durationMillis = 100),
         label = "tooltip_y"
     )
 

@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home
 
+import androidx.compose.ui.geometry.Offset
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
@@ -25,14 +26,24 @@ class HomeViewModel @Inject constructor(
 
     override val pendingActions: MutableSharedFlow<HomeAction> = MutableSharedFlow()
 
+    private val descriptionState: MutableStateFlow<HomeViewState.DescriptionState> = MutableStateFlow(
+        HomeViewState.DescriptionState.EMPTY
+    )
+    private val startExerciseTooltipPosition: MutableStateFlow<Offset> = MutableStateFlow(Offset.Zero)
+
     override val state: StateFlow<HomeViewState> =
         combine(
             exerciseRepository.getExercises(),
+            descriptionState,
+            startExerciseTooltipPosition,
             uiMessageManager.message
-        ) { exercises, messages ->
-            HomeViewState(uiMessage = messages, exercises = exercises.map {
-                ExerciseUi(it)
-            })
+        ) { exercises, description, startExerciseTooltipPosition, messages ->
+            HomeViewState(
+                uiMessage = messages,
+                startExerciseTooltipPosition = startExerciseTooltipPosition,
+                descriptionState = description,
+                exercises = exercises.map { ExerciseUi(it) }
+            )
         }.stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5000),
@@ -41,9 +52,40 @@ class HomeViewModel @Inject constructor(
 
     init {
         pendingActions
-            .onEach {
-                when (it) {
+            .onEach { event ->
+                when (event) {
                     is HomeAction.OnExerciseClicked -> {
+                        if (state.value.descriptionState.exercise == event.exerciseUi) {
+                            descriptionState.value = HomeViewState.DescriptionState.EMPTY
+                        } else {
+                            descriptionState.value =
+                                descriptionState.value.copy(
+                                    exercise = event.exerciseUi,
+                                    position = event.offSet
+                                )
+                        }
+                    }
+                    is HomeAction.OnHideDescription -> {
+                        descriptionState.value = HomeViewState.DescriptionState.EMPTY
+                    }
+                    is HomeAction.OnDescriptionBoundsChanged -> {
+                        descriptionState.value = descriptionState.value.copy(bounds = event.bounds)
+                    }
+                    is HomeAction.OnDescriptionListTopPaddingChanged -> {
+                        descriptionState.value = descriptionState.value.copy(listTopExtraPadding = event.padding)
+                    }
+                    is HomeAction.OnShowStartExerciseTooltip -> {
+                        startExerciseTooltipPosition.value = event.position
+                    }
+                    is HomeAction.OnTouchOutside -> {
+                        state.value.descriptionState.bounds?.let { bounds ->
+                            if (bounds
+                                    .contains(event.position)
+                                    .not()
+                            ) {
+                                descriptionState.value = HomeViewState.DescriptionState.EMPTY
+                            }
+                        }
                     }
                 }
             }

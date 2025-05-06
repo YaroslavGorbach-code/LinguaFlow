@@ -24,6 +24,9 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.example.yaroslavhorach.designsystem.theme.Gainsboro
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
+import com.example.yaroslavhorach.designsystem.theme.disabledText
+import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import java.util.Locale
 import kotlin.math.roundToInt
 
 @Composable
@@ -55,7 +58,7 @@ fun SecondaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> 
         Spacer(
             modifier = Modifier
                 .fillMaxSize()
-                .clip(RoundedCornerShape(6.dp))
+                .clip(RoundedCornerShape(8.dp))
                 .background(color = Gainsboro)
         )
 
@@ -63,7 +66,7 @@ fun SecondaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> 
             modifier = Modifier
                 .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
                 .fillMaxSize()
-                .clip(RoundedCornerShape(6.dp))
+                .clip(RoundedCornerShape(8.dp))
                 .background(color = MaterialTheme.colorScheme.surface)
         )
 
@@ -72,10 +75,30 @@ fun SecondaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> 
                 .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
                 .fillMaxWidth()
                 .padding(vertical = 12.dp),
-            text = text,
+            text = text.uppercase(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.subtitle2,
             color = MaterialTheme.colorScheme.primary
+        )
+    }
+}
+
+
+@Composable
+fun InactiveButton(modifier: Modifier = Modifier, text: String) {
+    Box(
+        modifier = modifier
+            .height(45.dp)
+            .background(color = MaterialTheme.colorScheme.onBackgroundDark(), shape = RoundedCornerShape(8.dp))
+    ) {
+        Text(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 12.dp),
+            text = text.uppercase(),
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.subtitle2,
+            color = MaterialTheme.colorScheme.disabledText()
         )
     }
 }

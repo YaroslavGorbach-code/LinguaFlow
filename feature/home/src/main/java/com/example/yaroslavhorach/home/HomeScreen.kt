@@ -32,7 +32,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
@@ -46,9 +45,11 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -59,13 +60,16 @@ import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.OrangeDark
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithLines
+import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.Tooltip
 import com.example.yaroslavhorach.designsystem.theme.controlPrimaryTypo
 import com.example.yaroslavhorach.designsystem.theme.controlSecondaryTypo
+import com.example.yaroslavhorach.designsystem.theme.disabledText
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Cup
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Microphone
+import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.home.model.ExerciseUi
 import com.example.yaroslavhorach.home.model.HomeAction
@@ -90,15 +94,10 @@ internal fun HomeScreen(
     onMessageShown: (id: Long) -> Unit,
     actioner: (HomeAction) -> Unit,
 ) {
-    val selectedExerciseForDescription = remember { mutableStateOf<ExerciseUi?>(null) }
-    val descriptionTooltipPosition = remember { mutableStateOf<Offset?>(null) }
-    val descriptionTooltipBounds = remember { mutableStateOf<Rect?>(null) }
-    val startExerciseTooltipPosition = remember { mutableStateOf<Offset?>(null) }
-    val listTopPadding = remember { mutableFloatStateOf(0f) }
+    val density = LocalDensity.current
     val exercisesState = rememberLazyListState()
-
     val animatedTopPadding by animateDpAsState(
-        targetValue = listTopPadding.floatValue.dp,
+        targetValue = screenState.descriptionState.listTopExtraPadding,
         animationSpec = tween(durationMillis = 300),
         label = "list_padding"
     )
@@ -106,10 +105,8 @@ internal fun HomeScreen(
     LaunchedEffect(exercisesState) {
         snapshotFlow { exercisesState.isScrollInProgress }
             .collect { isScrolling ->
-                if (isScrolling && selectedExerciseForDescription.value != null) {
-                    selectedExerciseForDescription.value = null
-                    descriptionTooltipPosition.value = null
-                    listTopPadding.floatValue = 0f
+                if (isScrolling) {
+                    actioner(HomeAction.OnHideDescription)
                 }
             }
     }
@@ -124,18 +121,7 @@ internal fun HomeScreen(
                         val touch = event.changes.first()
 
                         if (touch.changedToDown()) {
-                            val position = touch.position
-
-                            descriptionTooltipBounds.value?.let { bounds ->
-                                if (bounds
-                                        .contains(position)
-                                        .not()
-                                ) {
-                                    selectedExerciseForDescription.value = null
-                                    descriptionTooltipPosition.value = null
-                                    listTopPadding.floatValue = 0f
-                                }
-                            }
+                            actioner(HomeAction.OnTouchOutside(touch.position))
                         }
                     }
                 }
@@ -159,20 +145,17 @@ internal fun HomeScreen(
                 itemsIndexed(screenState.exercises) { index, exercise ->
                     if (index > 0) Spacer(Modifier.size(20.dp))
                     if (index == 0) Spacer(Modifier.size(40.dp))
-
                     Exercise(exercise, (index % 2) != 0,
                         onClickWithCoordinates = { offset ->
-                            if (selectedExerciseForDescription.value != null) {
-                                selectedExerciseForDescription.value = null
-                                descriptionTooltipPosition.value = null
-                                listTopPadding.floatValue = 0f
-                            } else {
-                                selectedExerciseForDescription.value = exercise
-                                descriptionTooltipPosition.value = offset.copy(x = offset.x)
-                            }
+                            actioner(
+                                HomeAction.OnExerciseClicked(
+                                    exercise,
+                                    offset.copy(y = offset.y - with(density) { screenState.descriptionState.listTopExtraPadding.toPx() })
+                                )
+                            )
                         }, onGloballyPositioned = {
-                            if (exercise.isLastActive && selectedExerciseForDescription.value != exercise) {
-                                startExerciseTooltipPosition.value = it
+                            if (exercise.isLastActive && screenState.descriptionState.isVisible.not()) {
+                                actioner(HomeAction.OnShowStartExerciseTooltip(it))
                             }
                         }
                     )
@@ -180,20 +163,15 @@ internal fun HomeScreen(
             }
         }
 
+        screenState.startExerciseTooltipPosition?.let { StartTooltip(it) }
 
-        startExerciseTooltipPosition.value?.let { position ->
-            StartTooltip(position)
-        }
         DescriptionTooltip(
-            modifier = Modifier.align(Alignment.TopStart),
-            exercise = selectedExerciseForDescription.value,
-            position = descriptionTooltipPosition.value,
+            exercise = screenState.descriptionState.exercise,
+            position = screenState.descriptionState.position,
             onGloballyPositioned = { position, _ ->
-                descriptionTooltipBounds.value = position
+                actioner(HomeAction.OnDescriptionBoundsChanged(position))
             },
-            onRequireRootTopPadding = {
-                listTopPadding.floatValue = it
-            },
+            onRequireRootTopPadding = { actioner(HomeAction.OnDescriptionListTopPaddingChanged(it)) },
         )
     }
 }
@@ -203,6 +181,8 @@ private fun StartTooltip(position: Offset) {
     Tooltip(
         bottomPadding = 0.dp,
         enableFloatAnimation = true,
+        backgroundColor = MaterialTheme.colorScheme.surface,
+        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
         appearPosition = position
     ) {
         Text(
@@ -325,23 +305,23 @@ private fun Exercise(
 
 @Composable
 private fun DescriptionTooltip(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     exercise: ExerciseUi?,
     position: Offset?,
     onGloballyPositioned: (Rect, IntOffset) -> Unit,
-    onRequireRootTopPadding: (Float) -> Unit
+    onRequireRootTopPadding: (Dp) -> Unit
 ) {
     Tooltip(
         modifier = modifier,
-        backgroundColor = exercise?.colorLight ?: Color.Transparent,
-        borderColor = exercise?.colorDark ?: Color.Transparent,
+        backgroundColor = if (exercise?.isEnable == true) exercise.colorLight else if (exercise != null) MaterialTheme.colorScheme.onBackground else Color.Transparent,
+        borderColor = if (exercise?.isEnable == true) exercise.colorDark else if (exercise != null) MaterialTheme.colorScheme.onBackgroundDark() else Color.Transparent,
         contentPadding = 20.dp,
         appearPosition = position,
         onGloballyPositioned = onGloballyPositioned,
         onRequireRootTopPadding = onRequireRootTopPadding
     ) {
-        if (exercise != null) {
-            Column() {
+        if (exercise?.isEnable == true) {
+            Column {
                 Row {
                     Icon(painter = painterResource(exercise.iconResId), null, tint = White)
                     Spacer(Modifier.width(4.dp))
@@ -374,8 +354,38 @@ private fun DescriptionTooltip(
                 Spacer(Modifier.height(16.dp))
                 SecondaryButton(text = "ПОЧАТИ", onClick = {})
             }
+        }else if (exercise != null) {
+            Column {
+                Row {
+                    Icon(
+                        painter = painterResource(exercise.iconResId),
+                        null,
+                        tint = MaterialTheme.colorScheme.disabledText()
+                    )
+                    Spacer(Modifier.width(4.dp))
+                    Text(
+                        modifier = Modifier.align(Alignment.CenterVertically),
+                        text = stringResource(exercise.skillNameResId),
+                        style = LinguaTypography.body4,
+                        color = MaterialTheme.colorScheme.disabledText()
+                    )
+                }
+                Spacer(Modifier.height(12.dp))
+                Text(
+                    text = stringResource(exercise.nameResId),
+                    style = LinguaTypography.subtitle2,
+                    color = MaterialTheme.colorScheme.disabledText()
+                )
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    text = stringResource(R.string.not_active_exercise_description_text),
+                    style = LinguaTypography.body4,
+                    color = MaterialTheme.colorScheme.disabledText()
+                )
+                Spacer(Modifier.height(16.dp))
+                InactiveButton(text = stringResource(R.string.not_active_exercise_btn_text))
+            }
         }
-
     }
 }
 

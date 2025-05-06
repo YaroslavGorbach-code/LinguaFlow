@@ -35,6 +35,10 @@ fun ColorScheme.secondaryIcon() = if (isSystemInDarkTheme()) AmericanSilver else
 fun ColorScheme.primaryIcon() = if (isSystemInDarkTheme()) DarkSilver else DarkSilver
 @Composable
 fun ColorScheme.alert() = if (isSystemInDarkTheme()) Alert else Alert
+@Composable
+fun ColorScheme.disabledText() = if (isSystemInDarkTheme()) DarkGray else DarkGray
+@Composable
+fun ColorScheme.onBackgroundDark() = if (isSystemInDarkTheme()) Gainsboro else Gainsboro
 
 /**
  * Dark default theme color scheme
