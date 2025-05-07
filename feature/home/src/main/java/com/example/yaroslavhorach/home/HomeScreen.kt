@@ -51,7 +51,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.IntRect
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.roundToIntRect
+import androidx.compose.ui.unit.toRect
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.designsystem.theme.Black_35
@@ -60,15 +63,14 @@ import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.OrangeDark
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithLines
+import com.example.yaroslavhorach.designsystem.theme.components.FloatingTooltip
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
-import com.example.yaroslavhorach.designsystem.theme.components.Tooltip
 import com.example.yaroslavhorach.designsystem.theme.controlPrimaryTypo
 import com.example.yaroslavhorach.designsystem.theme.controlSecondaryTypo
 import com.example.yaroslavhorach.designsystem.theme.disabledText
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Cup
-import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Microphone
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.home.model.ExerciseUi
@@ -96,6 +98,7 @@ internal fun HomeScreen(
 ) {
     val density = LocalDensity.current
     val exercisesState = rememberLazyListState()
+    val descriptionBlockBounds = remember { mutableStateOf<IntRect?>(null) }
     val animatedTopPadding by animateDpAsState(
         targetValue = screenState.descriptionState.listTopExtraPadding,
         animationSpec = tween(durationMillis = 300),
@@ -133,7 +136,9 @@ internal fun HomeScreen(
                 .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
         ) {
             UserGreeting(screenState)
-            BlockDescription()
+            BlockDescription(modifier = Modifier.onGloballyPositioned {
+                descriptionBlockBounds.value =it.boundsInRoot().roundToIntRect()
+            })
             Spacer(
                 Modifier.height(animatedTopPadding)
             )
@@ -163,7 +168,13 @@ internal fun HomeScreen(
             }
         }
 
-        screenState.startExerciseTooltipPosition?.let { StartTooltip(it) }
+        screenState.startExerciseTooltipPosition?.let {offset->
+            val rect = descriptionBlockBounds.value?.toRect()
+            if (rect != null && !(offset.x >= rect.left && offset.x <= rect.right &&
+                        offset.y >= rect.top && offset.y <= rect.bottom)) {
+                StartTooltip(offset)
+            }
+        }
 
         DescriptionTooltip(
             exercise = screenState.descriptionState.exercise,
@@ -178,7 +189,7 @@ internal fun HomeScreen(
 
 @Composable
 private fun StartTooltip(position: Offset) {
-    Tooltip(
+    FloatingTooltip(
         bottomPadding = 0.dp,
         enableFloatAnimation = true,
         backgroundColor = MaterialTheme.colorScheme.surface,
@@ -286,11 +297,10 @@ private fun Exercise(
                         .align(Alignment.Center)
                         .padding(top = 3.dp),
                     tint = White,
-                    painter = painterResource(Microphone),
+                    painter = painterResource(exercise.iconResId),
                     contentDescription = ""
                 )
             }
-
             if (exercise.isEnable.not()) {
                 Spacer(
                     modifier = Modifier
@@ -311,7 +321,7 @@ private fun DescriptionTooltip(
     onGloballyPositioned: (Rect, IntOffset) -> Unit,
     onRequireRootTopPadding: (Dp) -> Unit
 ) {
-    Tooltip(
+    FloatingTooltip(
         modifier = modifier,
         backgroundColor = if (exercise?.isEnable == true) exercise.colorLight else if (exercise != null) MaterialTheme.colorScheme.onBackground else Color.Transparent,
         borderColor = if (exercise?.isEnable == true) exercise.colorDark else if (exercise != null) MaterialTheme.colorScheme.onBackgroundDark() else Color.Transparent,

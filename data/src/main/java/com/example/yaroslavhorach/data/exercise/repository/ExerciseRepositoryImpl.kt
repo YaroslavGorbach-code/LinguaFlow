@@ -46,35 +46,49 @@ class ExerciseRepositoryImpl @Inject constructor(private val exerciseProgressDao
     private fun getRawExercises(): List<Exercise> {
         return listOf(
             Exercise(
-                id = ExerciseName.ICEBREAKERS.ordinal.toLong(),
+                id = 1,
                 exerciseName = ExerciseName.ICEBREAKERS,
                 skill = Skill.COMMUNICATION,
                 exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
-                id = ExerciseName.FINISH_THE_THOUGHT.ordinal.toLong(),
+                id = 2,
                 exerciseName = ExerciseName.FINISH_THE_THOUGHT,
                 skill = Skill.COMMUNICATION,
                 exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
-                id = ExerciseName.THE_KEY_TO_SMALL_TALK.ordinal.toLong(),
+                id = 3,
+                exerciseName = ExerciseName.TONGUE_TWISTERS_EASY,
+                skill = Skill.DICTION,
+                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 2),
+                block = ExerciseBlock.ONE
+            ),
+            Exercise(
+                id = 4,
                 exerciseName = ExerciseName.THE_KEY_TO_SMALL_TALK,
                 skill = Skill.COMMUNICATION,
                 exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
-                id = ExerciseName.DATING_ROUTE.ordinal.toLong(),
+                id = 5,
                 exerciseName = ExerciseName.DATING_ROUTE,
                 skill = Skill.COMMUNICATION,
                 exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
-                id = ExerciseName.FAREWELL_REMARK.ordinal.toLong(),
+                id = 6,
+                exerciseName = ExerciseName.VOCABULARY,
+                skill = Skill.VOCABULARY,
+                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 1),
+                block = ExerciseBlock.ONE
+            ),
+            Exercise(
+                id = 7,
                 exerciseName = ExerciseName.FAREWELL_REMARK,
                 skill = Skill.COMMUNICATION,
                 exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),

@@ -45,7 +45,7 @@ import kotlin.math.abs
 import kotlin.math.roundToInt
 
 @Composable
-fun Tooltip(
+fun FloatingTooltip(
     modifier: Modifier = Modifier,
     backgroundColor: Color = MaterialTheme.colorScheme.surface,
     borderColor: Color = MaterialTheme.colorScheme.onBackground,

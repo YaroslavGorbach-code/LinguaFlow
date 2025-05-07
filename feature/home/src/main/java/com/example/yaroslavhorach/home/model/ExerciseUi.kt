@@ -54,6 +54,8 @@ class ExerciseUi(exercise: Exercise) {
         ExerciseName.THE_KEY_TO_SMALL_TALK -> R.string.the_key_to_small_talk_exercise_name
         ExerciseName.DATING_ROUTE -> R.string.dating_route_exercise_name
         ExerciseName.FAREWELL_REMARK -> R.string.farewell_remark_exercise_name
+        ExerciseName.TONGUE_TWISTERS_EASY -> R.string.tongue_twisters_exercise_name
+        ExerciseName.VOCABULARY -> R.string.word_sprint_exercise_name
     }
 
     val descriptionResId: Int = when (exercise.exerciseName) {
@@ -62,5 +64,7 @@ class ExerciseUi(exercise: Exercise) {
         ExerciseName.THE_KEY_TO_SMALL_TALK -> R.string.the_key_to_small_talk_exercise_description
         ExerciseName.DATING_ROUTE -> R.string.dating_route_exercise_description
         ExerciseName.FAREWELL_REMARK -> R.string.farewell_remark_exercise_description
+        ExerciseName.TONGUE_TWISTERS_EASY -> R.string.tongue_twisters_easy_exercise_description
+        ExerciseName.VOCABULARY -> R.string.word_spirit_exercise_description
     }
 }
