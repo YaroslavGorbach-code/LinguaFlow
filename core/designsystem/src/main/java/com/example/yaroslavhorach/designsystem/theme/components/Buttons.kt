@@ -16,6 +16,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.changedToUp
 import androidx.compose.ui.input.pointer.pointerInput
@@ -24,13 +25,13 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.example.yaroslavhorach.designsystem.theme.Gainsboro
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
-import com.example.yaroslavhorach.designsystem.theme.disabledText
+import com.example.yaroslavhorach.designsystem.theme.White
+import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
-import java.util.Locale
 import kotlin.math.roundToInt
 
 @Composable
-fun SecondaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Unit) {
+fun SecondaryButton(modifier: Modifier = Modifier, text: String, textColor: Color = MaterialTheme.colorScheme.primary, onClick: () -> Unit) {
     val rawShadowYOffset = 10.dp
     val shadowYOffset = remember { mutableStateOf(rawShadowYOffset) }
 
@@ -77,8 +78,62 @@ fun SecondaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> 
                 .padding(vertical = 12.dp),
             text = text.uppercase(),
             textAlign = TextAlign.Center,
-            style = LinguaTypography.subtitle2,
-            color = MaterialTheme.colorScheme.primary
+            style = LinguaTypography.subtitle3,
+            color = textColor
+        )
+    }
+}
+
+@Composable
+fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Unit) {
+    val rawShadowYOffset = 10.dp
+    val shadowYOffset = remember { mutableStateOf(rawShadowYOffset) }
+
+    Box(
+        modifier = modifier
+            .height(45.dp)
+            .pointerInput(Unit) {
+                awaitPointerEventScope {
+                    while (true) {
+                        val touch = awaitPointerEvent().changes.first()
+
+                        if (touch.changedToDown()) {
+                            shadowYOffset.value = 0.dp
+                        }
+
+                        if (touch.changedToUp()) {
+                            shadowYOffset.value = rawShadowYOffset
+                            onClick()
+                        }
+                    }
+                }
+            }
+
+    ) {
+        Spacer(
+            modifier = Modifier
+                .fillMaxSize()
+                .clip(RoundedCornerShape(8.dp))
+                .background(color = MaterialTheme.colorScheme.secondary)
+        )
+
+        Spacer(
+            modifier = Modifier
+                .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
+                .fillMaxSize()
+                .clip(RoundedCornerShape(8.dp))
+                .background(color =  MaterialTheme.colorScheme.primary)
+        )
+
+        Text(
+            modifier = Modifier
+                .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
+                .fillMaxWidth()
+                .padding(vertical = 12.dp),
+            text = text.uppercase(),
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.subtitle3,
+            color = White
         )
     }
 }
@@ -97,8 +152,8 @@ fun InactiveButton(modifier: Modifier = Modifier, text: String) {
                 .padding(vertical = 12.dp),
             text = text.uppercase(),
             textAlign = TextAlign.Center,
-            style = LinguaTypography.subtitle2,
-            color = MaterialTheme.colorScheme.disabledText()
+            style = LinguaTypography.subtitle3,
+            color = MaterialTheme.colorScheme.typoDisabled()
         )
     }
 }

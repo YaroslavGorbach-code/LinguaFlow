@@ -1,0 +1,396 @@
+package com.example.yaroslavhorach.exercises.speaking
+
+import android.Manifest
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.only
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.example.yaroslavhorach.common.helpers.PermissionManager
+import com.example.yaroslavhorach.common.utill.UiMessage
+import com.example.yaroslavhorach.designsystem.theme.Avocado
+import com.example.yaroslavhorach.designsystem.theme.KellyGreen
+import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
+import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
+import com.example.yaroslavhorach.designsystem.theme.Red
+import com.example.yaroslavhorach.designsystem.theme.UeRed
+import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
+import com.example.yaroslavhorach.designsystem.theme.components.LinguaBackground
+import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
+import com.example.yaroslavhorach.designsystem.theme.components.RealtimeWaveform
+import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
+import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.typoPrimary
+import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
+import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
+import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
+
+@Composable
+internal fun SpeakingExerciseRoute(
+    viewModel: SpeakingExerciseViewModel = hiltViewModel(),
+) {
+    val speakingExerciseViewState by viewModel.state.collectAsStateWithLifecycle()
+
+    SpeakingExerciseScreen(
+        screenState = speakingExerciseViewState,
+        onMessageShown = viewModel::clearMessage,
+        permissionManager = viewModel.permissionManager,
+        actioner = { action ->
+            when (action) {
+                else -> viewModel.submitAction(action)
+            }
+        })
+}
+
+@Composable
+internal fun SpeakingExerciseScreen(
+    screenState: SpeakingExerciseViewState,
+    permissionManager: PermissionManager,
+    onMessageShown: (id: Long) -> Unit,
+    actioner: (SpeakingExerciseAction) -> Unit,
+) {
+    Box(
+        Modifier
+            .fillMaxSize()
+    ) {
+        Column(
+            modifier = Modifier
+                .padding(horizontal = 20.dp)
+                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+                .fillMaxSize()
+        ) {
+            when (screenState.mode) {
+                is SpeakingExerciseViewState.ScreenMode.IntroTest -> TestContent(screenState.mode, actioner)
+                is SpeakingExerciseViewState.ScreenMode.Speaking -> SpeakingContent(screenState.mode, actioner)
+                null -> {}
+            }
+        }
+
+        screenState.uiMessage?.let { uiMessage ->
+            when (val message = uiMessage.message) {
+                is SpeakingExerciseUiMessage.RequestRecordAudio -> {
+                    permissionManager.AskPermission(Manifest.permission.RECORD_AUDIO) { isGranted ->
+                        if (isGranted) {
+                            actioner(SpeakingExerciseAction.OnStartSpikingClicked)
+                        }
+                    }
+                    onMessageShown(uiMessage.id)
+                }
+                is SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation -> {
+                    CorrectTestAnswer(uiMessage, message, onMessageShown, actioner)
+                }
+                is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
+                    WrongTestAnswer(uiMessage, message, onMessageShown)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun ColumnScope.SpeakingContent(
+    speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking,
+    actioner: (SpeakingExerciseAction) -> Unit
+) {
+    Text(
+        "\uD83E\uDDE0 Уяви ситуацію:",
+        style = LinguaTypography.h5,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(10.dp))
+    Text(
+        speakingMode.situation.situationText ?: "",
+        style = LinguaTypography.body3,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(24.dp))
+    Text(
+        "\uD83C\uDFAF Твоя задача:",
+        style = LinguaTypography.h5,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(10.dp))
+    Text(
+        speakingMode.situation.taskText,
+        style = LinguaTypography.body3,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.Companion.weight(0.5f))
+
+    RealtimeWaveform(
+        speakingMode.amplitude ?: 0,
+        speakingMode.isSpeaking,
+        modifier = Modifier.Companion
+            .align(Alignment.CenterHorizontally)
+            .fillMaxWidth()
+            .height(150.dp)
+    )
+
+    Spacer(Modifier.Companion.weight(1f))
+
+    if (speakingMode.isRecording) {
+        if (speakingMode.secondsTillFinish > 0) {
+            InactiveButton(text = "Кінець вправи через: ${speakingMode.secondsTillFinish}")
+        } else {
+            InactiveButton(text = "Говори...")
+        }
+    } else {
+        PrimaryButton(text = "Говорити") {
+            actioner(SpeakingExerciseAction.OnStartSpikingClicked)
+        }
+    }
+
+    Spacer(Modifier.padding(16.dp))
+}
+
+@Composable
+private fun ColumnScope.TestContent(
+    testMode: SpeakingExerciseViewState.ScreenMode.IntroTest,
+    actioner: (SpeakingExerciseAction) -> Unit
+) {
+    Text(
+        "\uD83E\uDDE0 Уяви ситуацію:",
+        style = LinguaTypography.h5,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(10.dp))
+    Text(
+        testMode.test.situationText ?: "",
+        style = LinguaTypography.body3,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(24.dp))
+    Text(
+        "\uD83C\uDFAF Твоя задача:",
+        style = LinguaTypography.h5,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(10.dp))
+    Text(
+        testMode.test.taskText,
+        style = LinguaTypography.body3,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.weight(1f))
+    LazyColumn(
+        Modifier
+            .fillMaxWidth()
+    ) {
+        itemsIndexed(testMode.test.variants) { index, variant ->
+            if (index > 0) Spacer(Modifier.height(20.dp))
+
+            Text(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .border(
+                        1.5.dp, if (variant == testMode.chosenVariant) {
+                            KellyGreen
+                        } else {
+                            MaterialTheme.colorScheme.onBackgroundDark()
+                        }, RoundedCornerShape(12.dp)
+                    )
+                    .padding(16.dp)
+                    .clickable { actioner(SpeakingExerciseAction.OnVariantChosen(variant)) },
+                text = variant.variantText,
+                color = MaterialTheme.colorScheme.typoPrimary(),
+                style = LinguaTypography.subtitle3
+            )
+        }
+    }
+    Spacer(Modifier.weight(1f))
+    if (testMode.chosenVariant != null) {
+        PrimaryButton(text = "Перевірити") {
+            actioner(SpeakingExerciseAction.OnCheckTestVariantClicked)
+        }
+    } else {
+        InactiveButton(text = "Перевірити")
+    }
+
+    Spacer(Modifier.padding(16.dp))
+}
+
+
+@Composable
+private fun BoxScope.WrongTestAnswer(
+    uiMessage: UiMessage<SpeakingExerciseUiMessage>,
+    message: SpeakingExerciseUiMessage.ShowWrongAnswerExplanation,
+    onMessageShown: (id: Long) -> Unit
+) {
+    val isVisible = remember(uiMessage.id) { mutableStateOf(false) }
+
+    LaunchedEffect(uiMessage.id) {
+        isVisible.value = true
+    }
+
+    AnimatedVisibility(
+        visible = isVisible.value,
+        enter = slideInVertically(
+            initialOffsetY = { fullHeight -> fullHeight },
+            animationSpec = tween(durationMillis = 300)
+        ),
+        exit = slideOutVertically(
+            targetOffsetY = { fullHeight -> fullHeight },
+            animationSpec = tween(durationMillis = 1000)
+        ),
+        modifier = Modifier.Companion.align(Alignment.BottomCenter)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .pointerInput(Unit) {
+                    awaitPointerEventScope {
+                        while (true) {
+                            awaitPointerEvent()
+                        }
+                    }
+                }
+        ) {
+            Column(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .fillMaxWidth()
+                    .background(color = Red, shape = RoundedCornerShape(14.dp))
+                    .border(2.dp, color = UeRed, shape = RoundedCornerShape(14.dp))
+                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom))
+                    .padding(horizontal = 20.dp)
+            ) {
+                Spacer(Modifier.height(20.dp))
+                Text(
+                    text = message.text,
+                    style = LinguaTypography.subtitle3,
+                    color = Color.White
+                )
+                Spacer(Modifier.height(20.dp))
+                SecondaryButton(text = "СПРОБУВАТИ ЗНОВУ", textColor = Red) {
+                    isVisible.value = false
+
+                    onMessageShown(uiMessage.id)
+                }
+                Spacer(Modifier.height(16.dp))
+            }
+        }
+    }
+}
+
+@Composable
+private fun BoxScope.CorrectTestAnswer(
+    uiMessage: UiMessage<SpeakingExerciseUiMessage>,
+    message: SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation,
+    onMessageShown: (id: Long) -> Unit,
+    actioner: (SpeakingExerciseAction) -> Unit
+) {
+    val isVisible = remember(uiMessage.id) { mutableStateOf(false) }
+
+    LaunchedEffect(uiMessage.id) {
+        isVisible.value = true
+    }
+
+    AnimatedVisibility(
+        visible = isVisible.value,
+        enter = slideInVertically(
+            initialOffsetY = { fullHeight -> fullHeight },
+            animationSpec = tween(durationMillis = 300)
+        ),
+        exit = slideOutVertically(
+            targetOffsetY = { fullHeight -> fullHeight },
+            animationSpec = tween(durationMillis = 1000)
+        ),
+        modifier = Modifier.Companion.align(Alignment.BottomCenter)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .pointerInput(Unit) {
+                    awaitPointerEventScope {
+                        while (true) {
+                            awaitPointerEvent()
+                        }
+                    }
+                }
+        ) {
+            Column(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .fillMaxWidth()
+                    .background(color = KellyGreen, shape = RoundedCornerShape(14.dp))
+                    .border(2.dp, color = Avocado, shape = RoundedCornerShape(14.dp))
+                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom))
+                    .padding(horizontal = 20.dp)
+            ) {
+                Spacer(Modifier.height(20.dp))
+                Text(
+                    text = message.text,
+                    style = LinguaTypography.subtitle3,
+                    color = Color.White
+                )
+                Spacer(Modifier.height(20.dp))
+                SecondaryButton(text = "ДАЛІ", textColor = KellyGreen) {
+                    isVisible.value = false
+                    onMessageShown(uiMessage.id)
+                    actioner(SpeakingExerciseAction.OnNextTestClicked)
+                }
+                Spacer(Modifier.height(16.dp))
+            }
+        }
+    }
+}
+
+@Preview
+@Composable
+private fun SpeakingExercisePreview() {
+    LinguaBackground {
+        LinguaTheme {
+            Row {
+                SpeakingExerciseScreen(
+                    SpeakingExerciseViewState.PreviewTest,
+                    PermissionManager(LocalContext.current),
+                    {},
+                    {})
+
+                SpeakingExerciseScreen(
+                    SpeakingExerciseViewState.PreviewTest,
+                    PermissionManager(LocalContext.current),
+                    {},
+                    {})
+            }
+
+        }
+    }
+}
+

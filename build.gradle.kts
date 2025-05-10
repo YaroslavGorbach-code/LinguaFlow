@@ -7,4 +7,5 @@ plugins {
     id(Plugins.compose) version "2.0.0" apply false
     id(Plugins.hilt) version Versions.hilt apply false
     id(Plugins.ksp) version "2.0.21-1.0.27" apply false
+    kotlin(Plugins.serealisation) version "2.1.10"
 }

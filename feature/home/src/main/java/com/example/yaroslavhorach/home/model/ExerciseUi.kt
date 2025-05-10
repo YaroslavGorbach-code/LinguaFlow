@@ -10,8 +10,7 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.example.yaroslavhorach.domain.exercise.model.Skill
 import com.example.yaroslavhorach.home.R
 
-class ExerciseUi(exercise: Exercise) {
-    val id = exercise.id
+class ExerciseUi(val exercise: Exercise) {
     val progressPercent = (exercise.exerciseProgress.progress / exercise.exerciseProgress.maxProgress) * 100
     val progress = exercise.exerciseProgress.progress.toString() + "/" + exercise.exerciseProgress.maxProgress.toString()
     val isStarted: Boolean = exercise.exerciseProgress.progress > 0

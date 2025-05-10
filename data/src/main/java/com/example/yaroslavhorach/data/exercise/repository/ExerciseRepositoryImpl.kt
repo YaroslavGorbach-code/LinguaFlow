@@ -13,38 +13,47 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject
 
-class ExerciseRepositoryImpl @Inject constructor(private val exerciseProgressDao: ExerciseProgressDao) : ExerciseRepository {
+class ExerciseRepositoryImpl @Inject constructor(
+    private val exerciseProgressDao: ExerciseProgressDao
+) : ExerciseRepository {
 
     override fun getExercises(): Flow<List<Exercise>> {
-        return exerciseProgressDao.getExerciseProgressEntities().flatMapLatest { progressList ->
-            val progressMap = progressList.associateBy { it.exerciseId }
-            val exercises = getRawExercises()
-            val lastFinishedIndex = exercises.indexOfLast { exercise ->
-                val progress = progressMap[exercise.id]?.progress
+        return exerciseProgressDao.getExerciseProgressEntities()
+            .flatMapLatest { progressList ->
+                val progressMap = progressList.associateBy { it.exerciseId }
+                val exercises = getRawExercises()
 
-                progress != null && progress > 0
-            }
+                val lastActive = exercises.indexOfLast {
+                    it.exerciseProgress.progress > 0
+                }.takeIf { it != -1 } ?: 0
 
-            val lasrtActive = exercises.indexOfLast {
-                it.exerciseProgress.progress > 0
-            }.takeIf  { it != -1 } ?: 0
+                flowOf(
+                    exercises.mapIndexed { index, exercise ->
+                        val progress = progressMap[exercise.id]
 
-            flowOf(
-                exercises.mapIndexed  { index, exercise ->
-                    val progress = progressMap[exercise.id]
-
-                    if (progress != null) {
-                        exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true)
-                    } else {
-                        exercise.copy(isEnable = lasrtActive == index, isLastActive = lasrtActive == index)
+                        if (progress != null) {
+                            exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true)
+                        } else {
+                            exercise.copy(isEnable = lastActive == index, isLastActive = lastActive == index)
+                        }
                     }
-                }
-            )
-        }
+                )
+            }
+    }
+
+    override suspend fun getExercise(exerciseId: Long): Exercise? {
+        val progress = exerciseProgressDao.getExerciseProgressEntity(exerciseId)
+        val exercise = getRawExercises().find { it.id == exerciseId }
+
+        return exercise?.copy(
+            exerciseProgress = progress?.asDomainModel() ?: exercise.exerciseProgress,
+            isEnable = true
+        )
     }
 
     private fun getRawExercises(): List<Exercise> {
         return listOf(
+            // BLOCK 1
             Exercise(
                 id = 1,
                 exerciseName = ExerciseName.ICEBREAKERS,
@@ -95,5 +104,6 @@ class ExerciseRepositoryImpl @Inject constructor(private val exerciseProgressDao
                 block = ExerciseBlock.ONE
             )
         )
+        // BLOCK 2
     }
 }

@@ -69,22 +69,28 @@ import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBa
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
 import com.example.yaroslavhorach.designsystem.theme.controlPrimaryTypo
 import com.example.yaroslavhorach.designsystem.theme.controlSecondaryTypo
-import com.example.yaroslavhorach.designsystem.theme.disabledText
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Cup
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
+import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.home.model.ExerciseUi
 import com.example.yaroslavhorach.home.model.HomeAction
 import com.example.yaroslavhorach.home.model.HomeViewState
 
 @Composable
 internal fun HomeRoute(
+    onNavigateToExercise: (Exercise) -> Unit,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
     val homeState by viewModel.state.collectAsStateWithLifecycle()
 
     HomeScreen(screenState = homeState, onMessageShown = viewModel::clearMessage, actioner = { action ->
         when (action) {
+            is HomeAction.OnStartExerciseClicked -> {
+                viewModel.submitAction(HomeAction.OnHideDescription)
+                onNavigateToExercise(action.exercise)
+            }
             else -> viewModel.submitAction(action)
         }
     })
@@ -183,6 +189,7 @@ internal fun HomeScreen(
                 actioner(HomeAction.OnDescriptionBoundsChanged(position))
             },
             onRequireRootTopPadding = { actioner(HomeAction.OnDescriptionListTopPaddingChanged(it)) },
+            onStartExerciseClicked = { actioner(HomeAction.OnStartExerciseClicked(it.exercise)) }
         )
     }
 }
@@ -198,7 +205,7 @@ private fun StartTooltip(position: Offset) {
     ) {
         Text(
             "ПОЧАТИ",
-            style = LinguaTypography.subtitle2,
+            style = LinguaTypography.subtitle3,
             color = MaterialTheme.colorScheme.primary
         )
     }
@@ -210,7 +217,7 @@ private fun BlockDescription(modifier: Modifier = Modifier) {
         modifier = modifier
             .padding(top = 20.dp)
             .fillMaxWidth()
-            .height(120.dp)
+            .height(130.dp)
     ) {
         Column(modifier = Modifier.padding(horizontal = 16.dp)) {
             Spacer(Modifier.height(12.dp))
@@ -218,14 +225,14 @@ private fun BlockDescription(modifier: Modifier = Modifier) {
                 modifier = Modifier,
                 text = "Блок 1: Small Talk & Знайомство",
                 color = MaterialTheme.colorScheme.controlPrimaryTypo(),
-                style = LinguaTypography.h4
+                style = LinguaTypography.h5
             )
             Spacer(Modifier.height(4.dp))
             Text(
                 modifier = Modifier,
                 text = "Навчись легко починати розмову, підтримувати бесіду і знайомитись з новими людьми",
                 color = MaterialTheme.colorScheme.controlSecondaryTypo(),
-                style = LinguaTypography.subtitle3
+                style = LinguaTypography.subtitle4
             )
             Spacer(Modifier.height(14.dp))
             LinguaProgressBar(
@@ -319,7 +326,8 @@ private fun DescriptionTooltip(
     exercise: ExerciseUi?,
     position: Offset?,
     onGloballyPositioned: (Rect, IntOffset) -> Unit,
-    onRequireRootTopPadding: (Dp) -> Unit
+    onRequireRootTopPadding: (Dp) -> Unit,
+    onStartExerciseClicked: (ExerciseUi) -> Unit
 ) {
     FloatingTooltip(
         modifier = modifier,
@@ -362,7 +370,9 @@ private fun DescriptionTooltip(
                     color = MaterialTheme.colorScheme.controlPrimaryTypo()
                 )
                 Spacer(Modifier.height(16.dp))
-                SecondaryButton(text = "ПОЧАТИ", onClick = {})
+                SecondaryButton(text = "ПОЧАТИ", onClick = {
+                    onStartExerciseClicked(exercise)
+                })
             }
         }else if (exercise != null) {
             Column {
@@ -370,27 +380,27 @@ private fun DescriptionTooltip(
                     Icon(
                         painter = painterResource(exercise.iconResId),
                         null,
-                        tint = MaterialTheme.colorScheme.disabledText()
+                        tint = MaterialTheme.colorScheme.typoDisabled()
                     )
                     Spacer(Modifier.width(4.dp))
                     Text(
                         modifier = Modifier.align(Alignment.CenterVertically),
                         text = stringResource(exercise.skillNameResId),
                         style = LinguaTypography.body4,
-                        color = MaterialTheme.colorScheme.disabledText()
+                        color = MaterialTheme.colorScheme.typoDisabled()
                     )
                 }
                 Spacer(Modifier.height(12.dp))
                 Text(
                     text = stringResource(exercise.nameResId),
                     style = LinguaTypography.subtitle2,
-                    color = MaterialTheme.colorScheme.disabledText()
+                    color = MaterialTheme.colorScheme.typoDisabled()
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
                     text = stringResource(R.string.not_active_exercise_description_text),
                     style = LinguaTypography.body4,
-                    color = MaterialTheme.colorScheme.disabledText()
+                    color = MaterialTheme.colorScheme.typoDisabled()
                 )
                 Spacer(Modifier.height(16.dp))
                 InactiveButton(text = stringResource(R.string.not_active_exercise_btn_text))

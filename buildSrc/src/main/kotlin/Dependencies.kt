@@ -24,6 +24,8 @@ object Plugins {
     const val kapt_kotlin = "kotlin-kapt"
     const val hilt = "com.google.dagger.hilt.android"
     const val ksp = "com.google.devtools.ksp"
+    const val serealisation = "plugin.serialization"
+    const val kotlinXserealisation = "kotlinx-serialization"
 }
 
 object Modules {
@@ -35,6 +37,7 @@ object Modules {
     const val dataDatastore = ":data:datastore"
     const val domain = ":domain"
     const val featureHome = ":feature:home"
+    const val featureExercises = ":feature:exercises"
 }
 
 object Versions {
@@ -45,12 +48,14 @@ object Versions {
     const val material3 = "1.1.0"
     const val coroutines = "1.7.0"
     const val room = "2.6.1"
+    const val gson = "2.13.1"
     const val datastorePrefs = "1.1.0"
     const val hiltNavigationCompose = "1.0.0"
     const val hilt = "2.51.1"
     const val systemUiController = "0.30.0"
     const val splashScreen = "1.0.1"
-    const val navigationCompose = "2.6.0"
+    const val navigationCompose = "2.8.9"
+    const val kotlinSerealistion = "1.8.1"
     const val composeDialogs = "1.2.0"
 }
 
@@ -72,6 +77,7 @@ object Libs {
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
     const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
     const val datastorePreferences = "androidx.datastore:datastore-preferences:${Versions.datastorePrefs}"
     const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
@@ -79,4 +85,5 @@ object Libs {
     const val systemUiController = "com.google.accompanist:accompanist-systemuicontroller:${Versions.systemUiController}"
     const val splashScreen = "androidx.core:core-splashscreen:${Versions.splashScreen}"
     const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
+    const val kotlinSerealistion = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinSerealistion}"
 }

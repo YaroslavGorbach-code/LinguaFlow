@@ -13,7 +13,7 @@ val LightDefaultColorScheme = lightColorScheme(
     background = Cultured,
     onBackground = BrightGray,
     surface = White,
-    secondary = OrangeLight,
+    secondary = OrangeDark,
     primary = OrangeLight,
     primaryContainer = Calamansi,
     onPrimaryContainer = OrangeLight
@@ -23,6 +23,8 @@ val LightDefaultColorScheme = lightColorScheme(
 fun ColorScheme.typoPrimary() = if (isSystemInDarkTheme()) DarkLiver else DarkLiver
 @Composable
 fun ColorScheme.typoSecondary() = if (isSystemInDarkTheme()) DavysGrey else DavysGrey
+@Composable
+fun ColorScheme.typoDisabled() = if (isSystemInDarkTheme()) DarkGray else DarkGray
 @Composable
 fun ColorScheme.controlPrimaryTypo() = if (isSystemInDarkTheme()) White else White
 @Composable
@@ -36,8 +38,6 @@ fun ColorScheme.primaryIcon() = if (isSystemInDarkTheme()) DarkSilver else DarkS
 @Composable
 fun ColorScheme.alert() = if (isSystemInDarkTheme()) Alert else Alert
 @Composable
-fun ColorScheme.disabledText() = if (isSystemInDarkTheme()) DarkGray else DarkGray
-@Composable
 fun ColorScheme.onBackgroundDark() = if (isSystemInDarkTheme()) Gainsboro else Gainsboro
 
 /**
@@ -48,7 +48,7 @@ val DarkDefaultColorScheme = darkColorScheme(
     background = Cultured,
     onBackground = BrightGray,
     surface = White,
-    secondary = OrangeLight,
+    secondary = OrangeDark,
     primary = OrangeLight
 )
 

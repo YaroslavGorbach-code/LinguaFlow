@@ -9,17 +9,17 @@ data class ExerciseProgressEntity(
     @PrimaryKey
     val exerciseId: Long,
     val progress: Int,
-    val maxProgress: Int
+    val maxProgress: Int,
 )
 
 fun ExerciseProgressEntity.asDomainModel() = ExerciseProgress(
     exerciseId = exerciseId,
     progress = progress,
-    maxProgress = maxProgress
+    maxProgress = maxProgress,
 )
 
 fun ExerciseProgress.asEntityModel() = ExerciseProgressEntity(
     exerciseId = exerciseId,
     progress = progress,
-    maxProgress = maxProgress
+    maxProgress = maxProgress,
 )

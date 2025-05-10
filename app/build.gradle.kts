@@ -38,6 +38,7 @@ dependencies {
     implementation(project(Modules.data))
     implementation(project(Modules.coreDesignSystem))
     implementation(project(Modules.featureHome))
+    implementation(project(Modules.featureExercises))
 
     implementation(Libs.activityCompose)
     implementation(Libs.systemUiController)

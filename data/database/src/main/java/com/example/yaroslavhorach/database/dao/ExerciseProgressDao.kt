@@ -4,7 +4,6 @@ import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Upsert
 import com.example.yaroslavhorach.database.task.model.ExerciseProgressEntity
-import com.example.yaroslavhorach.domain.exercise.model.ExerciseProgress
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -22,7 +21,8 @@ interface ExerciseProgressDao {
         WHERE exerciseId = :exerciseId
     """,
     )
-    fun getExerciseProgressEntity(exerciseId: Long): Flow<ExerciseProgressEntity>
+
+    suspend fun getExerciseProgressEntity(exerciseId: Long): ExerciseProgressEntity?
 
     @Upsert
     suspend fun upsertExerciseProgress(exerciseProgress: ExerciseProgressEntity)

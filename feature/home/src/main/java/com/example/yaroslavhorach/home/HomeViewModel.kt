@@ -87,6 +87,9 @@ class HomeViewModel @Inject constructor(
                             }
                         }
                     }
+                    is HomeAction.OnStartExerciseClicked -> {
+                        descriptionState.value = HomeViewState.DescriptionState.EMPTY
+                    }
                 }
             }
             .launchIn(viewModelScope)

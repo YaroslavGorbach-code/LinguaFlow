@@ -19,5 +19,6 @@ dependencies {
     api(project(Modules.dataDatastore))
     implementation(Libs.coroutines)
     implementation(Libs.hilt)
+    implementation(Libs.gson)
     ksp(Libs.hiltCompiler)
 }
