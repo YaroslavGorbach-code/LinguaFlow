@@ -20,8 +20,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.changedToUp
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.example.yaroslavhorach.designsystem.theme.Gainsboro
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -31,30 +33,47 @@ import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import kotlin.math.roundToInt
 
 @Composable
-fun SecondaryButton(modifier: Modifier = Modifier, text: String, textColor: Color = MaterialTheme.colorScheme.primary, onClick: () -> Unit) {
+fun SecondaryButton(
+    modifier: Modifier = Modifier,
+    text: String,
+    textColor: Color = MaterialTheme.colorScheme.primary,
+    onClick: () -> Unit
+) {
     val rawShadowYOffset = 10.dp
     val shadowYOffset = remember { mutableStateOf(rawShadowYOffset) }
+    val boxSize = remember { mutableStateOf(IntSize.Zero) }
 
     Box(
         modifier = modifier
+            .onSizeChanged { boxSize.value = it }
             .height(45.dp)
             .pointerInput(Unit) {
                 awaitPointerEventScope {
                     while (true) {
-                        val touch = awaitPointerEvent().changes.first()
+                        val event = awaitPointerEvent()
+                        val touch = event.changes.first()
 
-                        if (touch.changedToDown()) {
-                            shadowYOffset.value = 0.dp
-                        }
+                        val position = touch.position
+                        val isInside = position.x in 0f..boxSize.value.width.toFloat() &&
+                                position.y in 0f..boxSize.value.height.toFloat()
 
-                        if (touch.changedToUp()) {
-                            shadowYOffset.value = rawShadowYOffset
-                            onClick()
+                        when {
+                            touch.changedToDown() && isInside -> {
+                                shadowYOffset.value = 0.dp
+                            }
+                            touch.changedToUp() -> {
+                                shadowYOffset.value = rawShadowYOffset
+                                if (isInside) {
+                                    onClick()
+                                }
+                            }
+                            !isInside && touch.pressed -> {
+                                shadowYOffset.value = rawShadowYOffset
+                            }
                         }
                     }
                 }
             }
-
     ) {
         Spacer(
             modifier = Modifier
@@ -88,27 +107,39 @@ fun SecondaryButton(modifier: Modifier = Modifier, text: String, textColor: Colo
 fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Unit) {
     val rawShadowYOffset = 10.dp
     val shadowYOffset = remember { mutableStateOf(rawShadowYOffset) }
+    val boxSize = remember { mutableStateOf(IntSize.Zero) }
 
     Box(
         modifier = modifier
+            .onSizeChanged { boxSize.value = it }
             .height(45.dp)
             .pointerInput(Unit) {
                 awaitPointerEventScope {
                     while (true) {
-                        val touch = awaitPointerEvent().changes.first()
+                        val event = awaitPointerEvent()
+                        val touch = event.changes.first()
 
-                        if (touch.changedToDown()) {
-                            shadowYOffset.value = 0.dp
-                        }
+                        val position = touch.position
+                        val isInside = position.x in 0f..boxSize.value.width.toFloat() &&
+                                position.y in 0f..boxSize.value.height.toFloat()
 
-                        if (touch.changedToUp()) {
-                            shadowYOffset.value = rawShadowYOffset
-                            onClick()
+                        when {
+                            touch.changedToDown() && isInside -> {
+                                shadowYOffset.value = 0.dp
+                            }
+                            touch.changedToUp() -> {
+                                shadowYOffset.value = rawShadowYOffset
+                                if (isInside) {
+                                    onClick()
+                                }
+                            }
+                            !isInside && touch.pressed -> {
+                                shadowYOffset.value = rawShadowYOffset
+                            }
                         }
                     }
                 }
             }
-
     ) {
         Spacer(
             modifier = Modifier
@@ -122,7 +153,7 @@ fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
                 .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
                 .fillMaxSize()
                 .clip(RoundedCornerShape(8.dp))
-                .background(color =  MaterialTheme.colorScheme.primary)
+                .background(color = MaterialTheme.colorScheme.primary)
         )
 
         Text(
