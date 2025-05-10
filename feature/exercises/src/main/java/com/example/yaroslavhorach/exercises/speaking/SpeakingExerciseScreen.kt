@@ -1,17 +1,21 @@
 package com.example.yaroslavhorach.exercises.speaking
 
 import android.Manifest
+import android.annotation.SuppressLint
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.slideOutVertically
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -78,6 +82,7 @@ internal fun SpeakingExerciseRoute(
         })
 }
 
+@SuppressLint("UnusedContentLambdaTargetStateParameter")
 @Composable
 internal fun SpeakingExerciseScreen(
     screenState: SpeakingExerciseViewState,
@@ -89,19 +94,43 @@ internal fun SpeakingExerciseScreen(
         Modifier
             .fillMaxSize()
     ) {
-        Column(
-            modifier = Modifier
-                .padding(horizontal = 20.dp)
-                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
-                .fillMaxSize()
-        ) {
-            when (screenState.mode) {
-                is SpeakingExerciseViewState.ScreenMode.IntroTest -> TestContent(screenState.mode, actioner)
-                is SpeakingExerciseViewState.ScreenMode.Speaking -> SpeakingContent(screenState.mode, actioner)
-                null -> {}
+        when (val mode = screenState.mode) {
+            is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
+                AnimatedContent(
+                    targetState = mode.test.id,
+                    transitionSpec = {
+                        slideInHorizontally(
+                            initialOffsetX = { fullWidth -> fullWidth },
+                            animationSpec = tween(durationMillis = 500)
+                        ) togetherWith slideOutHorizontally(
+                            targetOffsetX = { fullWidth -> -fullWidth },
+                            animationSpec = tween(durationMillis = 500)
+                        )
+                    },
+                    label = "ScreenContentAnimation"
+                ) {
+                    TestContent(mode, actioner)
+                }
             }
+            is SpeakingExerciseViewState.ScreenMode.Speaking -> {
+                AnimatedContent(
+                    targetState = mode.situation.id,
+                    transitionSpec = {
+                        slideInHorizontally(
+                            initialOffsetX = { fullWidth -> fullWidth },
+                            animationSpec = tween(durationMillis = 500)
+                        ) togetherWith slideOutHorizontally(
+                            targetOffsetX = { fullWidth -> -fullWidth },
+                            animationSpec = tween(durationMillis = 500)
+                        )
+                    },
+                    label = "ScreenContentAnimation"
+                ) {
+                    SpeakingContent(mode, actioner)
+                }
+            }
+            null -> {}
         }
-
         screenState.uiMessage?.let { uiMessage ->
             when (val message = uiMessage.message) {
                 is SpeakingExerciseUiMessage.RequestRecordAudio -> {
@@ -112,9 +141,11 @@ internal fun SpeakingExerciseScreen(
                     }
                     onMessageShown(uiMessage.id)
                 }
+
                 is SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation -> {
                     CorrectTestAnswer(uiMessage, message, onMessageShown, actioner)
                 }
+
                 is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
                     WrongTestAnswer(uiMessage, message, onMessageShown)
                 }
@@ -124,125 +155,139 @@ internal fun SpeakingExerciseScreen(
 }
 
 @Composable
-private fun ColumnScope.SpeakingContent(
+private fun SpeakingContent(
     speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
-    Text(
-        "\uD83E\uDDE0 Уяви ситуацію:",
-        style = LinguaTypography.h5,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.height(10.dp))
-    Text(
-        speakingMode.situation.situationText ?: "",
-        style = LinguaTypography.body3,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.height(24.dp))
-    Text(
-        "\uD83C\uDFAF Твоя задача:",
-        style = LinguaTypography.h5,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.height(10.dp))
-    Text(
-        speakingMode.situation.taskText,
-        style = LinguaTypography.body3,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.Companion.weight(0.5f))
+    Column(
+        modifier = Modifier
+            .padding(horizontal = 20.dp)
+            .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+            .fillMaxSize()
+    ) {
+        Text(
+            "\uD83E\uDDE0 Уяви ситуацію:",
+            style = LinguaTypography.h5,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.height(10.dp))
+        Text(
+            speakingMode.situation.situationText ?: "",
+            style = LinguaTypography.body3,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.height(24.dp))
+        Text(
+            "\uD83C\uDFAF Твоя задача:",
+            style = LinguaTypography.h5,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.height(10.dp))
+        Text(
+            speakingMode.situation.taskText,
+            style = LinguaTypography.body3,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.Companion.weight(0.5f))
 
-    RealtimeWaveform(
-        speakingMode.amplitude ?: 0,
-        speakingMode.isSpeaking,
-        modifier = Modifier.Companion
-            .align(Alignment.CenterHorizontally)
-            .fillMaxWidth()
-            .height(150.dp)
-    )
+        RealtimeWaveform(
+            speakingMode.amplitude ?: 0,
+            speakingMode.isSpeaking,
+            modifier = Modifier.Companion
+                .align(Alignment.CenterHorizontally)
+                .fillMaxWidth()
+                .height(150.dp)
+        )
 
-    Spacer(Modifier.Companion.weight(1f))
+        Spacer(Modifier.Companion.weight(1f))
 
-    if (speakingMode.isRecording) {
-        if (speakingMode.secondsTillFinish > 0) {
-            InactiveButton(text = "Кінець вправи через: ${speakingMode.secondsTillFinish}")
+        if (speakingMode.isRecording) {
+            if (speakingMode.secondsTillFinish > 0) {
+                InactiveButton(text = "Кінець вправи через: ${speakingMode.secondsTillFinish}")
+            } else {
+                InactiveButton(text = "Говори...")
+            }
         } else {
-            InactiveButton(text = "Говори...")
+            PrimaryButton(text = "Говорити") {
+                actioner(SpeakingExerciseAction.OnStartSpikingClicked)
+            }
         }
-    } else {
-        PrimaryButton(text = "Говорити") {
-            actioner(SpeakingExerciseAction.OnStartSpikingClicked)
-        }
-    }
 
-    Spacer(Modifier.padding(16.dp))
+        Spacer(Modifier.padding(16.dp))
+    }
 }
 
 @Composable
-private fun ColumnScope.TestContent(
+private fun TestContent(
     testMode: SpeakingExerciseViewState.ScreenMode.IntroTest,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
-    Text(
-        "\uD83E\uDDE0 Уяви ситуацію:",
-        style = LinguaTypography.h5,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.height(10.dp))
-    Text(
-        testMode.test.situationText ?: "",
-        style = LinguaTypography.body3,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.height(24.dp))
-    Text(
-        "\uD83C\uDFAF Твоя задача:",
-        style = LinguaTypography.h5,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.height(10.dp))
-    Text(
-        testMode.test.taskText,
-        style = LinguaTypography.body3,
-        color = MaterialTheme.colorScheme.typoPrimary()
-    )
-    Spacer(Modifier.weight(1f))
-    LazyColumn(
-        Modifier
-            .fillMaxWidth()
+    Column(
+        modifier = Modifier
+            .padding(horizontal = 20.dp)
+            .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+            .fillMaxSize()
     ) {
-        itemsIndexed(testMode.test.variants) { index, variant ->
-            if (index > 0) Spacer(Modifier.height(20.dp))
+        Text(
+            "\uD83E\uDDE0 Уяви ситуацію:",
+            style = LinguaTypography.h5,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.height(10.dp))
+        Text(
+            testMode.test.situationText ?: "",
+            style = LinguaTypography.body3,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.height(24.dp))
+        Text(
+            "\uD83C\uDFAF Твоя задача:",
+            style = LinguaTypography.h5,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.height(10.dp))
+        Text(
+            testMode.test.taskText,
+            style = LinguaTypography.body3,
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+        Spacer(Modifier.weight(1f))
+        LazyColumn(
+            Modifier
+                .fillMaxWidth()
+        ) {
+            itemsIndexed(testMode.test.variants) { index, variant ->
+                if (index > 0) Spacer(Modifier.height(20.dp))
 
-            Text(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .border(
-                        1.5.dp, if (variant == testMode.chosenVariant) {
-                            KellyGreen
-                        } else {
-                            MaterialTheme.colorScheme.onBackgroundDark()
-                        }, RoundedCornerShape(12.dp)
-                    )
-                    .padding(16.dp)
-                    .clickable { actioner(SpeakingExerciseAction.OnVariantChosen(variant)) },
-                text = variant.variantText,
-                color = MaterialTheme.colorScheme.typoPrimary(),
-                style = LinguaTypography.subtitle3
-            )
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .border(
+                            1.5.dp, if (variant == testMode.chosenVariant) {
+                                KellyGreen
+                            } else {
+                                MaterialTheme.colorScheme.onBackgroundDark()
+                            }, RoundedCornerShape(12.dp)
+                        )
+                        .padding(16.dp)
+                        .clickable { actioner(SpeakingExerciseAction.OnVariantChosen(variant)) },
+                    text = variant.variantText,
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.subtitle3
+                )
+            }
         }
-    }
-    Spacer(Modifier.weight(1f))
-    if (testMode.chosenVariant != null) {
-        PrimaryButton(text = "Перевірити") {
-            actioner(SpeakingExerciseAction.OnCheckTestVariantClicked)
+        Spacer(Modifier.weight(1f))
+        if (testMode.chosenVariant != null) {
+            PrimaryButton(text = "Перевірити") {
+                actioner(SpeakingExerciseAction.OnCheckTestVariantClicked)
+            }
+        } else {
+            InactiveButton(text = "Перевірити")
         }
-    } else {
-        InactiveButton(text = "Перевірити")
-    }
 
-    Spacer(Modifier.padding(16.dp))
+        Spacer(Modifier.padding(16.dp))
+    }
 }
 
 
@@ -394,3 +439,8 @@ private fun SpeakingExercisePreview() {
     }
 }
 
+sealed class ScreenKey {
+    data class Intro(val id: Long) : ScreenKey()
+    data class Speaking(val id: Long) : ScreenKey()
+    object Empty : ScreenKey()
+}
