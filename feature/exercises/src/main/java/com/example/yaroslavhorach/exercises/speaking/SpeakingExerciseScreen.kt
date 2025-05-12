@@ -55,11 +55,14 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.common.helpers.PermissionManager
 import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.designsystem.theme.Avocado
+import com.example.yaroslavhorach.designsystem.theme.Black_3
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.Red
+import com.example.yaroslavhorach.designsystem.theme.SonicSilver
 import com.example.yaroslavhorach.designsystem.theme.UeRed
+import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
@@ -67,9 +70,12 @@ import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.RealtimeWaveform
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.StaticTooltip
+import com.example.yaroslavhorach.designsystem.theme.components.TextButton
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
+import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
@@ -100,7 +106,7 @@ internal fun SpeakingExerciseScreen(
     screenState: SpeakingExerciseViewState,
     permissionManager: PermissionManager,
     onMessageShown: (id: Long) -> Unit,
-    actioner: (SpeakingExerciseAction) -> Unit,
+    actioner: (SpeakingExerciseAction) -> Unit
 ) {
     Box(Modifier.fillMaxSize()) {
         TopBar(screenState, actioner)
@@ -143,11 +149,11 @@ internal fun SpeakingExerciseScreen(
                             label = "ScreenContentAnimation"
                         ) {
                             SpeakingContent(screenState.btnTooltipText, mode, actioner)
+                            SpeakingResult(state = mode, actioner)
                         }
                     }
                     null -> {}
                 }
-
                 screenState.uiMessage?.let { uiMessage ->
                     when (val message = uiMessage.message) {
                         is SpeakingExerciseUiMessage.RequestRecordAudio -> {
@@ -258,6 +264,13 @@ private fun SpeakingContent(
         Spacer(Modifier.Companion.weight(1f))
 
         if (speakingMode.isRecording) {
+            if (speakingMode.isStopRecordingBtnVisible){
+                TextButton(textColor = MaterialTheme.colorScheme.typoDisabled(), text = "Закінчити Говорити", onClick = {
+                    actioner(SpeakingExerciseAction.OnStopSpeakingClicked)
+                })
+                Spacer(Modifier.height(16.dp))
+            }
+
             if (speakingMode.secondsTillFinish > 0) {
                 InactiveButton(text = "Кінець вправи через: ${speakingMode.secondsTillFinish}")
             } else {
@@ -276,7 +289,7 @@ private fun SpeakingContent(
                 ) {
                     Text(
                         text = tooltipText.asString(),
-                        color = MaterialTheme.colorScheme.typoPrimary(),
+                        color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.subtitle4
                     )
                 }
@@ -483,6 +496,135 @@ private fun BoxScope.CorrectTestAnswer(
                     isVisible.value = false
                     onMessageShown(uiMessage.id)
                     actioner(SpeakingExerciseAction.OnNextTestClicked)
+                }
+                Spacer(Modifier.height(16.dp))
+            }
+        }
+    }
+}
+
+@Composable
+private fun BoxScope.SpeakingResult(
+    state: SpeakingExerciseViewState.ScreenMode.Speaking,
+    actioner: (SpeakingExerciseAction) -> Unit
+) {
+    AnimatedVisibility(
+        visible = state.result.isVisible,
+        enter = slideInVertically(
+            initialOffsetY = { fullHeight -> fullHeight },
+            animationSpec = tween(durationMillis = 300)
+        ),
+        exit = slideOutVertically(
+            targetOffsetY = { fullHeight -> fullHeight },
+            animationSpec = tween(durationMillis = 1000)
+        ),
+        modifier = Modifier.Companion.align(Alignment.BottomCenter)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .pointerInput(Unit) {
+                    awaitPointerEventScope {
+                        while (true) {
+                            awaitPointerEvent()
+                        }
+                    }
+                }
+        ) {
+            Column(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .fillMaxWidth()
+                    .background(color = KellyGreen, shape = RoundedCornerShape(14.dp))
+                    .border(2.dp, color = Avocado, shape = RoundedCornerShape(14.dp))
+                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom))
+                    .padding(horizontal = 20.dp)
+            ) {
+                Spacer(Modifier.height(20.dp))
+                Text(
+                    text = "Класна спроба!",
+                    style = LinguaTypography.h5,
+                    color = Color.White
+                )
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    text = "Послухай себе — і якщо хочеш, зроби ще краще \uD83D\uDE09",
+                    style = LinguaTypography.subtitle3,
+                    color = Color.White
+                )
+                Spacer(Modifier.height(20.dp))
+                BoxWithStripes(
+                    shadowOffset = 0.dp,
+                    stripeColor = Black_3,
+                    background = MaterialTheme.colorScheme.onBackground,
+                    shape = RoundedCornerShape(16.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(80.dp)
+                        .border(
+                            width = 2.dp,
+                            color = MaterialTheme.colorScheme.onBackgroundDark(),
+                            RoundedCornerShape(16.dp)
+                        )
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(horizontal = 20.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        when{
+                            state.result.isPlayingRecordPaused -> {
+                                Icon(
+                                    painter = painterResource(LinguaIcons.IcPlayCircle),
+                                    modifier = Modifier
+                                        .size(50.dp)
+                                        .clickable { actioner(SpeakingExerciseAction.OnPlayRecordClicked) },
+                                    contentDescription = "",
+                                    tint = SonicSilver
+                                )
+                            }
+                            state.result.isPlaying -> {
+                                Icon(
+                                    painter = painterResource(LinguaIcons.IcPauseCircle),
+                                    modifier = Modifier
+                                        .size(50.dp)
+                                        .clickable { actioner(SpeakingExerciseAction.OnPauseRecordClicked) },
+                                    contentDescription = "",
+                                    tint = SonicSilver
+                                )
+                            }
+                            else -> {
+                                Icon(
+                                    painter = painterResource(LinguaIcons.IcPlayCircle),
+                                    modifier = Modifier
+                                        .size(50.dp)
+                                        .clickable { actioner(SpeakingExerciseAction.OnPlayRecordClicked) },
+                                    contentDescription = "",
+                                    tint = SonicSilver
+                                )
+                            }
+                        }
+
+                        Spacer(Modifier.width(16.dp))
+                        LinguaProgressBar(
+                            state.result.playProgress,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(18.dp),
+                            progressColor = SonicSilver,
+                            progressShadow = SonicSilver,
+                            minValue = 0f
+                        )
+                    }
+                }
+                Spacer(Modifier.height(20.dp))
+                TextButton(text = "СПРОБУВАТИ ЗНОВУ", textColor = Color.White, onClick = {
+                    actioner(SpeakingExerciseAction.OnTryAgainSituationClicked)
+                })
+                Spacer(Modifier.height(20.dp))
+                SecondaryButton(text = "ДАЛІ", textColor = KellyGreen) {
+                    actioner(SpeakingExerciseAction.OnNextSituationClicked)
                 }
                 Spacer(Modifier.height(16.dp))
             }

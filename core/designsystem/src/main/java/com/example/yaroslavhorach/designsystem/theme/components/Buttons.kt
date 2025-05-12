@@ -1,5 +1,7 @@
 package com.example.yaroslavhorach.designsystem.theme.components
 
+import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Spacer
@@ -14,6 +16,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -21,15 +24,16 @@ import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.changedToUp
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.example.yaroslavhorach.designsystem.theme.Gainsboro
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
-import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import kotlin.math.roundToInt
 
 @Composable
@@ -79,7 +83,7 @@ fun SecondaryButton(
             modifier = Modifier
                 .fillMaxSize()
                 .clip(RoundedCornerShape(8.dp))
-                .background(color = Gainsboro)
+                .background(color = MaterialTheme.colorScheme.onBackgroundDark())
         )
 
         Spacer(
@@ -169,6 +173,66 @@ fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
     }
 }
 
+@Composable
+fun TextButton(
+    text: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    pressOffset: Dp = 2.dp,
+    textColor: Color = MaterialTheme.colorScheme.primary,
+    style: TextStyle =  LinguaTypography.subtitle3,
+) {
+    val isPressed = remember { mutableStateOf(false) }
+    val boxSize = remember { mutableStateOf(IntSize.Zero) }
+
+    val offsetY = animateDpAsState(
+        targetValue = if (isPressed.value) pressOffset else 0.dp,
+        animationSpec = tween(durationMillis = 100),
+        label = "PressOffsetAnim"
+    )
+
+    Box(
+        modifier = modifier
+            .onSizeChanged { boxSize.value = it }
+            .pointerInput(Unit) {
+                awaitPointerEventScope {
+                    while (true) {
+                        val event = awaitPointerEvent()
+                        val touch = event.changes.first()
+
+                        val position = touch.position
+                        val isInside = position.x in 0f..boxSize.value.width.toFloat() &&
+                                position.y in 0f..boxSize.value.height.toFloat()
+
+                        when {
+                            touch.changedToDown() && isInside -> {
+                                isPressed.value = true
+                            }
+                            touch.changedToUp() -> {
+                                if (isInside) {
+                                    onClick()
+                                }
+                                isPressed.value = false
+                            }
+                            !isInside && touch.pressed -> {
+                                isPressed.value = false
+                            }
+                        }
+                    }
+                }
+            }
+            .offset(y = offsetY.value)
+            .fillMaxWidth()
+            .height(45.dp)
+    ) {
+        Text(
+            text = text.uppercase(),
+            color = textColor,
+            style = style,
+            modifier = Modifier.align(Alignment.Center)
+        )
+    }
+}
 
 @Composable
 fun InactiveButton(modifier: Modifier = Modifier, text: String) {

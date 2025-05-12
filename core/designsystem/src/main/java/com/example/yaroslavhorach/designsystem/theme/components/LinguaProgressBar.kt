@@ -1,13 +1,14 @@
 package com.example.yaroslavhorach.designsystem.theme.components
 
+import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
-import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
@@ -24,13 +25,24 @@ fun LinguaProgressBar(
     backgroundColor: Color = Gainsboro,
     progressColor: Color = KellyGreen,
     progressShadow: Color = Menthol,
+    minValue: Float = 0.1f,
     content: @Composable BoxScope.() -> Unit = {}
 ) {
-    val animatedProgress by animateFloatAsState(
-        targetValue = progress.coerceIn(0f, 1f),
-        animationSpec = tween(durationMillis = 500, easing = FastOutSlowInEasing),
-        label = "progress-animation"
-    )
+    val animatedProgress = remember { Animatable(progress.coerceIn(0f, 1f)) }
+
+    LaunchedEffect(progress) {
+        val target = progress.coerceIn(0f, 1f)
+        val current = animatedProgress.value
+
+        if (current == 1f && target < 0.1f) {
+            animatedProgress.snapTo(0f)
+        } else {
+            animatedProgress.animateTo(
+                target,
+                animationSpec = tween(durationMillis = 500, easing = FastOutSlowInEasing)
+            )
+        }
+    }
 
     Box(modifier = modifier) {
         Canvas(modifier = Modifier.matchParentSize()) {
@@ -42,7 +54,7 @@ fun LinguaProgressBar(
                 size = size
             )
 
-            val progressWidth = size.width * animatedProgress.coerceAtLeast(0.1f)
+            val progressWidth = size.width * animatedProgress.value.coerceAtLeast(minValue)
 
             drawRoundRect(
                 color = progressColor,
@@ -50,11 +62,19 @@ fun LinguaProgressBar(
                 size = Size(width = progressWidth, height = size.height)
             )
 
+            val shadowPaddingX = barHeight * 0.5f
+
             drawRoundRect(
                 color = progressShadow,
                 cornerRadius = CornerRadius(barHeight / 2, barHeight / 2),
-                size = Size(width = progressWidth - barHeight, height = size.height * 0.3f),
-                topLeft = Offset(barHeight * 0.5f, barHeight * 0.2f)
+                size = Size(
+                    width = (progressWidth - shadowPaddingX * 2).coerceAtLeast(0f),
+                    height = size.height * 0.3f
+                ),
+                topLeft = Offset(
+                    x = shadowPaddingX,
+                    y = size.height * 0.2f
+                )
             )
         }
 

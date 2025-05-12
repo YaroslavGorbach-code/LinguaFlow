@@ -2,14 +2,11 @@ package com.example.yaroslavhorach.designsystem.theme.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -21,22 +18,20 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.yaroslavhorach.designsystem.theme.Black_35
 import com.example.yaroslavhorach.designsystem.theme.OrangeDark
 import com.example.yaroslavhorach.designsystem.theme.OrangeLight
 import com.example.yaroslavhorach.designsystem.theme.White_10
-import com.example.yaroslavhorach.ui.utils.conditional
 
 @Composable
-fun BoxWithLines(
+fun BoxWithStripes(
     modifier: Modifier,
+    stripeColor: Color = White_10,
     stripeWidth: Dp = 60.dp,
     stripeSpacing: Dp = 150.dp,
     background: Color = OrangeLight,
     backgroundShadow: Color = OrangeDark,
     shadowOffset: Dp = (-3).dp,
     shape: Shape = RoundedCornerShape(12.dp),
-    isActive: Boolean = true,
     content: @Composable BoxScope.() -> Unit
 ) {
     Box(
@@ -59,7 +54,7 @@ fun BoxWithLines(
                 while (startX < size.width + stripeLength) {
                     rotate(rotationAngle, pivot = Offset(startX, 0f)) {
                         drawRect(
-                            color = White_10,
+                            color = stripeColor,
                             topLeft = Offset(startX, -stripeLength / 2),
                             size = Size(stripeWidth.toPx(), stripeLength)
                         )

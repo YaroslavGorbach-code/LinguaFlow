@@ -40,9 +40,17 @@ data class SpeakingExerciseViewState(
             val isRecording: Boolean = false,
             val isSpeaking: Boolean = false,
             val secondsTillFinish: Int = 0,
+            val isStopRecordingBtnVisible: Boolean = false,
+            val result: Result = Result()
         ) : ScreenMode() {
-            companion object {
-                const val MAX_PROGRESS = 3
+
+            data class Result(
+                val isVisible: Boolean = false,
+                val playProgress: Float = 0f,
+                val isPlayingRecordPaused: Boolean = false,
+            ) {
+                val isPlaying
+                    get() = playProgress > 0f && playProgress < 1f
             }
         }
     }

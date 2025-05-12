@@ -62,7 +62,7 @@ import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.OrangeDark
 import com.example.yaroslavhorach.designsystem.theme.White
-import com.example.yaroslavhorach.designsystem.theme.components.BoxWithLines
+import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.components.FloatingTooltip
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
@@ -213,7 +213,7 @@ private fun StartTooltip(position: Offset) {
 
 @Composable
 private fun BlockDescription(modifier: Modifier = Modifier) {
-    BoxWithLines(
+    BoxWithStripes(
         modifier = modifier
             .padding(top = 20.dp)
             .fillMaxWidth()
@@ -266,7 +266,7 @@ private fun Exercise(
     val offset = if (moveElementRight) exerciseSize / 1.5f else -exerciseSize / 1.5f
     Row {
         Box {
-            BoxWithLines(
+            BoxWithStripes(
                 modifier = Modifier
                     .offset(x = offset)
                     .size(exerciseSize)
