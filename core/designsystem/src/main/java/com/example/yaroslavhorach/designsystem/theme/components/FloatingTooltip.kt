@@ -53,7 +53,6 @@ fun FloatingTooltip(
     cornerRadius: Dp = 8.dp,
     triangleHeight: Dp = 10.dp,
     triangleWidth: Dp = 20.dp,
-    triangleAlignment: Alignment.Horizontal? = null,
     contentPadding: Dp = 12.dp,
     bottomPadding: Dp = 12.dp,
     paddingHorizontal: Dp = 20.dp,

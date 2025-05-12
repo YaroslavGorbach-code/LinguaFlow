@@ -66,12 +66,14 @@ import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBa
 import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.RealtimeWaveform
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
+import com.example.yaroslavhorach.designsystem.theme.components.StaticTooltip
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
+import com.example.yaroslavhorach.ui.UiText
 
 @Composable
 internal fun SpeakingExerciseRoute(
@@ -140,7 +142,7 @@ internal fun SpeakingExerciseScreen(
                             },
                             label = "ScreenContentAnimation"
                         ) {
-                            SpeakingContent(mode, actioner)
+                            SpeakingContent(screenState.btnTooltipText, mode, actioner)
                         }
                     }
                     null -> {}
@@ -209,6 +211,7 @@ private fun TopBar(screenState: SpeakingExerciseViewState, actioner: (SpeakingEx
 
 @Composable
 private fun SpeakingContent(
+    tooltipText: UiText,
     speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
@@ -261,6 +264,24 @@ private fun SpeakingContent(
                 InactiveButton(text = "Говори...")
             }
         } else {
+            if (tooltipText.asString().isEmpty().not()) {
+                StaticTooltip(
+                    enableFloatAnimation = true,
+                    backgroundColor = MaterialTheme.colorScheme.background,
+                    borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+                    triangleAlignment = Alignment.Start,
+                    paddingHorizontal = 20.dp,
+                    contentPadding = 16.dp,
+                    cornerRadius = 12.dp,
+                ) {
+                    Text(
+                        text = tooltipText.asString(),
+                        color = MaterialTheme.colorScheme.typoPrimary(),
+                        style = LinguaTypography.subtitle4
+                    )
+                }
+            }
+            Spacer(Modifier.height(12.dp))
             PrimaryButton(text = "Говорити") {
                 actioner(SpeakingExerciseAction.OnStartSpikingClicked)
             }
@@ -476,24 +497,11 @@ private fun SpeakingExercisePreview() {
         LinguaTheme {
             Row {
                 SpeakingExerciseScreen(
-                    SpeakingExerciseViewState.PreviewTest,
-                    PermissionManager(LocalContext.current),
-                    {},
-                    {})
-
-                SpeakingExerciseScreen(
-                    SpeakingExerciseViewState.PreviewTest,
+                    SpeakingExerciseViewState.PreviewSpeaking,
                     PermissionManager(LocalContext.current),
                     {},
                     {})
             }
-
         }
     }
-}
-
-sealed class ScreenKey {
-    data class Intro(val id: Long) : ScreenKey()
-    data class Speaking(val id: Long) : ScreenKey()
-    object Empty : ScreenKey()
 }

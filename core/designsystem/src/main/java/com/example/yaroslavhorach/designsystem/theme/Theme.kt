@@ -26,9 +26,9 @@ fun ColorScheme.typoSecondary() = if (isSystemInDarkTheme()) DavysGrey else Davy
 @Composable
 fun ColorScheme.typoDisabled() = if (isSystemInDarkTheme()) DarkGray else DarkGray
 @Composable
-fun ColorScheme.controlPrimaryTypo() = if (isSystemInDarkTheme()) White else White
+fun ColorScheme.typoControlPrimary() = if (isSystemInDarkTheme()) White else White
 @Composable
-fun ColorScheme.controlSecondaryTypo() = if (isSystemInDarkTheme()) White_90 else White_90
+fun ColorScheme.typoControlSecondary() = if (isSystemInDarkTheme()) White_90 else White_90
 @Composable
 fun ColorScheme.divider() = if (isSystemInDarkTheme()) Black10 else Black10
 @Composable

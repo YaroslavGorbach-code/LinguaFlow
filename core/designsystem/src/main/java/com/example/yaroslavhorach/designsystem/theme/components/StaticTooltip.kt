@@ -37,7 +37,7 @@ fun StaticTooltip(
     cornerRadius: Dp = 8.dp,
     triangleHeight: Dp = 10.dp,
     triangleWidth: Dp = 20.dp,
-    triangleAlignment: Alignment.Horizontal? = null,
+    triangleAlignment: Alignment.Horizontal? = Alignment.CenterHorizontally,
     contentPadding: Dp = 12.dp,
     paddingHorizontal: Dp = 20.dp,
     enableFloatAnimation: Boolean = false,
@@ -55,9 +55,9 @@ fun StaticTooltip(
             animationSpec = infiniteRepeatable(
                 animation = tween(1500, easing = LinearEasing),
                 repeatMode = RepeatMode.Reverse
-            ), label = "YOffset"
+            ),
+            label = "YOffset"
         )
-
 
     val animatedModifier = if (enableFloatAnimation)
         modifier.offset { IntOffset(0, offsetY.roundToInt()) }
@@ -72,33 +72,36 @@ fun StaticTooltip(
                 val height = size.height
                 val rectBottom = height - triangleHeightPx
 
-                // Calculate start point of triangle
-                val triangleStartPx = (width - triangleWidthPx) / 2f
+                // Calculate triangle horizontal position based on alignment
+                val triangleStartPx = when (triangleAlignment) {
+                    Alignment.Start -> (16.dp).toPx()
+                    Alignment.End -> (width - triangleWidthPx) - (16.dp).toPx()
+                    else -> (width - triangleWidthPx) / 2f // center by default
+                }
 
                 val triangleEnd = triangleStartPx + triangleWidthPx
-
 
                 val path = Path().apply {
                     moveTo(cornerRadiusPx, 0f)
 
-                    // Top
+                    // Top edge
                     lineTo(width - cornerRadiusPx, 0f)
                     quadraticTo(width, 0f, width, cornerRadiusPx)
 
-                    // Right
+                    // Right edge
                     lineTo(width, rectBottom - cornerRadiusPx)
                     quadraticTo(width, rectBottom, width - cornerRadiusPx, rectBottom)
 
-                    // Bottom till triangle
+                    // Bottom edge till triangle
                     lineTo(triangleEnd, rectBottom)
                     lineTo(triangleStartPx + triangleWidthPx / 2f, height)
                     lineTo(triangleStartPx, rectBottom)
 
-                    // left bottom
+                    // Left bottom
                     lineTo(cornerRadiusPx, rectBottom)
                     quadraticTo(0f, rectBottom, 0f, rectBottom - cornerRadiusPx)
 
-                    // left
+                    // Left edge
                     lineTo(0f, cornerRadiusPx)
                     quadraticTo(0f, 0f, cornerRadiusPx, 0f)
 
@@ -112,7 +115,6 @@ fun StaticTooltip(
                 this.alpha = alpha
             }
             .padding(bottom = triangleHeight)
-
     ) {
         Column(
             modifier = Modifier

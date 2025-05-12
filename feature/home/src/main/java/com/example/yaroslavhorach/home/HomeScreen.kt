@@ -67,8 +67,8 @@ import com.example.yaroslavhorach.designsystem.theme.components.FloatingTooltip
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
-import com.example.yaroslavhorach.designsystem.theme.controlPrimaryTypo
-import com.example.yaroslavhorach.designsystem.theme.controlSecondaryTypo
+import com.example.yaroslavhorach.designsystem.theme.typoControlPrimary
+import com.example.yaroslavhorach.designsystem.theme.typoControlSecondary
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Cup
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
@@ -224,14 +224,14 @@ private fun BlockDescription(modifier: Modifier = Modifier) {
             Text(
                 modifier = Modifier,
                 text = "Блок 1: Small Talk & Знайомство",
-                color = MaterialTheme.colorScheme.controlPrimaryTypo(),
+                color = MaterialTheme.colorScheme.typoControlPrimary(),
                 style = LinguaTypography.h5
             )
             Spacer(Modifier.height(4.dp))
             Text(
                 modifier = Modifier,
                 text = "Навчись легко починати розмову, підтримувати бесіду і знайомитись з новими людьми",
-                color = MaterialTheme.colorScheme.controlSecondaryTypo(),
+                color = MaterialTheme.colorScheme.typoControlSecondary(),
                 style = LinguaTypography.subtitle4
             )
             Spacer(Modifier.height(14.dp))
@@ -347,27 +347,27 @@ private fun DescriptionTooltip(
                         modifier = Modifier.align(Alignment.CenterVertically),
                         text = stringResource(exercise.skillNameResId),
                         style = LinguaTypography.body4,
-                        color = MaterialTheme.colorScheme.controlPrimaryTypo()
+                        color = MaterialTheme.colorScheme.typoControlPrimary()
                     )
                     Spacer(Modifier.weight(1f))
                     Text(
                         modifier = Modifier.align(Alignment.CenterVertically),
                         text = exercise.progress,
                         style = LinguaTypography.subtitle2,
-                        color = MaterialTheme.colorScheme.controlPrimaryTypo()
+                        color = MaterialTheme.colorScheme.typoControlPrimary()
                     )
                 }
                 Spacer(Modifier.height(12.dp))
                 Text(
                     text = stringResource(exercise.nameResId),
                     style = LinguaTypography.h4,
-                    color = MaterialTheme.colorScheme.controlPrimaryTypo()
+                    color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
                     text = stringResource(exercise.descriptionResId),
                     style = LinguaTypography.body4,
-                    color = MaterialTheme.colorScheme.controlPrimaryTypo()
+                    color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(16.dp))
                 SecondaryButton(text = "ПОЧАТИ", onClick = {

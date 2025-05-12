@@ -5,8 +5,10 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.example.yaroslavhorach.domain.exercise_content.model.Situation
 import com.example.yaroslavhorach.domain.exercise_content.model.Test
+import com.example.yaroslavhorach.ui.UiText
 
 data class SpeakingExerciseViewState(
+    val btnTooltipText: UiText = UiText.Empty,
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
     val mode: ScreenMode? = null,
     val progress: Float = 0f,
