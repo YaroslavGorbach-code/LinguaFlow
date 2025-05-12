@@ -33,6 +33,8 @@ fun LingoNavHost(
                 }
             }
         })
-        speakingExerciseScreen()
+        speakingExerciseScreen(onNavigateBack = {
+            navController.popBackStack()
+        })
     }
 }

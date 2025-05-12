@@ -1,14 +1,26 @@
 package com.example.yaroslavhorach.exercises.speaking.model
 
 import com.example.yaroslavhorach.common.utill.UiMessage
+import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.example.yaroslavhorach.domain.exercise_content.model.Situation
 import com.example.yaroslavhorach.domain.exercise_content.model.Test
 
 data class SpeakingExerciseViewState(
+    val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
     val mode: ScreenMode? = null,
+    val progress: Float = 0f,
     val uiMessage: UiMessage<SpeakingExerciseUiMessage>? = null
 ) {
+    val topBarBgRes: Int
+        get() = when (exerciseBlock) {
+            ExerciseBlock.ONE -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+            ExerciseBlock.TWO -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+            ExerciseBlock.THREE -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+            ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+            ExerciseBlock.FIVE -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+            ExerciseBlock.SIX -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+        }
 
     sealed class ScreenMode {
         data class IntroTest(

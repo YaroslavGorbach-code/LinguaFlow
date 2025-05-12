@@ -7,4 +7,5 @@ sealed class SpeakingExerciseAction {
     data object OnNextTestClicked : SpeakingExerciseAction()
     data object OnStartSpikingClicked : SpeakingExerciseAction()
     data object OnCheckTestVariantClicked : SpeakingExerciseAction()
+    data object OnBackClicked : SpeakingExerciseAction()
 }

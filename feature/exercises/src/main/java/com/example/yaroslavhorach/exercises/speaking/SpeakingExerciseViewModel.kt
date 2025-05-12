@@ -22,6 +22,7 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
@@ -47,31 +48,39 @@ class SpeakingExerciseViewModel @Inject constructor(
 
     private val mode: MutableStateFlow<SpeakingExerciseViewState.ScreenMode?> = MutableStateFlow(null)
 
+    private val overAllMaxProgress: MutableStateFlow<Int> = MutableStateFlow(1)
+    private val overAllProgress: MutableStateFlow<Int> = MutableStateFlow(0)
+    private val ownerAllProgressValue = combine(overAllMaxProgress, overAllProgress) { overAllMaxProgress, overAllProgress ->
+            (overAllProgress.toFloat() / overAllMaxProgress.toFloat())
+        }
     private var tests: Queue<Test> = ArrayDeque()
 
     override val state: StateFlow<SpeakingExerciseViewState> = combine(
-            recorder.isRecordingFlow,
-            recorder.isSpeakingFlow,
-            recorder.amplitudeFlow,
-            recorder.secondsLeftFlow,
-            mode,
-            uiMessageManager.message
-        ) { isRecording, isSpeaking, amplitude, secondsTillFinish, mode, messages ->
-            SpeakingExerciseViewState(
-                mode = when(mode){
-                    is SpeakingExerciseViewState.ScreenMode.IntroTest -> mode
-                    is SpeakingExerciseViewState.ScreenMode.Speaking -> mode.copy(
-                        isRecording = isRecording,
-                        isSpeaking = isSpeaking,
-                        amplitude = amplitude,
-                        secondsTillFinish = secondsTillFinish,
-                    )
-                    null -> null
-                },
-                uiMessage = messages,
-            )
-        }.stateIn(
-            scope = viewModelScope,
+        recorder.isRecordingFlow,
+        recorder.isSpeakingFlow,
+        recorder.amplitudeFlow,
+        recorder.secondsLeftFlow,
+        mode,
+        ownerAllProgressValue,
+        uiMessageManager.message
+    ) { isRecording, isSpeaking, amplitude, secondsTillFinish, mode, progress, messages ->
+        SpeakingExerciseViewState(
+            mode = when (mode) {
+                is SpeakingExerciseViewState.ScreenMode.IntroTest -> mode
+                is SpeakingExerciseViewState.ScreenMode.Speaking -> mode.copy(
+                    isRecording = isRecording,
+                    isSpeaking = isSpeaking,
+                    amplitude = amplitude,
+                    secondsTillFinish = secondsTillFinish,
+                )
+
+                null -> null
+            },
+            progress = progress,
+            uiMessage = messages,
+        )
+    }.stateIn(
+        scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5000),
             initialValue = SpeakingExerciseViewState.Empty
         )
@@ -103,6 +112,7 @@ class SpeakingExerciseViewModel @Inject constructor(
                             setUpSpeakingModeAfterTests(exerciseContentRepository)
                         }
                     }
+                    else -> error("Action $event is not handled")
                 }
             }
             .launchIn(viewModelScope)
@@ -119,7 +129,6 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     private suspend fun checkTestAnswer() {
-
         when (val mode = mode.value) {
             is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
                 if (mode.chosenVariant?.isCorrect == true) {
@@ -139,7 +148,9 @@ class SpeakingExerciseViewModel @Inject constructor(
                         )
                     )
                 }
+
                 val progress = if (mode.chosenVariant?.isCorrect == true) mode.progress.inc() else mode.progress
+                overAllProgress.value = progress
 
                 this.mode.value = mode.copy(chosenVariant = null, progress = progress)
             }
@@ -160,7 +171,7 @@ class SpeakingExerciseViewModel @Inject constructor(
         viewModelScope.launch {
             val situation = exerciseContentRepository.getSituation(currentExercise!!.exerciseName)
 
-            mode.value = SpeakingExerciseViewState.ScreenMode.Speaking(situation, maxProgress = 2)
+            mode.value = SpeakingExerciseViewState.ScreenMode.Speaking(situation, maxProgress = AFTER_TEST_SPEAKING_MAX_PROGRESS)
         }
 
     private fun setUpInitialMode(
@@ -174,17 +185,32 @@ class SpeakingExerciseViewModel @Inject constructor(
                 tests = ArrayDeque(exerciseContentRepository.getTests(currentExercise!!.exerciseName))
 
                 if (tests.isEmpty().not()) {
-                    SpeakingExerciseViewState.ScreenMode.IntroTest(tests.poll()!!, 0, tests.size + 1)
+                    overAllMaxProgress.value = tests.size + AFTER_TEST_SPEAKING_MAX_PROGRESS
+
+                    SpeakingExerciseViewState.ScreenMode.IntroTest(tests.poll()!!, 0, tests.size)
                 } else {
+                    overAllMaxProgress.value = SPEAKING_MAX_PROGRESS
+
                     SpeakingExerciseViewState.ScreenMode.Speaking(
                         exerciseContentRepository.getSituation(
                             currentExercise!!.exerciseName
-                        )
+                        ),
+                        maxProgress = SPEAKING_MAX_PROGRESS
                     )
                 }
             } else {
-                SpeakingExerciseViewState.ScreenMode.Speaking(exerciseContentRepository.getSituation(currentExercise!!.exerciseName))
+                overAllMaxProgress.value = SPEAKING_MAX_PROGRESS
+
+                SpeakingExerciseViewState.ScreenMode.Speaking(
+                    exerciseContentRepository.getSituation(currentExercise!!.exerciseName),
+                    maxProgress = SPEAKING_MAX_PROGRESS
+                )
             }
         }
+    }
+
+    companion object {
+       const val AFTER_TEST_SPEAKING_MAX_PROGRESS = 2
+       const val SPEAKING_MAX_PROGRESS = 3
     }
 }

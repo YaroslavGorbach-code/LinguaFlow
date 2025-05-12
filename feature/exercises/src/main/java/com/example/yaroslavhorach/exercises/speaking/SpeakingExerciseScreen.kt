@@ -10,6 +10,7 @@ import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -26,10 +27,13 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,7 +45,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -56,9 +62,11 @@ import com.example.yaroslavhorach.designsystem.theme.Red
 import com.example.yaroslavhorach.designsystem.theme.UeRed
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaBackground
+import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.RealtimeWaveform
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
+import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
@@ -68,6 +76,7 @@ import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewS
 @Composable
 internal fun SpeakingExerciseRoute(
     viewModel: SpeakingExerciseViewModel = hiltViewModel(),
+    onNavigateBack: () -> Unit
 ) {
     val speakingExerciseViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -77,6 +86,7 @@ internal fun SpeakingExerciseRoute(
         permissionManager = viewModel.permissionManager,
         actioner = { action ->
             when (action) {
+                SpeakingExerciseAction.OnBackClicked -> onNavigateBack()
                 else -> viewModel.submitAction(action)
             }
         })
@@ -90,66 +100,109 @@ internal fun SpeakingExerciseScreen(
     onMessageShown: (id: Long) -> Unit,
     actioner: (SpeakingExerciseAction) -> Unit,
 ) {
-    Box(
-        Modifier
-            .fillMaxSize()
-    ) {
-        when (val mode = screenState.mode) {
-            is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
-                AnimatedContent(
-                    targetState = mode.test.id,
-                    transitionSpec = {
-                        slideInHorizontally(
-                            initialOffsetX = { fullWidth -> fullWidth },
-                            animationSpec = tween(durationMillis = 500)
-                        ) togetherWith slideOutHorizontally(
-                            targetOffsetX = { fullWidth -> -fullWidth },
-                            animationSpec = tween(durationMillis = 500)
-                        )
-                    },
-                    label = "ScreenContentAnimation"
-                ) {
-                    TestContent(mode, actioner)
-                }
-            }
-            is SpeakingExerciseViewState.ScreenMode.Speaking -> {
-                AnimatedContent(
-                    targetState = mode.situation.id,
-                    transitionSpec = {
-                        slideInHorizontally(
-                            initialOffsetX = { fullWidth -> fullWidth },
-                            animationSpec = tween(durationMillis = 500)
-                        ) togetherWith slideOutHorizontally(
-                            targetOffsetX = { fullWidth -> -fullWidth },
-                            animationSpec = tween(durationMillis = 500)
-                        )
-                    },
-                    label = "ScreenContentAnimation"
-                ) {
-                    SpeakingContent(mode, actioner)
-                }
-            }
-            null -> {}
-        }
-        screenState.uiMessage?.let { uiMessage ->
-            when (val message = uiMessage.message) {
-                is SpeakingExerciseUiMessage.RequestRecordAudio -> {
-                    permissionManager.AskPermission(Manifest.permission.RECORD_AUDIO) { isGranted ->
-                        if (isGranted) {
-                            actioner(SpeakingExerciseAction.OnStartSpikingClicked)
+    Box(Modifier.fillMaxSize()) {
+        TopBar(screenState, actioner)
+        Box(
+            modifier = Modifier
+                .padding(top = 150.dp)
+                .fillMaxSize()
+                .background(MaterialTheme.colorScheme.background, RoundedCornerShape(16.dp))
+        ) {
+             when (val mode = screenState.mode) {
+                    is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
+                        AnimatedContent(
+                            targetState = mode.test.id,
+                            transitionSpec = {
+                                slideInHorizontally(
+                                    initialOffsetX = { fullWidth -> fullWidth },
+                                    animationSpec = tween(durationMillis = 500)
+                                ) togetherWith slideOutHorizontally(
+                                    targetOffsetX = { fullWidth -> -fullWidth },
+                                    animationSpec = tween(durationMillis = 500)
+                                )
+                            },
+                            label = "ScreenContentAnimation"
+                        ) {
+                            TestContent(mode, actioner)
                         }
                     }
-                    onMessageShown(uiMessage.id)
+                    is SpeakingExerciseViewState.ScreenMode.Speaking -> {
+                        AnimatedContent(
+                            targetState = mode.situation.id,
+                            transitionSpec = {
+                                slideInHorizontally(
+                                    initialOffsetX = { fullWidth -> fullWidth },
+                                    animationSpec = tween(durationMillis = 500)
+                                ) togetherWith slideOutHorizontally(
+                                    targetOffsetX = { fullWidth -> -fullWidth },
+                                    animationSpec = tween(durationMillis = 500)
+                                )
+                            },
+                            label = "ScreenContentAnimation"
+                        ) {
+                            SpeakingContent(mode, actioner)
+                        }
+                    }
+                    null -> {}
                 }
 
-                is SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation -> {
-                    CorrectTestAnswer(uiMessage, message, onMessageShown, actioner)
-                }
-
-                is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
-                    WrongTestAnswer(uiMessage, message, onMessageShown)
+                screenState.uiMessage?.let { uiMessage ->
+                    when (val message = uiMessage.message) {
+                        is SpeakingExerciseUiMessage.RequestRecordAudio -> {
+                            permissionManager.AskPermission(Manifest.permission.RECORD_AUDIO) { isGranted ->
+                                if (isGranted) {
+                                    actioner(SpeakingExerciseAction.OnStartSpikingClicked)
+                                }
+                            }
+                            onMessageShown(uiMessage.id)
+                        }
+                        is SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation -> {
+                            CorrectTestAnswer(uiMessage, message, onMessageShown, actioner)
+                        }
+                        is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
+                            WrongTestAnswer(uiMessage, message, onMessageShown)
+                        }
+                    }
                 }
             }
+        }
+    }
+
+@Composable
+private fun TopBar(screenState: SpeakingExerciseViewState, actioner: (SpeakingExerciseAction) -> Unit) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(200.dp)
+    ) {
+        Image(
+            painter = painterResource(screenState.topBarBgRes),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .fillMaxSize()
+        )
+        Row(
+            Modifier
+                .align(Alignment.CenterStart)
+                .padding(horizontal = 20.dp)
+                .fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                modifier = Modifier
+                    .size(50.dp)
+                    .clickable { actioner(SpeakingExerciseAction.OnBackClicked) },
+                painter = painterResource(LinguaIcons.IcCircleClose),
+                contentDescription = null
+            )
+            Spacer(Modifier.width(18.dp))
+            LinguaProgressBar(
+                screenState.progress,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(18.dp)
+            )
         }
     }
 }
@@ -162,7 +215,7 @@ private fun SpeakingContent(
     Column(
         modifier = Modifier
             .padding(horizontal = 20.dp)
-            .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+            .padding(top = 24.dp)
             .fillMaxSize()
     ) {
         Text(
@@ -213,7 +266,7 @@ private fun SpeakingContent(
             }
         }
 
-        Spacer(Modifier.padding(16.dp))
+        Spacer(Modifier.padding(20.dp))
     }
 }
 
@@ -225,7 +278,7 @@ private fun TestContent(
     Column(
         modifier = Modifier
             .padding(horizontal = 20.dp)
-            .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+            .padding(top = 24.dp)
             .fillMaxSize()
     ) {
         Text(
@@ -286,7 +339,7 @@ private fun TestContent(
             InactiveButton(text = "Перевірити")
         }
 
-        Spacer(Modifier.padding(16.dp))
+        Spacer(Modifier.padding(20.dp))
     }
 }
 
