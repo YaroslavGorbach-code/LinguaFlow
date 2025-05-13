@@ -84,7 +84,8 @@ import com.example.yaroslavhorach.ui.UiText
 @Composable
 internal fun SpeakingExerciseRoute(
     viewModel: SpeakingExerciseViewModel = hiltViewModel(),
-    onNavigateBack: () -> Unit
+    onNavigateBack: () -> Unit,
+    onNavigateToExerciseResult: () -> Unit
 ) {
     val speakingExerciseViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -97,7 +98,9 @@ internal fun SpeakingExerciseRoute(
                 SpeakingExerciseAction.OnBackClicked -> onNavigateBack()
                 else -> viewModel.submitAction(action)
             }
-        })
+        },
+        onNavigateToExerciseResult = onNavigateToExerciseResult
+    )
 }
 
 @SuppressLint("UnusedContentLambdaTargetStateParameter")
@@ -106,6 +109,7 @@ internal fun SpeakingExerciseScreen(
     screenState: SpeakingExerciseViewState,
     permissionManager: PermissionManager,
     onMessageShown: (id: Long) -> Unit,
+    onNavigateToExerciseResult: () -> Unit,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
     Box(Modifier.fillMaxSize()) {
@@ -169,6 +173,10 @@ internal fun SpeakingExerciseScreen(
                         }
                         is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
                             WrongTestAnswer(uiMessage, message, onMessageShown)
+                        }
+                        is SpeakingExerciseUiMessage.NavigateToExerciseResult -> {
+                            onNavigateToExerciseResult()
+                            onMessageShown(uiMessage.id)
                         }
                     }
                 }
@@ -251,7 +259,6 @@ private fun SpeakingContent(
             color = MaterialTheme.colorScheme.typoPrimary()
         )
         Spacer(Modifier.Companion.weight(0.5f))
-
         RealtimeWaveform(
             speakingMode.amplitude ?: 0,
             speakingMode.isSpeaking,
@@ -260,12 +267,13 @@ private fun SpeakingContent(
                 .fillMaxWidth()
                 .height(150.dp)
         )
-
         Spacer(Modifier.Companion.weight(1f))
-
         if (speakingMode.isRecording) {
             if (speakingMode.isStopRecordingBtnVisible){
-                TextButton(textColor = MaterialTheme.colorScheme.typoDisabled(), text = "Закінчити Говорити", onClick = {
+                TextButton(
+                    textColor = MaterialTheme.colorScheme.typoDisabled(),
+                    text = "Закінчити Говорити",
+                    onClick = {
                     actioner(SpeakingExerciseAction.OnStopSpeakingClicked)
                 })
                 Spacer(Modifier.height(16.dp))
@@ -294,12 +302,11 @@ private fun SpeakingContent(
                     )
                 }
             }
-            Spacer(Modifier.height(12.dp))
+            Spacer(Modifier.height(16.dp))
             PrimaryButton(text = "Говорити") {
                 actioner(SpeakingExerciseAction.OnStartSpikingClicked)
             }
         }
-
         Spacer(Modifier.padding(20.dp))
     }
 }
@@ -641,6 +648,7 @@ private fun SpeakingExercisePreview() {
                 SpeakingExerciseScreen(
                     SpeakingExerciseViewState.PreviewSpeaking,
                     PermissionManager(LocalContext.current),
+                    {},
                     {},
                     {})
             }

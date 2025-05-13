@@ -38,6 +38,8 @@ class AudioRecorder @Inject constructor() {
     private var outputFile: File? = null
     private var attemptsToAutoReconnoitring = 0
 
+    private var canIncreasAutoRecordingAttempts = true
+
     private val bufferSize = AudioRecord.getMinBufferSize(
         44100,
         AudioFormat.CHANNEL_IN_MONO,
@@ -104,8 +106,8 @@ class AudioRecorder @Inject constructor() {
                     val max = buffer.maxOrNull()?.toInt()?.absoluteValue ?: 0
                     _amplitudeFlow.value = max
 
-                    // write to file
                     val byteBuffer = ByteBuffer.allocate(read * 2).order(ByteOrder.LITTLE_ENDIAN)
+
                     for (i in 0 until read) byteBuffer.putShort(buffer[i])
                     outputStream?.write(byteBuffer.array())
 
@@ -120,11 +122,11 @@ class AudioRecorder @Inject constructor() {
 
                                 while (millisLeft > 0 && _isRecordingFlow.value && _amplitudeFlow.value < minAmplitude) {
                                     _secondsLeftFlow.value = if (triggerSilenceDurationMillis >= millisLeft) {
-                                        attemptsToAutoReconnoitring = attemptsToAutoReconnoitring.inc()
-
-                                        if (attemptsToAutoReconnoitring > MAX_AUTO_RECORDING_STOP_ATTEMPTS) {
+                                        if (attemptsToAutoReconnoitring > MAX_AUTO_RECORDING_STOP_ATTEMPTS && canIncreasAutoRecordingAttempts) {
                                             _isRationalToAllowStopManually.value = true
                                         }
+                                        attemptsToAutoReconnoitring = attemptsToAutoReconnoitring.inc()
+                                        canIncreasAutoRecordingAttempts = false
 
                                         (millisLeft / 1000).toInt()
                                     } else {
@@ -136,6 +138,7 @@ class AudioRecorder @Inject constructor() {
                                 }
 
                                 if (_isRecordingFlow.value && _amplitudeFlow.value < minAmplitude) {
+
                                     stopRecording()
                                 }
                             }
@@ -145,6 +148,7 @@ class AudioRecorder @Inject constructor() {
                         silenceTimerJob?.cancel()
                         silenceTimerJob = null
                         _secondsLeftFlow.value = 0
+                        canIncreasAutoRecordingAttempts = true
                     }
                 }
                 delay(16)

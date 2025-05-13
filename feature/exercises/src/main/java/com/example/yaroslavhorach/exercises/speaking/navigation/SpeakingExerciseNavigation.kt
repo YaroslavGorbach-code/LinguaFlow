@@ -20,6 +20,10 @@ fun NavController.navigateToSpeakingExercise(exerciseId: Long) {
 
 fun NavGraphBuilder.speakingExerciseScreen(onNavigateBack: () -> Unit) {
     composable<SpeakingExerciseRoute> {
-        SpeakingExerciseRoute(onNavigateBack = onNavigateBack)
+        SpeakingExerciseRoute(
+            onNavigateBack = onNavigateBack,
+            onNavigateToExerciseResult = {
+
+            })
     }
 }

@@ -130,6 +130,8 @@ class SpeakingExerciseViewModel @Inject constructor(
                     is SpeakingExerciseAction.OnNextSituationClicked -> {
                         isSpeakingResulVisible.value = false
                         recorder.pausePlayback()
+
+                        handleNextSituation()
                     }
                     is SpeakingExerciseAction.OnTryAgainSituationClicked -> {
                         isSpeakingResulVisible.value = false
@@ -148,6 +150,19 @@ class SpeakingExerciseViewModel @Inject constructor(
                 }
             }
             .launchIn(viewModelScope)
+    }
+
+    private suspend fun handleNextSituation() {
+        if (overAllProgress.value == overAllMaxProgress.value) {
+            uiMessageManager.emitMessage(UiMessage(SpeakingExerciseUiMessage.NavigateToExerciseResult))
+        } else {
+            overAllProgress.value = overAllProgress.value.inc()
+
+            val situation = exerciseContentRepository.getSituation(currentExercise!!.exerciseName)
+            (mode.value as? SpeakingExerciseViewState.ScreenMode.Speaking)?.let { mode ->
+                this.mode.value = mode.copy(situation = situation)
+            }
+        }
     }
 
     private fun handleNextTest() {
