@@ -35,12 +35,16 @@ data class HomeViewState(
     companion object {
         val Empty = HomeViewState()
         val Preview = HomeViewState()
-        val PreviewExercise = ExerciseUi(Exercise(
-            id = ExerciseName.ICEBREAKERS.ordinal.toLong(),
-            exerciseName = ExerciseName.ICEBREAKERS,
-            skill = Skill.COMMUNICATION,
-            exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
-            block = ExerciseBlock.ONE
-        ))
+        val PreviewExercise = ExerciseUi(
+            Exercise(
+                id = ExerciseName.ICEBREAKERS.ordinal.toLong(),
+                name = ExerciseName.ICEBREAKERS,
+                skill = Skill.COMMUNICATION,
+                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
+                block = ExerciseBlock.ONE,
+                nameString = hashMapOf("en" to "test"),
+                description = hashMapOf("en" to "test")
+            )
+        )
     }
 }

@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "nameString": {
+      "ua": "Айсбрейкери",
+      "en": "Icebreakers",
+      "ru": "Айсбрейкеры"
+    },
+    "description": {
+      "ua": "Практикуй вітання у реалістичних щоденних ситуаціях. Отримуй сценарій, формулюй відповідь та звикай впевнено починати розмову з будь-ким.",
+      "en": "Practice greetings in realistic everyday situations. Get a scenario, formulate your response, and get used to starting conversations with anyone comfortably.",
+      "ru": "Практикуй приветствия в реалистичных повседневных ситуациях. Получай сценарий, формулируй ответ и привыкай уверенно начинать разговор с кем угодно."
+    },
+    "exerciseProgress": {
+      "exerciseId": 1,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "ICEBREAKERS",
+    "skill": "COMMUNICATION",
+    "block": "ONE",
+    "isEnable": true,
+    "isLastActive": false
+  },
+  {
+    "id": 2,
+    "nameString": {
+      "ua": "Що сказати далі?",
+      "en": "What to say next?",
+      "ru": "Что сказать дальше?"
+    },
+    "description": {
+      "ua": "Практикуй підтримання розмови в повсякденних ситуаціях. Прочитай короткий сценарій і сформулюй свою природну відповідь, щоб залишатися залученим і налагодити контакт.",
+      "en": "Practice keeping conversations alive in real-life situations. Read a short scenario and come up with your own natural response to stay engaged and connect better.",
+      "ru": "Практикуй поддержание разговора в реальных ситуациях. Прочитай короткий сценарий и придумай естественный ответ, чтобы лучше наладить контакт."
+    },
+    "exerciseProgress": {
+      "exerciseId": 2,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "WHAT_TO_SAY_NEXT",
+    "skill": "COMMUNICATION",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 3,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками. Весело розігрій мовленнєвий апарат та покращи дикцію.",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency. Repeat fun and easy tongue twisters to warm up your speech muscles and build clear, confident articulation.",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость. Весело разогревай речевой аппарат и развивай четкую дикцию."
+    },
+    "exerciseProgress": {
+      "exerciseId": 3,
+      "progress": 0,
+      "maxProgress": 2
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 4,
+    "nameString": {
+      "ua": "Ключ до невимушеної розмови",
+      "en": "The key to small talk",
+      "ru": "Ключ к светской беседе"
+    },
+    "description": {
+      "ua": "Навчися відповідати цікавіше й змістовніше — не лише односкладовими фразами. Отримуй поширені запитання та додавай щось своє: деталь, жарт чи запитання у відповідь.",
+      "en": "Train yourself to respond in a more interesting and meaningful way — not just with one-word answers. You'll get common questions like “Where are you from?” or “How was your day?” — and your task is not just to answer, but to add something of your own: a detail, a joke, or a follow-up question.",
+      "ru": "Научись отвечать интересно и содержательно — не только односложно. Получай распространенные вопросы и добавляй что-то своё: деталь, шутку или встречный вопрос."
+    },
+    "exerciseProgress": {
+      "exerciseId": 4,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "THE_KEY_TO_SMALL_TALK",
+    "skill": "COMMUNICATION",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 5,
+    "nameString": {
+      "ua": "Маршрут знайомств",
+      "en": "Dating route",
+      "ru": "Маршрут знакомств"
+    },
+    "description": {
+      "ua": "Уяви, що ти — новачок у новій компанії. Протягом дня опиняєшся в різних ситуаціях: у черзі за кавою, за спільним столом чи перед початком зустрічі. Починай розмову, коментуй або запитуй.",
+      "en": "Imagine you're new in a group of unfamiliar people. Throughout the day, you find yourself in different situations: standing in line for coffee, sitting at a shared lunch table, or waiting for a meeting to begin. In each of these moments, your task is to initiate a conversation — start with a phrase, make a comment, or ask a question.",
+      "ru": "Представь, что ты новичок в новой компании. В течение дня ты оказываешься в разных ситуациях: в очереди за кофе, за общим столом или перед встречей. Твоя задача — начать разговор, пошутить или задать вопрос."
+    },
+    "exerciseProgress": {
+      "exerciseId": 5,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "DATING_ROUTE",
+    "skill": "COMMUNICATION",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 6,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "Розширюй свій словниковий запас у веселих і швидких завданнях. Називай слова за категорією або темою, тренуй швидкість мислення та гнучкість.",
+      "en": "Expand your vocabulary with fun and fast-paced challenges. Name words by category or theme to sharpen your thinking and flexibility.",
+      "ru": "Расширяй словарный запас в быстрых и увлекательных заданиях. Называй слова по категориям, развивай гибкость и скорость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 6,
+      "progress": 0,
+      "maxProgress": 1
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 7,
+    "nameString": {
+      "ua": "Фінальна репліка",
+      "en": "Farewell remark",
+      "ru": "Прощальная реплика"
+    },
+    "description": {
+      "ua": "Тренуй природне завершення розмови. Уяви, що настав момент попрощатися — у дружньому, офіційному або жартівливому стилі. Закінчи діалог легко та з приємним враженням.",
+      "en": "In this exercise, you'll practice ending conversations naturally and appropriately. Imagine you're really in that moment, and your final line is the lasting impression you leave.",
+      "ru": "Практикуй естественное завершение разговора. Представь, что настал момент прощаться — дружелюбно, официально или с юмором. Оставь хорошее впечатление финальной фразой."
+    },
+    "exerciseProgress": {
+      "exerciseId": 7,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "FAREWELL_REMARK",
+    "skill": "COMMUNICATION",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  }
+]

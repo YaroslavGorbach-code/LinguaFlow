@@ -359,13 +359,13 @@ private fun DescriptionTooltip(
                 }
                 Spacer(Modifier.height(12.dp))
                 Text(
-                    text = stringResource(exercise.nameResId),
+                    text = exercise.exercise.nameText,
                     style = LinguaTypography.h4,
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    text = stringResource(exercise.descriptionResId),
+                    text = exercise.exercise.descriptionText,
                     style = LinguaTypography.body4,
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
@@ -392,7 +392,7 @@ private fun DescriptionTooltip(
                 }
                 Spacer(Modifier.height(12.dp))
                 Text(
-                    text = stringResource(exercise.nameResId),
+                    text = exercise.exercise.nameText,
                     style = LinguaTypography.subtitle2,
                     color = MaterialTheme.colorScheme.typoDisabled()
                 )

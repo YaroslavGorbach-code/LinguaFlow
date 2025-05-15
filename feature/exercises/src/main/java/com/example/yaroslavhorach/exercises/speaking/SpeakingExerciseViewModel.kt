@@ -171,7 +171,7 @@ class SpeakingExerciseViewModel @Inject constructor(
                 )
             )
         } else {
-            val situation = exerciseContentRepository.getSituation(currentExercise!!.exerciseName)
+            val situation = exerciseContentRepository.getSituation(currentExercise!!.name)
             (mode.value as? SpeakingExerciseViewState.ScreenMode.Speaking)?.let { mode ->
                 this.mode.value = mode.copy(situation = situation)
             }
@@ -258,7 +258,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     private fun setUpSpeakingModeAfterTests(exerciseContentRepository: ExerciseContentRepository) = viewModelScope.launch {
             btnTooltipText.value = UiText.RandomFromResourceArray(R.array.speaking_exercise_intro_text)
 
-            val situation = exerciseContentRepository.getSituation(currentExercise!!.exerciseName)
+            val situation = exerciseContentRepository.getSituation(currentExercise!!.name)
 
             mode.value = SpeakingExerciseViewState.ScreenMode.Speaking(situation, maxProgress = AFTER_TEST_SPEAKING_MAX_PROGRESS)
         }
@@ -268,13 +268,13 @@ class SpeakingExerciseViewModel @Inject constructor(
         btnTooltipText.value = UiText.RandomFromResourceArray(R.array.speaking_exercise_motivation)
 
         return SpeakingExerciseViewState.ScreenMode.Speaking(
-            exerciseContentRepository.getSituation(currentExercise!!.exerciseName),
+            exerciseContentRepository.getSituation(currentExercise!!.name),
             maxProgress = SPEAKING_MAX_PROGRESS
         )
     }
 
     private suspend fun setUpTestsModeIfPossible(): SpeakingExerciseViewState.ScreenMode {
-        tests = ArrayDeque(exerciseContentRepository.getTests(currentExercise!!.exerciseName))
+        tests = ArrayDeque(exerciseContentRepository.getTests(currentExercise!!.name))
 
         return if (tests.isEmpty().not()) {
             overAllMaxProgress.value = tests.size + AFTER_TEST_SPEAKING_MAX_PROGRESS
@@ -286,7 +286,7 @@ class SpeakingExerciseViewModel @Inject constructor(
 
             SpeakingExerciseViewState.ScreenMode.Speaking(
                 exerciseContentRepository.getSituation(
-                    currentExercise!!.exerciseName
+                    currentExercise!!.name
                 ),
                 maxProgress = SPEAKING_MAX_PROGRESS
             )
