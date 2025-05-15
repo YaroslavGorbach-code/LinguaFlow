@@ -12,7 +12,7 @@ data class ExerciseProgressEntity(
     val maxProgress: Int,
 ) {
     val isFinished
-        get() = progress == maxProgress
+        get() = progress >= maxProgress
 }
 
 fun ExerciseProgressEntity.asDomainModel() = ExerciseProgress(

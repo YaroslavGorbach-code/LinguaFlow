@@ -1,0 +1,362 @@
+[
+  {
+    "id": "0",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Їжак їв ожину, ожина колола їжака.",
+      "en": "She sells seashells by the seashore.",
+      "ru": "Клара у Карла украла кораллы, а Карл у Клары украл кларнет."
+    }
+  },
+  {
+    "id": "1",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Баба біб розбила, бобу багато було.",
+      "en": "Red lorry, yellow lorry.",
+      "ru": "Шла Саша по шоссе и сосала сушку."
+    }
+  },
+  {
+    "id": "2",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Сидів горобець на вербі та вербував ще горобців.",
+      "en": "Black bug bit a big black bear.",
+      "ru": "На дворе трава, на траве дрова."
+    }
+  },
+  {
+    "id": "3",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Пані Параска перепрала плаття Петра.",
+      "en": "A proper copper coffee pot.",
+      "ru": "У четырех черепашек — четыре черепашонка."
+    }
+  },
+  {
+    "id": "4",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Летів горобець через тин, приніс новину на пір'їнці.",
+      "en": "I saw a kitten eating chicken in the kitchen.",
+      "ru": "Проворонила ворона воронёнка воронёнку."
+    }
+  },
+  {
+    "id": "5",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "У саду росли гриби, у траві сиділи жаби.",
+      "en": "Green glass globes glow greenly.",
+      "ru": "Три толстяка тараторили тараканьим тарабарским."
+    }
+  },
+  {
+    "id": "6",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Миша мила мило мила, милиця милом мила мила.",
+      "en": "Betty bought some butter, but the butter was bitter.",
+      "ru": "Мама мыла Милу мылом."
+    }
+  },
+  {
+    "id": "7",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Котик сів у куточку, клює крихти з калача.",
+      "en": "Fresh fried fish, fish fresh fried.",
+      "ru": "Кошка кушала кашу, Коля кушал калач."
+    }
+  },
+  {
+    "id": "8",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Сорока сороченятам сорок сорочок пошила.",
+      "en": "I saw Susie sitting in a shoeshine shop.",
+      "ru": "Сорока сорок сорочек сшила сорванцу Сереже."
+    }
+  },
+  {
+    "id": "9",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Прут пилип пиляє, пилка прут притупила.",
+      "en": "Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair.",
+      "ru": "Петр пек пирог из пшена и перца."
+    }
+  },
+  {
+    "id": "10",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Бабин біб розцвів у дощ — буде біб у баби гож.",
+      "en": "She sells sea shells by the sea shore.",
+      "ru": "Шла Саша по шоссе и сосала сушку."
+    }
+  },
+  {
+    "id": "11",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Летів горобець, сів на хлівець, заспівав співанець.",
+      "en": "How can a clam cram in a clean cream can?",
+      "ru": "У ежа — ежата, у ужа — ужата."
+    }
+  },
+  {
+    "id": "12",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Жили були жуки в Житомирі на жовтому жупані.",
+      "en": "Red lorry, yellow lorry.",
+      "ru": "У четырёх черепашек четыре черепашонка."
+    }
+  },
+  {
+    "id": "13",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Хитрий хитрун ховав хлібчик у хлівчику.",
+      "en": "Black bug’s blood.",
+      "ru": "Клара у Карла украла кораллы, а Карл у Клары украл кларнет."
+    }
+  },
+  {
+    "id": "14",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Купи кипу капелюхів Костеві на купалах.",
+      "en": "If two witches were watching two watches, which witch would watch which watch?",
+      "ru": "Уж ужалил ужа, уж и ужалил."
+    }
+  },
+  {
+    "id": "15",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Сидить сова на осиці, спить і сниться їй лисиця.",
+      "en": "I saw Susie sitting in a shoe shine shop.",
+      "ru": "Семь синиц съели семь сосисок с соусом."
+    }
+  },
+  {
+    "id": "16",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Киця в кутку кує каблучки котику.",
+      "en": "Fred fed Ted bread, and Ted fed Fred bread.",
+      "ru": "Тридцать три корабля лавировали, лавировали, да не вылавировали."
+    }
+  },
+  {
+    "id": "17",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Мама мила раму мильною мочалкою.",
+      "en": "A proper copper coffee pot.",
+      "ru": "У Пети и Паши по пять попугаев."
+    }
+  },
+  {
+    "id": "18",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Кравець Карпо краде кропу кілограм.",
+      "en": "Green glass globes glow greenly.",
+      "ru": "На дворе трава, на траве дрова."
+    }
+  },
+  {
+    "id": "19",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Сів сажотрус на сосну, сушить сорочку.",
+      "en": "Eleven benevolent elephants.",
+      "ru": "Шесть мышат в шалаше шуршат."
+    }
+  },
+  {
+    "id": "20",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Босий хлопець брів бором, бив бичем боровів.",
+      "en": "Red lorry, yellow lorry.",
+      "ru": "Корабли лавировали, лавировали, да не вылавировали."
+    }
+  },
+  {
+    "id": "21",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Їде Яків ясла везе, ясла віз — та й зав’яз.",
+      "en": "She sees cheese.",
+      "ru": "У Саши шапка, у Паши шапка, у Саши шапка лучше."
+    }
+  },
+  {
+    "id": "22",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Шість шахтарів шукали шість шпаг.",
+      "en": "If a dog chews shoes, whose shoes does he choose?",
+      "ru": "Снегири сели в сирой сарай."
+    }
+  },
+  {
+    "id": "23",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Гріє Гриць горіхи в грубі.",
+      "en": "Blue bluebird blinks.",
+      "ru": "Три толстяка тараторили про трактор."
+    }
+  },
+  {
+    "id": "24",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Кіт коту купив каптан.",
+      "en": "Six sticky skeletons.",
+      "ru": "Шли шесть мышат, шли, шурша шелестом."
+    }
+  },
+  {
+    "id": "30",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Босий хлопець босоніж по росі пішов у ліс.",
+      "en": "Red lorry, yellow lorry.",
+      "ru": "Как у наших у ворот — воробей хлеб клюёт."
+    }
+  },
+  {
+    "id": "31",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Гриць з груш груші гриз.",
+      "en": "Two tiny tigers take two taxis to town.",
+      "ru": "Папа палку покупал, палку Пете подарил."
+    }
+  },
+  {
+    "id": "32",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Летів горобець, сів на хрестець, заговорив по-людськи, злякався сам себе.",
+      "en": "Six sticky skeletons.",
+      "ru": "Были у Бори бобры, и Бора их боялся."
+    }
+  },
+  {
+    "id": "33",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Кіт у квітках, квіти — на коті.",
+      "en": "Eleven elves licked eleven little licorice lollipops.",
+      "ru": "Шла Саша по шоссе и сосала сушку."
+    }
+  },
+  {
+    "id": "34",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Швидко шурхотить шкарпетка по підлозі.",
+      "en": "A happy hippo hopped and hiccupped.",
+      "ru": "Тридцать три корабля лавировали, лавировали, да не вылавировали."
+    }
+  },
+  {
+    "id": "35",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Сидів їжак на ялині та їв ожину.",
+      "en": "Big black bugs bleed blue blood.",
+      "ru": "Сорока на хвосте принесла сорок вестей."
+    }
+  },
+  {
+    "id": "36",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Хитру сову сховали у сховку.",
+      "en": "A proper copper coffee pot.",
+      "ru": "Краб крабу шепчет: «Крак!»"
+    }
+  },
+  {
+    "id": "37",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Три товстуни тягли тік у тінь.",
+      "en": "Green glass globes glow greenly.",
+      "ru": "На горе калина, под горой малина."
+    }
+  },
+  {
+    "id": "38",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Мишка мила миску з маком у місті.",
+      "en": "Fred fed Ted bread and Ted fed Fred bread.",
+      "ru": "У ежа — уж, а у ужей — ежата."
+    }
+  },
+  {
+    "id": "39",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Петрик під парканом пив полуничний пиріг.",
+      "en": "Zebras zigzagged through the zany zoo zone.",
+      "ru": "Трактор трогал тракторист, трёхтонный трал трещал."
+    }
+  },
+  {
+    "id": "40",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Клава клавіатуру клацала кволо.",
+      "en": "Ten tiny turtles took turns talking.",
+      "ru": "Щука щипала щавель в Щукинском щите."
+    }
+  },
+  {
+    "id": "41",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Дідо діда дудою дудів.",
+      "en": "Ned needs nine new neckties.",
+      "ru": "Тихо тащат ящики три таксиста."
+    }
+  },
+  {
+    "id": "42",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Левко ловив лева в лісі ледь не ловко.",
+      "en": "Silly Sally swiftly shooed seven silly sheep.",
+      "ru": "Бык тупогуб, тупогубенький бычок, у быка бела губа была тупа."
+    }
+  },
+  {
+    "id": "43",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Жаба жалілась жайворонку на жорстку жінку.",
+      "en": "Tom threw Tim three thumbtacks.",
+      "ru": "Ваня в вазе варит варенье весело."
+    }
+  },
+  {
+    "id": "44",
+    "difficulty": "TONGUE_TWISTERS_EASY",
+    "text": {
+      "ua": "Цап цапнув цибулю — ціла цибулина!",
+      "en": "Fresh fried fish, fish fresh fried.",
+      "ru": "Петя печёт пять пирогов по пятницам."
+    }
+  }
+]

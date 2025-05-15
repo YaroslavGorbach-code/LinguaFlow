@@ -9,6 +9,8 @@ import com.example.yaroslavhorach.exercises.exercise_completed.navigation.exerci
 import com.example.yaroslavhorach.exercises.exercise_completed.navigation.navigateToExerciseCompleted
 import com.example.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExercise
 import com.example.yaroslavhorach.exercises.speaking.navigation.speakingExerciseScreen
+import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.navigateToTongueTwistersExercise
+import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.tongueTwistersExerciseScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
 import com.example.yaroslavhorach.home.navigation.navigateToHome
 
@@ -32,11 +34,16 @@ fun LingoNavHost(
 
                 }
                 Skill.DICTION -> {
-
+                    navController.navigateToTongueTwistersExercise(exercise.id)
                 }
             }
         })
         speakingExerciseScreen(onNavigateBack = {
+            navController.popBackStack()
+        }, onNavigateToExerciseCompleted = { time, xp ->
+            navController.navigateToExerciseCompleted(xp, time)
+        })
+        tongueTwistersExerciseScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToExerciseCompleted = { time, xp ->
             navController.navigateToExerciseCompleted(xp, time)

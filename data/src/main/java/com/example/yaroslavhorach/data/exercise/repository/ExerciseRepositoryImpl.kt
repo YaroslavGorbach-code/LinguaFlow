@@ -7,11 +7,6 @@ import com.example.yaroslavhorach.database.task.model.asDomainModel
 import com.example.yaroslavhorach.database.task.model.asEntityModel
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
-import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
-import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
-import com.example.yaroslavhorach.domain.exercise.model.ExerciseProgress
-import com.example.yaroslavhorach.domain.exercise.model.Skill
-import com.example.yaroslavhorach.domain.exercise_content.model.Situation
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -42,7 +37,11 @@ class ExerciseRepositoryImpl @Inject constructor(
                         if (progress != null) {
                             exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true, isLastActive = lastActive == index)
                         } else {
-                            val previousExerciseIsFinished = progressMap[exercises[index.dec()].id]?.isFinished == true
+                            val previousExerciseIsFinished = if (index == 0){
+                                true
+                            } else {
+                                progressMap[exercises[index.dec()].id]?.isFinished == true
+                            }
 
                             exercise.copy(isEnable = previousExerciseIsFinished, isLastActive = lastActive == index)
                         }
@@ -68,7 +67,8 @@ class ExerciseRepositoryImpl @Inject constructor(
     override suspend fun markCompleted(exerciseId: Long) {
         val progress = exerciseProgressDao.getExerciseProgressEntity(exerciseId)
 
-        progress?.copy(progress = progress.progress.inc())?.let { exerciseProgressDao.upsertExerciseProgress(it) }
+        progress?.copy(progress = progress.progress.inc())
+            ?.let { exerciseProgressDao.upsertExerciseProgress(it) }
     }
 
     private fun getRawExercises(): List<Exercise> {

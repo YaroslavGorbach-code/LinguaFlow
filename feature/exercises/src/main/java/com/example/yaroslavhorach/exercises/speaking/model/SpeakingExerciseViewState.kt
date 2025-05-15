@@ -14,16 +14,6 @@ data class SpeakingExerciseViewState(
     val progress: Float = 0f,
     val uiMessage: UiMessage<SpeakingExerciseUiMessage>? = null
 ) {
-    val topBarBgRes: Int
-        get() = when (exerciseBlock) {
-            ExerciseBlock.ONE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
-            ExerciseBlock.TWO -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
-            ExerciseBlock.THREE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
-            ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
-            ExerciseBlock.FIVE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
-            ExerciseBlock.SIX -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
-        }
-
     sealed class ScreenMode {
         data class IntroTest(
             val test: Test,

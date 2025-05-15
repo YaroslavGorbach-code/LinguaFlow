@@ -75,6 +75,7 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
+import com.example.yaroslavhorach.exercises.extentions.topBarBgRes
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
@@ -191,7 +192,7 @@ private fun TopBar(screenState: SpeakingExerciseViewState, actioner: (SpeakingEx
             .height(200.dp)
     ) {
         Image(
-            painter = painterResource(screenState.topBarBgRes),
+            painter = painterResource(screenState.exerciseBlock.topBarBgRes),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier
@@ -306,6 +307,7 @@ private fun SpeakingContent(
                 actioner(SpeakingExerciseAction.OnStartSpikingClicked)
             }
         }
+        // TODO: INsets?
         Spacer(Modifier.padding(20.dp))
     }
 }

@@ -208,7 +208,7 @@ fun <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, R> combine(
         args[8] as T9,
         args[9] as T10,
         args[10] as T11,
-        args[10] as T12,
-        args[10] as T13,
+        args[11] as T12,
+        args[12] as T13,
     )
 }

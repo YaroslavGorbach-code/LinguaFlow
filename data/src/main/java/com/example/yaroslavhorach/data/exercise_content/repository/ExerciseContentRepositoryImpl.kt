@@ -6,6 +6,7 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.example.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.example.yaroslavhorach.domain.exercise_content.model.Situation
 import com.example.yaroslavhorach.domain.exercise_content.model.Test
+import com.example.yaroslavhorach.domain.exercise_content.model.TongueTwister
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -17,6 +18,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     @ApplicationContext private val context: Context
 ) : ExerciseContentRepository {
     private var cashedSituations: MutableMap<ExerciseName, List<Situation>> = mutableMapOf()
+    private var cashedTongueTwisters: MutableMap<TongueTwister.Difficulty, List<TongueTwister>> = mutableMapOf()
 
     override suspend fun getSituation(exerciseName: ExerciseName): Situation {
         if (cashedSituations[exerciseName].isNullOrEmpty()) {
@@ -36,7 +38,27 @@ class ExerciseContentRepositoryImpl @Inject constructor(
             }
         }
 
+        // TODO: do not do random here replace in the future
         return cashedSituations[exerciseName]!!.random()
+    }
+
+    override suspend fun getTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {
+        if (cashedTongueTwisters[difficulty].isNullOrEmpty()) {
+            val fileName = when (difficulty) {
+                TongueTwister.Difficulty.EASY -> "tongue_twisters_easy.json"
+                TongueTwister.Difficulty.MEDIUM -> "tongue_twisters_easy.json"
+                TongueTwister.Difficulty.HARD -> "tongue_twisters_easy.json"
+            }
+
+            val twisters: List<TongueTwister> = loadJsonFromAssets(context, fileName)?.let { json ->
+                Gson().fromJson(json, object : TypeToken<List<TongueTwister>>() {}.type)
+            } ?: emptyList()
+
+            cashedTongueTwisters[difficulty] = twisters
+        }
+
+        // TODO: do not do random here replace in the future
+        return cashedTongueTwisters[difficulty]!!.random()
     }
 
     override suspend fun getTests(exerciseName: ExerciseName): List<Test> {
