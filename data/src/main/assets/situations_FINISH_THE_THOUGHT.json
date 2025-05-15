@@ -1,0 +1,478 @@
+[
+  {
+    "id": "0",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Я сьогодні бачив…",
+      "en": "Today I saw...",
+      "ru": "Сегодня я видел..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "1",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "До речі, ти знаєш…",
+      "en": "By the way, do you know...",
+      "ru": "Кстати, ты знаешь..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Мені завжди здавалося, що…",
+      "en": "I've always thought that...",
+      "ru": "Мне всегда казалось, что..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "У мене є одна дивна звичка — …",
+      "en": "I have this strange habit — ...",
+      "ru": "У меня есть одна странная привычка — ..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Ти не повіриш, але…",
+      "en": "You won’t believe it, but...",
+      "ru": "Ты не поверишь, но..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "До мене щойно дійшло, що…",
+      "en": "It just hit me that...",
+      "ru": "До меня только что дошло, что..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "А от уяви собі ситуацію, коли…",
+      "en": "Just imagine a situation where...",
+      "ru": "Представь себе ситуацию, когда..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Слухай, а ти коли-небудь…",
+      "en": "Hey, have you ever...",
+      "ru": "Слушай, а ты когда-нибудь..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Здається, я вчора зробив щось дуже дивне — …",
+      "en": "I think I did something really weird yesterday — ...",
+      "ru": "Кажется, вчера я сделал кое-что очень странное — ..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Є одна річ, яку я ніколи не розумів…",
+      "en": "There’s one thing I’ve never understood...",
+      "ru": "Есть одна вещь, которую я никогда не понимал..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Як тільки я вийшов з дому, одразу…",
+      "en": "As soon as I left the house, I immediately...",
+      "ru": "Как только я вышел из дома, сразу же..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Вчора трапилось дещо кумедне…",
+      "en": "Something funny happened yesterday...",
+      "ru": "Вчера произошло кое-что забавное..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Останнім часом мене надихає…",
+      "en": "Lately, I’ve been inspired by...",
+      "ru": "В последнее время меня вдохновляет..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Якби я міг зараз бути де завгодно, я б…",
+      "en": "If I could be anywhere right now, I would...",
+      "ru": "Если бы я мог быть где угодно прямо сейчас, я бы..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "У мене є одна мрія — …",
+      "en": "I have a dream — ...",
+      "ru": "У меня есть одна мечта — ..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Найбільше мені подобається, коли…",
+      "en": "I enjoy it the most when...",
+      "ru": "Больше всего мне нравится, когда..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Мені завжди було цікаво, чому…",
+      "en": "I’ve always wondered why...",
+      "ru": "Мне всегда было интересно, почему..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Якщо чесно, я не розумію людей, які…",
+      "en": "Honestly, I don't understand people who...",
+      "ru": "Честно говоря, я не понимаю людей, которые..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Один раз я випадково…",
+      "en": "One time I accidentally...",
+      "ru": "Однажды я случайно..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "У дитинстві я постійно…",
+      "en": "As a child, I used to always...",
+      "ru": "В детстве я постоянно..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Зараз мені на думку спала одна цікава ідея…",
+      "en": "I just had an interesting idea...",
+      "ru": "Мне только что пришла в голову интересная идея..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "До речі, я щойно згадав…",
+      "en": "By the way, I just remembered...",
+      "ru": "Кстати, я только что вспомнил..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Є одна річ, без якої мій ранок — не ранок…",
+      "en": "There’s one thing without which my morning just isn’t a morning...",
+      "ru": "Есть одна вещь, без которой моё утро — не утро..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Я ніколи не думав, що мені сподобається…",
+      "en": "I never thought I’d enjoy...",
+      "ru": "Я никогда не думал, что мне понравится..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Коли я нервую, я зазвичай…",
+      "en": "When I’m nervous, I usually...",
+      "ru": "Когда я нервничаю, я обычно..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Найдивніше побачене мною місце — це…",
+      "en": "The strangest place I’ve ever seen is...",
+      "ru": "Самое странное место, которое я видел — это..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "26",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Один мій знайомий якось сказав…",
+      "en": "A friend of mine once said...",
+      "ru": "Один мой знакомый как-то сказал..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "27",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Найприємніше у цій порі року — …",
+      "en": "The best thing about this time of year is...",
+      "ru": "Самое приятное в это время года — ..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "28",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Що б ти зробив, якби…",
+      "en": "What would you do if...",
+      "ru": "Что бы ты сделал, если бы..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "29",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Здається, я нарешті зрозумів, чому…",
+      "en": "I think I finally figured out why...",
+      "ru": "Кажется, я наконец понял, почему..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "30",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "У мене є питання, яке давно мене мучить: …",
+      "en": "I have a question that’s been bothering me for a while: ...",
+      "ru": "У меня есть вопрос, который давно меня мучает: ..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "31",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Цікаво, а чому люди завжди…",
+      "en": "I wonder why people always...",
+      "ru": "Интересно, почему люди всегда..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "32",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Найважче для мене — це…",
+      "en": "The hardest thing for me is...",
+      "ru": "Самое сложное для меня — это..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "FINISH_THE_THOUGHT",
+    "situation": {
+      "ua": "Якби можна було зупинити час, я б…",
+      "en": "If I could stop time, I would...",
+      "ru": "Если бы можно было остановить время, я бы..."
+    },
+    "task": {
+      "ua": "Заверши почату фразу так, як це було б у справжньому спілкуванні",
+      "en": "Finish the sentence as you would in a real-life conversation",
+      "ru": "Заверши начатую фразу так, как будто ты в реальной ситуации общения"
+    }
+  }
+]

@@ -49,6 +49,7 @@ class ExerciseUi(val exercise: Exercise) {
 
     val nameResId: Int = when (exercise.exerciseName) {
         ExerciseName.ICEBREAKERS -> R.string.icebreakers_exercise_name
+        ExerciseName.WHAT_TO_SAY_NEXT ->  R.string.what_to_say_next_exercise_name
         ExerciseName.FINISH_THE_THOUGHT -> R.string.finish_the_thought_exercise_name
         ExerciseName.THE_KEY_TO_SMALL_TALK -> R.string.the_key_to_small_talk_exercise_name
         ExerciseName.DATING_ROUTE -> R.string.dating_route_exercise_name
@@ -59,6 +60,7 @@ class ExerciseUi(val exercise: Exercise) {
 
     val descriptionResId: Int = when (exercise.exerciseName) {
         ExerciseName.ICEBREAKERS -> R.string.icebreakers_exercise_description
+        ExerciseName.WHAT_TO_SAY_NEXT -> R.string.what_to_say_next_exercise_description
         ExerciseName.FINISH_THE_THOUGHT -> R.string.finish_the_thought_exercise_description
         ExerciseName.THE_KEY_TO_SMALL_TALK -> R.string.the_key_to_small_talk_exercise_description
         ExerciseName.DATING_ROUTE -> R.string.dating_route_exercise_description

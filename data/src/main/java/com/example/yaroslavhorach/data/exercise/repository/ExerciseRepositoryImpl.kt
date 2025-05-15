@@ -24,18 +24,20 @@ class ExerciseRepositoryImpl @Inject constructor(
                 val progressMap = progressList.associateBy { it.exerciseId }
                 val exercises = getRawExercises()
 
-                val lastActive = exercises.indexOfLast {
-                    it.exerciseProgress.progress > 0
-                }.takeIf { it != -1 } ?: 0
-
                 flowOf(
                     exercises.mapIndexed { index, exercise ->
                         val progress = progressMap[exercise.id]
 
+                        val lastActive = exercises
+                            .indexOfLast { ex -> (progressMap[ex.id]?.progress ?: 0) > 0 }
+                            .takeIf { it != -1 } ?: 0
+
                         if (progress != null) {
                             exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true, isLastActive = lastActive == index)
                         } else {
-                            exercise.copy(isEnable = lastActive == index, isLastActive = lastActive == index)
+                            val previousExerciseIsFinished = progressMap[exercises[index.dec()].id]?.isFinished == true
+
+                            exercise.copy(isEnable = previousExerciseIsFinished, isLastActive = lastActive == index)
                         }
                     }
                 )
@@ -74,44 +76,44 @@ class ExerciseRepositoryImpl @Inject constructor(
             ),
             Exercise(
                 id = 2,
-                exerciseName = ExerciseName.FINISH_THE_THOUGHT,
+                exerciseName = ExerciseName.WHAT_TO_SAY_NEXT,
                 skill = Skill.COMMUNICATION,
-                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
+                exerciseProgress = ExerciseProgress(exerciseId = 2, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
                 id = 3,
                 exerciseName = ExerciseName.TONGUE_TWISTERS_EASY,
                 skill = Skill.DICTION,
-                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 2),
+                exerciseProgress = ExerciseProgress(exerciseId = 3, progress = 0, maxProgress = 2),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
                 id = 4,
                 exerciseName = ExerciseName.THE_KEY_TO_SMALL_TALK,
                 skill = Skill.COMMUNICATION,
-                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
+                exerciseProgress = ExerciseProgress(exerciseId = 4, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
                 id = 5,
                 exerciseName = ExerciseName.DATING_ROUTE,
                 skill = Skill.COMMUNICATION,
-                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
+                exerciseProgress = ExerciseProgress(exerciseId = 5, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
                 id = 6,
                 exerciseName = ExerciseName.VOCABULARY,
                 skill = Skill.VOCABULARY,
-                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 1),
+                exerciseProgress = ExerciseProgress(exerciseId = 6, progress = 0, maxProgress = 1),
                 block = ExerciseBlock.ONE
             ),
             Exercise(
                 id = 7,
                 exerciseName = ExerciseName.FAREWELL_REMARK,
                 skill = Skill.COMMUNICATION,
-                exerciseProgress = ExerciseProgress(exerciseId = 1, progress = 0, maxProgress = 3),
+                exerciseProgress = ExerciseProgress(exerciseId = 7, progress = 0, maxProgress = 3),
                 block = ExerciseBlock.ONE
             )
         )

@@ -23,6 +23,8 @@ class ExerciseContentRepositoryImpl @Inject constructor(
             withContext(Dispatchers.IO) {
                 val fileName = when (exerciseName) {
                     ExerciseName.ICEBREAKERS -> "situations_ICEBREAKERS.json"
+                    ExerciseName.FINISH_THE_THOUGHT -> "situations_FINISH_THE_THOUGHT.json"
+                    ExerciseName.WHAT_TO_SAY_NEXT -> "situations_WHAT_TO_SAY_NEXT.json"
                     else -> ""
                 }
 
@@ -41,6 +43,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
         return withContext(Dispatchers.IO) {
             val fileName = when (exerciseName) {
                 ExerciseName.ICEBREAKERS -> "tests_ICEBREAKERS.json"
+                ExerciseName.WHAT_TO_SAY_NEXT -> "tests_WHAT_TO_SAY_NEXT.json"
                 else -> ""
             }
 
