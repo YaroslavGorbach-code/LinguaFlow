@@ -75,7 +75,6 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
-import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
@@ -85,7 +84,7 @@ import com.example.yaroslavhorach.ui.UiText
 internal fun SpeakingExerciseRoute(
     viewModel: SpeakingExerciseViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
-    onNavigateToExerciseResult: () -> Unit
+    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit
 ) {
     val speakingExerciseViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -109,7 +108,7 @@ internal fun SpeakingExerciseScreen(
     screenState: SpeakingExerciseViewState,
     permissionManager: PermissionManager,
     onMessageShown: (id: Long) -> Unit,
-    onNavigateToExerciseResult: () -> Unit,
+    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
     Box(Modifier.fillMaxSize()) {
@@ -175,7 +174,7 @@ internal fun SpeakingExerciseScreen(
                             WrongTestAnswer(uiMessage, message, onMessageShown)
                         }
                         is SpeakingExerciseUiMessage.NavigateToExerciseResult -> {
-                            onNavigateToExerciseResult()
+                            onNavigateToExerciseResult(message.time, message.experience)
                             onMessageShown(uiMessage.id)
                         }
                     }
@@ -209,7 +208,7 @@ private fun TopBar(screenState: SpeakingExerciseViewState, actioner: (SpeakingEx
                 modifier = Modifier
                     .size(50.dp)
                     .clickable { actioner(SpeakingExerciseAction.OnBackClicked) },
-                painter = painterResource(LinguaIcons.IcCircleClose),
+                painter = painterResource(LinguaIcons.CircleClose),
                 contentDescription = null
             )
             Spacer(Modifier.width(18.dp))
@@ -297,7 +296,7 @@ private fun SpeakingContent(
                 ) {
                     Text(
                         text = tooltipText.asString(),
-                        color = MaterialTheme.colorScheme.typoSecondary(),
+                        color = MaterialTheme.colorScheme.typoDisabled(),
                         style = LinguaTypography.subtitle4
                     )
                 }
@@ -583,7 +582,7 @@ private fun BoxScope.SpeakingResult(
                         when{
                             state.result.isPlayingRecordPaused -> {
                                 Icon(
-                                    painter = painterResource(LinguaIcons.IcPlayCircle),
+                                    painter = painterResource(LinguaIcons.PlayCircle),
                                     modifier = Modifier
                                         .size(50.dp)
                                         .clickable { actioner(SpeakingExerciseAction.OnPlayRecordClicked) },
@@ -593,7 +592,7 @@ private fun BoxScope.SpeakingResult(
                             }
                             state.result.isPlaying -> {
                                 Icon(
-                                    painter = painterResource(LinguaIcons.IcPauseCircle),
+                                    painter = painterResource(LinguaIcons.PauseCircle),
                                     modifier = Modifier
                                         .size(50.dp)
                                         .clickable { actioner(SpeakingExerciseAction.OnPauseRecordClicked) },
@@ -603,7 +602,7 @@ private fun BoxScope.SpeakingResult(
                             }
                             else -> {
                                 Icon(
-                                    painter = painterResource(LinguaIcons.IcPlayCircle),
+                                    painter = painterResource(LinguaIcons.PlayCircle),
                                     modifier = Modifier
                                         .size(50.dp)
                                         .clickable { actioner(SpeakingExerciseAction.OnPlayRecordClicked) },
@@ -649,7 +648,7 @@ private fun SpeakingExercisePreview() {
                     SpeakingExerciseViewState.PreviewSpeaking,
                     PermissionManager(LocalContext.current),
                     {},
-                    {},
+                    {_, _ ->},
                     {})
             }
         }

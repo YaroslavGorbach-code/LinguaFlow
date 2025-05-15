@@ -290,7 +290,7 @@ private fun Exercise(
             ) {
                 if (exercise.isStarted) {
                     LinguaProgressBar(
-                        0.2f,
+                        exercise.progressPercent,
                         modifier = Modifier
                             .padding(top = 8.dp, start = 8.dp, end = 8.dp)
                             .fillMaxWidth()
@@ -423,7 +423,6 @@ private fun UserGreeting(screenState: HomeViewState) {
 private fun HomePreview() {
     Column {
         LinguaTheme { HomeScreen(HomeViewState.Preview, {}, {}) }
-
     }
 }
 

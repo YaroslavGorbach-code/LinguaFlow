@@ -6,14 +6,20 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.zIndex
 import com.example.yaroslavhorach.designsystem.theme.Gainsboro
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.Menthol
@@ -21,6 +27,7 @@ import com.example.yaroslavhorach.designsystem.theme.Menthol
 @Composable
 fun LinguaProgressBar(
     progress: Float,
+    progressBarHeight: Dp = 20.dp,
     modifier: Modifier = Modifier,
     backgroundColor: Color = Gainsboro,
     progressColor: Color = KellyGreen,
@@ -45,7 +52,11 @@ fun LinguaProgressBar(
     }
 
     Box(modifier = modifier) {
-        Canvas(modifier = Modifier.matchParentSize()) {
+        Canvas(modifier = Modifier
+            .fillMaxWidth()
+            .height(progressBarHeight)
+            .align(Alignment.CenterStart)
+        ) {
             val barHeight = size.height
 
             drawRoundRect(
@@ -77,7 +88,12 @@ fun LinguaProgressBar(
                 )
             )
         }
-
-        content()
+        Box(
+            modifier = Modifier
+                .matchParentSize()
+                .zIndex(1f)
+        ) {
+            content()
+        }
     }
 }

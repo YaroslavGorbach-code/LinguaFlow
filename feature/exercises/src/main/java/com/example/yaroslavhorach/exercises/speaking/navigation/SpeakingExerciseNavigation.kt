@@ -18,12 +18,15 @@ fun NavController.navigateToSpeakingExercise(exerciseId: Long) {
     }
 }
 
-fun NavGraphBuilder.speakingExerciseScreen(onNavigateBack: () -> Unit) {
+fun NavGraphBuilder.speakingExerciseScreen(
+    onNavigateBack: () -> Unit,
+    onNavigateToExerciseCompleted: (time: Long, experience: Int) -> Unit
+) {
     composable<SpeakingExerciseRoute> {
         SpeakingExerciseRoute(
             onNavigateBack = onNavigateBack,
-            onNavigateToExerciseResult = {
-
+            onNavigateToExerciseResult = { time, xp ->
+                onNavigateToExerciseCompleted(time, xp)
             })
     }
 }

@@ -2,6 +2,7 @@ package com.example.yaroslavhorach.data.exercise.repository
 
 import com.example.yaroslavhorach.database.dao.ExerciseProgressDao
 import com.example.yaroslavhorach.database.task.model.asDomainModel
+import com.example.yaroslavhorach.database.task.model.asEntityModel
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
@@ -32,7 +33,7 @@ class ExerciseRepositoryImpl @Inject constructor(
                         val progress = progressMap[exercise.id]
 
                         if (progress != null) {
-                            exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true)
+                            exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true, isLastActive = lastActive == index)
                         } else {
                             exercise.copy(isEnable = lastActive == index, isLastActive = lastActive == index)
                         }
@@ -45,10 +46,20 @@ class ExerciseRepositoryImpl @Inject constructor(
         val progress = exerciseProgressDao.getExerciseProgressEntity(exerciseId)
         val exercise = getRawExercises().find { it.id == exerciseId }
 
+        if (progress == null && exercise != null) {
+            exerciseProgressDao.upsertExerciseProgress(exercise.exerciseProgress.asEntityModel())
+        }
+
         return exercise?.copy(
             exerciseProgress = progress?.asDomainModel() ?: exercise.exerciseProgress,
             isEnable = true
         )
+    }
+
+    override suspend fun markCompleted(exerciseId: Long) {
+        val progress = exerciseProgressDao.getExerciseProgressEntity(exerciseId)
+
+        progress?.copy(progress = progress.progress.inc())?.let { exerciseProgressDao.upsertExerciseProgress(it) }
     }
 
     private fun getRawExercises(): List<Exercise> {

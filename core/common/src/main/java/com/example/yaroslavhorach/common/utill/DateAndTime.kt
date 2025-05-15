@@ -1,9 +1,12 @@
 package com.example.yaroslavhorach.common.utill
 
+import android.annotation.SuppressLint
 import android.content.Context
 import com.example.yaroslavhorach.common.R
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Calendar
+import java.util.Date
+import java.util.Locale
 
 fun Long.timeToToHoursMinutes(context: Context, format: TimeFormat): String {
     val minutes = (this / (1000 * 60) % 60)
@@ -61,6 +64,15 @@ fun Long.timeToToHoursMinutes(context: Context, format: TimeFormat): String {
     }
 
     return ""
+}
+
+@SuppressLint("DefaultLocale")
+fun Long.toMinutesSecondsFormat(): String {
+    val totalSeconds = this / 1000
+    val minutes = totalSeconds / 60
+    val seconds = totalSeconds % 60
+
+    return String.format("%02d:%02d", minutes, seconds)
 }
 
 fun Long.isToday(): Boolean {

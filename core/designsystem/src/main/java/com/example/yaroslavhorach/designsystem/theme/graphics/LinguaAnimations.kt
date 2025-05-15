@@ -1,5 +1,7 @@
 package com.example.yaroslavhorach.designsystem.theme.graphics
 
-object LinguaAnimations {
+import com.example.yaroslavhorach.designsystem.R
 
+object LinguaAnimations {
+    val StarInGlasses = R.raw.star_in_grasses
 }

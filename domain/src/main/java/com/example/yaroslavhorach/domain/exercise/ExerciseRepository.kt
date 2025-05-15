@@ -6,4 +6,5 @@ import kotlinx.coroutines.flow.Flow
 interface ExerciseRepository {
      fun getExercises(): Flow<List<Exercise>>
      suspend fun getExercise(exerciseId: Long): Exercise?
+     suspend fun markCompleted(exerciseId: Long)
 }

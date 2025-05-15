@@ -1,0 +1,3 @@
+package com.example.yaroslavhorach.exercises.exercise_completed.model
+
+sealed class ExerciseCompletedUiMessage

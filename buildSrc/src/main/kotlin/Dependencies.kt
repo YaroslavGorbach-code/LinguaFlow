@@ -56,6 +56,7 @@ object Versions {
     const val splashScreen = "1.0.1"
     const val navigationCompose = "2.8.9"
     const val kotlinSerealistion = "1.8.1"
+    const val lottie = "6.6.6"
     const val composeDialogs = "1.2.0"
 }
 
@@ -86,4 +87,5 @@ object Libs {
     const val splashScreen = "androidx.core:core-splashscreen:${Versions.splashScreen}"
     const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
     const val kotlinSerealistion = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinSerealistion}"
+    const val lottie = "com.airbnb.android:lottie-compose:${Versions.lottie}"
 }

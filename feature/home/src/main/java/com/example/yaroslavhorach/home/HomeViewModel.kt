@@ -29,10 +29,10 @@ class HomeViewModel @Inject constructor(
     private val descriptionState: MutableStateFlow<HomeViewState.DescriptionState> = MutableStateFlow(
         HomeViewState.DescriptionState.EMPTY
     )
+
     private val startExerciseTooltipPosition: MutableStateFlow<Offset> = MutableStateFlow(Offset.Zero)
 
-    override val state: StateFlow<HomeViewState> =
-        combine(
+    override val state: StateFlow<HomeViewState> = combine(
             exerciseRepository.getExercises(),
             descriptionState,
             startExerciseTooltipPosition,

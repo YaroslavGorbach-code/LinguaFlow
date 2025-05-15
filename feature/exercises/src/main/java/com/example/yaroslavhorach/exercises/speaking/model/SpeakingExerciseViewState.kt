@@ -16,12 +16,12 @@ data class SpeakingExerciseViewState(
 ) {
     val topBarBgRes: Int
         get() = when (exerciseBlock) {
-            ExerciseBlock.ONE -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
-            ExerciseBlock.TWO -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
-            ExerciseBlock.THREE -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
-            ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
-            ExerciseBlock.FIVE -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
-            ExerciseBlock.SIX -> com.example.yaroslavhorach.designsystem.R.drawable.block_1_gragient
+            ExerciseBlock.ONE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
+            ExerciseBlock.TWO -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
+            ExerciseBlock.THREE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
+            ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
+            ExerciseBlock.FIVE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
+            ExerciseBlock.SIX -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_orange
         }
 
     sealed class ScreenMode {

@@ -8,6 +8,7 @@ import androidx.navigation.toRoute
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.helpers.AudioRecorder
 import com.example.yaroslavhorach.common.helpers.PermissionManager
+import com.example.yaroslavhorach.common.helpers.SimpleTimer
 import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.common.utill.combine
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
@@ -44,6 +45,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     private val exerciseContentRepository: ExerciseContentRepository,
    @ApplicationContext private val applicationContext: Context
 ) : BaseViewModel<SpeakingExerciseViewState, SpeakingExerciseAction, SpeakingExerciseUiMessage>() {
+    private val timer = SimpleTimer()
 
     private val exerciseId = savedStateHandle.toRoute<SpeakingExerciseRoute>().exerciseId
 
@@ -57,7 +59,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     private val isSpeakingResulVisible: MutableStateFlow<Boolean> = MutableStateFlow(false)
     private val overAllMaxProgress: MutableStateFlow<Int> = MutableStateFlow(1)
     private val overAllProgress: MutableStateFlow<Int> = MutableStateFlow(0)
-    private val ownerAllProgressValue = combine(overAllMaxProgress, overAllProgress) { overAllMaxProgress, overAllProgress ->
+    private val overAllProgressValue = combine(overAllMaxProgress, overAllProgress) { overAllMaxProgress, overAllProgress ->
             (overAllProgress.toFloat() / overAllMaxProgress.toFloat())
         }
 
@@ -73,7 +75,7 @@ class SpeakingExerciseViewModel @Inject constructor(
         recorder.playProgressFlow,
         recorder.isPlayingPausedFlow,
         mode,
-        ownerAllProgressValue,
+        overAllProgressValue,
         isSpeakingResulVisible,
         uiMessageManager.message
     ) { btnTooltipText, isRecording, isRationalToAllowStopManually, isSpeaking, amplitude, secondsTillFinish, playProgress, isPlayingRecordPaused, mode, progress, isSpeakingResulVisible, messages ->
@@ -108,7 +110,10 @@ class SpeakingExerciseViewModel @Inject constructor(
         setUpInitialMode()
 
         recorder.onStopRecordingFlow
-            .onEach { isSpeakingResulVisible.value = true }
+            .onEach {
+                overAllProgress.value = overAllProgress.value.inc()
+                isSpeakingResulVisible.value = true
+            }
             .launchIn(viewModelScope)
 
         pendingActions
@@ -154,10 +159,18 @@ class SpeakingExerciseViewModel @Inject constructor(
 
     private suspend fun handleNextSituation() {
         if (overAllProgress.value == overAllMaxProgress.value) {
-            uiMessageManager.emitMessage(UiMessage(SpeakingExerciseUiMessage.NavigateToExerciseResult))
-        } else {
-            overAllProgress.value = overAllProgress.value.inc()
+            timer.stop()
+            exerciseRepository.markCompleted(exerciseId)
 
+            uiMessageManager.emitMessage(
+                UiMessage(
+                    SpeakingExerciseUiMessage.NavigateToExerciseResult(
+                        time = timer.getElapsedTimeMillis(),
+                        experience = EXPERIENCE_REWARD
+                    )
+                )
+            )
+        } else {
             val situation = exerciseContentRepository.getSituation(currentExercise!!.exerciseName)
             (mode.value as? SpeakingExerciseViewState.ScreenMode.Speaking)?.let { mode ->
                 this.mode.value = mode.copy(situation = situation)
@@ -229,6 +242,8 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     private fun setUpInitialMode() {
+        timer.start()
+
         viewModelScope.launch {
             currentExercise = exerciseRepository.getExercise(exerciseId)
 
@@ -279,6 +294,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     companion object {
+        const val EXPERIENCE_REWARD = 10
         const val AFTER_TEST_SPEAKING_MAX_PROGRESS = 2
         const val SPEAKING_MAX_PROGRESS = 3
     }

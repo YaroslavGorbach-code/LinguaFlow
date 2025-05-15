@@ -22,7 +22,7 @@ val DarkGray = Color(0xFFAAAAAA)
 
 internal val Cultured = Color(0xFFF5F5F5)
 internal val DarkLiver = Color(0xFF4D4D4D)
-internal val DavysGrey = Color(0xFF5C5C5C)
+internal val DavysGrey = Color(0xFF535353)
 internal val DarkSilver = Color(0xFF707070)
 internal val Black10 = Color(0x1A000000)
 internal val AmericanSilver = Color(0xFFCFCFCF)

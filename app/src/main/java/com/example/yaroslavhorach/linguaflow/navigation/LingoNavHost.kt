@@ -5,9 +5,12 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.example.yaroslavhorach.domain.exercise.model.Skill
+import com.example.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
+import com.example.yaroslavhorach.exercises.exercise_completed.navigation.navigateToExerciseCompleted
 import com.example.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExercise
 import com.example.yaroslavhorach.exercises.speaking.navigation.speakingExerciseScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
+import com.example.yaroslavhorach.home.navigation.navigateToHome
 
 @Composable
 fun LingoNavHost(
@@ -35,6 +38,11 @@ fun LingoNavHost(
         })
         speakingExerciseScreen(onNavigateBack = {
             navController.popBackStack()
+        }, onNavigateToExerciseCompleted = { time, xp ->
+            navController.navigateToExerciseCompleted(xp, time)
         })
+        exerciseCompletedScreen {
+            navController.navigateToHome()
+        }
     }
 }

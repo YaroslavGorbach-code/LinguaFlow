@@ -29,4 +29,5 @@ dependencies {
     api(Libs.hiltNavigationCompose)
     api(Libs.lifecycleCompose)
     api(Libs.lifecycle)
+    api(Libs.lottie)
 }

@@ -122,7 +122,7 @@ class AudioRecorder @Inject constructor() {
 
                                 while (millisLeft > 0 && _isRecordingFlow.value && _amplitudeFlow.value < minAmplitude) {
                                     _secondsLeftFlow.value = if (triggerSilenceDurationMillis >= millisLeft) {
-                                        if (attemptsToAutoReconnoitring > MAX_AUTO_RECORDING_STOP_ATTEMPTS && canIncreasAutoRecordingAttempts) {
+                                        if (attemptsToAutoReconnoitring >= MAX_AUTO_RECORDING_STOP_ATTEMPTS && canIncreasAutoRecordingAttempts) {
                                             _isRationalToAllowStopManually.value = true
                                         }
                                         attemptsToAutoReconnoitring = attemptsToAutoReconnoitring.inc()

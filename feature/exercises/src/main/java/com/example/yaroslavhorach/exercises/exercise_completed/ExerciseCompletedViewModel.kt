@@ -1,0 +1,50 @@
+package com.example.yaroslavhorach.exercises.exercise_completed
+
+import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.viewModelScope
+import androidx.navigation.toRoute
+import com.example.yaroslavhorach.common.base.BaseViewModel
+import com.example.yaroslavhorach.common.utill.toMinutesSecondsFormat
+import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
+import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedUiMessage
+import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedViewState
+import com.example.yaroslavhorach.exercises.exercise_completed.navigation.ExerciseCompletedRoute
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.stateIn
+import javax.inject.Inject
+
+@HiltViewModel
+class ExerciseCompletedViewModel @Inject constructor(savedStateHandle: SavedStateHandle) :
+    BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
+
+    override val pendingActions: MutableSharedFlow<ExerciseCompletedAction> = MutableSharedFlow()
+
+    override val state: StateFlow<ExerciseCompletedViewState> = combine(
+        flowOf(savedStateHandle.toRoute<ExerciseCompletedRoute>().time),
+        flowOf(savedStateHandle.toRoute<ExerciseCompletedRoute>().experience),
+        uiMessageManager.message
+    ) { time, xp, message ->
+        ExerciseCompletedViewState(time.toMinutesSecondsFormat(), xp, message)
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = ExerciseCompletedViewState.Empty
+    )
+
+    init {
+        pendingActions
+            .onEach { event ->
+                when (event) {
+                    else -> error("Action $event is not handled")
+                }
+            }
+            .launchIn(viewModelScope)
+    }
+}
