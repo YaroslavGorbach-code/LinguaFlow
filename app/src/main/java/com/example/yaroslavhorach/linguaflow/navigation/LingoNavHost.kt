@@ -11,6 +11,8 @@ import com.example.yaroslavhorach.exercises.speaking.navigation.navigateToSpeaki
 import com.example.yaroslavhorach.exercises.speaking.navigation.speakingExerciseScreen
 import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.navigateToTongueTwistersExercise
 import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.tongueTwistersExerciseScreen
+import com.example.yaroslavhorach.exercises.vocabulary.navigation.navigateToVocabularyExercise
+import com.example.yaroslavhorach.exercises.vocabulary.navigation.vocabularyExerciseScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
 import com.example.yaroslavhorach.home.navigation.navigateToHome
 
@@ -31,7 +33,7 @@ fun LingoNavHost(
                     navController.navigateToSpeakingExercise(exercise.id)
                 }
                 Skill.VOCABULARY -> {
-
+                    navController.navigateToVocabularyExercise(exercise.id)
                 }
                 Skill.DICTION -> {
                     navController.navigateToTongueTwistersExercise(exercise.id)
@@ -44,6 +46,11 @@ fun LingoNavHost(
             navController.navigateToExerciseCompleted(xp, time)
         })
         tongueTwistersExerciseScreen(onNavigateBack = {
+            navController.popBackStack()
+        }, onNavigateToExerciseCompleted = { time, xp ->
+            navController.navigateToExerciseCompleted(xp, time)
+        })
+        vocabularyExerciseScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToExerciseCompleted = { time, xp ->
             navController.navigateToExerciseCompleted(xp, time)
