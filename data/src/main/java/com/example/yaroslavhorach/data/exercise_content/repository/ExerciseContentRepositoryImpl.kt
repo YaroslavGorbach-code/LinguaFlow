@@ -30,6 +30,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.FINISH_THE_THOUGHT -> "situations_FINISH_THE_THOUGHT.json"
                     ExerciseName.WHAT_TO_SAY_NEXT -> "situations_WHAT_TO_SAY_NEXT.json"
                     ExerciseName.THE_KEY_TO_SMALL_TALK -> "situations_THE_KEY_TO_SMALL_TALK.json"
+                    ExerciseName.FAREWELL_REMARK -> "situations_FAREWELL_REMARK.json"
                     else -> ""
                 }
 
@@ -84,6 +85,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 ExerciseName.ICEBREAKERS -> "tests_ICEBREAKERS.json"
                 ExerciseName.WHAT_TO_SAY_NEXT -> "tests_WHAT_TO_SAY_NEXT.json"
                 ExerciseName.THE_KEY_TO_SMALL_TALK -> "tests_THE_KEY_TO_SMALL_TALK.json"
+                ExerciseName.FAREWELL_REMARK -> "tests_FAREWELL_REMARK.json"
                 else -> ""
             }
 
