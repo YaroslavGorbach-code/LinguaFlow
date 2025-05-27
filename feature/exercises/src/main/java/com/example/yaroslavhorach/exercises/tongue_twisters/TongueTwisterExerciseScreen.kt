@@ -2,19 +2,12 @@ package com.example.yaroslavhorach.exercises.tongue_twisters
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.AnimatedContent
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
-import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInHorizontally
-import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutHorizontally
-import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
-import androidx.compose.animation.with
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -38,7 +31,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -58,7 +50,7 @@ import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBa
 import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
-import com.example.yaroslavhorach.exercises.extentions.topBarBgRes
+import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseAction
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseViewState

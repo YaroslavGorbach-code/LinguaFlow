@@ -60,6 +60,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.roundToIntRect
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.example.yaroslavhorach.designsystem.extentions.blockColorPrimary
+import com.example.yaroslavhorach.designsystem.extentions.blockColorSecondary
+import com.example.yaroslavhorach.designsystem.extentions.blockDescription
+import com.example.yaroslavhorach.designsystem.extentions.blockTitle
 import com.example.yaroslavhorach.designsystem.theme.Black_35
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -80,10 +84,6 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.home.model.ExerciseUi
 import com.example.yaroslavhorach.home.model.HomeAction
 import com.example.yaroslavhorach.home.model.HomeViewState
-import com.example.yaroslavhorach.home.model.blockColorPrimary
-import com.example.yaroslavhorach.home.model.blockColorSecondary
-import com.example.yaroslavhorach.home.model.blockDescription
-import com.example.yaroslavhorach.home.model.blockTitle
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 
@@ -362,7 +362,7 @@ private fun BlockDescription(state: HomeViewState, modifier: Modifier) {
                 style = LinguaTypography.subtitle4
             )
 
-            if (state.exerciseBlock == ExerciseBlock.ONE || state.blockProgress != 0f){
+            if (state.exerciseBlock == ExerciseBlock.ONE || state.blockProgress != 0f) {
                 Spacer(Modifier.height(14.dp))
                 LinguaProgressBar(
                     progress = state.blockProgress,

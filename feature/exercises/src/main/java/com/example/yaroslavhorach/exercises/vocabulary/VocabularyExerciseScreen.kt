@@ -68,7 +68,7 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
-import com.example.yaroslavhorach.exercises.extentions.topBarBgRes
+import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseAction
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiMessage
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseViewState
