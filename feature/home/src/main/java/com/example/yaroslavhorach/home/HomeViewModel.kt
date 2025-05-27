@@ -4,11 +4,13 @@ import androidx.compose.ui.geometry.Offset
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
+import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.home.model.ExerciseUi
 import com.example.yaroslavhorach.home.model.HomeAction
 import com.example.yaroslavhorach.home.model.HomeUiMessage
 import com.example.yaroslavhorach.home.model.HomeViewState
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -24,24 +26,28 @@ class HomeViewModel @Inject constructor(
     exerciseRepository: ExerciseRepository
 ) : BaseViewModel<HomeViewState, HomeAction, HomeUiMessage>() {
 
-    override val pendingActions: MutableSharedFlow<HomeAction> = MutableSharedFlow()
+    override val pendingActions: MutableSharedFlow<HomeAction> = MutableSharedFlow(extraBufferCapacity = 1, onBufferOverflow = BufferOverflow.DROP_OLDEST)
 
     private val descriptionState: MutableStateFlow<HomeViewState.DescriptionState> = MutableStateFlow(
         HomeViewState.DescriptionState.EMPTY
     )
+
+    private val exercisesBlock: MutableStateFlow<ExerciseBlock> = MutableStateFlow(ExerciseBlock.ONE)
 
     private val startExerciseTooltipPosition: MutableStateFlow<Offset> = MutableStateFlow(Offset.Zero)
 
     override val state: StateFlow<HomeViewState> = combine(
             exerciseRepository.getExercises(),
             descriptionState,
+            exercisesBlock,
             startExerciseTooltipPosition,
             uiMessageManager.message
-        ) { exercises, description, startExerciseTooltipPosition, messages ->
+        ) { exercises, description, exercisesBlock, startExerciseTooltipPosition, messages ->
             HomeViewState(
                 uiMessage = messages,
                 startExerciseTooltipPosition = startExerciseTooltipPosition,
                 descriptionState = description,
+                exerciseBlock = exercisesBlock,
                 exercises = exercises.map { ExerciseUi(it) }
             )
         }.stateIn(
@@ -89,6 +95,9 @@ class HomeViewModel @Inject constructor(
                     }
                     is HomeAction.OnStartExerciseClicked -> {
                         descriptionState.value = HomeViewState.DescriptionState.EMPTY
+                    }
+                    is HomeAction.OnExercisesBlockChanged -> {
+                        exercisesBlock.value = event.block
                     }
                 }
             }

@@ -1,16 +1,15 @@
 package com.example.yaroslavhorach.designsystem.theme.components
 
-import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
@@ -24,13 +23,14 @@ import com.example.yaroslavhorach.designsystem.theme.White_10
 
 @Composable
 fun BoxWithStripes(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     stripeColor: Color = White_10,
     stripeWidth: Dp = 60.dp,
     stripeSpacing: Dp = 150.dp,
     background: Color = OrangeLight,
     backgroundShadow: Color = OrangeDark,
     shadowOffset: Dp = (-3).dp,
+    contentPadding: Dp = 16.dp,
     shape: Shape = RoundedCornerShape(12.dp),
     content: @Composable BoxScope.() -> Unit
 ) {
@@ -42,27 +42,29 @@ fun BoxWithStripes(
     ) {
         Box(
             modifier = Modifier
-                .fillMaxWidth()
                 .clip(shape)
                 .background(color = background)
-        ) {
-            Canvas(modifier = Modifier.fillMaxSize()) {
-                val rotationAngle = 30f
-                val stripeLength = size.height * 3
+                .drawBehind {
+                    val stripePxWidth = stripeWidth.toPx()
+                    val stripePxSpacing = stripeSpacing.toPx()
+                    val stripeLength = size.height * 3
+                    var startX = -stripeLength / 2
 
-                var startX = -stripeLength / 2
-                while (startX < size.width + stripeLength) {
-                    rotate(rotationAngle, pivot = Offset(startX, 0f)) {
-                        drawRect(
-                            color = stripeColor,
-                            topLeft = Offset(startX, -stripeLength / 2),
-                            size = Size(stripeWidth.toPx(), stripeLength)
-                        )
+                    while (startX < size.width + stripeLength) {
+                        rotate(30f, pivot = Offset(startX, 0f)) {
+                            drawRect(
+                                color = stripeColor,
+                                topLeft = Offset(startX, -stripeLength / 2),
+                                size = Size(stripePxWidth, stripeLength)
+                            )
+                        }
+                        startX += stripePxSpacing
                     }
-                    startX += stripeSpacing.toPx()
                 }
+        ) {
+            Box(modifier = Modifier.padding(contentPadding)) {
+                content()
             }
         }
-        content()
     }
 }

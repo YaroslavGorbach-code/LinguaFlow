@@ -154,7 +154,6 @@ private fun TopBar(screenState: TongueTwisterExerciseViewState, actioner: (Tongu
 }
 
 @SuppressLint("UnusedContentLambdaTargetStateParameter")
-@OptIn(ExperimentalAnimationApi::class)
 @Composable
 private fun TwisterContent(
     state: TongueTwisterExerciseViewState,

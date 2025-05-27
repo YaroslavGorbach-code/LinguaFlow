@@ -32,7 +32,7 @@ fun LinguaProgressBar(
     backgroundColor: Color = Gainsboro,
     progressColor: Color = KellyGreen,
     progressShadow: Color = Menthol,
-    minValue: Float = 0.1f,
+    minValue: Float = 0f,
     content: @Composable BoxScope.() -> Unit = {}
 ) {
     val animatedProgress = remember { Animatable(progress.coerceIn(0f, 1f)) }

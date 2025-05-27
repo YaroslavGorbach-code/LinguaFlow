@@ -2,6 +2,7 @@ package com.example.yaroslavhorach.linguaflow.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.example.yaroslavhorach.domain.exercise.model.Skill
@@ -20,7 +21,8 @@ import com.example.yaroslavhorach.home.navigation.navigateToHome
 fun LingoNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier,
-    startDestination: String = TopLevelDestination.Home.navigationRoute ?: ""
+    startDestination: String = TopLevelDestination.Home.navigationRoute ?: "",
+    onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
     NavHost(
         navController = navController,
@@ -39,7 +41,7 @@ fun LingoNavHost(
                     navController.navigateToTongueTwistersExercise(exercise.id)
                 }
             }
-        })
+        }, onChangeColorScheme)
         speakingExerciseScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToExerciseCompleted = { time, xp ->

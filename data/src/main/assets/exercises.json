@@ -60,7 +60,7 @@
     "exerciseProgress": {
       "exerciseId": 3,
       "progress": 0,
-      "maxProgress": 2
+      "maxProgress": 3
     },
     "name": "TONGUE_TWISTERS_EASY",
     "skill": "DICTION",
@@ -76,14 +76,14 @@
       "ru": "Словарный запас"
     },
     "description": {
-      "ua": "Розширюй свій словниковий запас у веселих і швидких завданнях. Називай слова за категорією або темою, тренуй швидкість мислення та гнучкість.",
-      "en": "Expand your vocabulary with fun and fast-paced challenges. Name words by category or theme to sharpen your thinking and flexibility.",
-      "ru": "Расширяй словарный запас в быстрых и увлекательных заданиях. Называй слова по категориям, развивай гибкость и скорость мышления."
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
     },
     "exerciseProgress": {
       "exerciseId": 4,
       "progress": 0,
-      "maxProgress": 1
+      "maxProgress": 3
     },
     "name": "VOCABULARY",
     "skill": "VOCABULARY",
@@ -140,23 +140,230 @@
   {
     "id": 7,
     "nameString": {
-      "ua": "Словниковий запас",
-      "en": "Vocabulary",
-      "ru": "Словарный запас"
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
     },
     "description": {
-      "ua": "Розширюй свій словниковий запас у веселих і швидких завданнях. Називай слова за категорією або темою, тренуй швидкість мислення та гнучкість.",
-      "en": "Expand your vocabulary with fun and fast-paced challenges. Name words by category or theme to sharpen your thinking and flexibility.",
-      "ru": "Расширяй словарный запас в быстрых и увлекательных заданиях. Называй слова по категориям, развивай гибкость и скорость мышления."
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
     },
     "exerciseProgress": {
       "exerciseId": 7,
       "progress": 0,
       "maxProgress": 3
     },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 8,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 8,
+      "progress": 0,
+      "maxProgress": 3
+    },
     "name": "VOCABULARY",
     "skill": "VOCABULARY",
     "block": "ONE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 9,
+    "nameString": {
+      "ua": "Розкажи трьома реченнями",
+      "en": "Tell it in Three Sentences",
+      "ru": "Расскажи в трёх предложениях"
+    },
+    "description": {
+      "ua": "Навчися стисло і впевнено говорити про себе або свою щоденну реальність усього в трьох реченнях.",
+      "en": "Learn to speak concisely and confidently about yourself or your daily reality in just three sentences.",
+      "ru": "Научись говорить кратко и уверенно о себе или своей повседневной жизни всего в трёх предложениях."
+    },
+    "exerciseProgress": {
+      "exerciseId": 9,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "THREE_SENTENCES",
+    "skill": "COMMUNICATION",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 10,
+    "nameString": {
+      "ua": "Історія з пазлів",
+      "en": "Story from Puzzle Pieces",
+      "ru": "История из пазлов"
+    },
+    "description": {
+      "ua": "Отримуй початок, середину та фінал — і створюй власну історію на ходу! Це може бути щось реальне, кумедне чи зовсім вигадане. Говори вголос, імпровізуй і тренуй свою здатність мислити швидко та цікаво.",
+      "en": "Get a beginning, middle, and ending — and make up your own story on the go! It can be real, funny, or totally made up. Speak out loud, improvise, and train your quick and creative thinking.",
+      "ru": "Получай начало, середину и финал — и сочиняй свою историю на ходу! Это может быть что-то реальное, забавное или полностью вымышленное. Говори вслух, импровизируй и тренируй быструю и креативную речь."
+    },
+    "exerciseProgress": {
+      "exerciseId": 10,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "STORY_PUZZLE",
+    "skill": "COMMUNICATION",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 11,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 11,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 12,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 12,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 14,
+    "nameString": {
+      "ua": "Скажи інакше",
+      "en": "Say It Differently",
+      "ru": "Скажи иначе"
+    },
+    "description": {
+      "ua": "Ми звикли відповідати на автоматі: «нормально», «та нічого». Але ж кожен день — особливий. У цій вправі ти потренуєшся висловлювати свій стан точніше. Отримаєш прості запитання на кшталт «Як ти?» чи «Як минув день?» — і спробуєш знайти власні, живі, щирі слова замість звичних шаблонів.",
+      "en": "We often reply on autopilot: “fine,” “nothing much.” But every day brings something different. In this exercise, you’ll practice expressing your state more precisely. You’ll get simple questions like “How are you?” or “How was your day?” — and try to find your own, sincere, vivid words instead of the usual clichés.",
+      "ru": "Мы часто отвечаем автоматически: «нормально», «ничего особенного». Но ведь каждый день — особенный. В этом упражнении ты потренируешься точнее выражать своё состояние. Ты получишь простые вопросы вроде «Как ты?» или «Как прошёл день?» — и постараешься найти свои, живые, искренние слова вместо привычных шаблонов."
+    },
+    "exerciseProgress": {
+      "exerciseId": 14,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "SAY_DIFFERENTLY",
+    "skill": "COMMUNICATION",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 15,
+    "nameString": {
+      "ua": "Один спогад",
+      "en": "One Memory",
+      "ru": "Одно воспоминание"
+    },
+    "description": {
+      "ua": "Ця вправа допоможе тренувати вільне мовлення, звертаючись до власного досвіду. У кожному раунді — тема, яка пробуджує спогади. Твоє завдання — згадати щось конкретне і коротко, але яскраво про це розповісти.",
+      "en": "This exercise helps you practice free speech by drawing from personal experience. In each round, you’ll get a topic that evokes a memory. Your task is to recall something specific and talk about it briefly but vividly.",
+      "ru": "Это упражнение помогает развивать свободную речь, опираясь на личный опыт. В каждом раунде — тема, которая вызывает воспоминание. Твоя задача — вспомнить что-то конкретное и рассказать об этом кратко, но ярко."
+    },
+    "exerciseProgress": {
+      "exerciseId": 15,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "ONE_MEMORY",
+    "skill": "COMMUNICATION",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 16,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 16,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "TWO",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 17,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 17,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "TWO",
     "isEnable": false,
     "isLastActive": false
   }

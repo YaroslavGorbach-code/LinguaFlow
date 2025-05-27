@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home
 
+import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
@@ -23,6 +24,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -48,44 +50,56 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntRect
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.roundToIntRect
-import androidx.compose.ui.unit.toRect
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.designsystem.theme.Black_35
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
-import com.example.yaroslavhorach.designsystem.theme.OrangeDark
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.components.FloatingTooltip
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
+import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
+import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoControlPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoControlSecondary
-import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.Cup
-import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
+import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.home.model.ExerciseUi
 import com.example.yaroslavhorach.home.model.HomeAction
 import com.example.yaroslavhorach.home.model.HomeViewState
+import com.example.yaroslavhorach.home.model.blockColorPrimary
+import com.example.yaroslavhorach.home.model.blockColorSecondary
+import com.example.yaroslavhorach.home.model.blockDescription
+import com.example.yaroslavhorach.home.model.blockTitle
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.map
 
 @Composable
 internal fun HomeRoute(
     onNavigateToExercise: (Exercise) -> Unit,
+    onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
     val homeState by viewModel.state.collectAsStateWithLifecycle()
 
-    HomeScreen(screenState = homeState, onMessageShown = viewModel::clearMessage, actioner = { action ->
+    HomeScreen(
+        screenState = homeState,
+        onMessageShown = viewModel::clearMessage,
+        onChangeColorScheme = onChangeColorScheme,
+        actioner = { action ->
         when (action) {
             is HomeAction.OnStartExerciseClicked -> {
                 viewModel.submitAction(HomeAction.OnHideDescription)
@@ -100,6 +114,7 @@ internal fun HomeRoute(
 internal fun HomeScreen(
     screenState: HomeViewState,
     onMessageShown: (id: Long) -> Unit,
+    onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
     actioner: (HomeAction) -> Unit,
 ) {
     val density = LocalDensity.current
@@ -110,6 +125,8 @@ internal fun HomeScreen(
         animationSpec = tween(durationMillis = 300),
         label = "list_padding"
     )
+
+    HandleOnScrollBlockChange(screenState, exercisesState, onChangeColorScheme, actioner)
 
     LaunchedEffect(exercisesState) {
         snapshotFlow { exercisesState.isScrollInProgress }
@@ -142,45 +159,24 @@ internal fun HomeScreen(
                 .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
         ) {
             UserGreeting(screenState)
-            BlockDescription(modifier = Modifier.onGloballyPositioned {
-                descriptionBlockBounds.value =it.boundsInRoot().roundToIntRect()
+            Spacer(Modifier.height(20.dp))
+            BlockDescription(screenState, modifier = Modifier.onGloballyPositioned {
+                descriptionBlockBounds.value = it.boundsInRoot().roundToIntRect()
             })
             Spacer(
                 Modifier.height(animatedTopPadding)
             )
-            LazyColumn(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                state = exercisesState
-            ) {
-                itemsIndexed(screenState.exercises) { index, exercise ->
-                    if (index > 0) Spacer(Modifier.size(20.dp))
-                    if (index == 0) Spacer(Modifier.size(40.dp))
-                    Exercise(exercise, (index % 2) != 0,
-                        onClickWithCoordinates = { offset ->
-                            actioner(
-                                HomeAction.OnExerciseClicked(
-                                    exercise,
-                                    offset.copy(y = offset.y - with(density) { screenState.descriptionState.listTopExtraPadding.toPx() })
-                                )
-                            )
-                        }, onGloballyPositioned = {
-                            if (exercise.isLastActive && screenState.descriptionState.isVisible.not()) {
-                                actioner(HomeAction.OnShowStartExerciseTooltip(it))
-                            }
-                        }
-                    )
-                }
-            }
+            Exercises(exercisesState, screenState, actioner, density)
         }
 
-        screenState.startExerciseTooltipPosition?.let {offset->
-            val rect = descriptionBlockBounds.value?.toRect()
-            if (rect != null && !(offset.x >= rect.left && offset.x <= rect.right &&
-                        offset.y >= rect.top && offset.y <= rect.bottom)) {
-                StartTooltip(offset)
-            }
-        }
+//        screenState.startExerciseTooltipPosition?.let { offset ->
+//            val rect = descriptionBlockBounds.value?.toRect()
+//            if (rect != null && !(offset.x >= rect.left && offset.x <= rect.right &&
+//                        offset.y >= rect.top && offset.y <= rect.bottom)
+//            ) {
+//                StartTooltip(offset)
+//            }
+//        }
 
         DescriptionTooltip(
             exercise = screenState.descriptionState.exercise,
@@ -191,6 +187,138 @@ internal fun HomeScreen(
             onRequireRootTopPadding = { actioner(HomeAction.OnDescriptionListTopPaddingChanged(it)) },
             onStartExerciseClicked = { actioner(HomeAction.OnStartExerciseClicked(it.exercise)) }
         )
+    }
+}
+
+@Composable
+private fun Exercises(
+    exercisesState: LazyListState,
+    screenState: HomeViewState,
+    actioner: (HomeAction) -> Unit,
+    density: Density
+) {
+    LazyColumn(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        state = exercisesState
+    ) {
+        itemsIndexed(screenState.exercises) { index, exercise ->
+            val block = exercise.exercise.block
+            val previousBlock = screenState.exercises.getOrNull(index - 1)?.exercise?.block
+
+            if (index > 0) Spacer(Modifier.size(20.dp))
+            if (index == 0) Spacer(Modifier.size(40.dp))
+
+            if (index != 0 && block != previousBlock) {
+                BlockTitle(block)
+            }
+
+            Exercise(
+                exercise = exercise,
+                moveElementRight = (index % 2) != 0,
+                onClickWithCoordinates = { offset ->
+                    actioner(
+                        HomeAction.OnExerciseClicked(
+                            exercise,
+                            offset.copy(
+                                y = offset.y - with(density) { screenState.descriptionState.listTopExtraPadding.toPx() }
+                            )
+                        )
+                    )
+                },
+                onGloballyPositioned = {
+                    if (exercise.isLastActive && screenState.descriptionState.isVisible.not()) {
+                        actioner(HomeAction.OnShowStartExerciseTooltip(it))
+                    }
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun BlockTitle(block: ExerciseBlock) {
+    Row(
+        modifier = Modifier
+            .padding(bottom = 24.dp, top = 4.dp)
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Spacer(
+            Modifier
+                .height(2.dp)
+                .weight(0.2f)
+                .background(
+                    color = MaterialTheme.colorScheme.onBackgroundDark(),
+                    shape = RoundedCornerShape(2.dp)
+                )
+        )
+        Text(
+            text = block.blockTitle().asString(),
+            style = LinguaTypography.h6,
+            textAlign = TextAlign.Center,
+            color = MaterialTheme.colorScheme.typoDisabled(),
+            modifier = Modifier
+                .weight(1f)
+        )
+        Spacer(
+            Modifier
+                .height(2.dp)
+                .weight(0.2f)
+                .background(
+                    color = MaterialTheme.colorScheme.onBackgroundDark(),
+                    shape = RoundedCornerShape(2.dp)
+                )
+        )
+    }
+}
+
+@Composable
+private fun HandleOnScrollBlockChange(
+    screenState: HomeViewState,
+    exercisesState: LazyListState,
+    onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
+    actioner: (HomeAction) -> Unit
+) {
+    val currentBlock = remember { mutableStateOf<ExerciseBlock?>(null) }
+
+    LaunchedEffect(screenState.exercises) {
+        if (screenState.exercises.isNotEmpty()) {
+            snapshotFlow { exercisesState.layoutInfo.visibleItemsInfo }
+                .map { visibleItems ->
+                    val visibleIndexes = visibleItems.map { it.index }
+                    val visibleExercises = visibleIndexes.mapNotNull { screenState.exercises.getOrNull(it) }
+
+                    val blockCounts = visibleExercises
+                        .groupingBy { it.exercise.block }
+                        .eachCount()
+
+                    val sorted = blockCounts.entries.sortedByDescending { it.value }
+
+                    val first = sorted.getOrNull(0)
+                    val second = sorted.getOrNull(1)
+
+                    val significantAdvantage = 2
+
+                    if (first != null && (second == null || (first.value - second.value) >= significantAdvantage)) {
+                        first.key
+                    } else {
+                        null
+                    }
+                }
+                .distinctUntilChanged()
+                .collect { mostFrequentBlock ->
+                    if (mostFrequentBlock != null && mostFrequentBlock != currentBlock.value) {
+                        currentBlock.value = mostFrequentBlock
+                        onChangeColorScheme(
+                            mostFrequentBlock.blockColorPrimary(),
+                            mostFrequentBlock.blockColorSecondary()
+                        )
+                        actioner(HomeAction.OnExercisesBlockChanged(mostFrequentBlock))
+                    }
+                }
+        }
     }
 }
 
@@ -212,42 +340,46 @@ private fun StartTooltip(position: Offset) {
 }
 
 @Composable
-private fun BlockDescription(modifier: Modifier = Modifier) {
+private fun BlockDescription(state: HomeViewState, modifier: Modifier) {
     BoxWithStripes(
+        background = state.exerciseBlock.blockColorPrimary(),
+        backgroundShadow = state.exerciseBlock.blockColorSecondary(),
         modifier = modifier
-            .padding(top = 20.dp)
             .fillMaxWidth()
-            .height(130.dp)
     ) {
-        Column(modifier = Modifier.padding(horizontal = 16.dp)) {
-            Spacer(Modifier.height(12.dp))
+        Column(modifier = Modifier.animateContentSize()) {
             Text(
                 modifier = Modifier,
-                text = "Блок 1: Small Talk & Знайомство",
+                text = state.exerciseBlock.blockTitle().asString(),
                 color = MaterialTheme.colorScheme.typoControlPrimary(),
                 style = LinguaTypography.h5
             )
             Spacer(Modifier.height(4.dp))
             Text(
                 modifier = Modifier,
-                text = "Навчись легко починати розмову, підтримувати бесіду і знайомитись з новими людьми",
+                text = state.exerciseBlock.blockDescription().asString(),
                 color = MaterialTheme.colorScheme.typoControlSecondary(),
                 style = LinguaTypography.subtitle4
             )
-            Spacer(Modifier.height(14.dp))
-            LinguaProgressBar(
-                0.2f,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(18.dp)
-            ) {
-                Image(
+
+            if (state.exerciseBlock == ExerciseBlock.ONE || state.blockProgress != 0f){
+                Spacer(Modifier.height(14.dp))
+                LinguaProgressBar(
+                    progress = state.blockProgress,
                     modifier = Modifier
-                        .align(Alignment.CenterEnd)
-                        .offset(x = 10.dp, y = (-3).dp),
-                    painter = painterResource(Cup),
-                    contentDescription = ""
-                )
+                        .fillMaxWidth()
+                        .padding(end = 14.dp)
+                        .height(40.dp),
+                ) {
+                    Image(
+                        modifier = Modifier
+                            .size(40.dp)
+                            .offset(x = 15.dp)
+                            .align(Alignment.CenterEnd),
+                        painter = painterResource(LinguaIcons.Cup),
+                        contentDescription = ""
+                    )
+                }
             }
         }
     }
@@ -264,13 +396,17 @@ private fun Exercise(
     val layoutCoordinates = remember { mutableStateOf<LayoutCoordinates?>(null) }
 
     val offset = if (moveElementRight) exerciseSize / 1.5f else -exerciseSize / 1.5f
+
     Row {
         Box {
             BoxWithStripes(
+                contentPadding = 8.dp,
+                background = exercise.exercise.block.blockColorPrimary(),
+                backgroundShadow = exercise.exercise.block.blockColorSecondary(),
                 modifier = Modifier
                     .offset(x = offset)
                     .size(exerciseSize)
-                    .border(2.dp, OrangeDark, shape = RoundedCornerShape(12.dp))
+                    .border(2.dp, exercise.exercise.block.blockColorSecondary(), shape = RoundedCornerShape(12.dp))
                     .onGloballyPositioned { coordinates ->
                         val center = coordinates.boundsInRoot().topCenter
                         onGloballyPositioned(Offset(center.x, center.y))
@@ -288,11 +424,14 @@ private fun Exercise(
                 stripeSpacing = 45.dp,
                 shadowOffset = 0.dp
             ) {
+                Box(modifier = Modifier.size(exerciseSize)) {
+
+
                 if (exercise.isStarted) {
                     LinguaProgressBar(
                         exercise.progressPercent,
                         modifier = Modifier
-                            .padding(top = 8.dp, start = 8.dp, end = 8.dp)
+                            .align(Alignment.TopCenter)
                             .fillMaxWidth()
                             .height(6.dp)
                     )
@@ -307,6 +446,7 @@ private fun Exercise(
                     painter = painterResource(exercise.iconResId),
                     contentDescription = ""
                 )
+                }
             }
             if (exercise.isEnable.not()) {
                 Spacer(
@@ -331,8 +471,8 @@ private fun DescriptionTooltip(
 ) {
     FloatingTooltip(
         modifier = modifier,
-        backgroundColor = if (exercise?.isEnable == true) exercise.colorLight else if (exercise != null) MaterialTheme.colorScheme.onBackground else Color.Transparent,
-        borderColor = if (exercise?.isEnable == true) exercise.colorDark else if (exercise != null) MaterialTheme.colorScheme.onBackgroundDark() else Color.Transparent,
+        backgroundColor = if (exercise?.isEnable == true) MaterialTheme.colorScheme.primary else if (exercise != null) MaterialTheme.colorScheme.onBackground else Color.Transparent,
+        borderColor = if (exercise?.isEnable == true) MaterialTheme.colorScheme.secondary else if (exercise != null) MaterialTheme.colorScheme.onBackgroundDark() else Color.Transparent,
         contentPadding = 20.dp,
         appearPosition = position,
         onGloballyPositioned = onGloballyPositioned,
@@ -422,7 +562,13 @@ private fun UserGreeting(screenState: HomeViewState) {
 @Composable
 private fun HomePreview() {
     Column {
-        LinguaTheme { HomeScreen(HomeViewState.Preview, {}, {}) }
+        LinguaTheme {
+            HomeScreen(
+                HomeViewState.Preview,
+                {},
+                actioner = { _ -> },
+                onChangeColorScheme = { _, _ -> })
+        }
     }
 }
 

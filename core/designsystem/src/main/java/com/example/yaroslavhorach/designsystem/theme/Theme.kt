@@ -6,6 +6,7 @@ import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 @VisibleForTesting
@@ -55,6 +56,8 @@ val DarkDefaultColorScheme = darkColorScheme(
 @Composable
 fun LinguaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
+    primaryColor: Color? = null,
+    secondaryColor: Color? = null,
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
@@ -66,8 +69,14 @@ fun LinguaTheme(
                 dynamicLightColorScheme(LocalContext.current)
             }
         }
-        darkTheme -> DarkDefaultColorScheme
-        else -> LightDefaultColorScheme
+        darkTheme -> DarkDefaultColorScheme.copy(
+            primary = primaryColor ?: DarkDefaultColorScheme.primary,
+            secondary = secondaryColor ?: DarkDefaultColorScheme.secondary
+        )
+        else -> LightDefaultColorScheme.copy(
+            primary = primaryColor ?: LightDefaultColorScheme.primary,
+            secondary = secondaryColor ?: LightDefaultColorScheme.secondary
+        )
     }
 
     MaterialTheme(colorScheme = colorScheme, content = content)

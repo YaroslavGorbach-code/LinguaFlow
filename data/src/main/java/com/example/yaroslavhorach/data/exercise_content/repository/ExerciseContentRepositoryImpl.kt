@@ -26,11 +26,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
         if (cashedSituations[exerciseName].isNullOrEmpty()) {
             withContext(Dispatchers.IO) {
                 val fileName = when (exerciseName) {
-                    ExerciseName.ICEBREAKERS -> "situations_ICEBREAKERS.json"
-                    ExerciseName.FINISH_THE_THOUGHT -> "situations_FINISH_THE_THOUGHT.json"
-                    ExerciseName.WHAT_TO_SAY_NEXT -> "situations_WHAT_TO_SAY_NEXT.json"
-                    ExerciseName.THE_KEY_TO_SMALL_TALK -> "situations_THE_KEY_TO_SMALL_TALK.json"
-                    ExerciseName.FAREWELL_REMARK -> "situations_FAREWELL_REMARK.json"
+                    ExerciseName.ICEBREAKERS -> "situations/block_one/situations_ICEBREAKERS.json"
+                    ExerciseName.FINISH_THE_THOUGHT -> "situations/block_one/situations_FINISH_THE_THOUGHT.json"
+                    ExerciseName.WHAT_TO_SAY_NEXT -> "situations/block_one/situations_WHAT_TO_SAY_NEXT.json"
+                    ExerciseName.THE_KEY_TO_SMALL_TALK -> "situations/block_one/situations_THE_KEY_TO_SMALL_TALK.json"
+                    ExerciseName.FAREWELL_REMARK -> "situations/block_one/situations_FAREWELL_REMARK.json"
+                    ExerciseName.THREE_SENTENCES -> "situations/block_two/situations_THREE_SENTENCES.json"
                     else -> ""
                 }
 
@@ -82,10 +83,11 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     override suspend fun getTests(exerciseName: ExerciseName): List<Test> {
         return withContext(Dispatchers.IO) {
             val fileName = when (exerciseName) {
-                ExerciseName.ICEBREAKERS -> "tests_ICEBREAKERS.json"
-                ExerciseName.WHAT_TO_SAY_NEXT -> "tests_WHAT_TO_SAY_NEXT.json"
-                ExerciseName.THE_KEY_TO_SMALL_TALK -> "tests_THE_KEY_TO_SMALL_TALK.json"
-                ExerciseName.FAREWELL_REMARK -> "tests_FAREWELL_REMARK.json"
+                ExerciseName.ICEBREAKERS -> "tests/block_one/tests_ICEBREAKERS.json"
+                ExerciseName.WHAT_TO_SAY_NEXT -> "tests/block_one/tests_WHAT_TO_SAY_NEXT.json"
+                ExerciseName.THE_KEY_TO_SMALL_TALK -> "tests/block_one/tests_THE_KEY_TO_SMALL_TALK.json"
+                ExerciseName.FAREWELL_REMARK -> "tests/block_one/tests_FAREWELL_REMARK.json"
+                ExerciseName.THREE_SENTENCES -> "tests/block_two/tests_THREE_SENTENCES.json"
                 else -> ""
             }
 

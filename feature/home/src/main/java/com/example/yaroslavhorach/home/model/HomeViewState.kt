@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home.model
 
+import android.util.Log
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.unit.Dp
@@ -16,8 +17,22 @@ data class HomeViewState(
     val exercises: List<ExerciseUi> = emptyList(),
     val startExerciseTooltipPosition: Offset? = null,
     val descriptionState: DescriptionState = DescriptionState(),
+    val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
     val uiMessage: UiMessage<HomeUiMessage>? = null
 ) {
+    val blockProgress: Float
+        get() {
+            val groupedExercises = exercises.groupBy { it.exercise.block }
+            val blockExercises = groupedExercises[exerciseBlock].orEmpty()
+            if (blockExercises.isEmpty()) return 0f
+
+            val totalProgress = blockExercises.sumOf { it.progressPercent.toDouble() }
+
+            Log.v("dasdasdasdasd", totalProgress.toString())
+            Log.v("dasdasdasdasd", blockExercises.size.toString())
+            return (totalProgress / blockExercises.size).toFloat()
+        }
+
     data class DescriptionState(
         val listTopExtraPadding: Dp = 0.dp,
         val exercise: ExerciseUi? = null,

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Розкажи, як проходить твій типовий ранок.",
+      "en": "Describe how your typical morning goes.",
+      "ru": "Расскажи, как проходит твоё обычное утро."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Що тобі найбільше подобається у твоєму хобі?",
+      "en": "What do you enjoy most about your hobby?",
+      "ru": "Что тебе больше всего нравится в твоём хобби?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Опиши свій ідеальний вихідний.",
+      "en": "Describe your ideal day off.",
+      "ru": "Опиши свой идеальный выходной."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Яка страва тобі нагадує дитинство?",
+      "en": "What dish reminds you of your childhood?",
+      "ru": "Какое блюдо напоминает тебе о детстве?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Розкажи про останній раз, коли тобі було дуже весело.",
+      "en": "Tell me about the last time you had a lot of fun.",
+      "ru": "Расскажи о последнем случае, когда тебе было очень весело."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Як виглядає твій ідеальний ранок?",
+      "en": "What does your ideal morning look like?",
+      "ru": "Как выглядит твоё идеальное утро?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Яку музику ти слухаєш найчастіше і чому?",
+      "en": "What kind of music do you listen to most often and why?",
+      "ru": "Какую музыку ты чаще всего слушаешь и почему?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Розкажи про свою щоденну звичку, без якої не уявляєш день.",
+      "en": "Talk about your daily habit you can’t imagine your day without.",
+      "ru": "Расскажи о своей ежедневной привычке, без которой ты не представляешь свой день."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Що ти зазвичай робиш після роботи або навчання?",
+      "en": "What do you usually do after work or study?",
+      "ru": "Что ты обычно делаешь после работы или учёбы?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Яка твоя улюблена пора року і чому?",
+      "en": "What is your favorite season and why?",
+      "ru": "Какое твоё любимое время года и почему?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Чим ти пишаєшся за останній місяць?",
+      "en": "What are you proud of in the last month?",
+      "ru": "Чем ты гордишься за последний месяц?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Розкажи про місце, де ти почуваєшся спокійно.",
+      "en": "Tell about a place where you feel calm.",
+      "ru": "Расскажи о месте, где ты чувствуешь себя спокойно."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Як ти проводиш час, коли хочеш побути наодинці?",
+      "en": "How do you spend time when you want to be alone?",
+      "ru": "Как ты проводишь время, когда хочешь побыть один?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Що тебе мотивує вставати зранку?",
+      "en": "What motivates you to get up in the morning?",
+      "ru": "Что мотивирует тебя вставать по утрам?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Опиши коротко свою кімнату або робочий простір.",
+      "en": "Briefly describe your room or workspace.",
+      "ru": "Кратко опиши свою комнату или рабочее место."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Розкажи, як ти зазвичай знайомишся з новими людьми.",
+      "en": "Tell how you usually meet new people.",
+      "ru": "Расскажи, как ты обычно знакомишься с новыми людьми."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Який момент з останнього тижня запам’ятався найбільше?",
+      "en": "What moment from the past week stood out the most?",
+      "ru": "Какой момент за последнюю неделю запомнился тебе больше всего?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Розкажи про останню приємну дрібницю, яку тобі хтось зробив.",
+      "en": "Tell about the last nice little thing someone did for you.",
+      "ru": "Расскажи о последней приятной мелочи, которую кто-то для тебя сделал."
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Як ти поводишся, коли не маєш настрою говорити?",
+      "en": "How do you behave when you're not in the mood to talk?",
+      "ru": "Как ты ведёшь себя, когда нет настроения разговаривать?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "THREE_SENTENCES",
+    "situation": {
+      "ua": "Що для тебе — \"комфортна розмова\"?",
+      "en": "What is a 'comfortable conversation' for you?",
+      "ru": "Что для тебя значит \"комфортный разговор\"?"
+    },
+    "task": {
+      "ua": "Уяви розмову — дай відповідь у трьох простих реченнях.",
+      "en": "Imagine a conversation — respond in three simple sentences.",
+      "ru": "Представь, что ты в разговоре — ответь тремя простыми предложениями."
+    }
+  }
+]

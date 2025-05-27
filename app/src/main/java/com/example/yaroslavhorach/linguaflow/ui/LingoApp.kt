@@ -29,10 +29,10 @@ import com.example.yaroslavhorach.designsystem.theme.components.LinguaNavigation
 import com.example.yaroslavhorach.linguaflow.navigation.LingoNavHost
 import com.example.yaroslavhorach.linguaflow.navigation.TopLevelDestination
 
-
 @Composable
 fun LingoApp(
     appState: LingoAppState = rememberLingoAppState(),
+    onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
     LinguaBackground {
         val snackbarHostState = remember { SnackbarHostState() }
@@ -63,7 +63,7 @@ fun LingoApp(
                         ),
                     ),
             ) {
-                LingoNavHost(appState.navController)
+                LingoNavHost(appState.navController, onChangeColorScheme = onChangeColorScheme)
             }
         }
     }
@@ -110,7 +110,6 @@ private fun RowScope.AddNavBarItems(
         },
         label = { Text(stringResource(destination.titleTextResId)) },
     )
-
 }
 
 private fun NavDestination?.isTopLevelDestinationInHierarchy(destination: TopLevelDestination): Boolean {
