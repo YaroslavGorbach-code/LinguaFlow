@@ -32,6 +32,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.THE_KEY_TO_SMALL_TALK -> "situations/block_one/situations_THE_KEY_TO_SMALL_TALK.json"
                     ExerciseName.FAREWELL_REMARK -> "situations/block_one/situations_FAREWELL_REMARK.json"
                     ExerciseName.THREE_SENTENCES -> "situations/block_two/situations_THREE_SENTENCES.json"
+                    ExerciseName.STORY_PUZZLE -> "situations/block_two/situations_STORY_PUZZLE.json"
                     else -> ""
                 }
 
