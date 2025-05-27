@@ -33,6 +33,8 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.FAREWELL_REMARK -> "situations/block_one/situations_FAREWELL_REMARK.json"
                     ExerciseName.THREE_SENTENCES -> "situations/block_two/situations_THREE_SENTENCES.json"
                     ExerciseName.STORY_PUZZLE -> "situations/block_two/situations_STORY_PUZZLE.json"
+                    ExerciseName.SAY_DIFFERENTLY -> "situations/block_two/situations_SAY_DIFFERENTLY.json"
+                    ExerciseName.ONE_MEMORY -> "situations/block_two/situations_ONE_MEMORY.json"
                     else -> ""
                 }
 
@@ -89,6 +91,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 ExerciseName.THE_KEY_TO_SMALL_TALK -> "tests/block_one/tests_THE_KEY_TO_SMALL_TALK.json"
                 ExerciseName.FAREWELL_REMARK -> "tests/block_one/tests_FAREWELL_REMARK.json"
                 ExerciseName.THREE_SENTENCES -> "tests/block_two/tests_THREE_SENTENCES.json"
+                ExerciseName.SAY_DIFFERENTLY -> "tests/block_two/tests_SAY_DIFFERENTLY.json"
                 else -> ""
             }
 
