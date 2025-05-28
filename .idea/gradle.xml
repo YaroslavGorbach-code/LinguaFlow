@@ -32,6 +32,7 @@
             <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/exercises" />
+            <option value="$PROJECT_DIR$/feature/games" />
             <option value="$PROJECT_DIR$/feature/home" />
           </set>
         </option>

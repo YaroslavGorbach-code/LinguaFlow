@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.secondaryIcon
+import com.example.yaroslavhorach.home.navigation.gamesNavigationRoute
 import com.example.yaroslavhorach.home.navigation.homeNavigationRoute
 import com.example.yaroslavhorach.lingoFlow.R
 
@@ -24,7 +25,7 @@ sealed class TopLevelDestination(
 
     data object Home : TopLevelDestination(LinguaIcons.Home, R.string.nav_bar_home_title, homeNavigationRoute)
 
-    data object Games : TopLevelDestination(LinguaIcons.Calendar, R.string.nav_bar_calendar_title, null)
+    data object Games : TopLevelDestination(LinguaIcons.Calendar, R.string.nav_bar_calendar_title, gamesNavigationRoute)
 
     data object Profile : TopLevelDestination(LinguaIcons.User, R.string.nav_bar_profile_title, null)
 }

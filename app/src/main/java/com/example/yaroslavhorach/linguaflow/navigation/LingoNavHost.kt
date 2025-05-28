@@ -14,6 +14,7 @@ import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.navigateT
 import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.tongueTwistersExerciseScreen
 import com.example.yaroslavhorach.exercises.vocabulary.navigation.navigateToVocabularyExercise
 import com.example.yaroslavhorach.exercises.vocabulary.navigation.vocabularyExerciseScreen
+import com.example.yaroslavhorach.home.navigation.gamesScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
 import com.example.yaroslavhorach.home.navigation.navigateToHome
 
@@ -42,6 +43,9 @@ fun LingoNavHost(
                 }
             }
         }, onChangeColorScheme)
+        gamesScreen {
+
+        }
         speakingExerciseScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToExerciseCompleted = { time, xp ->
