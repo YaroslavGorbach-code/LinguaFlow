@@ -849,5 +849,97 @@
     "block": "FOUR",
     "isEnable": false,
     "isLastActive": false
+  },
+  {
+    "id": 39,
+    "nameString": {
+      "ua": "Влучний відгук",
+      "en": "Empathic Response",
+      "ru": "Точный отклик"
+    },
+    "description": {
+      "ua": "Навчися слухати уважно та реагувати зі співчуттям. Прочитай репліку співрозмовника і придумай коротку відповідь, яка показує розуміння, підтримку чи емпатію.",
+      "en": "Learn to listen carefully and respond with compassion. Read the statement and come up with a short reply that shows understanding, support, or empathy.",
+      "ru": "Научись внимательно слушать и сочувственно отвечать. Прочитай реплику собеседника и придумай короткий ответ, показывающий понимание, поддержку или эмпатию."
+    },
+    "exerciseProgress": {
+      "exerciseId": 39,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "EMPATHIC_RESPONSE",
+    "skill": "COMMUNICATION",
+    "block": "FIVE",
+    "isEnable": true,
+    "isLastActive": false
+  },
+  {
+    "id": 40,
+    "nameString": {
+      "ua": "Емоційний перекладач",
+      "en": "Emotional Translator",
+      "ru": "Эмоциональный переводчик"
+    },
+    "description": {
+      "ua": "Отримай емоцію та ситуацію й сформулюй репліку, яка м’яко передає задане почуття. Навчайся добирати слова відповідно до емоційного контексту та будувати турботливу, чутливу комунікацію.",
+      "en": "Get an emotion and a situation, then craft a phrase that gently conveys the given feeling. Practice choosing language to match emotional context and build caring, sensitive communication.",
+      "ru": "Получай эмоцию и ситуацию — сформулируй реплику, которая мягко передаёт заданное чувство. Учись подбирать слова под эмоциональный контекст и строить заботливую, чуткую коммуникацию."
+    },
+    "exerciseProgress": {
+      "exerciseId": 40,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "EMOTIONAL_TRANSLATOR",
+    "skill": "COMMUNICATION",
+    "block": "FIVE",
+    "isEnable": true,
+    "isLastActive": false
+  },
+  {
+    "id": 41,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 41,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "FIVE",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 42,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 42,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "FIVE",
+    "isEnable": false,
+    "isLastActive": false
   }
 ]

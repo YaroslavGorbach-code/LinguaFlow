@@ -1,0 +1,282 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію турботи та ситуацію: твій друг сумує через погану погоду, яка зіпсувала плани.",
+      "en": "You get the emotion of care and the situation: your friend is sad because bad weather spoiled the plans.",
+      "ru": "Ты получаешь эмоцию заботы и ситуацию: твой друг грустит из-за плохой погоды, которая испортила планы."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає турботу у цій ситуації.",
+      "en": "Craft a phrase that gently conveys care in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт заботу в этой ситуации."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію підтримки і ситуацію: твій друг хвилюється перед важливим виступом.",
+      "en": "You get the emotion of support and the situation: your friend is nervous before an important speech.",
+      "ru": "Ты получаешь эмоцию поддержки и ситуацию: твой друг нервничает перед важным выступлением."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає підтримку у цій ситуації.",
+      "en": "Craft a phrase that gently conveys support in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт поддержку в этой ситуации."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію співчуття та ситуацію: твій друг розчарований через скасування подорожі.",
+      "en": "You get the emotion of sympathy and the situation: your friend is disappointed because a trip got canceled.",
+      "ru": "Ты получаешь эмоцию сочувствия и ситуацию: твой друг разочарован из-за отмены поездки."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає співчуття у цій ситуації.",
+      "en": "Craft a phrase that gently conveys sympathy in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт сочувствие в этой ситуации."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію розради і ситуацію: твій друг засмучений через втрату улюбленої книги.",
+      "en": "You get the emotion of consolation and the situation: your friend is upset about losing a favorite book.",
+      "ru": "Ты получаешь эмоцию утешения и ситуацию: твой друг расстроен из-за потери любимой книги."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає розраду у цій ситуації.",
+      "en": "Craft a phrase that gently conveys consolation in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт утешение в этой ситуации."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію розуміння і ситуацію: твій друг розповідає про складний робочий день.",
+      "en": "You get the emotion of understanding and the situation: your friend talks about a tough day at work.",
+      "ru": "Ты получаешь эмоцию понимания и ситуацию: твой друг рассказывает о тяжёлом рабочем дне."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає розуміння у цій ситуації.",
+      "en": "Craft a phrase that gently conveys understanding in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт понимание в этой ситуации."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію заохочення і ситуацію: твій друг сумнівається у своїх здібностях перед новим проєктом.",
+      "en": "You get the emotion of encouragement and the situation: your friend doubts their abilities before a new project.",
+      "ru": "Ты получаешь эмоцию поддержки и ситуацию: твой друг сомневается в своих способностях перед новым проектом."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає заохочення у цій ситуації.",
+      "en": "Craft a phrase that gently conveys encouragement in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт поддержку в этой ситуации."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію спокою і ситуацію: твій друг хвилюється через зміни в житті.",
+      "en": "You get the emotion of calmness and the situation: your friend is anxious about life changes.",
+      "ru": "Ты получаешь эмоцию спокойствия и ситуацию: твой друг тревожится из-за изменений в жизни."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає спокій у цій ситуації.",
+      "en": "Craft a phrase that gently conveys calmness in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт спокойствие в этой ситуации."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію вдячності і ситуацію: твій друг допоміг тобі у складний момент.",
+      "en": "You get the emotion of gratitude and the situation: your friend helped you in a difficult moment.",
+      "ru": "Ты получаешь эмоцию благодарности и ситуацию: твой друг помог тебе в трудный момент."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає вдячність у цій ситуації.",
+      "en": "Craft a phrase that gently conveys gratitude in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт благодарность в этой ситуации."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію співпереживання і ситуацію: твій друг втратив важливу річ.",
+      "en": "You get the emotion of empathy and the situation: your friend lost something important.",
+      "ru": "Ты получаешь эмоцию сопереживания и ситуацию: твой друг потерял важную вещь."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає співпереживання у цій ситуації.",
+      "en": "Craft a phrase that gently conveys empathy in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт сопереживание в этой ситуации."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію спонукання і ситуацію: твій друг сумнівається, чи варто брати участь у змаганні.",
+      "en": "You get the emotion of encouragement and the situation: your friend doubts whether to participate in a competition.",
+      "ru": "Ты получаешь эмоцию поощрения и ситуацию: твой друг сомневается, стоит ли участвовать в соревновании."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко спонукає співрозмовника діяти.",
+      "en": "Craft a phrase that gently encourages the speaker to act.",
+      "ru": "Сформулируй фразу, которая мягко побуждает собеседника действовать."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію розчарування і ситуацію: твій друг не зміг зустрітися з тобою через несподівані обставини.",
+      "en": "You get the emotion of disappointment and the situation: your friend couldn't meet you due to unexpected circumstances.",
+      "ru": "Ты получаешь эмоцию разочарования и ситуацию: твой друг не смог встретиться с тобой из-за неожиданных обстоятельств."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає розчарування у цій ситуації.",
+      "en": "Craft a phrase that gently conveys disappointment in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт разочарование в этой ситуации."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію захоплення і ситуацію: твій друг досягнув великого успіху на роботі.",
+      "en": "You get the emotion of admiration and the situation: your friend achieved great success at work.",
+      "ru": "Ты получаешь эмоцию восхищения и ситуацию: твой друг добился большого успеха на работе."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає захоплення у цій ситуації.",
+      "en": "Craft a phrase that gently conveys admiration in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт восхищение в этой ситуации."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію спокою і ситуацію: твій друг стурбований через майбутній іспит.",
+      "en": "You get the emotion of calm and the situation: your friend is worried about an upcoming exam.",
+      "ru": "Ты получаешь эмоцию спокойствия и ситуацию: твой друг переживает из-за предстоящего экзамена."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає спокій у цій ситуації.",
+      "en": "Craft a phrase that gently conveys calmness in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт спокойствие в этой ситуации."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію радості і ситуацію: твій друг отримав приємну новину.",
+      "en": "You get the emotion of joy and the situation: your friend received good news.",
+      "ru": "Ты получаешь эмоцию радости и ситуацию: твой друг получил приятную новость."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає радість у цій ситуації.",
+      "en": "Craft a phrase that gently conveys joy in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт радость в этой ситуации."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію сорому і ситуацію: твій друг випадково зробив помилку на роботі.",
+      "en": "You get the emotion of embarrassment and the situation: your friend accidentally made a mistake at work.",
+      "ru": "Ты получаешь эмоцию смущения и ситуацию: твой друг случайно сделал ошибку на работе."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає сором’язливість у цій ситуації.",
+      "en": "Craft a phrase that gently conveys embarrassment in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт смущение в этой ситуации."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію надії і ситуацію: твій друг сумнівається, чи вийде знайти нову роботу.",
+      "en": "You get the emotion of hope and the situation: your friend doubts whether they will find a new job.",
+      "ru": "Ты получаешь эмоцию надежды и ситуацию: твой друг сомневается, удастся ли найти новую работу."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає надію у цій ситуації.",
+      "en": "Craft a phrase that gently conveys hope in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт надежду в этой ситуации."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію терпіння і ситуацію: твій друг затримується на зустрічі через транспорт.",
+      "en": "You get the emotion of patience and the situation: your friend is late for a meeting due to transportation issues.",
+      "ru": "Ты получаешь эмоцию терпения и ситуацию: твой друг опаздывает на встречу из-за проблем с транспортом."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає терпіння у цій ситуації.",
+      "en": "Craft a phrase that gently conveys patience in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт терпение в этой ситуации."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію захисту і ситуацію: твій друг почувається незручно у новому колективі.",
+      "en": "You get the emotion of protection and the situation: your friend feels uncomfortable in a new team.",
+      "ru": "Ты получаешь эмоцию защиты и ситуацию: твой друг чувствует себя некомфортно в новом коллективе."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає захист у цій ситуації.",
+      "en": "Craft a phrase that gently conveys protection in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт защиту в этой ситуации."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію здивування і ситуацію: твій друг поділився несподіваною новиною.",
+      "en": "You get the emotion of surprise and the situation: your friend shared unexpected news.",
+      "ru": "Ты получаешь эмоцию удивления и ситуацию: твой друг поделился неожиданной новостью."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає здивування у цій ситуації.",
+      "en": "Craft a phrase that gently conveys surprise in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт удивление в этой ситуации."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "EMOTIONAL_TRANSLATOR",
+    "situation": {
+      "ua": "Ти отримав емоцію гордості і ситуацію: твій друг завершив важливий проєкт.",
+      "en": "You get the emotion of pride and the situation: your friend completed an important project.",
+      "ru": "Ты получаешь эмоцию гордости и ситуацию: твой друг завершил важный проект."
+    },
+    "task": {
+      "ua": "Сформулюй фразу, яка м’яко передає гордість у цій ситуації.",
+      "en": "Craft a phrase that gently conveys pride in this situation.",
+      "ru": "Сформулируй фразу, которая мягко передаёт гордость в этой ситуации."
+    }
+  }
+]

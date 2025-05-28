@@ -17,8 +17,8 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.yaroslavhorach.designsystem.theme.OrangeDark
-import com.example.yaroslavhorach.designsystem.theme.OrangeLight
+import com.example.yaroslavhorach.designsystem.theme.BlockOneDark
+import com.example.yaroslavhorach.designsystem.theme.BlockOneLight
 import com.example.yaroslavhorach.designsystem.theme.White_10
 
 @Composable
@@ -27,8 +27,8 @@ fun BoxWithStripes(
     stripeColor: Color = White_10,
     stripeWidth: Dp = 60.dp,
     stripeSpacing: Dp = 150.dp,
-    background: Color = OrangeLight,
-    backgroundShadow: Color = OrangeDark,
+    background: Color = BlockOneLight,
+    backgroundShadow: Color = BlockOneDark,
     shadowOffset: Dp = (-3).dp,
     contentPadding: Dp = 16.dp,
     shape: Shape = RoundedCornerShape(12.dp),

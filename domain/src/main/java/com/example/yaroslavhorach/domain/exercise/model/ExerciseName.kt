@@ -33,7 +33,11 @@ enum class ExerciseName() {
     WHY_VALUES_MATTER,
     SOFT_DISAGREEMENT,
     CALM_POSITION,
-    GENTLE_PERSUASION
+    GENTLE_PERSUASION,
+
+    // 5
+    EMPATHIC_RESPONSE,
+    EMOTIONAL_TRANSLATOR
 }
 
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {

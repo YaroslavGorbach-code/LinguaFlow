@@ -1,0 +1,296 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мій день був дуже важкий, і я почуваюся виснаженим.",
+      "en": "Your friend says: My day has been very tough, and I feel exhausted.",
+      "ru": "Твой друг говорит: Мой день был очень тяжелым, и я чувствую себя истощённым."
+    },
+    "task": {
+      "ua": "Відреагуй емпатично, підтримай співрозмовника.",
+      "en": "Respond empathetically, support the speaker.",
+      "ru": "Отреагируй эмпатично, поддержи собеседника."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я справді хвилююся через майбутній іспит.",
+      "en": "Your friend says: I'm really worried about the upcoming exam.",
+      "ru": "Твой друг говорит: Я очень переживаю из-за предстоящего экзамена."
+    },
+    "task": {
+      "ua": "Вислови розуміння і заспокой співрозмовника.",
+      "en": "Show understanding and reassure the speaker.",
+      "ru": "Вырази понимание и успокой собеседника."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мені складно знайти мотивацію працювати останнім часом.",
+      "en": "Your friend says: I've been struggling to find motivation to work lately.",
+      "ru": "Твой друг говорит: Мне сложно найти мотивацию работать в последнее время."
+    },
+    "task": {
+      "ua": "Підтримай та запропонуй співрозмовнику допомогу.",
+      "en": "Support and offer help to the speaker.",
+      "ru": "Поддержи и предложи помощь собеседнику."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мій проєкт провалився, і я дуже розчарований.",
+      "en": "Your friend says: My project failed, and I’m really disappointed.",
+      "ru": "Твой друг говорит: Мой проект провалился, и я очень разочарован."
+    },
+    "task": {
+      "ua": "Покажи співчуття і підтримку у словах.",
+      "en": "Express sympathy and support in your words.",
+      "ru": "Вырази сочувствие и поддержку в своих словах."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я відчуваю, що мене не розуміють на роботі.",
+      "en": "Your friend says: I feel like I’m not understood at work.",
+      "ru": "Твой друг говорит: Я чувствую, что меня не понимают на работе."
+    },
+    "task": {
+      "ua": "Вислови розуміння і підтримай співрозмовника.",
+      "en": "Show understanding and support the speaker.",
+      "ru": "Вырази понимание и поддержи собеседника."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мені важко справлятися з усіма домашніми справами.",
+      "en": "Your friend says: I find it hard to manage all the household chores.",
+      "ru": "Твой друг говорит: Мне трудно справляться со всей домашней работой."
+    },
+    "task": {
+      "ua": "Підтримай та запропонуй співчуття.",
+      "en": "Support and offer empathy.",
+      "ru": "Поддержи и прояви сочувствие."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я сьогодні дуже нервую перед зустріччю з клієнтом.",
+      "en": "Your friend says: I’m very nervous about the meeting with the client today.",
+      "ru": "Твой друг говорит: Я сегодня очень нервничаю перед встречей с клиентом."
+    },
+    "task": {
+      "ua": "Вислови розуміння і підтримку.",
+      "en": "Express understanding and support.",
+      "ru": "Вырази понимание и поддержку."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я не знаю, як сказати рідним про свої плани.",
+      "en": "Your friend says: I don’t know how to tell my family about my plans.",
+      "ru": "Твой друг говорит: Я не знаю, как рассказать родным о своих планах."
+    },
+    "task": {
+      "ua": "Підтримай співрозмовника словами розуміння.",
+      "en": "Support the speaker with words of understanding.",
+      "ru": "Поддержи собеседника словами понимания."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мене розчарувало, що мене не запросили на зустріч.",
+      "en": "Your friend says: I was disappointed that I wasn’t invited to the meeting.",
+      "ru": "Твой друг говорит: Меня разочаровало, что меня не пригласили на встречу."
+    },
+    "task": {
+      "ua": "Вислови співчуття і підтримку.",
+      "en": "Express sympathy and support.",
+      "ru": "Вырази сочувствие и поддержку."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я відчуваю, що ніхто мене не чує.",
+      "en": "Your friend says: I feel like no one is listening to me.",
+      "ru": "Твой друг говорит: Я чувствую, что меня никто не слушает."
+    },
+    "task": {
+      "ua": "Покажи розуміння і підтримку.",
+      "en": "Show understanding and support.",
+      "ru": "Покажи понимание и поддержку."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я відчуваю, що ніхто мене не слухає.",
+      "en": "Your friend says: I feel like no one is listening to me.",
+      "ru": "Твой друг говорит: Я чувствую, что меня никто не слушает."
+    },
+    "task": {
+      "ua": "Покажи розуміння і підтримку.",
+      "en": "Show understanding and support.",
+      "ru": "Покажи понимание и поддержку."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я боюся, що не впораюся з новим проєктом.",
+      "en": "Your friend says: I'm afraid I won’t manage the new project.",
+      "ru": "Твой друг говорит: Я боюсь, что не справлюсь с новым проектом."
+    },
+    "task": {
+      "ua": "Вислови підтримку і розуміння.",
+      "en": "Express support and understanding.",
+      "ru": "Вырази поддержку и понимание."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мені важко зосередитися через шум навколо.",
+      "en": "Your friend says: It’s hard for me to focus because of constant noise around.",
+      "ru": "Твой друг говорит: Мне сложно сосредоточиться из-за постоянного шума вокруг."
+    },
+    "task": {
+      "ua": "Покажи співчуття і підтримай співрозмовника.",
+      "en": "Show compassion and support the speaker.",
+      "ru": "Вырази сочувствие и поддержи собеседника."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Останнім часом я почуваюся самотнім.",
+      "en": "Your friend says: I have been feeling lonely lately.",
+      "ru": "Твой друг говорит: Я чувствую себя одиноким в последнее время."
+    },
+    "task": {
+      "ua": "Вислови розуміння і підтримку.",
+      "en": "Express understanding and support.",
+      "ru": "Вырази понимание и поддержку."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мій друг розсердився через непорозуміння між нами.",
+      "en": "Your friend says: My friend got angry because of a misunderstanding between us.",
+      "ru": "Твой друг говорит: Мой друг рассердился из-за недоразумения между нами."
+    },
+    "task": {
+      "ua": "Відреагуй з розумінням та спробуй заспокоїти.",
+      "en": "Respond with understanding and try to calm down.",
+      "ru": "Отреагируй с пониманием и попробуй успокоить."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я нервую через майбутній публічний виступ.",
+      "en": "Your friend says: I’m nervous about my public speech.",
+      "ru": "Твой друг говорит: Я нервничаю перед публичным выступлением."
+    },
+    "task": {
+      "ua": "Вислови підтримку і впевненість.",
+      "en": "Express support and confidence.",
+      "ru": "Вырази поддержку и уверенность."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мені прикро, що мене не запросили на вечірку.",
+      "en": "Your friend says: It hurts that I wasn’t invited to the party.",
+      "ru": "Твой друг говорит: Мне обидно, что меня не пригласили на вечеринку."
+    },
+    "task": {
+      "ua": "Покажи співчуття і підтримку.",
+      "en": "Show sympathy and support.",
+      "ru": "Вырази сочувствие и поддержку."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я почуваюся втомленим після довгого робочого дня.",
+      "en": "Your friend says: I feel tired after a long workday.",
+      "ru": "Твой друг говорит: Я чувствую усталость после долгого рабочего дня."
+    },
+    "task": {
+      "ua": "Підтримай співрозмовника і вислови розуміння.",
+      "en": "Support the speaker and express understanding.",
+      "ru": "Поддержи собеседника и вырази понимание."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мені страшно починати нову роботу.",
+      "en": "Your friend says: I’m scared to start a new job.",
+      "ru": "Твой друг говорит: Мне страшно начинать новую работу."
+    },
+    "task": {
+      "ua": "Вислови підтримку і заспокой співрозмовника.",
+      "en": "Express support and calm the speaker.",
+      "ru": "Вырази поддержку и успокой собеседника."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я засмучений через конфлікт з колегою.",
+      "en": "Your friend says: I’m upset because of a conflict with a colleague.",
+      "ru": "Твой друг говорит: Я расстроен из-за конфликта с коллегой."
+    },
+    "task": {
+      "ua": "Покажи співчуття і підтримку.",
+      "en": "Show sympathy and support.",
+      "ru": "Вырази сочувствие и поддержку."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Мене тривожить майбутній переїзд.",
+      "en": "Your friend says: I’m anxious about the upcoming move.",
+      "ru": "Твой друг говорит: Я тревожусь из-за предстоящего переезда."
+    },
+    "task": {
+      "ua": "Підтримай співрозмовника і вислови розуміння.",
+      "en": "Support the speaker and express understanding.",
+      "ru": "Поддержи собеседника и вырази понимание."
+    }
+  }
+]

@@ -1,0 +1,174 @@
+[{
+  "id": "71",
+  "exercise_name": "EMPATHIC_RESPONSE",
+  "situation": {
+    "ua": "Твій друг каже: Я сьогодні дуже нервую перед зустріччю з клієнтом.",
+    "en": "Your friend says: I’m very nervous about the meeting with the client today.",
+    "ru": "Твой друг говорит: Я сегодня очень нервничаю перед встречей с клиентом."
+  },
+  "task": {
+    "ua": "Вислови розуміння і підтримку.",
+    "en": "Express understanding and support.",
+    "ru": "Вырази понимание и поддержку."
+  },
+  "wrongAnswer": {
+    "ua": "Спробуй уявити себе на місці друга й передати більше підтримки.",
+    "en": "Try to put yourself in your friend's shoes and offer more support.",
+    "ru": "Попробуй представить себя на месте друга и выразить больше поддержки."
+  },
+  "correctAnswer": {
+    "ua": "Твоя відповідь звучить співчутливо та підтримуюче — саме те, що треба.",
+    "en": "Your response sounds compassionate and supportive — just right.",
+    "ru": "Твой ответ звучит с сочувствием и поддержкой — именно то, что нужно."
+  },
+  "variants": [
+    {
+      "texts": {
+        "ua": "Розумію тебе. Це справді може бути хвилююче. Ти впораєшся!",
+        "en": "I understand you. That really can be stressful. You'll do great!",
+        "ru": "Понимаю тебя. Это действительно может быть волнительно. У тебя всё получится!"
+      },
+      "isCorrect": true
+    },
+    {
+      "texts": {
+        "ua": "Та чого ти нервуєш, нічого складного ж.",
+        "en": "Why are you nervous? It's nothing difficult.",
+        "ru": "Чего ты нервничаешь, ничего же сложного."
+      },
+      "isCorrect": false
+    },
+    {
+      "texts": {
+        "ua": "Ну, буває. Не ти перший, не ти останній.",
+        "en": "Well, it happens. You’re not the first and not the last.",
+        "ru": "Ну, бывает. Не ты первый, не ты последний."
+      },
+      "isCorrect": false
+    },
+    {
+      "texts": {
+        "ua": "Та не переймайся, гірше вже було.",
+        "en": "Don’t worry, you've seen worse.",
+        "ru": "Не переживай, хуже уже было."
+      },
+      "isCorrect": false
+    }
+  ]
+},
+  {
+    "id": "72",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твій друг каже: Я відчуваю себе таким розгубленим останнім часом.",
+      "en": "Your friend says: I’ve been feeling so lost lately.",
+      "ru": "Твой друг говорит: Я в последнее время чувствую себя потерянным."
+    },
+    "task": {
+      "ua": "Знайди чутливу й підтримуючу відповідь.",
+      "en": "Find a sensitive and supportive response.",
+      "ru": "Найди чуткий и поддерживающий ответ."
+    },
+    "wrongAnswer": {
+      "ua": "Це звучить байдуже або знецінює почуття. Спробуй співпережити.",
+      "en": "This sounds indifferent or dismissive. Try to empathize more.",
+      "ru": "Это звучит равнодушно или обесценивающе. Попробуй проявить больше эмпатии."
+    },
+    "correctAnswer": {
+      "ua": "Це справжній прояв турботи — тепла й підтримуюча відповідь.",
+      "en": "That's a real show of care — warm and supportive response.",
+      "ru": "Это настоящий знак заботы — тёплый и поддерживающий ответ."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Мені шкода це чути. Якщо хочеш — я поруч.",
+          "en": "I'm sorry to hear that. If you want, I'm here for you.",
+          "ru": "Мне жаль это слышать. Если хочешь — я рядом."
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Просто перестань так думати.",
+          "en": "Just stop thinking like that.",
+          "ru": "Просто перестань так думать."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Та всі ми трохи губимось іноді — нічого нового.",
+          "en": "We all feel lost sometimes — nothing new.",
+          "ru": "Мы все иногда теряемся — ничего нового."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "І що тепер? Візьми себе в руки.",
+          "en": "So what now? Pull yourself together.",
+          "ru": "И что теперь? Возьми себя в руки."
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "exercise_name": "EMPATHIC_RESPONSE",
+    "situation": {
+      "ua": "Твоя колега каже: Мені складно — я відчуваю себе втомленою і виснаженою останні тижні.",
+      "en": "Your colleague says: It’s been hard — I feel tired and drained these past weeks.",
+      "ru": "Твоя коллега говорит: Было трудно — я чувствую себя уставшей и вымотанной последние недели."
+    },
+    "task": {
+      "ua": "Підтримай і покажи, що ти її чуєш.",
+      "en": "Support and show that you hear her.",
+      "ru": "Поддержи и покажи, что ты её слышишь."
+    },
+    "wrongAnswer": {
+      "ua": "Це звучить не надто підтримуюче. Спробуй відповісти з більшим розумінням.",
+      "en": "This doesn't sound very supportive. Try answering with more understanding.",
+      "ru": "Это звучит не слишком поддерживающе. Попробуй ответить с большим пониманием."
+    },
+    "correctAnswer": {
+      "ua": "Чудово — ти показав(ла), що справді чуєш і підтримуєш.",
+      "en": "Well done — you showed that you really hear and support.",
+      "ru": "Отлично — ты показал(а), что действительно слышишь и поддерживаешь."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Це звучить дуже важко. Ти не сама — я тут, якщо що.",
+          "en": "That sounds really tough. You’re not alone — I’m here if you need anything.",
+          "ru": "Это звучит очень тяжело. Ты не одна — я рядом, если что."
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Може, просто більше спи — усе мине.",
+          "en": "Maybe just get more sleep — it'll pass.",
+          "ru": "Может, просто больше спи — всё пройдёт."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Не драматизуй. У всіх буває складно.",
+          "en": "Don’t exaggerate. Everyone has tough times.",
+          "ru": "Не драматизируй. У всех бывает тяжело."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Тобі треба просто трохи відпочити.",
+          "en": "You just need a bit of rest.",
+          "ru": "Тебе просто нужно немного отдохнуть."
+        },
+        "isCorrect": false
+      }
+    ]
+  }]

@@ -46,6 +46,8 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.SOFT_DISAGREEMENT -> "situations/block_four/situations_SOFT_DISAGREEMENT.json"
                     ExerciseName.CALM_POSITION -> "situations/block_four/situations_CALM_POSITION.json"
                     ExerciseName.GENTLE_PERSUASION -> "situations/block_four/situations_GENTLE_PERSUASION.json"
+                    ExerciseName.EMPATHIC_RESPONSE -> "situations/block_five/situations_EMPATHIC_RESPONSE.json"
+                    ExerciseName.EMOTIONAL_TRANSLATOR -> "situations/block_five/situations_EMOTIONAL_TRANSLATOR.json"
                     else -> ""
                 }
 
@@ -111,6 +113,8 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 ExerciseName.SOFT_DISAGREEMENT -> "tests/block_four/tests_SOFT_DISAGREEMENT.json"
                 ExerciseName.CALM_POSITION -> "tests/block_four/tests_CALM_POSITTION.json"
                 ExerciseName.GENTLE_PERSUASION -> "tests/block_four/tests_GENTLE_PERSUASION.json"
+                ExerciseName.EMPATHIC_RESPONSE -> "tests/block_five/tests_EMPATHIC_RESPONSE.json"
+                ExerciseName.EMOTIONAL_TRANSLATOR -> "tests/block_five/tests_EMOTIONAL_TRANSLATOR.json"
                 else -> ""
             }
 

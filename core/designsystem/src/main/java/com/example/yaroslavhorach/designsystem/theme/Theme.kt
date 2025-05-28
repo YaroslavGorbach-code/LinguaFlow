@@ -14,10 +14,10 @@ val LightDefaultColorScheme = lightColorScheme(
     background = Cultured,
     onBackground = BrightGray,
     surface = White,
-    secondary = OrangeDark,
-    primary = OrangeLight,
+    secondary = BlockOneDark,
+    primary = BlockOneLight,
     primaryContainer = Calamansi,
-    onPrimaryContainer = OrangeLight
+    onPrimaryContainer = BlockOneLight
 )
 
 @Composable
@@ -49,8 +49,8 @@ val DarkDefaultColorScheme = darkColorScheme(
     background = Cultured,
     onBackground = BrightGray,
     surface = White,
-    secondary = OrangeDark,
-    primary = OrangeLight
+    secondary = BlockOneDark,
+    primary = BlockOneLight
 )
 
 @Composable
