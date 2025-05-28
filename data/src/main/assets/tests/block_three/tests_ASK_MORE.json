@@ -1,0 +1,176 @@
+[
+  {
+    "id": "2",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я нещодавно почав вивчати гру на гітарі.",
+      "en": "I recently started learning to play the guitar.",
+      "ru": "Я недавно начал учиться играть на гитаре."
+    },
+    "task": {
+      "ua": "Обери найкраще запитання, яке покаже щиру зацікавленість і допоможе дізнатися більше про його/її навчання.",
+      "en": "Choose the best question that shows genuine curiosity and helps you learn more about how their learning is going.",
+      "ru": "Выбери лучший вопрос, который покажет искренний интерес и поможет узнать больше о том, как проходит обучение."
+    },
+    "wrongAnswer": {
+      "ua": "Це надто загальне запитання. Спробуй поцікавитися чимось конкретним або емоційним.",
+      "en": "That's too general a question. Try to ask something more specific or emotional.",
+      "ru": "Этот вопрос слишком общий. Попробуй спросить что-то более конкретное или эмоциональное."
+    },
+    "correctAnswer": {
+      "ua": "Чудове запитання! Воно показує твою справжню зацікавленість у тому, як проходить навчання.",
+      "en": "Great question! It shows you're genuinely interested in how their learning is going.",
+      "ru": "Отличный вопрос! Он показывает твою настоящую заинтересованность в процессе обучения."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "О, цікаво.",
+          "en": "Oh, interesting.",
+          "ru": "О, интересно."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Яку пісню ти мрієш навчитися грати першою?",
+          "en": "What's the first song you dream of learning to play?",
+          "ru": "Какую песню ты мечтаешь научиться играть первой?"
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "І як тобі?",
+          "en": "And how is it?",
+          "ru": "И как тебе?"
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Навіщо тобі це?",
+          "en": "Why do you even need that?",
+          "ru": "Зачем тебе это?"
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я почала малювати аквареллю на вихідних.",
+      "en": "I started painting with watercolors on weekends.",
+      "ru": "Я начала рисовать акварелью по выходным."
+    },
+    "task": {
+      "ua": "Обери найкраще запитання, яке покаже щиру зацікавленість і допоможе дізнатися більше про її захоплення.",
+      "en": "Choose the best question that shows genuine curiosity and helps you learn more about her hobby.",
+      "ru": "Выбери лучший вопрос, который покажет искренний интерес и поможет узнать больше о её увлечении."
+    },
+    "wrongAnswer": {
+      "ua": "Це запитання звучить або надто загально, або нещиро. Спробуй обрати те, що справді веде до діалогу.",
+      "en": "This question sounds either too generic or insincere. Try to pick one that truly leads to a conversation.",
+      "ru": "Этот вопрос звучит слишком обобщённо или неискренне. Попробуй выбрать такой, который действительно ведёт к беседе."
+    },
+    "correctAnswer": {
+      "ua": "Супер! Це запитання показує справжню зацікавленість і спонукає до розповіді.",
+      "en": "Great! This question shows real curiosity and encourages storytelling.",
+      "ru": "Отлично! Этот вопрос показывает искренний интерес и побуждает к рассказу."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Що ти любиш малювати найбільше — пейзажі, людей чи щось абстрактне?",
+          "en": "What do you like painting the most — landscapes, people, or something abstract?",
+          "ru": "Что тебе больше всего нравится рисовать — пейзажи, людей или что-то абстрактное?"
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "І як, гарно виходить?",
+          "en": "So, is it turning out well?",
+          "ru": "Ну и что, хорошо получается?"
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "О, ще одне хобі.",
+          "en": "Oh, another hobby.",
+          "ru": "О, ещё одно хобби."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "У тебе багато фарб?",
+          "en": "Do you have many paints?",
+          "ru": "У тебя много красок?"
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я почав бігати щоранку перед роботою.",
+      "en": "I started running every morning before work.",
+      "ru": "Я начал бегать по утрам перед работой."
+    },
+    "task": {
+      "ua": "Обери найкраще запитання, яке покаже щиру зацікавленість і допоможе дізнатися більше про його нову звичку.",
+      "en": "Choose the best question that shows genuine curiosity and helps you learn more about his new habit.",
+      "ru": "Выбери лучший вопрос, который покажет искренний интерес и поможет узнать больше о его новой привычке."
+    },
+    "wrongAnswer": {
+      "ua": "Це питання не допомагає дізнатися щось нове або цікаве. Обери те, що відкриває розмову.",
+      "en": "This question doesn’t help you learn anything new or interesting. Choose one that opens a conversation.",
+      "ru": "Этот вопрос не помогает узнать что-то новое или интересное. Выбери такой, который открывает разговор."
+    },
+    "correctAnswer": {
+      "ua": "Чудово! Таке запитання справді показує інтерес до деталей і мотивів.",
+      "en": "Excellent! This question really shows interest in the details and motivations.",
+      "ru": "Отлично! Такой вопрос действительно показывает интерес к деталям и мотивации."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Я б не зміг так.",
+          "en": "I couldn’t do that.",
+          "ru": "Я бы так не смог."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "А ти швидко бігаєш?",
+          "en": "Do you run fast?",
+          "ru": "Ты быстро бегаешь?"
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Що тебе мотивує вставати так рано для пробіжки?",
+          "en": "What motivates you to get up so early for a run?",
+          "ru": "Что тебя мотивирует вставать так рано ради пробежки?"
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Ти кожного дня бігаєш?",
+          "en": "Do you run every single day?",
+          "ru": "Ты каждый день бегаешь?"
+        },
+        "isCorrect": false
+      }
+    ]
+  }
+]

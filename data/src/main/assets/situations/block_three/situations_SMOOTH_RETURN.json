@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Троє колег активно обговорюють улюблені фільми. Ти мовчиш кілька хвилин, бо давно нічого не дивився(-лась).",
+      "en": "Three colleagues are actively discussing their favorite movies. You’ve been silent for a few minutes because you haven’t watched anything recently.",
+      "ru": "Трое коллег активно обсуждают любимые фильмы. Ты молчишь несколько минут, потому что давно ничего не смотрел(а)."
+    },
+    "task": {
+      "ua": "Придумай, як ти зможеш природно і цікаво повернутися до розмови.",
+      "en": "Think of a natural and interesting way to smoothly rejoin the conversation.",
+      "ru": "Придумай, как можно естественно и интересно снова включиться в разговор."
+    }
+  },
+  {
+    "id": 2,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Друзі обговорюють новини спорту, а ти мовчиш, бо не слідкуєш за подіями останнім часом.",
+      "en": "Friends are talking about recent sports news, and you’ve been silent because you haven’t followed the updates lately.",
+      "ru": "Друзья обсуждают последние новости спорта, а ты молчишь, потому что давно не следишь за событиями."
+    },
+    "task": {
+      "ua": "Придумай фразу або питання, щоб знову долучитися до розмови.",
+      "en": "Come up with a phrase or question to smoothly rejoin the conversation.",
+      "ru": "Придумай фразу или вопрос, чтобы снова включиться в разговор."
+    }
+  },
+  {
+    "id": 3,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "У компанії обговорюють плани на вихідні, а ти довго мовчиш, бо не маєш конкретних ідей.",
+      "en": "The group is talking about weekend plans, and you’ve been quiet for a while because you don’t have any particular ideas.",
+      "ru": "В компании обсуждают планы на выходные, а ты долго молчишь, потому что нет конкретных идей."
+    },
+    "task": {
+      "ua": "Придумай, як плавно повернутися до бесіди.",
+      "en": "Think of how to smoothly come back into the conversation.",
+      "ru": "Придумай, как плавно вернуться в разговор."
+    }
+  },
+  {
+    "id": 4,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Всі активно спілкуються, а ти просто слухав(-ла). Один з учасників згадує подорож, але тема переходить до робочих інструментів. Ти не навчався(-лась) з ними, тому мовчав(-ла) і посміхався(-лась).",
+      "en": "Everyone is actively talking, and you’ve just been listening. One participant mentions a trip, but the topic shifts to work tools. You haven’t learned to use them, so you just listened and smiled.",
+      "ru": "Все активно общаются, а ты просто слушал(а). Один из участников упомянул путешествие, но тема перешла к рабочим инструментам. Ты с ними не обучался(ась), поэтому молчал(а) и улыбался(ась)."
+    },
+    "task": {
+      "ua": "Придумай, як цікаво і природно повернутися в розмову, щоб не залишатися осторонь.",
+      "en": "Come up with an interesting and natural way to rejoin the conversation without staying on the sidelines.",
+      "ru": "Придумай, как интересно и естественно вернуться в разговор, чтобы не оставаться в стороне."
+    }
+  },
+  {
+    "id": 5,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Під час розмови про останні новини ти мовчав(-ла), бо не встиг слідкувати за подіями. Тепер тема перейшла до спорту.",
+      "en": "During the conversation about recent news, you stayed silent because you hadn’t kept up. Now the topic has shifted to sports.",
+      "ru": "Во время разговора о последних новостях ты молчал(а), так как не успевал следить. Теперь тема сменилась на спорт."
+    },
+    "task": {
+      "ua": "Придумай, як плавно і цікаво повернутися до розмови, щоб внести свій внесок.",
+      "en": "Come up with a smooth and engaging way to rejoin the conversation and contribute.",
+      "ru": "Придумай, как плавно и интересно вернуться в разговор, чтобы внести свой вклад."
+    }
+  },
+  {
+    "id": 6,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "У групі говорять про плани на вихідні, а ти мовчиш, бо не маєш чітких ідей. Зараз хтось жартує про улюблені ресторани.",
+      "en": "The group is talking about weekend plans, and you’ve been silent because you have no clear ideas. Now someone is joking about favorite restaurants.",
+      "ru": "В группе говорят о планах на выходные, а ты молчишь, так как нет четких идей. Сейчас кто-то шутит про любимые рестораны."
+    },
+    "task": {
+      "ua": "Придумай природний спосіб повернутися в розмову.",
+      "en": "Come up with a natural way to rejoin the conversation.",
+      "ru": "Придумай естественный способ вернуться в разговор."
+    }
+  },
+  {
+    "id": 7,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Під час вечері друзі обговорюють нові технології, а ти мовчиш, бо не дуже розбираєшся. Тема переходить на музику.",
+      "en": "During dinner, friends discuss new technologies, and you stay silent because you’re not very familiar. The topic shifts to music.",
+      "ru": "Во время ужина друзья обсуждают новые технологии, а ты молчишь, потому что не очень разбираешься. Тема меняется на музыку."
+    },
+    "task": {
+      "ua": "Придумай, як природно повернутися в розмову, поділившись своїми музичними вподобаннями.",
+      "en": "Come up with a natural way to rejoin the conversation by sharing your musical preferences.",
+      "ru": "Придумай, как естественно вернуться в разговор, поделившись своими музыкальными предпочтениями."
+    }
+  },
+  {
+    "id": 8,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Колеги активно обговорюють новий проєкт, а ти мовчиш, бо тільки прийшов(-ла) на зустріч. Зараз тема перейшла до робочих викликів.",
+      "en": "Colleagues are actively discussing a new project, and you’ve been silent because you just joined the meeting. Now the topic shifted to work challenges.",
+      "ru": "Коллеги активно обсуждают новый проект, а ты молчишь, так как только пришёл(пришла) на встречу. Сейчас тема сменилась на рабочие вызовы."
+    },
+    "task": {
+      "ua": "Придумай фразу, щоб органічно повернутися в розмову та долучитися до обговорення.",
+      "en": "Come up with a phrase to smoothly rejoin the conversation and join the discussion.",
+      "ru": "Придумай фразу, чтобы органично вернуться в разговор и присоединиться к обсуждению."
+    }
+  },
+  {
+    "id": 9,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Під час кави друзі обговорюють нові книги, а ти мовчиш, бо не читав(-ла) нічого останнім часом. Тепер тема перейшла до фільмів.",
+      "en": "While having coffee, friends discuss new books, and you stay silent because you haven’t read anything lately. Now the topic switched to movies.",
+      "ru": "За кофе друзья обсуждают новые книги, а ты молчишь, так как не читал(а) ничего в последнее время. Сейчас тема сменилась на фильмы."
+    },
+    "task": {
+      "ua": "Придумай, як плавно повернутися в розмову, поділившись своїми думками про кіно.",
+      "en": "Think of a smooth way to rejoin the conversation by sharing your thoughts about movies.",
+      "ru": "Придумай, как плавно вернуться в разговор, поделившись своими мыслями о кино."
+    }
+  },
+  {
+    "id": 10,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "На вечірці всі активно обговорюють музику, а ти мовчиш, бо не знаєш виконавців. Тепер хтось почав говорити про улюблені подорожі.",
+      "en": "At a party, everyone is actively discussing music, and you stay silent because you don’t know the artists. Now someone started talking about favorite trips.",
+      "ru": "На вечеринке все активно обсуждают музыку, а ты молчишь, так как не знаешь исполнителей. Сейчас кто-то начал говорить о любимых путешествиях."
+    },
+    "task": {
+      "ua": "Придумай, як цікаво і природно повернутися в розмову, поділившись своїм улюбленим місцем для відпочинку.",
+      "en": "Come up with an interesting and natural way to rejoin the conversation by sharing your favorite vacation spot.",
+      "ru": "Придумай, как интересно и естественно вернуться в разговор, поделившись своим любимым местом для отдыха."
+    }
+  },
+  {
+    "id": 11,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "У команді обговорюють плани на вихідні, а ти мовчиш, бо тільки приєднався до розмови. Тепер тема перейшла на спорт.",
+      "en": "The team is discussing weekend plans, and you’ve been silent since you just joined. Now the topic shifted to sports.",
+      "ru": "В команде обсуждают планы на выходные, а ты молчишь, так как только присоединился. Сейчас тема сменилась на спорт."
+    },
+    "task": {
+      "ua": "Придумай, як легко і природно повернутися в розмову, поділившись своїм улюбленим видом спорту або плани на вихідні.",
+      "en": "Come up with a natural and easy way to rejoin the conversation by sharing your favorite sport or weekend plans.",
+      "ru": "Придумай, как легко и естественно вернуться в разговор, поделившись своим любимым видом спорта или планами на выходные."
+    }
+  },
+  {
+    "id": 12,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Під час обіду колеги говорять про нові технології, а ти мовчиш, бо тільки вчора почав працювати в цій сфері. Тепер йде розмова про гаджети.",
+      "en": "During lunch, colleagues discuss new technologies, and you stay silent because you just started working in this field yesterday. Now they talk about gadgets.",
+      "ru": "Во время обеда коллеги обсуждают новые технологии, а ты молчишь, так как только вчера начал работать в этой сфере. Сейчас разговор о гаджетах."
+    },
+    "task": {
+      "ua": "Придумай, як плавно повернутися в розмову, висловивши свою думку про сучасні гаджети.",
+      "en": "Think of a smooth way to rejoin the conversation by sharing your opinion about modern gadgets.",
+      "ru": "Придумай, как плавно вернуться в разговор, высказав своё мнение о современных гаджетах."
+    }
+  },
+  {
+    "id": 13,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "На вечорі знайомств всі активно спілкуються, а ти мовчиш, бо тільки прийшов(-ла). Тепер хтось розповідає про свої хобі.",
+      "en": "At a meet-and-greet evening, everyone is actively talking, and you stay silent because you just arrived. Now someone is sharing their hobbies.",
+      "ru": "На вечере знакомств все активно общаются, а ты молчишь, так как только пришёл(пришла). Сейчас кто-то рассказывает о своих хобби."
+    },
+    "task": {
+      "ua": "Придумай, як цікаво й природно повернутися в розмову, розповівши про своє хобі.",
+      "en": "Come up with an interesting and natural way to rejoin the conversation by talking about your hobby.",
+      "ru": "Придумай, как интересно и естественно вернуться в разговор, рассказав о своём хобби."
+    }
+  },
+  {
+    "id": 14,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Ви слухаєте, як колеги обговорюють нові серіали, а ви мовчите, бо не дивилися нічого останнім часом.",
+      "en": "You’re listening while colleagues discuss new TV series, but you stay silent because you haven’t watched anything lately.",
+      "ru": "Вы слушаете, как коллеги обсуждают новые сериалы, а вы молчите, потому что давно ничего не смотрели."
+    },
+    "task": {
+      "ua": "Придумай, як плавно повернутися в розмову, запитавши про найцікавіший серіал останнього часу.",
+      "en": "Think of a smooth way to rejoin the conversation by asking about the most interesting recent series.",
+      "ru": "Придумай, как плавно вернуться в разговор, спросив о самом интересном сериале последних времен."
+    }
+  },
+  {
+    "id": 15,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "У компанії обговорюють плани на літню відпустку, а ти мовчиш, бо ще не визначився з напрямком.",
+      "en": "In a group, people are talking about summer vacation plans, and you stay silent because you haven’t decided on a destination yet.",
+      "ru": "В компании обсуждают планы на летний отпуск, а ты молчишь, потому что ещё не выбрал направление."
+    },
+    "task": {
+      "ua": "Придумай, як природно повернутися в розмову, розпитавши про цікаві місця, які радять інші.",
+      "en": "Come up with a natural way to rejoin the conversation by asking about interesting places others recommend.",
+      "ru": "Придумай, как естественно вернуться в разговор, расспросив о интересных местах, которые рекомендуют другие."
+    }
+  },
+  {
+    "id": 16,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Під час зустрічі колеги жваво обговорюють новий проект, а ти мовчиш, бо не знайомий з деталями.",
+      "en": "During a meeting, colleagues are actively discussing a new project, and you stay silent because you’re not familiar with the details.",
+      "ru": "Во время встречи коллеги оживленно обсуждают новый проект, а ты молчишь, потому что не знаком с деталями."
+    },
+    "task": {
+      "ua": "Придумай, як тактовно повернутися в розмову, поставивши питання про те, що тебе цікавить у проекті.",
+      "en": "Think of a tactful way to rejoin the conversation by asking a question about something you’re curious about in the project.",
+      "ru": "Придумай, как тактично вернуться в разговор, задав вопрос о том, что тебя интересует в проекте."
+    }
+  },
+  {
+    "id": 17,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Усі жваво обговорюють ремонт, ти мовчиш, бо нещодавно сам(-а) його завершив(-ла).",
+      "en": "Everyone is actively discussing renovations, but you stay silent because you’ve just finished yours recently.",
+      "ru": "Все оживленно обсуждают ремонт, а ты молчишь, потому что недавно сам(а) его закончил(а)."
+    },
+    "task": {
+      "ua": "Придумай, як природно повернутися в розмову, поділившись своєю порадою або запитавши про досвід інших.",
+      "en": "Think of a natural way to rejoin the conversation by sharing your advice or asking about others’ experiences.",
+      "ru": "Придумай, как естественно вернуться в разговор, поделившись своим советом или спросив о чужом опыте."
+    }
+  },
+  {
+    "id": 18,
+    "exercise_name": "SMOOTH_RETURN",
+    "situation": {
+      "ua": "Усі обмінюються враженнями, а ти не наважувався(-лась) щось сказати.",
+      "en": "Everyone is sharing their impressions, but you haven’t dared to say anything.",
+      "ru": "Все делятся впечатлениями, а ты не решался(-лась) что-то сказать."
+    },
+    "task": {
+      "ua": "Придумай фразу або запитання, щоб плавно повернутися у розмову.",
+      "en": "Come up with a phrase or question to smoothly rejoin the conversation.",
+      "ru": "Придумай фразу или вопрос, чтобы плавно вернуться в разговор."
+    }
+  }
+]

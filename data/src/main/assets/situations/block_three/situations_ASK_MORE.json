@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я нещодавно почав вивчати гру на гітарі.",
+      "en": "I recently started learning to play the guitar.",
+      "ru": "Я недавно начал учиться играть на гитаре."
+    },
+    "task": {
+      "ua": "Запитай щось цікаве, щоб дізнатися більше про те, як у нього/неї йде навчання.",
+      "en": "Ask something curious to learn more about how their learning is going.",
+      "ru": "Задай интересный вопрос, чтобы узнать больше о процессе обучения."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я нещодавно побував у Карпатах — неймовірні краєвиди!",
+      "en": "I recently visited the Carpathians — the views were incredible!",
+      "ru": "Я недавно побывал в Карпатах — невероятные виды!"
+    },
+    "task": {
+      "ua": "Запитай щось, що допоможе дізнатися про найяскравіші моменти поїздки.",
+      "en": "Ask something that helps you find out about the most memorable moments of the trip.",
+      "ru": "Задай вопрос, чтобы узнать о самых ярких моментах поездки."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я почав готувати здорову їжу вдома.",
+      "en": "I started cooking healthy meals at home.",
+      "ru": "Я начал готовить здоровую еду дома."
+    },
+    "task": {
+      "ua": "Запитай щось цікаве про улюблені рецепти або корисні звички в харчуванні.",
+      "en": "Ask something interesting about favorite recipes or healthy eating habits.",
+      "ru": "Задай вопрос о любимых рецептах или полезных привычках в питании."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я почав займатися йогою, і це дуже допомагає розслабитись.",
+      "en": "I started practicing yoga, and it really helps me relax.",
+      "ru": "Я начал заниматься йогой, и это очень помогает расслабиться."
+    },
+    "task": {
+      "ua": "Постав одне запитання, щоб дізнатися більше і показати свою зацікавленість.",
+      "en": "Ask one question to learn more and show your interest.",
+      "ru": "Задай один вопрос, чтобы узнать больше и показать свой интерес."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я нещодавно прочитав цікаву книгу про космос.",
+      "en": "I recently read an interesting book about space.",
+      "ru": "Я недавно прочитал интересную книгу про космос."
+    },
+    "task": {
+      "ua": "Постав одне живе запитання, щоб розвинути тему та продовжити розмову.",
+      "en": "Ask one lively question to develop the topic and keep the conversation going.",
+      "ru": "Задай один живой вопрос, чтобы развить тему и продолжить разговор."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я почав вчитися готувати італійські страви.",
+      "en": "I started learning to cook Italian dishes.",
+      "ru": "Я начал учиться готовить итальянские блюда."
+    },
+    "task": {
+      "ua": "Постав одне запитання, щоб підтримати розмову і показати, що тобі цікаво.",
+      "en": "Ask one question to support the conversation and show you’re interested.",
+      "ru": "Задай один вопрос, чтобы поддержать разговор и показать, что тебе интересно."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Минулого тижня я побував на концерті свого улюбленого гурту.",
+      "en": "Last week, I went to a concert of my favorite band.",
+      "ru": "На прошлой неделе я побывал на концерте своей любимой группы."
+    },
+    "task": {
+      "ua": "Задай запитання або зроби коментар, щоб розвинути тему і показати, що тобі цікаво.",
+      "en": "Ask a question or make a comment to keep the conversation going and show your interest.",
+      "ru": "Задай вопрос или сделай комментарий, чтобы поддержать разговор и показать свой интерес."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я почав ходити в тренажерний зал і вже бачу перші результати.",
+      "en": "I started going to the gym and I’m already seeing results.",
+      "ru": "Я начал ходить в спортзал и уже вижу первые результаты."
+    },
+    "task": {
+      "ua": "Вислови зацікавленість і постав запитання, яке допоможе співрозмовнику розповісти більше.",
+      "en": "Show interest and ask a question that encourages the speaker to share more.",
+      "ru": "Вырази интерес и задай вопрос, который поможет собеседнику рассказать больше."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я збираюся в подорож до Японії наступного місяця.",
+      "en": "I’m planning a trip to Japan next month.",
+      "ru": "Я планирую поездку в Японию в следующем месяце."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я випадково натрапив на кав’ярню, де роблять лате з лавандою — несподівано смачно.",
+      "en": "I accidentally found a café that makes lavender lattes — surprisingly tasty.",
+      "ru": "Случайно нашёл кафе, где делают лавандовый латте — неожиданно вкусно."
+    },
+    "task": {
+      "ua": "Прояви цікавість і підтримай тему — коментарем або питанням.",
+      "en": "Show interest and keep the topic going — with a comment or a question.",
+      "ru": "Прояви интерес и продолжи тему — комментарием или вопросом."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Нещодавно почав(-ла) вивчати жестову мову — це зовсім інший світ.",
+      "en": "I recently started learning sign language — it's a whole different world.",
+      "ru": "Недавно начал(а) учить жестовый язык — это совсем другой мир."
+    },
+    "task": {
+      "ua": "Відреагуй щиро — спробуй дізнатися більше або поділись власною думкою.",
+      "en": "Respond sincerely — try to learn more or share your own thoughts.",
+      "ru": "Ответь искренне — попробуй узнать больше или поделись своим мнением."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "У мене вдома тепер живе кіт із притулку — дуже харизматичний тип.",
+      "en": "I’ve adopted a cat from a shelter — such a charismatic little guy.",
+      "ru": "Я взял(а) кота из приюта — очень харизматичный персонаж."
+    },
+    "task": {
+      "ua": "Знайди, як відгукнутись на це — з інтересом, дружньо і невимушено.",
+      "en": "Find a way to respond — with curiosity, friendliness, and ease.",
+      "ru": "Найди, как отозваться на это — с интересом, по-дружески и непринуждённо."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Учора вперше готував гаспачо — неочікувано сподобалось.",
+      "en": "Yesterday I made gazpacho for the first time — surprisingly liked it.",
+      "ru": "Вчера впервые приготовил гаспачо — неожиданно понравилось."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Я майже закінчив(-ла) читати «Сто років самотності». Це щось.",
+      "en": "I’m almost done reading ‘One Hundred Years of Solitude’. What a book.",
+      "ru": "Я почти дочитал(а) «Сто лет одиночества». Это нечто."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "У вихідні випадково потрапив(-ла) на фестиваль стріт-арту — класна атмосфера.",
+      "en": "I randomly ended up at a street art festival this weekend — great vibe.",
+      "ru": "На выходных случайно попал(а) на фестиваль уличного искусства — классная атмосфера."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Мене запросили спробувати кераміку — взагалі не думав(-ла), що це так затягує.",
+      "en": "I got invited to try pottery — never thought it’d be so absorbing.",
+      "ru": "Меня пригласили на керамику — не думал(а), что это так затягивает."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Сусіди почали грати джаз вечорами — іноді прямо з балкона чутно саксофон.",
+      "en": "My neighbors started playing jazz in the evenings — sometimes you can hear the sax from the balcony.",
+      "ru": "Соседи стали играть джаз по вечерам — иногда с балкона слышен саксофон."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "ASK_MORE",
+    "situation": {
+      "ua": "Мій пес вчора сам навчився відкривати двері. Я шокований(-а).",
+      "en": "My dog figured out how to open doors yesterday. I’m shocked.",
+      "ru": "Моя собака вчера сама научилась открывать двери. Я в шоке."
+    },
+    "task": {
+      "ua": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
+      "en": "Show your interest by asking a question or making a comment to find out more details.",
+      "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
+    }
+  }
+]

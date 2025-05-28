@@ -35,6 +35,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.STORY_PUZZLE -> "situations/block_two/situations_STORY_PUZZLE.json"
                     ExerciseName.SAY_DIFFERENTLY -> "situations/block_two/situations_SAY_DIFFERENTLY.json"
                     ExerciseName.ONE_MEMORY -> "situations/block_two/situations_ONE_MEMORY.json"
+                    ExerciseName.JOIN_CONVERSATION -> "situations/block_three/situations_JOIN_CONVERSATION.json"
+                    ExerciseName.ASK_MORE -> "situations/block_three/situations_ASK_MORE.json"
+                    ExerciseName.COMMENT_IN_MOMENT -> "situations/block_three/situations_COMMENT_IN_MOMENT.json"
+                    ExerciseName.SMOOTH_RETURN -> "situations/block_three/situations_SMOOTH_RETURN.json"
+                    ExerciseName.FIND_THE_TOPIC -> "situations/block_three/situations_FIND_THE_TOPIC.json"
+                    ExerciseName.I_THINK_SO_TOO -> "situations/block_three/situations_I_THINK_SO_TOO.json"
                     else -> ""
                 }
 
@@ -92,6 +98,9 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 ExerciseName.FAREWELL_REMARK -> "tests/block_one/tests_FAREWELL_REMARK.json"
                 ExerciseName.THREE_SENTENCES -> "tests/block_two/tests_THREE_SENTENCES.json"
                 ExerciseName.SAY_DIFFERENTLY -> "tests/block_two/tests_SAY_DIFFERENTLY.json"
+                ExerciseName.ASK_MORE -> "tests/block_three/tests_ASK_MORE.json"
+                ExerciseName.FIND_THE_TOPIC -> "tests/block_three/tests_FIND_THE_TOPIC.json"
+                ExerciseName.I_THINK_SO_TOO -> "tests/block_three/tests_I_THINK_SO_TOO.json"
                 else -> ""
             }
 

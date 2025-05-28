@@ -18,9 +18,15 @@ enum class ExerciseName() {
     DETAILED_STORYTELLING,
     STORY_PUZZLE,
     SAY_DIFFERENTLY,
-    ONE_MEMORY
+    ONE_MEMORY,
 
     // 3
+    JOIN_CONVERSATION,
+    ASK_MORE,
+    COMMENT_IN_MOMENT,
+    SMOOTH_RETURN,
+    FIND_THE_TOPIC,
+    I_THINK_SO_TOO
 }
 
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {
