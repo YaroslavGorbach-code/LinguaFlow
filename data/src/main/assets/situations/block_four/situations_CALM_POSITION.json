@@ -1,0 +1,282 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Та це повна нісенітниця, що ти зараз сказав! Ти взагалі розумієш, про що йдеться?»",
+      "en": "Someone says: “That's complete nonsense, what you just said! Do you even understand what this is about?”",
+      "ru": "Кто-то говорит: «Это полная ерунда, что ты сейчас сказал! Ты вообще понимаешь, о чём речь?»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно, коротко і впевнено.",
+      "en": "Respond calmly, briefly, and confidently.",
+      "ru": "Отреагируй спокойно, кратко и уверенно."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти серйозно? Це якась дитяча логіка.»",
+      "en": "Someone says: “Are you serious? That's some childish logic.”",
+      "ru": "Кто-то говорит: «Ты серьёзно? Это какая-то детская логика.»"
+    },
+    "task": {
+      "ua": "Відповідай спокійно, щоб зберегти повагу в розмові.",
+      "en": "Respond calmly to maintain respect in the conversation.",
+      "ru": "Отвечай спокойно, чтобы сохранить уважение в разговоре."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «З таким підходом далеко не підеш.»",
+      "en": "Someone says: “You won't get far with that approach.”",
+      "ru": "Кто-то говорит: «С таким подходом далеко не уедешь.»"
+    },
+    "task": {
+      "ua": "Спокійно і впевнено поясни свою позицію.",
+      "en": "Calmly and confidently explain your position.",
+      "ru": "Спокойно и уверенно объясни свою позицию."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти знову помиляєшся, краще послухай мене.»",
+      "en": "Someone says: “You’re wrong again, better listen to me.”",
+      "ru": "Кто-то говорит: «Ты опять ошибаешься, лучше послушай меня.»"
+    },
+    "task": {
+      "ua": "Відповідай спокійно, не втрачаючи самовладання.",
+      "en": "Respond calmly without losing your composure.",
+      "ru": "Отвечай спокойно, не теряя самообладания."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти зовсім не розумієш, про що говориш.»",
+      "en": "Someone says: “You don’t understand what you’re talking about at all.”",
+      "ru": "Кто-то говорит: «Ты совсем не понимаешь, о чём говоришь.»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно, поясни свою точку зору.",
+      "en": "Respond calmly and explain your point of view.",
+      "ru": "Отреагируй спокойно и объясни свою точку зрения."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти завжди все псуєш, краще мовчи.»",
+      "en": "Someone says: “You always ruin everything, better stay silent.”",
+      "ru": "Кто-то говорит: «Ты всегда всё портишь, лучше молчи.»"
+    },
+    "task": {
+      "ua": "Залишися спокійним і дайте впевнено відповідь.",
+      "en": "Stay calm and respond confidently.",
+      "ru": "Оставайся спокойным и дай уверенный ответ."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Це твоя найгірша ідея, я не можу з цим погодитись.»",
+      "en": "Someone says: “This is your worst idea, I can’t agree with that.”",
+      "ru": "Кто-то говорит: «Это твоя худшая идея, я не могу с этим согласиться.»"
+    },
+    "task": {
+      "ua": "Відповідай твердо, але без агресії.",
+      "en": "Respond firmly but without aggression.",
+      "ru": "Отвечай твёрдо, но без агрессии."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Навіщо ти взагалі це кажеш? Це безглуздо.»",
+      "en": "Someone says: “Why do you even say that? It’s pointless.”",
+      "ru": "Кто-то говорит: «Зачем ты вообще это говоришь? Это бессмысленно.»"
+    },
+    "task": {
+      "ua": "Спокійно і впевнено поясни, чому ти так вважаєш.",
+      "en": "Calmly and confidently explain why you think so.",
+      "ru": "Спокойно и уверенно объясни, почему ты так считаешь."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Знову ці твої аргументи, які нічого не варті!»",
+      "en": "Someone says: “Again, these arguments of yours that are worthless!”",
+      "ru": "Кто-то говорит: «Снова эти твои аргументы, которые ничего не стоят!»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно і впевнено, не ображаючись.",
+      "en": "Respond calmly and confidently without getting offended.",
+      "ru": "Отреагируй спокойно и уверенно, не обижаясь."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ой та перестань. Нікому не цікаво, що ти думаєш.»",
+      "en": "Someone says: “Oh, stop it. Nobody cares what you think.”",
+      "ru": "Кто-то говорит: «Ой, перестань. Никому не интересно, что ты думаешь.»"
+    },
+    "task": {
+      "ua": "Залишися спокійним і вислови свою думку ввічливо.",
+      "en": "Stay calm and express your opinion politely.",
+      "ru": "Оставайся спокойным и вырази своё мнение вежливо."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти постійно всіх перебиваєш і думаєш, що завжди правий.»",
+      "en": "Someone says: “You constantly interrupt everyone and think you’re always right.”",
+      "ru": "Кто-то говорит: «Ты постоянно перебиваешь всех и думаешь, что всегда прав.»"
+    },
+    "task": {
+      "ua": "Відповідай спокійно, підтвердь свою позицію без конфлікту.",
+      "en": "Respond calmly, affirm your position without conflict.",
+      "ru": "Отвечай спокойно, подтверди свою позицию без конфликта."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Слухай, краще просто замовкни зараз.»",
+      "en": "Someone says: “Listen, you better just shut up now.”",
+      "ru": "Кто-то говорит: «Слушай, лучше просто замолчи сейчас.»"
+    },
+    "task": {
+      "ua": "Відреагуй твердо, але без агресії.",
+      "en": "Respond firmly but without aggression.",
+      "ru": "Отвечай твёрдо, но без агрессии."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Я не збираюсь тебе слухати, доки ти не почнеш говорити по суті.»",
+      "en": "Someone says: “I’m not going to listen to you until you start talking to the point.”",
+      "ru": "Кто-то говорит: «Я не собираюсь тебя слушать, пока ты не начнешь говорить по существу.»"
+    },
+    "task": {
+      "ua": "Відповідай спокійно, поясни свої думки чітко й аргументовано.",
+      "en": "Respond calmly, explain your thoughts clearly and with arguments.",
+      "ru": "Отвечай спокойно, объясни свои мысли чётко и аргументировано."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти завжди перебільшуєш і робиш з мухи слона.»",
+      "en": "Someone says: “You always exaggerate and make a mountain out of a molehill.”",
+      "ru": "Кто-то говорит: «Ты всегда преувеличиваешь и делаешь из мухи слона.»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно і поясни свою точку зору.",
+      "en": "Respond calmly and explain your point of view.",
+      "ru": "Отреагируй спокойно и объясни свою точку зрения."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Тобі просто пощастило, нічого більше.»",
+      "en": "Someone says: “You just got lucky, nothing more.”",
+      "ru": "Кто-то говорит: «Тебе просто повезло, ничего больше.»"
+    },
+    "task": {
+      "ua": "Відповідай впевнено, не замикаючись у собі.",
+      "en": "Respond confidently without shutting down.",
+      "ru": "Отвечай уверенно, не замыкаясь в себе."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти зовсім не розумієшся на цій темі.»",
+      "en": "Someone says: “You don’t understand this topic at all.”",
+      "ru": "Кто-то говорит: «Ты совсем не разбираешься в этой теме.»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно й аргументовано.",
+      "en": "Respond calmly and with arguments.",
+      "ru": "Отреагируй спокойно и аргументировано."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти завжди хочеш бути в центрі уваги.»",
+      "en": "Someone says: “You always want to be the center of attention.”",
+      "ru": "Кто-то говорит: «Ты всегда хочешь быть в центре внимания.»"
+    },
+    "task": {
+      "ua": "Відповідай впевнено, але без агресії.",
+      "en": "Respond confidently but without aggression.",
+      "ru": "Отвечай уверенно, но без агрессии."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Твої ідеї не мають сенсу.»",
+      "en": "Someone says: “Your ideas make no sense.”",
+      "ru": "Кто-то говорит: «Твои идеи не имеют смысла.»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно, поясни свої думки чітко і впевнено.",
+      "en": "Respond calmly, explain your thoughts clearly and confidently.",
+      "ru": "Отреагируй спокойно, объясни свои мысли чётко и уверенно."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти просто не вмієш слухати інших.»",
+      "en": "Someone says: “You just don’t know how to listen to others.”",
+      "ru": "Кто-то говорит: «Ты просто не умеешь слушать других.»"
+    },
+    "task": {
+      "ua": "Відповідай спокійно і поясни свою позицію.",
+      "en": "Respond calmly and explain your position.",
+      "ru": "Отвечай спокойно и объясни свою позицию."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "CALM_POSITION",
+    "situation": {
+      "ua": "Хтось каже: «Ти ніколи не береш на себе відповідальність.»",
+      "en": "Someone says: “You never take responsibility.”",
+      "ru": "Кто-то говорит: «Ты никогда не берёшь на себя ответственность.»"
+    },
+    "task": {
+      "ua": "Відреагуй спокійно, наведи приклади своєї відповідальності.",
+      "en": "Respond calmly and provide examples of your responsibility.",
+      "ru": "Отреагируй спокойно, приведи примеры своей ответственности."
+    }
+  }
+]

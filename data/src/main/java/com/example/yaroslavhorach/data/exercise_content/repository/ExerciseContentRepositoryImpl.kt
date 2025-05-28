@@ -41,6 +41,11 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.SMOOTH_RETURN -> "situations/block_three/situations_SMOOTH_RETURN.json"
                     ExerciseName.FIND_THE_TOPIC -> "situations/block_three/situations_FIND_THE_TOPIC.json"
                     ExerciseName.I_THINK_SO_TOO -> "situations/block_three/situations_I_THINK_SO_TOO.json"
+                    ExerciseName.GIVE_REASON -> "situations/block_four/situations_GIVE_REASON.json"
+                    ExerciseName.WHY_VALUES_MATTER -> "situations/block_four/situations_WHY_VALUES_MATTER.json"
+                    ExerciseName.SOFT_DISAGREEMENT -> "situations/block_four/situations_SOFT_DISAGREEMENT.json"
+                    ExerciseName.CALM_POSITION -> "situations/block_four/situations_CALM_POSITION.json"
+                    ExerciseName.GENTLE_PERSUASION -> "situations/block_four/situations_GENTLE_PERSUASION.json"
                     else -> ""
                 }
 
@@ -101,6 +106,11 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 ExerciseName.ASK_MORE -> "tests/block_three/tests_ASK_MORE.json"
                 ExerciseName.FIND_THE_TOPIC -> "tests/block_three/tests_FIND_THE_TOPIC.json"
                 ExerciseName.I_THINK_SO_TOO -> "tests/block_three/tests_I_THINK_SO_TOO.json"
+                ExerciseName.GIVE_REASON -> "tests/block_four/tests_GIVE_REASON.json"
+                ExerciseName.WHY_VALUES_MATTER -> "tests/block_four/tests_WHY_VALUES_MATTER.json"
+                ExerciseName.SOFT_DISAGREEMENT -> "tests/block_four/tests_SOFT_DISAGREEMENT.json"
+                ExerciseName.CALM_POSITION -> "tests/block_four/tests_CALM_POSITTION.json"
+                ExerciseName.GENTLE_PERSUASION -> "tests/block_four/tests_GENTLE_PERSUASION.json"
                 else -> ""
             }
 

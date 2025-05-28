@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що бути чесним — це важливо.",
+      "en": "You believe that being honest is important.",
+      "ru": "Ты считаешь, что быть честным — это важно."
+    },
+    "task": {
+      "ua": "Чому саме для тебе це має значення? Спробуй пояснити.",
+      "en": "Why does this matter to you? Try to explain.",
+      "ru": "Почему это имеет значение именно для тебя? Попробуй объяснить."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти кажеш, що для тебе важлива стабільність.",
+      "en": "You say that stability is important to you.",
+      "ru": "Ты говоришь, что стабильность для тебя важна."
+    },
+    "task": {
+      "ua": "Поясни, чому це справді має значення саме для тебе.",
+      "en": "Explain why this really matters to you.",
+      "ru": "Объясни, почему это действительно важно именно для тебя."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти починаєш ранок зі сніданку і вважаєш це важливим.",
+      "en": "You start your day with breakfast and consider it important.",
+      "ru": "Ты начинаешь утро с завтрака и считаешь это важным."
+    },
+    "task": {
+      "ua": "Чому саме це важливо для тебе? Сформулюй думку.",
+      "en": "Why is this important to you? Formulate your thoughts.",
+      "ru": "Почему это важно именно для тебя? Сформулируй свою мысль."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти кажеш, що для тебе важливо проводити час із родиною.",
+      "en": "You say that spending time with your family is important to you.",
+      "ru": "Ты говоришь, что для тебя важно проводить время с семьёй."
+    },
+    "task": {
+      "ua": "Чому це має значення саме для тебе? Спробуй пояснити.",
+      "en": "Why does this matter to you? Try to explain.",
+      "ru": "Почему это имеет значение именно для тебя? Попробуй объяснить."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що мати особистий простір — це важливо.",
+      "en": "You believe that having personal space is important.",
+      "ru": "Ты считаешь, что иметь личное пространство — это важно."
+    },
+    "task": {
+      "ua": "Чому саме це важливо для тебе? Сформулюй свої думки.",
+      "en": "Why is this important to you? Express your thoughts.",
+      "ru": "Почему это важно именно для тебя? Сформулируй свои мысли."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти звик планувати наперед і вважаєш це корисним.",
+      "en": "You are used to planning ahead and consider it helpful.",
+      "ru": "Ты привык планировать наперёд и считаешь это полезным."
+    },
+    "task": {
+      "ua": "Чому ця звичка має для тебе значення? Поясни.",
+      "en": "Why does this habit matter to you? Explain.",
+      "ru": "Почему эта привычка важна для тебя? Объясни."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що мати можливість подорожувати — це цінність.",
+      "en": "You believe that having the opportunity to travel is a value.",
+      "ru": "Ты считаешь, что возможность путешествовать — это ценность."
+    },
+    "task": {
+      "ua": "Чому саме для тебе це має значення? Поясни свої міркування.",
+      "en": "Why does this matter to you personally? Explain your thinking.",
+      "ru": "Почему это важно лично для тебя? Объясни свои рассуждения."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що бути пунктуальним — це важливо.",
+      "en": "You believe that being punctual is important.",
+      "ru": "Ты считаешь, что пунктуальность — это важно."
+    },
+    "task": {
+      "ua": "Чому саме ця риса має для тебе значення? Поділись своїм поглядом.",
+      "en": "Why does this trait matter to you? Share your perspective.",
+      "ru": "Почему это качество важно для тебя? Поделись своим взглядом."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти кажеш, що допомагати іншим — це важливо для тебе.",
+      "en": "You say that helping others is important to you.",
+      "ru": "Ты говоришь, что помогать другим — это важно для тебя."
+    },
+    "task": {
+      "ua": "Чому саме ця цінність має для тебе значення? Поясни.",
+      "en": "Why does this value matter to you? Explain.",
+      "ru": "Почему эта ценность важна для тебя? Объясни."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що мати хобі — це важливо для повноцінного життя.",
+      "en": "You believe that having a hobby is important for a fulfilling life.",
+      "ru": "Ты считаешь, что иметь хобби — это важно для полноценной жизни."
+    },
+    "task": {
+      "ua": "Чому для тебе це має значення? Поділись своїми думками.",
+      "en": "Why does this matter to you? Share your thoughts.",
+      "ru": "Почему это имеет значение для тебя? Поделись своими мыслями."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що професійний розвиток — це важлива частина життя.",
+      "en": "You believe that professional growth is an important part of life.",
+      "ru": "Ты считаешь, что профессиональное развитие — важная часть жизни."
+    },
+    "task": {
+      "ua": "Чому ця цінність важлива саме для тебе? Спробуй пояснити.",
+      "en": "Why is this value important to you personally? Try to explain.",
+      "ru": "Почему эта ценность важна именно для тебя? Попробуй объяснить."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти намагаєшся зберігати спокій у складних ситуаціях.",
+      "en": "You try to stay calm in difficult situations.",
+      "ru": "Ты стараешься сохранять спокойствие в сложных ситуациях."
+    },
+    "task": {
+      "ua": "Чому для тебе це має значення? Розкажи про свою мотивацію.",
+      "en": "Why does this matter to you? Talk about your motivation.",
+      "ru": "Почему это имеет значение для тебя? Расскажи о своей мотивации."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти кажеш, що тобі важливо мати відчуття контролю над своїм життям.",
+      "en": "You say that having a sense of control over your life is important to you.",
+      "ru": "Ты говоришь, что тебе важно ощущать контроль над своей жизнью."
+    },
+    "task": {
+      "ua": "Чому це важливо для тебе особисто? Поясни свій погляд.",
+      "en": "Why is this important to you personally? Explain your perspective.",
+      "ru": "Почему это важно именно для тебя? Объясни свою точку зрения."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що підтримувати фізичну активність — важливо.",
+      "en": "You believe that staying physically active is important.",
+      "ru": "Ты считаешь, что поддерживать физическую активность — важно."
+    },
+    "task": {
+      "ua": "Чому для тебе це має значення? Розкажи про свою мотивацію.",
+      "en": "Why does this matter to you? Talk about your motivation.",
+      "ru": "Почему это имеет значение для тебя? Расскажи о своей мотивации."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти цінуєш щирість у спілкуванні з людьми.",
+      "en": "You value honesty in communication with others.",
+      "ru": "Ты ценишь искренность в общении с людьми."
+    },
+    "task": {
+      "ua": "Чому саме щирість така важлива для тебе? Поясни.",
+      "en": "Why is honesty so important to you? Explain.",
+      "ru": "Почему искренность так важна для тебя? Объясни."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти завжди намагаєшся завершувати почате.",
+      "en": "You always try to finish what you start.",
+      "ru": "Ты всегда стараешься доводить начатое до конца."
+    },
+    "task": {
+      "ua": "Чому це має для тебе значення? Поділись своїм підходом.",
+      "en": "Why does it matter to you? Share your approach.",
+      "ru": "Почему это имеет значение для тебя? Поделись своим подходом."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що важливо щодня вчитися чомусь новому.",
+      "en": "You believe it's important to learn something new every day.",
+      "ru": "Ты считаешь, что важно каждый день узнавать что-то новое."
+    },
+    "task": {
+      "ua": "Чому ця цінність важлива саме для тебе? Спробуй пояснити.",
+      "en": "Why is this value important to you personally? Try to explain.",
+      "ru": "Почему эта ценность важна именно для тебя? Попробуй объяснить."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "WHY_VALUES_MATTER",
+    "situation": {
+      "ua": "Ти вважаєш, що важливо мати час на відновлення.",
+      "en": "You believe it's important to have time to recharge.",
+      "ru": "Ты считаешь, что важно иметь время на восстановление."
+    },
+    "task": {
+      "ua": "Чому це важливо саме для тебе? Поділись думками.",
+      "en": "Why is this important to you personally? Share your thoughts.",
+      "ru": "Почему это важно именно для тебя? Поделись своими мыслями."
+    }
+  }
+]

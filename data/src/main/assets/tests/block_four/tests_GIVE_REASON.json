@@ -1,0 +1,176 @@
+[
+  {
+    "id": "300",
+    "exercise_name": "GIVE_REASON",
+    "situation": {
+      "ua": "Ти вважаєш, що соцмережі більше відволікають, ніж допомагають.",
+      "en": "You believe that social media distracts more than it helps.",
+      "ru": "Ты считаешь, что соцсети больше отвлекают, чем помогают."
+    },
+    "task": {
+      "ua": "Обґрунтуй свою позицію просто й переконливо.",
+      "en": "Justify your position simply and convincingly.",
+      "ru": "Обоснуй свою позицию просто и убедительно."
+    },
+    "wrongAnswer": {
+      "ua": "Це не аргумент або він не переконливий. Спробуй пояснити причину чіткіше.",
+      "en": "This is not an argument or it’s not convincing. Try to explain the reason more clearly.",
+      "ru": "Это не аргумент или он неубедительный. Попробуй объяснить причину яснее."
+    },
+    "correctAnswer": {
+      "ua": "Добре! Ти чітко пояснив(ла), чому соцмережі відволікають.",
+      "en": "Good! You clearly explained why social media distracts.",
+      "ru": "Хорошо! Ты чётко объяснил(а), почему соцсети отвлекают."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Соцмережі постійно відволікають увагу від важливих справ і знижують продуктивність.",
+          "en": "Social media constantly distracts attention from important tasks and lowers productivity.",
+          "ru": "Соцсети постоянно отвлекают внимание от важных дел и снижают продуктивность."
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Соцмережі — це весело і цікаво.",
+          "en": "Social media is fun and interesting.",
+          "ru": "Соцсети — это весело и интересно."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Я просто так вважаю.",
+          "en": "I just think so.",
+          "ru": "Я просто так считаю."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Багато людей користуються соцмережами.",
+          "en": "Many people use social media.",
+          "ru": "Многие люди пользуются соцсетями."
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "301",
+    "exercise_name": "GIVE_REASON",
+    "situation": {
+      "ua": "Ти переконаний(а), що соцмережі більше шкодять психічному здоров’ю, ніж приносять користь.",
+      "en": "You are convinced that social media harms mental health more than it benefits.",
+      "ru": "Ты убежден(а), что соцсети вредят психическому здоровью больше, чем приносят пользу."
+    },
+    "task": {
+      "ua": "Обґрунтуй свою позицію просто й переконливо.",
+      "en": "Justify your position simply and convincingly.",
+      "ru": "Обоснуй свою позицию просто и убедительно."
+    },
+    "wrongAnswer": {
+      "ua": "Це занадто загальна думка без пояснення. Спробуй пояснити конкретніше.",
+      "en": "This is too general without explanation. Try to be more specific.",
+      "ru": "Это слишком общее мнение без объяснения. Попробуй быть конкретнее."
+    },
+    "correctAnswer": {
+      "ua": "Чудово! Ти навів(ла) вагомий аргумент про вплив соцмереж на психіку.",
+      "en": "Great! You gave a strong argument about social media’s impact on mental health.",
+      "ru": "Отлично! Ты привел(а) веский аргумент о влиянии соцсетей на психику."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "У соцмережах багато фотографій і відео.",
+          "en": "There are many photos and videos on social media.",
+          "ru": "В соцсетях много фотографий и видео."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Це просто моє відчуття.",
+          "en": "It’s just my feeling.",
+          "ru": "Это просто моё чувство."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Соцмережі викликають стрес і тривогу через постійне порівняння з іншими.",
+          "en": "Social media causes stress and anxiety because of constant comparison with others.",
+          "ru": "Соцсети вызывают стресс и тревогу из-за постоянного сравнения с другими."
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Соцмережі — це спосіб спілкування.",
+          "en": "Social media is a way of communication.",
+          "ru": "Соцсети — это способ общения."
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "302",
+    "exercise_name": "GIVE_REASON",
+    "situation": {
+      "ua": "Ти вважаєш, що соцмережі часто відволікають від навчання та роботи.",
+      "en": "You believe social media often distracts from studying and work.",
+      "ru": "Ты считаешь, что соцсети часто отвлекают от учёбы и работы."
+    },
+    "task": {
+      "ua": "Обґрунтуй свою позицію просто й переконливо.",
+      "en": "Justify your position simply and convincingly.",
+      "ru": "Обоснуй свою позицию просто и убедительно."
+    },
+    "wrongAnswer": {
+      "ua": "Це не пояснює, чому соцмережі відволікають. Спробуй конкретніше аргументувати.",
+      "en": "This doesn’t explain why social media distracts. Try to argue more specifically.",
+      "ru": "Это не объясняет, почему соцсети отвлекают. Попробуй аргументировать конкретнее."
+    },
+    "correctAnswer": {
+      "ua": "Чудова аргументація, яка пояснює вплив соцмереж на концентрацію.",
+      "en": "Great argument explaining social media’s effect on concentration.",
+      "ru": "Отличный аргумент, объясняющий влияние соцсетей на концентрацию."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "У соцмережах можна знайти багато друзів.",
+          "en": "You can find many friends on social media.",
+          "ru": "В соцсетях можно найти много друзей."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Соцмережі існують уже давно.",
+          "en": "Social media has existed for a long time.",
+          "ru": "Соцсети существуют уже давно."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Я люблю дивитися відео в соцмережах.",
+          "en": "I like watching videos on social media.",
+          "ru": "Я люблю смотреть видео в соцсетях."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Часті сповіщення в соцмережах порушують концентрацію і не дають зосередитися на важливих завданнях.",
+          "en": "Frequent social media notifications break concentration and prevent focus on important tasks.",
+          "ru": "Частые уведомления в соцсетях нарушают концентрацию и не дают сосредоточиться на важных делах."
+        },
+        "isCorrect": true
+      }
+    ]
+  }
+]

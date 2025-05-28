@@ -24,6 +24,8 @@ val OrangeLight = Color(0xFFFFA600)
 val OrangeDark = Color(0xFFFF8000)
 val RedLight = Color(0xFFF12A21)
 val RedDark = Color(0xFFAD0600)
+val GreenDark = Color(0xFF1B9521)
+val GreenLight = Color(0xFF36BD3C)
 
 internal val Cultured = Color(0xFFF5F5F5)
 internal val DarkLiver = Color(0xFF4D4D4D)

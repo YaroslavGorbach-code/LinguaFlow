@@ -26,7 +26,14 @@ enum class ExerciseName() {
     COMMENT_IN_MOMENT,
     SMOOTH_RETURN,
     FIND_THE_TOPIC,
-    I_THINK_SO_TOO
+    I_THINK_SO_TOO,
+
+    // 4
+    GIVE_REASON,
+    WHY_VALUES_MATTER,
+    SOFT_DISAGREEMENT,
+    CALM_POSITION,
+    GENTLE_PERSUASION
 }
 
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {

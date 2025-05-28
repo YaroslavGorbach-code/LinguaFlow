@@ -1,0 +1,176 @@
+[
+  {
+    "id": "210",
+    "exercise_name": "GENTLE_PERSUASION",
+    "situation": {
+      "ua": "Хтось каже: «Я вже пробував, але нічого не вийшло.»",
+      "en": "Someone says: “I already tried, but nothing worked.”",
+      "ru": "Кто-то говорит: «Я уже пытался, но ничего не получилось.»"
+    },
+    "task": {
+      "ua": "Як би ти м’яко підтримав і запропонував спробувати інший підхід?",
+      "en": "How would you gently support and suggest trying another approach?",
+      "ru": "Как бы ты мягко поддержал и предложил попробовать другой подход?"
+    },
+    "wrongAnswer": {
+      "ua": "Це звучить надто критично або без ентузіазму. Спробуй бути більш підтримуючим і обережним.",
+      "en": "That sounds too critical or unenthusiastic. Try to be more supportive and gentle.",
+      "ru": "Это звучит слишком критично или без энтузиазма. Попробуй быть более поддерживающим и мягким."
+    },
+    "correctAnswer": {
+      "ua": "Чудова відповідь! Вона підтримує і заохочує спробувати щось нове делікатно.",
+      "en": "Great response! It supports and encourages trying something new gently.",
+      "ru": "Отличный ответ! Он поддерживает и побуждает попробовать что-то новое мягко."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Розумію, це буває складно. Можливо, варто спробувати інший підхід? Я можу допомогти.",
+          "en": "I understand, it can be difficult. Maybe trying another approach would help? I can assist.",
+          "ru": "Понимаю, это бывает сложно. Возможно, стоит попробовать другой подход? Я могу помочь."
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Та ти просто не хотів цього робити по-справжньому.",
+          "en": "You just didn't really want to do it.",
+          "ru": "Ты просто не хотел этого делать по-настоящему."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Якщо не вийшло з першого разу, навряд чи щось зміниться.",
+          "en": "If it didn’t work the first time, it probably won’t change.",
+          "ru": "Если не получилось с первого раза, вряд ли что-то изменится."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Ти просто повинен докласти більше зусиль.",
+          "en": "You just need to put in more effort.",
+          "ru": "Тебе просто нужно приложить больше усилий."
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "211",
+    "exercise_name": "GENTLE_PERSUASION",
+    "situation": {
+      "ua": "Хтось каже: «Я вже не впевнений, що це взагалі працює.»",
+      "en": "Someone says: “I'm no longer sure this even works.”",
+      "ru": "Кто-то говорит: «Я уже не уверен, что это вообще работает.»"
+    },
+    "task": {
+      "ua": "Як би ти м’яко підтримав і запропонував спробувати інший підхід?",
+      "en": "How would you gently support and suggest trying another approach?",
+      "ru": "Как бы ты мягко поддержал и предложил попробовать другой подход?"
+    },
+    "wrongAnswer": {
+      "ua": "Ця відповідь звучить занадто різко або недружньо. Спробуй бути делікатнішим.",
+      "en": "This response sounds too harsh or unfriendly. Try to be more delicate.",
+      "ru": "Этот ответ звучит слишком резко или недружелюбно. Попробуй быть деликатнее."
+    },
+    "correctAnswer": {
+      "ua": "Добре, що відповів підтримуючи і з пропозицією альтернативи.",
+      "en": "Good that you responded supportively with a suggestion for an alternative.",
+      "ru": "Хорошо, что ты ответил поддерживающе с предложением альтернативы."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Я розумію твої сумніви. Можливо, варто дати шанс іншому методу? Можемо обговорити це разом.",
+          "en": "I understand your doubts. Maybe it’s worth giving another method a chance? We can discuss it together.",
+          "ru": "Я понимаю твои сомнения. Может стоит дать шанс другому методу? Можем обсудить это вместе."
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Ти просто втрачаєш час.",
+          "en": "You’re just wasting your time.",
+          "ru": "Ты просто теряешь время."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Навіщо взагалі намагатися, якщо сумніваєшся?",
+          "en": "Why bother trying if you have doubts?",
+          "ru": "Зачем пытаться, если ты сомневаешься?"
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Це не для тебе.",
+          "en": "This isn’t for you.",
+          "ru": "Это не для тебя."
+        },
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "212",
+    "exercise_name": "GENTLE_PERSUASION",
+    "situation": {
+      "ua": "Хтось каже: «Мені здається, що це неможливо змінити.»",
+      "en": "Someone says: “I feel like this can’t be changed.”",
+      "ru": "Кто-то говорит: «Мне кажется, что это невозможно изменить.»"
+    },
+    "task": {
+      "ua": "Як би ти м’яко підтримав і запропонував спробувати інший підхід?",
+      "en": "How would you gently support and suggest trying another approach?",
+      "ru": "Как бы ты мягко поддержал и предложил попробовать другой подход?"
+    },
+    "wrongAnswer": {
+      "ua": "Це занадто категорично і не підтримує людину. Спробуй бути більш делікатним.",
+      "en": "That is too categorical and doesn’t support the person. Try to be more delicate.",
+      "ru": "Это слишком категорично и не поддерживает человека. Попробуй быть деликатнее."
+    },
+    "correctAnswer": {
+      "ua": "Відповідь м’яка та підтримуюча, вона спонукає подумати про альтернативи.",
+      "en": "The answer is gentle and supportive, encouraging consideration of alternatives.",
+      "ru": "Ответ мягкий и поддерживающий, побуждает подумать об альтернативах."
+    },
+    "variants": [
+      {
+        "texts": {
+          "ua": "Розумію твої сумніви. Можливо, спробуємо розглянути це під іншим кутом?",
+          "en": "I understand your doubts. Maybe we can try looking at it from another angle?",
+          "ru": "Понимаю твои сомнения. Может попробуем посмотреть на это с другой стороны?"
+        },
+        "isCorrect": true
+      },
+      {
+        "texts": {
+          "ua": "Це правда, це не змінити.",
+          "en": "It’s true, it can’t be changed.",
+          "ru": "Это правда, это не изменить."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Ти просто здаєшся занадто швидко.",
+          "en": "You’re just giving up too quickly.",
+          "ru": "Ты просто сдаёшься слишком быстро."
+        },
+        "isCorrect": false
+      },
+      {
+        "texts": {
+          "ua": "Можливо, це не твоє діло.",
+          "en": "Maybe it’s none of your business.",
+          "ru": "Возможно, это не твоё дело."
+        },
+        "isCorrect": false
+      }
+    ]
+  }
+]

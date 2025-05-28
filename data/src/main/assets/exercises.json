@@ -642,5 +642,212 @@
     "block": "THREE",
     "isEnable": false,
     "isLastActive": false
+  },
+  {
+    "id": 30,
+    "nameString": {
+      "ua": "Я думаю, тому що...",
+      "en": "I Think, Because...",
+      "ru": "Я думаю, потому что..."
+    },
+    "description": {
+      "ua": "Бути переконливим — це не про гучність, а про ясність.\nЦя вправа допоможе тобі пояснювати свою позицію так, щоб співрозмовник бачив у ній сенс.\nТи тренуєшся стисло, аргументовано та зрозуміло відповідати на “чому?”. Це — фундамент зрілої розмови.",
+      "en": "Being persuasive isn't about being loud — it's about being clear.\nThis exercise helps you explain your point in a way that makes sense to the listener.\nYou’ll practice giving short, logical, and clear answers to “why?” — the foundation of a mature conversation.",
+      "ru": "Быть убедительным — это не про громкость, а про ясность.\nЭто упражнение поможет тебе объяснять свою позицию так, чтобы собеседник видел в ней смысл.\nТы тренируешься отвечать на «почему?» коротко, логично и понятно — это основа зрелого общения."
+    },
+    "exerciseProgress": {
+      "exerciseId": 30,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "GIVE_REASON",
+    "skill": "COMMUNICATION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 31,
+    "nameString": {
+      "ua": "Чому це важливо?",
+      "en": "Why Does It Matter?",
+      "ru": "Почему это важно?"
+    },
+    "description": {
+      "ua": "Ми часто щось відчуваємо, але не завжди можемо пояснити, чому саме це для нас важливо. Ця вправа допоможе навести внутрішній лад: ти тренуєшся розпізнавати свої цінності та пояснювати їх словами — лаконічно, чітко й переконливо. Така навичка формує глибші розмови й дозволяє впевненіше говорити про себе.",
+      "en": "We often feel something is important, but can’t always explain why. This exercise helps bring clarity: you'll practice identifying your values and expressing them in a clear, concise, and persuasive way. This skill enables deeper conversations and greater confidence when talking about yourself.",
+      "ru": "Мы часто чувствуем, что что-то для нас важно, но не всегда можем объяснить, почему. Это упражнение поможет навести порядок внутри: ты будешь учиться распознавать свои ценности и выражать их словами — кратко, ясно и убедительно. Такая навык помогает строить более глубокие разговоры и уверенно говорить о себе."
+    },
+    "exerciseProgress": {
+      "exerciseId": 31,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "WHY_VALUES_MATTER",
+    "skill": "COMMUNICATION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 32,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 32,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 33,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 33,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 34,
+    "nameString": {
+      "ua": "М’яка незгода",
+      "en": "Soft Disagreement",
+      "ru": "Мягкое несогласие"
+    },
+    "description": {
+      "ua": "Іноді ми маємо іншу думку, але не хочемо сварок. Ця вправа допоможе тобі ввічливо й з повагою висловити незгоду, використовуючи м’які, конструктивні фрази.",
+      "en": "Sometimes we have a different opinion but don’t want arguments. This exercise will help you politely and respectfully express disagreement using gentle, constructive phrases.",
+      "ru": "Иногда у нас другое мнение, но мы не хотим ссор. Это упражнение поможет вежливо и с уважением выразить несогласие, используя мягкие и конструктивные фразы."
+    },
+    "exerciseProgress": {
+      "exerciseId": 34,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "SOFT_DISAGREEMENT",
+    "skill": "COMMUNICATION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 35,
+    "nameString": {
+      "ua": "Спокійна позиція",
+      "en": "Calm Position",
+      "ru": "Спокойная позиция"
+    },
+    "description": {
+      "ua": "Навчися спокійно й впевнено відповідати на різкі або напружені репліки. Вправа допоможе зберігати рівновагу і реагувати твердо, але без агресії.",
+      "en": "Learn to respond calmly and confidently to sharp or tense remarks. This exercise helps you stay composed and reply firmly without aggression.",
+      "ru": "Научись спокойно и уверенно отвечать на резкие или напряжённые реплики. Упражнение поможет сохранять равновесие и отвечать твёрдо, но без агрессии."
+    },
+    "exerciseProgress": {
+      "exerciseId": 35,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "CALM_POSITION",
+    "skill": "COMMUNICATION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 36,
+    "nameString": {
+      "ua": "М’яке переконання",
+      "en": "Gentle Persuasion",
+      "ru": "Мягкое убеждение"
+    },
+    "description": {
+      "ua": "Навчися подавати складні повідомлення з повагою та емпатією, використовуючи логіку, приклади або запитання. Вправа допоможе обирати м’які стратегії переконання та формулювати завершальні фрази, що сприяють згоді.",
+      "en": "Learn to deliver complex messages with respect and empathy using logic, examples, or questions. This exercise helps you choose gentle persuasion strategies and craft closing phrases that encourage agreement.",
+      "ru": "Научись подавать сложные сообщения с уважением и эмпатией, используя логику, примеры или вопросы. Упражнение помогает выбирать мягкие стратегии убеждения и формулировать завершающие фразы, способствующие согласию."
+    },
+    "exerciseProgress": {
+      "exerciseId": 36,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "GENTLE_PERSUASION",
+    "skill": "COMMUNICATION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 37,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 37,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
+  },
+  {
+    "id": 38,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 38,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "FOUR",
+    "isEnable": false,
+    "isLastActive": false
   }
 ]

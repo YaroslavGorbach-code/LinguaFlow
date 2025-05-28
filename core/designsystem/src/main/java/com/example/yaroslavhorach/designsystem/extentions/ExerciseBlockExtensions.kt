@@ -3,6 +3,8 @@ package com.example.yaroslavhorach.designsystem.extentions
 import androidx.compose.ui.graphics.Color
 import com.example.yaroslavhorach.designsystem.theme.BlueDark
 import com.example.yaroslavhorach.designsystem.theme.BlueLight
+import com.example.yaroslavhorach.designsystem.theme.GreenDark
+import com.example.yaroslavhorach.designsystem.theme.GreenLight
 import com.example.yaroslavhorach.designsystem.theme.OrangeDark
 import com.example.yaroslavhorach.designsystem.theme.OrangeLight
 import com.example.yaroslavhorach.designsystem.theme.RedDark
@@ -15,7 +17,7 @@ val ExerciseBlock.topBarBgRes: Int
         ExerciseBlock.ONE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_one
         ExerciseBlock.TWO -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_two
         ExerciseBlock.THREE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_three
-        ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_one
+        ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_four
         ExerciseBlock.FIVE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_one
         ExerciseBlock.SIX -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_one
     }
@@ -25,7 +27,7 @@ fun ExerciseBlock.blockTitle(): UiText.FromString {
         ExerciseBlock.ONE -> UiText.FromString("Блок 1: Small Talk & Знайомство")
         ExerciseBlock.TWO -> UiText.FromString("Блок 2: Особисті теми & Повсякденне життя")
         ExerciseBlock.THREE -> UiText.FromString("Блок 3: Соціальні ситуації & Групова розмова")
-        ExerciseBlock.FOUR -> TODO()
+        ExerciseBlock.FOUR -> UiText.FromString(" Блок 4: Аргументація & М’які суперечки")
         ExerciseBlock.FIVE -> TODO()
         ExerciseBlock.SIX -> TODO()
     }
@@ -36,7 +38,7 @@ fun ExerciseBlock.blockDescription(): UiText.FromString {
         ExerciseBlock.ONE -> UiText.FromString("Навчись легко починати розмову, підтримувати бесіду і знайомитись з новими людьми")
         ExerciseBlock.TWO -> UiText.FromString("Розвивай впевненність в розмовах про себе, свої інтереси, думки, почуття")
         ExerciseBlock.THREE -> UiText.FromString("Навчися не губитися серед людей, підтримувати темп розмови й знаходити свій голос у будь-якій компанії")
-        ExerciseBlock.FOUR -> TODO()
+        ExerciseBlock.FOUR -> UiText.FromString("Тренуйся ввічливо висловлювати свою думку та аргументувати позицію")
         ExerciseBlock.FIVE -> TODO()
         ExerciseBlock.SIX -> TODO()
     }
@@ -47,7 +49,7 @@ fun ExerciseBlock.blockColorPrimary(): Color {
         ExerciseBlock.ONE -> OrangeLight
         ExerciseBlock.TWO -> BlueLight
         ExerciseBlock.THREE -> RedLight
-        ExerciseBlock.FOUR -> OrangeLight
+        ExerciseBlock.FOUR -> GreenLight
         ExerciseBlock.FIVE -> OrangeLight
         ExerciseBlock.SIX -> OrangeLight
     }
@@ -58,7 +60,7 @@ fun ExerciseBlock.blockColorSecondary(): Color {
         ExerciseBlock.ONE -> OrangeDark
         ExerciseBlock.TWO -> BlueDark
         ExerciseBlock.THREE -> RedDark
-        ExerciseBlock.FOUR -> OrangeDark
+        ExerciseBlock.FOUR -> GreenDark
         ExerciseBlock.FIVE -> OrangeDark
         ExerciseBlock.SIX -> OrangeDark
     }
