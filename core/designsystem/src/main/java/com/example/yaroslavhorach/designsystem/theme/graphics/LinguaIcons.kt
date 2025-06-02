@@ -19,5 +19,6 @@ object LinguaIcons {
     val Chronometer = R.drawable.ic_chronometer
     val LightingThunder = R.drawable.ic_lightning_thunder
     val RavenLikeAChair = R.drawable.ic_raven_like_a_chair
+    val FourWordsOneStory = R.drawable.ic_four_words_one_story
     val Token = R.drawable.ic_token
 }
