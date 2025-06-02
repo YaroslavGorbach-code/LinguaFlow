@@ -562,7 +562,7 @@ private fun BoxScope.SpeakingResult(
                 )
                 Spacer(Modifier.height(20.dp))
                 BoxWithStripes(
-                    shadowOffset = 0.dp,
+                    rawShadowYOffset = 0.dp,
                     stripeColor = Black_3,
                     background = MaterialTheme.colorScheme.onBackground,
                     shape = RoundedCornerShape(16.dp),

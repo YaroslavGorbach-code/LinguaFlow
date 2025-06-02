@@ -17,6 +17,7 @@ object AppConfig {
 object Plugins {
     const val androidApplication = "com.android.application"
     const val androidLibrary = "com.android.library"
+    const val protobuf = "com.google.protobuf"
     const val javaLibrary = "java-library"
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinJvm = "org.jetbrains.kotlin.jvm"
@@ -59,6 +60,7 @@ object Versions {
     const val kotlinSerealistion = "1.8.1"
     const val lottie = "6.6.6"
     const val composeDialogs = "1.2.0"
+    const val protobuf = "4.29.2"
 }
 
 object Libs {
@@ -89,4 +91,6 @@ object Libs {
     const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
     const val kotlinSerealistion = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinSerealistion}"
     const val lottie = "com.airbnb.android:lottie-compose:${Versions.lottie}"
+    const val protobufJavalite = "com.google.protobuf:protobuf-javalite:${Versions.protobuf}"
+    const val protobufKotlinlite = "com.google.protobuf:protobuf-kotlin-lite:${Versions.protobuf}"
 }

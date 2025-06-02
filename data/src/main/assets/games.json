@@ -24,8 +24,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "RAVEN_LIKE_A_CHAIR",
-    "skillS": [
-      "CREATIVE, FUN"
+    "skills": [
+      "CREATIVE", "HUMOR"
     ]
   },
   {
@@ -53,8 +53,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "FOUR_WORDS_ONE_STORY",
-    "skillS": [
-      "CREATIVE", "STORYTELLING", "FLEXIBILITY"
+    "skills": [
+      "CREATIVE", "STORYTELLING"
     ]
   },
   {
@@ -82,8 +82,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "TALK_TILL_EXHAUSTED",
-    "skillS": [
-      "SPEECH_FLOW", "CREATIVE", "IMPROVISATION"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -111,8 +111,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "SELL_THIS_THING",
-    "skillS": [
-      "CREATIVE", "SPEECH_FLOW", "PERSUASION"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -140,8 +140,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "DEFINE_PRECISELY",
-    "skillS": [
-      "CLARITY", "PRECISION", "VOCABULARY"
+    "skills": [
+      "CREATIVE", "VOCABULARY"
     ]
   },
   {
@@ -169,8 +169,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "BIG_ANSWER",
-    "skillS": [
-      "CREATIVITY", "NARRATION", "HUMOR"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -198,8 +198,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "EMOTIONAL_TRANSLATOR",
-    "skillS": [
-      "EMOTION", "INTONATION", "EXPRESSION"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -224,11 +224,11 @@
       "en": "⚖️ Take a difficult or controversial statement — and try to defend it. Then, destroy it. This exercise trains mental flexibility, perspective-shifting, empathy, and logic.",
       "ru": "⚖️ Возьми сложное или спорное утверждение — и попробуй его защитить. А потом — опровергнуть. Это упражнение развивает гибкость мышления, умение смотреть с разных сторон, эмпатию и логику."
     },
-    "minExperienceRequired": 1,
+    "minExperienceRequired": 10,
     "maxProgress": 10,
     "name": "DEVILS_ADVOCATE",
-    "skillS": [
-      "ARGUMENTATION", "CRITICAL_THINKING", "EMPATHY"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -256,8 +256,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "DIALOGUE_WITH_SELF",
-    "skillS": [
-      "CONVERSATION_FLOW", "IMAGINATION", "SITUATIONAL_THINKING"
+    "skills": [
+      "STORYTELLING", "CREATIVE"
     ]
   },
   {
@@ -285,8 +285,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "IMAGINARY_SITUATION",
-    "skillS": [
-      "IMPROVISATION", "ADAPTABILITY", "EMOTIONAL_EXPRESSION"
+    "skills": [
+      "CREATIVE", "HUMOR"
     ]
   },
   {
@@ -314,8 +314,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "EMOTION_TO_FACT",
-    "skillS": [
-      "EMOTIONAL_INTELLIGENCE", "CONFLICT_RESOLUTION", "CLARITY"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -343,8 +343,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "WHO_AM_I_MONOLOGUE",
-    "skillS": [
-      "IMPROVISATION", "EMPATHY", "VOCAL_EXPRESSION"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -372,8 +372,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "I_AM_EXPERT",
-    "skillS": [
-      "IMPROVISATION", "CHARISMA", "PERSUASION"
+    "skills": [
+      "CREATIVE", "STORYTELLING"
     ]
   },
   {
@@ -401,8 +401,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "FORBIDDEN_WORDS",
-    "skillS": [
-      "CREATIVITY", "VERBAL_PRECISION", "EXPRESSIVENESS"
+    "skills": [
+      "CREATIVE", "STORYTELLING"
     ]
   },
   {
@@ -430,8 +430,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "BODY_LANGUAGE_EXPRESS",
-    "skillS": [
-      "CONFIDENCE", "EMOTIONAL_INTELLIGENCE", "NONVERBAL_COMMUNICATION"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -459,8 +459,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "RAP_IMPROV",
-    "skillS": [
-      "CREATIVITY", "DICTION", "RHYTHM", "VERBAL_AGILITY"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -488,8 +488,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "PERSUASIVE_SHOUT",
-    "skillS": [
-      "VOCAL_EXPRESSION", "ROLE_ADAPTABILITY", "INTONATION", "SPEECH_CONTROL"
+    "skills": [
+      "DICTION", "CREATIVE"
     ]
   },
   {
@@ -517,8 +517,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "WORD_IN_TEMPO",
-    "skillS": [
-      "REACTION_SPEED", "VOCABULARY", "FLUENCY"
+    "skills": [
+       "VOCABULARY", "CREATIVE"
     ]
   },
   {
@@ -546,8 +546,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "SUBTLE_MANIPULATION",
-    "skillS": [
-      "DIPLOMACY", "EMOTIONAL_INTELLIGENCE", "IMPLICIT_COMMUNICATION"
+    "skills": [
+      "CREATIVE"
     ]
   },
   {
@@ -575,8 +575,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "ONE_SYNONYM_PLEASE",
-    "skillS": [
-      "VOCABULARY", "CLARITY", "REPHRASING"
+    "skills": [
+      "VOCABULARY", "CREATIVE"
     ]
   },
   {
@@ -604,8 +604,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "INTONATION_MASTER",
-    "skillS": [
-      "INTONATION", "EMOTIONAL_DELIVERY", "VOICE_CONTROL"
+    "skills": [
+      "CREATIVE", "DICTION"
     ]
   },
   {
@@ -633,8 +633,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "ANTONYM_BATTLE",
-    "skillS": [
-      "VOCABULARY", "REACTION", "FLEXIBILITY"
+    "skills": [
+      "VOCABULARY", "CREATIVE"
     ]
   },
   {
@@ -662,8 +662,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "RHYME_LIGHTNING",
-    "skillS": [
-      "RHYTHM", "CREATIVITY", "ARTICULATION"
+    "skills": [
+      "CREATIVE", "VOCABULARY"
     ]
   },
   {
@@ -691,10 +691,10 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "FUNNIEST_ANSWER",
-    "skillS": [
-      "CREATIVITY",
+    "skills": [
+      "CREATIVE",
       "HUMOR",
-      "EXPRESSIVENESS"
+      "STORYTELLING"
     ]
   },
   {
@@ -722,9 +722,8 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "MADMAN_ANNOUNCEMENT",
-    "skillS": [
-      "CREATIVITY",
-      "PERSUASION",
+    "skills": [
+      "CREATIVE",
       "HUMOR"
     ]
   },
@@ -753,10 +752,9 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "FUNNY_EXCUSE",
-    "skillS": [
-      "CREATIVITY",
-      "HUMOR",
-      "EXPRESSIVENESS"
+    "skills": [
+      "CREATIVE",
+      "HUMOR"
     ]
   },
   {
@@ -784,10 +782,9 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "ONE_WORD_MANY_MEANINGS",
-    "skillS": [
-      "CREATIVITY",
-      "VOCABULARY",
-      "EXPRESSIVENESS"
+    "skills": [
+      "CREATIVE",
+      "VOCABULARY"
     ]
   },
   {
@@ -815,10 +812,9 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "INTONATION_MATTERS",
-    "skillS": [
-      "VOICE_CONTROL",
-      "EMOTIONAL_INTELLIGENCE",
-      "ARTICULATION"
+    "skills": [
+      "FLIRT",
+      "CREATIVE"
     ]
   },
   {
@@ -846,10 +842,10 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "FLIRTING_WITH_OBJECT",
-    "skillS": [
-      "CREATIVITY",
-      "EXPRESSIVENESS",
-      "IMPROVISATION"
+    "skills": [
+      "CREATIVE",
+      "FLIRT",
+      "HUMOR"
     ]
   },
   {
@@ -877,9 +873,10 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "BOTH_THERE_AND_IN_BED",
-    "skillS": [
-      "CREATIVITY",
-      "EXPRESSIVENESS"
+    "skills": [
+      "CREATIVE",
+      "FLIRT",
+      "HUMOR"
     ]
   },
   {
@@ -907,9 +904,9 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "HOT_WORD",
-    "skillS": [
-      "CREATIVITY",
-      "EXPRESSIVENESS"
+    "skills": [
+      "CREATIVE",
+      "FLIRT"
     ]
   },
   {
@@ -937,10 +934,10 @@
     "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "DOUBLE_MEANING_WORDS",
-    "skillS": [
-      "ASSOCIATIVE_THINKING",
-      "REACTION_SPEED",
-      "CREATIVITY"
+    "skills": [
+      "FLIRT",
+      "VOCABULARY",
+      "CREATIVE"
     ]
   }
 ]

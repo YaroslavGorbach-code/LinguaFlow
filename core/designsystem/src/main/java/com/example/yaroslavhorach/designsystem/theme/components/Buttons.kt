@@ -30,8 +30,11 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
+import com.example.yaroslavhorach.designsystem.theme.ChineseGold
+import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
+import com.example.yaroslavhorach.designsystem.theme.White_20
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import kotlin.math.roundToInt
@@ -65,12 +68,14 @@ fun SecondaryButton(
                             touch.changedToDown() && isInside -> {
                                 shadowYOffset.value = 0.dp
                             }
+
                             touch.changedToUp() -> {
                                 shadowYOffset.value = rawShadowYOffset
                                 if (isInside) {
                                     onClick()
                                 }
                             }
+
                             !isInside && touch.pressed -> {
                                 shadowYOffset.value = rawShadowYOffset
                             }
@@ -131,12 +136,14 @@ fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
                             touch.changedToDown() && isInside -> {
                                 shadowYOffset.value = 0.dp
                             }
+
                             touch.changedToUp() -> {
                                 shadowYOffset.value = rawShadowYOffset
                                 if (isInside) {
                                     onClick()
                                 }
                             }
+
                             !isInside && touch.pressed -> {
                                 shadowYOffset.value = rawShadowYOffset
                             }
@@ -208,12 +215,14 @@ fun TextButton(
                             touch.changedToDown() && isInside -> {
                                 isPressed.value = true
                             }
+
                             touch.changedToUp() -> {
                                 if (isInside) {
                                     onClick()
                                 }
                                 isPressed.value = false
                             }
+
                             !isInside && touch.pressed -> {
                                 isPressed.value = false
                             }
@@ -233,6 +242,33 @@ fun TextButton(
         )
     }
 }
+
+@Composable
+fun PremiumButton(modifier: Modifier = Modifier, text: String, onClick: () -> Unit) {
+    BoxWithStripes(
+        contentPadding = 1.dp,
+        stripeColor = White_20,
+        rawShadowYOffset = 4.dp,
+        modifier = modifier
+            .height(45.dp),
+        onClick = onClick,
+        shape = RoundedCornerShape(8.dp),
+        backgroundShadow = ChineseGold,
+        background = Golden,
+        content = {
+            Text(
+                modifier = Modifier
+                    .padding(vertical = 12.dp)
+                    .fillMaxWidth(),
+                text = text,
+                textAlign = TextAlign.Center,
+                style = LinguaTypography.subtitle3,
+                color = White
+            )
+        }
+    )
+}
+
 
 @Composable
 fun InactiveButton(modifier: Modifier = Modifier, text: String) {

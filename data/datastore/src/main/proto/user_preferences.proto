@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.example.yaroslavhorach.datastore";
+option java_multiple_files = true;
+
+message UserPreferences {
+  int32 available_tokens = 1;
+  int64 last_time_token_was_used = 2;
+}

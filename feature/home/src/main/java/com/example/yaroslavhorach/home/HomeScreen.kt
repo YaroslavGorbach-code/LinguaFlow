@@ -5,7 +5,6 @@ import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -342,6 +341,7 @@ private fun StartTooltip(position: Offset) {
 @Composable
 private fun BlockDescription(state: HomeViewState, modifier: Modifier) {
     BoxWithStripes(
+        rawShadowYOffset = 5.dp,
         background = state.exerciseBlock.blockColorPrimary(),
         backgroundShadow = state.exerciseBlock.blockColorSecondary(),
         modifier = modifier
@@ -400,13 +400,14 @@ private fun Exercise(
     Row {
         Box {
             BoxWithStripes(
+                offsetX = offset,
+                borderWidth = 2.dp,
+                borderColor = exercise.exercise.block.blockColorSecondary(),
                 contentPadding = 8.dp,
                 background = exercise.exercise.block.blockColorPrimary(),
                 backgroundShadow = exercise.exercise.block.blockColorSecondary(),
                 modifier = Modifier
-                    .offset(x = offset)
                     .size(exerciseSize)
-                    .border(2.dp, exercise.exercise.block.blockColorSecondary(), shape = RoundedCornerShape(12.dp))
                     .onGloballyPositioned { coordinates ->
                         val center = coordinates.boundsInRoot().topCenter
                         onGloballyPositioned(Offset(center.x, center.y))
@@ -422,10 +423,9 @@ private fun Exercise(
                     },
                 stripeWidth = 20.dp,
                 stripeSpacing = 45.dp,
-                shadowOffset = 0.dp
+                rawShadowYOffset = 0.dp
             ) {
                 Box(modifier = Modifier.size(exerciseSize)) {
-
 
                 if (exercise.isStarted) {
                     LinguaProgressBar(
