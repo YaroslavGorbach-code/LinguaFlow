@@ -25,7 +25,9 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -33,6 +35,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -41,11 +44,13 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.designsystem.theme.Black_3
-import com.example.yaroslavhorach.designsystem.theme.Black_35
+import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
+import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.White_40
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.PremiumButton
 import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.StaticTooltip
@@ -81,12 +86,14 @@ internal fun GamesScreen(
     onMessageShown: (id: Long) -> Unit,
     actioner: (GamesAction) -> Unit,
 ) {
+    val listState = rememberLazyListState()
+
     Column(Modifier.fillMaxSize()) {
         TopBar(state, actioner)
         LazyColumn(modifier = Modifier.padding(horizontal = 20.dp)) {
             itemsIndexed(state.games) { index, item ->
                 Spacer(Modifier.height(20.dp))
-                Game(state, item, actioner)
+                Game(state, item, listState, actioner)
             }
         }
     }
@@ -184,58 +191,53 @@ private fun TopBar(screenState: GamesViewState, actioner: (GamesAction) -> Unit)
 private fun Game(
     state: GamesViewState,
     game: GameUi,
+    listState: LazyListState,
     actioner: (GamesAction) -> Unit
 ) {
     Column {
         GameDescription(state, game, actioner)
 
-        Box {
-            BoxWithStripes(
-                contentPadding = 16.dp,
-                background = MaterialTheme.colorScheme.surface,
-                backgroundShadow = MaterialTheme.colorScheme.onBackgroundDark(),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .wrapContentHeight(),
-                onClick = {
+        BoxWithStripes(
+            isEnabled = game.isEnable,
+            rawShadowYOffset = 3.dp,
+            contentPadding = 16.dp,
+            background = MaterialTheme.colorScheme.surface,
+            backgroundShadow = MaterialTheme.colorScheme.onBackgroundDark(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentHeight(),
+            onClick = {
+                if (!listState.isScrollInProgress) {
                     actioner(GamesAction.OnGameClicked(game))
-                },
-                borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-                borderWidth = 1.dp,
-                stripeWidth = 70.dp,
-                stripeSpacing = 190.dp,
-                stripeColor = Black_3
-            ) {
-                Row(modifier = Modifier.fillMaxWidth()) {
-                    Column(modifier = Modifier.weight(1f)) {
-                        Text(
-                            text = game.game.nameText,
-                            color = MaterialTheme.colorScheme.typoPrimary(),
-                            style = LinguaTypography.subtitle2
-                        )
-                        Spacer(modifier = Modifier.height(6.dp))
-                        Text(
-                            text = "Прокачує: " + game.skills.map { it.asString() }.joinToString(separator = ", "),
-                            color = MaterialTheme.colorScheme.typoSecondary(),
-                            style = LinguaTypography.body4
-                        )
-                    }
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Image(
-                        modifier = Modifier
-                            .align(Alignment.CenterVertically)
-                            .size(60.dp),
-                        painter = painterResource(game.iconResId),
-                        contentDescription = ""
+                }
+            },
+            borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+            borderWidth = 1.dp,
+            stripeWidth = 70.dp,
+            stripeSpacing = 190.dp,
+            stripeColor = Black_3
+        ) {
+            Row(modifier = Modifier.fillMaxWidth()) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = game.game.nameText,
+                        color = MaterialTheme.colorScheme.typoPrimary(),
+                        style = LinguaTypography.subtitle2
+                    )
+                    Spacer(modifier = Modifier.height(6.dp))
+                    Text(
+                        text = "Прокачує: " + game.skills.map { it.asString() }.joinToString(separator = ", "),
+                        color = MaterialTheme.colorScheme.typoSecondary(),
+                        style = LinguaTypography.body4
                     )
                 }
-            }
-
-            if (game.isEnable.not()) {
-                Spacer(
+                Spacer(modifier = Modifier.width(8.dp))
+                Image(
                     modifier = Modifier
-                        .matchParentSize()
-                        .background(color = Black_35, shape = RoundedCornerShape(12.dp))
+                        .align(Alignment.CenterVertically)
+                        .size(60.dp),
+                    painter = painterResource(game.iconResId),
+                    contentDescription = ""
                 )
             }
         }
@@ -255,7 +257,42 @@ private fun ColumnScope.GameDescription(
     ) {
         when {
             game.isEnable.not() -> {
+                StaticTooltip(
+                    enableFloatAnimation = true,
+                    backgroundColor = MaterialTheme.colorScheme.surface,
+                    borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+                    triangleAlignment = Alignment.Start,
+                    contentPadding = 20.dp,
+                    cornerRadius = 12.dp,
+                    paddingHorizontal = 0.dp
+                ) {
+                    Text(
+                        text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",
+                        color = MaterialTheme.colorScheme.typoSecondary(),
+                        textAlign = TextAlign.Center,
+                        style = LinguaTypography.body3
+                    )
+                    Spacer(Modifier.height(20.dp))
 
+                    LinguaProgressBar(
+                        modifier = Modifier.fillMaxWidth(),
+                        progress = (state.experience.toFloat() / game.game.minExperienceRequired.toFloat()),
+                        progressColor = Golden,
+                        progressShadow = Color(0xFFE8BC02)
+                    ) {
+                        Text(
+                            modifier = Modifier.align(Alignment.Center),
+                            text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + " xp.",
+                            color = White,
+                            textAlign = TextAlign.Center,
+                            style = LinguaTypography.body5
+                        )
+                    }
+                    Spacer(Modifier.height(20.dp))
+                    PremiumButton(text = "\uD83D\uDC51 ВІДКРИТИ З PREMIUM") {
+                        actioner(GamesAction.OnStartGameClicked(game))
+                    }
+                }
             }
             state.availableTokens <= 0 -> {
                 StaticTooltip(

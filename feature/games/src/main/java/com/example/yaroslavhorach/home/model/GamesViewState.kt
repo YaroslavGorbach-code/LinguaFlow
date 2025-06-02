@@ -9,6 +9,7 @@ data class GamesViewState(
     val games: List<GameUi>,
     val maxTokens: Int = 0,
     val availableTokens: Int = 0,
+    val experience: Int = 0,
     val uiMessage: UiMessage<GamesUiMessage>? = null
 ) {
 

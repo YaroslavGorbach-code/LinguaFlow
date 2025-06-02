@@ -42,6 +42,7 @@ class GamesViewModel @Inject constructor(
             availableTokens = userData.availableTokens,
             maxTokens = userData.maxTokens,
             games = games,
+            experience = 5,
             uiMessage = messages
         )
     }.stateIn(
