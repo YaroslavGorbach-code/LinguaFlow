@@ -1,6 +1,7 @@
 package com.example.yaroslavhorach.home
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.expandVertically
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -32,7 +33,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -89,8 +92,8 @@ internal fun GamesScreen(
     val listState = rememberLazyListState()
 
     Column(Modifier.fillMaxSize()) {
-        TopBar(state, actioner)
-        LazyColumn(modifier = Modifier.padding(horizontal = 20.dp)) {
+        TopBar(state, listState, actioner)
+        LazyColumn(modifier = Modifier.padding(horizontal = 20.dp), state = listState) {
             itemsIndexed(state.games) { index, item ->
                 Spacer(Modifier.height(20.dp))
                 Game(state, item, listState, actioner)
@@ -100,7 +103,7 @@ internal fun GamesScreen(
 }
 
 @Composable
-private fun TopBar(screenState: GamesViewState, actioner: (GamesAction) -> Unit) {
+private fun TopBar(screenState: GamesViewState, listState: LazyListState, actioner: (GamesAction) -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -134,55 +137,73 @@ private fun TopBar(screenState: GamesViewState, actioner: (GamesAction) -> Unit)
                         style = LinguaTypography.body5
                     )
                 }
-
                 Spacer(Modifier.width(8.dp))
-
-                Row(
-                    modifier = Modifier
-                        .background(White_40, RoundedCornerShape(8.dp))
-                        .padding(10.dp)
-                ) {
-                    Image(
-                        modifier = Modifier
-                            .size(24.dp)
-                            .align(Alignment.CenterVertically),
-                        painter = painterResource(LinguaIcons.Token),
-                        contentDescription = null
-                    )
-                    Spacer(Modifier.width(6.dp))
-                    Text(
-                        modifier = Modifier.align(Alignment.CenterVertically),
-                        text = screenState.availableTokens.toString() + "/" + screenState.maxTokens,
-                        color = MaterialTheme.colorScheme.typoPrimary(),
-                        style = LinguaTypography.subtitle3
-                    )
-                }
+                Tokens(screenState)
             }
 
-            Column(
-                modifier = Modifier
-                    .padding(top = 16.dp, bottom = 20.dp)
-                    .fillMaxWidth()
-                    .wrapContentHeight()
-                    .background(color = White_40, RoundedCornerShape(16.dp))
-                    .padding(20.dp)
-            ) {
-                Text(
-                    text = "\uD83C\uDFAF Виклик на сьогодні: Прокачай креативність",
-                    color = MaterialTheme.colorScheme.typoPrimary(),
-                    style = LinguaTypography.subtitle2
-                )
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    text = "Порівняй непорівнюване, переверни звичайне, вигадуй нове. Покажи, на що здатен твій мозок!”",
-                    color = MaterialTheme.colorScheme.typoSecondary(),
-                    style = LinguaTypography.body4
-                )
-                Spacer(Modifier.height(40.dp))
-                PrimaryButton(text = "\uD83D\uDD25 ПРИЙНЯТИ") {
+            Spacer(Modifier.height(20.dp))
+            Challenge(listState)
+        }
+    }
+}
 
-                }
-            }
+@Composable
+private fun Tokens(screenState: GamesViewState) {
+    Row(
+        modifier = Modifier
+            .background(White_40, RoundedCornerShape(8.dp))
+            .padding(10.dp)
+    ) {
+        Image(
+            modifier = Modifier
+                .size(24.dp)
+                .align(Alignment.CenterVertically),
+            painter = painterResource(LinguaIcons.Token),
+            contentDescription = null
+        )
+        Spacer(Modifier.width(6.dp))
+        Text(
+            modifier = Modifier.align(Alignment.CenterVertically),
+            text = screenState.availableTokens.toString() + "/" + screenState.maxTokens,
+            color = MaterialTheme.colorScheme.typoPrimary(),
+            style = LinguaTypography.subtitle3
+        )
+    }
+}
+
+@Composable
+private fun Challenge(listState: LazyListState) {
+    val isCollapsed = remember {
+        derivedStateOf {
+            listState.firstVisibleItemIndex > 0
+        }
+    }
+
+    AnimatedVisibility(
+        visible = isCollapsed.value.not(),
+        enter = fadeIn(tween(300)) + expandVertically(tween(300)),
+        exit = shrinkVertically(tween(300)) + fadeOut(tween(200))
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 20.dp)
+                .background(color = White_40, RoundedCornerShape(16.dp))
+                .padding(20.dp)
+        ) {
+            Text(
+                text = "\uD83C\uDFAF Виклик на сьогодні: Прокачай креативність",
+                color = MaterialTheme.colorScheme.typoPrimary(),
+                style = LinguaTypography.subtitle2
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                text = "Порівняй непорівнюване, переверни звичайне, вигадуй нове. Покажи, на що здатен твій мозок!",
+                color = MaterialTheme.colorScheme.typoSecondary(),
+                style = LinguaTypography.body4
+            )
+            Spacer(Modifier.height(40.dp))
+            PrimaryButton(text = "\uD83D\uDD25 ПРИЙНЯТИ") { }
         }
     }
 }
