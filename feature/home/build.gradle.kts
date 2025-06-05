@@ -4,6 +4,7 @@ plugins {
     id(Plugins.androidLibrary)
     id(Plugins.kotlinAndroid)
     id(Plugins.compose)
+    id(Plugins.kotlinXserealisation)
 }
 
 apply {
@@ -19,4 +20,5 @@ dependencies {
     implementation(Libs.hilt)
     implementation(Libs.hiltNavigationCompose)
     ksp(Libs.hiltCompiler)
+    implementation(Libs.kotlinSerealistion)
 }

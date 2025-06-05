@@ -7,18 +7,24 @@ import com.example.yaroslavhorach.database.task.model.asDomainModel
 import com.example.yaroslavhorach.database.task.model.asEntityModel
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
+import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class ExerciseRepositoryImpl @Inject constructor(
     private val exerciseProgressDao: ExerciseProgressDao,
     @ApplicationContext private val context: Context
 ) : ExerciseRepository {
+
+    private var currentBLock: MutableStateFlow<ExerciseBlock> = MutableStateFlow(ExerciseBlock.ONE)
 
     override fun getExercises(): Flow<List<Exercise>> {
         return exerciseProgressDao.getExerciseProgressEntities()
@@ -69,6 +75,14 @@ class ExerciseRepositoryImpl @Inject constructor(
 
         progress?.copy(progress = progress.progress.inc())
             ?.let { exerciseProgressDao.upsertExerciseProgress(it) }
+    }
+
+    override suspend fun changeBlock(exerciseBlock: ExerciseBlock) {
+        currentBLock.emit(exerciseBlock)
+    }
+
+    override fun getBlock(): Flow<ExerciseBlock> {
+        return currentBLock
     }
 
     private fun getRawExercises(): List<Exercise> {

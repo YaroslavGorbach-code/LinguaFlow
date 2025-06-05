@@ -1,26 +1,28 @@
-package com.example.yaroslavhorach.exercises.speaking.navigation
+package com.example.yaroslavhorach.games.words_game.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.example.yaroslavhorach.exercises.speaking.SpeakingExerciseRoute
+import androidx.navigation.navOptions
+import com.example.yaroslavhorach.games.words_game.WordsGameRoute
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class SpeakingExerciseRoute(val exerciseId: Long)
+data class WordsGameNavigationRoute(val gameId: Long)
 
-fun NavController.navigateToSpeakingExercise(exerciseId: Long) {
-    navigate(route = SpeakingExerciseRoute(exerciseId)) {
-
+fun NavController.navigateToWordsGame (gameId: Long) {
+    navigate(route = WordsGameNavigationRoute(gameId)) {
+        navOptions {
+        }
     }
 }
 
-fun NavGraphBuilder.speakingExerciseScreen(
+fun NavGraphBuilder.wordsGameScreen(
     onNavigateBack: () -> Unit,
     onNavigateToExerciseCompleted: (time: Long, experience: Int) -> Unit
 ) {
-    composable<SpeakingExerciseRoute> {
-        SpeakingExerciseRoute(
+    composable<WordsGameNavigationRoute> {
+        WordsGameRoute(
             onNavigateBack = onNavigateBack,
             onNavigateToExerciseResult = { time, xp ->
                 onNavigateToExerciseCompleted(time, xp)

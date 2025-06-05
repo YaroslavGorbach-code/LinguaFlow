@@ -1,0 +1,2837 @@
+[
+  {
+    "id": "1",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ворона",
+      "en": "raven",
+      "ru": "ворон"
+    }
+  },
+  {
+    "id": "2",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чайник",
+      "en": "kettle",
+      "ru": "чайник"
+    }
+  },
+  {
+    "id": "3",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пісок",
+      "en": "sand",
+      "ru": "песок"
+    }
+  },
+  {
+    "id": "4",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кактус",
+      "en": "cactus",
+      "ru": "кактус"
+    }
+  },
+  {
+    "id": "5",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "швабра",
+      "en": "mop",
+      "ru": "швабра"
+    }
+  },
+  {
+    "id": "6",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дзеркало",
+      "en": "mirror",
+      "ru": "зеркало"
+    }
+  },
+  {
+    "id": "7",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "статуя",
+      "en": "statue",
+      "ru": "статуя"
+    }
+  },
+  {
+    "id": "8",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "морозиво",
+      "en": "ice cream",
+      "ru": "мороженое"
+    }
+  },
+  {
+    "id": "9",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ліхтар",
+      "en": "lamp post",
+      "ru": "фонарь"
+    }
+  },
+  {
+    "id": "10",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вулкáн",
+      "en": "volcano",
+      "ru": "вулкан"
+    }
+  },
+  {
+    "id": "11",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "капуста",
+      "en": "cabbage",
+      "ru": "капуста"
+    }
+  },
+  {
+    "id": "12",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пінгвін",
+      "en": "penguin",
+      "ru": "пингвин"
+    }
+  },
+  {
+    "id": "13",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гусінь",
+      "en": "caterpillar",
+      "ru": "гусеница"
+    }
+  },
+  {
+    "id": "14",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "книга",
+      "en": "book",
+      "ru": "книга"
+    }
+  },
+  {
+    "id": "15",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вікно",
+      "en": "window",
+      "ru": "окно"
+    }
+  },
+  {
+    "id": "16",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "туман",
+      "en": "fog",
+      "ru": "туман"
+    }
+  },
+  {
+    "id": "17",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пульт",
+      "en": "remote",
+      "ru": "пульт"
+    }
+  },
+  {
+    "id": "18",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "котик",
+      "en": "kitten",
+      "ru": "котик"
+    }
+  },
+  {
+    "id": "19",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "акула",
+      "en": "shark",
+      "ru": "акула"
+    }
+  },
+  {
+    "id": "20",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "веселка",
+      "en": "rainbow",
+      "ru": "радуга"
+    }
+  },
+  {
+    "id": "21",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "динозавр",
+      "en": "dinosaur",
+      "ru": "динозавр"
+    }
+  },
+  {
+    "id": "22",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "зубна щітка",
+      "en": "toothbrush",
+      "ru": "зубная щетка"
+    }
+  },
+  {
+    "id": "23",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мрія",
+      "en": "dream",
+      "ru": "мечта"
+    }
+  },
+  {
+    "id": "24",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "страх",
+      "en": "fear",
+      "ru": "страх"
+    }
+  },
+  {
+    "id": "25",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "рахівниця",
+      "en": "abacus",
+      "ru": "счёты"
+    }
+  },
+  {
+    "id": "26",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "телевізор",
+      "en": "television",
+      "ru": "телевизор"
+    }
+  },
+  {
+    "id": "27",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пір'їна",
+      "en": "feather",
+      "ru": "перо"
+    }
+  },
+  {
+    "id": "28",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "блискавка",
+      "en": "lightning",
+      "ru": "молния"
+    }
+  },
+  {
+    "id": "29",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "міст",
+      "en": "bridge",
+      "ru": "мост"
+    }
+  },
+  {
+    "id": "30",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "автобус",
+      "en": "bus",
+      "ru": "автобус"
+    }
+  },
+  {
+    "id": "31",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "павук",
+      "en": "spider",
+      "ru": "паук"
+    }
+  },
+  {
+    "id": "32",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ключ",
+      "en": "key",
+      "ru": "ключ"
+    }
+  },
+  {
+    "id": "33",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пісня",
+      "en": "song",
+      "ru": "песня"
+    }
+  },
+  {
+    "id": "34",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "годинник",
+      "en": "clock",
+      "ru": "часы"
+    }
+  },
+  {
+    "id": "35",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вітер",
+      "en": "wind",
+      "ru": "ветер"
+    }
+  },
+  {
+    "id": "36",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "черепаха",
+      "en": "turtle",
+      "ru": "черепаха"
+    }
+  },
+  {
+    "id": "37",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "сонце",
+      "en": "sun",
+      "ru": "солнце"
+    }
+  },
+  {
+    "id": "38",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "штани",
+      "en": "pants",
+      "ru": "брюки"
+    }
+  },
+  {
+    "id": "39",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "собака",
+      "en": "dog",
+      "ru": "собака"
+    }
+  },
+  {
+    "id": "40",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мило",
+      "en": "soap",
+      "ru": "мыло"
+    }
+  },
+  {
+    "id": "41",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вежа",
+      "en": "tower",
+      "ru": "башня"
+    }
+  },
+  {
+    "id": "42",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "місяць",
+      "en": "moon",
+      "ru": "луна"
+    }
+  },
+  {
+    "id": "43",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "серветка",
+      "en": "napkin",
+      "ru": "салфетка"
+    }
+  },
+  {
+    "id": "44",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "колесо",
+      "en": "wheel",
+      "ru": "колесо"
+    }
+  },
+  {
+    "id": "45",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "грім",
+      "en": "thunder",
+      "ru": "гром"
+    }
+  },
+  {
+    "id": "46",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "хмара",
+      "en": "cloud",
+      "ru": "облако"
+    }
+  },
+  {
+    "id": "47",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ягода",
+      "en": "berry",
+      "ru": "ягода"
+    }
+  },
+  {
+    "id": "48",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "черевик",
+      "en": "boot",
+      "ru": "ботинок"
+    }
+  },
+  {
+    "id": "49",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "жук",
+      "en": "beetle",
+      "ru": "жук"
+    }
+  },
+  {
+    "id": "50",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "лист",
+      "en": "leaf",
+      "ru": "лист"
+    }
+  },
+  {
+    "id": "51",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ріка",
+      "en": "river",
+      "ru": "река"
+    }
+  },
+  {
+    "id": "52",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шоколад",
+      "en": "chocolate",
+      "ru": "шоколад"
+    }
+  },
+  {
+    "id": "53",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гаманець",
+      "en": "wallet",
+      "ru": "кошелек"
+    }
+  },
+  {
+    "id": "54",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "рукавичка",
+      "en": "glove",
+      "ru": "перчатка"
+    }
+  },
+  {
+    "id": "55",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "молоток",
+      "en": "hammer",
+      "ru": "молоток"
+    }
+  },
+  {
+    "id": "56",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вишня",
+      "en": "cherry",
+      "ru": "вишня"
+    }
+  },
+  {
+    "id": "57",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "парасолька",
+      "en": "umbrella",
+      "ru": "зонт"
+    }
+  },
+  {
+    "id": "58",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "балкон",
+      "en": "balcony",
+      "ru": "балкон"
+    }
+  },
+  {
+    "id": "59",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "курка",
+      "en": "chicken",
+      "ru": "курица"
+    }
+  },
+  {
+    "id": "60",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "свічка",
+      "en": "candle",
+      "ru": "свеча"
+    }
+  },
+  {
+    "id": "61",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "фартух",
+      "en": "apron",
+      "ru": "фартук"
+    }
+  },
+  {
+    "id": "62",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гусениця",
+      "en": "caterpillar",
+      "ru": "гусеница"
+    }
+  },
+  {
+    "id": "63",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вудка",
+      "en": "fishing rod",
+      "ru": "удочка"
+    }
+  },
+  {
+    "id": "64",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дзеркало",
+      "en": "mirror",
+      "ru": "зеркало"
+    }
+  },
+  {
+    "id": "65",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пральна машина",
+      "en": "washing machine",
+      "ru": "стиральная машина"
+    }
+  },
+  {
+    "id": "66",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "літак",
+      "en": "airplane",
+      "ru": "самолёт"
+    }
+  },
+  {
+    "id": "67",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "тінь",
+      "en": "shadow",
+      "ru": "тень"
+    }
+  },
+  {
+    "id": "68",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "печиво",
+      "en": "cookie",
+      "ru": "печенье"
+    }
+  },
+  {
+    "id": "69",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "щітка",
+      "en": "brush",
+      "ru": "щётка"
+    }
+  },
+  {
+    "id": "70",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "олівець",
+      "en": "pencil",
+      "ru": "карандаш"
+    }
+  },
+  {
+    "id": "71",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шкарпетка",
+      "en": "sock",
+      "ru": "носок"
+    }
+  },
+  {
+    "id": "72",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ракета",
+      "en": "rocket",
+      "ru": "ракета"
+    }
+  },
+  {
+    "id": "73",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вокзал",
+      "en": "station",
+      "ru": "вокзал"
+    }
+  },
+  {
+    "id": "74",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "соняшник",
+      "en": "sunflower",
+      "ru": "подсолнух"
+    }
+  },
+  {
+    "id": "75",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "лопата",
+      "en": "shovel",
+      "ru": "лопата"
+    }
+  },
+  {
+    "id": "76",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "цукерка",
+      "en": "candy",
+      "ru": "конфета"
+    }
+  },
+  {
+    "id": "77",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "телескоп",
+      "en": "telescope",
+      "ru": "телескоп"
+    }
+  },
+  {
+    "id": "78",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ковдра",
+      "en": "blanket",
+      "ru": "одеяло"
+    }
+  },
+  {
+    "id": "79",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "троянда",
+      "en": "rose",
+      "ru": "роза"
+    }
+  },
+  {
+    "id": "80",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "банан",
+      "en": "banana",
+      "ru": "банан"
+    }
+  },
+  {
+    "id": "81",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дзвінок",
+      "en": "bell",
+      "ru": "звонок"
+    }
+  },
+  {
+    "id": "82",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "книга",
+      "en": "book",
+      "ru": "книга"
+    }
+  },
+  {
+    "id": "83",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "зебра",
+      "en": "zebra",
+      "ru": "зебра"
+    }
+  },
+  {
+    "id": "84",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вишиванка",
+      "en": "embroidered shirt",
+      "ru": "вышиванка"
+    }
+  },
+  {
+    "id": "85",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дятел",
+      "en": "woodpecker",
+      "ru": "дятел"
+    }
+  },
+  {
+    "id": "86",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "печера",
+      "en": "cave",
+      "ru": "пещера"
+    }
+  },
+  {
+    "id": "87",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "рукав",
+      "en": "sleeve",
+      "ru": "рукав"
+    }
+  },
+  {
+    "id": "88",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "крапля",
+      "en": "drop",
+      "ru": "капля"
+    }
+  },
+  {
+    "id": "89",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "компас",
+      "en": "compass",
+      "ru": "компас"
+    }
+  },
+  {
+    "id": "90",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "орел",
+      "en": "eagle",
+      "ru": "орёл"
+    }
+  },
+  {
+    "id": "91",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кавун",
+      "en": "watermelon",
+      "ru": "арбуз"
+    }
+  },
+  {
+    "id": "92",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "паркан",
+      "en": "fence",
+      "ru": "забор"
+    }
+  },
+  {
+    "id": "93",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "монета",
+      "en": "coin",
+      "ru": "монета"
+    }
+  },
+  {
+    "id": "94",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мішок",
+      "en": "sack",
+      "ru": "мешок"
+    }
+  },
+  {
+    "id": "95",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ліхтарик",
+      "en": "flashlight",
+      "ru": "фонарик"
+    }
+  },
+  {
+    "id": "96",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шолом",
+      "en": "helmet",
+      "ru": "шлем"
+    }
+  },
+  {
+    "id": "97",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гудзик",
+      "en": "button",
+      "ru": "пуговица"
+    }
+  },
+  {
+    "id": "98",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "капелюх",
+      "en": "hat",
+      "ru": "шляпа"
+    }
+  },
+  {
+    "id": "99",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "черепаха",
+      "en": "turtle",
+      "ru": "черепаха"
+    }
+  },
+  {
+    "id": "100",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "куля",
+      "en": "ball",
+      "ru": "мяч"
+    }
+  },
+  {
+    "id": "101",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ліс",
+      "en": "forest",
+      "ru": "лес"
+    }
+  },
+  {
+    "id": "102",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пляшка",
+      "en": "bottle",
+      "ru": "бутылка"
+    }
+  },
+  {
+    "id": "103",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "насіння",
+      "en": "seeds",
+      "ru": "семечки"
+    }
+  },
+  {
+    "id": "104",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вікно",
+      "en": "window",
+      "ru": "окно"
+    }
+  },
+  {
+    "id": "105",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пісок",
+      "en": "sand",
+      "ru": "песок"
+    }
+  },
+  {
+    "id": "106",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "метелик",
+      "en": "butterfly",
+      "ru": "бабочка"
+    }
+  },
+  {
+    "id": "107",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "трамвай",
+      "en": "tram",
+      "ru": "трамвай"
+    }
+  },
+  {
+    "id": "108",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чайник",
+      "en": "kettle",
+      "ru": "чайник"
+    }
+  },
+  {
+    "id": "109",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "черевик",
+      "en": "boot",
+      "ru": "ботинок"
+    }
+  },
+  {
+    "id": "110",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "повітряна куля",
+      "en": "balloon",
+      "ru": "воздушный шар"
+    }
+  },
+  {
+    "id": "111",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "стеля",
+      "en": "ceiling",
+      "ru": "потолок"
+    }
+  },
+  {
+    "id": "112",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "валіза",
+      "en": "suitcase",
+      "ru": "чемодан"
+    }
+  },
+  {
+    "id": "113",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "хмара",
+      "en": "cloud",
+      "ru": "облако"
+    }
+  },
+  {
+    "id": "114",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "місто",
+      "en": "city",
+      "ru": "город"
+    }
+  },
+  {
+    "id": "115",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "свічка",
+      "en": "candle",
+      "ru": "свеча"
+    }
+  },
+  {
+    "id": "116",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чайка",
+      "en": "seagull",
+      "ru": "чайка"
+    }
+  },
+  {
+    "id": "117",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ключ",
+      "en": "key",
+      "ru": "ключ"
+    }
+  },
+  {
+    "id": "118",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "грім",
+      "en": "thunder",
+      "ru": "гром"
+    }
+  },
+  {
+    "id": "119",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пензель",
+      "en": "paintbrush",
+      "ru": "кисть"
+    }
+  },
+  {
+    "id": "120",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мотузка",
+      "en": "rope",
+      "ru": "верёвка"
+    }
+  },
+  {
+    "id": "121",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дзеркало",
+      "en": "mirror",
+      "ru": "зеркало"
+    }
+  },
+  {
+    "id": "122",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кукурудза",
+      "en": "corn",
+      "ru": "кукуруза"
+    }
+  },
+  {
+    "id": "123",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вітер",
+      "en": "wind",
+      "ru": "ветер"
+    }
+  },
+  {
+    "id": "124",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "коробка",
+      "en": "box",
+      "ru": "коробка"
+    }
+  },
+  {
+    "id": "125",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "килим",
+      "en": "carpet",
+      "ru": "ковёр"
+    }
+  },
+  {
+    "id": "126",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мітла",
+      "en": "broom",
+      "ru": "метла"
+    }
+  },
+  {
+    "id": "127",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "яблуко",
+      "en": "apple",
+      "ru": "яблоко"
+    }
+  },
+  {
+    "id": "128",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "олівець",
+      "en": "pencil",
+      "ru": "карандаш"
+    }
+  },
+  {
+    "id": "129",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "замок",
+      "en": "castle",
+      "ru": "замок"
+    }
+  },
+  {
+    "id": "130",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "телефон",
+      "en": "phone",
+      "ru": "телефон"
+    }
+  },
+  {
+    "id": "131",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ракета",
+      "en": "rocket",
+      "ru": "ракета"
+    }
+  },
+  {
+    "id": "132",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "місяць",
+      "en": "moon",
+      "ru": "луна"
+    }
+  },
+  {
+    "id": "133",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "веселка",
+      "en": "rainbow",
+      "ru": "радуга"
+    }
+  },
+  {
+    "id": "134",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "сонце",
+      "en": "sun",
+      "ru": "солнце"
+    }
+  },
+  {
+    "id": "135",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "компас",
+      "en": "compass",
+      "ru": "компас"
+    }
+  },
+  {
+    "id": "136",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ковдра",
+      "en": "blanket",
+      "ru": "одеяло"
+    }
+  },
+  {
+    "id": "137",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "зошит",
+      "en": "notebook",
+      "ru": "тетрадь"
+    }
+  },
+  {
+    "id": "138",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "риба",
+      "en": "fish",
+      "ru": "рыба"
+    }
+  },
+  {
+    "id": "139",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ручка",
+      "en": "pen",
+      "ru": "ручка"
+    }
+  },
+  {
+    "id": "140",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "космос",
+      "en": "space",
+      "ru": "космос"
+    }
+  },
+  {
+    "id": "141",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чай",
+      "en": "tea",
+      "ru": "чай"
+    }
+  },
+  {
+    "id": "142",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "печиво",
+      "en": "cookie",
+      "ru": "печенье"
+    }
+  },
+  {
+    "id": "143",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шкарпетка",
+      "en": "sock",
+      "ru": "носок"
+    }
+  },
+  {
+    "id": "144",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "парасолька",
+      "en": "umbrella",
+      "ru": "зонт"
+    }
+  },
+  {
+    "id": "145",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "перо",
+      "en": "feather",
+      "ru": "перо"
+    }
+  },
+  {
+    "id": "146",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "барабан",
+      "en": "drum",
+      "ru": "барабан"
+    }
+  },
+  {
+    "id": "147",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "літак",
+      "en": "airplane",
+      "ru": "самолёт"
+    }
+  },
+  {
+    "id": "148",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "нитка",
+      "en": "thread",
+      "ru": "нитка"
+    }
+  },
+  {
+    "id": "149",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пудель",
+      "en": "poodle",
+      "ru": "пудель"
+    }
+  },
+  {
+    "id": "150",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гротеск",
+      "en": "grotesque",
+      "ru": "гротеск"
+    }
+  },
+  {
+    "id": "151",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "балкон",
+      "en": "balcony",
+      "ru": "балкон"
+    }
+  },
+  {
+    "id": "152",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мураха",
+      "en": "ant",
+      "ru": "муравей"
+    }
+  },
+  {
+    "id": "153",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "соняшник",
+      "en": "sunflower",
+      "ru": "подсолнух"
+    }
+  },
+  {
+    "id": "154",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пральна машина",
+      "en": "washing machine",
+      "ru": "стиральная машина"
+    }
+  },
+  {
+    "id": "155",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "троянда",
+      "en": "rose",
+      "ru": "роза"
+    }
+  },
+  {
+    "id": "156",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "драбина",
+      "en": "ladder",
+      "ru": "лестница"
+    }
+  },
+  {
+    "id": "157",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пісок",
+      "en": "sand",
+      "ru": "песок"
+    }
+  },
+  {
+    "id": "158",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "стіна",
+      "en": "wall",
+      "ru": "стена"
+    }
+  },
+  {
+    "id": "159",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ліхтар",
+      "en": "lantern",
+      "ru": "фонарь"
+    }
+  },
+  {
+    "id": "160",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чайник",
+      "en": "kettle",
+      "ru": "чайник"
+    }
+  },
+  {
+    "id": "161",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "подушка",
+      "en": "pillow",
+      "ru": "подушка"
+    }
+  },
+  {
+    "id": "162",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кавун",
+      "en": "watermelon",
+      "ru": "арбуз"
+    }
+  },
+  {
+    "id": "163",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "буря",
+      "en": "storm",
+      "ru": "буря"
+    }
+  },
+  {
+    "id": "164",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "олія",
+      "en": "oil",
+      "ru": "масло"
+    }
+  },
+  {
+    "id": "165",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "тінь",
+      "en": "shadow",
+      "ru": "тень"
+    }
+  },
+  {
+    "id": "166",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кава",
+      "en": "coffee",
+      "ru": "кофе"
+    }
+  },
+  {
+    "id": "167",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кит",
+      "en": "whale",
+      "ru": "кит"
+    }
+  },
+  {
+    "id": "168",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "метелик",
+      "en": "butterfly",
+      "ru": "бабочка"
+    }
+  },
+  {
+    "id": "169",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вежа",
+      "en": "tower",
+      "ru": "башня"
+    }
+  },
+  {
+    "id": "170",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "двері",
+      "en": "door",
+      "ru": "дверь"
+    }
+  },
+  {
+    "id": "171",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пляшка",
+      "en": "bottle",
+      "ru": "бутылка"
+    }
+  },
+  {
+    "id": "172",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пилосос",
+      "en": "vacuum cleaner",
+      "ru": "пылесос"
+    }
+  },
+  {
+    "id": "173",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "банан",
+      "en": "banana",
+      "ru": "банан"
+    }
+  },
+  {
+    "id": "174",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "велетень",
+      "en": "giant",
+      "ru": "великан"
+    }
+  },
+  {
+    "id": "175",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "щит",
+      "en": "shield",
+      "ru": "щит"
+    }
+  },
+  {
+    "id": "176",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шолом",
+      "en": "helmet",
+      "ru": "шлем"
+    }
+  },
+  {
+    "id": "177",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "лійка",
+      "en": "watering can",
+      "ru": "лейка"
+    }
+  },
+  {
+    "id": "178",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кулак",
+      "en": "fist",
+      "ru": "кулак"
+    }
+  },
+  {
+    "id": "179",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "губка",
+      "en": "sponge",
+      "ru": "губка"
+    }
+  },
+  {
+    "id": "180",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пензель",
+      "en": "paintbrush",
+      "ru": "кисть"
+    }
+  },
+  {
+    "id": "181",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "арфа",
+      "en": "harp",
+      "ru": "арфа"
+    }
+  },
+  {
+    "id": "182",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "балон",
+      "en": "cylinder",
+      "ru": "баллон"
+    }
+  },
+  {
+    "id": "183",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ваза",
+      "en": "vase",
+      "ru": "ваза"
+    }
+  },
+  {
+    "id": "184",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "глечик",
+      "en": "jug",
+      "ru": "кувшин"
+    }
+  },
+  {
+    "id": "185",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дзвін",
+      "en": "bell",
+      "ru": "звонок"
+    }
+  },
+  {
+    "id": "186",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "єж",
+      "en": "hedgehog",
+      "ru": "ёж"
+    }
+  },
+  {
+    "id": "187",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "жезл",
+      "en": "scepter",
+      "ru": "жезл"
+    }
+  },
+  {
+    "id": "188",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "замок",
+      "en": "castle/lock",
+      "ru": "замок"
+    }
+  },
+  {
+    "id": "189",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ікра",
+      "en": "caviar/roe",
+      "ru": "икра"
+    }
+  },
+  {
+    "id": "190",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "йод",
+      "en": "iodine",
+      "ru": "йод"
+    }
+  },
+  {
+    "id": "191",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "казан",
+      "en": "cauldron",
+      "ru": "казан"
+    }
+  },
+  {
+    "id": "192",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "лавка",
+      "en": "bench",
+      "ru": "скамейка"
+    }
+  },
+  {
+    "id": "193",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мак",
+      "en": "poppy",
+      "ru": "мак"
+    }
+  },
+  {
+    "id": "194",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "намисто",
+      "en": "necklace",
+      "ru": "бусы"
+    }
+  },
+  {
+    "id": "195",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "озеро",
+      "en": "lake",
+      "ru": "озеро"
+    }
+  },
+  {
+    "id": "196",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пилка",
+      "en": "saw",
+      "ru": "пила"
+    }
+  },
+  {
+    "id": "197",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "рукавичка",
+      "en": "mitten",
+      "ru": "варежка"
+    }
+  },
+  {
+    "id": "198",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "сад",
+      "en": "garden",
+      "ru": "сад"
+    }
+  },
+  {
+    "id": "199",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "табурет",
+      "en": "stool",
+      "ru": "табурет"
+    }
+  },
+  {
+    "id": "200",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "уламок",
+      "en": "shard",
+      "ru": "осколок"
+    }
+  },
+  {
+    "id": "201",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "фігура",
+      "en": "figure",
+      "ru": "фигура"
+    }
+  },
+  {
+    "id": "202",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "хвіст",
+      "en": "tail",
+      "ru": "хвост"
+    }
+  },
+  {
+    "id": "203",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "цегла",
+      "en": "brick",
+      "ru": "кирпич"
+    }
+  },
+  {
+    "id": "204",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чарка",
+      "en": "shot glass",
+      "ru": "рюмка"
+    }
+  },
+  {
+    "id": "205",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шашка",
+      "en": "checkers piece",
+      "ru": "шашка"
+    }
+  },
+  {
+    "id": "206",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "щит",
+      "en": "shield",
+      "ru": "щит"
+    }
+  },
+  {
+    "id": "207",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "яблуня",
+      "en": "apple tree",
+      "ru": "яблоня"
+    }
+  },
+  {
+    "id": "208",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ягода",
+      "en": "berry",
+      "ru": "ягода"
+    }
+  },
+  {
+    "id": "209",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вогнище",
+      "en": "campfire",
+      "ru": "костер"
+    }
+  },
+  {
+    "id": "210",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "драбина",
+      "en": "ladder",
+      "ru": "лестница"
+    }
+  },
+  {
+    "id": "211",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "єнот",
+      "en": "raccoon",
+      "ru": "енот"
+    }
+  },
+  {
+    "id": "212",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "жито",
+      "en": "rye",
+      "ru": "рожь"
+    }
+  },
+  {
+    "id": "213",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "зірка",
+      "en": "star",
+      "ru": "звезда"
+    }
+  },
+  {
+    "id": "214",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кімната",
+      "en": "room",
+      "ru": "комната"
+    }
+  },
+  {
+    "id": "215",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "меч",
+      "en": "sword",
+      "ru": "меч"
+    }
+  },
+  {
+    "id": "216",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ніс",
+      "en": "nose",
+      "ru": "нос"
+    }
+  },
+  {
+    "id": "217",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "око",
+      "en": "eye",
+      "ru": "глаз"
+    }
+  },
+  {
+    "id": "218",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пальто",
+      "en": "coat",
+      "ru": "пальто"
+    }
+  },
+  {
+    "id": "219",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "рибалка",
+      "en": "fisherman",
+      "ru": "рыбак"
+    }
+  },
+  {
+    "id": "220",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "скриня",
+      "en": "chest",
+      "ru": "сундук"
+    }
+  },
+  {
+    "id": "221",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "трон",
+      "en": "throne",
+      "ru": "трон"
+    }
+  },
+  {
+    "id": "222",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "фортепіано",
+      "en": "piano",
+      "ru": "фортепиано"
+    }
+  },
+  {
+    "id": "223",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "хвиля",
+      "en": "wave",
+      "ru": "волна"
+    }
+  },
+  {
+    "id": "224",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "цукор",
+      "en": "sugar",
+      "ru": "сахар"
+    }
+  },
+  {
+    "id": "225",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "часник",
+      "en": "garlic",
+      "ru": "чеснок"
+    }
+  },
+  {
+    "id": "226",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шалик",
+      "en": "scarf",
+      "ru": "шарф"
+    }
+  },
+  {
+    "id": "227",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "щука",
+      "en": "pike (fish)",
+      "ru": "щука"
+    }
+  },
+  {
+    "id": "228",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ящик",
+      "en": "box",
+      "ru": "ящик"
+    }
+  },
+  {
+    "id": "229",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "аеропорт",
+      "en": "airport",
+      "ru": "аэропорт"
+    }
+  },
+  {
+    "id": "230",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "бджола",
+      "en": "bee",
+      "ru": "пчела"
+    }
+  },
+  {
+    "id": "231",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вода",
+      "en": "water",
+      "ru": "вода"
+    }
+  },
+  {
+    "id": "232",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гніздо",
+      "en": "nest",
+      "ru": "гнездо"
+    }
+  },
+  {
+    "id": "233",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дерево",
+      "en": "tree",
+      "ru": "дерево"
+    }
+  },
+  {
+    "id": "234",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "єдність",
+      "en": "unity",
+      "ru": "единство"
+    }
+  },
+  {
+    "id": "235",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "жаба",
+      "en": "frog",
+      "ru": "жаба"
+    }
+  },
+  {
+    "id": "236",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "зошит",
+      "en": "notebook",
+      "ru": "тетрадь"
+    }
+  },
+  {
+    "id": "237",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кабінет",
+      "en": "office",
+      "ru": "кабинет"
+    }
+  },
+  {
+    "id": "238",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ліжко",
+      "en": "bed",
+      "ru": "кровать"
+    }
+  },
+  {
+    "id": "239",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мед",
+      "en": "honey",
+      "ru": "мёд"
+    }
+  },
+  {
+    "id": "240",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ніч",
+      "en": "night",
+      "ru": "ночь"
+    }
+  },
+  {
+    "id": "241",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "антена",
+      "en": "antenna",
+      "ru": "антенна"
+    }
+  },
+  {
+    "id": "242",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "буря",
+      "en": "storm",
+      "ru": "буря"
+    }
+  },
+  {
+    "id": "243",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вітровій",
+      "en": "windshield",
+      "ru": "ветровое стекло"
+    }
+  },
+  {
+    "id": "244",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гобелен",
+      "en": "tapestry",
+      "ru": "гобелен"
+    }
+  },
+  {
+    "id": "245",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "диск",
+      "en": "disk",
+      "ru": "диск"
+    }
+  },
+  {
+    "id": "246",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "електрон",
+      "en": "electron",
+      "ru": "электрон"
+    }
+  },
+  {
+    "id": "247",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "журнал",
+      "en": "magazine",
+      "ru": "журнал"
+    }
+  },
+  {
+    "id": "248",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "запис",
+      "en": "record",
+      "ru": "запись"
+    }
+  },
+  {
+    "id": "249",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "каблук",
+      "en": "heel",
+      "ru": "каблук"
+    }
+  },
+  {
+    "id": "250",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "лампа",
+      "en": "lamp",
+      "ru": "лампа"
+    }
+  },
+  {
+    "id": "251",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "місяць",
+      "en": "moon",
+      "ru": "луна"
+    }
+  },
+  {
+    "id": "252",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ножиці",
+      "en": "scissors",
+      "ru": "ножницы"
+    }
+  },
+  {
+    "id": "253",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "огірок",
+      "en": "cucumber",
+      "ru": "огурец"
+    }
+  },
+  {
+    "id": "254",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "папуга",
+      "en": "parrot",
+      "ru": "попугай"
+    }
+  },
+  {
+    "id": "255",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ручка",
+      "en": "pen",
+      "ru": "ручка"
+    }
+  },
+  {
+    "id": "256",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "собака",
+      "en": "dog",
+      "ru": "собака"
+    }
+  },
+  {
+    "id": "257",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "термометр",
+      "en": "thermometer",
+      "ru": "термометр"
+    }
+  },
+  {
+    "id": "258",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "утюг",
+      "en": "iron (appliance)",
+      "ru": "утюг"
+    }
+  },
+  {
+    "id": "259",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "фунт",
+      "en": "pound",
+      "ru": "фунт"
+    }
+  },
+  {
+    "id": "260",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "харчування",
+      "en": "nutrition",
+      "ru": "питание"
+    }
+  },
+  {
+    "id": "261",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "циферблат",
+      "en": "dial",
+      "ru": "циферблат"
+    }
+  },
+  {
+    "id": "262",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "черевик",
+      "en": "boot",
+      "ru": "ботинок"
+    }
+  },
+  {
+    "id": "263",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шматок",
+      "en": "piece",
+      "ru": "кусок"
+    }
+  },
+  {
+    "id": "264",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "щітка",
+      "en": "brush",
+      "ru": "щетка"
+    }
+  },
+  {
+    "id": "265",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "яблуко",
+      "en": "apple",
+      "ru": "яблоко"
+    }
+  },
+  {
+    "id": "266",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "акваріум",
+      "en": "aquarium",
+      "ru": "аквариум"
+    }
+  },
+  {
+    "id": "267",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "балкон",
+      "en": "balcony",
+      "ru": "балкон"
+    }
+  },
+  {
+    "id": "268",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "візок",
+      "en": "cart",
+      "ru": "тележка"
+    }
+  },
+  {
+    "id": "269",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "голка",
+      "en": "needle",
+      "ru": "игла"
+    }
+  },
+  {
+    "id": "270",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "долоня",
+      "en": "palm (hand)",
+      "ru": "ладонь"
+    }
+  },
+  {
+    "id": "271",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ель",
+      "en": "spruce",
+      "ru": "ель"
+    }
+  },
+  {
+    "id": "272",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "жезл",
+      "en": "rod",
+      "ru": "жезл"
+    }
+  },
+  {
+    "id": "273",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "запах",
+      "en": "smell",
+      "ru": "запах"
+    }
+  },
+  {
+    "id": "274",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "каменяр",
+      "en": "stonemason",
+      "ru": "каменщик"
+    }
+  },
+  {
+    "id": "275",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ластівка",
+      "en": "swallow (bird)",
+      "ru": "ласточка"
+    }
+  },
+  {
+    "id": "276",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мішок",
+      "en": "bag",
+      "ru": "мешок"
+    }
+  },
+  {
+    "id": "277",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "нож",
+      "en": "knife",
+      "ru": "нож"
+    }
+  },
+  {
+    "id": "278",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "окуляри",
+      "en": "glasses",
+      "ru": "очки"
+    }
+  },
+  {
+    "id": "279",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "павук",
+      "en": "spider",
+      "ru": "паук"
+    }
+  },
+  {
+    "id": "280",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "передпокій",
+      "en": "hallway",
+      "ru": "прихожая"
+    }
+  },
+  {
+    "id": "281",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "піаніно",
+      "en": "piano",
+      "ru": "пианино"
+    }
+  },
+  {
+    "id": "282",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пісок",
+      "en": "sand",
+      "ru": "песок"
+    }
+  },
+  {
+    "id": "283",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пластик",
+      "en": "plastic",
+      "ru": "пластик"
+    }
+  },
+  {
+    "id": "284",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ракета",
+      "en": "rocket",
+      "ru": "ракета"
+    }
+  },
+  {
+    "id": "285",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "сапа",
+      "en": "hoe",
+      "ru": "сапка"
+    }
+  },
+  {
+    "id": "286",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "стіл",
+      "en": "table",
+      "ru": "стол"
+    }
+  },
+  {
+    "id": "287",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "трамвай",
+      "en": "tram",
+      "ru": "трамвай"
+    }
+  },
+  {
+    "id": "288",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "фольга",
+      "en": "foil",
+      "ru": "фольга"
+    }
+  },
+  {
+    "id": "289",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "цибуля",
+      "en": "onion",
+      "ru": "лук"
+    }
+  },
+  {
+    "id": "290",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "чайник",
+      "en": "kettle",
+      "ru": "чайник"
+    }
+  },
+  {
+    "id": "291",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шоколад",
+      "en": "chocolate",
+      "ru": "шоколад"
+    }
+  },
+  {
+    "id": "292",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "щітка",
+      "en": "brush",
+      "ru": "щетка"
+    }
+  },
+  {
+    "id": "293",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "ягода",
+      "en": "berry",
+      "ru": "ягода"
+    }
+  },
+  {
+    "id": "294",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "автомобіль",
+      "en": "car",
+      "ru": "автомобиль"
+    }
+  },
+  {
+    "id": "295",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "батарея",
+      "en": "battery",
+      "ru": "батарея"
+    }
+  },
+  {
+    "id": "296",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "вогонь",
+      "en": "fire",
+      "ru": "огонь"
+    }
+  },
+  {
+    "id": "297",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "гранат",
+      "en": "pomegranate",
+      "ru": "гранат"
+    }
+  },
+  {
+    "id": "298",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "дім",
+      "en": "house",
+      "ru": "дом"
+    }
+  },
+  {
+    "id": "299",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "еж",
+      "en": "hedgehog",
+      "ru": "еж"
+    }
+  },
+  {
+    "id": "300",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "жук",
+      "en": "beetle",
+      "ru": "жук"
+    }
+  },
+  {
+    "id": "301",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "зебра",
+      "en": "zebra",
+      "ru": "зебра"
+    }
+  },
+  {
+    "id": "302",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "кактус",
+      "en": "cactus",
+      "ru": "кактус"
+    }
+  },
+  {
+    "id": "303",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "лапа",
+      "en": "paw",
+      "ru": "лапа"
+    }
+  },
+  {
+    "id": "304",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "мандарин",
+      "en": "mandarin",
+      "ru": "мандарин"
+    }
+  },
+  {
+    "id": "305",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "насос",
+      "en": "pump",
+      "ru": "насос"
+    }
+  },
+  {
+    "id": "306",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "орел",
+      "en": "eagle",
+      "ru": "орёл"
+    }
+  },
+  {
+    "id": "307",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "пила",
+      "en": "saw",
+      "ru": "пила"
+    }
+  },
+  {
+    "id": "308",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "риба",
+      "en": "fish",
+      "ru": "рыба"
+    }
+  },
+  {
+    "id": "309",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "сокира",
+      "en": "axe",
+      "ru": "топор"
+    }
+  },
+  {
+    "id": "310",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "тюльпан",
+      "en": "tulip",
+      "ru": "тюльпан"
+    }
+  },
+  {
+    "id": "311",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "фрукт",
+      "en": "fruit",
+      "ru": "фрукт"
+    }
+  },
+  {
+    "id": "312",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "хмара",
+      "en": "cloud",
+      "ru": "облако"
+    }
+  },
+  {
+    "id": "313",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "цистерна",
+      "en": "tank (container)",
+      "ru": "цистерна"
+    }
+  },
+  {
+    "id": "314",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "черепаха",
+      "en": "turtle",
+      "ru": "черепаха"
+    }
+  },
+  {
+    "id": "315",
+    "word_type": "NOUN",
+    "word": {
+      "ua": "шапка",
+      "en": "hat",
+      "ru": "шапка"
+    }
+  }
+]

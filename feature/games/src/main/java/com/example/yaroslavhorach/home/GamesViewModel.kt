@@ -73,7 +73,7 @@ class GamesViewModel @Inject constructor(
                         }
                     }
                     is GamesAction.OnStartGameClicked -> {
-                        prefsRepository.useToken()
+                  //      prefsRepository.useToken()
                     }
                     is GamesAction.OnPremiumBtnClicked -> {
 

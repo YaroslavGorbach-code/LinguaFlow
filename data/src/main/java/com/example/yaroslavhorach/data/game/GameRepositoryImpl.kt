@@ -11,9 +11,10 @@ import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class GameRepositoryImpl @Inject constructor(
     @ApplicationContext private val context: Context,
     private val prefsRepository: PrefsRepository

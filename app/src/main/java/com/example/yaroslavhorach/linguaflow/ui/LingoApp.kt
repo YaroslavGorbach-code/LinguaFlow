@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavDestination
+import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaNavigationBar
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaBackground
@@ -63,7 +64,10 @@ fun LingoApp(
                         ),
                     ),
             ) {
-                LingoNavHost(appState.navController, onChangeColorScheme = onChangeColorScheme)
+                LingoNavHost(
+                    appState.navController,
+                    onChangeColorScheme = onChangeColorScheme
+                )
             }
         }
     }
@@ -114,6 +118,6 @@ private fun RowScope.AddNavBarItems(
 
 private fun NavDestination?.isTopLevelDestinationInHierarchy(destination: TopLevelDestination): Boolean {
     return this?.hierarchy?.any {
-        it.route?.contains(destination.navigationRoute.toString(), true) ?: false
+        it.hasRoute(destination.route)
     } ?: false
 }

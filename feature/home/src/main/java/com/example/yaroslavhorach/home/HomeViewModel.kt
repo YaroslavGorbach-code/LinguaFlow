@@ -32,14 +32,12 @@ class HomeViewModel @Inject constructor(
         HomeViewState.DescriptionState.EMPTY
     )
 
-    private val exercisesBlock: MutableStateFlow<ExerciseBlock> = MutableStateFlow(ExerciseBlock.ONE)
-
     private val startExerciseTooltipPosition: MutableStateFlow<Offset> = MutableStateFlow(Offset.Zero)
 
     override val state: StateFlow<HomeViewState> = combine(
             exerciseRepository.getExercises(),
             descriptionState,
-            exercisesBlock,
+            exerciseRepository.getBlock(),
             startExerciseTooltipPosition,
             uiMessageManager.message
         ) { exercises, description, exercisesBlock, startExerciseTooltipPosition, messages ->
@@ -97,7 +95,7 @@ class HomeViewModel @Inject constructor(
                         descriptionState.value = HomeViewState.DescriptionState.EMPTY
                     }
                     is HomeAction.OnExercisesBlockChanged -> {
-                        exercisesBlock.value = event.block
+                        exerciseRepository.changeBlock(event.block)
                     }
                 }
             }

@@ -54,7 +54,7 @@ import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCom
 @Composable
 internal fun ExerciseCompletedRoute(
     viewModel: ExerciseCompletedViewModel = hiltViewModel(),
-    onNavigateToHome: () -> Unit
+    onNavigateBack: () -> Unit
 ) {
     val exerciseCompletedViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -63,7 +63,7 @@ internal fun ExerciseCompletedRoute(
         actioner = { action ->
             when (action) {
                 is ExerciseCompletedAction.OnContinueClicked -> {
-                    onNavigateToHome()
+                    onNavigateBack()
                 }
                 else -> viewModel.submitAction(action)
             }

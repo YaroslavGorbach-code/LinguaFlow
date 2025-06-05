@@ -8,6 +8,8 @@ import com.example.yaroslavhorach.domain.exercise_content.model.Situation
 import com.example.yaroslavhorach.domain.exercise_content.model.Test
 import com.example.yaroslavhorach.domain.exercise_content.model.TongueTwister
 import com.example.yaroslavhorach.domain.exercise_content.model.Vocabulary
+import com.example.yaroslavhorach.domain.exercise_content.model.Word
+import com.example.yaroslavhorach.domain.game.model.Game
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -21,6 +23,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     private var cashedSituations: MutableMap<ExerciseName, List<Situation>> = mutableMapOf()
     private var cashedTongueTwisters: MutableMap<TongueTwister.Difficulty, List<TongueTwister>> = mutableMapOf()
     private var cashedVocabulary: MutableMap<Vocabulary.WordType, Vocabulary> = mutableMapOf()
+    private var cashedWords: MutableMap<Word.WordType, List<Word>> = mutableMapOf()
 
     override suspend fun getSituation(exerciseName: ExerciseName): Situation {
         if (cashedSituations[exerciseName].isNullOrEmpty()) {
@@ -64,18 +67,20 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {
-        if (cashedTongueTwisters[difficulty].isNullOrEmpty()) {
-            val fileName = when (difficulty) {
-                TongueTwister.Difficulty.EASY -> "tongue_twisters_easy.json"
-                TongueTwister.Difficulty.MEDIUM -> "tongue_twisters_easy.json"
-                TongueTwister.Difficulty.HARD -> "tongue_twisters_easy.json"
+        withContext(Dispatchers.IO){
+            if (cashedTongueTwisters[difficulty].isNullOrEmpty()) {
+                val fileName = when (difficulty) {
+                    TongueTwister.Difficulty.EASY -> "tongue_twisters_easy.json"
+                    TongueTwister.Difficulty.MEDIUM -> "tongue_twisters_easy.json"
+                    TongueTwister.Difficulty.HARD -> "tongue_twisters_easy.json"
+                }
+
+                val twisters: List<TongueTwister> = loadJsonFromAssets(context, fileName)?.let { json ->
+                    Gson().fromJson(json, object : TypeToken<List<TongueTwister>>() {}.type)
+                } ?: emptyList()
+
+                cashedTongueTwisters[difficulty] = twisters
             }
-
-            val twisters: List<TongueTwister> = loadJsonFromAssets(context, fileName)?.let { json ->
-                Gson().fromJson(json, object : TypeToken<List<TongueTwister>>() {}.type)
-            } ?: emptyList()
-
-            cashedTongueTwisters[difficulty] = twisters
         }
 
         // TODO: do not do random here replace in the future
@@ -83,14 +88,16 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getVocabulary(wordType: Vocabulary.WordType): Vocabulary {
-        if (cashedVocabulary[wordType] == null) {
-            val fileName = "vocabulary.json"
+        withContext(Dispatchers.IO) {
+            if (cashedVocabulary[wordType] == null) {
+                val fileName = "vocabulary.json"
 
-            val vocabulary: List<Vocabulary> = loadJsonFromAssets(context, fileName)?.let { json ->
-                Gson().fromJson(json, object : TypeToken<List<Vocabulary>>() {}.type)
-            } ?: emptyList()
+                val vocabulary: List<Vocabulary> = loadJsonFromAssets(context, fileName)?.let { json ->
+                    Gson().fromJson(json, object : TypeToken<List<Vocabulary>>() {}.type)
+                } ?: emptyList()
 
-            cashedVocabulary[wordType] = vocabulary.first { it.type == wordType }
+                cashedVocabulary[wordType] = vocabulary.first { it.type == wordType }
+            }
         }
 
         return cashedVocabulary[wordType]!!
@@ -122,5 +129,37 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 Gson().fromJson(jsonTest, object : TypeToken<List<Test>>() {}.type)
             } ?: emptyList()
         }
+    }
+
+    override suspend fun getGameWords(gameName: Game.GameName): List<String> {
+        return when (gameName) {
+            Game.GameName.RAVEN_LIKE_A_CHAIR -> {
+                val words = getWords(Word.WordType.NOUN)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(2).map { it.wordText }
+            }
+
+            else -> emptyList()
+        }
+    }
+
+    private suspend fun getWords(wordType: Word.WordType): List<Word> {
+        withContext(Dispatchers.IO) {
+            if (cashedWords[wordType] == null) {
+
+                val fileName = when (wordType) {
+                    Word.WordType.NOUN -> "words/words_nouns.json"
+                }
+
+                val words: List<Word> = loadJsonFromAssets(context, fileName)?.let { json ->
+                    Gson().fromJson(json, object : TypeToken<List<Word>>() {}.type)
+                } ?: emptyList()
+
+                cashedWords[wordType] = words
+            }
+        }
+
+        return cashedWords[wordType]!!
     }
 }

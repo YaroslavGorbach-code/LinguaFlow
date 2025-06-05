@@ -7,18 +7,20 @@ import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.home.HomeRoute
+import kotlinx.serialization.Serializable
 
-const val homeNavigationRoute = "home_route"
+@Serializable
+data object HomeRoute
 
 fun NavController.navigateToHome(navOptions: NavOptions? = null) {
-    this.navigate(homeNavigationRoute, navOptions)
+    this.navigate(HomeRoute, navOptions)
 }
 
 fun NavGraphBuilder.homeScreen(
     onNavigateToExercise: (Exercise) -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
-    composable(route = homeNavigationRoute) {
+    composable<HomeRoute> {
         HomeRoute(onNavigateToExercise, onChangeColorScheme)
     }
 }

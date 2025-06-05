@@ -61,14 +61,13 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
-import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.home.model.GameUi
 import com.example.yaroslavhorach.home.model.GamesAction
 import com.example.yaroslavhorach.home.model.GamesViewState
 
 @Composable
 internal fun GamesRoute(
-    onNavigateToGame: (Exercise) -> Unit,
+    onNavigateToGame: (id: Long) -> Unit,
     viewModel: GamesViewModel = hiltViewModel(),
 ) {
     val homeState by viewModel.state.collectAsStateWithLifecycle()
@@ -78,6 +77,9 @@ internal fun GamesRoute(
         onMessageShown = viewModel::clearMessage,
         actioner = { action ->
             when (action) {
+                is GamesAction.OnStartGameClicked -> {
+                    onNavigateToGame(action.gameUi.game.id)
+                }
                 else -> viewModel.submitAction(action)
             }
         })
@@ -94,7 +96,7 @@ internal fun GamesScreen(
     Column(Modifier.fillMaxSize()) {
         TopBar(state, listState, actioner)
         LazyColumn(modifier = Modifier.padding(horizontal = 20.dp), state = listState) {
-            itemsIndexed(state.games) { index, item ->
+            itemsIndexed(state.games) { _, item ->
                 Spacer(Modifier.height(20.dp))
                 Game(state, item, listState, actioner)
             }
@@ -341,7 +343,7 @@ private fun ColumnScope.GameDescription(
                     Spacer(Modifier.height(20.dp))
 
                     PremiumButton(text = "\uD83D\uDC51 ГРАТИ БЕЗ ОБМЕЖЕНЬ") {
-                        actioner(GamesAction.OnStartGameClicked(game))
+                        actioner(GamesAction.OnPremiumBtnClicked)
                     }
                 }
             }
@@ -369,7 +371,7 @@ private fun ColumnScope.GameDescription(
                     Spacer(Modifier.height(20.dp))
 
                     PrimaryButton(text = "ПОЧАТИ (1 ТОКЕН)") {
-                        actioner(GamesAction.OnPremiumBtnClicked)
+                        actioner(GamesAction.OnStartGameClicked(game))
                     }
                 }
             }

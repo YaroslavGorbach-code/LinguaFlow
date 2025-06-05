@@ -4,19 +4,24 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
-import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.home.GamesRoute
+import kotlinx.serialization.Serializable
 
-const val gamesNavigationRoute = "games_route"
+@Serializable
+data object GamesRoute
+
+// TODO: temp remove then
+@Serializable
+data object ProfileRoute
 
 fun NavController.navigateToGames(navOptions: NavOptions? = null) {
-    this.navigate(gamesNavigationRoute, navOptions)
+    this.navigate(GamesRoute, navOptions)
 }
 
 fun NavGraphBuilder.gamesScreen(
-    onNavigateToExercise: (Exercise) -> Unit
+    onNavigateToGame: (gameId: Long) -> Unit
 ) {
-    composable(route = gamesNavigationRoute) {
-        GamesRoute(onNavigateToExercise)
+    composable<GamesRoute> {
+        GamesRoute(onNavigateToGame)
     }
 }

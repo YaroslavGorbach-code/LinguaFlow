@@ -1,8 +1,8 @@
 import org.gradle.api.JavaVersion
 
 object AppConfig {
-    const val compileSdkVersion = 34
-    const val targetSdkVersion = 34
+    const val compileSdkVersion = 35
+    const val targetSdkVersion = 35
     const val minSdkVersion = 24
     const val applicationId = "com.example.yaroslavhorach.lingoFlow"
     const val versionCode = 1
@@ -56,7 +56,7 @@ object Versions {
     const val hilt = "2.51.1"
     const val systemUiController = "0.30.0"
     const val splashScreen = "1.0.1"
-    const val navigationCompose = "2.8.9"
+    const val navigationCompose = "2.9.0"
     const val kotlinSerealistion = "1.8.1"
     const val lottie = "6.6.6"
     const val composeDialogs = "1.2.0"

@@ -1,10 +1,12 @@
 package com.example.yaroslavhorach.linguaflow.ui
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.navigation.NavDestination
+import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -35,13 +37,16 @@ class LingoAppState(
             .currentBackStackEntryAsState().value?.destination
 
     val currentTopLevelDestination: TopLevelDestination?
-        @Composable get() = when (currentDestination?.route) {
-            else -> null
+        @Composable get() {
+            return TopLevelDestination.entries.firstOrNull { topLevelDestination ->
+                Log.v("dsdasdasd",  currentDestination?.route.toString())
+                currentDestination?.route == topLevelDestination.route.qualifiedName
+            }
         }
 
     val isBottomBarAndTopBarVisible: Boolean
-        @Composable get() = topLevelDestinations.map { it.navigationRoute }
-            .contains(currentDestination?.route.toString())
+        @Composable
+        get() = TopLevelDestination.entries.map { it.route.qualifiedName }.contains(currentDestination?.route)
 
     val topLevelDestinations: List<TopLevelDestination> = listOf(
         TopLevelDestination.Home,
@@ -57,7 +62,7 @@ class LingoAppState(
      * @param topLevelDestination: The destination the app needs to navigate to.
      */
     fun navigateToTopLevelDestination(topLevelDestination: TopLevelDestination) {
-        if (navController.currentDestination?.route == topLevelDestination.navigationRoute) return
+        if (navController.currentDestination?.route == topLevelDestination.route.qualifiedName) return
 
         val topLevelNavOptions = navOptions {
             // Pop up to the start destination of the graph to
@@ -71,8 +76,8 @@ class LingoAppState(
         }
 
         when (topLevelDestination) {
-            TopLevelDestination.Home -> navController.navigateToHome()
-            TopLevelDestination.Games -> navController.navigateToGames()
+            TopLevelDestination.Home -> navController.navigateToHome(topLevelNavOptions)
+            TopLevelDestination.Games -> navController.navigateToGames(topLevelNavOptions)
             TopLevelDestination.Profile -> {}
         }
     }

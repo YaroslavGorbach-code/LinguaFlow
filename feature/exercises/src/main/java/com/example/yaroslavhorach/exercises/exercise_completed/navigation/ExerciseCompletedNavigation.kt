@@ -13,15 +13,15 @@ data class ExerciseCompletedRoute(val experience: Int, val time: Long)
 fun NavController.navigateToExerciseCompleted(experience: Int, time: Long) {
     navigate(route = ExerciseCompletedRoute(experience, time)) {
         navOptions {
-
+            popBackStack()
         }
     }
 }
 
-fun NavGraphBuilder.exerciseCompletedScreen(onNavigateHome: () -> Unit) {
+fun NavGraphBuilder.exerciseCompletedScreen(onNavigateBack: () -> Unit) {
     composable<ExerciseCompletedRoute> {
         ExerciseCompletedRoute(
-            onNavigateToHome = onNavigateHome,
+            onNavigateBack = onNavigateBack,
         )
     }
 }
