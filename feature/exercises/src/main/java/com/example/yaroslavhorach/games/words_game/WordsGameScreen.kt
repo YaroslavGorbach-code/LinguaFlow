@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
@@ -144,8 +145,17 @@ private fun TopBar(screenState: WordsGameViewState, actioner: (WordsGameAction) 
                 screenState.progress,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(18.dp)
-            )
+                    .height(32.dp)
+            ){
+                Image(
+                    modifier = Modifier
+                        .size(32.dp)
+                        .offset(x = 10.dp)
+                        .align(Alignment.CenterEnd),
+                    painter = painterResource(LinguaIcons.LightingThunder),
+                    contentDescription = ""
+                )
+            }
         }
     }
 }
