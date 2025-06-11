@@ -6,16 +6,20 @@ import com.example.yaroslavhorach.domain.game.model.Game
 
 data class WordsGameViewState(
     val game: Game? = null,
-    val words: List<String> = emptyList(),
     val block: ExerciseBlock = ExerciseBlock.ONE,
     val progress: Float = 0f,
     val isLastExercise: Boolean = false,
+    val screenMode: ScreenMode = ScreenMode.Words(emptyList()),
     val uiMessage: UiMessage<WordsGameUiMessage>? = null
 ) {
 
+    sealed class ScreenMode {
+        data class Words(val words: List<String>) : ScreenMode()
+        data class Sentence(val sentence: String) : ScreenMode()
+    }
+
     companion object {
         val Empty = WordsGameViewState()
-        val PreviewSpeaking = WordsGameViewState(words = listOf("Alo", "Eto"))
-
+        val PreviewSpeaking = WordsGameViewState(screenMode = ScreenMode.Words(listOf("Alo", "Eto", "Alo", "Eto")))
     }
 }

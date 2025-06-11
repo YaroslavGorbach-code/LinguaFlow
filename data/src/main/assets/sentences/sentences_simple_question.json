@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти зазвичай їси на сніданок?",
+      "en": "What do you usually eat for breakfast?",
+      "ru": "Что ты обычно ешь на завтрак?"
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений день тижня і чому?",
+      "en": "What is your favorite day of the week and why?",
+      "ru": "Какой твой любимый день недели и почему?"
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чому люди так люблять котів?",
+      "en": "Why do people love cats so much?",
+      "ru": "Почему люди так любят кошек?"
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Навіщо потрібні шкарпетки, якщо є тапки?",
+      "en": "Why do we need socks if we have slippers?",
+      "ru": "Зачем нужны носки, если есть тапочки?"
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чому дощ іноді здається романтичним?",
+      "en": "Why does rain sometimes feel romantic?",
+      "ru": "Почему дождь иногда кажется романтичным?"
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що особливого в тому, щоб стояти в черзі?",
+      "en": "What’s so special about standing in a queue?",
+      "ru": "Что особенного в том, чтобы стоять в очереди?"
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи може бутерброд бути витвором мистецтва?",
+      "en": "Can a sandwich be a work of art?",
+      "ru": "Может ли бутерброд быть произведением искусства?"
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чому всі бояться понеділка?",
+      "en": "Why is everyone afraid of Monday?",
+      "ru": "Почему все боятся понедельника?"
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що таке ідеальна чашка кави?",
+      "en": "What is a perfect cup of coffee?",
+      "ru": "Что такое идеальная чашка кофе?"
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чому ми розмовляємо з собаками, ніби вони нас розуміють?",
+      "en": "Why do we talk to dogs like they understand us?",
+      "ru": "Почему мы разговариваем с собаками, как будто они нас понимают?"
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чому піца кругла, а коробка квадратна?",
+      "en": "Why is pizza round but the box is square?",
+      "ru": "Почему пицца круглая, а коробка квадратная?"
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти зробив, якби прокинувся відомим?",
+      "en": "What would you do if you woke up famous?",
+      "ru": "Что бы ты сделал, если бы проснулся знаменитым?"
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка суперсила тобі підходить і чому?",
+      "en": "Which superpower suits you and why?",
+      "ru": "Какая суперсила тебе подходит и почему?"
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чому у холодильнику завжди є щось загадкове?",
+      "en": "Why is there always something mysterious in the fridge?",
+      "ru": "Почему в холодильнике всегда есть что-то загадочное?"
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти був фруктом — яким саме?",
+      "en": "If you were a fruit, which one would you be?",
+      "ru": "Если бы ты был фруктом, каким именно?"
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти думаєш про будильники — вороги чи рятівники?",
+      "en": "What do you think about alarm clocks — enemies or saviors?",
+      "ru": "Что ты думаешь о будильниках — враги или спасители?"
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи можуть шапки змінювати настрій?",
+      "en": "Can hats change your mood?",
+      "ru": "Могут ли шапки менять настроение?"
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах ти асоціюєш з дитинством?",
+      "en": "What smell do you associate with childhood?",
+      "ru": "Какой запах ты ассоциируешь с детством?"
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи варто розмовляти з кімнатними рослинами?",
+      "en": "Should we talk to houseplants?",
+      "ru": "Стоит ли разговаривать с комнатными растениями?"
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти зробив, якби один день був без гравітації?",
+      "en": "What would you do if there were no gravity for one day?",
+      "ru": "Что бы ты сделал, если бы один день не было гравитации?"
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти зробив, якби на один день став невидимим?",
+      "en": "What would you do if you were invisible for one day?",
+      "ru": "Что бы ты сделал, если бы стал невидимым на один день?"
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке питання ти б поставив інопланетянину?",
+      "en": "What question would you ask an alien?",
+      "ru": "Какой вопрос ты бы задал пришельцу?"
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти обрав: завжди говорити римами чи співати замість мови?",
+      "en": "Would you rather always speak in rhymes or sing instead of talking?",
+      "ru": "Что бы ты выбрал: говорить только в рифму или петь вместо речи?"
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти завжди тримаєш у кишені?",
+      "en": "What do you always keep in your pocket?",
+      "ru": "Что ты всегда держишь в кармане?"
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби день починався з вечора — що б ти робив першим?",
+      "en": "If the day started in the evening, what would be the first thing you'd do?",
+      "ru": "Если бы день начинался с вечера, что бы ты сделал первым делом?"
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який предмет у школі варто було б зробити необов'язковим?",
+      "en": "Which school subject should be optional?",
+      "ru": "Какой школьный предмет стоило бы сделать необязательным?"
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе улюблена дивна звичка?",
+      "en": "Do you have a favorite weird habit?",
+      "ru": "Есть ли у тебя любимая странная привычка?"
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти міг жити в будь-якому мультфільмі — який би обрав?",
+      "en": "If you could live in any cartoon, which one would you choose?",
+      "ru": "Если бы ты мог жить в любом мультфильме — какой бы выбрал?"
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти сказав своєму минулому «я» з 5 років?",
+      "en": "What would you say to your 5-year-old self?",
+      "ru": "Что бы ты сказал себе в 5 лет?"
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка пісня звучить у твоїй голові, коли йдеш по місту?",
+      "en": "What song plays in your head when you walk through the city?",
+      "ru": "Какая песня звучит у тебя в голове, когда ты идешь по городу?"
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш, коли не можеш заснути?",
+      "en": "What do you do when you can’t fall asleep?",
+      "ru": "Что ты делаешь, когда не можешь уснуть?"
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Як виглядав би твій ідеальний день без інтернету?",
+      "en": "What would your perfect offline day look like?",
+      "ru": "Как бы выглядел твой идеальный день без интернета?"
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чим пахне твій настрій сьогодні?",
+      "en": "What does your mood smell like today?",
+      "ru": "Чем пахнет твое настроение сегодня?"
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найбільше цінуєш у тиші?",
+      "en": "What do you value most about silence?",
+      "ru": "Что ты больше всего ценишь в тишине?"
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який вигаданий персонаж міг би бути твоїм сусідом?",
+      "en": "Which fictional character could be your neighbor?",
+      "ru": "Какой вымышленный персонаж мог бы быть твоим соседом?"
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти відкрив кав’ярню — як би вона називалась?",
+      "en": "If you opened a coffee shop, what would you name it?",
+      "ru": "Если бы ты открыл кофейню, как бы ты её назвал?"
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений незвичайний звук?",
+      "en": "What’s your favorite unusual sound?",
+      "ru": "Какой твой любимый необычный звук?"
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що найсмішніше ти коли-небудь бачив на вулиці?",
+      "en": "What’s the funniest thing you've ever seen on the street?",
+      "ru": "Что самое смешное ты когда-либо видел на улице?"
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби твій настрій був твариною — хто це?",
+      "en": "If your mood were an animal, what would it be?",
+      "ru": "Если бы твое настроение было животным, каким бы оно было?"
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що для тебе ідеальна ніч п’ятниці?",
+      "en": "What’s your idea of a perfect Friday night?",
+      "ru": "Что для тебя — идеальная ночь пятницы?"
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку суперсилу ти хотів би мати на один день?",
+      "en": "What superpower would you like to have for one day?",
+      "ru": "Какую суперспособность ты хотел бы иметь на один день?"
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти міг жити у будь-якій країні, яку б обрав?",
+      "en": "If you could live in any country, which one would you choose?",
+      "ru": "Если бы ты мог жить в любой стране, какую бы ты выбрал?"
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти зробив, якби виграв мільйон?",
+      "en": "What would you do if you won a million?",
+      "ru": "Что бы ты сделал, если бы выиграл миллион?"
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах нагадує тобі дитинство?",
+      "en": "What smell reminds you of childhood?",
+      "ru": "Какой запах напоминает тебе детство?"
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти зазвичай робиш у вихідні?",
+      "en": "What do you usually do on weekends?",
+      "ru": "Что ты обычно делаешь на выходных?"
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе улюблена цитата?",
+      "en": "Do you have a favorite quote?",
+      "ru": "Есть ли у тебя любимая цитата?"
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений десерт?",
+      "en": "What’s your favorite dessert?",
+      "ru": "Какой твой любимый десерт?"
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тебе може змусити сміятись, навіть коли ти сумний?",
+      "en": "What can make you laugh even when you're sad?",
+      "ru": "Что может заставить тебя смеяться, даже когда тебе грустно?"
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який фільм ти можеш переглядати знову і знову?",
+      "en": "What movie can you watch over and over again?",
+      "ru": "Какой фильм ты можешь смотреть снова и снова?"
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене місце у місті?",
+      "en": "What’s your favorite place in the city?",
+      "ru": "Какое твоё любимое место в городе?"
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який був твій найкумедніший шкільний момент?",
+      "en": "What was your funniest school moment?",
+      "ru": "Какой был твой самый смешной школьный момент?"
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти замовив у своєму улюбленому кафе?",
+      "en": "What would you order at your favorite café?",
+      "ru": "Что бы ты заказал в своём любимом кафе?"
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чим ти найбільше пишаєшся?",
+      "en": "What are you most proud of?",
+      "ru": "Чем ты больше всего гордишься?"
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи віриш ти в удачу?",
+      "en": "Do you believe in luck?",
+      "ru": "Ты веришь в удачу?"
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений вид спорту?",
+      "en": "What’s your favorite sport?",
+      "ru": "Какой твой любимый вид спорта?"
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи любиш ти більше ранок чи вечір?",
+      "en": "Do you prefer morning or evening?",
+      "ru": "Ты больше любишь утро или вечер?"
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш першим, коли прокидаєшся?",
+      "en": "What’s the first thing you do when you wake up?",
+      "ru": "Что ты делаешь первым делом, когда просыпаешься?"
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який найкращий подарунок ти коли-небудь отримував?",
+      "en": "What’s the best gift you’ve ever received?",
+      "ru": "Какой самый лучший подарок ты когда-либо получал?"
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є місце, куди ти мрієш поїхати?",
+      "en": "Is there a place you dream of visiting?",
+      "ru": "Есть ли место, куда ты мечтаешь поехать?"
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найбільше цінуєш у друзях?",
+      "en": "What do you value most in friends?",
+      "ru": "Что ты больше всего ценишь в друзьях?"
+    }
+  },
+  {
+    "id": "61",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який музичний жанр змушує тебе танцювати?",
+      "en": "What music genre makes you want to dance?",
+      "ru": "Какой музыкальный жанр заставляет тебя танцевать?"
+    }
+  },
+  {
+    "id": "62",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе улюблений спогад із дитинства?",
+      "en": "Do you have a favorite childhood memory?",
+      "ru": "Есть ли у тебя любимое воспоминание из детства?"
+    }
+  },
+  {
+    "id": "63",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш, коли не можеш заснути?",
+      "en": "What do you do when you can’t fall asleep?",
+      "ru": "Что ты делаешь, когда не можешь уснуть?"
+    }
+  },
+  {
+    "id": "64",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка тварина тобі найбільше симпатична?",
+      "en": "Which animal do you find most likable?",
+      "ru": "Какое животное тебе больше всего симпатично?"
+    }
+  },
+  {
+    "id": "65",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи вмієш ти готувати щось особливе?",
+      "en": "Can you cook anything special?",
+      "ru": "Ты умеешь готовить что-то особенное?"
+    }
+  },
+  {
+    "id": "66",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тебе надихає діяти?",
+      "en": "What inspires you to take action?",
+      "ru": "Что вдохновляет тебя действовать?"
+    }
+  },
+  {
+    "id": "67",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку книгу ти б порадив кожному прочитати?",
+      "en": "Which book would you recommend everyone to read?",
+      "ru": "Какую книгу ты бы посоветовал прочитать каждому?"
+    }
+  },
+  {
+    "id": "68",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку пора року ти любиш найбільше?",
+      "en": "Which season do you love the most?",
+      "ru": "Какое время года ты любишь больше всего?"
+    }
+  },
+  {
+    "id": "69",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тебе може миттєво розвеселити?",
+      "en": "What can instantly cheer you up?",
+      "ru": "Что может мгновенно тебя развеселить?"
+    }
+  },
+  {
+    "id": "70",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений запах?",
+      "en": "What’s your favorite smell?",
+      "ru": "Какой твой любимый запах?"
+    }
+  },
+  {
+    "id": "71",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є у тебе хобі, про яке мало хто знає?",
+      "en": "Do you have a hobby that few people know about?",
+      "ru": "Есть ли у тебя хобби, о котором мало кто знает?"
+    }
+  },
+  {
+    "id": "72",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найбільше цінуєш у собі?",
+      "en": "What do you value most in yourself?",
+      "ru": "Что ты больше всего ценишь в себе?"
+    }
+  },
+  {
+    "id": "73",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є у тебе ранкові ритуали?",
+      "en": "Do you have any morning rituals?",
+      "ru": "Есть ли у тебя утренние ритуалы?"
+    }
+  },
+  {
+    "id": "74",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який колір тебе найбільше приваблює?",
+      "en": "Which color attracts you the most?",
+      "ru": "Какой цвет тебя больше всего привлекает?"
+    }
+  },
+  {
+    "id": "75",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти зробив, якби міг бути невидимим на день?",
+      "en": "What would you do if you could be invisible for a day?",
+      "ru": "Что бы ты сделал, если бы мог быть невидимым на один день?"
+    }
+  },
+  {
+    "id": "76",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли ти востаннє відчував справжнє щастя?",
+      "en": "When was the last time you felt truly happy?",
+      "ru": "Когда ты в последний раз чувствовал настоящее счастье?"
+    }
+  },
+  {
+    "id": "77",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який вигаданий персонаж тобі імпонує?",
+      "en": "Which fictional character do you relate to?",
+      "ru": "Какой вымышленный персонаж тебе близок?"
+    }
+  },
+  {
+    "id": "78",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш, коли сумуєш?",
+      "en": "What do you do when you feel sad?",
+      "ru": "Что ты делаешь, когда тебе грустно?"
+    }
+  },
+  {
+    "id": "79",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є місце, куди ти завжди хочеш повертатись?",
+      "en": "Is there a place you always want to return to?",
+      "ru": "Есть ли место, куда тебе всегда хочется возвращаться?"
+    }
+  },
+  {
+    "id": "80",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти міг створити власне свято, яке б це було?",
+      "en": "If you could create your own holiday, what would it be?",
+      "ru": "Если бы ты мог придумать свой праздник, каким бы он был?"
+    }
+  },
+  {
+    "id": "81",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти вважаєш справжньою розкішшю?",
+      "en": "What do you consider real luxury?",
+      "ru": "Что ты считаешь настоящей роскошью?"
+    }
+  },
+  {
+    "id": "82",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку пора доби ти найбільше любиш?",
+      "en": "What time of day do you love most?",
+      "ru": "Какое время суток ты любишь больше всего?"
+    }
+  },
+  {
+    "id": "83",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе щасливий талісман?",
+      "en": "Do you have a lucky charm?",
+      "ru": "Есть ли у тебя счастливый талисман?"
+    }
+  },
+  {
+    "id": "84",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що для тебе означає «відпочити»?",
+      "en": "What does 'relaxing' mean to you?",
+      "ru": "Что для тебя значит 'отдохнуть'?"
+    }
+  },
+  {
+    "id": "85",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який пейзаж ти хотів би бачити з вікна?",
+      "en": "What view would you like to see from your window?",
+      "ru": "Какой пейзаж ты хотел бы видеть из окна?"
+    }
+  },
+  {
+    "id": "86",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що для тебе є символом щастя?",
+      "en": "What symbolizes happiness for you?",
+      "ru": "Что для тебя является символом счастья?"
+    }
+  },
+  {
+    "id": "87",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти міг повернутися в якийсь день життя — який би це був?",
+      "en": "If you could return to any day of your life, which one would it be?",
+      "ru": "Если бы ты мог вернуться в любой день своей жизни — какой бы это был?"
+    }
+  },
+  {
+    "id": "88",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка страва викликає в тебе ностальгію?",
+      "en": "What dish makes you feel nostalgic?",
+      "ru": "Какое блюдо вызывает у тебя ностальгию?"
+    }
+  },
+  {
+    "id": "89",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений спосіб подорожувати?",
+      "en": "What’s your favorite way to travel?",
+      "ru": "Какой твой любимый способ путешествовать?"
+    }
+  },
+  {
+    "id": "90",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найчастіше шукаєш у Google?",
+      "en": "What do you most often search for on Google?",
+      "ru": "Что ты чаще всего ищешь в Гугле?"
+    }
+  },
+  {
+    "id": "91",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що для тебе означає успіх?",
+      "en": "What does success mean to you?",
+      "ru": "Что для тебя означает успех?"
+    }
+  },
+  {
+    "id": "92",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка пісня нагадує тобі про важливу подію?",
+      "en": "What song reminds you of an important event?",
+      "ru": "Какая песня напоминает тебе о важном событии?"
+    }
+  },
+  {
+    "id": "93",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є у тебе звичка, яку хочеш позбутися?",
+      "en": "Do you have a habit you want to break?",
+      "ru": "Есть ли у тебя привычка, от которой ты хочешь избавиться?"
+    }
+  },
+  {
+    "id": "94",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найчастіше відкладаєш на потім?",
+      "en": "What do you often procrastinate on?",
+      "ru": "Что ты чаще всего откладываешь на потом?"
+    }
+  },
+  {
+    "id": "95",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є у тебе улюблена цитата?",
+      "en": "Do you have a favorite quote?",
+      "ru": "У тебя есть любимая цитата?"
+    }
+  },
+  {
+    "id": "96",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій ідеальний вихідний день?",
+      "en": "What’s your ideal day off?",
+      "ru": "Какой у тебя идеальный выходной?"
+    }
+  },
+  {
+    "id": "97",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли ти востаннє вчив щось нове?",
+      "en": "When was the last time you learned something new?",
+      "ru": "Когда ты в последний раз учил что-то новое?"
+    }
+  },
+  {
+    "id": "98",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який навик тобі хотілося б опанувати?",
+      "en": "What skill would you like to master?",
+      "ru": "Какой навык ты хотел бы освоить?"
+    }
+  },
+  {
+    "id": "99",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є місце, яке ти мрієш відвідати?",
+      "en": "Is there a place you dream of visiting?",
+      "ru": "Есть ли место, которое ты мечтаешь посетить?"
+    }
+  },
+  {
+    "id": "100",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що змушує тебе сміятись без упину?",
+      "en": "What makes you laugh uncontrollably?",
+      "ru": "Что заставляет тебя смеяться без остановки?"
+    }
+  },
+  {
+    "id": "101",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що для тебе справжня дружба?",
+      "en": "What does true friendship mean to you?",
+      "ru": "Что для тебя настоящая дружба?"
+    }
+  },
+  {
+    "id": "102",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який комплімент тебе найбільше порадував?",
+      "en": "What compliment made you happiest?",
+      "ru": "Какой комплимент тебя больше всего порадовал?"
+    }
+  },
+  {
+    "id": "103",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який фільм тобі хочеться передивлятись знову й знову?",
+      "en": "What movie do you want to watch over and over again?",
+      "ru": "Какой фильм тебе хочется пересматривать снова и снова?"
+    }
+  },
+  {
+    "id": "104",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тобі приносить внутрішній спокій?",
+      "en": "What brings you inner peace?",
+      "ru": "Что приносит тебе внутреннее спокойствие?"
+    }
+  },
+  {
+    "id": "105",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який був твій перший мобільний телефон?",
+      "en": "What was your first mobile phone?",
+      "ru": "Какой был твой первый мобильный телефон?"
+    }
+  },
+  {
+    "id": "106",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Як ти зазвичай розпочинаєш свій день?",
+      "en": "How do you usually start your day?",
+      "ru": "Как ты обычно начинаешь свой день?"
+    }
+  },
+  {
+    "id": "107",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка твоя улюблена гра з дитинства?",
+      "en": "What was your favorite childhood game?",
+      "ru": "Какая твоя любимая игра из детства?"
+    }
+  },
+  {
+    "id": "108",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи боїшся ти висоти?",
+      "en": "Are you afraid of heights?",
+      "ru": "Ты боишься высоты?"
+    }
+  },
+  {
+    "id": "109",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який аромат асоціюється у тебе з домом?",
+      "en": "What smell reminds you of home?",
+      "ru": "Какой запах у тебя ассоциируется с домом?"
+    }
+  },
+  {
+    "id": "110",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тобі найбільше подобається в природі?",
+      "en": "What do you like most about nature?",
+      "ru": "Что тебе больше всего нравится в природе?"
+    }
+  },
+  {
+    "id": "111",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений напій?",
+      "en": "What’s your favorite drink?",
+      "ru": "Какой твой любимый напиток?"
+    }
+  },
+  {
+    "id": "112",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти міг побачити майбутнє, що б хотів дізнатись?",
+      "en": "If you could see the future, what would you want to know?",
+      "ru": "Если бы ты мог заглянуть в будущее, что бы ты хотел узнать?"
+    }
+  },
+  {
+    "id": "113",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах асоціюється у тебе з дитинством?",
+      "en": "What smell reminds you of childhood?",
+      "ru": "Какой запах у тебя ассоциируется с детством?"
+    }
+  },
+  {
+    "id": "114",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе улюблена прикмета або забобон?",
+      "en": "Do you have a favorite superstition?",
+      "ru": "У тебя есть любимая примета или суеверие?"
+    }
+  },
+  {
+    "id": "115",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти зазвичай береш із собою в подорож?",
+      "en": "What do you usually take with you when traveling?",
+      "ru": "Что ты обычно берешь с собой в путешествие?"
+    }
+  },
+  {
+    "id": "116",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка страва у тебе асоціюється зі святом?",
+      "en": "What dish do you associate with holidays?",
+      "ru": "Какое блюдо у тебя ассоциируется с праздником?"
+    }
+  },
+  {
+    "id": "117",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи подобається тобі працювати в тиші чи з музикою?",
+      "en": "Do you prefer working in silence or with music?",
+      "ru": "Ты предпочитаешь работать в тишине или с музыкой?"
+    }
+  },
+  {
+    "id": "118",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який подарунок тебе найбільше здивував?",
+      "en": "What gift surprised you the most?",
+      "ru": "Какой подарок тебя больше всего удивил?"
+    }
+  },
+  {
+    "id": "119",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений день тижня?",
+      "en": "What’s your favorite day of the week?",
+      "ru": "Какой твой любимый день недели?"
+    }
+  },
+  {
+    "id": "120",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Якби ти міг змінити своє ім’я, яке б обрав?",
+      "en": "If you could change your name, what would you choose?",
+      "ru": "Если бы ты мог изменить своё имя, какое бы ты выбрал?"
+    }
+  },
+  {
+    "id": "121",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Кого ти вважаєш своїм героєм?",
+      "en": "Who do you consider your hero?",
+      "ru": "Кого ты считаешь своим героем?"
+    }
+  },
+  {
+    "id": "122",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене місце в місті?",
+      "en": "What’s your favorite place in the city?",
+      "ru": "Какое твоё любимое место в городе?"
+    }
+  },
+  {
+    "id": "123",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку пора року ти любиш найбільше?",
+      "en": "What season do you love the most?",
+      "ru": "Какое время года ты любишь больше всего?"
+    }
+  },
+  {
+    "id": "124",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є у тебе улюблений запах парфумів?",
+      "en": "Do you have a favorite perfume scent?",
+      "ru": "У тебя есть любимый аромат духов?"
+    }
+  },
+  {
+    "id": "125",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш, коли тобі сумно?",
+      "en": "What do you do when you feel sad?",
+      "ru": "Что ты делаешь, когда тебе грустно?"
+    }
+  },
+  {
+    "id": "126",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи віриш ти в інтуїцію?",
+      "en": "Do you believe in intuition?",
+      "ru": "Ты веришь в интуицию?"
+    }
+  },
+  {
+    "id": "127",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене свято?",
+      "en": "What’s your favorite holiday?",
+      "ru": "Какой твой любимый праздник?"
+    }
+  },
+  {
+    "id": "128",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи любиш ти готувати?",
+      "en": "Do you like cooking?",
+      "ru": "Ты любишь готовить?"
+    }
+  },
+  {
+    "id": "129",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє найбільше досягнення на сьогодні?",
+      "en": "What is your greatest achievement so far?",
+      "ru": "Какое твоё самое большое достижение на сегодня?"
+    }
+  },
+  {
+    "id": "130",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи довіряєш ти першому враженню?",
+      "en": "Do you trust first impressions?",
+      "ru": "Ты доверяешь первому впечатлению?"
+    }
+  },
+  {
+    "id": "131",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найчастіше гуглиш?",
+      "en": "What do you google the most?",
+      "ru": "Что ты чаще всего гуглишь?"
+    }
+  },
+  {
+    "id": "132",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який навик тобі хотілося б мати змалку?",
+      "en": "What skill do you wish you had learned as a child?",
+      "ru": "Какой навык ты хотел бы освоить с детства?"
+    }
+  },
+  {
+    "id": "133",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку книжку ти востаннє прочитав?",
+      "en": "What was the last book you read?",
+      "ru": "Какую книгу ты читал последней?"
+    }
+  },
+  {
+    "id": "134",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи любиш ти ранки?",
+      "en": "Do you like mornings?",
+      "ru": "Ты любишь утро?"
+    }
+  },
+  {
+    "id": "135",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який день ти хочеш прожити ще раз?",
+      "en": "What day would you like to relive?",
+      "ru": "Какой день ты хотел бы пережить ещё раз?"
+    }
+  },
+  {
+    "id": "136",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тебе надихає рухатись уперед?",
+      "en": "What inspires you to keep going?",
+      "ru": "Что вдохновляет тебя двигаться вперёд?"
+    }
+  },
+  {
+    "id": "137",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка мова звучить для тебе найгарніше?",
+      "en": "What language sounds the most beautiful to you?",
+      "ru": "Какой язык звучит для тебя красивее всего?"
+    }
+  },
+  {
+    "id": "138",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти хочеш навчитись робити цього року?",
+      "en": "What do you want to learn to do this year?",
+      "ru": "Чему ты хочешь научиться в этом году?"
+    }
+  },
+  {
+    "id": "139",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що допомагає тобі зосередитися?",
+      "en": "What helps you concentrate?",
+      "ru": "Что помогает тебе сосредоточиться?"
+    }
+  },
+  {
+    "id": "140",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку пора доби ти любиш найбільше?",
+      "en": "What time of day do you like most?",
+      "ru": "Какое время суток ты любишь больше всего?"
+    }
+  },
+  {
+    "id": "141",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який був твій улюблений мультик у дитинстві?",
+      "en": "What was your favorite cartoon as a child?",
+      "ru": "Какой был твой любимый мультфильм в детстве?"
+    }
+  },
+  {
+    "id": "142",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах тебе заспокоює?",
+      "en": "What smell calms you down?",
+      "ru": "Какой запах тебя успокаивает?"
+    }
+  },
+  {
+    "id": "143",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли ти відчуваєш себе найпродуктивнішим?",
+      "en": "When do you feel most productive?",
+      "ru": "Когда ты чувствуешь себя самым продуктивным?"
+    }
+  },
+  {
+    "id": "144",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який гаджет ти використовуєш найчастіше?",
+      "en": "What gadget do you use the most?",
+      "ru": "Какой гаджет ты используешь чаще всего?"
+    }
+  },
+  {
+    "id": "145",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який навик допоміг би тобі в житті?",
+      "en": "What skill would help you in life?",
+      "ru": "Какой навык помог бы тебе в жизни?"
+    }
+  },
+  {
+    "id": "146",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи любиш ти планувати наперед?",
+      "en": "Do you like planning ahead?",
+      "ru": "Ты любишь планировать заранее?"
+    }
+  },
+  {
+    "id": "147",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш, коли не можеш заснути?",
+      "en": "What do you do when you can't fall asleep?",
+      "ru": "Что ты делаешь, когда не можешь уснуть?"
+    }
+  },
+  {
+    "id": "148",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який фільм змусив тебе задуматись?",
+      "en": "What movie made you think deeply?",
+      "ru": "Какой фильм заставил тебя задуматься?"
+    }
+  },
+  {
+    "id": "149",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку звичку ти вважаєш найкориснішою?",
+      "en": "What habit do you consider the most useful?",
+      "ru": "Какую привычку ты считаешь самой полезной?"
+    }
+  },
+  {
+    "id": "150",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що найприємніше ти чув останнім часом?",
+      "en": "What’s the nicest thing you've heard recently?",
+      "ru": "Что самое приятное ты слышал в последнее время?"
+    }
+  },
+  {
+    "id": "151",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти хочеш побачити на власні очі?",
+      "en": "What do you want to see with your own eyes?",
+      "ru": "Что ты хочешь увидеть своими глазами?"
+    }
+  },
+  {
+    "id": "152",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який момент дитинства ти пам’ятаєш найяскравіше?",
+      "en": "What childhood moment do you remember most vividly?",
+      "ru": "Какой момент детства ты помнишь ярче всего?"
+    }
+  },
+  {
+    "id": "153",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе щоденні ритуали?",
+      "en": "Do you have any daily rituals?",
+      "ru": "У тебя есть ежедневные ритуалы?"
+    }
+  },
+  {
+    "id": "154",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який звук приносить тобі спокій?",
+      "en": "What sound brings you peace?",
+      "ru": "Какой звук приносит тебе покой?"
+    }
+  },
+  {
+    "id": "155",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тобі допомагає впоратися зі стресом?",
+      "en": "What helps you deal with stress?",
+      "ru": "Что помогает тебе справляться со стрессом?"
+    }
+  },
+  {
+    "id": "156",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли востаннє ти пробував щось нове?",
+      "en": "When was the last time you tried something new?",
+      "ru": "Когда в последний раз ты пробовал что-то новое?"
+    }
+  },
+  {
+    "id": "157",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який колір тобі найприємніший?",
+      "en": "What color do you find most pleasant?",
+      "ru": "Какой цвет тебе наиболее приятен?"
+    }
+  },
+  {
+    "id": "158",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти вважаєш своєю суперсилою?",
+      "en": "What do you consider your superpower?",
+      "ru": "Что ты считаешь своей суперсилой?"
+    }
+  },
+  {
+    "id": "159",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке місце на Землі ти хочеш відвідати?",
+      "en": "What place on Earth do you want to visit?",
+      "ru": "Какое место на Земле ты хочешь посетить?"
+    }
+  },
+  {
+    "id": "160",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи маєш ти секретне хобі?",
+      "en": "Do you have a secret hobby?",
+      "ru": "У тебя есть тайное хобби?"
+    }
+  },
+  {
+    "id": "161",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти найбільше цінуєш у людях?",
+      "en": "What do you value most in people?",
+      "ru": "Что ты больше всего ценишь в людях?"
+    }
+  },
+  {
+    "id": "162",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку пора року ти чекаєш найбільше?",
+      "en": "Which season do you look forward to the most?",
+      "ru": "Какое время года ты ждёшь больше всего?"
+    }
+  },
+  {
+    "id": "163",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який фільм ти можеш переглядати знову і знову?",
+      "en": "What movie can you watch over and over?",
+      "ru": "Какой фильм ты можешь смотреть снова и снова?"
+    }
+  },
+  {
+    "id": "164",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе талісман або улюблений предмет?",
+      "en": "Do you have a lucky charm or a favorite item?",
+      "ru": "У тебя есть талисман или любимый предмет?"
+    }
+  },
+  {
+    "id": "165",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти порадив собі в минулому?",
+      "en": "What advice would you give your past self?",
+      "ru": "Что бы ты посоветовал себе в прошлом?"
+    }
+  },
+  {
+    "id": "166",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах асоціюється в тебе з домом?",
+      "en": "What smell reminds you of home?",
+      "ru": "Какой запах у тебя ассоциируется с домом?"
+    }
+  },
+  {
+    "id": "167",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який день тижня тобі подобається найбільше?",
+      "en": "Which day of the week do you like the most?",
+      "ru": "Какой день недели тебе нравится больше всего?"
+    }
+  },
+  {
+    "id": "168",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти вважаєш ознакою щастя?",
+      "en": "What do you consider a sign of happiness?",
+      "ru": "Что ты считаешь признаком счастья?"
+    }
+  },
+  {
+    "id": "169",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який був твій найкращий подарунок?",
+      "en": "What was your best gift ever?",
+      "ru": "Какой был твой лучший подарок?"
+    }
+  },
+  {
+    "id": "170",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тебе змушує сміятися вголос?",
+      "en": "What makes you laugh out loud?",
+      "ru": "Что заставляет тебя смеяться вслух?"
+    }
+  },
+  {
+    "id": "171",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку мову ти хотів би вивчити?",
+      "en": "What language would you like to learn?",
+      "ru": "Какой язык ты хотел бы выучить?"
+    }
+  },
+  {
+    "id": "172",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений напій?",
+      "en": "What’s your favorite drink?",
+      "ru": "Какой твой любимый напиток?"
+    }
+  },
+  {
+    "id": "173",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти робиш, коли хочеш побути наодинці?",
+      "en": "What do you do when you want to be alone?",
+      "ru": "Что ты делаешь, когда хочешь побыть один?"
+    }
+  },
+  {
+    "id": "174",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка пісня завжди піднімає тобі настрій?",
+      "en": "What song always lifts your mood?",
+      "ru": "Какая песня всегда поднимает тебе настроение?"
+    }
+  },
+  {
+    "id": "175",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти зазвичай робиш у вихідні?",
+      "en": "What do you usually do on weekends?",
+      "ru": "Что ты обычно делаешь на выходных?"
+    }
+  },
+  {
+    "id": "176",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене дитяче спогад?",
+      "en": "What’s your favorite childhood memory?",
+      "ru": "Какое твоё любимое детское воспоминание?"
+    }
+  },
+  {
+    "id": "177",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти хотів би навчитися робити краще?",
+      "en": "What would you like to get better at?",
+      "ru": "Чему ты хотел бы научиться лучше?"
+    }
+  },
+  {
+    "id": "178",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є місце, куди ти хочеш повернутись?",
+      "en": "Is there a place you want to return to?",
+      "ru": "Есть ли место, куда ты хочешь вернуться?"
+    }
+  },
+  {
+    "id": "179",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що допомагає тобі відновити енергію?",
+      "en": "What helps you recharge your energy?",
+      "ru": "Что помогает тебе восстановить энергию?"
+    }
+  },
+  {
+    "id": "180",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Кого б ти хотів запросити на вечерю?",
+      "en": "Who would you like to invite to dinner?",
+      "ru": "Кого бы ты хотел пригласить на ужин?"
+    }
+  },
+  {
+    "id": "181",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене місце у місті?",
+      "en": "What is your favorite place in the city?",
+      "ru": "Какое твоё любимое место в городе?"
+    }
+  },
+  {
+    "id": "182",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти взяв з собою на безлюдний острів?",
+      "en": "What would you take to a deserted island?",
+      "ru": "Что бы ты взял с собой на необитаемый остров?"
+    }
+  },
+  {
+    "id": "183",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах нагадує тобі про дитинство?",
+      "en": "What smell reminds you of childhood?",
+      "ru": "Какой запах напоминает тебе о детстве?"
+    }
+  },
+  {
+    "id": "184",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти зазвичай замовляєш у кав'ярні?",
+      "en": "What do you usually order at a coffee shop?",
+      "ru": "Что ты обычно заказываешь в кофейне?"
+    }
+  },
+  {
+    "id": "185",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений спосіб відпочити після роботи?",
+      "en": "What is your favorite way to relax after work?",
+      "ru": "Какой твой любимый способ отдохнуть после работы?"
+    }
+  },
+  {
+    "id": "186",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли ти востаннє був на природі?",
+      "en": "When was the last time you were in nature?",
+      "ru": "Когда ты в последний раз был на природе?"
+    }
+  },
+  {
+    "id": "187",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений вид спорту для перегляду?",
+      "en": "What is your favorite sport to watch?",
+      "ru": "Какой твой любимый вид спорта для просмотра?"
+    }
+  },
+  {
+    "id": "188",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є в тебе улюблена цитата?",
+      "en": "Do you have a favorite quote?",
+      "ru": "У тебя есть любимая цитата?"
+    }
+  },
+  {
+    "id": "189",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який комплімент ти запам’ятав на все життя?",
+      "en": "What compliment have you remembered for life?",
+      "ru": "Какой комплимент ты запомнил на всю жизнь?"
+    }
+  },
+  {
+    "id": "190",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що тебе мотивує прокидатися зранку?",
+      "en": "What motivates you to wake up in the morning?",
+      "ru": "Что мотивирует тебя просыпаться утром?"
+    }
+  },
+  {
+    "id": "191",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений спосіб проводити дощовий день?",
+      "en": "What’s your favorite way to spend a rainy day?",
+      "ru": "Как ты любишь проводить дождливый день?"
+    }
+  },
+  {
+    "id": "192",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є фраза, яку ти часто повторюєш?",
+      "en": "Is there a phrase you often repeat?",
+      "ru": "Есть ли фраза, которую ты часто повторяешь?"
+    }
+  },
+  {
+    "id": "193",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яку нову звичку ти хочеш сформувати?",
+      "en": "What new habit do you want to form?",
+      "ru": "Какую новую привычку ты хочешь сформировать?"
+    }
+  },
+  {
+    "id": "194",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене свято і чому?",
+      "en": "What is your favorite holiday and why?",
+      "ru": "Какой твой любимый праздник и почему?"
+    }
+  },
+  {
+    "id": "195",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є книга, яка змінила твоє мислення?",
+      "en": "Is there a book that changed your thinking?",
+      "ru": "Есть ли книга, которая изменила твоё мышление?"
+    }
+  },
+  {
+    "id": "196",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що ти зазвичай робиш перед сном?",
+      "en": "What do you usually do before bed?",
+      "ru": "Что ты обычно делаешь перед сном?"
+    }
+  },
+  {
+    "id": "197",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який запах змушує тебе згадувати літо?",
+      "en": "What smell makes you think of summer?",
+      "ru": "Какой запах напоминает тебе о лете?"
+    }
+  },
+  {
+    "id": "198",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли ти востаннє сміявся до сліз?",
+      "en": "When was the last time you laughed until you cried?",
+      "ru": "Когда ты в последний раз смеялся до слёз?"
+    }
+  },
+  {
+    "id": "199",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який подарунок ти зробив сам?",
+      "en": "What gift have you made yourself?",
+      "ru": "Какой подарок ты сделал сам?"
+    }
+  },
+  {
+    "id": "200",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи любиш ти гуляти без певної мети?",
+      "en": "Do you like walking without a purpose?",
+      "ru": "Ты любишь гулять без цели?"
+    }
+  },
+  {
+    "id": "201",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти хотів навчитися готувати?",
+      "en": "What would you like to learn to cook?",
+      "ru": "Что бы ты хотел научиться готовить?"
+    }
+  },
+  {
+    "id": "202",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який фільм змусив тебе задуматися над життям?",
+      "en": "What movie made you reflect on life?",
+      "ru": "Какой фильм заставил тебя задуматься о жизни?"
+    }
+  },
+  {
+    "id": "203",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Коли ти почуваєшся справді щасливим?",
+      "en": "When do you feel truly happy?",
+      "ru": "Когда ты чувствуешь себя по-настоящему счастливым?"
+    }
+  },
+  {
+    "id": "204",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти сказав собі через десять років?",
+      "en": "What would you say to yourself in ten years?",
+      "ru": "Что бы ты сказал себе через десять лет?"
+    }
+  },
+  {
+    "id": "205",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яка звичка тобі допомагає щодня?",
+      "en": "What habit helps you every day?",
+      "ru": "Какая привычка помогает тебе каждый день?"
+    }
+  },
+  {
+    "id": "206",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Чи є щось, що ти колись боявся, але вже ні?",
+      "en": "Is there something you used to fear but not anymore?",
+      "ru": "Есть ли то, чего ты раньше боялся, а теперь — нет?"
+    }
+  },
+  {
+    "id": "207",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що для тебе означає затишок?",
+      "en": "What does coziness mean to you?",
+      "ru": "Что для тебя означает уют?"
+    }
+  },
+  {
+    "id": "208",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Який твій улюблений запах у природі?",
+      "en": "What is your favorite natural scent?",
+      "ru": "Какой твой любимый природный запах?"
+    }
+  },
+  {
+    "id": "209",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Що б ти зробив, якби мав вільний день тільки для себе?",
+      "en": "What would you do if you had a free day just for yourself?",
+      "ru": "Что бы ты сделал, если бы у тебя был свободный день только для себя?"
+    }
+  },
+  {
+    "id": "210",
+    "sentence_type": "SIMPLE_QUESTION",
+    "sentence": {
+      "ua": "Яке твоє улюблене місце в домі?",
+      "en": "What is your favorite spot at home?",
+      "ru": "Какое твоё любимое место дома?"
+    }
+  }
+]

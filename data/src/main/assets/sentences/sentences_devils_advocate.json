@@ -1,0 +1,1631 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Соціальні мережі приносять більше шкоди, ніж користі»",
+      "en": "Statement: \"Social media does more harm than good\"",
+      "ru": "Утверждение: «Социальные сети приносят больше вреда, чем пользы»"
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Університетська освіта застаріла»",
+      "en": "Statement: \"University education is outdated\"",
+      "ru": "Утверждение: «Университетское образование устарело»"
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Штучний інтелект — загроза людству»",
+      "en": "Statement: \"Artificial intelligence is a threat to humanity\"",
+      "ru": "Утверждение: «Искусственный интеллект — угроза человечеству»"
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще не мати дітей у сучасному світі»",
+      "en": "Statement: \"It's better not to have children in today's world\"",
+      "ru": "Утверждение: «Лучше не иметь детей в современном мире»"
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Працювати віддалено — неефективно»",
+      "en": "Statement: \"Remote work is inefficient\"",
+      "ru": "Утверждение: «Удалённая работа неэффективна»"
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Смертна кара повинна бути дозволена»",
+      "en": "Statement: \"The death penalty should be allowed\"",
+      "ru": "Утверждение: «Смертная казнь должна быть разрешена»"
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Психологія — не наука»",
+      "en": "Statement: \"Psychology is not a science\"",
+      "ru": "Утверждение: «Психология — не наука»"
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Демократія — переоцінена»",
+      "en": "Statement: \"Democracy is overrated\"",
+      "ru": "Утверждение: «Демократия переоценена»"
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Гроші приносять щастя»",
+      "en": "Statement: \"Money brings happiness\"",
+      "ru": "Утверждение: «Деньги приносят счастье»"
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Веганство шкодить здоров’ю»",
+      "en": "Statement: \"Veganism is harmful to health\"",
+      "ru": "Утверждение: «Веганство вредит здоровью»"
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Бідність — це особистий вибір»",
+      "en": "Statement: \"Poverty is a personal choice\"",
+      "ru": "Утверждение: «Бедность — это личный выбор»"
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Талант важливіший за працю»",
+      "en": "Statement: \"Talent is more important than hard work\"",
+      "ru": "Утверждение: «Талант важнее труда»"
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Легалізація наркотиків зменшить злочинність»",
+      "en": "Statement: \"Legalizing drugs will reduce crime\"",
+      "ru": "Утверждение: «Легализация наркотиков снизит преступность»"
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Технології роблять людей тупішими»",
+      "en": "Statement: \"Technology makes people dumber\"",
+      "ru": "Утверждение: «Технологии делают людей глупее»"
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Патріотизм — це форма пропаганди»",
+      "en": "Statement: \"Patriotism is a form of propaganda\"",
+      "ru": "Утверждение: «Патриотизм — это форма пропаганды»"
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Успіх залежить тільки від зв’язків»",
+      "en": "Statement: \"Success depends only on connections\"",
+      "ru": "Утверждение: «Успех зависит только от связей»"
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Традиції заважають прогресу»",
+      "en": "Statement: \"Traditions hinder progress\"",
+      "ru": "Утверждение: «Традиции мешают прогрессу»"
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Порнографія — шкідлива для суспільства»",
+      "en": "Statement: \"Pornography is harmful to society\"",
+      "ru": "Утверждение: «Порнография вредна для общества»"
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Шлюб — застаріла інституція»",
+      "en": "Statement: \"Marriage is an outdated institution\"",
+      "ru": "Утверждение: «Брак — устаревший институт»"
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Більшість людей не повинні голосувати»",
+      "en": "Statement: \"Most people shouldn't vote\"",
+      "ru": "Утверждение: «Большинство людей не должны голосовать»"
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода слова має обмеження»",
+      "en": "Statement: \"Freedom of speech should have limits\"",
+      "ru": "Утверждение: «Свобода слова должна иметь ограничения»"
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Соціальні мережі більше шкодять, ніж приносять користі»",
+      "en": "Statement: \"Social media does more harm than good\"",
+      "ru": "Утверждение: «Социальные сети приносят больше вреда, чем пользы»"
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Релігія повинна бути відокремлена від держави»",
+      "en": "Statement: \"Religion should be separated from the state\"",
+      "ru": "Утверждение: «Религия должна быть отделена от государства»"
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людство не повинно колонізувати інші планети»",
+      "en": "Statement: \"Humanity should not colonize other planets\"",
+      "ru": "Утверждение: «Человечество не должно колонизировать другие планеты»"
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Реальність віртуальних світів важливіша за фізичну»",
+      "en": "Statement: \"Virtual worlds are more important than the physical one\"",
+      "ru": "Утверждение: «Виртуальные миры важнее физического»"
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Цензура в інтернеті необхідна»",
+      "en": "Statement: \"Internet censorship is necessary\"",
+      "ru": "Утверждение: «Цензура в интернете необходима»"
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Тестування на тваринах виправдане»",
+      "en": "Statement: \"Animal testing is justified\"",
+      "ru": "Утверждение: «Тестирование на животных оправдано»"
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Успіх — це лише справа везіння»",
+      "en": "Statement: \"Success is just a matter of luck\"",
+      "ru": "Утверждение: «Успех — это всего лишь удача»"
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Люди мають право на евтаназію»",
+      "en": "Statement: \"People have the right to euthanasia\"",
+      "ru": "Утверждение: «Люди имеют право на эвтаназию»"
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мистецтво повинно бути без жодних обмежень»",
+      "en": "Statement: \"Art should have no limits\"",
+      "ru": "Утверждение: «Искусство не должно иметь границ»"
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Письмова мова скоро зникне»",
+      "en": "Statement: \"Written language will soon disappear\"",
+      "ru": "Утверждение: «Письменный язык скоро исчезнет»"
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Шкільна форма пригнічує індивідуальність»",
+      "en": "Statement: \"School uniforms suppress individuality\"",
+      "ru": "Утверждение: «Школьная форма подавляет индивидуальность»"
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Професія вчителя втратила авторитет»",
+      "en": "Statement: \"The teaching profession has lost its authority\"",
+      "ru": "Утверждение: «Профессия учителя утратила авторитет»"
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Фізична праця зникає — і це добре»",
+      "en": "Statement: \"Physical labor is disappearing — and that's good\"",
+      "ru": "Утверждение: «Физический труд исчезает — и это хорошо»"
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Світ став занадто толерантним»",
+      "en": "Statement: \"The world has become too tolerant\"",
+      "ru": "Утверждение: «Мир стал слишком толерантным»"
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Діти повинні працювати з підліткового віку»",
+      "en": "Statement: \"Children should work from teenage years\"",
+      "ru": "Утверждение: «Дети должны работать с подросткового возраста»"
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Платна медицина — це справедливо»",
+      "en": "Statement: \"Paid healthcare is fair\"",
+      "ru": "Утверждение: «Платная медицина — это справедливо»"
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Старіння — це хвороба, яку треба лікувати»",
+      "en": "Statement: \"Aging is a disease that should be cured\"",
+      "ru": "Утверждение: «Старение — это болезнь, которую нужно лечить»"
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Люди не повинні жити понад 80 років»",
+      "en": "Statement: \"People shouldn't live past 80\"",
+      "ru": "Утверждение: «Люди не должны жить дольше 80 лет»"
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Історія не має значення для майбутнього»",
+      "en": "Statement: \"History doesn't matter for the future\"",
+      "ru": "Утверждение: «История не имеет значения для будущего»"
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Світ не потребує нових лідерів»",
+      "en": "Statement: \"The world doesn't need new leaders\"",
+      "ru": "Утверждение: «Миру не нужны новые лидеры»"
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Гроші роблять людей щасливими»",
+      "en": "Statement: \"Money makes people happy\"",
+      "ru": "Утверждение: «Деньги делают людей счастливыми»"
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода слова має межі»",
+      "en": "Statement: \"Freedom of speech has limits\"",
+      "ru": "Утверждение: «Свобода слова имеет границы»"
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Штучний інтелект має замінити політиків»",
+      "en": "Statement: \"Artificial intelligence should replace politicians\"",
+      "ru": "Утверждение: «Искусственный интеллект должен заменить политиков»"
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Права тварин перебільшені»",
+      "en": "Statement: \"Animal rights are overrated\"",
+      "ru": "Утверждение: «Права животных переоценены»"
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Демократія — не найкраща форма правління»",
+      "en": "Statement: \"Democracy is not the best form of government\"",
+      "ru": "Утверждение: «Демократия — не лучшая форма правления»"
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людство повинно відмовитися від приватної власності»",
+      "en": "Statement: \"Humanity should give up private property\"",
+      "ru": "Утверждение: «Человечество должно отказаться от частной собственности»"
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Освіта онлайн краща за традиційну»",
+      "en": "Statement: \"Online education is better than traditional\"",
+      "ru": "Утверждение: «Онлайн-образование лучше традиционного»"
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Глобалізація знищує культуру»",
+      "en": "Statement: \"Globalization destroys culture\"",
+      "ru": "Утверждение: «Глобализация разрушает культуру»"
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Багаті люди повинні платити більші податки»",
+      "en": "Statement: \"Rich people should pay higher taxes\"",
+      "ru": "Утверждение: «Богатые должны платить больше налогов»"
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Політична апатія — це свідомий вибір»",
+      "en": "Statement: \"Political apathy is a conscious choice\"",
+      "ru": "Утверждение: «Политическая апатия — это осознанный выбор»"
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Світові війни навчали людей більше, ніж мир»",
+      "en": "Statement: \"World wars taught people more than peace\"",
+      "ru": "Утверждение: «Мировые войны научили людей больше, чем мир»"
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Еліти мають більше прав, ніж маси»",
+      "en": "Statement: \"Elites should have more rights than the masses\"",
+      "ru": "Утверждение: «У элит должно быть больше прав, чем у масс»"
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Суворі закони роблять суспільство безпечнішим»",
+      "en": "Statement: \"Harsh laws make society safer\"",
+      "ru": "Утверждение: «Жесткие законы делают общество безопаснее»"
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Інтелект важливіший за емоції»",
+      "en": "Statement: \"Intellect is more important than emotion\"",
+      "ru": "Утверждение: «Интеллект важнее эмоций»"
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Пластична хірургія — це форма самоповаги»",
+      "en": "Statement: \"Plastic surgery is a form of self-respect\"",
+      "ru": "Утверждение: «Пластическая хирургия — это форма самоуважения»"
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Наука повинна бути вищою за мораль»",
+      "en": "Statement: \"Science should be above morality\"",
+      "ru": "Утверждение: «Наука должна быть выше морали»"
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Батьки не зобов’язані жертвувати всім заради дітей»",
+      "en": "Statement: \"Parents don't have to sacrifice everything for their children\"",
+      "ru": "Утверждение: «Родители не обязаны жертвовать всем ради детей»"
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Військова служба має бути обов’язковою»",
+      "en": "Statement: \"Military service should be mandatory\"",
+      "ru": "Утверждение: «Военная служба должна быть обязательной»"
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Лідерами мають бути лише найжорсткіші»",
+      "en": "Statement: \"Only the toughest should be leaders\"",
+      "ru": "Утверждение: «Только самые жесткие должны быть лидерами»"
+    }
+  },
+  {
+    "id": "61",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Публічне життя — це добровільна втрата приватності»",
+      "en": "Statement: \"Public life means voluntarily giving up privacy\"",
+      "ru": "Утверждение: «Публичная жизнь — это добровольный отказ от личной жизни»"
+    }
+  },
+  {
+    "id": "62",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людське життя не завжди є найвищою цінністю»",
+      "en": "Statement: \"Human life is not always the highest value\"",
+      "ru": "Утверждение: «Человеческая жизнь не всегда — высшая ценность»"
+    }
+  },
+  {
+    "id": "63",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Безробіття стимулює розвиток»",
+      "en": "Statement: \"Unemployment drives progress\"",
+      "ru": "Утверждение: «Безработица стимулирует развитие»"
+    }
+  },
+  {
+    "id": "64",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Насильство — іноді ефективний метод»",
+      "en": "Statement: \"Violence is sometimes an effective method\"",
+      "ru": "Утверждение: «Насилие иногда эффективно»"
+    }
+  },
+  {
+    "id": "65",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Люди не заслуговують на рівні можливості»",
+      "en": "Statement: \"People don't deserve equal opportunities\"",
+      "ru": "Утверждение: «Люди не заслуживают равных возможностей»"
+    }
+  },
+  {
+    "id": "66",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода вибору — це ілюзія»",
+      "en": "Statement: \"Freedom of choice is an illusion\"",
+      "ru": "Утверждение: «Свобода выбора — это иллюзия»"
+    }
+  },
+  {
+    "id": "67",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Шлюб більше не має сенсу в сучасному світі»",
+      "en": "Statement: \"Marriage no longer makes sense in the modern world\"",
+      "ru": "Утверждение: «Брак больше не имеет смысла в современном мире»"
+    }
+  },
+  {
+    "id": "68",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людство ніколи не буде рівним»",
+      "en": "Statement: \"Humanity will never be equal\"",
+      "ru": "Утверждение: «Человечество никогда не будет равным»"
+    }
+  },
+  {
+    "id": "69",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Наука має ігнорувати етику для розвитку»",
+      "en": "Statement: \"Science must ignore ethics to progress\"",
+      "ru": "Утверждение: «Наука должна игнорировать этику ради прогресса»"
+    }
+  },
+  {
+    "id": "70",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Популізм — це ефективна політична стратегія»",
+      "en": "Statement: \"Populism is an effective political strategy\"",
+      "ru": "Утверждение: «Популизм — это эффективная политическая стратегия»"
+    }
+  },
+  {
+    "id": "71",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Кліматичні зміни не такі вже й небезпечні»",
+      "en": "Statement: \"Climate change is not that dangerous\"",
+      "ru": "Утверждение: «Изменение климата не так уж и опасно»"
+    }
+  },
+  {
+    "id": "72",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мистецтво більше не має ваги в суспільстві»",
+      "en": "Statement: \"Art no longer matters in society\"",
+      "ru": "Утверждение: «Искусство больше не имеет значения в обществе»"
+    }
+  },
+  {
+    "id": "73",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Пенсійна система — це фінансова піраміда»",
+      "en": "Statement: \"The pension system is a Ponzi scheme\"",
+      "ru": "Утверждение: «Пенсионная система — это финансовая пирамида»"
+    }
+  },
+  {
+    "id": "74",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Освіченість — не обов’язкова для успіху»",
+      "en": "Statement: \"Education is not necessary for success\"",
+      "ru": "Утверждение: «Образование не обязательно для успеха»"
+    }
+  },
+  {
+    "id": "75",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Чесність шкодить у бізнесі»",
+      "en": "Statement: \"Honesty is harmful in business\"",
+      "ru": "Утверждение: «Честность вредит бизнесу»"
+    }
+  },
+  {
+    "id": "76",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мораль — це лише соціальна вигадка»",
+      "en": "Statement: \"Morality is just a social construct\"",
+      "ru": "Утверждение: «Мораль — это всего лишь социальный конструкт»"
+    }
+  },
+  {
+    "id": "77",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще бути багатим і нещасним, ніж бідним і щасливим»",
+      "en": "Statement: \"Better to be rich and unhappy than poor and happy\"",
+      "ru": "Утверждение: «Лучше быть богатым и несчастным, чем бедным и счастливым»"
+    }
+  },
+  {
+    "id": "78",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Соціальні мережі — це зло, яке неможливо контролювати»",
+      "en": "Statement: \"Social media is an uncontrollable evil\"",
+      "ru": "Утверждение: «Социальные сети — это неконтролируемое зло»"
+    }
+  },
+  {
+    "id": "79",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Масова культура вбиває інтелект»",
+      "en": "Statement: \"Mass culture kills intellect\"",
+      "ru": "Утверждение: «Массовая культура убивает интеллект»"
+    }
+  },
+  {
+    "id": "80",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Працювати понаднормово — це ознака сили, а не експлуатації»",
+      "en": "Statement: \"Overworking is a sign of strength, not exploitation\"",
+      "ru": "Утверждение: «Переработка — это признак силы, а не эксплуатации»"
+    }
+  },
+  {
+    "id": "81",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Патріотизм — це форма маніпуляції»",
+      "en": "Statement: \"Patriotism is a form of manipulation\"",
+      "ru": "Утверждение: «Патриотизм — это форма манипуляции»"
+    }
+  },
+  {
+    "id": "82",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Гуманітарна допомога лише продовжує страждання»",
+      "en": "Statement: \"Humanitarian aid only prolongs suffering\"",
+      "ru": "Утверждение: «Гуманитарная помощь лишь продлевает страдания»"
+    }
+  },
+  {
+    "id": "83",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Лідер має бути авторитарним»",
+      "en": "Statement: \"A leader must be authoritarian\"",
+      "ru": "Утверждение: «Лидер должен быть авторитарным»"
+    }
+  },
+  {
+    "id": "84",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Традиції стримують розвиток»",
+      "en": "Statement: \"Traditions hold back progress\"",
+      "ru": "Утверждение: «Традиции сдерживают прогресс»"
+    }
+  },
+  {
+    "id": "85",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще мати контроль, ніж довіру»",
+      "en": "Statement: \"Better to have control than trust\"",
+      "ru": "Утверждение: «Лучше контроль, чем доверие»"
+    }
+  },
+  {
+    "id": "86",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Ідеї важливіші за людей»",
+      "en": "Statement: \"Ideas matter more than people\"",
+      "ru": "Утверждение: «Идеи важнее людей»"
+    }
+  },
+  {
+    "id": "87",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Масове стеження — необхідність, а не загроза»",
+      "en": "Statement: \"Mass surveillance is a necessity, not a threat\"",
+      "ru": "Утверждение: «Массовая слежка — это необходимость, а не угроза»"
+    }
+  },
+  {
+    "id": "88",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Гроші — найчесніший спосіб оцінки людини»",
+      "en": "Statement: \"Money is the most honest way to measure a person\"",
+      "ru": "Утверждение: «Деньги — самый честный способ оценить человека»"
+    }
+  },
+  {
+    "id": "89",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Освіта — це переоцінений привілей»",
+      "en": "Statement: \"Education is an overrated privilege\"",
+      "ru": "Утверждение: «Образование — это переоценённая привилегия»"
+    }
+  },
+  {
+    "id": "90",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Права людини гальмують правосуддя»",
+      "en": "Statement: \"Human rights slow down justice\"",
+      "ru": "Утверждение: «Права человека тормозят правосудие»"
+    }
+  },
+  {
+    "id": "91",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Еліти мають більше прав, бо несуть більше відповідальності»",
+      "en": "Statement: \"Elites deserve more rights because they bear more responsibility\"",
+      "ru": "Утверждение: «Элиты заслуживают больше прав, потому что несут больше ответственности»"
+    }
+  },
+  {
+    "id": "92",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Більшість завжди помиляється»",
+      "en": "Statement: \"The majority is always wrong\"",
+      "ru": "Утверждение: «Большинство всегда ошибается»"
+    }
+  },
+  {
+    "id": "93",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Цензура рятує суспільство»",
+      "en": "Statement: \"Censorship saves society\"",
+      "ru": "Утверждение: «Цензура спасает общество»"
+    }
+  },
+  {
+    "id": "94",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Масова демократія — це хаос під прикриттям»",
+      "en": "Statement: \"Mass democracy is chaos in disguise\"",
+      "ru": "Утверждение: «Массовая демократия — это хаос под прикрытием»"
+    }
+  },
+  {
+    "id": "95",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Старість — це тягар для суспільства»",
+      "en": "Statement: \"Old age is a burden to society\"",
+      "ru": "Утверждение: «Старость — это бремя для общества»"
+    }
+  },
+  {
+    "id": "96",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода слова шкодить слабким»",
+      "en": "Statement: \"Free speech harms the vulnerable\"",
+      "ru": "Утверждение: «Свобода слова вредит уязвимым»"
+    }
+  },
+  {
+    "id": "97",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Інновації — це загроза стабільності»",
+      "en": "Statement: \"Innovation is a threat to stability\"",
+      "ru": "Утверждение: «Инновации — угроза стабильности»"
+    }
+  },
+  {
+    "id": "98",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Тільки сильні мають право виживати»",
+      "en": "Statement: \"Only the strong deserve to survive\"",
+      "ru": "Утверждение: «Только сильные заслуживают выживания»"
+    }
+  },
+  {
+    "id": "99",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Бідність — це вибір»",
+      "en": "Statement: \"Poverty is a choice\"",
+      "ru": "Утверждение: «Бедность — это выбор»"
+    }
+  },
+  {
+    "id": "100",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Штучний інтелект має замінити політиків»",
+      "en": "Statement: \"AI should replace politicians\"",
+      "ru": "Утверждение: «ИИ должен заменить политиков»"
+    }
+  },
+  {
+    "id": "101",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Суспільство потребує страху для дисципліни»",
+      "en": "Statement: \"Society needs fear for discipline\"",
+      "ru": "Утверждение: «Обществу нужен страх для дисциплины»"
+    }
+  },
+  {
+    "id": "102",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Милосердя шкодить еволюції»",
+      "en": "Statement: \"Compassion hinders evolution\"",
+      "ru": "Утверждение: «Милосердие мешает эволюции»"
+    }
+  },
+  {
+    "id": "103",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще жити в страху, ніж у свободі»",
+      "en": "Statement: \"Better to live in fear than in freedom\"",
+      "ru": "Утверждение: «Лучше жить в страхе, чем на свободе»"
+    }
+  },
+  {
+    "id": "104",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Релігія потрібна лише для контролю мас»",
+      "en": "Statement: \"Religion exists only to control the masses\"",
+      "ru": "Утверждение: «Религия существует только для контроля над массами»"
+    }
+  },
+  {
+    "id": "105",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще жорсткий порядок, ніж добрий хаос»",
+      "en": "Statement: \"Strict order is better than kind chaos\"",
+      "ru": "Утверждение: «Жёсткий порядок лучше доброго хаоса»"
+    }
+  },
+  {
+    "id": "106",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Діти — це тягар для сучасного світу»",
+      "en": "Statement: \"Children are a burden in the modern world\"",
+      "ru": "Утверждение: «Дети — это бремя для современного мира»"
+    }
+  },
+  {
+    "id": "107",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мистецтво не має практичної цінності»",
+      "en": "Statement: \"Art has no practical value\"",
+      "ru": "Утверждение: «Искусство не имеет практической ценности»"
+    }
+  },
+  {
+    "id": "108",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Співчуття — слабкість, не чеснота»",
+      "en": "Statement: \"Empathy is a weakness, not a virtue\"",
+      "ru": "Утверждение: «Сострадание — это слабость, а не добродетель»"
+    }
+  },
+  {
+    "id": "109",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Суспільство потребує ворога для єдності»",
+      "en": "Statement: \"Society needs an enemy to stay united\"",
+      "ru": "Утверждение: «Обществу нужен враг для единства»"
+    }
+  },
+  {
+    "id": "110",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Медицина повинна бути платною для ефективності»",
+      "en": "Statement: \"Healthcare should be paid to stay effective\"",
+      "ru": "Утверждение: «Медицина должна быть платной для эффективности»"
+    }
+  },
+  {
+    "id": "111",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Нерівність — це природний стан речей»",
+      "en": "Statement: \"Inequality is the natural order of things\"",
+      "ru": "Утверждение: «Неравенство — это естественный порядок вещей»"
+    }
+  },
+  {
+    "id": "112",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Приватність — це ілюзія, яку варто позбутись»",
+      "en": "Statement: \"Privacy is an illusion we should abandon\"",
+      "ru": "Утверждение: «Конфиденциальность — это иллюзия, от которой стоит отказаться»"
+    }
+  },
+  {
+    "id": "113",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще репресії, ніж бездіяльність»",
+      "en": "Statement: \"Better repression than inaction\"",
+      "ru": "Утверждение: «Лучше репрессии, чем бездействие»"
+    }
+  },
+  {
+    "id": "114",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Знання повинні бути обмеженими»",
+      "en": "Statement: \"Knowledge should be restricted\"",
+      "ru": "Утверждение: «Знания должны быть ограничены»"
+    }
+  },
+  {
+    "id": "115",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Примус ефективніший за переконання»",
+      "en": "Statement: \"Force works better than persuasion\"",
+      "ru": "Утверждение: «Принуждение эффективнее убеждения»"
+    }
+  },
+  {
+    "id": "116",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Смертна кара — прояв справедливості»",
+      "en": "Statement: \"Death penalty is a form of justice\"",
+      "ru": "Утверждение: «Смертная казнь — это проявление справедливости»"
+    }
+  },
+  {
+    "id": "117",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Більшість людей заслуговують бути керованими»",
+      "en": "Statement: \"Most people deserve to be ruled\"",
+      "ru": "Утверждение: «Большинство людей заслуживают, чтобы ими управляли»"
+    }
+  },
+  {
+    "id": "118",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мирна угода — це поразка в повільному темпі»",
+      "en": "Statement: \"Peace agreement is just a slow defeat\"",
+      "ru": "Утверждение: «Мирное соглашение — это просто медленное поражение»"
+    }
+  },
+  {
+    "id": "119",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода — це лише ідеологічна пастка»",
+      "en": "Statement: \"Freedom is just an ideological trap\"",
+      "ru": "Утверждение: «Свобода — это просто идеологическая ловушка»"
+    }
+  },
+  {
+    "id": "120",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Слабким не місце в політиці»",
+      "en": "Statement: \"The weak have no place in politics\"",
+      "ru": "Утверждение: «Слабым не место в политике»"
+    }
+  },
+  {
+    "id": "121",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Істина не має значення без сили»",
+      "en": "Statement: \"Truth is meaningless without power\"",
+      "ru": "Утверждение: «Истина не имеет значения без силы»"
+    }
+  },
+  {
+    "id": "122",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Екологія — це розкіш, а не необхідність»",
+      "en": "Statement: \"Ecology is a luxury, not a necessity\"",
+      "ru": "Утверждение: «Экология — это роскошь, а не необходимость»"
+    }
+  },
+  {
+    "id": "123",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Культура гальмує розвиток технологій»",
+      "en": "Statement: \"Culture slows down technological progress\"",
+      "ru": "Утверждение: «Культура тормозит развитие технологий»"
+    }
+  },
+  {
+    "id": "124",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Ідеали — для наївних»",
+      "en": "Statement: \"Ideals are for the naive\"",
+      "ru": "Утверждение: «Идеалы — для наивных»"
+    }
+  },
+  {
+    "id": "125",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Насильство — ефективний спосіб вирішення конфліктів»",
+      "en": "Statement: \"Violence is an effective way to resolve conflicts\"",
+      "ru": "Утверждение: «Насилие — эффективный способ решения конфликтов»"
+    }
+  },
+  {
+    "id": "126",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Найкращий лідер — диктатор»",
+      "en": "Statement: \"The best leader is a dictator\"",
+      "ru": "Утверждение: «Лучший лидер — это диктатор»"
+    }
+  },
+  {
+    "id": "127",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Інтелект — це загроза стабільності»",
+      "en": "Statement: \"Intelligence is a threat to stability\"",
+      "ru": "Утверждение: «Интеллект — угроза стабильности»"
+    }
+  },
+  {
+    "id": "128",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людське життя не має абсолютної цінності»",
+      "en": "Statement: \"Human life has no absolute value\"",
+      "ru": "Утверждение: «Человеческая жизнь не имеет абсолютной ценности»"
+    }
+  },
+  {
+    "id": "129",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Чесність — слабкість у бізнесі»",
+      "en": "Statement: \"Honesty is a weakness in business\"",
+      "ru": "Утверждение: «Честность — это слабость в бизнесе»"
+    }
+  },
+  {
+    "id": "130",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людство — це вірус на планеті»",
+      "en": "Statement: \"Humanity is a virus on the planet\"",
+      "ru": "Утверждение: «Человечество — это вирус на планете»"
+    }
+  },
+  {
+    "id": "131",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Нікчемні мають бути жертвами сильних»",
+      "en": "Statement: \"The weak are meant to be victims of the strong\"",
+      "ru": "Утверждение: «Слабые должны быть жертвами сильных»"
+    }
+  },
+  {
+    "id": "132",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Старість — це тягар, який слід мінімізувати»",
+      "en": "Statement: \"Old age is a burden to be minimized\"",
+      "ru": "Утверждение: «Старость — это бремя, которое нужно минимизировать»"
+    }
+  },
+  {
+    "id": "133",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Освіта — переоцінений інструмент»",
+      "en": "Statement: \"Education is an overrated tool\"",
+      "ru": "Утверждение: «Образование — переоценённый инструмент»"
+    }
+  },
+  {
+    "id": "134",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Глобалізація — форма колонізації»",
+      "en": "Statement: \"Globalization is a form of colonization\"",
+      "ru": "Утверждение: «Глобализация — это форма колонизации»"
+    }
+  },
+  {
+    "id": "135",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Кохання — це хімічна ілюзія»",
+      "en": "Statement: \"Love is a chemical illusion\"",
+      "ru": "Утверждение: «Любовь — это химическая иллюзия»"
+    }
+  },
+  {
+    "id": "136",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Масова культура робить людей дурними»",
+      "en": "Statement: \"Mass culture makes people stupid\"",
+      "ru": "Утверждение: «Массовая культура делает людей глупыми»"
+    }
+  },
+  {
+    "id": "137",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Злочинність — частина природного відбору»",
+      "en": "Statement: \"Crime is part of natural selection\"",
+      "ru": "Утверждение: «Преступность — это часть естественного отбора»"
+    }
+  },
+  {
+    "id": "138",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Патріотизм — це форма фанатизму»",
+      "en": "Statement: \"Patriotism is a form of fanaticism\"",
+      "ru": "Утверждение: «Патриотизм — это форма фанатизма»"
+    }
+  },
+  {
+    "id": "139",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода слова повинна мати межі правди»",
+      "en": "Statement: \"Freedom of speech should be limited to truth\"",
+      "ru": "Утверждение: «Свобода слова должна быть ограничена правдой»"
+    }
+  },
+  {
+    "id": "140",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Війна — єдиний шлях до справжнього прогресу»",
+      "en": "Statement: \"War is the only path to real progress\"",
+      "ru": "Утверждение: «Война — единственный путь к настоящему прогрессу»"
+    }
+  },
+  {
+    "id": "141",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мораль — це лише зручна вигадка»",
+      "en": "Statement: \"Morality is just a convenient fiction\"",
+      "ru": "Утверждение: «Мораль — это просто удобная выдумка»"
+    }
+  },
+  {
+    "id": "142",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Демократія — це прихована диктатура більшості»",
+      "en": "Statement: \"Democracy is a hidden dictatorship of the majority\"",
+      "ru": "Утверждение: «Демократия — это скрытая диктатура большинства»"
+    }
+  },
+  {
+    "id": "143",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мистецтво не має жодної практичної цінності»",
+      "en": "Statement: \"Art has no practical value\"",
+      "ru": "Утверждение: «Искусство не имеет никакой практической ценности»"
+    }
+  },
+  {
+    "id": "144",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Діти — це тягар для суспільства»",
+      "en": "Statement: \"Children are a burden to society\"",
+      "ru": "Утверждение: «Дети — это бремя для общества»"
+    }
+  },
+  {
+    "id": "145",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Медійна свобода призводить до хаосу»",
+      "en": "Statement: \"Media freedom leads to chaos\"",
+      "ru": "Утверждение: «Свобода СМИ приводит к хаосу»"
+    }
+  },
+  {
+    "id": "146",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Технології роблять людей лінивими й дурними»",
+      "en": "Statement: \"Technology makes people lazy and dumb\"",
+      "ru": "Утверждение: «Технологии делают людей ленивыми и глупыми»"
+    }
+  },
+  {
+    "id": "147",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Смертна кара — найкраща форма правосуддя»",
+      "en": "Statement: \"Capital punishment is the best form of justice\"",
+      "ru": "Утверждение: «Смертная казнь — лучшая форма правосудия»"
+    }
+  },
+  {
+    "id": "148",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Люди не заслуговують на приватність»",
+      "en": "Statement: \"People don't deserve privacy\"",
+      "ru": "Утверждение: «Люди не заслуживают приватности»"
+    }
+  },
+  {
+    "id": "149",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Справедливість — це ілюзія»",
+      "en": "Statement: \"Justice is an illusion\"",
+      "ru": "Утверждение: «Справедливость — это иллюзия»"
+    }
+  },
+  {
+    "id": "150",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Релігія гальмує прогрес людства»",
+      "en": "Statement: \"Religion holds back human progress\"",
+      "ru": "Утверждение: «Религия тормозит прогресс человечества»"
+    }
+  },
+  {
+    "id": "151",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Більшість винаходів — марна трата ресурсів»",
+      "en": "Statement: \"Most inventions are a waste of resources\"",
+      "ru": "Утверждение: «Большинство изобретений — пустая трата ресурсов»"
+    }
+  },
+  {
+    "id": "152",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Масова освіта дегуманізує мислення»",
+      "en": "Statement: \"Mass education dehumanizes thinking\"",
+      "ru": "Утверждение: «Массовое образование дегуманизирует мышление»"
+    }
+  },
+  {
+    "id": "153",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Наука не має моралі»",
+      "en": "Statement: \"Science has no morality\"",
+      "ru": "Утверждение: «Наука не имеет морали»"
+    }
+  },
+  {
+    "id": "154",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Знання робить життя нестерпним»",
+      "en": "Statement: \"Knowledge makes life unbearable\"",
+      "ru": "Утверждение: «Знание делает жизнь невыносимой»"
+    }
+  },
+  {
+    "id": "155",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Добро — це лише результат страху перед покаранням»",
+      "en": "Statement: \"Goodness is just fear of punishment\"",
+      "ru": "Утверждение: «Доброта — это просто страх наказания»"
+    }
+  },
+  {
+    "id": "156",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Майбутнє варте будь-якої ціни»",
+      "en": "Statement: \"The future is worth any price\"",
+      "ru": "Утверждение: «Будущее стоит любой цены»"
+    }
+  },
+  {
+    "id": "157",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Люди заслуговують лише на те, що можуть взяти силою»",
+      "en": "Statement: \"People deserve only what they can take by force\"",
+      "ru": "Утверждение: «Люди заслуживают только то, что могут взять силой»"
+    }
+  },
+  {
+    "id": "158",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Національна ідентичність — вигаданий конструкт»",
+      "en": "Statement: \"National identity is a fictional construct\"",
+      "ru": "Утверждение: «Национальная идентичность — выдуманный конструкт»"
+    }
+  },
+  {
+    "id": "159",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Штучний інтелект — єдиний шанс людства на виживання»",
+      "en": "Statement: \"AI is humanity's only chance of survival\"",
+      "ru": "Утверждение: «ИИ — единственный шанс человечества выжить»"
+    }
+  },
+  {
+    "id": "160",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Інтернет — це пастка для свідомості»",
+      "en": "Statement: \"The internet is a trap for the mind\"",
+      "ru": "Утверждение: «Интернет — это ловушка для сознания»"
+    }
+  },
+  {
+    "id": "161",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Свобода — це ілюзія, вигідна елітам»",
+      "en": "Statement: \"Freedom is an illusion that benefits the elites\"",
+      "ru": "Утверждение: «Свобода — это иллюзия, выгодная элитам»"
+    }
+  },
+  {
+    "id": "162",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Ніколи не варто допомагати слабким — це заважає еволюції»",
+      "en": "Statement: \"You should never help the weak—it hinders evolution\"",
+      "ru": "Утверждение: «Слабым помогать нельзя — это мешает эволюции»"
+    }
+  },
+  {
+    "id": "163",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мораль вигадана для контролю над масами»",
+      "en": "Statement: \"Morality was invented to control the masses\"",
+      "ru": "Утверждение: «Мораль придумана для контроля над массами»"
+    }
+  },
+  {
+    "id": "164",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Краще бути багатим і винним, ніж бідним і правим»",
+      "en": "Statement: \"Better to be rich and guilty than poor and right\"",
+      "ru": "Утверждение: «Лучше быть богатым и виноватым, чем бедным и правым»"
+    }
+  },
+  {
+    "id": "165",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Емпатія — це слабкість, яку варто викорінювати»",
+      "en": "Statement: \"Empathy is a weakness that should be eradicated\"",
+      "ru": "Утверждение: «Эмпатия — это слабость, которую надо искоренить»"
+    }
+  },
+  {
+    "id": "166",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Світові війни були корисними для прогресу»",
+      "en": "Statement: \"World wars were beneficial for progress\"",
+      "ru": "Утверждение: «Мировые войны были полезны для прогресса»"
+    }
+  },
+  {
+    "id": "167",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Права людини — це розкіш, а не норма»",
+      "en": "Statement: \"Human rights are a luxury, not a norm\"",
+      "ru": "Утверждение: «Права человека — это роскошь, а не норма»"
+    }
+  },
+  {
+    "id": "168",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Освічені люди частіше руйнують, ніж творять»",
+      "en": "Statement: \"Educated people destroy more than they create\"",
+      "ru": "Утверждение: «Образованные люди больше разрушают, чем создают»"
+    }
+  },
+  {
+    "id": "169",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Суспільство краще функціонує в страху»",
+      "en": "Statement: \"Society works better under fear\"",
+      "ru": "Утверждение: «Общество лучше работает в страхе»"
+    }
+  },
+  {
+    "id": "170",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Людство не заслуговує на порятунок»",
+      "en": "Statement: \"Humanity doesn't deserve to be saved\"",
+      "ru": "Утверждение: «Человечество не заслуживает спасения»"
+    }
+  },
+  {
+    "id": "171",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Злочин іноді виправданий, якщо приносить користь»",
+      "en": "Statement: \"Crime is sometimes justified if it brings benefit\"",
+      "ru": "Утверждение: «Преступление иногда оправдано, если оно приносит пользу»"
+    }
+  },
+  {
+    "id": "172",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мир — це тимчасова ілюзія між війнами»",
+      "en": "Statement: \"Peace is just a temporary illusion between wars\"",
+      "ru": "Утверждение: «Мир — это временная иллюзия между войнами»"
+    }
+  },
+  {
+    "id": "173",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Патріотизм — форма ірраціонального фанатизму»",
+      "en": "Statement: \"Patriotism is a form of irrational fanaticism\"",
+      "ru": "Утверждение: «Патриотизм — это форма иррационального фанатизма»"
+    }
+  },
+  {
+    "id": "174",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Доброчесність — лише маска для егоїзму»",
+      "en": "Statement: \"Virtue is just a mask for selfishness\"",
+      "ru": "Утверждение: «Добродетель — это всего лишь маска эгоизма»"
+    }
+  },
+  {
+    "id": "175",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Навчання — це спосіб приручити бунтівну свідомість»",
+      "en": "Statement: \"Education is a way to tame rebellious minds\"",
+      "ru": "Утверждение: «Образование — это способ приручить мятежный ум»"
+    }
+  },
+  {
+    "id": "176",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Кохання — це просто хімічна ілюзія»",
+      "en": "Statement: \"Love is just a chemical illusion\"",
+      "ru": "Утверждение: «Любовь — это просто химическая иллюзия»"
+    }
+  },
+  {
+    "id": "177",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Співчуття гальмує прогрес»",
+      "en": "Statement: \"Compassion slows down progress\"",
+      "ru": "Утверждение: «Сострадание тормозит прогресс»"
+    }
+  },
+  {
+    "id": "178",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Старість — це марна стадія життя»",
+      "en": "Statement: \"Old age is a useless stage of life\"",
+      "ru": "Утверждение: «Старость — это бесполезный этап жизни»"
+    }
+  },
+  {
+    "id": "179",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Усі люди зрештою егоїсти»",
+      "en": "Statement: \"All people are ultimately selfish\"",
+      "ru": "Утверждение: «Все люди в конечном итоге эгоисты»"
+    }
+  },
+  {
+    "id": "180",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Мрії — це пастка для незадоволених»",
+      "en": "Statement: \"Dreams are a trap for the dissatisfied\"",
+      "ru": "Утверждение: «Мечты — это ловушка для неудовлетворённых»"
+    }
+  },
+  {
+    "id": "181",
+    "sentence_type": "DEVILS_ADVOCATE",
+    "sentence": {
+      "ua": "Твердження: «Біль — єдиний реальний учитель у житті»",
+      "en": "Statement: \"Pain is the only real teacher in life\"",
+      "ru": "Утверждение: «Боль — единственный настоящий учитель в жизни»"
+    }
+  }
+]

@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ти не виглядаєш щасливим. Щось трапилося?",
+      "en": "— You don’t look happy. Did something happen?",
+      "ru": "— Ты не выглядишь счастливым. Что-то случилось?"
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Слухай, мені потрібно з тобою серйозно поговорити.",
+      "en": "— Listen, I need to talk to you seriously.",
+      "ru": "— Слушай, мне нужно серьёзно с тобой поговорить."
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я не знаю, чи зможу це зробити сам.",
+      "en": "— I’m not sure I can do this on my own.",
+      "ru": "— Я не уверен, что справлюсь с этим сам."
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це найкраща новина, яку я чув за весь день!",
+      "en": "— That’s the best news I’ve heard all day!",
+      "ru": "— Это лучшая новость за весь день!"
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ти бачив, як він на мене подивився?",
+      "en": "— Did you see the way he looked at me?",
+      "ru": "— Ты видел, как он на меня посмотрел?"
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я більше так не можу. Мені потрібна перерва.",
+      "en": "— I can’t do this anymore. I need a break.",
+      "ru": "— Я больше так не могу. Мне нужен перерыв."
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Сюрприз! Я замовив нам квитки на концерт!",
+      "en": "— Surprise! I got us tickets to the concert!",
+      "ru": "— Сюрприз! Я купил нам билеты на концерт!"
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— У тебе є хвилинка? Це важливо.",
+      "en": "— Do you have a minute? It’s important.",
+      "ru": "— У тебя есть минутка? Это важно."
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це не зовсім те, чого я очікував...",
+      "en": "— This isn’t exactly what I expected...",
+      "ru": "— Это не совсем то, что я ожидал..."
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я випадково видалив твій проєкт...",
+      "en": "— I accidentally deleted your project...",
+      "ru": "— Я случайно удалил твой проект..."
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Чому ти нічого не сказав раніше?",
+      "en": "— Why didn’t you say anything earlier?",
+      "ru": "— Почему ты ничего не сказал раньше?"
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я не міг повірити своїм очам!",
+      "en": "— I couldn’t believe my eyes!",
+      "ru": "— Я не мог поверить своим глазам!"
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ти пам’ятаєш, що обіцяв мені вчора?",
+      "en": "— Do you remember what you promised me yesterday?",
+      "ru": "— Ты помнишь, что обещал мне вчера?"
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Здається, я знайшов ідеальне місце для нас.",
+      "en": "— I think I found the perfect place for us.",
+      "ru": "— Кажется, я нашёл идеальное место для нас."
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— У мене є одна шалена ідея...",
+      "en": "— I have a crazy idea...",
+      "ru": "— У меня есть одна безумная идея..."
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— А якщо все піде не так?",
+      "en": "— What if everything goes wrong?",
+      "ru": "— А если всё пойдёт не так?"
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Можеш тримати це в таємниці?",
+      "en": "— Can you keep this a secret?",
+      "ru": "— Можешь сохранить это в тайне?"
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я виграв! Я справді виграв!",
+      "en": "— I won! I actually won!",
+      "ru": "— Я выиграл! Я действительно выиграл!"
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Мені треба тобі щось зізнатися.",
+      "en": "— I need to confess something to you.",
+      "ru": "— Мне нужно тебе кое в чём признаться."
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це найгірший день у моєму житті...",
+      "en": "— This is the worst day of my life...",
+      "ru": "— Это худший день в моей жизни..."
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Як думаєш, чи варто ризикувати?",
+      "en": "— Do you think it’s worth the risk?",
+      "ru": "— Как думаешь, стоит ли рисковать?"
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я бачив, як ти щось ховав у рюкзаку.",
+      "en": "— I saw you hiding something in your backpack.",
+      "ru": "— Я видел, как ты что-то прятал в рюкзаке."
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Можеш пояснити, чому ти зник на три дні?",
+      "en": "— Can you explain why you disappeared for three days?",
+      "ru": "— Можешь объяснить, куда ты пропал на три дня?"
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Не повіриш, кого я щойно зустрів!",
+      "en": "— You won’t believe who I just ran into!",
+      "ru": "— Ты не поверишь, кого я только что встретил!"
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я вирішив кинути все й почати з нуля.",
+      "en": "— I’ve decided to drop everything and start over.",
+      "ru": "— Я решил всё бросить и начать сначала."
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— У тебе є план, чи ми імпровізуємо?",
+      "en": "— Do you have a plan, or are we improvising?",
+      "ru": "— У тебя есть план или мы импровизируем?"
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це був ти в новинах учора ввечері?",
+      "en": "— Was that you on the news last night?",
+      "ru": "— Это был ты в новостях вчера вечером?"
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я знаю, що ти про мене сказав.",
+      "en": "— I know what you said about me.",
+      "ru": "— Я знаю, что ты говорил обо мне."
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це місце виглядає знайомо…",
+      "en": "— This place looks familiar...",
+      "ru": "— Это место кажется мне знакомым..."
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Не забув, що сьогодні за день?",
+      "en": "— You didn’t forget what day it is, did you?",
+      "ru": "— Ты не забыл, какой сегодня день?"
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Мені потрібна твоя допомога прямо зараз.",
+      "en": "— I need your help right now.",
+      "ru": "— Мне нужна твоя помощь прямо сейчас."
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ми можемо зробити це разом, я впевнений.",
+      "en": "— We can do this together, I’m sure.",
+      "ru": "— Мы справимся вместе, я уверен."
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це точно була найгірша ідея у твоєму житті.",
+      "en": "— That was definitely the worst idea you’ve ever had.",
+      "ru": "— Это определённо была худшая идея в твоей жизни."
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— А якби все склалося інакше?",
+      "en": "— What if everything had turned out differently?",
+      "ru": "— А если бы всё сложилось иначе?"
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я забув пароль від сейфу...",
+      "en": "— I forgot the code to the safe...",
+      "ru": "— Я забыл код от сейфа..."
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це був лише сон, чи все справді сталося?",
+      "en": "— Was it just a dream, or did it really happen?",
+      "ru": "— Это был просто сон или всё это действительно случилось?"
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я записав тебе на стендап. Ти сьогодні виступаєш.",
+      "en": "— I signed you up for stand-up. You’re on tonight.",
+      "ru": "— Я записал тебя на стендап. Ты выступаешь сегодня."
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ти коли-небудь замислювався, чому ми тут?",
+      "en": "— Have you ever wondered why we’re here?",
+      "ru": "— Ты когда-нибудь задумывался, зачем мы здесь?"
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я випадково натиснув \"надіслати всім\"...",
+      "en": "— I accidentally hit 'send to all'...",
+      "ru": "— Я случайно нажал «отправить всем»..."
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— У тебе коли-небудь було відчуття, що за тобою стежать?",
+      "en": "— Have you ever felt like you’re being watched?",
+      "ru": "— У тебя когда-нибудь было чувство, что за тобой следят?"
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я не хочу втрачати тебе через дурницю.",
+      "en": "— I don’t want to lose you over something stupid.",
+      "ru": "— Я не хочу потерять тебя из-за глупости."
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Поглянь на небо! Це ж північне сяйво!",
+      "en": "— Look at the sky! It’s the northern lights!",
+      "ru": "— Посмотри на небо! Это же северное сияние!"
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ти залишив телефон у метро.",
+      "en": "— You left your phone on the subway.",
+      "ru": "— Ты забыл телефон в метро."
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я щойно пройшов співбесіду!",
+      "en": "— I just aced the interview!",
+      "ru": "— Я только что отлично прошёл собеседование!"
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Сьогодні я звільняюся. Назавжди.",
+      "en": "— Today I’m quitting. For good.",
+      "ru": "— Сегодня я увольняюсь. Насовсем."
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Можеш не відповідати, просто вислухай мене.",
+      "en": "— You don’t have to answer, just hear me out.",
+      "ru": "— Можешь не отвечать, просто выслушай меня."
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я не знаю, з чого почати, але я спробую.",
+      "en": "— I don’t know where to start, but I’ll try.",
+      "ru": "— Я не знаю, с чего начать, но я попробую."
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це був твій план з самого початку?",
+      "en": "— Was this your plan from the very beginning?",
+      "ru": "— Это был твой план с самого начала?"
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я почув щось у підвалі...",
+      "en": "— I heard something in the basement...",
+      "ru": "— Я что-то услышал в подвале..."
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— А якщо це був наш єдиний шанс?",
+      "en": "— What if that was our only chance?",
+      "ru": "— А если это был наш единственный шанс?"
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— У нас залишилося рівно 10 хвилин.",
+      "en": "— We have exactly 10 minutes left.",
+      "ru": "— У нас осталось ровно 10 минут."
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Це ще не кінець. Я маю один варіант.",
+      "en": "— This isn’t over. I have one last idea.",
+      "ru": "— Это ещё не конец. У меня есть одна последняя идея."
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Ти впевнений, що нам можна сюди заходити?",
+      "en": "— Are you sure we’re allowed in here?",
+      "ru": "— Ты уверен, что нам сюда можно?"
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Не зараз. Якщо я зупинюся — все пропало.",
+      "en": "— Not now. If I stop, it’s all over.",
+      "ru": "— Не сейчас. Если я остановлюсь — всё пропало."
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я залишив ключі всередині машини...",
+      "en": "— I locked the keys inside the car...",
+      "ru": "— Я оставил ключи в машине..."
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Вітаю, ти щойно виграв головний приз!",
+      "en": "— Congratulations, you just won the grand prize!",
+      "ru": "— Поздравляю, ты только что выиграл главный приз!"
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Вона щось приховує. Я це відчуваю.",
+      "en": "— She’s hiding something. I can feel it.",
+      "ru": "— Она что-то скрывает. Я это чувствую."
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Де ти був усю ніч?",
+      "en": "— Where have you been all night?",
+      "ru": "— Где ты был всю ночь?"
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Як ти міг залишити мене там одного?",
+      "en": "— How could you leave me there alone?",
+      "ru": "— Как ты мог оставить меня там одного?"
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "— Я думаю, я щойно зробив найбільшу помилку в житті.",
+      "en": "— I think I just made the biggest mistake of my life.",
+      "ru": "— Кажется, я только что совершил самую большую ошибку в своей жизни."
+    }
+  },
+  {
+    "id": 51,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Тобі не здається, що ми забагато працюємо?",
+      "en": "Don’t you think we’re working too much?",
+      "ru": "Тебе не смущает, что мы слишком много работаем?"
+    }
+  },
+  {
+    "id": 52,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я щойно бачив дуже дивну річ у парку.",
+      "en": "I just saw something really strange in the park.",
+      "ru": "Я только что видел нечто очень странное в парке."
+    }
+  },
+  {
+    "id": 53,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "А що, як усе піде не за планом?",
+      "en": "What if everything goes off plan?",
+      "ru": "А что, если всё пойдёт не по плану?"
+    }
+  },
+  {
+    "id": 54,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я вирішив почати нове життя.",
+      "en": "Today I’ve decided to start a new life.",
+      "ru": "Сегодня я решил начать новую жизнь."
+    }
+  },
+  {
+    "id": 55,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти не забув, що в нас сьогодні важлива зустріч?",
+      "en": "Did you forget we have an important meeting today?",
+      "ru": "Ты не забыл, что у нас сегодня важная встреча?"
+    }
+  },
+  {
+    "id": 56,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, цей фільм щось у мені змінив.",
+      "en": "I feel like this movie changed something in me.",
+      "ru": "Мне кажется, этот фильм что-то во мне изменил."
+    }
+  },
+  {
+    "id": 57,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Чому ти завжди мовчиш, коли я тебе питаю?",
+      "en": "Why do you always stay silent when I ask you something?",
+      "ru": "Почему ты всегда молчишь, когда я тебя спрашиваю?"
+    }
+  },
+  {
+    "id": 58,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "У мене сьогодні дивне відчуття, ніби щось станеться.",
+      "en": "I have a strange feeling today, like something’s going to happen.",
+      "ru": "У меня сегодня странное чувство, будто что-то произойдёт."
+    }
+  },
+  {
+    "id": 59,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти чув новини? Це просто шок!",
+      "en": "Did you hear the news? It’s a total shock!",
+      "ru": "Ты слышал новости? Это просто шок!"
+    }
+  },
+  {
+    "id": 60,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні проспав — знову!",
+      "en": "I overslept today — again!",
+      "ru": "Я сегодня проспал — снова!"
+    }
+  },
+  {
+    "id": 61,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "А якщо я тобі скажу, що маю секрет?",
+      "en": "What if I tell you I have a secret?",
+      "ru": "А если я скажу тебе, что у меня есть секрет?"
+    }
+  },
+  {
+    "id": 62,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Давай втечемо кудись на вихідні!",
+      "en": "Let’s run away somewhere for the weekend!",
+      "ru": "Давай сбежим куда-нибудь на выходные!"
+    }
+  },
+  {
+    "id": 63,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я нарешті зважився — я звільняюся!",
+      "en": "I finally made up my mind — I’m quitting!",
+      "ru": "Я наконец решился — увольняюсь!"
+    }
+  },
+  {
+    "id": 64,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Можеш повірити, що це сталося зі мною?",
+      "en": "Can you believe this actually happened to me?",
+      "ru": "Можешь поверить, что это произошло со мной?"
+    }
+  },
+  {
+    "id": 65,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я знову не встиг усе зробити...",
+      "en": "I didn’t manage to finish everything again...",
+      "ru": "Я снова не успел всё сделать..."
+    }
+  },
+  {
+    "id": 66,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти коли-небудь думав, що було б, якби ми жили в іншій країні?",
+      "en": "Have you ever thought what it would be like if we lived in another country?",
+      "ru": "Ты когда-нибудь думал, как было бы, если бы мы жили в другой стране?"
+    }
+  },
+  {
+    "id": 67,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Це вже третя кава за сьогодні, і мені все ще хочеться спати.",
+      "en": "This is my third coffee today, and I’m still sleepy.",
+      "ru": "Это уже третий кофе сегодня, а мне всё равно хочется спать."
+    }
+  },
+  {
+    "id": 68,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ми маємо серйозно поговорити.",
+      "en": "We need to have a serious talk.",
+      "ru": "Нам нужно серьёзно поговорить."
+    }
+  },
+  {
+    "id": 69,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "У тебе буває відчуття, ніби ти живеш не своє життя?",
+      "en": "Do you ever feel like you’re living someone else’s life?",
+      "ru": "У тебя бывает ощущение, будто ты живёшь не своей жизнью?"
+    }
+  },
+  {
+    "id": 70,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, ми загубили той запал, що був раніше.",
+      "en": "I think we’ve lost the spark we used to have.",
+      "ru": "Мне кажется, мы потеряли тот огонь, что был раньше."
+    }
+  },
+  {
+    "id": 71,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я тільки що випадково на когось налетів і розлив каву!",
+      "en": "I just accidentally bumped into someone and spilled my coffee!",
+      "ru": "Я только что случайно на кого-то налетел и пролил кофе!"
+    }
+  },
+  {
+    "id": 72,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Цей день тільки почався, а я вже втомлений.",
+      "en": "The day just started and I’m already tired.",
+      "ru": "День только начался, а я уже устал."
+    }
+  },
+  {
+    "id": 73,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я думаю, нам треба зробити паузу.",
+      "en": "I think we need to take a break.",
+      "ru": "Думаю, нам нужно сделать паузу."
+    }
+  },
+  {
+    "id": 74,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти не уявляєш, що я знайшов у старій коробці!",
+      "en": "You won’t believe what I found in an old box!",
+      "ru": "Ты не поверишь, что я нашёл в старой коробке!"
+    }
+  },
+  {
+    "id": 75,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я випадково надіслав повідомлення не тій людині.",
+      "en": "I accidentally sent a message to the wrong person.",
+      "ru": "Я случайно отправил сообщение не тому человеку."
+    }
+  },
+  {
+    "id": 76,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "У мене з’явилася ідея, що може змінити все.",
+      "en": "I have an idea that could change everything.",
+      "ru": "У меня есть идея, которая может всё изменить."
+    }
+  },
+  {
+    "id": 77,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Чому кожного разу, як я щось планую, все йде шкереберть?",
+      "en": "Why does everything go wrong every time I plan something?",
+      "ru": "Почему каждый раз, когда я что-то планирую, всё идёт наперекосяк?"
+    }
+  },
+  {
+    "id": 78,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, я бачив знаменитість у метро.",
+      "en": "I think I saw a celebrity on the subway.",
+      "ru": "Мне кажется, я видел знаменитость в метро."
+    }
+  },
+  {
+    "id": 79,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я знову зламав свій телефон...",
+      "en": "I broke my phone again...",
+      "ru": "Я снова сломал телефон..."
+    }
+  },
+  {
+    "id": 80,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти коли-небудь відчував, що час зупинився?",
+      "en": "Have you ever felt like time just stopped?",
+      "ru": "Ты когда-нибудь чувствовал, что время остановилось?"
+    }
+  },
+  {
+    "id": 81,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Це був найсмішніший момент за весь тиждень!",
+      "en": "That was the funniest moment of the whole week!",
+      "ru": "Это был самый смешной момент за всю неделю!"
+    }
+  },
+  {
+    "id": 82,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Здається, я щось упустив...",
+      "en": "I think I missed something...",
+      "ru": "Кажется, я что-то упустил..."
+    }
+  },
+  {
+    "id": 83,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я хочу зробити щось божевільне!",
+      "en": "I want to do something crazy!",
+      "ru": "Я хочу сделать что-то безумное!"
+    }
+  },
+  {
+    "id": 84,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Чесно, я не впевнений, що це була добра ідея.",
+      "en": "Honestly, I’m not sure it was a good idea.",
+      "ru": "Честно говоря, я не уверен, что это была хорошая идея."
+    }
+  },
+  {
+    "id": 85,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я почав писати щоденник!",
+      "en": "I’ve started keeping a journal!",
+      "ru": "Я начал вести дневник!"
+    }
+  },
+  {
+    "id": 86,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти не помічав, як змінився наш район?",
+      "en": "Have you noticed how our neighborhood has changed?",
+      "ru": "Ты заметил, как изменился наш район?"
+    }
+  },
+  {
+    "id": 87,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мене щойно підвищили!",
+      "en": "I just got promoted!",
+      "ru": "Меня только что повысили!"
+    }
+  },
+  {
+    "id": 88,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти бачив, що сталося з нашим старим будинком?",
+      "en": "Did you see what happened to our old house?",
+      "ru": "Ты видел, что стало с нашим старым домом?"
+    }
+  },
+  {
+    "id": 89,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "У мене до тебе одне дивне запитання.",
+      "en": "I have a weird question for you.",
+      "ru": "У меня к тебе странный вопрос."
+    }
+  },
+  {
+    "id": 90,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я щойно зробив щось дуже несподіване.",
+      "en": "I just did something really unexpected.",
+      "ru": "Я только что сделал нечто очень неожиданное."
+    }
+  },
+  {
+    "id": 91,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені наснився дуже дивний сон сьогодні.",
+      "en": "I had such a weird dream last night.",
+      "ru": "Мне сегодня приснился очень странный сон."
+    }
+  },
+  {
+    "id": 92,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я не знаю, як це сказати, але мені страшенно страшно.",
+      "en": "I don’t know how to say this, but I’m really scared.",
+      "ru": "Я не знаю, как это сказать, но мне очень страшно."
+    }
+  },
+  {
+    "id": 93,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Здається, я закохався.",
+      "en": "I think I fell in love.",
+      "ru": "Кажется, я влюбился."
+    }
+  },
+  {
+    "id": 94,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені треба з тобою чесно поговорити.",
+      "en": "I need to have an honest talk with you.",
+      "ru": "Мне нужно честно с тобой поговорить."
+    }
+  },
+  {
+    "id": 95,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я просто зникну на кілька днів.",
+      "en": "I’m just going to disappear for a few days.",
+      "ru": "Я просто исчезну на пару дней."
+    }
+  },
+  {
+    "id": 96,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Уяви, що мені сьогодні пощастило виграти!",
+      "en": "Imagine — I actually won something today!",
+      "ru": "Представь себе — я сегодня что-то выиграл!"
+    }
+  },
+  {
+    "id": 97,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні бачив, як хтось допоміг незнайомцеві просто так.",
+      "en": "Today I saw someone help a stranger for no reason.",
+      "ru": "Сегодня я видел, как кто-то просто так помог незнакомцу."
+    }
+  },
+  {
+    "id": 98,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, я щось важливе забув зробити.",
+      "en": "I feel like I forgot to do something important.",
+      "ru": "Мне кажется, я забыл сделать что-то важное."
+    }
+  },
+  {
+    "id": 99,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я знайшов місце, де неймовірно тихо й затишно.",
+      "en": "I found a place that’s incredibly quiet and cozy.",
+      "ru": "Я нашёл место, где невероятно тихо и уютно."
+    }
+  },
+  {
+    "id": 100,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мене сьогодні в метро привітала незнайома людина.",
+      "en": "A stranger greeted me in the subway today.",
+      "ru": "Меня сегодня в метро поприветствовал незнакомец."
+    }
+  },
+  {
+    "id": 101,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я щойно зламав щось дуже дороге...",
+      "en": "I just broke something really expensive...",
+      "ru": "Я только что сломал кое-что очень дорогое..."
+    }
+  },
+  {
+    "id": 102,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти бачив мого кота? Він знову зник.",
+      "en": "Have you seen my cat? He disappeared again.",
+      "ru": "Ты видел моего кота? Он опять исчез."
+    }
+  },
+  {
+    "id": 103,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я вирішив більше не скаржитися ні на що.",
+      "en": "I’ve decided not to complain about anything anymore.",
+      "ru": "Я решил больше ни на что не жаловаться."
+    }
+  },
+  {
+    "id": 104,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Уявляєш, я сьогодні сказав «ні» і мені стало легше.",
+      "en": "Can you believe I said 'no' today — and it felt good.",
+      "ru": "Представь, я сегодня сказал «нет» — и стало легче."
+    }
+  },
+  {
+    "id": 105,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я випадково почув розмову, яка змінила мою думку.",
+      "en": "I overheard a conversation that changed my mind.",
+      "ru": "Я случайно подслушал разговор, который изменил моё мнение."
+    }
+  },
+  {
+    "id": 106,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні вперше за довгий час просто сидів у тиші.",
+      "en": "Today I sat in silence for the first time in ages.",
+      "ru": "Сегодня я впервые за долгое время просто сидел в тишине."
+    }
+  },
+  {
+    "id": 107,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "А що, як усе піде не за планом?",
+      "en": "What if everything goes off plan?",
+      "ru": "А что если всё пойдёт не по плану?"
+    }
+  },
+  {
+    "id": 108,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я відчуваю, що мені потрібно почати з нуля.",
+      "en": "I feel like I need a fresh start.",
+      "ru": "Я чувствую, что мне нужно начать с нуля."
+    }
+  },
+  {
+    "id": 109,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Хочеш почути щось смішне про мене?",
+      "en": "Wanna hear something funny about me?",
+      "ru": "Хочешь услышать что-то смешное обо мне?"
+    }
+  },
+  {
+    "id": 110,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені сьогодні подякували — просто так.",
+      "en": "Someone thanked me today — for no reason.",
+      "ru": "Сегодня мне просто так сказали «спасибо»."
+    }
+  },
+  {
+    "id": 111,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, що я починаю щось розуміти.",
+      "en": "I think I’m starting to understand something.",
+      "ru": "Мне кажется, я начинаю кое-что понимать."
+    }
+  },
+  {
+    "id": 112,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я втомився від постійного поспіху.",
+      "en": "I’m tired of constantly rushing.",
+      "ru": "Я устал от постоянной спешки."
+    }
+  },
+  {
+    "id": 113,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я хотів тобі давно сказати — ти важлива частина мого життя.",
+      "en": "I’ve been meaning to say — you’re an important part of my life.",
+      "ru": "Я давно хотел сказать — ты важная часть моей жизни."
+    }
+  },
+  {
+    "id": 114,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти ніколи не замислювався, чому ми мовчимо в потрібні моменти?",
+      "en": "Have you ever wondered why we stay silent at the wrong time?",
+      "ru": "Ты никогда не задумывался, почему мы молчим в нужные моменты?"
+    }
+  },
+  {
+    "id": 115,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні запізнився, але сталося дещо цікаве.",
+      "en": "I was late today, but something interesting happened.",
+      "ru": "Я сегодня опоздал, но случилось нечто интересное."
+    }
+  },
+  {
+    "id": 116,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Здається, сьогодні буде день змін.",
+      "en": "I think today will be a day of change.",
+      "ru": "Кажется, сегодня будет день перемен."
+    }
+  },
+  {
+    "id": 117,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти пам’ятаєш, що ми колись мріяли зробити?",
+      "en": "Do you remember what we once dreamed of doing?",
+      "ru": "Ты помнишь, о чём мы когда-то мечтали?"
+    }
+  },
+  {
+    "id": 118,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився готувати нову страву!",
+      "en": "I learned how to cook something new!",
+      "ru": "Я научился готовить новое блюдо!"
+    }
+  },
+  {
+    "id": 119,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я хотів запитати — ти мені довіряєш?",
+      "en": "I wanted to ask — do you trust me?",
+      "ru": "Я хотел спросить — ты мне доверяешь?"
+    }
+  },
+  {
+    "id": 120,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні вранці я прокинувся з посмішкою.",
+      "en": "This morning I woke up smiling.",
+      "ru": "Сегодня утром я проснулся с улыбкой."
+    }
+  },
+  {
+    "id": 121,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні ледь не загубив телефон.",
+      "en": "I almost lost my phone today.",
+      "ru": "Я сегодня чуть не потерял телефон."
+    }
+  },
+  {
+    "id": 122,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти пам’ятаєш, як ми гуляли під дощем?",
+      "en": "Do you remember when we walked in the rain?",
+      "ru": "Ты помнишь, как мы гуляли под дождём?"
+    }
+  },
+  {
+    "id": 123,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я отримав сьогодні дивне повідомлення.",
+      "en": "I got a strange message today.",
+      "ru": "Я получил сегодня странное сообщение."
+    }
+  },
+  {
+    "id": 124,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені хочеться кудись зникнути на тиждень.",
+      "en": "I feel like disappearing for a week.",
+      "ru": "Мне хочется исчезнуть на неделю."
+    }
+  },
+  {
+    "id": 125,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився нарешті не хвилюватися через дрібниці.",
+      "en": "I finally learned not to worry about small stuff.",
+      "ru": "Я наконец-то научился не переживать из-за мелочей."
+    }
+  },
+  {
+    "id": 126,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "А уяви, що завтра все зміниться.",
+      "en": "Imagine if everything changed tomorrow.",
+      "ru": "А представь, если завтра всё изменится."
+    }
+  },
+  {
+    "id": 127,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, що я готовий ризикнути.",
+      "en": "I think I’m ready to take a risk.",
+      "ru": "Кажется, я готов рискнуть."
+    }
+  },
+  {
+    "id": 128,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я бачив людину, яка дуже на тебе схожа.",
+      "en": "I saw someone who looked just like you.",
+      "ru": "Я видел человека, который был очень похож на тебя."
+    }
+  },
+  {
+    "id": 129,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я забув, як дихати в моменти напруги.",
+      "en": "I forgot how to breathe in tense moments.",
+      "ru": "Я забыл, как дышать в напряжённые моменты."
+    }
+  },
+  {
+    "id": 130,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я зрозумів, що не все залежить від мене.",
+      "en": "I realized not everything depends on me.",
+      "ru": "Я понял, что не всё зависит от меня."
+    }
+  },
+  {
+    "id": 131,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні було щось особливе в повітрі.",
+      "en": "There was something special in the air today.",
+      "ru": "Сегодня в воздухе было что-то особенное."
+    }
+  },
+  {
+    "id": 132,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я хочу зробити комусь приємне просто так.",
+      "en": "I want to do something nice for someone, just because.",
+      "ru": "Хочу сделать кому-то приятное просто так."
+    }
+  },
+  {
+    "id": 133,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я тільки що прийняв важливе рішення.",
+      "en": "I just made an important decision.",
+      "ru": "Я только что принял важное решение."
+    }
+  },
+  {
+    "id": 134,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені хочеться змінити свій стиль.",
+      "en": "I feel like changing my style.",
+      "ru": "Мне хочется поменять свой стиль."
+    }
+  },
+  {
+    "id": 135,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я почув музику, яка пробрала до кісток.",
+      "en": "Today I heard music that gave me chills.",
+      "ru": "Сегодня я услышал музыку, которая пробрала до костей."
+    }
+  },
+  {
+    "id": 136,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мене дивує, як швидко минає час.",
+      "en": "I’m amazed at how fast time flies.",
+      "ru": "Меня удивляет, как быстро летит время."
+    }
+  },
+  {
+    "id": 137,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я згадав про одне своє дитяче бажання.",
+      "en": "I remembered one of my childhood wishes.",
+      "ru": "Я вспомнил одно своё детское желание."
+    }
+  },
+  {
+    "id": 138,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Хочеш дізнатися мою найбільшу мрію?",
+      "en": "Wanna know my biggest dream?",
+      "ru": "Хочешь узнать мою самую большую мечту?"
+    }
+  },
+  {
+    "id": 139,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я відчув сьогодні несподіваний спокій.",
+      "en": "I felt an unexpected peace today.",
+      "ru": "Я почувствовал сегодня неожиданное спокойствие."
+    }
+  },
+  {
+    "id": 140,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "У мене є нова ідея, і вона мені дуже подобається.",
+      "en": "I have a new idea, and I really like it.",
+      "ru": "У меня есть новая идея, и она мне очень нравится."
+    }
+  },
+  {
+    "id": 141,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився сьогодні чомусь дуже простому, але важливому.",
+      "en": "Today I learned something simple but important.",
+      "ru": "Сегодня я узнал что-то простое, но важное."
+    }
+  },
+  {
+    "id": 142,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, я навчився прощати.",
+      "en": "I think I’ve learned how to forgive.",
+      "ru": "Кажется, я научился прощать."
+    }
+  },
+  {
+    "id": 143,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я знайшов сьогодні листа з минулого.",
+      "en": "I found a letter from the past today.",
+      "ru": "Я сегодня нашёл письмо из прошлого."
+    }
+  },
+  {
+    "id": 144,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти коли-небудь думав, що ми робимо це не дарма?",
+      "en": "Have you ever thought we’re doing this for a reason?",
+      "ru": "Ты когда-нибудь думал, что мы делаем это не зря?"
+    }
+  },
+  {
+    "id": 145,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я прокинувся з дивним передчуттям.",
+      "en": "I woke up with a strange feeling.",
+      "ru": "Я проснулся с каким-то странным предчувствием."
+    }
+  },
+  {
+    "id": 146,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти коли-небудь уявляв, як би ти виглядав у 80?",
+      "en": "Have you ever imagined what you'd look like at 80?",
+      "ru": "Ты когда-нибудь представлял, как ты будешь выглядеть в 80?"
+    }
+  },
+  {
+    "id": 147,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я не знаю, що далі, але вже не боюся.",
+      "en": "I don’t know what’s next, but I’m not afraid anymore.",
+      "ru": "Я не знаю, что будет дальше, но мне уже не страшно."
+    }
+  },
+  {
+    "id": 148,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені снився ти. І ми сміялися.",
+      "en": "I dreamed about you. And we were laughing.",
+      "ru": "Ты мне снился. Мы смеялись."
+    }
+  },
+  {
+    "id": 149,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Зараз ідеальний час, щоб почати щось нове.",
+      "en": "Now is the perfect time to start something new.",
+      "ru": "Сейчас — идеальное время начать что-то новое."
+    }
+  },
+  {
+    "id": 150,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я хочу подякувати собі за те, що не здався.",
+      "en": "I want to thank myself for not giving up.",
+      "ru": "Я хочу поблагодарить себя за то, что не сдался."
+    }
+  },
+  {
+    "id": 151,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мене більше не турбує, що думають інші.",
+      "en": "I no longer care what others think.",
+      "ru": "Меня больше не волнует, что думают другие."
+    }
+  },
+  {
+    "id": 152,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я щойно побачив веселку — і це зробило мій день.",
+      "en": "I just saw a rainbow — and it made my day.",
+      "ru": "Я только что увидел радугу — и это сделало мой день."
+    }
+  },
+  {
+    "id": 153,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я не знаю чому, але мені добре саме зараз.",
+      "en": "I don’t know why, but I feel good right now.",
+      "ru": "Я не знаю почему, но мне сейчас хорошо."
+    }
+  },
+  {
+    "id": 154,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні вперше за довго час просто сміявся.",
+      "en": "Today I laughed for the first time in a while.",
+      "ru": "Сегодня я впервые за долгое время просто смеялся."
+    }
+  },
+  {
+    "id": 155,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Можливо, усе було не дарма.",
+      "en": "Maybe it all wasn’t for nothing.",
+      "ru": "Может быть, всё это было не зря."
+    }
+  },
+  {
+    "id": 156,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я вірю, що все тільки починається.",
+      "en": "I believe everything is just beginning.",
+      "ru": "Я верю, что всё только начинается."
+    }
+  },
+  {
+    "id": 157,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Хочеш новину, яку я тримав у секреті?",
+      "en": "Wanna hear a secret I’ve been keeping?",
+      "ru": "Хочешь узнать секрет, который я скрывал?"
+    }
+  },
+  {
+    "id": 158,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився мовчати там, де раніше говорив.",
+      "en": "I’ve learned to stay silent where I once spoke.",
+      "ru": "Я научился молчать там, где раньше говорил."
+    }
+  },
+  {
+    "id": 159,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогоднішній день нагадав мені про щось важливе.",
+      "en": "Today reminded me of something important.",
+      "ru": "Сегодняшний день напомнил мне о чём-то важном."
+    }
+  },
+  {
+    "id": 160,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я нарешті дозволив собі відпочити.",
+      "en": "I finally allowed myself to rest.",
+      "ru": "Я наконец-то позволил себе отдохнуть."
+    }
+  },
+  {
+    "id": 161,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені здається, я щось упустив сьогодні.",
+      "en": "I feel like I missed something today.",
+      "ru": "Мне кажется, я сегодня что-то упустил."
+    }
+  },
+  {
+    "id": 162,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я ніколи не думав, що зможу так змінитися.",
+      "en": "I never thought I could change like this.",
+      "ru": "Я никогда не думал, что смогу так измениться."
+    }
+  },
+  {
+    "id": 163,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я знову повірив у себе.",
+      "en": "Today I believed in myself again.",
+      "ru": "Сегодня я снова поверил в себя."
+    }
+  },
+  {
+    "id": 164,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я бачив сон, у якому все було навпаки.",
+      "en": "I had a dream where everything was the opposite.",
+      "ru": "Мне приснился сон, где всё было наоборот."
+    }
+  },
+  {
+    "id": 165,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Ти помічав, як тиша іноді голосна?",
+      "en": "Have you noticed how silence can be loud?",
+      "ru": "Ты замечал, как тишина может быть громкой?"
+    }
+  },
+  {
+    "id": 166,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я зрозумів, що час не повернути.",
+      "en": "I realized you can't turn back time.",
+      "ru": "Я понял, что время не вернуть."
+    }
+  },
+  {
+    "id": 167,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні був той день, коли все вдалось.",
+      "en": "Today was one of those days when everything worked out.",
+      "ru": "Сегодня был тот день, когда всё получилось."
+    }
+  },
+  {
+    "id": 168,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився чекати — і це не так вже й погано.",
+      "en": "I’ve learned to wait — and it's not that bad.",
+      "ru": "Я научился ждать — и это не так уж плохо."
+    }
+  },
+  {
+    "id": 169,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "У мене з’явився новий улюблений запах.",
+      "en": "I found a new favorite scent.",
+      "ru": "У меня появился новый любимый запах."
+    }
+  },
+  {
+    "id": 170,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені не вистачає щирих розмов.",
+      "en": "I miss honest conversations.",
+      "ru": "Мне не хватает искренних разговоров."
+    }
+  },
+  {
+    "id": 171,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні обрав бути спокійним.",
+      "en": "Today I chose to stay calm.",
+      "ru": "Сегодня я выбрал оставаться спокойным."
+    }
+  },
+  {
+    "id": 172,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я випадково почув стару пісню і мало не заплакав.",
+      "en": "I accidentally heard an old song and almost cried.",
+      "ru": "Я случайно услышал старую песню и чуть не заплакал."
+    }
+  },
+  {
+    "id": 173,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені хочеться, щоб час сповільнився хоч трохи.",
+      "en": "I wish time would slow down just a little.",
+      "ru": "Хочется, чтобы время хоть немного замедлилось."
+    }
+  },
+  {
+    "id": 174,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився мовчки приймати те, що не змінити.",
+      "en": "I've learned to silently accept what I can't change.",
+      "ru": "Я научился молча принимать то, что не изменить."
+    }
+  },
+  {
+    "id": 175,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я хотів би повернутися на один день у дитинство.",
+      "en": "I'd like to go back to childhood just for a day.",
+      "ru": "Я бы хотел вернуться в детство хоть на день."
+    }
+  },
+  {
+    "id": 176,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я відчуваю, що стою на порозі чогось нового.",
+      "en": "I feel like I’m on the verge of something new.",
+      "ru": "Я чувствую, что стою на пороге чего-то нового."
+    }
+  },
+  {
+    "id": 177,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я зміг посміхнутись, навіть коли було важко.",
+      "en": "I managed to smile even when it was hard.",
+      "ru": "Я смог улыбнуться, даже когда было тяжело."
+    }
+  },
+  {
+    "id": 178,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені стало легше, коли я все відпустив.",
+      "en": "I felt lighter when I let everything go.",
+      "ru": "Мне стало легче, когда я всё отпустил."
+    }
+  },
+  {
+    "id": 179,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я чекав цього моменту дуже довго.",
+      "en": "I’ve been waiting for this moment for so long.",
+      "ru": "Я ждал этого момента очень долго."
+    }
+  },
+  {
+    "id": 180,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я побачив у дзеркалі себе справжнього.",
+      "en": "Today I saw my true self in the mirror.",
+      "ru": "Сегодня я увидел в зеркале себя настоящего."
+    }
+  },
+  {
+    "id": 181,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я вірю, що кожна рана вчить чомусь важливому.",
+      "en": "I believe every wound teaches something important.",
+      "ru": "Я верю, что каждая рана чему-то важному учит."
+    }
+  },
+  {
+    "id": 182,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я все ще тримаю деякі спогади у серці.",
+      "en": "I still hold some memories in my heart.",
+      "ru": "Я всё ещё храню некоторые воспоминания в сердце."
+    }
+  },
+  {
+    "id": 183,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я вперше не побоявся сказати правду.",
+      "en": "Today I wasn’t afraid to speak the truth.",
+      "ru": "Сегодня я впервые не побоялся сказать правду."
+    }
+  },
+  {
+    "id": 184,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився бачити красу в буденному.",
+      "en": "I’ve learned to see beauty in the ordinary.",
+      "ru": "Я научился видеть красоту в обыденном."
+    }
+  },
+  {
+    "id": 185,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені так хотілося, щоб ти був поруч.",
+      "en": "I really wished you were here.",
+      "ru": "Мне так хотелось, чтобы ты был рядом."
+    }
+  },
+  {
+    "id": 186,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогоднішній день подарував мені надію.",
+      "en": "Today gave me hope.",
+      "ru": "Сегодняшний день подарил мне надежду."
+    }
+  },
+  {
+    "id": 187,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я нарешті відчув, що живу.",
+      "en": "I finally felt like I’m alive.",
+      "ru": "Я наконец-то почувствовал, что живу."
+    }
+  },
+  {
+    "id": 188,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я зловив себе на думці, що все не так погано.",
+      "en": "I caught myself thinking it’s not that bad.",
+      "ru": "Я поймал себя на мысли, что всё не так уж плохо."
+    }
+  },
+  {
+    "id": 189,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я зробив крок назустріч собі.",
+      "en": "Today I took a step toward myself.",
+      "ru": "Сегодня я сделал шаг навстречу себе."
+    }
+  },
+  {
+    "id": 190,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я раптом зрозумів, що більше не злий.",
+      "en": "I suddenly realized I’m no longer angry.",
+      "ru": "Я вдруг понял, что больше не злюсь."
+    }
+  },
+  {
+    "id": 191,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я побачив сонце після довгого дощу.",
+      "en": "I saw the sun after a long rain.",
+      "ru": "Я увидел солнце после долгого дождя."
+    }
+  },
+  {
+    "id": 192,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я сьогодні згадав, чого боявся в дитинстві.",
+      "en": "Today I remembered what I feared as a child.",
+      "ru": "Сегодня я вспомнил, чего боялся в детстве."
+    }
+  },
+  {
+    "id": 193,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я знайшов лист, який сам собі колись писав.",
+      "en": "I found a letter I once wrote to myself.",
+      "ru": "Я нашёл письмо, которое когда-то сам себе написал."
+    }
+  },
+  {
+    "id": 194,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я знову відчув радість у простих речах.",
+      "en": "I felt joy again in simple things.",
+      "ru": "Я снова почувствовал радость в простых вещах."
+    }
+  },
+  {
+    "id": 195,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Мені хочеться поділитися тишею з кимось.",
+      "en": "I want to share silence with someone.",
+      "ru": "Мне хочется поделиться тишиной с кем-то."
+    }
+  },
+  {
+    "id": 196,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я почув сьогодні, як шумить вітер — і став тихішим.",
+      "en": "I heard the wind rustling today — and I became quieter.",
+      "ru": "Я услышал сегодня, как шумит ветер — и стал тише."
+    }
+  },
+  {
+    "id": 197,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я навчився цінувати моменти, що зникають.",
+      "en": "I’ve learned to value fleeting moments.",
+      "ru": "Я научился ценить ускользающие моменты."
+    }
+  },
+  {
+    "id": 198,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я нарешті відпустив усе, що мене тримало.",
+      "en": "I finally let go of everything holding me back.",
+      "ru": "Я наконец-то отпустил всё, что меня сдерживало."
+    }
+  },
+  {
+    "id": 199,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Сьогодні я був по-справжньому вдячний.",
+      "en": "Today I was truly grateful.",
+      "ru": "Сегодня я был по-настоящему благодарен."
+    }
+  },
+  {
+    "id": 200,
+    "sentence_type": "DIALOGUE_WITH_SELF",
+    "sentence": {
+      "ua": "Я зловив свій перший спокійний подих за тиждень.",
+      "en": "I caught my first calm breath in a week.",
+      "ru": "Я впервые за неделю спокойно вдохнул."
+    }
+  }
+]

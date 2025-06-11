@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.games.words_game
 
+import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -41,25 +42,26 @@ class WordsGameViewModel @Inject constructor(
 
     private val game: MutableStateFlow<Game?> = MutableStateFlow(null)
 
+    private val screenMode: MutableStateFlow<WordsGameViewState.ScreenMode> = MutableStateFlow(WordsGameViewState.ScreenMode.Words(
+        emptyList()
+    ))
 
-    private val words: MutableStateFlow<List<String>> = MutableStateFlow(emptyList())
-
-    private val wordsUsed: MutableStateFlow<Int> = MutableStateFlow(0)
+    private val progress: MutableStateFlow<Int> = MutableStateFlow(0)
 
     override val state: StateFlow<WordsGameViewState> = com.example.yaroslavhorach.common.utill.combine(
         game,
-        words,
-        wordsUsed,
+        progress,
         exerciseRepository.getBlock(),
+        screenMode,
         uiMessageManager.message
-    ) { game, words, wordsUsed, block, message ->
+    ) { game, progress, block, screenMode, message ->
         WordsGameViewState(
-            progress = wordsUsed.toFloat() / (game?.maxProgress?.toFloat() ?: 1f),
+            progress = progress.toFloat() / (game?.maxProgress?.toFloat() ?: 1f),
             game = game,
-            isLastExercise = game?.maxProgress == wordsUsed,
-            words = words,
+            isLastExercise = game?.maxProgress == progress,
             block = block,
-            uiMessage = message
+            uiMessage = message,
+            screenMode = screenMode
         )
     }.stateIn(
         scope = viewModelScope,
@@ -72,7 +74,45 @@ class WordsGameViewModel @Inject constructor(
 
         viewModelScope.launch {
             game.value = gameRepository.getGame(gameId)
-            game.value?.let(::getGameWords)
+            when (game.value?.name) {
+                Game.GameName.RAVEN_LIKE_A_CHAIR,
+                Game.GameName.FOUR_WORDS_ONE_STORY,
+                Game.GameName.TALK_TILL_EXHAUSTED,
+                Game.GameName.SELL_THIS_THING,
+                Game.GameName.DEFINE_PRECISELY -> {
+                    game.value?.let(::getGameWords)
+                }
+                Game.GameName.BIG_ANSWER,
+                Game.GameName.DEVILS_ADVOCATE,
+                Game.GameName.DIALOGUE_WITH_SELF,
+                Game.GameName.IMAGINARY_SITUATION,
+                Game.GameName.EMOTION_TO_FACT,
+                Game.GameName.WHO_AM_I_MONOLOGUE,
+                Game.GameName.I_AM_EXPERT,
+                Game.GameName.FORBIDDEN_WORDS,
+                Game.GameName.EMOTIONAL_TRANSLATOR -> {
+                    game.value?.let(::getGameSentence)
+                }
+                Game.GameName.BODY_LANGUAGE_EXPRESS -> TODO()
+                Game.GameName.RAP_IMPROV -> TODO()
+                Game.GameName.PERSUASIVE_SHOUT -> TODO()
+                Game.GameName.WORD_IN_TEMPO -> TODO()
+                Game.GameName.SUBTLE_MANIPULATION -> TODO()
+                Game.GameName.ONE_SYNONYM_PLEASE -> TODO()
+                Game.GameName.INTONATION_MASTER -> TODO()
+                Game.GameName.ANTONYM_BATTLE -> TODO()
+                Game.GameName.RHYME_LIGHTNING -> TODO()
+                Game.GameName.FUNNIEST_ANSWER -> TODO()
+                Game.GameName.MADMAN_ANNOUNCEMENT -> TODO()
+                Game.GameName.FUNNY_EXCUSE -> TODO()
+                Game.GameName.ONE_WORD_MANY_MEANINGS -> TODO()
+                Game.GameName.INTONATION_MATTERS -> TODO()
+                Game.GameName.FLIRTING_WITH_OBJECT -> TODO()
+                Game.GameName.BOTH_THERE_AND_IN_BED -> TODO()
+                Game.GameName.HOT_WORD -> TODO()
+                Game.GameName.DOUBLE_MEANING_WORDS -> TODO()
+                null -> TODO()
+            }
         }
 
         pendingActions
@@ -89,7 +129,10 @@ class WordsGameViewModel @Inject constructor(
                                 )
                             )
                         } else {
-                            game.value?.let(::getGameWords)
+                            when (state.value.screenMode) {
+                                is WordsGameViewState.ScreenMode.Sentence -> game.value?.let(::getGameSentence)
+                                is WordsGameViewState.ScreenMode.Words -> game.value?.let(::getGameWords)
+                            }
                         }
                     }
 
@@ -101,8 +144,16 @@ class WordsGameViewModel @Inject constructor(
 
     private fun getGameWords(game: Game) {
         viewModelScope.launch {
-            wordsUsed.value = wordsUsed.value.inc()
-            words.value = exerciseContentRepository.getGameWords(game.name)
+            progress.value = progress.value.inc()
+            screenMode.value = WordsGameViewState.ScreenMode.Words(exerciseContentRepository.getGameWords(game.name))
+        }
+    }
+
+    private fun getGameSentence(game: Game) {
+        viewModelScope.launch {
+            progress.value = progress.value.inc()
+            Log.v("dssaasads",  exerciseContentRepository.getGameSentence(game.name).toString())
+            screenMode.value = WordsGameViewState.ScreenMode.Sentence(exerciseContentRepository.getGameSentence(game.name))
         }
     }
 

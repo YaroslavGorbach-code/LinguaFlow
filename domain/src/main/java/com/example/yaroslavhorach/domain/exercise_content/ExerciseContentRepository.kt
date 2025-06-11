@@ -13,4 +13,5 @@ interface ExerciseContentRepository {
     suspend fun getVocabulary(wordType: Vocabulary.WordType): Vocabulary
     suspend fun getTests(exerciseName: ExerciseName): List<Test>
     suspend fun getGameWords(gameName: Game.GameName): List<String>
+    suspend fun getGameSentence(gameName: Game.GameName): String
 }

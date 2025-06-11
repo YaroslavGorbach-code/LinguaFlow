@@ -1,0 +1,1613 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Дружба\nЗаборонені слова: друг, підтримка, разом",
+      "en": "Topic: Friendship\nForbidden words: friend, support, together",
+      "ru": "Тема: Дружба\nЗапрещённые слова: друг, поддержка, вместе"
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Страх\nЗаборонені слова: лякати, темрява, паніка",
+      "en": "Topic: Fear\nForbidden words: scare, darkness, panic",
+      "ru": "Тема: Страх\nЗапрещённые слова: пугать, темнота, паника"
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Шоколад\nЗаборонені слова: солодкий, какао, десерт",
+      "en": "Topic: Chocolate\nForbidden words: sweet, cocoa, dessert",
+      "ru": "Тема: Шоколад\nЗапрещённые слова: сладкий, какао, десерт"
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Музика\nЗаборонені слова: звук, мелодія, співати",
+      "en": "Topic: Music\nForbidden words: sound, melody, sing",
+      "ru": "Тема: Музыка\nЗапрещённые слова: звук, мелодия, петь"
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Відпочинок на морі\nЗаборонені слова: пісок, пляж, хвилі",
+      "en": "Topic: Vacation by the sea\nForbidden words: sand, beach, waves",
+      "ru": "Тема: Отдых на море\nЗапрещённые слова: песок, пляж, волны"
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Школа\nЗаборонені слова: вчитель, урок, дзвінок",
+      "en": "Topic: School\nForbidden words: teacher, lesson, bell",
+      "ru": "Тема: Школа\nЗапрещённые слова: учитель, урок, звонок"
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кінотеатр\nЗаборонені слова: екран, фільм, попкорн",
+      "en": "Topic: Movie theater\nForbidden words: screen, movie, popcorn",
+      "ru": "Тема: Кинотеатр\nЗапрещённые слова: экран, фильм, попкорн"
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ранок\nЗаборонені слова: прокидатися, сонце, кава",
+      "en": "Topic: Morning\nForbidden words: wake up, sun, coffee",
+      "ru": "Тема: Утро\nЗапрещённые слова: просыпаться, солнце, кофе"
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Подорож\nЗаборонені слова: мандрівка, валіза, дорога",
+      "en": "Topic: Travel\nForbidden words: journey, suitcase, road",
+      "ru": "Тема: Путешествие\nЗапрещённые слова: путешествие, чемодан, дорога"
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Злість\nЗаборонені слова: гнів, кричати, образа",
+      "en": "Topic: Anger\nForbidden words: rage, shout, offense",
+      "ru": "Тема: Злость\nЗапрещённые слова: гнев, кричать, обида"
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Осінь\nЗаборонені слова: листя, дощ, жовтий",
+      "en": "Topic: Autumn\nForbidden words: leaves, rain, yellow",
+      "ru": "Тема: Осень\nЗапрещённые слова: листья, дождь, жёлтый"
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: День народження\nЗаборонені слова: подарунок, торт, свято",
+      "en": "Topic: Birthday\nForbidden words: gift, cake, celebration",
+      "ru": "Тема: День рождения\nЗапрещённые слова: подарок, торт, праздник"
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Інтернет\nЗаборонені слова: сайт, Wi-Fi, мережа",
+      "en": "Topic: Internet\nForbidden words: website, Wi-Fi, network",
+      "ru": "Тема: Интернет\nЗапрещённые слова: сайт, Wi-Fi, сеть"
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Погода\nЗаборонені слова: небо, температура, хмари",
+      "en": "Topic: Weather\nForbidden words: sky, temperature, clouds",
+      "ru": "Тема: Погода\nЗапрещённые слова: небо, температура, облака"
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Водій\nЗаборонені слова: машина, кермо, дорога",
+      "en": "Topic: Driver\nForbidden words: car, wheel, road",
+      "ru": "Тема: Водитель\nЗапрещённые слова: машина, руль, дорога"
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Літо\nЗаборонені слова: спека, відпустка, сонце",
+      "en": "Topic: Summer\nForbidden words: heat, vacation, sun",
+      "ru": "Тема: Лето\nЗапрещённые слова: жара, отпуск, солнце"
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Хатня тварина\nЗаборонені слова: кіт, собака, улюбленець",
+      "en": "Topic: Pet\nForbidden words: cat, dog, companion",
+      "ru": "Тема: Домашнее животное\nЗапрещённые слова: кот, собака, питомец"
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Зубний лікар\nЗаборонені слова: зуб, кабінет, біль",
+      "en": "Topic: Dentist\nForbidden words: tooth, office, pain",
+      "ru": "Тема: Стоматолог\nЗапрещённые слова: зуб, кабинет, боль"
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Магазин\nЗаборонені слова: покупки, каса, товар",
+      "en": "Topic: Store\nForbidden words: shopping, checkout, item",
+      "ru": "Тема: Магазин\nЗапрещённые слова: покупки, касса, товар"
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Спорт\nЗаборонені слова: змагання, команда, м’яч",
+      "en": "Topic: Sports\nForbidden words: competition, team, ball",
+      "ru": "Тема: Спорт\nЗапрещённые слова: соревнование, команда, мяч"
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Гори\nЗаборонені слова: вершина, підйом, природа",
+      "en": "Topic: Mountains\nForbidden words: peak, climb, nature",
+      "ru": "Тема: Горы\nЗапрещённые слова: вершина, подъём, природа"
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Письмо\nЗаборонені слова: ручка, аркуш, літера",
+      "en": "Topic: Writing\nForbidden words: pen, paper, letter",
+      "ru": "Тема: Письмо\nЗапрещённые слова: ручка, бумага, буква"
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Театр\nЗаборонені слова: сцена, актор, глядач",
+      "en": "Topic: Theater\nForbidden words: stage, actor, audience",
+      "ru": "Тема: Театр\nЗапрещённые слова: сцена, актёр, зритель"
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Здоров’я\nЗаборонені слова: хвороба, лікування, лікар",
+      "en": "Topic: Health\nForbidden words: illness, treatment, doctor",
+      "ru": "Тема: Здоровье\nЗапрещённые слова: болезнь, лечение, врач"
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ресторан\nЗаборонені слова: їжа, меню, офіціант",
+      "en": "Topic: Restaurant\nForbidden words: food, menu, waiter",
+      "ru": "Тема: Ресторан\nЗапрещённые слова: еда, меню, официант"
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вогонь\nЗаборонені слова: полум’я, гаряче, дим",
+      "en": "Topic: Fire\nForbidden words: flame, hot, smoke",
+      "ru": "Тема: Огонь\nЗапрещённые слова: пламя, горячо, дым"
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Робота\nЗаборонені слова: офіс, зарплата, начальник",
+      "en": "Topic: Job\nForbidden words: office, salary, boss",
+      "ru": "Тема: Работа\nЗапрещённые слова: офис, зарплата, начальник"
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Новий рік\nЗаборонені слова: ялинка, подарунки, феєрверк",
+      "en": "Topic: New Year\nForbidden words: tree, gifts, fireworks",
+      "ru": "Тема: Новый год\nЗапрещённые слова: ёлка, подарки, салют"
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Мобільний телефон\nЗаборонені слова: дзвінок, екран, додаток",
+      "en": "Topic: Mobile phone\nForbidden words: call, screen, app",
+      "ru": "Тема: Мобильный телефон\nЗапрещённые слова: звонок, экран, приложение"
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Бібліотека\nЗаборонені слова: книга, полиця, читати",
+      "en": "Topic: Library\nForbidden words: book, shelf, read",
+      "ru": "Тема: Библиотека\nЗапрещённые слова: книга, полка, читать"
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Комп’ютер\nЗаборонені слова: клавіатура, екран, миша",
+      "en": "Topic: Computer\nForbidden words: keyboard, screen, mouse",
+      "ru": "Тема: Компьютер\nЗапрещённые слова: клавиатура, экран, мышь"
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Весілля\nЗаборонені слова: наречений, сукня, обручка",
+      "en": "Topic: Wedding\nForbidden words: groom, dress, ring",
+      "ru": "Тема: Свадьба\nЗапрещённые слова: жених, платье, кольцо"
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Хобі\nЗаборонені слова: інтерес, захоплення, вільний час",
+      "en": "Topic: Hobby\nForbidden words: interest, passion, free time",
+      "ru": "Тема: Хобби\nЗапрещённые слова: интерес, увлечение, свободное время"
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сон\nЗаборонені слова: ліжко, подушка, ніч",
+      "en": "Topic: Sleep\nForbidden words: bed, pillow, night",
+      "ru": "Тема: Сон\nЗапрещённые слова: кровать, подушка, ночь"
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вибори\nЗаборонені слова: голосування, бюлетень, кандидат",
+      "en": "Topic: Elections\nForbidden words: vote, ballot, candidate",
+      "ru": "Тема: Выборы\nЗапрещённые слова: голосование, бюллетень, кандидат"
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Танці\nЗаборонені слова: рух, музика, паркет",
+      "en": "Topic: Dance\nForbidden words: move, music, floor",
+      "ru": "Тема: Танцы\nЗапрещённые слова: движение, музыка, пол"
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ліс\nЗаборонені слова: дерева, тварини, гриби",
+      "en": "Topic: Forest\nForbidden words: trees, animals, mushrooms",
+      "ru": "Тема: Лес\nЗапрещённые слова: деревья, животные, грибы"
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Телебачення\nЗаборонені слова: канал, програма, телевізор",
+      "en": "Topic: Television\nForbidden words: channel, show, TV",
+      "ru": "Тема: Телевидение\nЗапрещённые слова: канал, программа, телевизор"
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Космос\nЗаборонені слова: зірка, планета, ракета",
+      "en": "Topic: Space\nForbidden words: star, planet, rocket",
+      "ru": "Тема: Космос\nЗапрещённые слова: звезда, планета, ракета"
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Їзда на велосипеді\nЗаборонені слова: колеса, педалі, шолом",
+      "en": "Topic: Biking\nForbidden words: wheels, pedals, helmet",
+      "ru": "Тема: Велоспорт\nЗапрещённые слова: колёса, педали, шлем"
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Зоопарк\nЗаборонені слова: клітка, лев, мавпа",
+      "en": "Topic: Zoo\nForbidden words: cage, lion, monkey",
+      "ru": "Тема: Зоопарк\nЗапрещённые слова: клетка, лев, обезьяна"
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Дощ\nЗаборонені слова: крапля, парасолька, мокро",
+      "en": "Topic: Rain\nForbidden words: drop, umbrella, wet",
+      "ru": "Тема: Дождь\nЗапрещённые слова: капля, зонт, мокро"
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сніг\nЗаборонені слова: білий, заметіль, сніжинка",
+      "en": "Topic: Snow\nForbidden words: white, blizzard, snowflake",
+      "ru": "Тема: Снег\nЗапрещённые слова: белый, метель, снежинка"
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кіно\nЗаборонені слова: актор, сцена, сюжет",
+      "en": "Topic: Cinema\nForbidden words: actor, scene, plot",
+      "ru": "Тема: Кино\nЗапрещённые слова: актёр, сцена, сюжет"
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Весна\nЗаборонені слова: квіти, зелений, тепло",
+      "en": "Topic: Spring\nForbidden words: flowers, green, warm",
+      "ru": "Тема: Весна\nЗапрещённые слова: цветы, зелёный, тепло"
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кава\nЗаборонені слова: чашка, зерна, аромат",
+      "en": "Topic: Coffee\nForbidden words: cup, beans, aroma",
+      "ru": "Тема: Кофе\nЗапрещённые слова: чашка, зёрна, аромат"
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Музей\nЗаборонені слова: експонат, тиша, екскурсія",
+      "en": "Topic: Museum\nForbidden words: exhibit, silence, tour",
+      "ru": "Тема: Музей\nЗапрещённые слова: экспонат, тишина, экскурсия"
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Краса\nЗаборонені слова: зовнішність, дзеркало, привабливість",
+      "en": "Topic: Beauty\nForbidden words: appearance, mirror, attractiveness",
+      "ru": "Тема: Красота\nЗапрещённые слова: внешность, зеркало, привлекательность"
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Швидкість\nЗаборонені слова: швидкий, гонка, час",
+      "en": "Topic: Speed\nForbidden words: fast, race, time",
+      "ru": "Тема: Скорость\nЗапрещённые слова: быстрый, гонка, время"
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кінотеатр\nЗаборонені слова: фільм, екран, квиток",
+      "en": "Topic: Cinema\nForbidden words: movie, screen, ticket",
+      "ru": "Тема: Кинотеатр\nЗапрещённые слова: фильм, экран, билет"
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Дитинство\nЗаборонені слова: іграшка, школа, батьки",
+      "en": "Topic: Childhood\nForbidden words: toy, school, parents",
+      "ru": "Тема: Детство\nЗапрещённые слова: игрушка, школа, родители"
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Гори\nЗаборонені слова: вершина, похід, скеля",
+      "en": "Topic: Mountains\nForbidden words: peak, hike, rock",
+      "ru": "Тема: Горы\nЗапрещённые слова: вершина, поход, скала"
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вечірка\nЗаборонені слова: музика, танці, друзі",
+      "en": "Topic: Party\nForbidden words: music, dancing, friends",
+      "ru": "Тема: Вечеринка\nЗапрещённые слова: музыка, танцы, друзья"
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Зима\nЗаборонені слова: сніг, холод, ковзани",
+      "en": "Topic: Winter\nForbidden words: snow, cold, skates",
+      "ru": "Тема: Зима\nЗапрещённые слова: снег, холод, коньки"
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Океан\nЗаборонені слова: хвиля, риба, глибина",
+      "en": "Topic: Ocean\nForbidden words: wave, fish, depth",
+      "ru": "Тема: Океан\nЗапрещённые слова: волна, рыба, глубина"
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Пікнік\nЗаборонені слова: їжа, природа, ковдра",
+      "en": "Topic: Picnic\nForbidden words: food, nature, blanket",
+      "ru": "Тема: Пикник\nЗапрещённые слова: еда, природа, плед"
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Робота\nЗаборонені слова: офіс, шеф, завдання",
+      "en": "Topic: Work\nForbidden words: office, boss, task",
+      "ru": "Тема: Работа\nЗапрещённые слова: офис, начальник, задание"
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Хобі\nЗаборонені слова: захоплення, вільний, інтерес",
+      "en": "Topic: Hobby\nForbidden words: passion, free, interest",
+      "ru": "Тема: Хобби\nЗапрещённые слова: увлечение, свободное, интерес"
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Спортзал\nЗаборонені слова: тренування, м’язи, бігова доріжка",
+      "en": "Topic: Gym\nForbidden words: workout, muscles, treadmill",
+      "ru": "Тема: Тренажёрный зал\nЗапрещённые слова: тренировка, мышцы, беговая дорожка"
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ресторан\nЗаборонені слова: меню, офіціант, страва",
+      "en": "Topic: Restaurant\nForbidden words: menu, waiter, dish",
+      "ru": "Тема: Ресторан\nЗапрещённые слова: меню, официант, блюдо"
+    }
+  },
+  {
+    "id": "61",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Технології\nЗаборонені слова: комп'ютер, інтернет, телефон",
+      "en": "Topic: Technology\nForbidden words: computer, internet, phone",
+      "ru": "Тема: Технологии\nЗапрещённые слова: компьютер, интернет, телефон"
+    }
+  },
+  {
+    "id": "62",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Море\nЗаборонені слова: пляж, пісок, хвиля",
+      "en": "Topic: Sea\nForbidden words: beach, sand, wave",
+      "ru": "Тема: Море\nЗапрещённые слова: пляж, песок, волна"
+    }
+  },
+  {
+    "id": "63",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Осінь\nЗаборонені слова: листя, дощ, жовтий",
+      "en": "Topic: Autumn\nForbidden words: leaves, rain, yellow",
+      "ru": "Тема: Осень\nЗапрещённые слова: листья, дождь, жёлтый"
+    }
+  },
+  {
+    "id": "64",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Подорож\nЗаборонені слова: валіза, літак, маршрут",
+      "en": "Topic: Travel\nForbidden words: suitcase, plane, route",
+      "ru": "Тема: Путешествие\nЗапрещённые слова: чемодан, самолёт, маршрут"
+    }
+  },
+  {
+    "id": "65",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: День народження\nЗаборонені слова: подарунок, торт, свято",
+      "en": "Topic: Birthday\nForbidden words: gift, cake, celebration",
+      "ru": "Тема: День рождения\nЗапрещённые слова: подарок, торт, праздник"
+    }
+  },
+  {
+    "id": "66",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Літо\nЗаборонені слова: сонце, спека, канікули",
+      "en": "Topic: Summer\nForbidden words: sun, heat, vacation",
+      "ru": "Тема: Лето\nЗапрещённые слова: солнце, жара, каникулы"
+    }
+  },
+  {
+    "id": "67",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Школа\nЗаборонені слова: вчитель, урок, клас",
+      "en": "Topic: School\nForbidden words: teacher, lesson, class",
+      "ru": "Тема: Школа\nЗапрещённые слова: учитель, урок, класс"
+    }
+  },
+  {
+    "id": "68",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кава\nЗаборонені слова: чашка, зерна, напій",
+      "en": "Topic: Coffee\nForbidden words: cup, beans, drink",
+      "ru": "Тема: Кофе\nЗапрещённые слова: чашка, зёрна, напиток"
+    }
+  },
+  {
+    "id": "69",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Природа\nЗаборонені слова: дерева, трава, свіже повітря",
+      "en": "Topic: Nature\nForbidden words: trees, grass, fresh air",
+      "ru": "Тема: Природа\nЗапрещённые слова: деревья, трава, свежий воздух"
+    }
+  },
+  {
+    "id": "70",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Хатня тварина\nЗаборонені слова: кіт, собака, улюбленець",
+      "en": "Topic: Pet\nForbidden words: cat, dog, favorite",
+      "ru": "Тема: Домашнее животное\nЗапрещённые слова: кот, собака, любимец"
+    }
+  },
+  {
+    "id": "71",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Здоров'я\nЗаборонені слова: лікар, хвороба, аптека",
+      "en": "Topic: Health\nForbidden words: doctor, illness, pharmacy",
+      "ru": "Тема: Здоровье\nЗапрещённые слова: врач, болезнь, аптека"
+    }
+  },
+  {
+    "id": "72",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Весна\nЗаборонені слова: квіти, теплий, зелень",
+      "en": "Topic: Spring\nForbidden words: flowers, warm, greenery",
+      "ru": "Тема: Весна\nЗапрещённые слова: цветы, тёплый, зелень"
+    }
+  },
+  {
+    "id": "73",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Дружба\nЗаборонені слова: підтримка, разом, довіра",
+      "en": "Topic: Friendship\nForbidden words: support, together, trust",
+      "ru": "Тема: Дружба\nЗапрещённые слова: поддержка, вместе, доверие"
+    }
+  },
+  {
+    "id": "74",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Інтерв’ю\nЗаборонені слова: запитання, відповідь, кандидат",
+      "en": "Topic: Interview\nForbidden words: question, answer, candidate",
+      "ru": "Тема: Интервью\nЗапрещённые слова: вопрос, ответ, кандидат"
+    }
+  },
+  {
+    "id": "75",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Книга\nЗаборонені слова: сторінка, автор, сюжет",
+      "en": "Topic: Book\nForbidden words: page, author, plot",
+      "ru": "Тема: Книга\nЗапрещённые слова: страница, автор, сюжет"
+    }
+  },
+  {
+    "id": "76",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Холод\nЗаборонені слова: зима, лід, мороз",
+      "en": "Topic: Cold\nForbidden words: winter, ice, frost",
+      "ru": "Тема: Холод\nЗапрещённые слова: зима, лёд, мороз"
+    }
+  },
+  {
+    "id": "77",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Їжа\nЗаборонені слова: сніданок, вечеря, кухня",
+      "en": "Topic: Food\nForbidden words: breakfast, dinner, kitchen",
+      "ru": "Тема: Еда\nЗапрещённые слова: завтрак, ужин, кухня"
+    }
+  },
+  {
+    "id": "78",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Пошта\nЗаборонені слова: конверт, лист, відправити",
+      "en": "Topic: Mail\nForbidden words: envelope, letter, send",
+      "ru": "Тема: Почта\nЗапрещённые слова: конверт, письмо, отправить"
+    }
+  },
+  {
+    "id": "79",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Музика\nЗаборонені слова: пісня, співати, ритм",
+      "en": "Topic: Music\nForbidden words: song, sing, rhythm",
+      "ru": "Тема: Музыка\nЗапрещённые слова: песня, петь, ритм"
+    }
+  },
+  {
+    "id": "80",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Транспорт\nЗаборонені слова: автомобіль, поїзд, автобус",
+      "en": "Topic: Transport\nForbidden words: car, train, bus",
+      "ru": "Тема: Транспорт\nЗапрещённые слова: машина, поезд, автобус"
+    }
+  },
+  {
+    "id": "81",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Танці\nЗаборонені слова: рух, музика, сцена",
+      "en": "Topic: Dance\nForbidden words: move, music, stage",
+      "ru": "Тема: Танец\nЗапрещённые слова: движение, музыка, сцена"
+    }
+  },
+  {
+    "id": "82",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ранок\nЗаборонені слова: будильник, кава, прокидатись",
+      "en": "Topic: Morning\nForbidden words: alarm, coffee, wake up",
+      "ru": "Тема: Утро\nЗапрещённые слова: будильник, кофе, просыпаться"
+    }
+  },
+  {
+    "id": "83",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Фотографія\nЗаборонені слова: камера, фото, спогади",
+      "en": "Topic: Photography\nForbidden words: camera, photo, memories",
+      "ru": "Тема: Фотография\nЗапрещённые слова: камера, фото, воспоминания"
+    }
+  },
+  {
+    "id": "84",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кохання\nЗаборонені слова: серце, люблю, емоції",
+      "en": "Topic: Love\nForbidden words: heart, love, emotions",
+      "ru": "Тема: Любовь\nЗапрещённые слова: сердце, люблю, эмоции"
+    }
+  },
+  {
+    "id": "85",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Хелловін\nЗаборонені слова: гарбуз, костюм, страшно",
+      "en": "Topic: Halloween\nForbidden words: pumpkin, costume, scary",
+      "ru": "Тема: Хэллоуин\nЗапрещённые слова: тыква, костюм, страшно"
+    }
+  },
+  {
+    "id": "86",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Зоопарк\nЗаборонені слова: тварини, клітка, лев",
+      "en": "Topic: Zoo\nForbidden words: animals, cage, lion",
+      "ru": "Тема: Зоопарк\nЗапрещённые слова: животные, клетка, лев"
+    }
+  },
+  {
+    "id": "87",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Покупки\nЗаборонені слова: магазин, купити, ціна",
+      "en": "Topic: Shopping\nForbidden words: store, buy, price",
+      "ru": "Тема: Покупки\nЗапрещённые слова: магазин, купить, цена"
+    }
+  },
+  {
+    "id": "88",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Краса\nЗаборонені слова: макіяж, стиль, догляд",
+      "en": "Topic: Beauty\nForbidden words: makeup, style, care",
+      "ru": "Тема: Красота\nЗапрещённые слова: макияж, стиль, уход"
+    }
+  },
+  {
+    "id": "89",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Спогади\nЗаборонені слова: минуле, згадувати, ностальгія",
+      "en": "Topic: Memories\nForbidden words: past, remember, nostalgia",
+      "ru": "Тема: Воспоминания\nЗапрещённые слова: прошлое, вспоминать, ностальгия"
+    }
+  },
+  {
+    "id": "90",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Щастя\nЗаборонені слова: радість, усмішка, щасливий",
+      "en": "Topic: Happiness\nForbidden words: joy, smile, happy",
+      "ru": "Тема: Счастье\nЗапрещённые слова: радость, улыбка, счастливый"
+    }
+  },
+  {
+    "id": "91",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Подорожі\nЗаборонені слова: мандрівка, дорога, країна",
+      "en": "Topic: Travel\nForbidden words: trip, journey, country",
+      "ru": "Тема: Путешествия\nЗапрещённые слова: поездка, дорога, страна"
+    }
+  },
+  {
+    "id": "92",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Дружба\nЗаборонені слова: друг, підтримка, разом",
+      "en": "Topic: Friendship\nForbidden words: friend, support, together",
+      "ru": "Тема: Дружба\nЗапрещённые слова: друг, поддержка, вместе"
+    }
+  },
+  {
+    "id": "93",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Море\nЗаборонені слова: хвиля, вода, пляж",
+      "en": "Topic: Sea\nForbidden words: wave, water, beach",
+      "ru": "Тема: Море\nЗапрещённые слова: волна, вода, пляж"
+    }
+  },
+  {
+    "id": "94",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сміх\nЗаборонені слова: жарти, голос, веселощі",
+      "en": "Topic: Laughter\nForbidden words: joke, voice, fun",
+      "ru": "Тема: Смех\nЗапрещённые слова: шутка, голос, веселье"
+    }
+  },
+  {
+    "id": "95",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Осінь\nЗаборонені слова: листя, жовтий, дощ",
+      "en": "Topic: Autumn\nForbidden words: leaves, yellow, rain",
+      "ru": "Тема: Осень\nЗапрещённые слова: листья, жёлтый, дождь"
+    }
+  },
+  {
+    "id": "96",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Страх\nЗаборонені слова: темрява, тривога, небезпека",
+      "en": "Topic: Fear\nForbidden words: darkness, anxiety, danger",
+      "ru": "Тема: Страх\nЗапрещённые слова: тьма, тревога, опасность"
+    }
+  },
+  {
+    "id": "97",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Музика\nЗаборонені слова: звук, пісня, мелодія",
+      "en": "Topic: Music\nForbidden words: sound, song, melody",
+      "ru": "Тема: Музыка\nЗапрещённые слова: звук, песня, мелодия"
+    }
+  },
+  {
+    "id": "98",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вогонь\nЗаборонені слова: полум’я, гарячий, пекти",
+      "en": "Topic: Fire\nForbidden words: flame, hot, burn",
+      "ru": "Тема: Огонь\nЗапрещённые слова: пламя, горячий, жечь"
+    }
+  },
+  {
+    "id": "99",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Дитинство\nЗаборонені слова: малюк, гра, школа",
+      "en": "Topic: Childhood\nForbidden words: kid, play, school",
+      "ru": "Тема: Детство\nЗапрещённые слова: ребёнок, игра, школа"
+    }
+  },
+  {
+    "id": "100",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Зима\nЗаборонені слова: сніг, холод, мороз",
+      "en": "Topic: Winter\nForbidden words: snow, cold, frost",
+      "ru": "Тема: Зима\nЗапрещённые слова: снег, холод, мороз"
+    }
+  },
+  {
+    "id": "101",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кіно\nЗаборонені слова: фільм, актор, екран",
+      "en": "Topic: Cinema\nForbidden words: movie, actor, screen",
+      "ru": "Тема: Кино\nЗапрещённые слова: фильм, актёр, экран"
+    }
+  },
+  {
+    "id": "102",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Весна\nЗаборонені слова: квіти, зелений, тепло",
+      "en": "Topic: Spring\nForbidden words: flowers, green, warmth",
+      "ru": "Тема: Весна\nЗапрещённые слова: цветы, зелёный, тепло"
+    }
+  },
+  {
+    "id": "103",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Мрії\nЗаборонені слова: бажання, ціль, сподівання",
+      "en": "Topic: Dreams\nForbidden words: desire, goal, hope",
+      "ru": "Тема: Мечты\nЗапрещённые слова: желание, цель, надежда"
+    }
+  },
+  {
+    "id": "104",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Робота\nЗаборонені слова: офіс, завдання, колега",
+      "en": "Topic: Work\nForbidden words: office, task, colleague",
+      "ru": "Тема: Работа\nЗапрещённые слова: офис, задание, коллега"
+    }
+  },
+  {
+    "id": "105",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кава\nЗаборонені слова: напій, зерна, чашка",
+      "en": "Topic: Coffee\nForbidden words: drink, beans, cup",
+      "ru": "Тема: Кофе\nЗапрещённые слова: напиток, зёрна, чашка"
+    }
+  },
+  {
+    "id": "106",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ніч\nЗаборонені слова: темно, зорі, сон",
+      "en": "Topic: Night\nForbidden words: dark, stars, sleep",
+      "ru": "Тема: Ночь\nЗапрещённые слова: темно, звёзды, сон"
+    }
+  },
+  {
+    "id": "107",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Природа\nЗаборонені слова: дерева, тварини, краса",
+      "en": "Topic: Nature\nForbidden words: trees, animals, beauty",
+      "ru": "Тема: Природа\nЗапрещённые слова: деревья, животные, красота"
+    }
+  },
+  {
+    "id": "108",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Спорт\nЗаборонені слова: м'яч, команда, тренування",
+      "en": "Topic: Sports\nForbidden words: ball, team, training",
+      "ru": "Тема: Спорт\nЗапрещённые слова: мяч, команда, тренировка"
+    }
+  },
+  {
+    "id": "109",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Інтернет\nЗаборонені слова: сайт, мережа, телефон",
+      "en": "Topic: Internet\nForbidden words: website, network, phone",
+      "ru": "Тема: Интернет\nЗапрещённые слова: сайт, сеть, телефон"
+    }
+  },
+  {
+    "id": "110",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Школа\nЗаборонені слова: урок, вчитель, дзвінок",
+      "en": "Topic: School\nForbidden words: lesson, teacher, bell",
+      "ru": "Тема: Школа\nЗапрещённые слова: урок, учитель, звонок"
+    }
+  },
+  {
+    "id": "111",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Їжа\nЗаборонені слова: їсти, смак, страва",
+      "en": "Topic: Food\nForbidden words: eat, taste, dish",
+      "ru": "Тема: Еда\nЗапрещённые слова: есть, вкус, блюдо"
+    }
+  },
+  {
+    "id": "112",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Літо\nЗаборонені слова: спека, відпустка, сонце",
+      "en": "Topic: Summer\nForbidden words: heat, vacation, sun",
+      "ru": "Тема: Лето\nЗапрещённые слова: жара, отпуск, солнце"
+    }
+  },
+  {
+    "id": "113",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Технології\nЗаборонені слова: гаджет, штучний, цифровий",
+      "en": "Topic: Technology\nForbidden words: gadget, artificial, digital",
+      "ru": "Тема: Технологии\nЗапрещённые слова: гаджет, искусственный, цифровой"
+    }
+  },
+  {
+    "id": "114",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ранок\nЗаборонені слова: прокинутись, кава, сонце",
+      "en": "Topic: Morning\nForbidden words: wake up, coffee, sun",
+      "ru": "Тема: Утро\nЗапрещённые слова: проснуться, кофе, солнце"
+    }
+  },
+  {
+    "id": "115",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Книга\nЗаборонені слова: сторінка, автор, читати",
+      "en": "Topic: Book\nForbidden words: page, author, read",
+      "ru": "Тема: Книга\nЗапрещённые слова: страница, автор, читать"
+    }
+  },
+  {
+    "id": "116",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вечір\nЗаборонені слова: захід, тиша, лампа",
+      "en": "Topic: Evening\nForbidden words: sunset, quiet, lamp",
+      "ru": "Тема: Вечер\nЗапрещённые слова: закат, тишина, лампа"
+    }
+  },
+  {
+    "id": "117",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Самотність\nЗаборонені слова: один, тиша, ізоляція",
+      "en": "Topic: Loneliness\nForbidden words: alone, silence, isolation",
+      "ru": "Тема: Одиночество\nЗапрещённые слова: один, тишина, изоляция"
+    }
+  },
+  {
+    "id": "118",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Весілля\nЗаборонені слова: наречена, обручка, церемонія",
+      "en": "Topic: Wedding\nForbidden words: bride, ring, ceremony",
+      "ru": "Тема: Свадьба\nЗапрещённые слова: невеста, кольцо, церемония"
+    }
+  },
+  {
+    "id": "119",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кішки\nЗаборонені слова: пухнастий, муркотіти, тварина",
+      "en": "Topic: Cats\nForbidden words: fluffy, purr, animal",
+      "ru": "Тема: Кошки\nЗапрещённые слова: пушистый, мурлыкать, животное"
+    }
+  },
+  {
+    "id": "120",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Танці\nЗаборонені слова: рух, музика, ритм",
+      "en": "Topic: Dance\nForbidden words: movement, music, rhythm",
+      "ru": "Тема: Танцы\nЗапрещённые слова: движение, музыка, ритм"
+    }
+  },
+  {
+    "id": "121",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Гори\nЗаборонені слова: вершина, висота, каміння",
+      "en": "Topic: Mountains\nForbidden words: peak, height, rocks",
+      "ru": "Тема: Горы\nЗапрещённые слова: вершина, высота, камни"
+    }
+  },
+  {
+    "id": "122",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кохання з першого погляду\nЗаборонені слова: очі, зустріч, привабливість",
+      "en": "Topic: Love at First Sight\nForbidden words: eyes, meeting, attraction",
+      "ru": "Тема: Любовь с первого взгляда\nЗапрещённые слова: глаза, встреча, влечение"
+    }
+  },
+  {
+    "id": "123",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Тварини\nЗаборонені слова: собака, кішка, лапи",
+      "en": "Topic: Animals\nForbidden words: dog, cat, paws",
+      "ru": "Тема: Животные\nЗапрещённые слова: собака, кошка, лапы"
+    }
+  },
+  {
+    "id": "124",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Краса\nЗаборонені слова: обличчя, зовнішність, стиль",
+      "en": "Topic: Beauty\nForbidden words: face, appearance, style",
+      "ru": "Тема: Красота\nЗапрещённые слова: лицо, внешность, стиль"
+    }
+  },
+  {
+    "id": "125",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Місто\nЗаборонені слова: будинок, вулиця, машини",
+      "en": "Topic: City\nForbidden words: building, street, cars",
+      "ru": "Тема: Город\nЗапрещённые слова: здание, улица, машины"
+    }
+  },
+  {
+    "id": "126",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кібербезпека\nЗаборонені слова: пароль, хакер, система",
+      "en": "Topic: Cybersecurity\nForbidden words: password, hacker, system",
+      "ru": "Тема: Кибербезопасность\nЗапрещённые слова: пароль, хакер, система"
+    }
+  },
+  {
+    "id": "127",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Новорічні свята\nЗаборонені слова: ялинка, подарунок, сніг",
+      "en": "Topic: New Year Holidays\nForbidden words: tree, gift, snow",
+      "ru": "Тема: Новогодние праздники\nЗапрещённые слова: ёлка, подарок, снег"
+    }
+  },
+  {
+    "id": "128",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сон\nЗаборонені слова: спати, очі, ліжко",
+      "en": "Topic: Sleep\nForbidden words: sleep, eyes, bed",
+      "ru": "Тема: Сон\nЗапрещённые слова: спать, глаза, кровать"
+    }
+  },
+  {
+    "id": "129",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сім'я\nЗаборонені слова: мама, тато, діти",
+      "en": "Topic: Family\nForbidden words: mom, dad, children",
+      "ru": "Тема: Семья\nЗапрещённые слова: мама, папа, дети"
+    }
+  },
+  {
+    "id": "130",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Інтелект\nЗаборонені слова: розум, знання, мислення",
+      "en": "Topic: Intelligence\nForbidden words: mind, knowledge, thinking",
+      "ru": "Тема: Интеллект\nЗапрещённые слова: разум, знание, мышление"
+    }
+  },
+  {
+    "id": "131",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Гроші\nЗаборонені слова: банкноти, готівка, ціна",
+      "en": "Topic: Money\nForbidden words: bills, cash, price",
+      "ru": "Тема: Деньги\nЗапрещённые слова: купюры, наличные, цена"
+    }
+  },
+  {
+    "id": "132",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сила волі\nЗаборонені слова: рішучість, мотивація, характер",
+      "en": "Topic: Willpower\nForbidden words: determination, motivation, character",
+      "ru": "Тема: Сила воли\nЗапрещённые слова: решимость, мотивация, характер"
+    }
+  },
+  {
+    "id": "133",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Простір\nЗаборонені слова: космос, зірки, галактика",
+      "en": "Topic: Space\nForbidden words: cosmos, stars, galaxy",
+      "ru": "Тема: Космос\nЗапрещённые слова: космос, звёзды, галактика"
+    }
+  },
+  {
+    "id": "134",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Інтуїція\nЗаборонені слова: відчуття, передчуття, внутрішній",
+      "en": "Topic: Intuition\nForbidden words: feeling, hunch, inner",
+      "ru": "Тема: Интуиция\nЗапрещённые слова: ощущение, предчувствие, внутренний"
+    }
+  },
+  {
+    "id": "135",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Успіх\nЗаборонені слова: перемога, досягнення, результат",
+      "en": "Topic: Success\nForbidden words: victory, achievement, result",
+      "ru": "Тема: Успех\nЗапрещённые слова: победа, достижение, результат"
+    }
+  },
+  {
+    "id": "136",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Тиша\nЗаборонені слова: звуки, шум, мовчати",
+      "en": "Topic: Silence\nForbidden words: sound, noise, quiet",
+      "ru": "Тема: Тишина\nЗапрещённые слова: звуки, шум, молчать"
+    }
+  },
+  {
+    "id": "137",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Інструменти\nЗаборонені слова: молоток, викрутка, цвях",
+      "en": "Topic: Tools\nForbidden words: hammer, screwdriver, nail",
+      "ru": "Тема: Инструменты\nЗапрещённые слова: молоток, отвёртка, гвоздь"
+    }
+  },
+  {
+    "id": "138",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Робототехніка\nЗаборонені слова: машина, програмування, механізм",
+      "en": "Topic: Robotics\nForbidden words: machine, programming, mechanism",
+      "ru": "Тема: Робототехника\nЗапрещённые слова: машина, программирование, механизм"
+    }
+  },
+  {
+    "id": "139",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Здоров'я\nЗаборонені слова: лікар, хвороба, лікування",
+      "en": "Topic: Health\nForbidden words: doctor, illness, treatment",
+      "ru": "Тема: Здоровье\nЗапрещённые слова: врач, болезнь, лечение"
+    }
+  },
+  {
+    "id": "140",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Література\nЗаборонені слова: роман, поезія, автор",
+      "en": "Topic: Literature\nForbidden words: novel, poetry, author",
+      "ru": "Тема: Литература\nЗапрещённые слова: роман, поэзия, автор"
+    }
+  },
+  {
+    "id": "141",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Комунікація\nЗаборонені слова: говорити, слухати, мова",
+      "en": "Topic: Communication\nForbidden words: talk, listen, language",
+      "ru": "Тема: Коммуникация\nЗапрещённые слова: говорить, слушать, язык"
+    }
+  },
+  {
+    "id": "142",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Мода\nЗаборонені слова: одяг, стиль, аксесуари",
+      "en": "Topic: Fashion\nForbidden words: clothes, style, accessories",
+      "ru": "Тема: Мода\nЗапрещённые слова: одежда, стиль, аксессуары"
+    }
+  },
+  {
+    "id": "143",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Доброта\nЗаборонені слова: допомога, чуйність, щедрість",
+      "en": "Topic: Kindness\nForbidden words: help, compassion, generosity",
+      "ru": "Тема: Доброта\nЗапрещённые слова: помощь, сочувствие, щедрость"
+    }
+  },
+  {
+    "id": "144",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Майбутнє\nЗаборонені слова: завтра, плани, розвиток",
+      "en": "Topic: Future\nForbidden words: tomorrow, plans, progress",
+      "ru": "Тема: Будущее\nЗапрещённые слова: завтра, планы, развитие"
+    }
+  },
+  {
+    "id": "145",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Відпустка\nЗаборонені слова: релакс, готель, пляж",
+      "en": "Topic: Vacation\nForbidden words: relax, hotel, beach",
+      "ru": "Тема: Отпуск\nЗапрещённые слова: отдых, отель, пляж"
+    }
+  },
+  {
+    "id": "146",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Драма\nЗаборонені слова: сльози, конфлікт, трагедія",
+      "en": "Topic: Drama\nForbidden words: tears, conflict, tragedy",
+      "ru": "Тема: Драма\nЗапрещённые слова: слёзы, конфликт, трагедия"
+    }
+  },
+  {
+    "id": "147",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Веселощі\nЗаборонені слова: свято, сміх, розваги",
+      "en": "Topic: Fun\nForbidden words: party, laughter, entertainment",
+      "ru": "Тема: Веселье\nЗапрещённые слова: праздник, смех, развлечения"
+    }
+  },
+  {
+    "id": "148",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Освіта\nЗаборонені слова: знання, навчання, університет",
+      "en": "Topic: Education\nForbidden words: knowledge, learning, university",
+      "ru": "Тема: Образование\nЗапрещённые слова: знание, обучение, университет"
+    }
+  },
+  {
+    "id": "149",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Винахід\nЗаборонені слова: ідея, новий, створити",
+      "en": "Topic: Invention\nForbidden words: idea, new, create",
+      "ru": "Тема: Изобретение\nЗапрещённые слова: идея, новый, создать"
+    }
+  },
+  {
+    "id": "180",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Сон\nЗаборонені слова: спати, ліжко, очі",
+      "en": "Topic: Sleep\nForbidden words: sleep, bed, eyes",
+      "ru": "Тема: Сон\nЗапрещённые слова: спать, кровать, глаза"
+    }
+  },
+  {
+    "id": "181",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Ранок\nЗаборонені слова: прокидатися, світанок, кава",
+      "en": "Topic: Morning\nForbidden words: wake up, sunrise, coffee",
+      "ru": "Тема: Утро\nЗапрещённые слова: просыпаться, рассвет, кофе"
+    }
+  },
+  {
+    "id": "182",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Щастя\nЗаборонені слова: усмішка, радість, щасливий",
+      "en": "Topic: Happiness\nForbidden words: smile, joy, happy",
+      "ru": "Тема: Счастье\nЗапрещённые слова: улыбка, радость, счастливый"
+    }
+  },
+  {
+    "id": "183",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Зима\nЗаборонені слова: сніг, холод, ковдра",
+      "en": "Topic: Winter\nForbidden words: snow, cold, blanket",
+      "ru": "Тема: Зима\nЗапрещённые слова: снег, холод, одеяло"
+    }
+  },
+  {
+    "id": "184",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Тварини\nЗаборонені слова: собака, кіт, хвіст",
+      "en": "Topic: Animals\nForbidden words: dog, cat, tail",
+      "ru": "Тема: Животные\nЗапрещённые слова: собака, кошка, хвост"
+    }
+  },
+  {
+    "id": "185",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Хобі\nЗаборонені слова: малювання, в'язання, шахи",
+      "en": "Topic: Hobbies\nForbidden words: drawing, knitting, chess",
+      "ru": "Тема: Хобби\nЗапрещённые слова: рисование, вязание, шахматы"
+    }
+  },
+  {
+    "id": "186",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Місто\nЗаборонені слова: вулиця, будинок, транспорт",
+      "en": "Topic: City\nForbidden words: street, building, transport",
+      "ru": "Тема: Город\nЗапрещённые слова: улица, здание, транспорт"
+    }
+  },
+  {
+    "id": "187",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Література\nЗаборонені слова: книга, автор, сторінка",
+      "en": "Topic: Literature\nForbidden words: book, author, page",
+      "ru": "Тема: Литература\nЗапрещённые слова: книга, автор, страница"
+    }
+  },
+  {
+    "id": "188",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Весна\nЗаборонені слова: квіти, тепло, зелений",
+      "en": "Topic: Spring\nForbidden words: flowers, warm, green",
+      "ru": "Тема: Весна\nЗапрещённые слова: цветы, тепло, зелёный"
+    }
+  },
+  {
+    "id": "189",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Їжа\nЗаборонені слова: їсти, страва, смачно",
+      "en": "Topic: Food\nForbidden words: eat, dish, delicious",
+      "ru": "Тема: Еда\nЗапрещённые слова: есть, блюдо, вкусно"
+    }
+  },
+  {
+    "id": "190",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Родина\nЗаборонені слова: мама, тато, дім",
+      "en": "Topic: Family\nForbidden words: mom, dad, home",
+      "ru": "Тема: Семья\nЗапрещённые слова: мама, папа, дом"
+    }
+  },
+  {
+    "id": "191",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Казка\nЗаборонені слова: чарівник, принцеса, дракон",
+      "en": "Topic: Fairy tale\nForbidden words: wizard, princess, dragon",
+      "ru": "Тема: Сказка\nЗапрещённые слова: волшебник, принцесса, дракон"
+    }
+  },
+  {
+    "id": "192",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Робота\nЗаборонені слова: офіс, зарплата, колега",
+      "en": "Topic: Work\nForbidden words: office, salary, colleague",
+      "ru": "Тема: Работа\nЗапрещённые слова: офис, зарплата, коллега"
+    }
+  },
+  {
+    "id": "193",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Осінь\nЗаборонені слова: листя, дощ, жовтий",
+      "en": "Topic: Autumn\nForbidden words: leaves, rain, yellow",
+      "ru": "Тема: Осень\nЗапрещённые слова: листья, дождь, жёлтый"
+    }
+  },
+  {
+    "id": "194",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вогонь\nЗаборонені слова: полум’я, гаряче, дим",
+      "en": "Topic: Fire\nForbidden words: flame, hot, smoke",
+      "ru": "Тема: Огонь\nЗапрещённые слова: пламя, горячо, дым"
+    }
+  },
+  {
+    "id": "195",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Мрії\nЗаборонені слова: ціль, уява, бажання",
+      "en": "Topic: Dreams\nForbidden words: goal, imagination, wish",
+      "ru": "Тема: Мечты\nЗапрещённые слова: цель, воображение, желание"
+    }
+  },
+  {
+    "id": "196",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Повітря\nЗаборонені слова: дихати, вітер, атмосфера",
+      "en": "Topic: Air\nForbidden words: breathe, wind, atmosphere",
+      "ru": "Тема: Воздух\nЗапрещённые слова: дышать, ветер, атмосфера"
+    }
+  },
+  {
+    "id": "197",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Гроші\nЗаборонені слова: купюра, платити, гаманець",
+      "en": "Topic: Money\nForbidden words: bill, pay, wallet",
+      "ru": "Тема: Деньги\nЗапрещённые слова: купюра, платить, кошелёк"
+    }
+  },
+  {
+    "id": "198",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Кіно\nЗаборонені слова: актор, сцена, екран",
+      "en": "Topic: Cinema\nForbidden words: actor, scene, screen",
+      "ru": "Тема: Кино\nЗапрещённые слова: актёр, сцена, экран"
+    }
+  },
+  {
+    "id": "199",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Космос\nЗаборонені слова: планета, зоря, ракета",
+      "en": "Topic: Space\nForbidden words: planet, star, rocket",
+      "ru": "Тема: Космос\nЗапрещённые слова: планета, звезда, ракета"
+    }
+  },
+  {
+    "id": "200",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Вечір\nЗаборонені слова: ніч, темно, тиша",
+      "en": "Topic: Evening\nForbidden words: night, dark, silence",
+      "ru": "Тема: Вечер\nЗапрещённые слова: ночь, темно, тишина"
+    }
+  },
+  {
+    "id": "201",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Телебачення\nЗаборонені слова: канал, екран, ведучий",
+      "en": "Topic: Television\nForbidden words: channel, screen, host",
+      "ru": "Тема: Телевидение\nЗапрещённые слова: канал, экран, ведущий"
+    }
+  },
+  {
+    "id": "202",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Енергія\nЗаборонені слова: електрика, заряд, батарея",
+      "en": "Topic: Energy\nForbidden words: electricity, charge, battery",
+      "ru": "Тема: Энергия\nЗапрещённые слова: электричество, заряд, батарея"
+    }
+  },
+  {
+    "id": "203",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Океан\nЗаборонені слова: хвиля, глибина, синій",
+      "en": "Topic: Ocean\nForbidden words: wave, depth, blue",
+      "ru": "Тема: Океан\nЗапрещённые слова: волна, глубина, синий"
+    }
+  },
+  {
+    "id": "204",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Роботи\nЗаборонені слова: механізм, програма, штучний",
+      "en": "Topic: Robots\nForbidden words: mechanism, program, artificial",
+      "ru": "Тема: Роботы\nЗапрещённые слова: механизм, программа, искусственный"
+    }
+  },
+  {
+    "id": "205",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Колір\nЗаборонені слова: палітра, веселка, фарба",
+      "en": "Topic: Color\nForbidden words: palette, rainbow, paint",
+      "ru": "Тема: Цвет\nЗапрещённые слова: палитра, радуга, краска"
+    }
+  },
+  {
+    "id": "206",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Танці\nЗаборонені слова: рух, музика, сцена",
+      "en": "Topic: Dance\nForbidden words: movement, music, stage",
+      "ru": "Тема: Танцы\nЗапрещённые слова: движение, музыка, сцена"
+    }
+  },
+  {
+    "id": "207",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Комікси\nЗаборонені слова: герої, балон, малюнок",
+      "en": "Topic: Comics\nForbidden words: heroes, speech bubble, drawing",
+      "ru": "Тема: Комиксы\nЗапрещённые слова: герои, пузырь, рисунок"
+    }
+  },
+  {
+    "id": "208",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Лід\nЗаборонені слова: замерзати, слизько, прозорий",
+      "en": "Topic: Ice\nForbidden words: freeze, slippery, transparent",
+      "ru": "Тема: Лёд\nЗапрещённые слова: замерзать, скользко, прозрачный"
+    }
+  },
+  {
+    "id": "209",
+    "sentence_type": "FORBIDDEN_WORDS",
+    "sentence": {
+      "ua": "Тема: Мова\nЗаборонені слова: слова, мова, алфавіт",
+      "en": "Topic: Language\nForbidden words: words, language, alphabet",
+      "ru": "Тема: Язык\nЗапрещённые слова: слова, язык, алфавит"
+    }
+  }
+]

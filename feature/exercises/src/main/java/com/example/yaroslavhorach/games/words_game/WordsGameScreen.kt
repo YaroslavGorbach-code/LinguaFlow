@@ -13,6 +13,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -34,6 +35,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -171,14 +173,14 @@ private fun GameContent(
     Column(
         modifier = Modifier
             .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom))
-            .padding(horizontal = 20.dp)
             .padding(top = 24.dp)
             .fillMaxSize()
     ) {
         Column(Modifier.weight(1f)) {
             Column(
                 modifier = Modifier
-                    .weight(0.8f)
+                    .weight(0.7f)
+                    .padding(horizontal = 20.dp)
                     .verticalScroll(rememberScrollState())
             ) {
                 Text(
@@ -206,50 +208,19 @@ private fun GameContent(
                 )
             }
 
-            AnimatedContent(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxWidth(),
-                targetState = state.words,
-                transitionSpec = {
-                    if (allowAnimate.value) {
-                        slideInHorizontally(
-                            initialOffsetX = { fullWidth -> fullWidth },
-                            animationSpec = tween(durationMillis = 500)
-                        ) togetherWith slideOutHorizontally(
-                            targetOffsetX = { fullWidth -> -fullWidth },
-                            animationSpec = tween(durationMillis = 500)
-                        )
-                    } else {
-                        EnterTransition.None togetherWith ExitTransition.None
-                    }
-                },
-                label = "TwistTextAnimation"
-            ) { words ->
-                Column(modifier = Modifier.fillMaxSize()) {
-                    Spacer(Modifier.weight(0.6f))
-
-                    when (words.size) {
-                        1 -> { /* TODO */ }
-                        2 -> { TwoWords(state.copy(words = words)) }
-                        3 -> { /* TODO */ }
-                        4 -> { /* TODO */ }
-                        else -> {
-                            Text(
-                                text = words.joinToString(","),
-                                style = LinguaTypography.body1.copy(fontSize = 24.sp),
-                                color = MaterialTheme.colorScheme.typoPrimary()
-                            )
-                        }
-                    }
-
-                    Spacer(Modifier.weight(1f))
+            when(val mode = state.screenMode){
+                is WordsGameViewState.ScreenMode.Sentence -> {
+                    SentenceContent(mode, allowAnimate)
+                }
+                is WordsGameViewState.ScreenMode.Words -> {
+                    WordsContent(mode, allowAnimate)
                 }
             }
         }
 
         PrimaryButton(
-            modifier = Modifier, text = if (state.isLastExercise) "Закінчити" else "Далі"
+            modifier = Modifier.padding(horizontal = 20.dp),
+            text = if (state.isLastExercise) "Закінчити" else "Далі"
         ) {
             allowAnimate.value = true
             actioner(WordsGameAction.OnNextClicked)
@@ -259,10 +230,132 @@ private fun GameContent(
 }
 
 @Composable
-private fun TwoWords(state: WordsGameViewState) {
+private fun ColumnScope.SentenceContent(
+    mode: WordsGameViewState.ScreenMode.Sentence,
+    allowAnimate: MutableState<Boolean>
+) {
+    AnimatedContent(
+        modifier = Modifier.Companion
+            .weight(1f)
+            .fillMaxWidth(),
+        targetState = mode.sentence,
+        transitionSpec = {
+            if (allowAnimate.value) {
+                slideInHorizontally(
+                    initialOffsetX = { fullWidth -> fullWidth },
+                    animationSpec = tween(durationMillis = 500)
+                ) togetherWith slideOutHorizontally(
+                    targetOffsetX = { fullWidth -> -fullWidth },
+                    animationSpec = tween(durationMillis = 500)
+                )
+            } else {
+                EnterTransition.None togetherWith ExitTransition.None
+            }
+        },
+        label = "TwistTextAnimation"
+    ) { sentence ->
+        Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(Modifier.weight(1f))
+            Sentence(mode.copy(sentence = sentence))
+            Spacer(Modifier.weight(1f))
+        }
+    }
+}
+
+@Composable
+private fun ColumnScope.WordsContent(
+    mode: WordsGameViewState.ScreenMode.Words,
+    allowAnimate: MutableState<Boolean>
+) {
+    AnimatedContent(
+        modifier = Modifier.Companion
+            .weight(1f)
+            .fillMaxWidth(),
+        targetState = mode.words,
+        transitionSpec = {
+            if (allowAnimate.value) {
+                slideInHorizontally(
+                    initialOffsetX = { fullWidth -> fullWidth },
+                    animationSpec = tween(durationMillis = 500)
+                ) togetherWith slideOutHorizontally(
+                    targetOffsetX = { fullWidth -> -fullWidth },
+                    animationSpec = tween(durationMillis = 500)
+                )
+            } else {
+                EnterTransition.None togetherWith ExitTransition.None
+            }
+        },
+        label = "TwistTextAnimation"
+    ) { words ->
+        Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(Modifier.weight(1f))
+
+            when (words.size) {
+                1 -> OneWord(mode.copy(words = words))
+                2 -> TwoWords(mode.copy(words = words))
+                3 -> { /* TODO */ }
+                4 -> FourWords(mode.copy(words = words))
+                else -> {
+                    Text(
+                        text = words.joinToString(","),
+                        style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                        color = MaterialTheme.colorScheme.typoPrimary()
+                    )
+                }
+            }
+            Spacer(Modifier.weight(1f))
+        }
+    }
+}
+
+@Composable
+private fun OneWord(state: WordsGameViewState.ScreenMode.Words) {
+    Box(
+        modifier = Modifier
+            .padding(horizontal = 20.dp)
+            .fillMaxWidth()
+    ) {
+        BoxWithStripes(
+            borderColor = MaterialTheme.colorScheme.secondary,
+            rawShadowYOffset = 0.dp,
+            borderWidth = 1.dp,
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
+            Text(
+                modifier = Modifier
+                    .align(Alignment.Center)
+                    .fillMaxWidth(),
+                text = state.words[0],
+                textAlign = TextAlign.Center,
+                style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                color = White
+            )
+        }
+    }
+}
+
+@Composable
+private fun Sentence(state: WordsGameViewState.ScreenMode.Sentence) {
+    Box(
+        modifier = Modifier
+            .padding(horizontal = 20.dp)
+            .fillMaxWidth()
+    ) {
+        Text(
+            text = state.sentence,
+            style = LinguaTypography.body1.copy(fontSize = 24.sp),
+            color = MaterialTheme.colorScheme.typoPrimary()
+        )
+    }
+}
+
+@Composable
+private fun TwoWords(mode: WordsGameViewState.ScreenMode.Words) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .padding(horizontal = 20.dp)
     ) {
         BoxWithStripes(
             rotation = -15f,
@@ -276,7 +369,7 @@ private fun TwoWords(state: WordsGameViewState) {
                 modifier = Modifier
                     .align(Alignment.Center)
                     .fillMaxWidth(),
-                text = state.words[0],
+                text = mode.words[0],
                 textAlign = TextAlign.Center,
                 style = LinguaTypography.body1.copy(fontSize = 24.sp),
                 color = White
@@ -294,13 +387,107 @@ private fun TwoWords(state: WordsGameViewState) {
                 modifier = Modifier
                     .align(Alignment.Center)
                     .fillMaxWidth(),
-                text = state.words[1],
+                text = mode.words[1],
                 textAlign = TextAlign.Center,
                 style = LinguaTypography.body1.copy(fontSize = 24.sp),
                 color = White
             )
         }
     }
+}
+
+@Composable
+private fun FourWords(mode: WordsGameViewState.ScreenMode.Words) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 20.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
+            BoxWithStripes(
+                rotation = -15f,
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[0],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+            BoxWithStripes(
+                rotation = 15f,
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[1],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+        }
+        Spacer(Modifier.height(16.dp))
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
+            BoxWithStripes(
+                rotation = -15f,
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[2],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+            BoxWithStripes(
+                rotation = 15f,
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[3],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+        }
+    }
+
 }
 
 @Preview

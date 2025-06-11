@@ -1,0 +1,1973 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене просто ігнорують постійно, всім байдуже!»",
+      "en": "Phrase: \"I'm constantly being ignored, no one cares!\"",
+      "ru": "Фраза: «Меня просто постоянно игнорируют, всем плевать!»"
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це найгірший день у моєму житті!»",
+      "en": "Phrase: \"This is the worst day of my life!\"",
+      "ru": "Фраза: «Это худший день в моей жизни!»"
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Ти ніколи мене не слухаєш!»",
+      "en": "Phrase: \"You never listen to me!\"",
+      "ru": "Фраза: «Ты никогда меня не слушаешь!»"
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене ніхто не цінує!»",
+      "en": "Phrase: \"No one appreciates me!\"",
+      "ru": "Фраза: «Меня никто не ценит!»"
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Він завжди все псує!»",
+      "en": "Phrase: \"He always ruins everything!\"",
+      "ru": "Фраза: «Он всегда всё портит!»"
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я нікому не потрібен!»",
+      "en": "Phrase: \"Nobody needs me!\"",
+      "ru": "Фраза: «Я никому не нужен!»"
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це несправедливо, я завжди крайній!»",
+      "en": "Phrase: \"This is unfair, I'm always the scapegoat!\"",
+      "ru": "Фраза: «Это несправедливо, я всегда крайний!»"
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Ти просто знущаєшся з мене!»",
+      "en": "Phrase: \"You're just mocking me!\"",
+      "ru": "Фраза: «Ты просто издеваешься надо мной!»"
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене нічого не виходить, я нікчема!»",
+      "en": "Phrase: \"Nothing works out for me, I'm a failure!\"",
+      "ru": "Фраза: «У меня ничего не получается, я ничтожество!»"
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Всі лише використовують мене!»",
+      "en": "Phrase: \"Everyone is just using me!\"",
+      "ru": "Фраза: «Все только используют меня!»"
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені все набридло, я більше так не можу!»",
+      "en": "Phrase: \"I'm sick of everything, I can't do this anymore!\"",
+      "ru": "Фраза: «Мне всё надоело, я больше так не могу!»"
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я більше не витримую цей тиск!»",
+      "en": "Phrase: \"I can't handle this pressure anymore!\"",
+      "ru": "Фраза: «Я больше не выдерживаю это давление!»"
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все завжди йде не так, як я хочу!»",
+      "en": "Phrase: \"Nothing ever goes the way I want!\"",
+      "ru": "Фраза: «Всё всегда идёт не так, как я хочу!»"
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я втомився робити все сам!»",
+      "en": "Phrase: \"I'm tired of doing everything by myself!\"",
+      "ru": "Фраза: «Я устал всё делать сам!»"
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене постійно критикують!»",
+      "en": "Phrase: \"I'm constantly being criticized!\"",
+      "ru": "Фраза: «Меня постоянно критикуют!»"
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене ніколи не буває шансу показати себе!»",
+      "en": "Phrase: \"I never get a chance to prove myself!\"",
+      "ru": "Фраза: «У меня никогда нет шанса проявить себя!»"
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Ти весь час мене підставляєш!»",
+      "en": "Phrase: \"You're always setting me up!\"",
+      "ru": "Фраза: «Ты всё время подставляешь меня!»"
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я ніколи не буваю достатньо хорошим!»",
+      "en": "Phrase: \"I'm never good enough!\"",
+      "ru": "Фраза: «Я никогда не бываю достаточно хорош!»"
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, що всі змовилися проти мене!»",
+      "en": "Phrase: \"It feels like everyone's conspiring against me!\"",
+      "ru": "Фраза: «Кажется, что все сговорились против меня!»"
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я втрачаю себе в цій роботі!»",
+      "en": "Phrase: \"I'm losing myself in this job!\"",
+      "ru": "Фраза: «Я теряю себя в этой работе!»"
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Ніхто не сприймає мене всерйоз!»",
+      "en": "Phrase: \"No one takes me seriously!\"",
+      "ru": "Фраза: «Никто не воспринимает меня всерьёз!»"
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене завжди звинувачують без причини!»",
+      "en": "Phrase: \"I'm always blamed for no reason!\"",
+      "ru": "Фраза: «Меня всегда обвиняют без причины!»"
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це все марно, нічого не зміниться!»",
+      "en": "Phrase: \"It's all pointless, nothing will ever change!\"",
+      "ru": "Фраза: «Это всё напрасно, ничего не изменится!»"
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені страшно навіть починати!»",
+      "en": "Phrase: \"I'm scared to even start!\"",
+      "ru": "Фраза: «Мне страшно даже начать!»"
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Всі на мене тиснуть!»",
+      "en": "Phrase: \"Everyone is pressuring me!\"",
+      "ru": "Фраза: «Все на меня давят!»"
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я просто лузер!»",
+      "en": "Phrase: \"I'm just a loser!\"",
+      "ru": "Фраза: «Я просто неудачник!»"
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Ніхто не розуміє, через що я проходжу!»",
+      "en": "Phrase: \"No one understands what I'm going through!\"",
+      "ru": "Фраза: «Никто не понимает, через что я прохожу!»"
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я завжди самотній, навіть серед людей!»",
+      "en": "Phrase: \"I'm always lonely, even around people!\"",
+      "ru": "Фраза: «Я всегда одинок, даже среди людей!»"
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене використовують як зручну людину!»",
+      "en": "Phrase: \"People use me just because it's convenient!\"",
+      "ru": "Фраза: «Меня используют, потому что так удобно!»"
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене вже нічого не радує!»",
+      "en": "Phrase: \"Nothing makes me happy anymore!\"",
+      "ru": "Фраза: «Меня уже ничто не радует!»"
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це кінець, я не впораюсь!»",
+      "en": "Phrase: \"This is the end, I can't handle it!\"",
+      "ru": "Фраза: «Это конец, я не справлюсь!»"
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я просто зайвий тут!»",
+      "en": "Phrase: \"I'm just unnecessary here!\"",
+      "ru": "Фраза: «Я тут просто лишний!»"
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все навколо лицеміри!»",
+      "en": "Phrase: \"Everyone around me is fake!\"",
+      "ru": "Фраза: «Все вокруг — лицемеры!»"
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене забрали мій шанс!»",
+      "en": "Phrase: \"They took away my chance!\"",
+      "ru": "Фраза: «У меня отняли мой шанс!»"
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я ніколи не зможу пробачити це!»",
+      "en": "Phrase: \"I'll never be able to forgive this!\"",
+      "ru": "Фраза: «Я никогда не смогу это простить!»"
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені соромно за себе!»",
+      "en": "Phrase: \"I'm ashamed of myself!\"",
+      "ru": "Фраза: «Мне стыдно за себя!»"
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене весь час порівнюють з іншими!»",
+      "en": "Phrase: \"I'm constantly being compared to others!\"",
+      "ru": "Фраза: «Меня всё время сравнивают с другими!»"
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я завжди маю все тягнути на собі!»",
+      "en": "Phrase: \"I always have to carry everything on my back!\"",
+      "ru": "Фраза: «Я всегда всё должен тянуть сам!»"
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це був жахливий провал!»",
+      "en": "Phrase: \"That was a total disaster!\"",
+      "ru": "Фраза: «Это был полный провал!»"
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Він зробив мені боляче навмисно!»",
+      "en": "Phrase: \"He hurt me on purpose!\"",
+      "ru": "Фраза: «Он нарочно причинил мне боль!»"
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я втрачаю контроль!»",
+      "en": "Phrase: \"I'm losing control!\"",
+      "ru": "Фраза: «Я теряю контроль!»"
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Всі тільки беруть, а я віддаю!»",
+      "en": "Phrase: \"Everyone only takes, and I just give!\"",
+      "ru": "Фраза: «Все только берут, а я отдаю!»"
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене більше немає сил терпіти!»",
+      "en": "Phrase: \"I can't tolerate this anymore!\"",
+      "ru": "Фраза: «У меня больше нет сил это терпеть!»"
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе повністю спустошеним!»",
+      "en": "Phrase: \"I feel completely drained!\"",
+      "ru": "Фраза: «Я чувствую себя полностью опустошённым!»"
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це несправедливо — я заслужив більше!»",
+      "en": "Phrase: \"This is unfair — I deserved more!\"",
+      "ru": "Фраза: «Это несправедливо — я заслуживал большего!»"
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені гидко від цієї ситуації!»",
+      "en": "Phrase: \"This situation makes me sick!\"",
+      "ru": "Фраза: «Мне противна эта ситуация!»"
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене опускаються руки!»",
+      "en": "Phrase: \"I feel like giving up!\"",
+      "ru": "Фраза: «У меня опускаются руки!»"
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся нікчемою!»",
+      "en": "Phrase: \"I feel like a failure!\"",
+      "ru": "Фраза: «Я чувствую себя ничтожеством!»"
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це вже нестерпно!»",
+      "en": "Phrase: \"This is unbearable!\"",
+      "ru": "Фраза: «Это невыносимо!»"
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я втратив довіру до всіх!»",
+      "en": "Phrase: \"I've lost trust in everyone!\"",
+      "ru": "Фраза: «Я потерял доверие ко всем!»"
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене ніхто не слухає, навіть коли я кричу!»",
+      "en": "Phrase: \"No one listens, even when I shout!\"",
+      "ru": "Фраза: «Меня никто не слышит, даже когда я кричу!»"
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене більше немає сил боротися!»",
+      "en": "Phrase: \"I don't have the strength to fight anymore!\"",
+      "ru": "Фраза: «У меня больше нет сил бороться!»"
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене знову підвели!»",
+      "en": "Phrase: \"I've been let down again!\"",
+      "ru": "Фраза: «Меня снова подвели!»"
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Ніхто не цінує мій внесок!»",
+      "en": "Phrase: \"No one values my effort!\"",
+      "ru": "Фраза: «Никто не ценит мой вклад!»"
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе порожнім усередині!»",
+      "en": "Phrase: \"I feel empty inside!\"",
+      "ru": "Фраза: «Я чувствую пустоту внутри!»"
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, я більше ніколи не зможу довіряти!»",
+      "en": "Phrase: \"I feel like I'll never be able to trust again!\"",
+      "ru": "Фраза: «Мне кажется, я больше никогда не смогу доверять!»"
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я повністю розчарований!»",
+      "en": "Phrase: \"I'm completely disappointed!\"",
+      "ru": "Фраза: «Я полностью разочарован!»"
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все, що я роблю — дарма!»",
+      "en": "Phrase: \"Everything I do is for nothing!\"",
+      "ru": "Фраза: «Всё, что я делаю — напрасно!»"
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене не сприймають серйозно ніколи!»",
+      "en": "Phrase: \"No one ever takes me seriously!\"",
+      "ru": "Фраза: «Меня никогда не воспринимают всерьёз!»"
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це все було марною тратою часу!»",
+      "en": "Phrase: \"It was all a waste of time!\"",
+      "ru": "Фраза: «Это всё было пустой тратой времени!»"
+    }
+  },
+  {
+    "id": "211",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене просто ігнорують!»",
+      "en": "Phrase: \"I'm just being ignored!\"",
+      "ru": "Фраза: «Меня просто игнорируют!»"
+    }
+  },
+  {
+    "id": "212",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені набридло постійно все тягнути на собі!»",
+      "en": "Phrase: \"I'm tired of carrying everything on my own!\"",
+      "ru": "Фраза: «Мне надоело всё тянуть на себе!»"
+    }
+  },
+  {
+    "id": "213",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся нікчемно!»",
+      "en": "Phrase: \"I feel worthless!\"",
+      "ru": "Фраза: «Я чувствую себя никчёмным!»"
+    }
+  },
+  {
+    "id": "214",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це все через них!»",
+      "en": "Phrase: \"This is all their fault!\"",
+      "ru": "Фраза: «Это всё из-за них!»"
+    }
+  },
+  {
+    "id": "215",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я в повному відчаї!»",
+      "en": "Phrase: \"I'm in total despair!\"",
+      "ru": "Фраза: «Я в полном отчаянии!»"
+    }
+  },
+  {
+    "id": "216",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все тільки й роблять, що мене критикують!»",
+      "en": "Phrase: \"All they ever do is criticize me!\"",
+      "ru": "Фраза: «Они только и делают, что критикуют меня!»"
+    }
+  },
+  {
+    "id": "217",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я так себе огидний!»",
+      "en": "Phrase: \"I disgust myself!\"",
+      "ru": "Фраза: «Я сам себе противен!»"
+    }
+  },
+  {
+    "id": "218",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені страшно навіть вийти з дому!»",
+      "en": "Phrase: \"I'm afraid to even leave the house!\"",
+      "ru": "Фраза: «Мне страшно даже выйти из дома!»"
+    }
+  },
+  {
+    "id": "219",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Вони спеціально все ускладнюють!»",
+      "en": "Phrase: \"They're making everything difficult on purpose!\"",
+      "ru": "Фраза: «Они специально всё усложняют!»"
+    }
+  },
+  {
+    "id": "220",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це вже за межами мого терпіння!»",
+      "en": "Phrase: \"This is beyond my patience!\"",
+      "ru": "Фраза: «Это за пределами моего терпения!»"
+    }
+  },
+  {
+    "id": "221",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не бачу в цьому ніякого сенсу!»",
+      "en": "Phrase: \"I don't see any point in this!\"",
+      "ru": "Фраза: «Я не вижу в этом никакого смысла!»"
+    }
+  },
+  {
+    "id": "222",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «З мене досить!»",
+      "en": "Phrase: \"I've had enough!\"",
+      "ru": "Фраза: «С меня хватит!»"
+    }
+  },
+  {
+    "id": "223",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся повністю розбитим!»",
+      "en": "Phrase: \"I feel completely broken!\"",
+      "ru": "Фраза: «Я чувствую себя полностью разбитым!»"
+    }
+  },
+  {
+    "id": "224",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «У мене опустилися руки!»",
+      "en": "Phrase: \"I've lost all motivation!\"",
+      "ru": "Фраза: «У меня опустились руки!»"
+    }
+  },
+  {
+    "id": "225",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все навколо — суцільний хаос!»",
+      "en": "Phrase: \"Everything around me is total chaos!\"",
+      "ru": "Фраза: «Всё вокруг — сплошной хаос!»"
+    }
+  },
+  {
+    "id": "226",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене постійно принижують!»",
+      "en": "Phrase: \"I'm constantly being humiliated!\"",
+      "ru": "Фраза: «Меня постоянно унижают!»"
+    }
+  },
+  {
+    "id": "227",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся покинутим!»",
+      "en": "Phrase: \"I feel abandoned!\"",
+      "ru": "Фраза: «Я чувствую себя покинутым!»"
+    }
+  },
+  {
+    "id": "228",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це все марно!»",
+      "en": "Phrase: \"It's all in vain!\"",
+      "ru": "Фраза: «Это всё напрасно!»"
+    }
+  },
+  {
+    "id": "229",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене розриває зсередини!»",
+      "en": "Phrase: \"I'm being torn apart inside!\"",
+      "ru": "Фраза: «Меня разрывает изнутри!»"
+    }
+  },
+  {
+    "id": "230",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, я більше не впораюся!»",
+      "en": "Phrase: \"I don't think I can handle this anymore!\"",
+      "ru": "Фраза: «Мне кажется, я больше не справлюсь!»"
+    }
+  },
+  {
+    "id": "231",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся втраченим у цьому світі!»",
+      "en": "Phrase: \"I feel lost in this world!\"",
+      "ru": "Фраза: «Я чувствую себя потерянным в этом мире!»"
+    }
+  },
+  {
+    "id": "232",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене весь час переслідує невдача!»",
+      "en": "Phrase: \"Failure follows me all the time!\"",
+      "ru": "Фраза: «Меня постоянно преследует неудача!»"
+    }
+  },
+  {
+    "id": "233",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене ніхто не розуміє!»",
+      "en": "Phrase: \"Nobody understands me!\"",
+      "ru": "Фраза: «Никто меня не понимает!»"
+    }
+  },
+  {
+    "id": "234",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я більше не маю сил боротися!»",
+      "en": "Phrase: \"I have no strength to fight anymore!\"",
+      "ru": "Фраза: «У меня больше нет сил бороться!»"
+    }
+  },
+  {
+    "id": "235",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все пішло шкереберть!»",
+      "en": "Phrase: \"Everything went wrong!\"",
+      "ru": "Фраза: «Всё пошло наперекосяк!»"
+    }
+  },
+  {
+    "id": "236",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе дуже самотнім!»",
+      "en": "Phrase: \"I feel very lonely!\"",
+      "ru": "Фраза: «Я чувствую себя очень одиноким!»"
+    }
+  },
+  {
+    "id": "237",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені ніколи не вдається!»",
+      "en": "Phrase: \"I never succeed!\"",
+      "ru": "Фраза: «Мне никогда не удаётся!»"
+    }
+  },
+  {
+    "id": "238",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене ніхто не підтримує!»",
+      "en": "Phrase: \"Nobody supports me!\"",
+      "ru": "Фраза: «Меня никто не поддерживает!»"
+    }
+  },
+  {
+    "id": "239",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся безпорадним!»",
+      "en": "Phrase: \"I feel helpless!\"",
+      "ru": "Фраза: «Я чувствую себя беспомощным!»"
+    }
+  },
+  {
+    "id": "240",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені страшенно сумно!»",
+      "en": "Phrase: \"I am terribly sad!\"",
+      "ru": "Фраза: «Мне ужасно грустно!»"
+    }
+  },
+  {
+    "id": "241",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не можу більше терпіти!»",
+      "en": "Phrase: \"I can't endure this anymore!\"",
+      "ru": "Фраза: «Я больше не могу это терпеть!»"
+    }
+  },
+  {
+    "id": "242",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене обманули!»",
+      "en": "Phrase: \"I was deceived!\"",
+      "ru": "Фраза: «Меня обманули!»"
+    }
+  },
+  {
+    "id": "243",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розчарований у всьому!»",
+      "en": "Phrase: \"I'm disappointed in everything!\"",
+      "ru": "Фраза: «Я разочарован во всем!»"
+    }
+  },
+  {
+    "id": "244",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я втомився від постійних проблем!»",
+      "en": "Phrase: \"I'm tired of constant problems!\"",
+      "ru": "Фраза: «Я устал от постоянных проблем!»"
+    }
+  },
+  {
+    "id": "245",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, я нікому не потрібен!»",
+      "en": "Phrase: \"I feel like nobody needs me!\"",
+      "ru": "Фраза: «Мне кажется, я никому не нужен!»"
+    }
+  },
+  {
+    "id": "246",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розлючений через цю ситуацію!»",
+      "en": "Phrase: \"I'm angry because of this situation!\"",
+      "ru": "Фраза: «Я зол из-за этой ситуации!»"
+    }
+  },
+  {
+    "id": "247",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене не цінують!»",
+      "en": "Phrase: \"I'm not appreciated!\"",
+      "ru": "Фраза: «Меня не ценят!»"
+    }
+  },
+  {
+    "id": "248",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся невдахою!»",
+      "en": "Phrase: \"I feel like a failure!\"",
+      "ru": "Фраза: «Я чувствую себя неудачником!»"
+    }
+  },
+  {
+    "id": "249",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене розчарували люди навколо!»",
+      "en": "Phrase: \"I'm disappointed by the people around me!\"",
+      "ru": "Фраза: «Меня разочаровали люди вокруг!»"
+    }
+  },
+  {
+    "id": "250",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю, що втрачаю контроль!»",
+      "en": "Phrase: \"I feel like I'm losing control!\"",
+      "ru": "Фраза: «Я чувствую, что теряю контроль!»"
+    }
+  },
+  {
+    "id": "251",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я занадто втомився, щоб продовжувати!»",
+      "en": "Phrase: \"I'm too tired to continue!\"",
+      "ru": "Фраза: «Я слишком устал, чтобы продолжать!»"
+    }
+  },
+  {
+    "id": "252",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не можу більше довіряти!»",
+      "en": "Phrase: \"I can't trust anymore!\"",
+      "ru": "Фраза: «Я больше не могу доверять!»"
+    }
+  },
+  {
+    "id": "253",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все навколо тільки підводить!»",
+      "en": "Phrase: \"Everything around me just lets me down!\"",
+      "ru": "Фраза: «Всё вокруг меня только подводит!»"
+    }
+  },
+  {
+    "id": "254",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся зрадженим!»",
+      "en": "Phrase: \"I feel betrayed!\"",
+      "ru": "Фраза: «Я чувствую себя преданным!»"
+    }
+  },
+  {
+    "id": "255",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, що ніхто не турбується!»",
+      "en": "Phrase: \"It seems like nobody cares!\"",
+      "ru": "Фраза: «Мне кажется, что никому нет дела!»"
+    }
+  },
+  {
+    "id": "256",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не можу це терпіти!»",
+      "en": "Phrase: \"I can't stand this!\"",
+      "ru": "Фраза: «Я не могу это терпеть!»"
+    }
+  },
+  {
+    "id": "257",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це несправедливо!»",
+      "en": "Phrase: \"This is unfair!\"",
+      "ru": "Фраза: «Это несправедливо!»"
+    }
+  },
+  {
+    "id": "258",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розгублений!»",
+      "en": "Phrase: \"I'm confused!\"",
+      "ru": "Фраза: «Я растерян!»"
+    }
+  },
+  {
+    "id": "259",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я просто втомився від усього!»",
+      "en": "Phrase: \"I'm just tired of everything!\"",
+      "ru": "Фраза: «Я просто устал от всего!»"
+    }
+  },
+  {
+    "id": "231",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся втраченим у цьому світі!»",
+      "en": "Phrase: \"I feel lost in this world!\"",
+      "ru": "Фраза: «Я чувствую себя потерянным в этом мире!»"
+    }
+  },
+  {
+    "id": "232",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене весь час переслідує невдача!»",
+      "en": "Phrase: \"Failure follows me all the time!\"",
+      "ru": "Фраза: «Меня постоянно преследует неудача!»"
+    }
+  },
+  {
+    "id": "233",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене ніхто не розуміє!»",
+      "en": "Phrase: \"Nobody understands me!\"",
+      "ru": "Фраза: «Никто меня не понимает!»"
+    }
+  },
+  {
+    "id": "234",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я більше не маю сил боротися!»",
+      "en": "Phrase: \"I have no strength to fight anymore!\"",
+      "ru": "Фраза: «У меня больше нет сил бороться!»"
+    }
+  },
+  {
+    "id": "235",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все пішло шкереберть!»",
+      "en": "Phrase: \"Everything went wrong!\"",
+      "ru": "Фраза: «Всё пошло наперекосяк!»"
+    }
+  },
+  {
+    "id": "236",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе дуже самотнім!»",
+      "en": "Phrase: \"I feel very lonely!\"",
+      "ru": "Фраза: «Я чувствую себя очень одиноким!»"
+    }
+  },
+  {
+    "id": "237",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені ніколи не вдається!»",
+      "en": "Phrase: \"I never succeed!\"",
+      "ru": "Фраза: «Мне никогда не удаётся!»"
+    }
+  },
+  {
+    "id": "238",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене ніхто не підтримує!»",
+      "en": "Phrase: \"Nobody supports me!\"",
+      "ru": "Фраза: «Меня никто не поддерживает!»"
+    }
+  },
+  {
+    "id": "239",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся безпорадним!»",
+      "en": "Phrase: \"I feel helpless!\"",
+      "ru": "Фраза: «Я чувствую себя беспомощным!»"
+    }
+  },
+  {
+    "id": "240",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені страшенно сумно!»",
+      "en": "Phrase: \"I am terribly sad!\"",
+      "ru": "Фраза: «Мне ужасно грустно!»"
+    }
+  },
+  {
+    "id": "241",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не можу більше терпіти!»",
+      "en": "Phrase: \"I can't endure this anymore!\"",
+      "ru": "Фраза: «Я больше не могу это терпеть!»"
+    }
+  },
+  {
+    "id": "242",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене обманули!»",
+      "en": "Phrase: \"I was deceived!\"",
+      "ru": "Фраза: «Меня обманули!»"
+    }
+  },
+  {
+    "id": "243",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розчарований у всьому!»",
+      "en": "Phrase: \"I'm disappointed in everything!\"",
+      "ru": "Фраза: «Я разочарован во всем!»"
+    }
+  },
+  {
+    "id": "244",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я втомився від постійних проблем!»",
+      "en": "Phrase: \"I'm tired of constant problems!\"",
+      "ru": "Фраза: «Я устал от постоянных проблем!»"
+    }
+  },
+  {
+    "id": "245",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, я нікому не потрібен!»",
+      "en": "Phrase: \"I feel like nobody needs me!\"",
+      "ru": "Фраза: «Мне кажется, я никому не нужен!»"
+    }
+  },
+  {
+    "id": "246",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розлючений через цю ситуацію!»",
+      "en": "Phrase: \"I'm angry because of this situation!\"",
+      "ru": "Фраза: «Я зол из-за этой ситуации!»"
+    }
+  },
+  {
+    "id": "247",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене не цінують!»",
+      "en": "Phrase: \"I'm not appreciated!\"",
+      "ru": "Фраза: «Меня не ценят!»"
+    }
+  },
+  {
+    "id": "248",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся невдахою!»",
+      "en": "Phrase: \"I feel like a failure!\"",
+      "ru": "Фраза: «Я чувствую себя неудачником!»"
+    }
+  },
+  {
+    "id": "249",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене розчарували люди навколо!»",
+      "en": "Phrase: \"I'm disappointed by the people around me!\"",
+      "ru": "Фраза: «Меня разочаровали люди вокруг!»"
+    }
+  },
+  {
+    "id": "250",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю, що втрачаю контроль!»",
+      "en": "Phrase: \"I feel like I'm losing control!\"",
+      "ru": "Фраза: «Я чувствую, что теряю контроль!»"
+    }
+  },
+  {
+    "id": "251",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я занадто втомився, щоб продовжувати!»",
+      "en": "Phrase: \"I'm too tired to continue!\"",
+      "ru": "Фраза: «Я слишком устал, чтобы продолжать!»"
+    }
+  },
+  {
+    "id": "252",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не можу більше довіряти!»",
+      "en": "Phrase: \"I can't trust anymore!\"",
+      "ru": "Фраза: «Я больше не могу доверять!»"
+    }
+  },
+  {
+    "id": "253",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Все навколо тільки підводить!»",
+      "en": "Phrase: \"Everything around me just lets me down!\"",
+      "ru": "Фраза: «Всё вокруг меня только подводит!»"
+    }
+  },
+  {
+    "id": "254",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся зрадженим!»",
+      "en": "Phrase: \"I feel betrayed!\"",
+      "ru": "Фраза: «Я чувствую себя преданным!»"
+    }
+  },
+  {
+    "id": "255",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, що ніхто не турбується!»",
+      "en": "Phrase: \"It seems like nobody cares!\"",
+      "ru": "Фраза: «Мне кажется, что никому нет дела!»"
+    }
+  },
+  {
+    "id": "256",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я не можу це терпіти!»",
+      "en": "Phrase: \"I can't stand this!\"",
+      "ru": "Фраза: «Я не могу это терпеть!»"
+    }
+  },
+  {
+    "id": "257",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це несправедливо!»",
+      "en": "Phrase: \"This is unfair!\"",
+      "ru": "Фраза: «Это несправедливо!»"
+    }
+  },
+  {
+    "id": "258",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розгублений!»",
+      "en": "Phrase: \"I'm confused!\"",
+      "ru": "Фраза: «Я растерян!»"
+    }
+  },
+  {
+    "id": "259",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я просто втомився від усього!»",
+      "en": "Phrase: \"I'm just tired of everything!\"",
+      "ru": "Фраза: «Я просто устал от всего!»"
+    }
+  },
+  {
+    "id": "260",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Це занадто важко!»",
+      "en": "Phrase: \"This is too hard!\"",
+      "ru": "Фраза: «Это слишком трудно!»"
+    }
+  },
+  {
+    "id": "261",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я просто не можу більше терпіти, коли мене ігнорують і не цінують мої зусилля!»",
+      "en": "Phrase: \"I just can't endure it anymore when I'm ignored and my efforts aren't appreciated!\"",
+      "ru": "Фраза: «Я больше не могу терпеть, когда меня игнорируют и не ценят мои усилия!»"
+    }
+  },
+  {
+    "id": "262",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене розчаровує, що, незважаючи на всі мої старання, результат все одно не відповідає моїм очікуванням!»",
+      "en": "Phrase: \"I'm disappointed that despite all my efforts, the result still doesn't meet my expectations!\"",
+      "ru": "Фраза: «Меня разочаровывает, что несмотря на все мои старания, результат всё равно не соответствует моим ожиданиям!»"
+    }
+  },
+  {
+    "id": "263",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся виснаженим, бо весь час доводиться справлятися з проблемами, які не залежать від мене!»",
+      "en": "Phrase: \"I feel exhausted because I constantly have to deal with problems beyond my control!\"",
+      "ru": "Фраза: «Я чувствую себя истощённым, потому что всё время приходится справляться с проблемами, которые не зависят от меня!»"
+    }
+  },
+  {
+    "id": "264",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені здається, що мене не слухають і не враховують мою думку навіть у найважливіших питаннях!»",
+      "en": "Phrase: \"It seems to me that I'm not heard and my opinion is ignored even in the most important matters!\"",
+      "ru": "Фраза: «Мне кажется, что меня не слушают и не учитывают моё мнение даже в самых важных вопросах!»"
+    }
+  },
+  {
+    "id": "265",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю безсилля, бо намагаюся змінити ситуацію, але мої зусилля залишаються непоміченими!»",
+      "en": "Phrase: \"I feel powerless because I try to change the situation, but my efforts go unnoticed!\"",
+      "ru": "Фраза: «Я чувствую бессилие, потому что пытаюсь изменить ситуацию, но мои усилия остаются незамеченными!»"
+    }
+  },
+  {
+    "id": "266",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що навіть після стількох спроб покращити відносини, ситуація залишається напруженою!»",
+      "en": "Phrase: \"I'm upset that even after so many attempts to improve the relationship, the situation remains tense!\"",
+      "ru": "Фраза: «Меня огорчает, что даже после стольких попыток улучшить отношения ситуация остаётся напряжённой!»"
+    }
+  },
+  {
+    "id": "267",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю роздратування через те, що мої пропозиції ігнорують без пояснень!»",
+      "en": "Phrase: \"I feel irritated because my suggestions are ignored without any explanation!\"",
+      "ru": "Фраза: «Я чувствую раздражение из-за того, что мои предложения игнорируют без объяснений!»"
+    }
+  },
+  {
+    "id": "268",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені дуже сумно, що люди навколо здаються байдужими до того, що я переживаю!»",
+      "en": "Phrase: \"I'm very sad that people around seem indifferent to what I'm going through!\"",
+      "ru": "Фраза: «Мне очень грустно, что люди вокруг кажутся равнодушными к тому, что я переживаю!»"
+    }
+  },
+  {
+    "id": "269",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розчарований, що після стількох років праці мої досягнення не визнають!»",
+      "en": "Phrase: \"I'm disappointed that after so many years of work, my achievements are not recognized!\"",
+      "ru": "Фраза: «Я разочарован, что после стольких лет работы мои достижения не признают!»"
+    }
+  },
+  {
+    "id": "270",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені дуже важко змиритися з тим, що мої надії і очікування не справдилися!»",
+      "en": "Phrase: \"It's very hard for me to accept that my hopes and expectations were not fulfilled!\"",
+      "ru": "Фраза: «Мне очень трудно смириться с тем, что мои надежды и ожидания не оправдались!»"
+    }
+  },
+  {
+    "id": "271",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе розгубленим і самотнім у складних життєвих ситуаціях!»",
+      "en": "Phrase: \"I feel confused and lonely in difficult life situations!\"",
+      "ru": "Фраза: «Я чувствую себя растерянным и одиноким в сложных жизненных ситуациях!»"
+    }
+  },
+  {
+    "id": "272",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені страшенно важко дивитися, як мої близькі страждають через непорозуміння!»",
+      "en": "Phrase: \"It's terribly hard for me to watch my loved ones suffer because of misunderstandings!\"",
+      "ru": "Фраза: «Мне ужасно тяжело видеть, как мои близкие страдают из-за непонимания!»"
+    }
+  },
+  {
+    "id": "273",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування через те, що багато речей відбуваються не так, як я планував!»",
+      "en": "Phrase: \"I feel disappointed because many things are happening differently than I planned!\"",
+      "ru": "Фраза: «Я чувствую разочарование из-за того, что многие вещи происходят не так, как я планировал!»"
+    }
+  },
+  {
+    "id": "274",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені дуже неприємно, що мене часто критикують, не пропонуючи конструктивних порад!»",
+      "en": "Phrase: \"I feel very upset that I'm often criticized without constructive feedback!\"",
+      "ru": "Фраза: «Мне очень неприятно, что меня часто критикуют без конструктивных советов!»"
+    }
+  },
+  {
+    "id": "275",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся пригніченим через постійну невизначеність у моєму житті!»",
+      "en": "Phrase: \"I feel overwhelmed by the constant uncertainty in my life!\"",
+      "ru": "Фраза: «Я чувствую подавленность из-за постоянной неопределённости в моей жизни!»"
+    }
+  },
+  {
+    "id": "276",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене дратує, що мої старання залишаються непоміченими і незатребуваними!»",
+      "en": "Phrase: \"I'm irritated that my efforts go unnoticed and unappreciated!\"",
+      "ru": "Фраза: «Меня раздражает, что мои усилия остаются незамеченными и невостребованными!»"
+    }
+  },
+  {
+    "id": "277",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе розчарованим через нерозуміння і брак підтримки від оточуючих!»",
+      "en": "Phrase: \"I feel disappointed due to lack of understanding and support from those around me!\"",
+      "ru": "Фраза: «Я чувствую разочарование из-за непонимания и отсутствия поддержки со стороны окружающих!»"
+    }
+  },
+  {
+    "id": "278",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені важко прийняти, що мої плани змінилися і я не можу їх реалізувати зараз!»",
+      "en": "Phrase: \"It's hard for me to accept that my plans have changed and I can't implement them now!\"",
+      "ru": "Фраза: «Мне трудно принять, что мои планы изменились и я не могу их реализовать сейчас!»"
+    }
+  },
+  {
+    "id": "279",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся самотнім, навіть коли навколо багато людей, бо не знаходжу порозуміння!»",
+      "en": "Phrase: \"I feel lonely even when surrounded by many people because I don't find understanding!\"",
+      "ru": "Фраза: «Я чувствую себя одиноким, даже когда вокруг много людей, потому что не нахожу понимания!»"
+    }
+  },
+  {
+    "id": "280",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене розчаровує, що мої намагання змінити ситуацію не приносять очікуваних результатів!»",
+      "en": "Phrase: \"I'm disappointed that my attempts to change the situation don't bring the expected results!\"",
+      "ru": "Фраза: «Меня разочаровывает, что мои попытки изменить ситуацию не приносят ожидаемых результатов!»"
+    }
+  },
+  {
+    "id": "281",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені дуже боляче усвідомлювати, що люди, яким я довіряв, мене підвели саме тоді, коли я найбільше цього потребував!»",
+      "en": "Phrase: \"It hurts me deeply to realize that the people I trusted let me down just when I needed them most!\"",
+      "ru": "Фраза: «Мне очень больно осознавать, что люди, которым я доверял, подвели меня именно тогда, когда я больше всего в этом нуждался!»"
+    }
+  },
+  {
+    "id": "282",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю величезне розчарування через те, що мої очікування щодо цього проекту зовсім не виправдалися!»",
+      "en": "Phrase: \"I feel deeply disappointed because my expectations for this project were completely unmet!\"",
+      "ru": "Фраза: «Я испытываю большое разочарование из-за того, что мои ожидания по этому проекту совсем не оправдались!»"
+    }
+  },
+  {
+    "id": "283",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені важко справлятися з тим, що через постійні зміни я не можу чітко планувати своє майбутнє!»",
+      "en": "Phrase: \"I find it difficult to cope with the fact that constant changes prevent me from clearly planning my future!\"",
+      "ru": "Фраза: «Мне тяжело справляться с тем, что из-за постоянных изменений я не могу чётко планировать своё будущее!»"
+    }
+  },
+  {
+    "id": "284",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я дуже засмучений, що мої ідеї часто ігнорують і не дають можливості їх реалізувати!»",
+      "en": "Phrase: \"I'm very upset that my ideas are often ignored and I don't get the chance to implement them!\"",
+      "ru": "Фраза: «Я очень огорчён, что мои идеи часто игнорируют и не дают возможности их реализовать!»"
+    }
+  },
+  {
+    "id": "285",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю тривогу через те, що зараз дуже багато невизначеності і змін у моєму житті!»",
+      "en": "Phrase: \"I feel anxious because there is a lot of uncertainty and change in my life right now!\"",
+      "ru": "Фраза: «Я испытываю тревогу из-за того, что сейчас в моей жизни много неопределённости и перемен!»"
+    }
+  },
+  {
+    "id": "286",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені дуже прикро, що після стількох років праці моя робота не отримала належного визнання!»",
+      "en": "Phrase: \"I'm very upset that after so many years of work, my efforts haven't been properly recognized!\"",
+      "ru": "Фраза: «Мне очень обидно, что после стольких лет работы моя работа не получила должного признания!»"
+    }
+  },
+  {
+    "id": "287",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся втомленим від того, що доводиться постійно вирішувати одні й ті самі проблеми без видимих змін!»",
+      "en": "Phrase: \"I feel tired because I constantly have to solve the same problems with no visible changes!\"",
+      "ru": "Фраза: «Я чувствую усталость от того, что приходится постоянно решать одни и те же проблемы без видимых изменений!»"
+    }
+  },
+  {
+    "id": "288",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що мої поради часто ігнорують, хоча я намагаюся допомогти!»",
+      "en": "Phrase: \"I'm upset that my advice is often ignored even though I try to help!\"",
+      "ru": "Фраза: «Меня огорчает, что мои советы часто игнорируют, хотя я стараюсь помочь!»"
+    }
+  },
+  {
+    "id": "289",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування через те, що навіть після докладених зусиль ситуація не покращується!»",
+      "en": "Phrase: \"I feel disappointed because even after making efforts, the situation isn't improving!\"",
+      "ru": "Фраза: «Я чувствую разочарование из-за того, что даже после приложенных усилий ситуация не улучшается!»"
+    }
+  },
+  {
+    "id": "290",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене дуже засмучує, що мої побоювання часто не сприймають серйозно!»",
+      "en": "Phrase: \"I'm very upset that my concerns are often not taken seriously!\"",
+      "ru": "Фраза: «Меня очень огорчает, что мои опасения часто не воспринимают всерьёз!»"
+    }
+  },
+  {
+    "id": "291",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся безсилим, бо незважаючи на всі мої зусилля, ситуація залишається складною!»",
+      "en": "Phrase: \"I feel powerless because despite all my efforts, the situation remains difficult!\"",
+      "ru": "Фраза: «Я чувствую бессилие, потому что несмотря на все мои усилия ситуация остаётся сложной!»"
+    }
+  },
+  {
+    "id": "292",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені прикро, що інші не цінують того, що я роблю для спільної справи!»",
+      "en": "Phrase: \"I'm hurt that others don't appreciate what I do for the common cause!\"",
+      "ru": "Фраза: «Мне обидно, что другие не ценят того, что я делаю для общего дела!»"
+    }
+  },
+  {
+    "id": "293",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю тривогу, бо не знаю, як складуться події найближчим часом!»",
+      "en": "Phrase: \"I feel anxious because I don't know how events will unfold in the near future!\"",
+      "ru": "Фраза: «Я испытываю тревогу, потому что не знаю, как сложатся события в ближайшее время!»"
+    }
+  },
+  {
+    "id": "294",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені складно змиритися з тим, що мої зусилля не завжди приносять очікуваний результат!»",
+      "en": "Phrase: \"It's hard for me to accept that my efforts don't always bring the expected result!\"",
+      "ru": "Фраза: «Мне сложно смириться с тем, что мои усилия не всегда приносят ожидаемый результат!»"
+    }
+  },
+  {
+    "id": "295",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я дуже засмучений, що навколо мене виникає багато непорозумінь!»",
+      "en": "Phrase: \"I'm very upset that there are many misunderstandings around me!\"",
+      "ru": "Фраза: «Я очень огорчён, что вокруг меня возникает много недоразумений!»"
+    }
+  },
+  {
+    "id": "296",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені важко прийняти, що іноді мої думки і почуття ніхто не розуміє!»",
+      "en": "Phrase: \"It's hard for me to accept that sometimes no one understands my thoughts and feelings!\"",
+      "ru": "Фраза: «Мне тяжело принять, что иногда никто не понимает мои мысли и чувства!»"
+    }
+  },
+  {
+    "id": "297",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе втомленим від постійної необхідності доводити свою позицію іншим!»",
+      "en": "Phrase: \"I feel tired of constantly having to prove my point to others!\"",
+      "ru": "Фраза: «Я чувствую усталость от постоянной необходимости доказывать свою позицию другим!»"
+    }
+  },
+  {
+    "id": "298",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене турбує, що я не можу повністю контролювати те, що відбувається навколо!»",
+      "en": "Phrase: \"I'm worried that I can't fully control what happens around me!\"",
+      "ru": "Фраза: «Меня беспокоит, что я не могу полностью контролировать то, что происходит вокруг!»"
+    }
+  },
+  {
+    "id": "299",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я розчарований, що часто мої ідеї не отримують підтримки і залишаються непочутими!»",
+      "en": "Phrase: \"I'm disappointed that my ideas often lack support and remain unheard!\"",
+      "ru": "Фраза: «Я разочарован, что мои идеи часто не получают поддержки и остаются невоспринятыми!»"
+    }
+  },
+  {
+    "id": "300",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені прикро, що іноді мені доводиться залишатися сам на сам зі своїми проблемами!»",
+      "en": "Phrase: \"It hurts me that sometimes I have to face my problems alone!\"",
+      "ru": "Фраза: «Мне обидно, что иногда мне приходится оставаться один на один со своими проблемами!»"
+    }
+  },
+  {
+    "id": "301",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю роздратування через те, що мої зусилля часто залишаються непоміченими або недооціненими!»",
+      "en": "Phrase: \"I feel irritated because my efforts often go unnoticed or undervalued!\"",
+      "ru": "Фраза: «Я испытываю раздражение из-за того, что мои усилия часто остаются незамеченными или недооценёнными!»"
+    }
+  },
+  {
+    "id": "302",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені важко приймати критику, особливо коли вона не конструктивна і здається несправедливою!»",
+      "en": "Phrase: \"I find it hard to accept criticism, especially when it’s not constructive and feels unfair!\"",
+      "ru": "Фраза: «Мне сложно принимать критику, особенно когда она неконструктивна и кажется несправедливой!»"
+    }
+  },
+  {
+    "id": "303",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю занепокоєння через те, що не можу впливати на деякі важливі для мене рішення!»",
+      "en": "Phrase: \"I feel concerned because I can't influence some important decisions for me!\"",
+      "ru": "Фраза: «Я испытываю беспокойство из-за того, что не могу влиять на некоторые важные для меня решения!»"
+    }
+  },
+  {
+    "id": "304",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене дуже турбує, що незважаючи на мої намагання, ситуація не змінюється на краще!»",
+      "en": "Phrase: \"I'm very worried that despite my efforts, the situation is not improving!\"",
+      "ru": "Фраза: «Меня очень беспокоит, что несмотря на мои усилия, ситуация не меняется к лучшему!»"
+    }
+  },
+  {
+    "id": "305",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю себе самотнім, коли навколо багато людей, але немає справжнього розуміння!»",
+      "en": "Phrase: \"I feel lonely when there are many people around but no real understanding!\"",
+      "ru": "Фраза: «Я чувствую себя одиноким, когда вокруг много людей, но нет настоящего понимания!»"
+    }
+  },
+  {
+    "id": "306",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що мої думки і почуття часто залишаються непоміченими іншими!»",
+      "en": "Phrase: \"I'm upset that my thoughts and feelings often go unnoticed by others!\"",
+      "ru": "Фраза: «Меня огорчает, что мои мысли и чувства часто остаются незамеченными другими!»"
+    }
+  },
+  {
+    "id": "307",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування через те, що часто доводиться повторювати одне й те саме, щоб мене почули!»",
+      "en": "Phrase: \"I feel disappointed because I often have to repeat the same things to be heard!\"",
+      "ru": "Фраза: «Я испытываю разочарование из-за того, что часто приходится повторять одно и то же, чтобы меня услышали!»"
+    }
+  },
+  {
+    "id": "308",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені складно справлятися з відчуттям, що мене недооцінюють у колективі!»",
+      "en": "Phrase: \"I find it difficult to cope with the feeling that I'm undervalued in the team!\"",
+      "ru": "Фраза: «Мне сложно справляться с ощущением, что меня недооценивают в коллективе!»"
+    }
+  },
+  {
+    "id": "309",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю втому від постійної необхідності доводити свою компетентність іншим!»",
+      "en": "Phrase: \"I feel tired from constantly having to prove my competence to others!\"",
+      "ru": "Фраза: «Я чувствую усталость от постоянной необходимости доказывать свою компетентность другим!»"
+    }
+  },
+  {
+    "id": "310",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що незважаючи на мої зусилля, мене не завжди сприймають серйозно!»",
+      "en": "Phrase: \"I'm upset that despite my efforts, I'm not always taken seriously!\"",
+      "ru": "Фраза: «Меня огорчает, что несмотря на мои усилия, меня не всегда воспринимают всерьёз!»"
+    }
+  },
+  {
+    "id": "311",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю неспокій через те, що зараз у моєму житті багато незакінчених справ і невирішених питань!»",
+      "en": "Phrase: \"I feel uneasy because there are many unfinished tasks and unresolved issues in my life right now!\"",
+      "ru": "Фраза: «Я испытываю беспокойство из-за того, что сейчас в моей жизни много незаконченных дел и неурегулированных вопросов!»"
+    }
+  },
+  {
+    "id": "312",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене дуже турбує, що я не можу знайти спільну мову з людьми, які мені важливі!»",
+      "en": "Phrase: \"I'm very worried that I can't find common ground with people important to me!\"",
+      "ru": "Фраза: «Меня очень беспокоит, что я не могу найти общий язык с людьми, которые для меня важны!»"
+    }
+  },
+  {
+    "id": "313",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування через те, що мої зусилля не завжди дають очікувані результати!»",
+      "en": "Phrase: \"I feel disappointed because my efforts don't always yield expected results!\"",
+      "ru": "Фраза: «Я испытываю разочарование из-за того, что мои усилия не всегда приносят ожидаемые результаты!»"
+    }
+  },
+  {
+    "id": "314",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені прикро, що іноді мої слова сприймають неправильно і це призводить до непорозумінь!»",
+      "en": "Phrase: \"It hurts me that sometimes my words are misunderstood, leading to misunderstandings!\"",
+      "ru": "Фраза: «Мне обидно, что иногда мои слова неправильно воспринимают, что приводит к недоразумениям!»"
+    }
+  },
+  {
+    "id": "315",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю тривогу через те, що не можу передбачити, що станеться в найближчому майбутньому!»",
+      "en": "Phrase: \"I feel anxious because I can't predict what will happen in the near future!\"",
+      "ru": "Фраза: «Я испытываю тревогу из-за того, что не могу предсказать, что произойдёт в ближайшем будущем!»"
+    }
+  },
+  {
+    "id": "316",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені складно справлятися з почуттям, що мої зусилля часто залишаються непоміченими!»",
+      "en": "Phrase: \"I find it hard to cope with the feeling that my efforts often go unnoticed!\"",
+      "ru": "Фраза: «Мне сложно справляться с ощущением, что мои усилия часто остаются незамеченными!»"
+    }
+  },
+  {
+    "id": "317",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я почуваюся розчарованим через те, що навколо мене часто виникають конфлікти, які я не можу контролювати!»",
+      "en": "Phrase: \"I feel disappointed because there are often conflicts around me that I can't control!\"",
+      "ru": "Фраза: «Я чувствую разочарование из-за того, что вокруг меня часто возникают конфликты, которые я не могу контролировать!»"
+    }
+  },
+  {
+    "id": "318",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що іноді мої старання не оцінюють так, як я б хотів!»",
+      "en": "Phrase: \"I'm upset that sometimes my efforts aren't appreciated the way I'd like!\"",
+      "ru": "Фраза: «Меня огорчает, что иногда мои старания не ценят так, как я хотел бы!»"
+    }
+  },
+  {
+    "id": "319",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю втому через те, що доводиться часто займатися справами, які не приносять мені задоволення!»",
+      "en": "Phrase: \"I feel tired because I often have to deal with tasks that don't bring me satisfaction!\"",
+      "ru": "Фраза: «Я чувствую усталость из-за того, что часто приходится заниматься делами, которые не приносят мне удовольствия!»"
+    }
+  },
+  {
+    "id": "320",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що мої слова іноді неправильно розуміють і це викликає непотрібні конфлікти!»",
+      "en": "Phrase: \"I'm upset that sometimes my words are misunderstood, causing unnecessary conflicts!\"",
+      "ru": "Фраза: «Меня огорчает, что иногда мои слова неправильно понимают, вызывая ненужные конфликты!»"
+    }
+  },
+  {
+    "id": "321",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування, бо здається, що мої ідеї не знаходять підтримки серед колег, хоча я докладаю багато зусиль.»",
+      "en": "Phrase: \"I feel disappointed because it seems my ideas do not find support among colleagues, even though I put in a lot of effort.\"",
+      "ru": "Фраза: «Я испытываю разочарование, потому что кажется, что мои идеи не находят поддержки среди коллег, хотя я прикладываю много усилий.»"
+    }
+  },
+  {
+    "id": "322",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене турбує, що через завантаженість я не маю достатньо часу на відпочинок і особисте життя.»",
+      "en": "Phrase: \"I’m worried that due to my workload I don’t have enough time for rest and personal life.\"",
+      "ru": "Фраза: «Меня беспокоит, что из-за загруженности у меня нет достаточно времени для отдыха и личной жизни.»"
+    }
+  },
+  {
+    "id": "323",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я засмучений тим, що часто відчуваю, що мене недооцінюють, навіть коли я викладаюся на повну.»",
+      "en": "Phrase: \"I am upset that I often feel undervalued even when I give my best.\"",
+      "ru": "Фраза: «Я расстроен тем, что часто чувствую себя недооценённым, даже когда выкладываюсь на полную.»"
+    }
+  },
+  {
+    "id": "324",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мені важко справлятися з відчуттям тривоги, коли я не впевнений у результатах своєї роботи.»",
+      "en": "Phrase: \"I find it difficult to cope with anxiety when I’m uncertain about the results of my work.\"",
+      "ru": "Фраза: «Мне сложно справляться с чувством тревоги, когда я не уверен в результатах своей работы.»"
+    }
+  },
+  {
+    "id": "325",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю злість, коли мої старання ідеалізувати ситуацію ігноруються або критикуються без пояснень.»",
+      "en": "Phrase: \"I feel angry when my efforts to improve the situation are ignored or criticized without explanation.\"",
+      "ru": "Фраза: «Я испытываю злость, когда мои попытки улучшить ситуацию игнорируются или критикуются без объяснений.»"
+    }
+  },
+  {
+    "id": "326",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене турбує, що через нестачу комунікації виникають непорозуміння, які можна було б уникнути.»",
+      "en": "Phrase: \"I’m concerned that due to lack of communication misunderstandings arise that could be avoided.\"",
+      "ru": "Фраза: «Меня беспокоит, что из-за нехватки коммуникации возникают недоразумения, которых можно было бы избежать.»"
+    }
+  },
+  {
+    "id": "327",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю втому, бо не можу знайти баланс між роботою і особистим життям.»",
+      "en": "Phrase: \"I feel tired because I can’t find balance between work and personal life.\"",
+      "ru": "Фраза: «Я чувствую усталость, потому что не могу найти баланс между работой и личной жизнью.»"
+    }
+  },
+  {
+    "id": "328",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що іноді мої ідеї і пропозиції не враховуються під час прийняття рішень.»",
+      "en": "Phrase: \"I’m upset that sometimes my ideas and suggestions are not considered during decision-making.\"",
+      "ru": "Фраза: «Меня огорчает, что иногда мои идеи и предложения не учитываются при принятии решений.»"
+    }
+  },
+  {
+    "id": "329",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування, коли бачу, що результат моєї праці не відповідає моїм очікуванням.»",
+      "en": "Phrase: \"I feel disappointed when I see that the result of my work doesn’t meet my expectations.\"",
+      "ru": "Фраза: «Я испытываю разочарование, когда вижу, что результат моей работы не соответствует моим ожиданиям.»"
+    }
+  },
+  {
+    "id": "330",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене турбує, що через нерозуміння з колегами погіршується загальна атмосфера на роботі.»",
+      "en": "Phrase: \"I’m worried that misunderstandings with colleagues worsen the overall atmosphere at work.\"",
+      "ru": "Фраза: «Меня беспокоит, что из-за недопонимания с коллегами ухудшается общая атмосфера на работе.»"
+    }
+  },
+  {
+    "id": "331",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю стрес через те, що постійно потрібно відповідати високим очікуванням оточення.»",
+      "en": "Phrase: \"I feel stressed because I constantly need to meet high expectations of those around me.\"",
+      "ru": "Фраза: «Я испытываю стресс из-за того, что постоянно нужно соответствовать высоким ожиданиям окружающих.»"
+    }
+  },
+  {
+    "id": "332",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що через погану організацію часу я не встигаю зробити все заплановане.»",
+      "en": "Phrase: \"I’m upset that due to poor time management I can’t accomplish everything planned.\"",
+      "ru": "Фраза: «Меня огорчает, что из-за плохой организации времени я не успеваю сделать всё запланированное.»"
+    }
+  },
+  {
+    "id": "333",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю роздратування через те, що мої пропозиції ідеї часто ігноруються без пояснень.»",
+      "en": "Phrase: \"I feel irritated because my proposals and ideas are often ignored without explanations.\"",
+      "ru": "Фраза: «Я испытываю раздражение из-за того, что мои предложения и идеи часто игнорируются без объяснений.»"
+    }
+  },
+  {
+    "id": "334",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене турбує, що через погану комунікацію в команді часто виникають непорозуміння і конфлікти.»",
+      "en": "Phrase: \"I’m concerned that poor communication in the team often causes misunderstandings and conflicts.\"",
+      "ru": "Фраза: «Меня беспокоит, что из-за плохой коммуникации в команде часто возникают недоразумения и конфликты.»"
+    }
+  },
+  {
+    "id": "335",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю втому від того, що маю багато завдань і мало часу для їх виконання.»",
+      "en": "Phrase: \"I feel tired because I have many tasks and little time to complete them.\"",
+      "ru": "Фраза: «Я чувствую усталость из-за того, что у меня много заданий и мало времени для их выполнения.»"
+    }
+  },
+  {
+    "id": "336",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що іноді мене не підтримують у важливих для мене питаннях.»",
+      "en": "Phrase: \"I’m upset that sometimes I’m not supported in important matters for me.\"",
+      "ru": "Фраза: «Меня огорчает, что иногда меня не поддерживают в важных для меня вопросах.»"
+    }
+  },
+  {
+    "id": "337",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю розчарування через те, що не всі розуміють мої наміри і мотивацію.»",
+      "en": "Phrase: \"I feel disappointed because not everyone understands my intentions and motivation.\"",
+      "ru": "Фраза: «Я испытываю разочарование из-за того, что не все понимают мои намерения и мотивацию.»"
+    }
+  },
+  {
+    "id": "338",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене турбує, що часто відсутність зворотного зв’язку ускладнює мою роботу і розвиток.»",
+      "en": "Phrase: \"I’m concerned that lack of feedback often complicates my work and development.\"",
+      "ru": "Фраза: «Меня беспокоит, что часто отсутствие обратной связи усложняет мою работу и развитие.»"
+    }
+  },
+  {
+    "id": "339",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Я відчуваю тривогу через невизначеність майбутнього і нестачу інформації про події.»",
+      "en": "Phrase: \"I feel anxious because of uncertainty about the future and lack of information about events.\"",
+      "ru": "Фраза: «Я испытываю тревогу из-за неопределённости будущего и недостатка информации о событиях.»"
+    }
+  },
+  {
+    "id": "340",
+    "sentence_type": "EMOTION_TO_FACT",
+    "sentence": {
+      "ua": "Фраза: «Мене засмучує, що іноді через зайнятість близькі люди не мають достатньо уваги.»",
+      "en": "Phrase: \"I’m upset that sometimes due to busyness my close people don’t get enough attention.\"",
+      "ru": "Фраза: «Меня огорчает, что иногда из-за занятости близкие люди не получают достаточно внимания.»"
+    }
+  }
+]
