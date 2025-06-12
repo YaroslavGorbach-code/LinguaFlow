@@ -79,6 +79,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.FOUR_WORDS_ONE_STORY,
                 Game.GameName.TALK_TILL_EXHAUSTED,
                 Game.GameName.SELL_THIS_THING,
+                Game.GameName.RAP_IMPROV,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)
                 }
@@ -90,12 +91,11 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.WHO_AM_I_MONOLOGUE,
                 Game.GameName.I_AM_EXPERT,
                 Game.GameName.FORBIDDEN_WORDS,
+                Game.GameName.BODY_LANGUAGE_EXPRESS,
+                Game.GameName.PERSUASIVE_SHOUT,
                 Game.GameName.EMOTIONAL_TRANSLATOR -> {
                     game.value?.let(::getGameSentence)
                 }
-                Game.GameName.BODY_LANGUAGE_EXPRESS -> TODO()
-                Game.GameName.RAP_IMPROV -> TODO()
-                Game.GameName.PERSUASIVE_SHOUT -> TODO()
                 Game.GameName.WORD_IN_TEMPO -> TODO()
                 Game.GameName.SUBTLE_MANIPULATION -> TODO()
                 Game.GameName.ONE_SYNONYM_PLEASE -> TODO()

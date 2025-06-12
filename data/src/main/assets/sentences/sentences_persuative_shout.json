@@ -1,0 +1,1937 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мені потрібна перерва!» Контекст: актор у театрі",
+      "en": "Phrase: \"I need a break!\" Context: theater actor",
+      "ru": "Фраза: «Мне нужен перерыв!» Контекст: театральный актёр"
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Відкрий двері!» Контекст: поліцейський",
+      "en": "Phrase: \"Open the door!\" Context: police officer",
+      "ru": "Фраза: «Открой дверь!» Контекст: полицейский"
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не згоден!» Контекст: протестувальник",
+      "en": "Phrase: \"I disagree!\" Context: protester",
+      "ru": "Фраза: «Я не согласен!» Контекст: протестующий"
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Зараз або ніколи!» Контекст: спортивний тренер",
+      "en": "Phrase: \"Now or never!\" Context: sports coach",
+      "ru": "Фраза: «Сейчас или никогда!» Контекст: спортивный тренер"
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я все бачив!» Контекст: свідок у суді",
+      "en": "Phrase: \"I saw everything!\" Context: courtroom witness",
+      "ru": "Фраза: «Я всё видел!» Контекст: свидетель в суде"
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це моя черга!» Контекст: дитина на дитячому майданчику",
+      "en": "Phrase: \"It’s my turn!\" Context: child at a playground",
+      "ru": "Фраза: «Моя очередь!» Контекст: ребёнок на площадке"
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я маю рацію!» Контекст: учасник дебатів",
+      "en": "Phrase: \"I’m right!\" Context: debate participant",
+      "ru": "Фраза: «Я прав!» Контекст: участник дебатов"
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це несправедливо!» Контекст: підліток удома",
+      "en": "Phrase: \"It’s unfair!\" Context: teenager at home",
+      "ru": "Фраза: «Это несправедливо!» Контекст: подросток дома"
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Потрібно діяти!» Контекст: активіст",
+      "en": "Phrase: \"We must act!\" Context: activist",
+      "ru": "Фраза: «Нужно действовать!» Контекст: активист"
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Повернись назад!» Контекст: командир загону",
+      "en": "Phrase: \"Turn back!\" Context: squad commander",
+      "ru": "Фраза: «Назад!» Контекст: командир отряда"
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мені потрібна допомога!» Контекст: турист у горах",
+      "en": "Phrase: \"I need help!\" Context: tourist in the mountains",
+      "ru": "Фраза: «Мне нужна помощь!» Контекст: турист в горах"
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я зголоднів!» Контекст: студент після пар",
+      "en": "Phrase: \"I’m starving!\" Context: student after classes",
+      "ru": "Фраза: «Я голоден!» Контекст: студент после пар"
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Готуйтеся!» Контекст: командир перед боєм",
+      "en": "Phrase: \"Get ready!\" Context: commander before battle",
+      "ru": "Фраза: «Приготовиться!» Контекст: командир перед боем"
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я цього заслуговую!» Контекст: учасник конкурсу талантів",
+      "en": "Phrase: \"I deserve this!\" Context: talent show contestant",
+      "ru": "Фраза: «Я этого заслуживаю!» Контекст: участник конкурса талантов"
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це моє місце!» Контекст: пасажир у потязі",
+      "en": "Phrase: \"This is my seat!\" Context: train passenger",
+      "ru": "Фраза: «Это моё место!» Контекст: пассажир в поезде"
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми переможемо!» Контекст: капітан футбольної команди",
+      "en": "Phrase: \"We will win!\" Context: football team captain",
+      "ru": "Фраза: «Мы победим!» Контекст: капитан футбольной команды"
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не чіпай це!» Контекст: мама на кухні",
+      "en": "Phrase: \"Don’t touch that!\" Context: mom in the kitchen",
+      "ru": "Фраза: «Не трогай это!» Контекст: мама на кухне"
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це була моя ідея!» Контекст: співробітник на нараді",
+      "en": "Phrase: \"That was my idea!\" Context: coworker at a meeting",
+      "ru": "Фраза: «Это была моя идея!» Контекст: сотрудник на собрании"
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Віддай мені м'яч!» Контекст: дитина у дворі",
+      "en": "Phrase: \"Give me the ball!\" Context: kid in the yard",
+      "ru": "Фраза: «Отдай мяч!» Контекст: ребёнок во дворе"
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я передумав!» Контекст: наречений перед вівтарем",
+      "en": "Phrase: \"I changed my mind!\" Context: groom at the altar",
+      "ru": "Фраза: «Я передумал!» Контекст: жених у алтаря"
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Треба тікати!» Контекст: герой в екшн-сцені",
+      "en": "Phrase: \"We have to run!\" Context: action scene hero",
+      "ru": "Фраза: «Надо бежать!» Контекст: герой в экшн-сцене"
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я це знайшов!» Контекст: археолог на розкопках",
+      "en": "Phrase: \"I found it!\" Context: archaeologist at a dig",
+      "ru": "Фраза: «Я это нашёл!» Контекст: археолог на раскопках"
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Зупиніться!» Контекст: регулювальник на дорозі",
+      "en": "Phrase: \"Stop!\" Context: traffic controller on the road",
+      "ru": "Фраза: «Стойте!» Контекст: регулировщик на дороге"
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Поверни мені це!» Контекст: брат/сестра",
+      "en": "Phrase: \"Give it back!\" Context: sibling",
+      "ru": "Фраза: «Верни это!» Контекст: брат или сестра"
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ні, дякую!» Контекст: дипломат у переговорах",
+      "en": "Phrase: \"No, thank you!\" Context: diplomat in negotiations",
+      "ru": "Фраза: «Нет, спасибо!» Контекст: дипломат на переговорах"
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Усі сюди!» Контекст: пожежник у надзвичайній ситуації",
+      "en": "Phrase: \"Everyone here!\" Context: firefighter in emergency",
+      "ru": "Фраза: «Все сюда!» Контекст: пожарный в чрезвычайной ситуации"
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я тебе попереджав!» Контекст: старший брат",
+      "en": "Phrase: \"I warned you!\" Context: older brother",
+      "ru": "Фраза: «Я тебя предупреждал!» Контекст: старший брат"
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Нам потрібно поговорити!» Контекст: начальник на роботі",
+      "en": "Phrase: \"We need to talk!\" Context: boss at work",
+      "ru": "Фраза: «Нам нужно поговорить!» Контекст: начальник на работе"
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це моя вина!» Контекст: учень у школі",
+      "en": "Phrase: \"It’s my fault!\" Context: student at school",
+      "ru": "Фраза: «Это моя вина!» Контекст: ученик в школе"
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми повинні залишитися разом!» Контекст: герой у фільмі жахів",
+      "en": "Phrase: \"We must stick together!\" Context: horror movie hero",
+      "ru": "Фраза: «Нам нужно держаться вместе!» Контекст: герой в фильме ужасов"
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я нічого не зробив!» Контекст: підозрюваний у поліції",
+      "en": "Phrase: \"I didn’t do anything!\" Context: police suspect",
+      "ru": "Фраза: «Я ничего не сделал!» Контекст: подозреваемый в полиции"
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це надто дорого!» Контекст: покупець на ринку",
+      "en": "Phrase: \"That’s too expensive!\" Context: buyer at the market",
+      "ru": "Фраза: «Это слишком дорого!» Контекст: покупатель на рынке"
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я це зроблю!» Контекст: солдат у бою",
+      "en": "Phrase: \"I’ll do it!\" Context: soldier in battle",
+      "ru": "Фраза: «Я это сделаю!» Контекст: солдат в бою"
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Вийди звідси!» Контекст: охоронець у клубі",
+      "en": "Phrase: \"Get out!\" Context: club bouncer",
+      "ru": "Фраза: «Уходи!» Контекст: охранник в клубе"
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «У нас мало часу!» Контекст: лікар під час операції",
+      "en": "Phrase: \"We’re running out of time!\" Context: surgeon during operation",
+      "ru": "Фраза: «У нас мало времени!» Контекст: хирург во время операции"
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я це доведу!» Контекст: студент на іспиті",
+      "en": "Phrase: \"I’ll prove it!\" Context: student at an exam",
+      "ru": "Фраза: «Я это докажу!» Контекст: студент на экзамене"
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я тебе кохаю!» Контекст: зізнання на сцені",
+      "en": "Phrase: \"I love you!\" Context: on-stage confession",
+      "ru": "Фраза: «Я тебя люблю!» Контекст: признание на сцене"
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Візьми себе в руки!» Контекст: друг в кризовій ситуації",
+      "en": "Phrase: \"Pull yourself together!\" Context: friend in a crisis",
+      "ru": "Фраза: «Возьми себя в руки!» Контекст: друг в кризисной ситуации"
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не здавайся!» Контекст: тренер під час змагання",
+      "en": "Phrase: \"Don’t give up!\" Context: coach during competition",
+      "ru": "Фраза: «Не сдавайся!» Контекст: тренер во время соревнования"
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це була помилка!» Контекст: політик на пресконференції",
+      "en": "Phrase: \"That was a mistake!\" Context: politician at a press conference",
+      "ru": "Фраза: «Это была ошибка!» Контекст: политик на пресс-конференции"
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не чіпай мого кота!» Контекст: господар домашньої тварини",
+      "en": "Phrase: \"Don’t touch my cat!\" Context: pet owner",
+      "ru": "Фраза: «Не трогай моего кота!» Контекст: владелец питомца"
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Усім на підлогу!» Контекст: поліцейська спецоперація",
+      "en": "Phrase: \"Everyone on the floor!\" Context: police raid",
+      "ru": "Фраза: «Всем на пол!» Контекст: полицейская операция"
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не жартую!» Контекст: вчитель у класі",
+      "en": "Phrase: \"I’m not joking!\" Context: teacher in class",
+      "ru": "Фраза: «Я не шучу!» Контекст: учитель в классе"
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я заблукав!» Контекст: турист у чужому місті",
+      "en": "Phrase: \"I’m lost!\" Context: tourist in a foreign city",
+      "ru": "Фраза: «Я потерялся!» Контекст: турист в чужом городе"
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не тисни на мене!» Контекст: підлеглий у суперечці",
+      "en": "Phrase: \"Don’t pressure me!\" Context: subordinate in an argument",
+      "ru": "Фраза: «Не дави на меня!» Контекст: подчинённый в споре"
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не зараз!» Контекст: лікар у реанімації",
+      "en": "Phrase: \"Not now!\" Context: doctor in ICU",
+      "ru": "Фраза: «Не сейчас!» Контекст: врач в реанимации"
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми ще живі!» Контекст: виживші після катастрофи",
+      "en": "Phrase: \"We’re still alive!\" Context: disaster survivors",
+      "ru": "Фраза: «Мы ещё живы!» Контекст: выжившие после катастрофы"
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Вір у себе!» Контекст: ментор перед важливим виступом",
+      "en": "Phrase: \"Believe in yourself!\" Context: mentor before big speech",
+      "ru": "Фраза: «Верь в себя!» Контекст: наставник перед выступлением"
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я йду!» Контекст: підліток, який свариться з батьками",
+      "en": "Phrase: \"I’m leaving!\" Context: teen arguing with parents",
+      "ru": "Фраза: «Я ухожу!» Контекст: подросток в ссоре с родителями"
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Хтось є?» Контекст: дослідник у покинутій будівлі",
+      "en": "Phrase: \"Is anyone there?\" Context: explorer in an abandoned building",
+      "ru": "Фраза: «Кто-нибудь здесь есть?» Контекст: исследователь в заброшенном здании"
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не кінець!» Контекст: герой на полі бою",
+      "en": "Phrase: \"This is not the end!\" Context: battlefield hero",
+      "ru": "Фраза: «Это ещё не конец!» Контекст: герой на поле боя"
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не втрачай надії!» Контекст: волонтер у кризовій зоні",
+      "en": "Phrase: \"Don’t lose hope!\" Context: volunteer in a crisis zone",
+      "ru": "Фраза: «Не теряй надежды!» Контекст: волонтёр в кризисной зоне"
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не здамся!» Контекст: учасник марафону",
+      "en": "Phrase: \"I won’t give up!\" Context: marathon runner",
+      "ru": "Фраза: «Я не сдамся!» Контекст: участник марафона"
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Геть звідси!» Контекст: власник дому при крадіжці",
+      "en": "Phrase: \"Get out of here!\" Context: homeowner during burglary",
+      "ru": "Фраза: «Убирайся отсюда!» Контекст: владелец дома при ограблении"
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ти можеш це зробити!» Контекст: вчитель перед екзаменом",
+      "en": "Phrase: \"You can do it!\" Context: teacher before an exam",
+      "ru": "Фраза: «Ты сможешь!» Контекст: учитель перед экзаменом"
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я бачив це на власні очі!» Контекст: свідок аварії",
+      "en": "Phrase: \"I saw it with my own eyes!\" Context: accident witness",
+      "ru": "Фраза: «Я видел это своими глазами!» Контекст: свидетель аварии"
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не роби цього!» Контекст: друг перед помилкою",
+      "en": "Phrase: \"Don’t do it!\" Context: friend stopping a mistake",
+      "ru": "Фраза: «Не делай этого!» Контекст: друг перед ошибкой"
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Зачекай на мене!» Контекст: дитина, що відстає",
+      "en": "Phrase: \"Wait for me!\" Context: child falling behind",
+      "ru": "Фраза: «Подожди меня!» Контекст: отстающий ребёнок"
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це дуже важливо!» Контекст: активіст у парламенті",
+      "en": "Phrase: \"This is very important!\" Context: activist in parliament",
+      "ru": "Фраза: «Это очень важно!» Контекст: активист в парламенте"
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не відступлю!» Контекст: борець за права",
+      "en": "Phrase: \"I won’t back down!\" Context: rights defender",
+      "ru": "Фраза: «Я не отступлю!» Контекст: борец за права"
+    }
+  },
+  {
+    "id": "61",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не чіпай це!» Контекст: технік у лабораторії",
+      "en": "Phrase: \"Don’t touch that!\" Context: lab technician",
+      "ru": "Фраза: «Не трогай это!» Контекст: техник в лаборатории"
+    }
+  },
+  {
+    "id": "62",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мені потрібна допомога!» Контекст: турист у горах",
+      "en": "Phrase: \"I need help!\" Context: tourist in the mountains",
+      "ru": "Фраза: «Мне нужна помощь!» Контекст: турист в горах"
+    }
+  },
+  {
+    "id": "63",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Повернись сюди!» Контекст: вихователь у таборі",
+      "en": "Phrase: \"Come back here!\" Context: camp counselor",
+      "ru": "Фраза: «Вернись сюда!» Контекст: воспитатель в лагере"
+    }
+  },
+  {
+    "id": "64",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це пастка!» Контекст: розвідник на завданні",
+      "en": "Phrase: \"It’s a trap!\" Context: scout on a mission",
+      "ru": "Фраза: «Это ловушка!» Контекст: разведчик на задании"
+    }
+  },
+  {
+    "id": "65",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми не можемо чекати!» Контекст: активіст під час протесту",
+      "en": "Phrase: \"We can’t wait!\" Context: activist during protest",
+      "ru": "Фраза: «Мы не можем ждать!» Контекст: активист на протесте"
+    }
+  },
+  {
+    "id": "66",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це моя черга!» Контекст: дитина на майданчику",
+      "en": "Phrase: \"It’s my turn!\" Context: child at the playground",
+      "ru": "Фраза: «Моя очередь!» Контекст: ребёнок на площадке"
+    }
+  },
+  {
+    "id": "67",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це несправедливо!» Контекст: учень у школі",
+      "en": "Phrase: \"That’s not fair!\" Context: student at school",
+      "ru": "Фраза: «Это несправедливо!» Контекст: ученик в школе"
+    }
+  },
+  {
+    "id": "68",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я все бачив!» Контекст: свідок злочину",
+      "en": "Phrase: \"I saw everything!\" Context: crime witness",
+      "ru": "Фраза: «Я всё видел!» Контекст: свидетель преступления"
+    }
+  },
+  {
+    "id": "69",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ти помилився!» Контекст: юрист у суді",
+      "en": "Phrase: \"You’re wrong!\" Context: lawyer in court",
+      "ru": "Фраза: «Вы ошибаетесь!» Контекст: адвокат в суде"
+    }
+  },
+  {
+    "id": "70",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ні, не так!» Контекст: режисер на зйомках",
+      "en": "Phrase: \"No, not like that!\" Context: director on set",
+      "ru": "Фраза: «Нет, не так!» Контекст: режиссёр на съёмках"
+    }
+  },
+  {
+    "id": "71",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це твоє життя!» Контекст: психолог на сеансі",
+      "en": "Phrase: \"It’s your life!\" Context: therapist during session",
+      "ru": "Фраза: «Это твоя жизнь!» Контекст: психолог на сеансе"
+    }
+  },
+  {
+    "id": "72",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Поверни мої гроші!» Контекст: клієнт у магазині",
+      "en": "Phrase: \"Give me my money back!\" Context: customer in a store",
+      "ru": "Фраза: «Верните мои деньги!» Контекст: покупатель в магазине"
+    }
+  },
+  {
+    "id": "73",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Всі слухають мене!» Контекст: лідер під час зборів",
+      "en": "Phrase: \"Everyone, listen to me!\" Context: leader at a meeting",
+      "ru": "Фраза: «Все, слушайте меня!» Контекст: лидер на собрании"
+    }
+  },
+  {
+    "id": "74",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я нічого не боюся!» Контекст: герой перед битвою",
+      "en": "Phrase: \"I fear nothing!\" Context: hero before battle",
+      "ru": "Фраза: «Я ничего не боюсь!» Контекст: герой перед битвой"
+    }
+  },
+  {
+    "id": "75",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Нам треба поговорити!» Контекст: партнер у стосунках",
+      "en": "Phrase: \"We need to talk!\" Context: relationship partner",
+      "ru": "Фраза: «Нам нужно поговорить!» Контекст: партнёр в отношениях"
+    }
+  },
+  {
+    "id": "76",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ти в небезпеці!» Контекст: свідок змови",
+      "en": "Phrase: \"You’re in danger!\" Context: conspiracy witness",
+      "ru": "Фраза: «Ты в опасности!» Контекст: свидетель заговора"
+    }
+  },
+  {
+    "id": "77",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Зупини це негайно!» Контекст: лікар, що бачить помилку",
+      "en": "Phrase: \"Stop this immediately!\" Context: doctor seeing a mistake",
+      "ru": "Фраза: «Прекратите это немедленно!» Контекст: врач замечает ошибку"
+    }
+  },
+  {
+    "id": "78",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не боюся правди!» Контекст: журналіст у репортажі",
+      "en": "Phrase: \"I’m not afraid of the truth!\" Context: journalist reporting",
+      "ru": "Фраза: «Я не боюсь правды!» Контекст: журналист на репортаже"
+    }
+  },
+  {
+    "id": "79",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це мій шанс!» Контекст: актор перед виступом",
+      "en": "Phrase: \"This is my chance!\" Context: actor before performance",
+      "ru": "Фраза: «Это мой шанс!» Контекст: актёр перед выступлением"
+    }
+  },
+  {
+    "id": "80",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я нічого не підписував!» Контекст: свідок на допиті",
+      "en": "Phrase: \"I didn’t sign anything!\" Context: witness under questioning",
+      "ru": "Фраза: «Я ничего не подписывал!» Контекст: свидетель на допросе"
+    }
+  },
+  {
+    "id": "81",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми повинні втекти!» Контекст: герой у пастці",
+      "en": "Phrase: \"We must escape!\" Context: hero in a trap",
+      "ru": "Фраза: «Мы должны сбежать!» Контекст: герой в ловушке"
+    }
+  },
+  {
+    "id": "82",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це наше майбутнє!» Контекст: політик на мітингу",
+      "en": "Phrase: \"This is our future!\" Context: politician at a rally",
+      "ru": "Фраза: «Это наше будущее!» Контекст: политик на митинге"
+    }
+  },
+  {
+    "id": "83",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не слухай їх!» Контекст: ментор на тренінгу",
+      "en": "Phrase: \"Don’t listen to them!\" Context: mentor at a workshop",
+      "ru": "Фраза: «Не слушай их!» Контекст: наставник на тренинге"
+    }
+  },
+  {
+    "id": "84",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це надто важливо!» Контекст: науковець на конференції",
+      "en": "Phrase: \"This is too important!\" Context: scientist at a conference",
+      "ru": "Фраза: «Это слишком важно!» Контекст: учёный на конференции"
+    }
+  },
+  {
+    "id": "85",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я заслуговую на це!» Контекст: кандидат під час співбесіди",
+      "en": "Phrase: \"I deserve this!\" Context: job candidate in interview",
+      "ru": "Фраза: «Я заслуживаю этого!» Контекст: кандидат на собеседовании"
+    }
+  },
+  {
+    "id": "86",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Він бреше!» Контекст: обвинувач під час допиту",
+      "en": "Phrase: \"He’s lying!\" Context: accuser during interrogation",
+      "ru": "Фраза: «Он лжёт!» Контекст: обвинитель на допросе"
+    }
+  },
+  {
+    "id": "87",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми зробили це!» Контекст: команда після перемоги",
+      "en": "Phrase: \"We did it!\" Context: team after victory",
+      "ru": "Фраза: «Мы сделали это!» Контекст: команда после победы"
+    }
+  },
+  {
+    "id": "88",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Він тут!» Контекст: охоронець під час погоні",
+      "en": "Phrase: \"He’s here!\" Context: security during a chase",
+      "ru": "Фраза: «Он здесь!» Контекст: охрана во время погони"
+    }
+  },
+  {
+    "id": "89",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це наша єдина надія!» Контекст: місія з порятунку",
+      "en": "Phrase: \"This is our only hope!\" Context: rescue mission",
+      "ru": "Фраза: «Это наша единственная надежда!» Контекст: спасательная миссия"
+    }
+  },
+  {
+    "id": "90",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не здавай позицій!» Контекст: командир на фронті",
+      "en": "Phrase: \"Hold your ground!\" Context: commander on the front line",
+      "ru": "Фраза: «Держи позицию!» Контекст: командир на передовой"
+    }
+  },
+  {
+    "id": "91",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мені негайно потрібна ваша увага, це справді важливо!» Контекст: вчитель у класі під час пожежної тривоги",
+      "en": "Phrase: \"I need your attention immediately, this is really important!\" Context: teacher in class during fire alarm",
+      "ru": "Фраза: «Мне срочно нужно ваше внимание, это действительно важно!» Контекст: учитель в классе во время пожарной тревоги"
+    }
+  },
+  {
+    "id": "92",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Будь ласка, повір мені хоча б на хвилину — я знаю, що кажу!» Контекст: друг, який намагається застерегти",
+      "en": "Phrase: \"Please, just trust me for a minute — I know what I'm saying!\" Context: a friend trying to warn",
+      "ru": "Фраза: «Пожалуйста, поверь мне хотя бы на минуту — я знаю, что говорю!» Контекст: друг, который пытается предупредить"
+    }
+  },
+  {
+    "id": "93",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ви не маєте права так зі мною поводитись, я вимагаю пояснень!» Контекст: пасажир на вокзалі",
+      "en": "Phrase: \"You have no right to treat me this way, I demand an explanation!\" Context: passenger at the station",
+      "ru": "Фраза: «У вас нет права так со мной обращаться, я требую объяснений!» Контекст: пассажир на вокзале"
+    }
+  },
+  {
+    "id": "94",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я витратив на це місяці, не смій говорити, що це нічого не варте!» Контекст: художник на виставці",
+      "en": "Phrase: \"I spent months on this, don’t you dare say it’s worthless!\" Context: artist at an exhibition",
+      "ru": "Фраза: «Я потратил на это месяцы, не смей говорить, что это ничего не стоит!» Контекст: художник на выставке"
+    }
+  },
+  {
+    "id": "95",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це мій останній шанс щось змінити, дозволь мені спробувати!» Контекст: учасник конкурсу",
+      "en": "Phrase: \"This is my last chance to change something, let me try!\" Context: contestant in a competition",
+      "ru": "Фраза: «Это мой последний шанс что-то изменить, позволь мне попробовать!» Контекст: участник конкурса"
+    }
+  },
+  {
+    "id": "96",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Цей момент вирішальний, ми повинні діяти просто зараз!» Контекст: капітан команди",
+      "en": "Phrase: \"This moment is critical, we must act right now!\" Context: team captain",
+      "ru": "Фраза: «Этот момент решающий, мы должны действовать прямо сейчас!» Контекст: капитан команды"
+    }
+  },
+  {
+    "id": "97",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не мовчи зараз, якщо ти щось знаєш — скажи!» Контекст: репортер на місці події",
+      "en": "Phrase: \"Don’t stay silent now, if you know something — speak up!\" Context: reporter at the scene",
+      "ru": "Фраза: «Не молчи сейчас, если ты что-то знаешь — скажи!» Контекст: репортёр на месте событий"
+    }
+  },
+  {
+    "id": "98",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не дозволю вам знищити те, що ми будували роками!» Контекст: власник бізнесу на переговорах",
+      "en": "Phrase: \"I won’t let you destroy what we’ve been building for years!\" Context: business owner at negotiation",
+      "ru": "Фраза: «Я не позволю вам разрушить то, что мы строили годами!» Контекст: владелец бизнеса на переговорах"
+    }
+  },
+  {
+    "id": "99",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Те, що сталося, не можна залишати безкарним!» Контекст: громадянин під час слухання",
+      "en": "Phrase: \"What happened cannot be left unpunished!\" Context: citizen during a hearing",
+      "ru": "Фраза: «То, что произошло, не должно остаться безнаказанным!» Контекст: гражданин на слушаниях"
+    }
+  },
+  {
+    "id": "100",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми всі заслуговуємо на краще — не мовчи!» Контекст: учасник протесту",
+      "en": "Phrase: \"We all deserve better — don’t stay silent!\" Context: protest participant",
+      "ru": "Фраза: «Мы все заслуживаем лучшего — не молчи!» Контекст: участник протеста"
+    }
+  },
+  {
+    "id": "101",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Якщо ти підеш зараз — все буде марно!» Контекст: тренер перед фіналом",
+      "en": "Phrase: \"If you leave now — everything will be for nothing!\" Context: coach before the final",
+      "ru": "Фраза: «Если ты уйдёшь сейчас — всё будет зря!» Контекст: тренер перед финалом"
+    }
+  },
+  {
+    "id": "102",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми маємо шанс змінити хід історії, не зупиняйся!» Контекст: оратор на мітингу",
+      "en": "Phrase: \"We have a chance to change the course of history, don’t stop!\" Context: speaker at a rally",
+      "ru": "Фраза: «У нас есть шанс изменить ход истории, не останавливайся!» Контекст: оратор на митинге"
+    }
+  },
+  {
+    "id": "103",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не просто гра — це моя мрія!» Контекст: юний спортсмен на турнірі",
+      "en": "Phrase: \"This is not just a game — this is my dream!\" Context: young athlete at a tournament",
+      "ru": "Фраза: «Это не просто игра — это моя мечта!» Контекст: юный спортсмен на турнире"
+    }
+  },
+  {
+    "id": "104",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не здамся, навіть якщо доведеться боротися самотужки!» Контекст: герой у фільмі",
+      "en": "Phrase: \"I won’t give up, even if I have to fight alone!\" Context: hero in a film",
+      "ru": "Фраза: «Я не сдамся, даже если придётся бороться одному!» Контекст: герой в фильме"
+    }
+  },
+  {
+    "id": "105",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Послухай серце, а не натовп!» Контекст: вчитель мудрості",
+      "en": "Phrase: \"Listen to your heart, not the crowd!\" Context: wise mentor",
+      "ru": "Фраза: «Слушай сердце, а не толпу!» Контекст: мудрый наставник"
+    }
+  },
+  {
+    "id": "106",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми не можемо стояти осторонь, коли твориться несправедливість!» Контекст: активіст на громадських зборах",
+      "en": "Phrase: \"We cannot stand aside while injustice is happening!\" Context: activist at a public meeting",
+      "ru": "Фраза: «Мы не можем стоять в стороне, когда происходит несправедливость!» Контекст: активист на общественном собрании"
+    }
+  },
+  {
+    "id": "107",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Він мій друг, і я не дозволю вам його образити!» Контекст: школяр, що захищає однокласника",
+      "en": "Phrase: \"He’s my friend, and I won’t let you hurt him!\" Context: schoolkid defending a classmate",
+      "ru": "Фраза: «Он мой друг, и я не позволю вам его обидеть!» Контекст: школьник, защищающий одноклассника"
+    }
+  },
+  {
+    "id": "108",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я пройшов через вогонь і воду, і не здамся зараз!» Контекст: головний герой у кульмінації",
+      "en": "Phrase: \"I’ve been through fire and water, and I won’t give up now!\" Context: main character in a climax",
+      "ru": "Фраза: «Я прошёл огонь и воду и не сдамся сейчас!» Контекст: главный герой в кульминации"
+    }
+  },
+  {
+    "id": "109",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Навіть якщо весь світ проти нас — ми все одно підемо вперед!» Контекст: закохані на перешкоді",
+      "en": "Phrase: \"Even if the whole world is against us — we will still move forward!\" Context: lovers facing obstacles",
+      "ru": "Фраза: «Даже если весь мир против нас — мы всё равно пойдём вперёд!» Контекст: влюблённые, преодолевающие препятствия"
+    }
+  },
+  {
+    "id": "110",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це наш шанс показати, хто ми є насправді!» Контекст: капітан перед останнім матчем",
+      "en": "Phrase: \"This is our chance to show who we truly are!\" Context: team captain before the final match",
+      "ru": "Фраза: «Это наш шанс показать, кто мы на самом деле!» Контекст: капитан перед последним матчем"
+    }
+  },
+  {
+    "id": "111",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я маю право висловити свою думку, і ви мене вислухаєте!» Контекст: студент на дискусії",
+      "en": "Phrase: \"I have the right to speak my mind, and you will listen to me!\" Context: student at a debate",
+      "ru": "Фраза: «Я имею право высказать своё мнение, и вы меня выслушаете!» Контекст: студент на дискуссии"
+    }
+  },
+  {
+    "id": "112",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Цей вибір не тільки мій — він вплине на всіх нас!» Контекст: політик перед голосуванням",
+      "en": "Phrase: \"This decision isn’t just mine — it will affect all of us!\" Context: politician before a vote",
+      "ru": "Фраза: «Этот выбор не только мой — он повлияет на всех нас!» Контекст: политик перед голосованием"
+    }
+  },
+  {
+    "id": "113",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не час здаватися, коли ми так близько до мети!» Контекст: тренер на перерві в грі",
+      "en": "Phrase: \"Now is not the time to give up, we’re so close to our goal!\" Context: coach during a timeout",
+      "ru": "Фраза: «Сейчас не время сдаваться, мы так близки к цели!» Контекст: тренер во время перерыва"
+    }
+  },
+  {
+    "id": "114",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я знаю, що це ризиковано, але ми повинні спробувати!» Контекст: учасник рятувальної операції",
+      "en": "Phrase: \"I know it’s risky, but we have to try!\" Context: rescuer during an emergency",
+      "ru": "Фраза: «Я знаю, что это рискованно, но мы должны попробовать!» Контекст: спасатель в чрезвычайной ситуации"
+    }
+  },
+  {
+    "id": "115",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я бачу світло навіть у найтемнішому кутку!» Контекст: натхненник під час кризової ситуації",
+      "en": "Phrase: \"I see light even in the darkest corner!\" Context: motivator during a crisis",
+      "ru": "Фраза: «Я вижу свет даже в самом тёмном углу!» Контекст: вдохновляющий лидер в кризис"
+    }
+  },
+  {
+    "id": "116",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ти сильніший, ніж думаєш — встань і йди далі!» Контекст: друг, що підтримує після поразки",
+      "en": "Phrase: \"You’re stronger than you think — get up and keep going!\" Context: friend supporting after failure",
+      "ru": "Фраза: «Ты сильнее, чем думаешь — встань и иди дальше!» Контекст: друг после поражения"
+    }
+  },
+  {
+    "id": "117",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Цей вибір покаже, ким ти насправді є!» Контекст: наставник перед вирішальним кроком",
+      "en": "Phrase: \"This choice will show who you really are!\" Context: mentor before a crucial decision",
+      "ru": "Фраза: «Этот выбор покажет, кто ты на самом деле!» Контекст: наставник перед важным шагом"
+    }
+  },
+  {
+    "id": "118",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «У нас є тільки один шанс, і ми не маємо права його втратити!» Контекст: член екіпажу перед запуском",
+      "en": "Phrase: \"We have only one chance, and we can’t afford to miss it!\" Context: crew member before launch",
+      "ru": "Фраза: «У нас только один шанс, и мы не имеем права его упустить!» Контекст: член экипажа перед запуском"
+    }
+  },
+  {
+    "id": "119",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не можна дозволити страху керувати твоїм життям!» Контекст: психотерапевт під час сесії",
+      "en": "Phrase: \"You can’t let fear control your life!\" Context: therapist during a session",
+      "ru": "Фраза: «Нельзя позволить страху управлять твоей жизнью!» Контекст: психотерапевт на приёме"
+    }
+  },
+  {
+    "id": "120",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я пройшов цей шлях не для того, щоб відступити на фініші!» Контекст: марафонець перед останнім кілометром",
+      "en": "Phrase: \"I didn’t come this far to back down at the finish!\" Context: marathon runner near the final stretch",
+      "ru": "Фраза: «Я не прошёл весь этот путь, чтобы сдаться на финише!» Контекст: марафонец перед последним километром"
+    }
+  },
+  {
+    "id": "121",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми не маємо часу сумніватися — майбутнє в наших руках!» Контекст: лідер на екстреній нараді",
+      "en": "Phrase: \"We don’t have time for doubt — the future is in our hands!\" Context: leader in an emergency meeting",
+      "ru": "Фраза: «У нас нет времени на сомнения — будущее в наших руках!» Контекст: лидер на экстренном совещании"
+    }
+  },
+  {
+    "id": "122",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я більше не боюся, бо я знаю, хто я є!» Контекст: герой на межі рішення",
+      "en": "Phrase: \"I’m no longer afraid, because I know who I am!\" Context: hero at a turning point",
+      "ru": "Фраза: «Я больше не боюсь, потому что я знаю, кто я есть!» Контекст: герой на переломном моменте"
+    }
+  },
+  {
+    "id": "123",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Кожен має право на голос — і ми змусимо почути наш!» Контекст: промова на мітингу",
+      "en": "Phrase: \"Everyone has the right to a voice — and we’ll make ours heard!\" Context: rally speech",
+      "ru": "Фраза: «Каждый имеет право на голос — и мы заставим услышать наш!» Контекст: выступление на митинге"
+    }
+  },
+  {
+    "id": "124",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я чекав цього моменту все своє життя — і я не здамся зараз!» Контекст: фінал важливого змагання",
+      "en": "Phrase: \"I’ve waited for this moment my whole life — and I won’t give up now!\" Context: final of an important competition",
+      "ru": "Фраза: «Я ждал этого момента всю жизнь — и сейчас не сдамся!» Контекст: финал важного соревнования"
+    }
+  },
+  {
+    "id": "125",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мої мрії не малі — і я не дозволю нікому їх знецінити!» Контекст: молода підприємиця перед інвесторами",
+      "en": "Phrase: \"My dreams aren’t small — and I won’t let anyone diminish them!\" Context: young entrepreneur pitching to investors",
+      "ru": "Фраза: «Мои мечты не мелкие — и я не позволю никому их обесценить!» Контекст: молодая предпринимательница перед инвесторами"
+    }
+  },
+  {
+    "id": "126",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Кожна людина заслуговує на другий шанс!» Контекст: суддя у фільмі-драмі",
+      "en": "Phrase: \"Everyone deserves a second chance!\" Context: judge in a courtroom drama",
+      "ru": "Фраза: «Каждый человек заслуживает второго шанса!» Контекст: судья в драматическом фильме"
+    }
+  },
+  {
+    "id": "127",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми пройшли крізь бурі — і вийдемо з них сильнішими!» Контекст: капітан команди після важкої поразки",
+      "en": "Phrase: \"We’ve been through storms — and we’ll come out stronger!\" Context: team captain after a hard loss",
+      "ru": "Фраза: «Мы прошли через бури — и станем сильнее!» Контекст: капитан команды после тяжёлого поражения"
+    }
+  },
+  {
+    "id": "128",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Якщо не ми, то хто?» Контекст: надихаючий виступ перед волонтерами",
+      "en": "Phrase: \"If not us, then who?\" Context: motivational speech before volunteers",
+      "ru": "Фраза: «Если не мы, то кто?» Контекст: вдохновляющее выступление перед волонтёрами"
+    }
+  },
+  {
+    "id": "129",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не збираюсь вибачатись за те, ким я є!» Контекст: молодь на відкритому мікрофоні",
+      "en": "Phrase: \"I’m not going to apologize for who I am!\" Context: youth at open mic night",
+      "ru": "Фраза: «Я не собираюсь извиняться за то, кто я есть!» Контекст: молодёжь на открытом микрофоне"
+    }
+  },
+  {
+    "id": "130",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Сьогодні — день, коли ми змінюємо правила гри!» Контекст: промова на запуску стартапу",
+      "en": "Phrase: \"Today is the day we change the game!\" Context: startup launch speech",
+      "ru": "Фраза: «Сегодня день, когда мы меняем правила игры!» Контекст: речь на запуске стартапа"
+    }
+  },
+  {
+    "id": "131",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ви можете сміятися зараз, але завтра — я буду переможцем!» Контекст: аутсайдер на кастингу",
+      "en": "Phrase: \"You may laugh now, but tomorrow — I’ll be the winner!\" Context: underdog at an audition",
+      "ru": "Фраза: «Смейтесь сейчас, но завтра — я буду победителем!» Контекст: аутсайдер на кастинге"
+    }
+  },
+  {
+    "id": "132",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми почали це разом — і разом це завершимо!» Контекст: партнери перед завершенням проекту",
+      "en": "Phrase: \"We started this together — and we’ll finish it together!\" Context: partners wrapping up a project",
+      "ru": "Фраза: «Мы начали это вместе — и закончим вместе!» Контекст: партнёры перед завершением проекта"
+    }
+  },
+  {
+    "id": "133",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не дозволю вам стерти мою історію!» Контекст: дискусія про культурну спадщину",
+      "en": "Phrase: \"I won’t let you erase my story!\" Context: debate on cultural heritage",
+      "ru": "Фраза: «Я не позволю вам стереть мою историю!» Контекст: дискуссия о культурном наследии"
+    }
+  },
+  {
+    "id": "134",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Зміни починаються тут і зараз!» Контекст: виступ на шкільних зборах",
+      "en": "Phrase: \"Change begins here and now!\" Context: speech at a school assembly",
+      "ru": "Фраза: «Изменения начинаются здесь и сейчас!» Контекст: выступление на школьном собрании"
+    }
+  },
+  {
+    "id": "135",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я більше не мовчатиму!» Контекст: студентка під час протесту",
+      "en": "Phrase: \"I will stay silent no longer!\" Context: student speaking during a protest",
+      "ru": "Фраза: «Я больше не буду молчать!» Контекст: студентка на протесте"
+    }
+  },
+  {
+    "id": "136",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Світ заслуговує на більше — і ми це збудуємо!» Контекст: футуролог на конференції",
+      "en": "Phrase: \"The world deserves more — and we will build it!\" Context: futurist at a conference",
+      "ru": "Фраза: «Мир заслуживает большего — и мы это построим!» Контекст: футуролог на конференции"
+    }
+  },
+  {
+    "id": "137",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ти не сам — ми всі з тобою!» Контекст: підтримка друга в біді",
+      "en": "Phrase: \"You are not alone — we’re all with you!\" Context: friend offering support in hard times",
+      "ru": "Фраза: «Ты не один — мы все с тобой!» Контекст: поддержка друга в беде"
+    }
+  },
+  {
+    "id": "138",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Справжня сила — не в м’язах, а в серці!» Контекст: супергерой у фінальній сцені",
+      "en": "Phrase: \"Real strength isn’t in muscles, it’s in the heart!\" Context: superhero in a final scene",
+      "ru": "Фраза: «Настоящая сила не в мышцах, а в сердце!» Контекст: супергерой в финальной сцене"
+    }
+  },
+  {
+    "id": "139",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми довели, що немає нічого неможливого!» Контекст: команда після завершення проєкту",
+      "en": "Phrase: \"We’ve proven that nothing is impossible!\" Context: team after project completion",
+      "ru": "Фраза: «Мы доказали, что нет ничего невозможного!» Контекст: команда после завершения проекта"
+    }
+  },
+  {
+    "id": "140",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не поразка — це початок чогось нового!» Контекст: учасник після невдалого пітчу",
+      "en": "Phrase: \"This isn’t failure — it’s the start of something new!\" Context: entrepreneur after failed pitch",
+      "ru": "Фраза: «Это не поражение — это начало чего-то нового!» Контекст: участник после неудачного питча"
+    }
+  },
+  {
+    "id": "151",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не просто мрію — я дію, і саме це мене відрізняє!» Контекст: виступ молодої активістки",
+      "en": "Phrase: \"I don’t just dream — I act, and that’s what sets me apart!\" Context: speech by a young activist",
+      "ru": "Фраза: «Я не просто мечтаю — я действую, и именно это меня отличает!» Контекст: выступление молодой активистки"
+    }
+  },
+  {
+    "id": "152",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це наш шанс змінити майбутнє — не змарнуймо його!» Контекст: волонтерська акція",
+      "en": "Phrase: \"This is our chance to change the future — let’s not waste it!\" Context: volunteer campaign",
+      "ru": "Фраза: «Это наш шанс изменить будущее — давайте не упустим его!» Контекст: волонтёрская акция"
+    }
+  },
+  {
+    "id": "153",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Нам не потрібні дозволи, щоб бути собою!» Контекст: ЛГБТ+ парад",
+      "en": "Phrase: \"We don’t need permission to be ourselves!\" Context: LGBTQ+ pride parade",
+      "ru": "Фраза: «Нам не нужны разрешения, чтобы быть собой!» Контекст: ЛГБТ+ парад"
+    }
+  },
+  {
+    "id": "154",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Моя історія не закінчується тут — це тільки початок!» Контекст: дебют молодого письменника",
+      "en": "Phrase: \"My story doesn’t end here — this is only the beginning!\" Context: young writer’s debut",
+      "ru": "Фраза: «Моя история не заканчивается здесь — это только начало!» Контекст: дебют молодого писателя"
+    }
+  },
+  {
+    "id": "155",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми ті, хто визначає правила — і ми можемо їх змінити!» Контекст: маніфест творчої спільноти",
+      "en": "Phrase: \"We are the ones who set the rules — and we can change them!\" Context: creative community manifesto",
+      "ru": "Фраза: «Мы те, кто устанавливает правила — и мы можем их изменить!» Контекст: манифест творческого сообщества"
+    }
+  },
+  {
+    "id": "156",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Навіть у найтемнішу ніч можна засвітити світло!» Контекст: виступ психолога перед ветеранами",
+      "en": "Phrase: \"Even in the darkest night, you can still light a candle!\" Context: therapist speaking to veterans",
+      "ru": "Фраза: «Даже в самую тёмную ночь можно зажечь свет!» Контекст: психолог обращается к ветеранам"
+    }
+  },
+  {
+    "id": "157",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мої поразки — не кінець, а мости до нових висот!» Контекст: мотиваційна промова після втрати",
+      "en": "Phrase: \"My failures aren’t the end — they’re bridges to new heights!\" Context: motivational speech after a loss",
+      "ru": "Фраза: «Мои неудачи — не конец, а мосты к новым вершинам!» Контекст: мотивационная речь после потерь"
+    }
+  },
+  {
+    "id": "158",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Нас не зламають — ми тільки зміцнимось!» Контекст: маніфест громадського спротиву",
+      "en": "Phrase: \"They won’t break us — we’ll only grow stronger!\" Context: public resistance manifesto",
+      "ru": "Фраза: «Нас не сломают — мы только станем сильнее!» Контекст: манифест гражданского сопротивления"
+    }
+  },
+  {
+    "id": "159",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Справжня свобода — це коли тебе не бояться бути справжнім!» Контекст: освітній форум",
+      "en": "Phrase: \"True freedom is when you’re not afraid to be real!\" Context: education forum",
+      "ru": "Фраза: «Истинная свобода — это не бояться быть собой!» Контекст: образовательный форум"
+    }
+  },
+  {
+    "id": "160",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми маємо силу, ми маємо голос, і ми не замовкнемо!» Контекст: марш за права людини",
+      "en": "Phrase: \"We have the power, we have the voice, and we won’t be silent!\" Context: human rights march",
+      "ru": "Фраза: «У нас есть сила, у нас есть голос, и мы не замолчим!» Контекст: марш за права человека"
+    }
+  },
+  {
+    "id": "161",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мене не зупинити — бо я йду до мети!» Контекст: спортсмен на фінішній прямій",
+      "en": "Phrase: \"You can’t stop me — because I’m heading to my goal!\" Context: athlete at the final stretch",
+      "ru": "Фраза: «Меня не остановить — я иду к своей цели!» Контекст: спортсмен на финишной прямой"
+    }
+  },
+  {
+    "id": "162",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Досить жити страхом — час діяти!» Контекст: громадська ініціатива",
+      "en": "Phrase: \"Enough living in fear — it’s time to act!\" Context: civic initiative",
+      "ru": "Фраза: «Хватит жить в страхе — пора действовать!» Контекст: гражданская инициатива"
+    }
+  },
+  {
+    "id": "163",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не чекатиму зміни — я і є зміна!» Контекст: молодіжна конференція",
+      "en": "Phrase: \"I won’t wait for change — I am the change!\" Context: youth conference",
+      "ru": "Фраза: «Я не буду ждать перемен — я и есть перемены!» Контекст: молодёжная конференция"
+    }
+  },
+  {
+    "id": "164",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Кожна перемога починається з віри у себе!» Контекст: тренер перед матчем",
+      "en": "Phrase: \"Every victory begins with belief in yourself!\" Context: coach before the match",
+      "ru": "Фраза: «Каждая победа начинается с веры в себя!» Контекст: тренер перед матчем"
+    }
+  },
+  {
+    "id": "165",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не просто моя мрія — це моя місія!» Контекст: творець стартапу",
+      "en": "Phrase: \"This isn’t just my dream — it’s my mission!\" Context: startup founder’s pitch",
+      "ru": "Фраза: «Это не просто моя мечта — это моя миссия!» Контекст: основатель стартапа"
+    }
+  },
+  {
+    "id": "181",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Не важливо, скільки разів я падав — важливо, що я завжди піднімався!» Контекст: історія спортсмена після травми",
+      "en": "Phrase: \"It doesn’t matter how many times I’ve fallen — what matters is I always got up!\" Context: athlete’s story after injury",
+      "ru": "Фраза: «Не важно, сколько раз я падал — важно, что я всегда вставал!» Контекст: история спортсмена после травмы"
+    }
+  },
+  {
+    "id": "182",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ми — не просто покоління Z, ми — покоління змін!» Контекст: молодіжна презентація на форумі",
+      "en": "Phrase: \"We’re not just Generation Z — we are the generation of change!\" Context: youth presentation at a forum",
+      "ru": "Фраза: «Мы — не просто поколение Z, мы — поколение перемен!» Контекст: молодёжная презентация на форуме"
+    }
+  },
+  {
+    "id": "183",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Коли вони кажуть, що я не зможу — я відповідаю дією!» Контекст: інтерв'ю з підприємцем",
+      "en": "Phrase: \"When they say I can’t — I answer with action!\" Context: interview with an entrepreneur",
+      "ru": "Фраза: «Когда говорят, что я не смогу — я отвечаю делом!» Контекст: интервью с предпринимателем"
+    }
+  },
+  {
+    "id": "184",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Справедливість — не привілей, а право кожного!» Контекст: правозахисна конференція",
+      "en": "Phrase: \"Justice isn’t a privilege — it’s everyone’s right!\" Context: human rights conference",
+      "ru": "Фраза: «Справедливость — не привилегия, а право каждого!» Контекст: правозащитная конференция"
+    }
+  },
+  {
+    "id": "185",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мрії не працюють без дій — тому я почав сьогодні!» Контекст: блогер надихає глядачів",
+      "en": "Phrase: \"Dreams don’t work unless you do — that’s why I started today!\" Context: blogger inspiring their audience",
+      "ru": "Фраза: «Мечты не работают без действий — поэтому я начал сегодня!» Контекст: блогер вдохновляет зрителей"
+    }
+  },
+  {
+    "id": "186",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Сьогодні ми мовчати не будемо — ми скажемо правду!» Контекст: громадська акція",
+      "en": "Phrase: \"Today we won’t be silent — we’ll speak the truth!\" Context: civic protest",
+      "ru": "Фраза: «Сегодня мы молчать не будем — мы скажем правду!» Контекст: общественная акция"
+    }
+  },
+  {
+    "id": "187",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Кожен має голос, але не кожен ним користується — настав мій час!» Контекст: дебати у школі",
+      "en": "Phrase: \"Everyone has a voice, but not everyone uses it — now it’s my time!\" Context: school debate",
+      "ru": "Фраза: «У каждого есть голос, но не каждый его использует — теперь мой черёд!» Контекст: школьные дебаты"
+    }
+  },
+  {
+    "id": "188",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не боюсь змін, бо я сам — зміна!» Контекст: самопрезентація на конкурсі",
+      "en": "Phrase: \"I’m not afraid of change, because I am the change!\" Context: self-presentation at a contest",
+      "ru": "Фраза: «Я не боюсь перемен, потому что сам и есть перемены!» Контекст: самопрезентация на конкурсе"
+    }
+  },
+  {
+    "id": "189",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Якщо не ми, то хто? Якщо не зараз, то коли?» Контекст: екологічний марш",
+      "en": "Phrase: \"If not us, then who? If not now, then when?\" Context: climate change march",
+      "ru": "Фраза: «Если не мы, то кто? Если не сейчас, то когда?» Контекст: марш за экологию"
+    }
+  },
+  {
+    "id": "190",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мої мрії не мають меж — і я більше не буду себе стримувати!» Контекст: надихаюча розмова з підлітками",
+      "en": "Phrase: \"My dreams have no limits — and I won’t hold myself back anymore!\" Context: inspirational talk for teens",
+      "ru": "Фраза: «У моих мечт нет границ — и я больше не буду себя сдерживать!» Контекст: вдохновляющая беседа с подростками"
+    }
+  },
+  {
+    "id": "191",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Слова — сильні, але мої дії ще сильніші!» Контекст: вчитель надихає клас",
+      "en": "Phrase: \"Words are powerful, but my actions are even stronger!\" Context: teacher motivating a class",
+      "ru": "Фраза: «Слова сильны, но мои действия — ещё сильнее!» Контекст: учитель вдохновляет класс"
+    }
+  },
+  {
+    "id": "192",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я відмовляюся бути ще одним мовчазним обличчям у натовпі!» Контекст: студентська трибуна",
+      "en": "Phrase: \"I refuse to be just another silent face in the crowd!\" Context: student speech platform",
+      "ru": "Фраза: «Я отказываюсь быть просто ещё одним молчаливым лицом в толпе!» Контекст: студенческая трибуна"
+    }
+  },
+  {
+    "id": "193",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не проситиму дозволу — я просто зроблю це!» Контекст: підприємницький саміт",
+      "en": "Phrase: \"I won’t ask for permission — I’ll just do it!\" Context: entrepreneurship summit",
+      "ru": "Фраза: «Я не буду просить разрешения — я просто сделаю это!» Контекст: предпринимательский саммит"
+    }
+  },
+  {
+    "id": "194",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я той, ким сам себе зробив — і пишаюся цим!» Контекст: випускна промова",
+      "en": "Phrase: \"I am who I made myself to be — and I’m proud of it!\" Context: graduation speech",
+      "ru": "Фраза: «Я тот, кем сам себя сделал — и горжусь этим!» Контекст: выпускная речь"
+    }
+  },
+  {
+    "id": "195",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Те, що я починаю сьогодні, змінить завтра!» Контекст: соціальний стартап",
+      "en": "Phrase: \"What I start today will change tomorrow!\" Context: social startup launch",
+      "ru": "Фраза: «То, что я начинаю сегодня, изменит завтра!» Контекст: запуск социального стартапа"
+    }
+  },
+  {
+    "id": "196",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Тиша більше не варіант — я говоритиму голосно і чітко!» Контекст: маніфест жінок-лідерок",
+      "en": "Phrase: \"Silence is no longer an option — I will speak loud and clear!\" Context: women leaders’ manifesto",
+      "ru": "Фраза: «Молчание больше не вариант — я буду говорить громко и чётко!» Контекст: манифест женщин-лидеров"
+    }
+  },
+  {
+    "id": "197",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Кожна дія має значення — навіть найменша змінює світ!» Контекст: виступ екоактивіста",
+      "en": "Phrase: \"Every action matters — even the smallest one changes the world!\" Context: eco-activist speech",
+      "ru": "Фраза: «Каждое действие имеет значение — даже самое маленькое меняет мир!» Контекст: выступление экоактивиста"
+    }
+  },
+  {
+    "id": "198",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не сподіваюся — я створюю!» Контекст: творча лабораторія",
+      "en": "Phrase: \"I don’t hope — I create!\" Context: creative lab",
+      "ru": "Фраза: «Я не надеюсь — я создаю!» Контекст: творческая лаборатория"
+    }
+  },
+  {
+    "id": "199",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не просто говорю про зміни — я ними живу!» Контекст: інтерв’ю з інфлюенсером",
+      "en": "Phrase: \"I don’t just talk about change — I live it!\" Context: interview with an influencer",
+      "ru": "Фраза: «Я не просто говорю о переменах — я ими живу!» Контекст: интервью с инфлюенсером"
+    }
+  },
+  {
+    "id": "200",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Світ не чекає — тож я теж не чекатиму!» Контекст: вступна лекція у стартап-школі",
+      "en": "Phrase: \"The world doesn’t wait — and neither will I!\" Context: opening lecture at a startup school",
+      "ru": "Фраза: «Мир не ждёт — и я тоже ждать не буду!» Контекст: вводная лекция в школе стартапов"
+    }
+  },
+  {
+    "id": "201",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не відступаю, бо знаю — позаду вже нічого немає!» Контекст: мотиваційна промова тренера",
+      "en": "Phrase: \"I don’t step back — because I know there’s nothing behind me anymore!\" Context: motivational coach speech",
+      "ru": "Фраза: «Я не отступаю, потому что знаю — позади уже ничего нет!» Контекст: мотивационная речь тренера"
+    }
+  },
+  {
+    "id": "202",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Світ чекає не героїв, а тих, хто почне діяти зараз!» Контекст: конференція волонтерів",
+      "en": "Phrase: \"The world isn’t waiting for heroes — it’s waiting for those who act now!\" Context: volunteer conference",
+      "ru": "Фраза: «Мир ждёт не героев, а тех, кто начнёт действовать прямо сейчас!» Контекст: конференция волонтёров"
+    }
+  },
+  {
+    "id": "203",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мене не зупинити, бо я нарешті повірив у себе!» Контекст: фінал шоу талантів",
+      "en": "Phrase: \"You can’t stop me — because I finally believe in myself!\" Context: talent show finale",
+      "ru": "Фраза: «Меня не остановить, потому что я наконец поверил в себя!» Контекст: финал шоу талантов"
+    }
+  },
+  {
+    "id": "204",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не народився лідером — я ним став, крок за кроком!» Контекст: виступ молодого політика",
+      "en": "Phrase: \"I wasn’t born a leader — I became one, step by step!\" Context: young politician's speech",
+      "ru": "Фраза: «Я не родился лидером — я им стал, шаг за шагом!» Контекст: выступление молодого политика"
+    }
+  },
+  {
+    "id": "205",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Всі сміялися з моїх ідей — поки вони не стали реальністю!» Контекст: підприємець на презентації стартапу",
+      "en": "Phrase: \"They all laughed at my ideas — until they became reality!\" Context: startup pitch",
+      "ru": "Фраза: «Все смеялись над моими идеями — пока они не стали реальностью!» Контекст: презентация стартапа"
+    }
+  },
+  {
+    "id": "206",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Немає ідеального моменту — є лише рішучість почати!» Контекст: мотиваційна розмова з командою",
+      "en": "Phrase: \"There’s no perfect moment — there’s only the courage to begin!\" Context: motivational talk with a team",
+      "ru": "Фраза: «Нет идеального момента — есть только решимость начать!» Контекст: мотивационная беседа с командой"
+    }
+  },
+  {
+    "id": "207",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мене критикували всі, але віра в себе стала гучнішою!» Контекст: інтерв’ю з митцем",
+      "en": "Phrase: \"Everyone criticized me — but my self-belief was louder!\" Context: interview with an artist",
+      "ru": "Фраза: «Меня критиковали все, но вера в себя оказалась громче!» Контекст: интервью с художником"
+    }
+  },
+  {
+    "id": "208",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мені казали зупинитись, а я просто прискорився!» Контекст: мотиваційний ролик",
+      "en": "Phrase: \"They told me to stop — so I just sped up!\" Context: motivational video",
+      "ru": "Фраза: «Мне говорили остановиться — а я лишь ускорился!» Контекст: мотивационный ролик"
+    }
+  },
+  {
+    "id": "209",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Коли інші чекають дозволу, я вже дію!» Контекст: виступ на хакатоні",
+      "en": "Phrase: \"While others wait for permission, I’m already taking action!\" Context: hackathon speech",
+      "ru": "Фраза: «Пока другие ждут разрешения, я уже действую!» Контекст: выступление на хакатоне"
+    }
+  },
+  {
+    "id": "210",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не розповідаю про мрію — я її створюю!» Контекст: виступ інноватора",
+      "en": "Phrase: \"I’m not talking about a dream — I’m building it!\" Context: innovator’s speech",
+      "ru": "Фраза: «Я не рассказываю о мечте — я её создаю!» Контекст: выступление инноватора"
+    }
+  },
+  {
+    "id": "211",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Та я кричатиму, допоки світ не почує правду!» Контекст: журналіст на протесті",
+      "en": "Phrase: \"Then I’ll scream until the world hears the truth!\" Context: journalist at a protest",
+      "ru": "Фраза: «Тогда я буду кричать, пока мир не услышит правду!» Контекст: журналист на протесте"
+    }
+  },
+  {
+    "id": "212",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не вірю в поразку — вона просто боїться мене!» Контекст: стендап-комік на сцені",
+      "en": "Phrase: \"I don’t believe in failure — it’s just afraid of me!\" Context: stand-up comedian on stage",
+      "ru": "Фраза: «Я не верю в провал — он просто боится меня!» Контекст: стендап-комик на сцене"
+    }
+  },
+  {
+    "id": "213",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Замість дверей — стіна? Я беру кувалду!» Контекст: підприємець у кризі",
+      "en": "Phrase: \"No door? Just a wall? Then give me a sledgehammer!\" Context: entrepreneur facing crisis",
+      "ru": "Фраза: «Нет двери? Просто стена? Тогда дайте мне кувалду!» Контекст: предприниматель в кризисе"
+    }
+  },
+  {
+    "id": "214",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Вони мене списали? Ну що ж, тепер шоу починається!» Контекст: актор перед прем’єрою",
+      "en": "Phrase: \"They wrote me off? Well then, the show begins now!\" Context: actor before a premiere",
+      "ru": "Фраза: «Они меня списали? Что ж, теперь начинается шоу!» Контекст: актёр перед премьерой"
+    }
+  },
+  {
+    "id": "215",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мовчання — золото? Ні, зараз час говорити!» Контекст: громадський активіст",
+      "en": "Phrase: \"Silence is golden? No — now is the time to speak!\" Context: civic activist",
+      "ru": "Фраза: «Молчание — золото? Нет, сейчас время говорить!» Контекст: гражданский активист"
+    }
+  },
+  {
+    "id": "216",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Усміхаюсь — не тому, що легко. А тому, що не здамся!» Контекст: солдат у промові до підрозділу",
+      "en": "Phrase: \"I smile not because it’s easy — but because I won’t give up!\" Context: soldier addressing squad",
+      "ru": "Фраза: «Я улыбаюсь не потому, что легко — а потому, что не сдамся!» Контекст: солдат к подразделению"
+    }
+  },
+  {
+    "id": "217",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не план Б — це мій новий план А!» Контекст: лідер стартапу",
+      "en": "Phrase: \"This isn’t plan B — it’s my new plan A!\" Context: startup leader",
+      "ru": "Фраза: «Это не план Б — это мой новый план А!» Контекст: лидер стартапа"
+    }
+  },
+  {
+    "id": "218",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Хтось чекає дива, а я — беру і роблю!» Контекст: соціальна реклама",
+      "en": "Phrase: \"Some wait for a miracle — I make it happen!\" Context: social campaign",
+      "ru": "Фраза: «Кто-то ждёт чуда, а я — просто делаю!» Контекст: социальная реклама"
+    }
+  },
+  {
+    "id": "219",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Навіть тінь залишає мене, коли темно — а я не здався!» Контекст: автобіографічне шоу",
+      "en": "Phrase: \"Even my shadow left me in darkness — but I didn’t quit!\" Context: autobiographical monologue",
+      "ru": "Фраза: «Даже тень покинула меня в темноте — но я не сдался!» Контекст: автобиографическое шоу"
+    }
+  },
+  {
+    "id": "220",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ніхто не вірив? Тим краще — буде несподівано!» Контекст: спортивне змагання",
+      "en": "Phrase: \"No one believed? Even better — now it’ll be a surprise!\" Context: sports competition",
+      "ru": "Фраза: «Никто не верил? Тем лучше — будет неожиданно!» Контекст: спортивное соревнование"
+    }
+  },
+  {
+    "id": "231",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Так, я знову забув пароль! І що тепер — до в'язниці?!» Контекст: офісний працівник у паніці",
+      "en": "Phrase: \"Yes, I forgot my password again! What now — prison time?!\" Context: panicked office worker",
+      "ru": "Фраза: «Да, я снова забыл пароль! И что теперь — в тюрьму?!» Контекст: офисный работник в панике"
+    }
+  },
+  {
+    "id": "232",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ні, мама, я не голодний. Я просто вмираю повільно від стресу!» Контекст: підліток удома",
+      "en": "Phrase: \"No, mom, I’m not hungry. I’m just slowly dying from stress!\" Context: teenager at home",
+      "ru": "Фраза: «Нет, мама, я не голоден. Я просто медленно умираю от стресса!» Контекст: подросток дома"
+    }
+  },
+  {
+    "id": "233",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я встиг — лише на 48 хвилин пізніше! Це вже прогрес!» Контекст: студент на лекції",
+      "en": "Phrase: \"I made it — just 48 minutes late! That’s progress!\" Context: student at a lecture",
+      "ru": "Фраза: «Я успел — всего на 48 минут позже! Это уже прогресс!» Контекст: студент на лекции"
+    }
+  },
+  {
+    "id": "234",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не безлад — це мій креативний простір!» Контекст: художник у студії",
+      "en": "Phrase: \"This isn’t a mess — it’s my creative zone!\" Context: artist in the studio",
+      "ru": "Фраза: «Это не беспорядок — это моя креативная зона!» Контекст: художник в студии"
+    }
+  },
+  {
+    "id": "235",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це не паніка — це мій стиль прийняття рішень!» Контекст: менеджер у дедлайні",
+      "en": "Phrase: \"It’s not panic — it’s my decision-making style!\" Context: manager on deadline",
+      "ru": "Фраза: «Это не паника — это мой стиль принятия решений!» Контекст: менеджер на дедлайне"
+    }
+  },
+  {
+    "id": "236",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Якщо кава не вирішить це — я здаюсь!» Контекст: бариста о 7-й ранку",
+      "en": "Phrase: \"If coffee doesn’t fix it — I give up!\" Context: barista at 7 AM",
+      "ru": "Фраза: «Если кофе это не исправит — я сдаюсь!» Контекст: бариста в 7 утра"
+    }
+  },
+  {
+    "id": "237",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Так, я — той, хто поставив молоко перед чаєм. І що?!» Контекст: британський вечір",
+      "en": "Phrase: \"Yes, I poured milk before the tea. So what?!\" Context: British tea time",
+      "ru": "Фраза: «Да, я налил молоко перед чаем. И что?!» Контекст: британское чаепитие"
+    }
+  },
+  {
+    "id": "238",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Моє дзен — це кричати в подушку кожні 30 хвилин!» Контекст: фрілансер на дедлайні",
+      "en": "Phrase: \"My zen is screaming into a pillow every 30 minutes!\" Context: freelancer on deadline",
+      "ru": "Фраза: «Мой дзен — это кричать в подушку каждые 30 минут!» Контекст: фрилансер в дедлайне"
+    }
+  },
+  {
+    "id": "239",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не опізнився — я драматично увійшов!» Контекст: учень у класі",
+      "en": "Phrase: \"I’m not late — I made a dramatic entrance!\" Context: student in class",
+      "ru": "Фраза: «Я не опоздал — я сделал драматичный вход!» Контекст: ученик в классе"
+    }
+  },
+  {
+    "id": "240",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Мені не треба Wi-Fi — я сам джерело хаосу!» Контекст: блогер у лісі",
+      "en": "Phrase: \"I don’t need Wi-Fi — I’m a source of chaos myself!\" Context: influencer in the woods",
+      "ru": "Фраза: «Мне не нужен Wi-Fi — я сам источник хаоса!» Контекст: блогер в лесу"
+    }
+  },
+  {
+    "id": "251",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Цей день запам’ятають навіки — бо я пішов по піцу!» Контекст: герой перед кулінарним подвигом",
+      "en": "Phrase: \"This day shall be remembered forever — for I ventured forth for pizza!\" Context: hero before a culinary quest",
+      "ru": "Фраза: «Этот день запомнят навеки — ибо я пошёл за пиццей!» Контекст: герой перед кулинарным подвигом"
+    }
+  },
+  {
+    "id": "252",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Навіть якщо мій інтернет зникне — я не здамся без бою!» Контекст: геймер у розпалі гри",
+      "en": "Phrase: \"Even if my internet fails — I shall not surrender without a fight!\" Context: gamer in battle",
+      "ru": "Фраза: «Даже если интернет исчезнет — я не сдамся без боя!» Контекст: геймер в разгаре битвы"
+    }
+  },
+  {
+    "id": "253",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я — не просто втомлений. Я — легенда в пошуках ліжка!» Контекст: студент після сесії",
+      "en": "Phrase: \"I’m not just tired. I’m a legend in search of a bed!\" Context: student after exams",
+      "ru": "Фраза: «Я не просто устал. Я — легенда в поисках кровати!» Контекст: студент после сессии"
+    }
+  },
+  {
+    "id": "254",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Сила кави зі мною — я виживу цей понеділок!» Контекст: офісний воїн зранку",
+      "en": "Phrase: \"The power of coffee is with me — I shall survive this Monday!\" Context: office warrior in the morning",
+      "ru": "Фраза: «Сила кофе со мной — я переживу этот понедельник!» Контекст: офисный воин утром"
+    }
+  },
+  {
+    "id": "255",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я з’явився не пізно, а коли настав мій час!» Контекст: герой на зібранні",
+      "en": "Phrase: \"I did not arrive late — I arrived when destiny called!\" Context: hero at a meeting",
+      "ru": "Фраза: «Я пришёл не поздно — я пришёл, когда позвала судьба!» Контекст: герой на собрании"
+    }
+  },
+  {
+    "id": "256",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «І ось я стою перед вами, з одним слайдом PowerPoint і вірою у серці!» Контекст: студент на захисті проєкту",
+      "en": "Phrase: \"Here I stand, with one PowerPoint slide and faith in my heart!\" Context: student defending a project",
+      "ru": "Фраза: «Вот я стою перед вами — с одним слайдом PowerPoint и верой в сердце!» Контекст: студент на защите проекта"
+    }
+  },
+  {
+    "id": "257",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Ця куртка не просто стильна — вона моя броня!» Контекст: модник на вулиці",
+      "en": "Phrase: \"This jacket is not just stylish — it is my armor!\" Context: fashionista on the street",
+      "ru": "Фраза: «Эта куртка не просто стильная — она моя броня!» Контекст: модник на улице"
+    }
+  },
+  {
+    "id": "258",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я не прошу Wi-Fi — я вимагаю з’єднання!» Контекст: мандрівник у хостелі",
+      "en": "Phrase: \"I do not ask for Wi-Fi — I demand connection!\" Context: traveler in a hostel",
+      "ru": "Фраза: «Я не прошу Wi-Fi — я требую подключения!» Контекст: путешественник в хостеле"
+    }
+  },
+  {
+    "id": "259",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Це — не завал на роботі. Це мій шлях героя!» Контекст: працівник з ноутбуком",
+      "en": "Phrase: \"This is not work overload — it’s my hero’s journey!\" Context: worker with a laptop",
+      "ru": "Фраза: «Это не завал — это мой путь героя!» Контекст: работник с ноутбуком"
+    }
+  },
+  {
+    "id": "260",
+    "sentence_type": "PERSUASIVE_SHOUT",
+    "sentence": {
+      "ua": "Фраза: «Я з’їв останнє печиво — і готовий за це боротись!» Контекст: родинна кухня",
+      "en": "Phrase: \"I ate the last cookie — and I’m ready to fight for it!\" Context: family kitchen",
+      "ru": "Фраза: «Я съел последнее печенье — и готов сражаться за это!» Контекст: семейная кухня"
+    }
+  }
+]

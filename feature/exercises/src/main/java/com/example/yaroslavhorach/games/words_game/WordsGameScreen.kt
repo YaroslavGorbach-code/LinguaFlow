@@ -57,6 +57,7 @@ import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
+import com.example.yaroslavhorach.designsystem.theme.Black_3
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.games.words_game.model.WordsGameAction
@@ -293,12 +294,15 @@ private fun ColumnScope.WordsContent(
             when (words.size) {
                 1 -> OneWord(mode.copy(words = words))
                 2 -> TwoWords(mode.copy(words = words))
-                3 -> { /* TODO */ }
-                4 -> FourWords(mode.copy(words = words))
+//                3 -> ThreeWords(mode.copy(words = words))
+//                4 -> FourWords(mode.copy(words = words))
                 else -> {
                     Text(
-                        text = words.joinToString(","),
-                        style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 20.dp),
+                        text = words.joinToString(", "),
+                        style = LinguaTypography.body1.copy(fontSize = 28.sp),
                         color = MaterialTheme.colorScheme.typoPrimary()
                     )
                 }
@@ -487,8 +491,83 @@ private fun FourWords(mode: WordsGameViewState.ScreenMode.Words) {
             }
         }
     }
+}
+
+@Composable
+private fun ThreeWords(mode: WordsGameViewState.ScreenMode.Words) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 20.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
+            BoxWithStripes(
+                rotation = -15f,
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[0],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+            BoxWithStripes(
+                rotation = 15f,
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[1],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+        }
+        Spacer(Modifier.height(32.dp))
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
+            BoxWithStripes(
+                borderColor = MaterialTheme.colorScheme.secondary,
+                rawShadowYOffset = 0.dp,
+                borderWidth = 1.dp,
+                modifier = Modifier
+                    .weight(1f)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .fillMaxWidth(),
+                    text = mode.words[2],
+                    textAlign = TextAlign.Center,
+                    style = LinguaTypography.body1.copy(fontSize = 24.sp),
+                    color = White
+                )
+            }
+        }
+    }
 
 }
+
 
 @Preview
 @Composable

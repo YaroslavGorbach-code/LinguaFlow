@@ -17,6 +17,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
+import kotlin.random.Random
 
 class ExerciseContentRepositoryImpl @Inject constructor(
     @ApplicationContext private val context: Context
@@ -165,6 +166,14 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueWords.shuffled().take(1).map { it.wordText }
             }
+            Game.GameName.RAP_IMPROV -> {
+                val words = getWords(Word.WordType.NOUN)
+                    .distinctBy { it.wordText }
+                    .shuffled()
+                    .map { it.wordText }
+
+                words.take(Random.nextInt(3, 6)).toSet().toList()
+            }
             else -> emptyList()
         }
     }
@@ -234,6 +243,20 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
+            Game.GameName.BODY_LANGUAGE_EXPRESS -> {
+                val sentences = getSentences(Sentence.SentenceType.BODY_LANGUAGE)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
+            Game.GameName.PERSUASIVE_SHOUT -> {
+                val sentences = getSentences(Sentence.SentenceType.PERSUASIVE_SHOUT)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
             else -> ""
         }
     }
@@ -271,6 +294,8 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Sentence.SentenceType.WHO_AM_I -> "sentences/sentences_who_am_i.json"
                     Sentence.SentenceType.I_AM_EXPERT -> "sentences/sentences_i_am_expert.json"
                     Sentence.SentenceType.FORBIDDEN_WORDS -> "sentences/sentences_forbiden_words_.json"
+                    Sentence.SentenceType.BODY_LANGUAGE -> "sentences/sentences_body_language.json"
+                    Sentence.SentenceType.PERSUASIVE_SHOUT -> "sentences/sentences_persuative_shout.json"
                 }
 
                 val sentences: List<Sentence> = loadJsonFromAssets(context, fileName)?.let { json ->

@@ -21,6 +21,8 @@ class Sentence(
         EMOTION_TO_FACT,
         WHO_AM_I,
         I_AM_EXPERT,
-        FORBIDDEN_WORDS
+        FORBIDDEN_WORDS,
+        BODY_LANGUAGE,
+        PERSUASIVE_SHOUT
     }
 }
