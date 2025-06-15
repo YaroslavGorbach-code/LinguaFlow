@@ -64,13 +64,14 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
+import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.home.model.GameUi
 import com.example.yaroslavhorach.home.model.GamesAction
 import com.example.yaroslavhorach.home.model.GamesViewState
 
 @Composable
 internal fun GamesRoute(
-    onNavigateToGame: (id: Long) -> Unit,
+    onNavigateToGame: (gameId: Long, gameName: Game.GameName) -> Unit,
     viewModel: GamesViewModel = hiltViewModel(),
 ) {
     val homeState by viewModel.state.collectAsStateWithLifecycle()
@@ -81,7 +82,7 @@ internal fun GamesRoute(
         actioner = { action ->
             when (action) {
                 is GamesAction.OnStartGameClicked -> {
-                    onNavigateToGame(action.gameUi.game.id)
+                    onNavigateToGame(action.gameUi.game.id, action.gameUi.game.name)
                 }
                 else -> viewModel.submitAction(action)
             }
