@@ -59,7 +59,6 @@ data class Game(
         MADMAN_ANNOUNCEMENT,
         FUNNY_EXCUSE,
         ONE_WORD_MANY_MEANINGS,
-        INTONATION_MATTERS,
         FLIRTING_WITH_OBJECT,
         BOTH_THERE_AND_IN_BED,
         HOT_WORD,

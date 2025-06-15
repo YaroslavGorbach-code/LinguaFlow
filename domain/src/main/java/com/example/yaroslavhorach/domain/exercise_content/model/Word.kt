@@ -13,6 +13,6 @@ class Word(
         get() = word[currentLang] ?: this.word["en"] ?: ""
 
     enum class WordType {
-        NOUN
+        NOUN, PLACE, HOT
     }
 }

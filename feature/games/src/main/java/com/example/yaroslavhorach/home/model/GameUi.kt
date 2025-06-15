@@ -34,7 +34,6 @@ data class GameUi(val game: Game, val isDescriptionVisible: Boolean = false) {
         Game.GameName.MADMAN_ANNOUNCEMENT -> R.drawable.im_promote
         Game.GameName.FUNNY_EXCUSE -> R.drawable.im_clown
         Game.GameName.ONE_WORD_MANY_MEANINGS -> R.drawable.im_lettering
-        Game.GameName.INTONATION_MATTERS -> R.drawable.im_scold
         Game.GameName.FLIRTING_WITH_OBJECT -> R.drawable.im_lips
         Game.GameName.BOTH_THERE_AND_IN_BED ->  R.drawable.im_bed
         Game.GameName.HOT_WORD -> R.drawable.im_fire

@@ -23,6 +23,12 @@ class Sentence(
         I_AM_EXPERT,
         FORBIDDEN_WORDS,
         BODY_LANGUAGE,
-        PERSUASIVE_SHOUT
+        PERSUASIVE_SHOUT,
+        SUBTLE_MANIPULATION,
+        ONE_SYNONYM_PLEASE,
+        INTONATION_MASTER,
+        FUNNIEST_ANSWER,
+        SELL_THE_MADNESS,
+        FUNNY_EXCUSE
     }
 }

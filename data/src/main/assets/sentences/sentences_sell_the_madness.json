@@ -1,0 +1,1622 @@
+[
+  {
+    "id": 1,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Самооновлювальний список справ",
+      "en": "Self-updating to-do list",
+      "ru": "Самообновляющийся список дел"
+    }
+  },
+  {
+    "id": 2,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Тостер для льоду",
+      "en": "Ice toaster",
+      "ru": "Тостер для льда"
+    }
+  },
+  {
+    "id": 3,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шкарпетки з характером",
+      "en": "Socks with personality",
+      "ru": "Носки с характером"
+    }
+  },
+  {
+    "id": 4,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Дзеркало для внутрішніх монологів",
+      "en": "Mirror for internal monologues",
+      "ru": "Зеркало для внутренних монологов"
+    }
+  },
+  {
+    "id": 5,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Капці, які шепочуть поради",
+      "en": "Advice-whispering slippers",
+      "ru": "Тапочки, которые шепчут советы"
+    }
+  },
+  {
+    "id": 6,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Годинник настрою",
+      "en": "Mood clock",
+      "ru": "Часы настроения"
+    }
+  },
+  {
+    "id": 7,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Парасолька для тіней",
+      "en": "Umbrella for shadows",
+      "ru": "Зонт для теней"
+    }
+  },
+  {
+    "id": 8,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ручка, що забуває написане",
+      "en": "Pen that forgets what it wrote",
+      "ru": "Ручка, которая забывает написанное"
+    }
+  },
+  {
+    "id": 9,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Навушники тиші",
+      "en": "Silence headphones",
+      "ru": "Наушники тишины"
+    }
+  },
+  {
+    "id": 10,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісочний годинник без піску",
+      "en": "Hourglass without sand",
+      "ru": "Песочные часы без песка"
+    }
+  },
+  {
+    "id": 11,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Книга, яку неможливо прочитати двічі",
+      "en": "Book you can’t read twice",
+      "ru": "Книга, которую нельзя прочитать дважды"
+    }
+  },
+  {
+    "id": 12,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Календар без дат",
+      "en": "Dateless calendar",
+      "ru": "Календарь без дат"
+    }
+  },
+  {
+    "id": 13,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ліки від уявних друзів",
+      "en": "Medicine for imaginary friends",
+      "ru": "Лекарство от воображаемых друзей"
+    }
+  },
+  {
+    "id": 14,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Футболка, яка змінює настрій",
+      "en": "Mood-changing T-shirt",
+      "ru": "Футболка, меняющая настроение"
+    }
+  },
+  {
+    "id": 15,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Телескоп для внутрішнього світу",
+      "en": "Telescope for inner worlds",
+      "ru": "Телескоп для внутреннего мира"
+    }
+  },
+  {
+    "id": 16,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пральна машина для думок",
+      "en": "Thought-washing machine",
+      "ru": "Стиральная машина для мыслей"
+    }
+  },
+  {
+    "id": 17,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Клей для спогадів",
+      "en": "Memory glue",
+      "ru": "Клей для воспоминаний"
+    }
+  },
+  {
+    "id": 18,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Гаманець для емоцій",
+      "en": "Wallet for emotions",
+      "ru": "Кошелёк для эмоций"
+    }
+  },
+  {
+    "id": 19,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Окуляри, що бачать минуле",
+      "en": "Glasses that see the past",
+      "ru": "Очки, видящие прошлое"
+    }
+  },
+  {
+    "id": 20,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ліхтарик, який світить спогадами",
+      "en": "Flashlight that shines memories",
+      "ru": "Фонарик, светящий воспоминаниями"
+    }
+  },
+  {
+    "id": 21,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Будильник, який вибачається",
+      "en": "Apologizing alarm clock",
+      "ru": "Будильник, который извиняется"
+    }
+  },
+  {
+    "id": 22,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Подушка з альтернативною думкою",
+      "en": "Pillow with a second opinion",
+      "ru": "Подушка с альтернативным мнением"
+    }
+  },
+  {
+    "id": 23,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Чашка, що не хоче кави",
+      "en": "Coffee mug that refuses coffee",
+      "ru": "Кружка, которая не хочет кофе"
+    }
+  },
+  {
+    "id": 24,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Двері до нікуди",
+      "en": "Door to nowhere",
+      "ru": "Дверь в никуда"
+    }
+  },
+  {
+    "id": 25,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Килимок, що не любить ноги",
+      "en": "Rug that hates feet",
+      "ru": "Коврик, который не любит ноги"
+    }
+  },
+  {
+    "id": 26,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Блокнот для незаписаних думок",
+      "en": "Notebook for unwritten thoughts",
+      "ru": "Блокнот для ненаписанных мыслей"
+    }
+  },
+  {
+    "id": 27,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Хмара у коробці",
+      "en": "Cloud in a box",
+      "ru": "Облако в коробке"
+    }
+  },
+  {
+    "id": 28,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пояс від гравітації",
+      "en": "Anti-gravity belt",
+      "ru": "Пояс от гравитации"
+    }
+  },
+  {
+    "id": 29,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Вішак для настрію",
+      "en": "Mood hanger",
+      "ru": "Вешалка для настроения"
+    }
+  },
+  {
+    "id": 30,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Котячий перекладач думок",
+      "en": "Cat thought translator",
+      "ru": "Переводчик мыслей кота"
+    }
+  },
+  {
+    "id": 31,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Лампа, що боїться темряви",
+      "en": "Lamp afraid of the dark",
+      "ru": "Лампа, которая боится темноты"
+    }
+  },
+  {
+    "id": 32,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Телефон з поганою пам’яттю",
+      "en": "Phone with bad memory",
+      "ru": "Телефон с плохой памятью"
+    }
+  },
+  {
+    "id": 33,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Клавіатура для безмовного коду",
+      "en": "Keyboard for silent code",
+      "ru": "Клавиатура для безмолвного кода"
+    }
+  },
+  {
+    "id": 34,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Мило, що миє душу",
+      "en": "Soap for the soul",
+      "ru": "Мыло для души"
+    }
+  },
+  {
+    "id": 35,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Окуляри для ілюзій",
+      "en": "Illusion glasses",
+      "ru": "Очки иллюзий"
+    }
+  },
+  {
+    "id": 36,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Джинси з кишенями для емоцій",
+      "en": "Jeans with pockets for emotions",
+      "ru": "Джинсы с карманами для эмоций"
+    }
+  },
+  {
+    "id": 37,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пакет із нічого",
+      "en": "Bag of nothing",
+      "ru": "Пакет с ничем"
+    }
+  },
+  {
+    "id": 38,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ковдра для уяви",
+      "en": "Blanket of imagination",
+      "ru": "Одеяло воображения"
+    }
+  },
+  {
+    "id": 39,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Стілець, який сперечається",
+      "en": "Arguing chair",
+      "ru": "Спорящий стул"
+    }
+  },
+  {
+    "id": 40,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шолом для поезії",
+      "en": "Poetry helmet",
+      "ru": "Шлем для поэзии"
+    }
+  },
+  {
+    "id": 41,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Парасоля для думок",
+      "en": "Umbrella for thoughts",
+      "ru": "Зонт для мыслей"
+    }
+  },
+  {
+    "id": 42,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Корабель у склянці часу",
+      "en": "Ship in a glass of time",
+      "ru": "Корабль в стакане времени"
+    }
+  },
+  {
+    "id": 43,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Піца з нульовими калоріями (але й смаком)",
+      "en": "Zero-calorie (and zero-taste) pizza",
+      "ru": "Пицца с нулевой калорийностью (и вкусом)"
+    }
+  },
+  {
+    "id": 44,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Вікно в іншу реальність (на батарейках)",
+      "en": "Window to another reality (battery powered)",
+      "ru": "Окно в другую реальность (на батарейках)"
+    }
+  },
+  {
+    "id": 45,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ліхтарик для втраченої надії",
+      "en": "Flashlight for lost hope",
+      "ru": "Фонарик для утраченной надежды"
+    }
+  },
+  {
+    "id": 46,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Каштан з Wi-Fi",
+      "en": "Wi-Fi chestnut",
+      "ru": "Каштан с Wi-Fi"
+    }
+  },
+  {
+    "id": 47,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Скарб, який нічого не вартий",
+      "en": "Treasure of no value",
+      "ru": "Сокровище, не имеющее ценности"
+    }
+  },
+  {
+    "id": 48,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Тарілка, яка з’їдає сама себе",
+      "en": "Self-eating plate",
+      "ru": "Тарелка, которая съедает саму себя"
+    }
+  },
+  {
+    "id": 49,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Холодильник з комплексом меншовартості",
+      "en": "Fridge with inferiority complex",
+      "ru": "Холодильник с комплексом неполноценности"
+    }
+  },
+  {
+    "id": 50,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Вішалка для вигаданих костюмів",
+      "en": "Hanger for imaginary costumes",
+      "ru": "Вешалка для вымышленных костюмов"
+    }
+  },
+  {
+    "id": 51,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пульт керування спогадами",
+      "en": "Memory control remote",
+      "ru": "Пульт управления воспоминаниями"
+    }
+  },
+  {
+    "id": 52,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Мікрохвильовка для думок",
+      "en": "Microwave for thoughts",
+      "ru": "Микроволновка для мыслей"
+    }
+  },
+  {
+    "id": 53,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Окуляри для супергеройської самооцінки",
+      "en": "Glasses for superhero self-esteem",
+      "ru": "Очки для самооценки супергероя"
+    }
+  },
+  {
+    "id": 54,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісочниця для дорослих стресів",
+      "en": "Sandbox for adult stress",
+      "ru": "Песочница для взрослого стресса"
+    }
+  },
+  {
+    "id": 55,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Невидимий щоденник",
+      "en": "Invisible diary",
+      "ru": "Невидимый дневник"
+    }
+  },
+  {
+    "id": 56,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Світильник на випадок дивного сну",
+      "en": "Lamp for weird dreams",
+      "ru": "Светильник на случай странного сна"
+    }
+  },
+  {
+    "id": 57,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Дверна ручка з почуттями",
+      "en": "Doorknob with feelings",
+      "ru": "Дверная ручка с чувствами"
+    }
+  },
+  {
+    "id": 58,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Записник, який зберігає таємниці від тебе",
+      "en": "Notebook that hides secrets from you",
+      "ru": "Блокнот, скрывающий от тебя секреты"
+    }
+  },
+  {
+    "id": 59,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пакунок із запасним сенсом життя",
+      "en": "Backup meaning of life kit",
+      "ru": "Набор запасного смысла жизни"
+    }
+  },
+  {
+    "id": 60,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Сканер людських відмовок",
+      "en": "Excuse scanner",
+      "ru": "Сканер человеческих отговорок"
+    }
+  },
+  {
+    "id": 61,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісок, що не сиплеться",
+      "en": "Sand that won’t fall",
+      "ru": "Песок, который не сыпется"
+    }
+  },
+  {
+    "id": 62,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Підлога зі змінним настроєм",
+      "en": "Mood-changing floor",
+      "ru": "Пол с переменчивым настроением"
+    }
+  },
+  {
+    "id": 63,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Горщик, що сам вирощує себе",
+      "en": "Pot that grows itself",
+      "ru": "Горшок, который выращивает сам себя"
+    }
+  },
+  {
+    "id": 64,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пральна машина для страхів",
+      "en": "Washing machine for fears",
+      "ru": "Стиральная машина для страхов"
+    }
+  },
+  {
+    "id": 65,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ложка з інстинктом самозбереження",
+      "en": "Spoon with a survival instinct",
+      "ru": "Ложка с инстинктом самосохранения"
+    }
+  },
+  {
+    "id": 66,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шкарпетки, які сперечаються між собою",
+      "en": "Socks that argue with each other",
+      "ru": "Носки, которые спорят между собой"
+    }
+  },
+  {
+    "id": 67,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Календар, у якому немає понеділків",
+      "en": "Calendar without Mondays",
+      "ru": "Календарь без понедельников"
+    }
+  },
+  {
+    "id": 68,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Зонтик, що лунає з музикою",
+      "en": "Umbrella that plays music",
+      "ru": "Зонт, играющий музыку"
+    }
+  },
+  {
+    "id": 69,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шапка, яка читає сни",
+      "en": "Hat that reads dreams",
+      "ru": "Шапка, читающая сны"
+    }
+  },
+  {
+    "id": 70,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Диван для глибоких роздумів",
+      "en": "Couch for deep thoughts",
+      "ru": "Диван для глубоких размышлений"
+    }
+  },
+  {
+    "id": 71,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Вентилятор для надмірної драми",
+      "en": "Fan for excessive drama",
+      "ru": "Вентилятор для чрезмерной драмы"
+    }
+  },
+  {
+    "id": 72,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Плед для забутих спогадів",
+      "en": "Blanket for forgotten memories",
+      "ru": "Плед для забытых воспоминаний"
+    }
+  },
+  {
+    "id": 73,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Рюкзак з альтернативною реальністю всередині",
+      "en": "Backpack with alternate reality inside",
+      "ru": "Рюкзак с альтернативной реальностью внутри"
+    }
+  },
+  {
+    "id": 74,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Квітка, яка в’яне, коли ти брешеш",
+      "en": "Flower that wilts when you lie",
+      "ru": "Цветок, который вянет, когда ты врешь"
+    }
+  },
+  {
+    "id": 75,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Склянка з невидимим чаєм",
+      "en": "Cup with invisible tea",
+      "ru": "Стакан с невидимым чаем"
+    }
+  },
+  {
+    "id": 76,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ручка, що виписує твої мрії",
+      "en": "Pen that writes your dreams",
+      "ru": "Ручка, которая записывает твои сны"
+    }
+  },
+  {
+    "id": 77,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ключ від чужих спогадів",
+      "en": "Key to someone else's memories",
+      "ru": "Ключ от чужих воспоминаний"
+    }
+  },
+  {
+    "id": 78,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісенник для мовчазних душ",
+      "en": "Songbook for silent souls",
+      "ru": "Песенник для молчаливых душ"
+    }
+  },
+  {
+    "id": 79,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Чайник, який шепоче таємниці",
+      "en": "Teapot that whispers secrets",
+      "ru": "Чайник, шепчущий секреты"
+    }
+  },
+  {
+    "id": 80,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Килим, що літає лише уві сні",
+      "en": "Rug that flies only in dreams",
+      "ru": "Ковер, который летает только во сне"
+    }
+  },
+  {
+    "id": 81,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Книга, яку можна прочитати лише один раз",
+      "en": "Book that can only be read once",
+      "ru": "Книга, которую можно прочитать только один раз"
+    }
+  },
+  {
+    "id": 82,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Каструля для емоційного варіння",
+      "en": "Pot for emotional cooking",
+      "ru": "Кастрюля для эмоциональной варки"
+    }
+  },
+  {
+    "id": 83,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Карта місць, яких не існує",
+      "en": "Map of places that don’t exist",
+      "ru": "Карта несуществующих мест"
+    }
+  },
+  {
+    "id": 84,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Годинник, що крутиться в минуле",
+      "en": "Clock that spins into the past",
+      "ru": "Часы, вращающиеся в прошлое"
+    }
+  },
+  {
+    "id": 85,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Мило, яке тебе критикує",
+      "en": "Soap that criticizes you",
+      "ru": "Мыло, которое тебя критикует"
+    }
+  },
+  {
+    "id": 86,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шапка з режимом невидимості (психологічної)",
+      "en": "Hat with invisibility mode (psychological)",
+      "ru": "Шапка с режимом невидимости (психологической)"
+    }
+  },
+  {
+    "id": 87,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Батарейка для енергії спокою",
+      "en": "Battery for calm energy",
+      "ru": "Батарейка для энергии спокойствия"
+    }
+  },
+  {
+    "id": 88,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Намисто з мікроспогадами",
+      "en": "Necklace of micro-memories",
+      "ru": "Ожерелье из микровоспоминаний"
+    }
+  },
+  {
+    "id": 89,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Піна для ванни з ефектом переродження",
+      "en": "Rebirth-effect bath foam",
+      "ru": "Пена для ванны с эффектом перерождения"
+    }
+  },
+  {
+    "id": 90,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Сонце в кишені",
+      "en": "Sun in your pocket",
+      "ru": "Солнце в кармане"
+    }
+  },
+  {
+    "id": 91,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шарф із запахом минулого",
+      "en": "Scarf with scent of the past",
+      "ru": "Шарф с запахом прошлого"
+    }
+  },
+  {
+    "id": 92,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пакетик для колекціонування тиші",
+      "en": "Bag for collecting silence",
+      "ru": "Пакетик для сбора тишины"
+    }
+  },
+  {
+    "id": 93,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Кнопка «почати все спочатку»",
+      "en": "Start-over button",
+      "ru": "Кнопка «начать всё сначала»"
+    }
+  },
+  {
+    "id": 94,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Нитка, що веде до себе",
+      "en": "Thread that leads to itself",
+      "ru": "Нитка, ведущая к самой себе"
+    }
+  },
+  {
+    "id": 95,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Окуляри, які бачать жарти в серйозному",
+      "en": "Glasses that see jokes in seriousness",
+      "ru": "Очки, которые видят шутки в серьёзном"
+    }
+  },
+  {
+    "id": 96,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Камінь, що плаче дощу",
+      "en": "Stone that cries for rain",
+      "ru": "Камень, который плачет дождём"
+    }
+  },
+  {
+    "id": 97,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісок з іншого світу",
+      "en": "Sand from another world",
+      "ru": "Песок из другого мира"
+    }
+  },
+  {
+    "id": 98,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ліхтарик, що показує те, чого немає",
+      "en": "Flashlight that shows what isn’t there",
+      "ru": "Фонарик, показывающий то, чего нет"
+    }
+  },
+  {
+    "id": 99,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Павутинка з майбутнього",
+      "en": "Web from the future",
+      "ru": "Паутина из будущего"
+    }
+  },
+  {
+    "id": 100,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ключ до чужого щастя",
+      "en": "Key to someone else’s happiness",
+      "ru": "Ключ к чужому счастью"
+    }
+  },
+  {
+    "id": 101,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Парасолька, яка лякається дощу",
+      "en": "Umbrella that's afraid of rain",
+      "ru": "Зонт, который боится дождя"
+    }
+  },
+  {
+    "id": 102,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Кіт, що муркоче вірші",
+      "en": "Cat that purrs poetry",
+      "ru": "Кот, который мурлычет стихи"
+    }
+  },
+  {
+    "id": 103,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Окуляри, що фільтрують реальність",
+      "en": "Glasses that filter reality",
+      "ru": "Очки, фильтрующие реальность"
+    }
+  },
+  {
+    "id": 104,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Рукавички для обіймів на відстані",
+      "en": "Gloves for distant hugs",
+      "ru": "Перчатки для объятий на расстоянии"
+    }
+  },
+  {
+    "id": 105,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пилосос для сумнівів",
+      "en": "Vacuum cleaner for doubts",
+      "ru": "Пылесос для сомнений"
+    }
+  },
+  {
+    "id": 106,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Зеркало, яке бачить лише майбутнє",
+      "en": "Mirror that sees only the future",
+      "ru": "Зеркало, которое видит только будущее"
+    }
+  },
+  {
+    "id": 107,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Папір, який стирає себе",
+      "en": "Paper that erases itself",
+      "ru": "Бумага, которая стирает себя"
+    }
+  },
+  {
+    "id": 108,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Рушник із запахом спокою",
+      "en": "Towel with the scent of calm",
+      "ru": "Полотенце с запахом спокойствия"
+    }
+  },
+  {
+    "id": 109,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Лампа, що працює від натхнення",
+      "en": "Lamp powered by inspiration",
+      "ru": "Лампа на вдохновении"
+    }
+  },
+  {
+    "id": 110,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Килим, що змінює кольори залежно від настрою",
+      "en": "Mood-sensitive carpet",
+      "ru": "Ковер, меняющий цвет по настроению"
+    }
+  },
+  {
+    "id": 111,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Гаманець, що ховає гроші від тебе",
+      "en": "Wallet that hides money from you",
+      "ru": "Кошелёк, который прячет от тебя деньги"
+    }
+  },
+  {
+    "id": 112,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Дзеркало, яке підморгує",
+      "en": "Winking mirror",
+      "ru": "Подмигивающее зеркало"
+    }
+  },
+  {
+    "id": 113,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Книга, яка не дозволяє закладок",
+      "en": "Book that forbids bookmarks",
+      "ru": "Книга, запрещающая закладки"
+    }
+  },
+  {
+    "id": 114,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Двері до уявного світу",
+      "en": "Door to an imaginary world",
+      "ru": "Дверь в воображаемый мир"
+    }
+  },
+  {
+    "id": 115,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пляшка зі звуками тиші",
+      "en": "Bottle of silence sounds",
+      "ru": "Бутылка звуков тишины"
+    }
+  },
+  {
+    "id": 116,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шкарпетки, які змінюють напрямок",
+      "en": "Socks that change direction",
+      "ru": "Носки, меняющие направление"
+    }
+  },
+  {
+    "id": 117,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ваза для спогадів, яких ніколи не було",
+      "en": "Vase for memories that never happened",
+      "ru": "Ваза для воспоминаний, которых не было"
+    }
+  },
+  {
+    "id": 118,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Навушники для серця",
+      "en": "Headphones for the heart",
+      "ru": "Наушники для сердца"
+    }
+  },
+  {
+    "id": 119,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Годинник, який плутає час",
+      "en": "Clock that confuses time",
+      "ru": "Часы, которые путают время"
+    }
+  },
+  {
+    "id": 120,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Чашка, яка запитує про твої почуття",
+      "en": "Cup that asks about your feelings",
+      "ru": "Чашка, которая спрашивает о твоих чувствах"
+    }
+  },
+  {
+    "id": 121,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Тапки, що ведуть тебе в нове життя",
+      "en": "Slippers that lead you to a new life",
+      "ru": "Тапки, ведущие в новую жизнь"
+    }
+  },
+  {
+    "id": 122,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Килимок для внутрішніх діалогів",
+      "en": "Mat for internal dialogues",
+      "ru": "Коврик для внутренних диалогов"
+    }
+  },
+  {
+    "id": 123,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Перо, яке підписує долю",
+      "en": "Feather that signs fate",
+      "ru": "Перо, подписывающее судьбу"
+    }
+  },
+  {
+    "id": 124,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Гудзик від невідомого одягу",
+      "en": "Button from an unknown outfit",
+      "ru": "Пуговица от неизвестной одежды"
+    }
+  },
+  {
+    "id": 125,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Зубна щітка для самокритики",
+      "en": "Toothbrush for self-criticism",
+      "ru": "Зубная щётка для самокритики"
+    }
+  },
+  {
+    "id": 126,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шарф, що змінює твої думки",
+      "en": "Scarf that changes your thoughts",
+      "ru": "Шарф, меняющий твои мысли"
+    }
+  },
+  {
+    "id": 127,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Магніт, який тягне лише спогади",
+      "en": "Magnet that attracts only memories",
+      "ru": "Магнит, притягивающий только воспоминания"
+    }
+  },
+  {
+    "id": 128,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пилок щастя",
+      "en": "Happiness pollen",
+      "ru": "Пыльца счастья"
+    }
+  },
+  {
+    "id": 129,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Тіні минулого в банці",
+      "en": "Shadows of the past in a jar",
+      "ru": "Тени прошлого в банке"
+    }
+  },
+  {
+    "id": 130,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Фартух для приготування долі",
+      "en": "Apron for cooking fate",
+      "ru": "Фартук для приготовления судьбы"
+    }
+  },
+  {
+    "id": 131,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Рюкзак, що носить тебе",
+      "en": "Backpack that carries you",
+      "ru": "Рюкзак, который носит тебя"
+    }
+  },
+  {
+    "id": 132,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Свічка, яка горить без вогню",
+      "en": "Candle that burns without fire",
+      "ru": "Свеча, горящая без огня"
+    }
+  },
+  {
+    "id": 133,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ключик до спокою",
+      "en": "Key to calmness",
+      "ru": "Ключик к спокойствию"
+    }
+  },
+  {
+    "id": 134,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Дзвоник, що дзвонить, коли ти сумуєш",
+      "en": "Bell that rings when you're sad",
+      "ru": "Колокольчик, который звонит, когда тебе грустно"
+    }
+  },
+  {
+    "id": 135,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пензель для малювання почуттів",
+      "en": "Brush for painting emotions",
+      "ru": "Кисть для рисования чувств"
+    }
+  },
+  {
+    "id": 136,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Нитка, яка веде до істини",
+      "en": "Thread that leads to the truth",
+      "ru": "Нить, ведущая к истине"
+    }
+  },
+  {
+    "id": 137,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Скринька з внутрішнім голосом",
+      "en": "Box with an inner voice",
+      "ru": "Шкатулка с внутренним голосом"
+    }
+  },
+  {
+    "id": 138,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пляж у кишені",
+      "en": "Beach in your pocket",
+      "ru": "Пляж в кармане"
+    }
+  },
+  {
+    "id": 139,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пара черевиків, які пам’ятають усе",
+      "en": "Shoes that remember everything",
+      "ru": "Ботинки, которые всё помнят"
+    }
+  },
+  {
+    "id": 140,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Фоторамка для майбутніх подій",
+      "en": "Photo frame for future events",
+      "ru": "Фоторамка для будущих событий"
+    }
+  },
+  {
+    "id": 141,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Парасоля, що відкриває паралельні світи",
+      "en": "Umbrella that opens parallel worlds",
+      "ru": "Зонт, открывающий параллельные миры"
+    }
+  },
+  {
+    "id": 142,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Куртка, що обіймає, коли тобі сумно",
+      "en": "Jacket that hugs you when you're sad",
+      "ru": "Куртка, которая обнимает, когда тебе грустно"
+    }
+  },
+  {
+    "id": 143,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ложка, що несе спокій",
+      "en": "Spoon that carries peace",
+      "ru": "Ложка, приносящая спокойствие"
+    }
+  },
+  {
+    "id": 144,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ліхтарик, що світить у спогади",
+      "en": "Flashlight that shines into memories",
+      "ru": "Фонарик, освещающий воспоминания"
+    }
+  },
+  {
+    "id": 145,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Стілець, що питає про твої мрії",
+      "en": "Chair that asks about your dreams",
+      "ru": "Стул, который спрашивает о твоих мечтах"
+    }
+  },
+  {
+    "id": 146,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Плед, що співає колискову",
+      "en": "Blanket that sings lullabies",
+      "ru": "Плед, поющий колыбельные"
+    }
+  },
+  {
+    "id": 147,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Дверна ручка, що відкриває почуття",
+      "en": "Doorknob that opens emotions",
+      "ru": "Дверная ручка, открывающая чувства"
+    }
+  },
+  {
+    "id": 148,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Блокнот, що сам пише думки",
+      "en": "Notebook that writes thoughts by itself",
+      "ru": "Блокнот, который сам пишет мысли"
+    }
+  },
+  {
+    "id": 149,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Гаманець, що витрачає емоції",
+      "en": "Wallet that spends emotions",
+      "ru": "Кошелёк, тратящий эмоции"
+    }
+  },
+  {
+    "id": 150,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Телефон, що телефонує у минуле",
+      "en": "Phone that calls the past",
+      "ru": "Телефон, звонящий в прошлое"
+    }
+  },
+  {
+    "id": 151,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шар для сну без снів",
+      "en": "Orb for dreamless sleep",
+      "ru": "Шар для сна без сновидений"
+    }
+  },
+  {
+    "id": 152,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Банка, що зберігає моменти тиші",
+      "en": "Jar that stores moments of silence",
+      "ru": "Банка с моментами тишины"
+    }
+  },
+  {
+    "id": 153,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Календар, де кожен день — субота",
+      "en": "Calendar where every day is Saturday",
+      "ru": "Календарь, где каждый день — суббота"
+    }
+  },
+  {
+    "id": 154,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ручка, що пише правду, навіть коли брешеш",
+      "en": "Pen that writes the truth even when you lie",
+      "ru": "Ручка, пишущая правду даже при лжи"
+    }
+  },
+  {
+    "id": 155,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Будильник, що бажає доброго ранку щиро",
+      "en": "Alarm clock that truly wishes you good morning",
+      "ru": "Будильник, который искренне желает доброго утра"
+    }
+  },
+  {
+    "id": 156,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Мило, що змиває вину",
+      "en": "Soap that washes away guilt",
+      "ru": "Мыло, смывающее вину"
+    }
+  },
+  {
+    "id": 157,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Нитка, що зшиває спогади",
+      "en": "Thread that stitches memories",
+      "ru": "Нить, сшивающая воспоминания"
+    }
+  },
+  {
+    "id": 158,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пояс, що підтримує самооцінку",
+      "en": "Belt that supports self-esteem",
+      "ru": "Пояс, поддерживающий самооценку"
+    }
+  },
+  {
+    "id": 159,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Картина, що змінюється від глядача",
+      "en": "Painting that changes depending on the viewer",
+      "ru": "Картина, меняющаяся в зависимости от зрителя"
+    }
+  },
+  {
+    "id": 160,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Тарілка, що розмовляє з їжею",
+      "en": "Plate that talks to food",
+      "ru": "Тарелка, разговаривающая с едой"
+    }
+  },
+  {
+    "id": 161,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Подушка, що чує сни",
+      "en": "Pillow that hears dreams",
+      "ru": "Подушка, слышащая сны"
+    }
+  },
+  {
+    "id": 162,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Скатертина для сімейної гармонії",
+      "en": "Tablecloth for family harmony",
+      "ru": "Скатерть для семейной гармонии"
+    }
+  },
+  {
+    "id": 163,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісочний годинник, що зупиняє час, коли тобі добре",
+      "en": "Hourglass that stops time when you feel good",
+      "ru": "Песочные часы, останавливающие время, когда тебе хорошо"
+    }
+  },
+  {
+    "id": 164,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Термос, що зберігає тепло сердець",
+      "en": "Thermos that keeps the warmth of hearts",
+      "ru": "Термос, сохраняющий тепло сердец"
+    }
+  },
+  {
+    "id": 165,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Ключ, що відкриває справжнє «я»",
+      "en": "Key that unlocks the true self",
+      "ru": "Ключ, открывающий настоящее «я»"
+    }
+  },
+  {
+    "id": 166,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пляма, що ніколи не змивається, але завжди радує",
+      "en": "Stain that never washes out but always brings joy",
+      "ru": "Пятно, которое не отстирывается, но радует"
+    }
+  },
+  {
+    "id": 167,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Навушники, які читають думки",
+      "en": "Headphones that read thoughts",
+      "ru": "Наушники, читающие мысли"
+    }
+  },
+  {
+    "id": 168,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Краватка, що шепоче поради",
+      "en": "Tie that whispers advice",
+      "ru": "Галстук, шепчущий советы"
+    }
+  },
+  {
+    "id": 169,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Лампа, що вмикається, коли ти сумніваєшся",
+      "en": "Lamp that turns on when you doubt",
+      "ru": "Лампа, включающаяся при сомнении"
+    }
+  },
+  {
+    "id": 170,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Браслет, що показує справжній настрій",
+      "en": "Bracelet that shows your true mood",
+      "ru": "Браслет, показывающий настоящее настроение"
+    }
+  },
+  {
+    "id": 171,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Квітка, що не в’яне від байдужості",
+      "en": "Flower that doesn’t wilt from indifference",
+      "ru": "Цветок, не вянущий от равнодушия"
+    }
+  },
+  {
+    "id": 172,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пара окулярів для бачення правди",
+      "en": "Glasses to see the truth",
+      "ru": "Очки для видения правды"
+    }
+  },
+  {
+    "id": 173,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Капці, що знають шлях додому",
+      "en": "Slippers that know the way home",
+      "ru": "Тапочки, знающие дорогу домой"
+    }
+  },
+  {
+    "id": 174,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Футболка, що змінює твою історію",
+      "en": "T-shirt that changes your story",
+      "ru": "Футболка, меняющая твою историю"
+    }
+  },
+  {
+    "id": 175,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Нісенітниця, яка все пояснює",
+      "en": "Nonsense that explains everything",
+      "ru": "Чепуха, которая всё объясняет"
+    }
+  },
+  {
+    "id": 176,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пісня, яку чує лише душа",
+      "en": "Song only the soul can hear",
+      "ru": "Песня, которую слышит только душа"
+    }
+  },
+  {
+    "id": 177,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Пил, що сяє у темряві",
+      "en": "Dust that glows in the dark",
+      "ru": "Пыль, светящаяся в темноте"
+    }
+  },
+  {
+    "id": 178,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Вікно, яке відкриває сни інших",
+      "en": "Window into other people's dreams",
+      "ru": "Окно в чужие сны"
+    }
+  },
+  {
+    "id": 179,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Хмара в кишені",
+      "en": "Cloud in your pocket",
+      "ru": "Облако в кармане"
+    }
+  },
+  {
+    "id": 180,
+    "sentence_type": "SELL_THE_MADNESS",
+    "sentence": {
+      "ua": "Шарф, що пахне минулим",
+      "en": "Scarf that smells like the past",
+      "ru": "Шарф с запахом прошлого"
+    }
+  }
+]

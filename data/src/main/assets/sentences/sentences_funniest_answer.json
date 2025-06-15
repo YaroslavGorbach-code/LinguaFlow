@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в холодильнику зник сир?",
+      "en": "Why did the cheese disappear from the fridge?",
+      "ru": "Почему из холодильника исчез сыр?"
+    }
+  },
+  {
+    "id": 2,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти запізнився до школи?",
+      "en": "Why were you late for school?",
+      "ru": "Почему ты опоздал в школу?"
+    }
+  },
+  {
+    "id": 3,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Куди зник твій телефон?",
+      "en": "Where did your phone disappear to?",
+      "ru": "Куда делся твой телефон?"
+    }
+  },
+  {
+    "id": 4,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе два лівих черевика?",
+      "en": "Why are both of your shoes left-footed?",
+      "ru": "Почему у тебя два левых ботинка?"
+    }
+  },
+  {
+    "id": 5,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що сталося з твоєю зачіскою?",
+      "en": "What happened to your haircut?",
+      "ru": "Что случилось с твоей причёской?"
+    }
+  },
+  {
+    "id": 6,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на тобі піжама в супермаркеті?",
+      "en": "Why are you wearing pajamas in the supermarket?",
+      "ru": "Почему ты в пижаме в супермаркете?"
+    }
+  },
+  {
+    "id": 7,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто з'їв останнє печиво?",
+      "en": "Who ate the last cookie?",
+      "ru": "Кто съел последнее печенье?"
+    }
+  },
+  {
+    "id": 8,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій собака носить окуляри?",
+      "en": "Why is your dog wearing glasses?",
+      "ru": "Почему твоя собака в очках?"
+    }
+  },
+  {
+    "id": 9,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти навчився так танцювати?",
+      "en": "Where did you learn to dance like that?",
+      "ru": "Где ты научился так танцевать?"
+    }
+  },
+  {
+    "id": 10,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій рюкзак важить, як слон?",
+      "en": "Why does your backpack weigh like an elephant?",
+      "ru": "Почему твой рюкзак весит как слон?"
+    }
+  },
+  {
+    "id": 11,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя кімната вся в бульбашках?",
+      "en": "Why is your room full of bubbles?",
+      "ru": "Почему твоя комната вся в пузырях?"
+    }
+  },
+  {
+    "id": 12,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Кого ти викликав у дзеркалі?",
+      "en": "Who did you summon in the mirror?",
+      "ru": "Кого ты вызвал в зеркале?"
+    }
+  },
+  {
+    "id": 13,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій велосипед має крила?",
+      "en": "Why does your bicycle have wings?",
+      "ru": "Почему у твоего велосипеда есть крылья?"
+    }
+  },
+  {
+    "id": 14,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти розмовляєш із холодильником?",
+      "en": "Why are you talking to the fridge?",
+      "ru": "Почему ты разговариваешь с холодильником?"
+    }
+  },
+  {
+    "id": 15,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти взяв капелюх чарівника?",
+      "en": "Where did you get that wizard hat?",
+      "ru": "Где ты взял эту шляпу волшебника?"
+    }
+  },
+  {
+    "id": 16,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя парасолька співає?",
+      "en": "Why is your umbrella singing?",
+      "ru": "Почему твой зонт поёт?"
+    }
+  },
+  {
+    "id": 17,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що робить бегемот у твоїй ванні?",
+      "en": "What is a hippo doing in your bathtub?",
+      "ru": "Что делает бегемот в твоей ванне?"
+    }
+  },
+  {
+    "id": 18,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти малював крокодила на стелі?",
+      "en": "Why did you draw a crocodile on the ceiling?",
+      "ru": "Зачем ты нарисовал крокодила на потолке?"
+    }
+  },
+  {
+    "id": 19,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій телефон в акваріумі?",
+      "en": "Why is your phone in the fish tank?",
+      "ru": "Почему твой телефон в аквариуме?"
+    }
+  },
+  {
+    "id": 20,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто тебе навчив так сміятися?",
+      "en": "Who taught you to laugh like that?",
+      "ru": "Кто научил тебя так смеяться?"
+    }
+  },
+  {
+    "id": 21,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти тримаєш банан, як телефон?",
+      "en": "Why are you holding a banana like a phone?",
+      "ru": "Почему ты держишь банан как телефон?"
+    }
+  },
+  {
+    "id": 22,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на твоєму столі сидить голуб?",
+      "en": "Why is there a pigeon sitting on your desk?",
+      "ru": "Почему на твоем столе сидит голубь?"
+    }
+  },
+  {
+    "id": 23,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти робиш у капелюсі шеф-кухаря на фізкультурі?",
+      "en": "Why are you wearing a chef’s hat in gym class?",
+      "ru": "Почему ты в поварском колпаке на физкультуре?"
+    }
+  },
+  {
+    "id": 24,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій рюкзак гавкає?",
+      "en": "Why is your backpack barking?",
+      "ru": "Почему твой рюкзак лает?"
+    }
+  },
+  {
+    "id": 25,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе вуха в фользі?",
+      "en": "Why are your ears wrapped in foil?",
+      "ru": "Почему у тебя уши в фольге?"
+    }
+  },
+  {
+    "id": 26,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти танцював із кактусом?",
+      "en": "Why were you dancing with a cactus?",
+      "ru": "Зачем ты танцевал с кактусом?"
+    }
+  },
+  {
+    "id": 27,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя тінь запізнилася на урок?",
+      "en": "Why was your shadow late to class?",
+      "ru": "Почему твоя тень опоздала на урок?"
+    }
+  },
+  {
+    "id": 28,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто дозволив тобі носити ковдру як плащ?",
+      "en": "Who gave you permission to wear a blanket as a cape?",
+      "ru": "Кто разрешил тебе носить одеяло как плащ?"
+    }
+  },
+  {
+    "id": 29,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя ложка в шкарпетці?",
+      "en": "Why is your spoon in a sock?",
+      "ru": "Почему твоя ложка в носке?"
+    }
+  },
+  {
+    "id": 30,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти співаєш у черзі в аптеку?",
+      "en": "Why are you singing in the pharmacy line?",
+      "ru": "Почему ты поешь в очереди в аптеку?"
+    }
+  },
+  {
+    "id": 31,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти робиш з парасолькою в басейні?",
+      "en": "What are you doing with an umbrella in the pool?",
+      "ru": "Что ты делаешь с зонтом в бассейне?"
+    }
+  },
+  {
+    "id": 32,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій холодильник замовив піцу?",
+      "en": "Why did your fridge order pizza?",
+      "ru": "Почему твой холодильник заказал пиццу?"
+    }
+  },
+  {
+    "id": 33,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на твоєму велосипеді є кермо від літака?",
+      "en": "Why does your bike have airplane controls?",
+      "ru": "Почему у твоего велосипеда руль от самолета?"
+    }
+  },
+  {
+    "id": 34,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти годуєш хмари печивом?",
+      "en": "Why are you feeding the clouds cookies?",
+      "ru": "Зачем ты кормишь облака печеньем?"
+    }
+  },
+  {
+    "id": 35,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе в кишені шпинат?",
+      "en": "Why do you have spinach in your pocket?",
+      "ru": "Почему у тебя шпинат в кармане?"
+    }
+  },
+  {
+    "id": 36,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій комп’ютер заснув?",
+      "en": "Why did your computer fall asleep?",
+      "ru": "Почему твой компьютер уснул?"
+    }
+  },
+  {
+    "id": 37,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де твоя інопланетна ліцензія?",
+      "en": "Where is your alien license?",
+      "ru": "Где твоя инопланетная лицензия?"
+    }
+  },
+  {
+    "id": 38,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій кіт носить краватку?",
+      "en": "Why is your cat wearing a tie?",
+      "ru": "Почему твой кот в галстуке?"
+    }
+  },
+  {
+    "id": 39,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто вмикав музику для твоїх носків?",
+      "en": "Who played music for your socks?",
+      "ru": "Кто включал музыку для твоих носков?"
+    }
+  },
+  {
+    "id": 40,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій телефон пахне кавою?",
+      "en": "Why does your phone smell like coffee?",
+      "ru": "Почему твой телефон пахнет кофе?"
+    }
+  },
+  {
+    "id": 41,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто навчив тебе їсти олівці?",
+      "en": "Who taught you to eat pencils?",
+      "ru": "Кто научил тебя есть карандаши?"
+    }
+  },
+  {
+    "id": 42,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти наливав чай у рюкзак?",
+      "en": "Why were you pouring tea into your backpack?",
+      "ru": "Зачем ты наливал чай в рюкзак?"
+    }
+  },
+  {
+    "id": 43,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя сорочка розмовляє?",
+      "en": "Why is your shirt talking?",
+      "ru": "Почему твоя рубашка разговаривает?"
+    }
+  },
+  {
+    "id": 44,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти взяв карту до Зефірного королівства?",
+      "en": "Where did you get the map to the Marshmallow Kingdom?",
+      "ru": "Где ты взял карту в Королевство Зефира?"
+    }
+  },
+  {
+    "id": 45,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти спиш у касці?",
+      "en": "Why are you sleeping in a helmet?",
+      "ru": "Почему ты спишь в каске?"
+    }
+  },
+  {
+    "id": 46,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій ровер слухає подкасти?",
+      "en": "Why is your scooter listening to podcasts?",
+      "ru": "Почему твой самокат слушает подкасты?"
+    }
+  },
+  {
+    "id": 47,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Куди поділась твоя гравітація?",
+      "en": "Where did your gravity go?",
+      "ru": "Куда делась твоя гравитация?"
+    }
+  },
+  {
+    "id": 48,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя лампа плаче?",
+      "en": "Why is your lamp crying?",
+      "ru": "Почему твоя лампа плачет?"
+    }
+  },
+  {
+    "id": 49,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя тарілка танцює?",
+      "en": "Why is your plate dancing?",
+      "ru": "Почему твоя тарелка танцует?"
+    }
+  },
+  {
+    "id": 50,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе на голові тост?",
+      "en": "Why do you have toast on your head?",
+      "ru": "Почему у тебя на голове тост?"
+    }
+  },
+  {
+    "id": 51,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти говориш з холодильником?",
+      "en": "Why are you talking to the fridge?",
+      "ru": "Почему ты разговариваешь с холодильником?"
+    }
+  },
+  {
+    "id": 52,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Коли твоя жаба вивчила англійську?",
+      "en": "When did your frog learn English?",
+      "ru": "Когда твоя лягушка выучила английский?"
+    }
+  },
+  {
+    "id": 53,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на твоїй голові вертоліт?",
+      "en": "Why is there a helicopter on your head?",
+      "ru": "Почему у тебя на голове вертолёт?"
+    }
+  },
+  {
+    "id": 54,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти малюєш обличчя на яблуках?",
+      "en": "Why are you drawing faces on apples?",
+      "ru": "Зачем ты рисуешь лица на яблоках?"
+    }
+  },
+  {
+    "id": 55,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто тебе навчив говорити пінгвінською?",
+      "en": "Who taught you to speak Penguin?",
+      "ru": "Кто научил тебя говорить на пингвиньем?"
+    }
+  },
+  {
+    "id": 56,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти прийшов на урок у коробці з-під холодильника?",
+      "en": "Why did you come to class in a fridge box?",
+      "ru": "Почему ты пришёл на урок в коробке из-под холодильника?"
+    }
+  },
+  {
+    "id": 57,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти взяв посвідчення клоуна?",
+      "en": "Where did you get your clown license?",
+      "ru": "Где ты взял удостоверение клоуна?"
+    }
+  },
+  {
+    "id": 58,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій чайник сміється?",
+      "en": "Why is your kettle laughing?",
+      "ru": "Почему твой чайник смеётся?"
+    }
+  },
+  {
+    "id": 59,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти заклеїв двері скотчем?",
+      "en": "Why did you tape the door shut?",
+      "ru": "Зачем ты заклеил дверь скотчем?"
+    }
+  },
+  {
+    "id": 60,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на твоїх кросівках колеса?",
+      "en": "Why do your sneakers have wheels?",
+      "ru": "Почему у твоих кроссовок колёса?"
+    }
+  },
+  {
+    "id": 61,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти назвав свій стілець «Гриша»?",
+      "en": "Why did you name your chair ‘Grisha’?",
+      "ru": "Почему ты назвал свой стул «Гриша»?"
+    }
+  },
+  {
+    "id": 62,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто дозволив тобі створити клуб чайних ложок?",
+      "en": "Who let you start a teaspoon club?",
+      "ru": "Кто разрешил тебе создать клуб чайных ложек?"
+    }
+  },
+  {
+    "id": 63,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти покликав холодильник на побачення?",
+      "en": "Why did you ask the fridge on a date?",
+      "ru": "Почему ты пригласил холодильник на свидание?"
+    }
+  },
+  {
+    "id": 64,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти вкрив капці ковдрою?",
+      "en": "Why did you cover your slippers with a blanket?",
+      "ru": "Зачем ты укрыл тапочки одеялом?"
+    }
+  },
+  {
+    "id": 65,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти приніс ліхтарик у супермаркет?",
+      "en": "Why did you bring a flashlight to the supermarket?",
+      "ru": "Почему ты принёс фонарик в супермаркет?"
+    }
+  },
+  {
+    "id": 66,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя подушка має паспорт?",
+      "en": "Why does your pillow have a passport?",
+      "ru": "Почему у твоей подушки есть паспорт?"
+    }
+  },
+  {
+    "id": 67,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти зробив селфі з мухою?",
+      "en": "Why did you take a selfie with a fly?",
+      "ru": "Зачем ты сделал селфи с мухой?"
+    }
+  },
+  {
+    "id": 68,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоє дзеркало підморгує?",
+      "en": "Why is your mirror winking?",
+      "ru": "Почему твоё зеркало подмигивает?"
+    }
+  },
+  {
+    "id": 69,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто дозволив тобі вести щоденник замка?",
+      "en": "Who allowed you to keep a diary for a castle?",
+      "ru": "Кто разрешил тебе вести дневник для замка?"
+    }
+  },
+  {
+    "id": 70,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя парасолька має ім’я?",
+      "en": "Why does your umbrella have a name?",
+      "ru": "Почему у твоего зонта есть имя?"
+    }
+  },
+  {
+    "id": 71,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти носиш рукавички на вухах?",
+      "en": "Why are you wearing gloves on your ears?",
+      "ru": "Почему ты носишь перчатки на ушах?"
+    }
+  },
+  {
+    "id": 72,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти обіймав холодильник?",
+      "en": "Why were you hugging the fridge?",
+      "ru": "Зачем ты обнимал холодильник?"
+    }
+  },
+  {
+    "id": 73,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти приніс кактус у кінотеатр?",
+      "en": "Why did you bring a cactus to the cinema?",
+      "ru": "Почему ты принёс кактус в кинотеатр?"
+    }
+  },
+  {
+    "id": 74,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій рюкзак співає гімн?",
+      "en": "Why is your backpack singing the anthem?",
+      "ru": "Почему твой рюкзак поёт гимн?"
+    }
+  },
+  {
+    "id": 75,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Коли ти востаннє бачив свого невидимого друга?",
+      "en": "When was the last time you saw your invisible friend?",
+      "ru": "Когда ты в последний раз видел своего невидимого друга?"
+    }
+  },
+  {
+    "id": 76,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твої шкарпетки світяться?",
+      "en": "Why are your socks glowing?",
+      "ru": "Почему твои носки светятся?"
+    }
+  },
+  {
+    "id": 77,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти приніс праску в кафе?",
+      "en": "Why did you bring an iron to the café?",
+      "ru": "Почему ты принёс утюг в кафе?"
+    }
+  },
+  {
+    "id": 78,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто поставив тобі будильник на 3:03 ночі?",
+      "en": "Who set your alarm for 3:03 a.m.?",
+      "ru": "Кто поставил тебе будильник на 3:03 ночи?"
+    }
+  },
+  {
+    "id": 79,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя книга говорить шепотом?",
+      "en": "Why is your book whispering?",
+      "ru": "Почему твоя книга шепчет?"
+    }
+  },
+  {
+    "id": 80,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти прикрасив холодильник ялинковими іграшками?",
+      "en": "Why did you decorate the fridge with Christmas ornaments?",
+      "ru": "Зачем ты украсил холодильник ёлочными игрушками?"
+    }
+  },
+  {
+    "id": 81,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя подушка кашляє?",
+      "en": "Why is your pillow coughing?",
+      "ru": "Почему твоя подушка кашляет?"
+    }
+  },
+  {
+    "id": 82,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти годуєш свій будильник кашею?",
+      "en": "Why are you feeding your alarm clock porridge?",
+      "ru": "Зачем ты кормишь будильник кашей?"
+    }
+  },
+  {
+    "id": 83,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти носиш капелюх із салату?",
+      "en": "Why are you wearing a salad as a hat?",
+      "ru": "Почему ты носишь салат как шляпу?"
+    }
+  },
+  {
+    "id": 84,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як твій велосипед став президентом?",
+      "en": "How did your bicycle become president?",
+      "ru": "Как твой велосипед стал президентом?"
+    }
+  },
+  {
+    "id": 85,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти виводиш хом’яків на прогулянку з парасолькою?",
+      "en": "Why are you walking hamsters with an umbrella?",
+      "ru": "Почему ты выгуливаешь хомяков с зонтом?"
+    }
+  },
+  {
+    "id": 86,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти знайшов гітару, що грає сама?",
+      "en": "Where did you find a guitar that plays itself?",
+      "ru": "Где ты нашёл гитару, которая играет сама?"
+    }
+  },
+  {
+    "id": 87,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти лив сік у взуття?",
+      "en": "Why were you pouring juice into your shoes?",
+      "ru": "Почему ты наливал сок в обувь?"
+    }
+  },
+  {
+    "id": 88,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти забув у мікрохвильовці на три дні?",
+      "en": "What did you forget in the microwave for three days?",
+      "ru": "Что ты забыл в микроволновке на три дня?"
+    }
+  },
+  {
+    "id": 89,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти співаєш колискові холодильнику?",
+      "en": "Why are you singing lullabies to the fridge?",
+      "ru": "Почему ты поёшь холодильнику колыбельные?"
+    }
+  },
+  {
+    "id": 90,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти опинився на відеодзвінку з інопланетянами?",
+      "en": "How did you end up on a video call with aliens?",
+      "ru": "Как ты оказался на видеозвонке с инопланетянами?"
+    }
+  },
+  {
+    "id": 91,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти намалював двері на стіні?",
+      "en": "Why did you draw a door on the wall?",
+      "ru": "Зачем ты нарисовал дверь на стене?"
+    }
+  },
+  {
+    "id": 92,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти читаєш газету навпаки?",
+      "en": "Why are you reading the newspaper upside down?",
+      "ru": "Почему ты читаешь газету вверх ногами?"
+    }
+  },
+  {
+    "id": 93,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти навчився танцювати з кактусами?",
+      "en": "Where did you learn to dance with cacti?",
+      "ru": "Где ты научился танцевать с кактусами?"
+    }
+  },
+  {
+    "id": 94,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти назвав пилосос Геральдом?",
+      "en": "Why did you name your vacuum cleaner Gerald?",
+      "ru": "Почему ты назвал пылесос Геральдом?"
+    }
+  },
+  {
+    "id": 95,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Коли ти востаннє розмовляв із телевізором?",
+      "en": "When was the last time you talked to the TV?",
+      "ru": "Когда ты в последний раз разговаривал с телевизором?"
+    }
+  },
+  {
+    "id": 96,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти привів на роботу гумову курку?",
+      "en": "Why did you bring a rubber chicken to work?",
+      "ru": "Почему ты принёс на работу резиновую курицу?"
+    }
+  },
+  {
+    "id": 97,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти заварив чай у взутті?",
+      "en": "Why did you brew tea in your shoe?",
+      "ru": "Зачем ты заваривал чай в ботинке?"
+    }
+  },
+  {
+    "id": 98,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто навчив тебе жонглювати млинцями?",
+      "en": "Who taught you to juggle pancakes?",
+      "ru": "Кто научил тебя жонглировать блинами?"
+    }
+  },
+  {
+    "id": 99,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти дав імена всім ложкам?",
+      "en": "Why did you name all the spoons?",
+      "ru": "Почему ты дал имена всем ложкам?"
+    }
+  },
+  {
+    "id": 100,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на твоєму ноутбуці росте трава?",
+      "en": "Why is grass growing on your laptop?",
+      "ru": "Почему на твоем ноутбуке растет трава?"
+    }
+  },
+  {
+    "id": 101,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти слухаєш музику через чайник?",
+      "en": "Why are you listening to music through a kettle?",
+      "ru": "Зачем ты слушаешь музыку через чайник?"
+    }
+  },
+  {
+    "id": 102,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Коли ти востаннє вигулював кімнатну рослину?",
+      "en": "When was the last time you walked your houseplant?",
+      "ru": "Когда ты в последний раз выгуливал своё комнатное растение?"
+    }
+  },
+  {
+    "id": 103,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти переплутав лижі з виделками?",
+      "en": "Why did you mistake skis for forks?",
+      "ru": "Почему ты перепутал лыжи с вилками?"
+    }
+  },
+  {
+    "id": 104,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій тостер втік з дому?",
+      "en": "Why did your toaster run away from home?",
+      "ru": "Почему твой тостер сбежал из дома?"
+    }
+  },
+  {
+    "id": 105,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти намалював шкарпетки на ногах?",
+      "en": "Why did you draw socks on your feet?",
+      "ru": "Почему ты нарисовал носки на ногах?"
+    }
+  },
+  {
+    "id": 106,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій тост пахне пригодами?",
+      "en": "Why does your toast smell like adventure?",
+      "ru": "Почему твой тост пахнет приключениями?"
+    }
+  },
+  {
+    "id": 107,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти фотографував повітря?",
+      "en": "Why were you taking pictures of the air?",
+      "ru": "Зачем ты фотографировал воздух?"
+    }
+  },
+  {
+    "id": 108,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти повісив портрет банана?",
+      "en": "Why did you hang up a portrait of a banana?",
+      "ru": "Почему ты повесил портрет банана?"
+    }
+  },
+  {
+    "id": 109,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто запросив тебе на вечірку пельменів?",
+      "en": "Who invited you to the dumpling party?",
+      "ru": "Кто пригласил тебя на пельменную вечеринку?"
+    }
+  },
+  {
+    "id": 110,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти назвав пінопласт своїм наставником?",
+      "en": "Why did you call the styrofoam your mentor?",
+      "ru": "Почему ты назвал пенопласт своим наставником?"
+    }
+  },
+  {
+    "id": 111,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти розмовляєш з дзеркалом у шоломі?",
+      "en": "Why are you talking to the mirror while wearing a helmet?",
+      "ru": "Почему ты разговариваешь с зеркалом в шлеме?"
+    }
+  },
+  {
+    "id": 112,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Куди ти запросив холодильник на побачення?",
+      "en": "Where did you take the fridge on a date?",
+      "ru": "Куда ты пригласил холодильник на свидание?"
+    }
+  },
+  {
+    "id": 113,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти надсилаєш смс своїм шкарпеткам?",
+      "en": "Why are you texting your socks?",
+      "ru": "Зачем ты отправляешь смс своим носкам?"
+    }
+  },
+  {
+    "id": 114,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій чайник дивиться серіали?",
+      "en": "Why is your kettle binge-watching series?",
+      "ru": "Почему твой чайник смотрит сериалы запоем?"
+    }
+  },
+  {
+    "id": 115,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти став другом з хмарою?",
+      "en": "How did you become friends with a cloud?",
+      "ru": "Как ты подружился с облаком?"
+    }
+  },
+  {
+    "id": 116,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе на голові ананас?",
+      "en": "Why do you have a pineapple on your head?",
+      "ru": "Почему у тебя на голове ананас?"
+    }
+  },
+  {
+    "id": 117,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що сказав тобі банан перед сном?",
+      "en": "What did the banana tell you before bed?",
+      "ru": "Что сказал тебе банан перед сном?"
+    }
+  },
+  {
+    "id": 118,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти замовив каву для кактуса?",
+      "en": "Why did you order coffee for a cactus?",
+      "ru": "Почему ты заказал кофе кактусу?"
+    }
+  },
+  {
+    "id": 119,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти будуєш будинок із печива?",
+      "en": "Why are you building a house out of cookies?",
+      "ru": "Зачем ты строишь дом из печенья?"
+    }
+  },
+  {
+    "id": 120,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе піжама розмовляє з телевізором?",
+      "en": "Why is your pajama talking to the TV?",
+      "ru": "Почему твоя пижама разговаривает с телевизором?"
+    }
+  },
+  {
+    "id": 121,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто тобі подарував літаючий тапок?",
+      "en": "Who gave you a flying slipper?",
+      "ru": "Кто подарил тебе летающий тапок?"
+    }
+  },
+  {
+    "id": 122,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в твоєму рюкзаку живе равлик?",
+      "en": "Why is there a snail living in your backpack?",
+      "ru": "Почему в твоём рюкзаке живёт улитка?"
+    }
+  },
+  {
+    "id": 123,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Де ти проходив курси спілкування з пінгвінами?",
+      "en": "Where did you take a course on talking to penguins?",
+      "ru": "Где ты проходил курс общения с пингвинами?"
+    }
+  },
+  {
+    "id": 124,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти спав у шафі для взуття?",
+      "en": "Why were you sleeping in the shoe cabinet?",
+      "ru": "Почему ты спал в шкафу для обуви?"
+    }
+  },
+  {
+    "id": 125,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти робиш з вудкою у ванній?",
+      "en": "What are you doing with a fishing rod in the bathroom?",
+      "ru": "Что ты делаешь с удочкой в ванной?"
+    }
+  },
+  {
+    "id": 126,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому в тебе ключі від холодильника?",
+      "en": "Why do you have keys to the fridge?",
+      "ru": "Почему у тебя есть ключи от холодильника?"
+    }
+  },
+  {
+    "id": 127,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Коли ти востаннє годував свою подушку морозивом?",
+      "en": "When was the last time you fed your pillow ice cream?",
+      "ru": "Когда ты в последний раз кормил подушку мороженым?"
+    }
+  },
+  {
+    "id": 128,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як у твоєму телефоні з’явився запах піци?",
+      "en": "How did your phone start smelling like pizza?",
+      "ru": "Как твой телефон начал пахнуть пиццей?"
+    }
+  },
+  {
+    "id": 129,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти носиш окуляри для уяви?",
+      "en": "Why are you wearing imagination glasses?",
+      "ru": "Почему ты носишь очки для воображения?"
+    }
+  },
+  {
+    "id": 130,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти гладив світлофор?",
+      "en": "Why were you petting the traffic light?",
+      "ru": "Зачем ты гладил светофор?"
+    }
+  },
+  {
+    "id": 131,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як твоя тінь стала зіркою TikTok?",
+      "en": "How did your shadow become a TikTok star?",
+      "ru": "Как твоя тень стала звездой TikTok?"
+    }
+  },
+  {
+    "id": 132,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти ставиш будильник на ніч для рослини?",
+      "en": "Why do you set an alarm at night for your plant?",
+      "ru": "Зачем ты ставишь будильник на ночь для своего растения?"
+    }
+  },
+  {
+    "id": 133,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій холодильник має паспорт?",
+      "en": "Why does your fridge have a passport?",
+      "ru": "Почему у твоего холодильника есть паспорт?"
+    }
+  },
+  {
+    "id": 134,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Хто навчив твою кішку користуватися ноутбуком?",
+      "en": "Who taught your cat to use a laptop?",
+      "ru": "Кто научил твою кошку пользоваться ноутбуком?"
+    }
+  },
+  {
+    "id": 135,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти купив квиток у тролейбус, що не існує?",
+      "en": "Why did you buy a ticket for a trolleybus that doesn’t exist?",
+      "ru": "Почему ты купил билет на троллейбус, которого не существует?"
+    }
+  },
+  {
+    "id": 136,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій стілець навчився читати?",
+      "en": "Why did your chair learn to read?",
+      "ru": "Почему твой стул научился читать?"
+    }
+  },
+  {
+    "id": 137,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти робиш із парасолькою в душі?",
+      "en": "What are you doing with an umbrella in the shower?",
+      "ru": "Что ты делаешь с зонтом в душе?"
+    }
+  },
+  {
+    "id": 138,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя зубна щітка дивиться мультики?",
+      "en": "Why is your toothbrush watching cartoons?",
+      "ru": "Почему твоя зубная щётка смотрит мультики?"
+    }
+  },
+  {
+    "id": 139,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти став кращим другом мила?",
+      "en": "How did you become best friends with a bar of soap?",
+      "ru": "Как ты стал лучшим другом мыла?"
+    }
+  },
+  {
+    "id": 140,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти підписав контракт із шафою?",
+      "en": "Why did you sign a contract with your closet?",
+      "ru": "Почему ты подписал контракт с шкафом?"
+    }
+  },
+  {
+    "id": 141,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти навчив свій будильник хропіти?",
+      "en": "Why did you teach your alarm clock to snore?",
+      "ru": "Зачем ты научил будильник храпеть?"
+    }
+  },
+  {
+    "id": 142,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що трапилось, коли ти запросив килим на вечерю?",
+      "en": "What happened when you invited your carpet to dinner?",
+      "ru": "Что случилось, когда ты пригласил ковер на ужин?"
+    }
+  },
+  {
+    "id": 143,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій пульт дистанційного керування загубився в холодильнику?",
+      "en": "Why did your remote control get lost in the fridge?",
+      "ru": "Почему пульт от телевизора потерялся в холодильнике?"
+    }
+  },
+  {
+    "id": 144,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти вмовив кота стати твоїм водієм?",
+      "en": "How did you convince the cat to become your driver?",
+      "ru": "Как ты уговорил кота стать твоим водителем?"
+    }
+  },
+  {
+    "id": 145,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти переодягався у холодильник на Хелловін?",
+      "en": "Why did you dress up as a fridge for Halloween?",
+      "ru": "Зачем ты переоделся в холодильник на Хэллоуин?"
+    }
+  },
+  {
+    "id": 146,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій телефон посварився з твоїм ноутбуком?",
+      "en": "Why did your phone argue with your laptop?",
+      "ru": "Почему твой телефон поругался с ноутбуком?"
+    }
+  },
+  {
+    "id": 147,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти робив у метро з трьома гусками?",
+      "en": "What were you doing in the subway with three geese?",
+      "ru": "Что ты делал в метро с тремя гусями?"
+    }
+  },
+  {
+    "id": 148,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій чайник співає оперу вночі?",
+      "en": "Why does your kettle sing opera at night?",
+      "ru": "Почему твой чайник поёт оперу по ночам?"
+    }
+  },
+  {
+    "id": 149,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як тобі вдалося виграти змагання з чищення зубів у сови?",
+      "en": "How did you win a tooth brushing contest against an owl?",
+      "ru": "Как ты выиграл соревнование по чистке зубов у совы?"
+    }
+  },
+  {
+    "id": 150,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти малюєш на склі замість полотна?",
+      "en": "Why are you painting on glass instead of canvas?",
+      "ru": "Почему ты рисуешь на стекле, а не на холсте?"
+    }
+  },
+  {
+    "id": 151,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти сказав чайці, що вона образилась?",
+      "en": "What did you say to the seagull that made it offended?",
+      "ru": "Что ты сказал чайке, что она обиделась?"
+    }
+  },
+  {
+    "id": 152,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти вклав свою ложку спати у ліжечко?",
+      "en": "Why did you tuck your spoon into bed?",
+      "ru": "Зачем ты уложил ложку спать в кроватку?"
+    }
+  },
+  {
+    "id": 153,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя тінь почала жити власним життям?",
+      "en": "Why did your shadow start living its own life?",
+      "ru": "Почему твоя тень начала жить собственной жизнью?"
+    }
+  },
+  {
+    "id": 154,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти навчив вазон танцювати сальсу?",
+      "en": "How did you teach your potted plant to dance salsa?",
+      "ru": "Как ты научил свой вазон танцевать сальсу?"
+    }
+  },
+  {
+    "id": 155,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти носиш шкарпетки на руках?",
+      "en": "Why are you wearing socks on your hands?",
+      "ru": "Почему ты носишь носки на руках?"
+    }
+  },
+  {
+    "id": 156,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти обіцяв хмарі, що вона тебе переслідує?",
+      "en": "What did you promise the cloud that it keeps following you?",
+      "ru": "Что ты пообещал облаку, что оно за тобой следует?"
+    }
+  },
+  {
+    "id": 157,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти вклеїв фотографію миші в паспорт?",
+      "en": "Why did you glue a mouse photo into your passport?",
+      "ru": "Зачем ты вклеил фото мыши в паспорт?"
+    }
+  },
+  {
+    "id": 158,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій холодильник лається з телевізором?",
+      "en": "Why is your fridge arguing with the TV?",
+      "ru": "Почему твой холодильник ругается с телевизором?"
+    }
+  },
+  {
+    "id": 159,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що робила твоя ложка у театрі без тебе?",
+      "en": "What was your spoon doing at the theatre without you?",
+      "ru": "Что делала твоя ложка в театре без тебя?"
+    }
+  },
+  {
+    "id": 160,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти навчив рибу користуватися телефоном?",
+      "en": "Why did you teach a fish to use a phone?",
+      "ru": "Почему ты научил рыбу пользоваться телефоном?"
+    }
+  },
+  {
+    "id": 161,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій телевізор образився на мультики?",
+      "en": "Why did your TV get offended by cartoons?",
+      "ru": "Почему твой телевизор обиделся на мультики?"
+    }
+  },
+  {
+    "id": 162,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що сталося, коли твій холодильник виграв у лото?",
+      "en": "What happened when your fridge won the lottery?",
+      "ru": "Что произошло, когда твой холодильник выиграл в лотерею?"
+    }
+  },
+  {
+    "id": 163,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти потрапив у книжковий клуб з чайниками?",
+      "en": "How did you join a book club with kettles?",
+      "ru": "Как ты попал в книжный клуб с чайниками?"
+    }
+  },
+  {
+    "id": 164,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти писав листа пилососу?",
+      "en": "Why did you write a letter to the vacuum cleaner?",
+      "ru": "Зачем ты писал письмо пылесосу?"
+    }
+  },
+  {
+    "id": 165,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти зробив для мила профіль у соцмережах?",
+      "en": "Why did you make a social media profile for the soap?",
+      "ru": "Почему ты сделал мылу профиль в соцсетях?"
+    }
+  },
+  {
+    "id": 166,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти познайомився з холодильником у спортзалі?",
+      "en": "How did you meet a fridge at the gym?",
+      "ru": "Как ты познакомился с холодильником в спортзале?"
+    }
+  },
+  {
+    "id": 167,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти брав парасольку в душ?",
+      "en": "Why did you take an umbrella into the shower?",
+      "ru": "Почему ты взял зонт в душ?"
+    }
+  },
+  {
+    "id": 168,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти зробив, що твоє ліжко від тебе втекло?",
+      "en": "What did you do that made your bed run away?",
+      "ru": "Что ты сделал, что твоя кровать убежала от тебя?"
+    }
+  },
+  {
+    "id": 169,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому на твоєму календарі є дата польоту на Марс?",
+      "en": "Why is there a Mars flight date on your calendar?",
+      "ru": "Почему в твоём календаре стоит дата полёта на Марс?"
+    }
+  },
+  {
+    "id": 170,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти вклав морозиво у ліжко?",
+      "en": "Why did you tuck your ice cream into bed?",
+      "ru": "Зачем ты уложил мороженое в кровать?"
+    }
+  },
+  {
+    "id": 171,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти намагався погодувати годинник супом?",
+      "en": "Why did you try to feed the clock with soup?",
+      "ru": "Зачем ты пытался накормить часы супом?"
+    }
+  },
+  {
+    "id": 172,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що робив твій чайник у спортзалі о третій ночі?",
+      "en": "What was your kettle doing at the gym at 3 a.m.?",
+      "ru": "Что делал твой чайник в спортзале в 3 ночи?"
+    }
+  },
+  {
+    "id": 173,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти купив парасольку для кактуса?",
+      "en": "Why did you buy an umbrella for your cactus?",
+      "ru": "Зачем ты купил зонт для своего кактуса?"
+    }
+  },
+  {
+    "id": 174,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти написав вірш про тапки?",
+      "en": "Why did you write a poem about slippers?",
+      "ru": "Зачем ты написал стихотворение о тапках?"
+    }
+  },
+  {
+    "id": 175,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що зробив телевізор, що ти на нього образився?",
+      "en": "What did the TV do that made you mad at it?",
+      "ru": "Что сделал телевизор, что ты на него обиделся?"
+    }
+  },
+  {
+    "id": 176,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій рюкзак сам пішов у школу?",
+      "en": "Why did your backpack go to school by itself?",
+      "ru": "Почему твой рюкзак сам пошёл в школу?"
+    }
+  },
+  {
+    "id": 177,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти переконав двері перестати скрипіти?",
+      "en": "How did you convince the door to stop squeaking?",
+      "ru": "Как ты уговорил дверь перестать скрипеть?"
+    }
+  },
+  {
+    "id": 178,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твої кеди вимагали підвищення?",
+      "en": "Why did your sneakers demand a promotion?",
+      "ru": "Почему твои кеды потребовали повышения?"
+    }
+  },
+  {
+    "id": 179,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти запросив холодильник на побачення?",
+      "en": "Why did you ask the fridge out on a date?",
+      "ru": "Зачем ты пригласил холодильник на свидание?"
+    }
+  },
+  {
+    "id": 180,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти робив на зупинці з акваріумом?",
+      "en": "What were you doing at the bus stop with an aquarium?",
+      "ru": "Что ты делал на остановке с аквариумом?"
+    }
+  },
+  {
+    "id": 181,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя подушка більше не хоче спати з тобою?",
+      "en": "Why doesn’t your pillow want to sleep with you anymore?",
+      "ru": "Почему твоя подушка больше не хочет с тобой спать?"
+    }
+  },
+  {
+    "id": 182,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому у тебе в шафі живе пінгвін?",
+      "en": "Why is there a penguin living in your closet?",
+      "ru": "Почему в твоём шкафу живёт пингвин?"
+    }
+  },
+  {
+    "id": 183,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти навчив дзеркало ставити тобі діагнози?",
+      "en": "Why did you teach your mirror to give diagnoses?",
+      "ru": "Зачем ты научил зеркало ставить тебе диагнозы?"
+    }
+  },
+  {
+    "id": 184,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що сталося, коли мікрохвильовка закохалась у тостер?",
+      "en": "What happened when the microwave fell in love with the toaster?",
+      "ru": "Что случилось, когда микроволновка влюбилась в тостер?"
+    }
+  },
+  {
+    "id": 185,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твоя лампа влаштовує вечірки о 2 ночі?",
+      "en": "Why does your lamp throw parties at 2 a.m.?",
+      "ru": "Почему твоя лампа устраивает вечеринки в 2 ночи?"
+    }
+  },
+  {
+    "id": 186,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що твій холодильник знайшов у бібліотеці?",
+      "en": "What did your fridge find in the library?",
+      "ru": "Что твой холодильник нашёл в библиотеке?"
+    }
+  },
+  {
+    "id": 187,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти дав своєму чайнику ім’я та паспорт?",
+      "en": "Why did you give your kettle a name and passport?",
+      "ru": "Почему ты дал своему чайнику имя и паспорт?"
+    }
+  },
+  {
+    "id": 188,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти підписав свій диван на йогу?",
+      "en": "Why did you sign your couch up for yoga?",
+      "ru": "Зачем ты записал свой диван на йогу?"
+    }
+  },
+  {
+    "id": 189,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти плакав на весіллі двох кавоварок?",
+      "en": "Why did you cry at the wedding of two coffee machines?",
+      "ru": "Почему ты плакал на свадьбе двух кофемашин?"
+    }
+  },
+  {
+    "id": 190,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти навчив рояль танцювати брейк-данс?",
+      "en": "How did you teach a piano to breakdance?",
+      "ru": "Как ты научил рояль танцевать брейк-данс?"
+    }
+  },
+  {
+    "id": 191,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому ти будиш свої шкарпетки о сьомій ранку?",
+      "en": "Why do you wake your socks up at 7 a.m.?",
+      "ru": "Почему ты будишь свои носки в 7 утра?"
+    }
+  },
+  {
+    "id": 192,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти навчив ложку читати думки?",
+      "en": "Why did you teach your spoon to read minds?",
+      "ru": "Зачем ты научил ложку читать мысли?"
+    }
+  },
+  {
+    "id": 193,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій велосипед відмовився їхати без музики?",
+      "en": "Why did your bike refuse to move without music?",
+      "ru": "Почему твой велосипед отказался ехать без музыки?"
+    }
+  },
+  {
+    "id": 194,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти сказав книжці, що вона злякалась?",
+      "en": "What did you say to the book that scared it?",
+      "ru": "Что ты сказал книге, что она испугалась?"
+    }
+  },
+  {
+    "id": 195,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому у твоєї подушки тепер юрист?",
+      "en": "Why does your pillow have a lawyer now?",
+      "ru": "Почему у твоей подушки теперь есть юрист?"
+    }
+  },
+  {
+    "id": 196,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Навіщо ти показував своєму холодильнику фільми жахів?",
+      "en": "Why did you show horror movies to your fridge?",
+      "ru": "Зачем ты показывал ужастики своему холодильнику?"
+    }
+  },
+  {
+    "id": 197,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що сталося після того, як твій чайник пройшов курси акторської майстерності?",
+      "en": "What happened after your kettle took acting classes?",
+      "ru": "Что произошло после того, как твой чайник прошёл актёрские курсы?"
+    }
+  },
+  {
+    "id": 198,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Як ти переконав лампу стати блогером?",
+      "en": "How did you convince the lamp to become a blogger?",
+      "ru": "Как ты убедил лампу стать блогером?"
+    }
+  },
+  {
+    "id": 199,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Чому твій тостер почав писати пісні?",
+      "en": "Why did your toaster start writing songs?",
+      "ru": "Почему твой тостер начал писать песни?"
+    }
+  },
+  {
+    "id": 200,
+    "sentence_type": "FUNNIEST_ANSWER",
+    "sentence": {
+      "ua": "Що ти зробив пральній машині, що вона на тебе ображена?",
+      "en": "What did you do to the washing machine that made it offended?",
+      "ru": "Что ты сделал стиральной машине, что она на тебя обиделась?"
+    }
+  }
+]

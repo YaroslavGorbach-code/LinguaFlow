@@ -1,0 +1,1803 @@
+[
+  {
+    "id": 1,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну що ж, ось ми й зустрілись знову.»\nІнтонація: Іронія — з легкою посмішкою й натяком на подвійний сенс.",
+      "en": "Sentence: “Well, here we meet again.”\nIntonation: Irony — with a slight smile and a hint of double meaning.",
+      "ru": "Предложение: «Ну что ж, вот мы и встретились снова.»\nИнтонация: Ирония — с лёгкой улыбкой и намёком на двойной смысл."
+    }
+  },
+  {
+    "id": 2,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це найкраще, що я коли-небудь чув.»\nІнтонація: Сарказм — з перебільшеною емоційністю.",
+      "en": "Sentence: “That’s the best thing I’ve ever heard.”\nIntonation: Sarcasm — with exaggerated enthusiasm.",
+      "ru": "Предложение: «Это лучшее, что я когда-либо слышал.»\nИнтонация: Сарказм — с преувеличенным восторгом."
+    }
+  },
+  {
+    "id": 3,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я цього не очікував.»\nІнтонація: Шок — з широкими очима та коротким подихом.",
+      "en": "Sentence: “I didn’t expect that.”\nIntonation: Shock — with wide eyes and a short breath.",
+      "ru": "Предложение: «Я этого не ожидал.»\nИнтонация: Шок — с широко раскрытыми глазами и резким вдохом."
+    }
+  },
+  {
+    "id": 4,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти впевнений у цьому?»\nІнтонація: Недовіра — з піднятою бровою та скепсисом.",
+      "en": "Sentence: “Are you sure about that?”\nIntonation: Doubt — with a raised eyebrow and skepticism.",
+      "ru": "Предложение: «Ты в этом уверен?»\nИнтонация: Недоверие — с приподнятой бровью и скепсисом."
+    }
+  },
+  {
+    "id": 5,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені це подобається.»\nІнтонація: Щирість — з м’яким голосом і світлими очима.",
+      "en": "Sentence: “I like it.”\nIntonation: Sincerity — with a gentle voice and bright eyes.",
+      "ru": "Предложение: «Мне это нравится.»\nИнтонация: Искренность — мягким голосом и светлыми глазами."
+    }
+  },
+  {
+    "id": 6,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я все зроблю сам.»\nІнтонація: Рішучість — твердо й впевнено.",
+      "en": "Sentence: “I’ll do it all myself.”\nIntonation: Determination — firmly and confidently.",
+      "ru": "Предложение: «Я всё сделаю сам.»\nИнтонация: Решительность — твёрдо и уверенно."
+    }
+  },
+  {
+    "id": 7,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це неймовірно.»\nІнтонація: Подив — з щирим здивуванням.",
+      "en": "Sentence: “This is incredible.”\nIntonation: Amazement — with genuine wonder.",
+      "ru": "Предложение: «Это невероятно.»\nИнтонация: Удивление — с искренним изумлением."
+    }
+  },
+  {
+    "id": 8,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Звичайно, я згоден.»\nІнтонація: Байдужість — сухо, без емоцій.",
+      "en": "Sentence: “Sure, I agree.”\nIntonation: Indifference — dryly, without emotion.",
+      "ru": "Предложение: «Конечно, я согласен.»\nИнтонация: Равнодушие — сухо, без эмоций."
+    }
+  },
+  {
+    "id": 9,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Тепер я тебе розумію.»\nІнтонація: Полегшення — з полегшеним зітханням.",
+      "en": "Sentence: “Now I understand you.”\nIntonation: Relief — with a sigh of relief.",
+      "ru": "Предложение: «Теперь я тебя понимаю.»\nИнтонация: Облегчение — со вздохом облегчения."
+    }
+  },
+  {
+    "id": 10,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ні, цього не може бути!»\nІнтонація: Відчай — з надривом у голосі.",
+      "en": "Sentence: “No, it can’t be!”\nIntonation: Despair — with a crack in the voice.",
+      "ru": "Предложение: «Нет, этого не может быть!»\nИнтонация: Отчаяние — с надрывом в голосе."
+    }
+  },
+  {
+    "id": 21,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я чекав на цей момент усе своє життя і нарешті він настав.»\nІнтонація: тріумф",
+      "en": "Sentence: “I’ve waited for this moment my entire life, and finally, it’s here.”\nIntonation: triumph",
+      "ru": "Предложение: «Я ждал этого момента всю свою жизнь, и вот он настал.»\nИнтонация: триумф"
+    }
+  },
+  {
+    "id": 22,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені б хотілося вірити, що це лише жарт, але все виглядає надто серйозно.»\nІнтонація: підозра",
+      "en": "Sentence: “I wish I could believe this is just a joke, but everything feels far too serious.”\nIntonation: suspicion",
+      "ru": "Предложение: «Я бы хотел верить, что это просто шутка, но всё выглядит слишком серьёзно.»\nИнтонация: подозрение"
+    }
+  },
+  {
+    "id": 23,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Те, що ти зробив для мене, я ніколи не забуду і завжди цінуватиму.»\nІнтонація: вдячність",
+      "en": "Sentence: “What you’ve done for me, I will never forget and will always cherish.”\nIntonation: gratitude",
+      "ru": "Предложение: «То, что ты сделал для меня, я никогда не забуду и всегда буду ценить.»\nИнтонация: благодарность"
+    }
+  },
+  {
+    "id": 24,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це найгірше, що я чув за весь цей рік, чесно кажучи.»\nІнтонація: обурення",
+      "en": "Sentence: “This is the worst thing I’ve heard all year, honestly.”\nIntonation: outrage",
+      "ru": "Предложение: «Это худшее, что я слышал за весь год, честно говоря.»\nИнтонация: возмущение"
+    }
+  },
+  {
+    "id": 25,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Можливо, якщо постаратись, усе ще можна виправити, хоча й не легко.»\nІнтонація: надія",
+      "en": "Sentence: “Maybe, if we try hard enough, we can still fix this, though it won’t be easy.”\nIntonation: hope",
+      "ru": "Предложение: «Возможно, если постараться, всё ещё можно исправить, хоть это и непросто.»\nИнтонация: надежда"
+    }
+  },
+  {
+    "id": 26,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Якщо ще раз це повториться, наслідки будуть дуже серйозними.»\nІнтонація: загроза",
+      "en": "Sentence: “If this happens again, the consequences will be very serious.”\nIntonation: threat",
+      "ru": "Предложение: «Если это повторится снова, последствия будут очень серьёзными.»\nИнтонация: угроза"
+    }
+  },
+  {
+    "id": 27,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну звісно, ти ж завжди все знаєш краще за всіх.»\nІнтонація: сарказм",
+      "en": "Sentence: “Of course, you always know everything better than everyone else.”\nIntonation: sarcasm",
+      "ru": "Предложение: «Ну конечно, ты ведь всегда всё знаешь лучше всех.»\nИнтонация: сарказм"
+    }
+  },
+  {
+    "id": 28,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я думав, що ми друзі, але, мабуть, помилявся.»\nІнтонація: розчарування",
+      "en": "Sentence: “I thought we were friends, but maybe I was wrong.”\nIntonation: disappointment",
+      "ru": "Предложение: «Я думал, что мы друзья, но, наверное, ошибался.»\nИнтонация: разочарование"
+    }
+  },
+  {
+    "id": 29,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Сьогодні ми зробили щось дійсно велике разом — це важливо пам’ятати.»\nІнтонація: урочистість",
+      "en": "Sentence: “Today, we accomplished something truly great together — and that’s worth remembering.”\nIntonation: ceremonial",
+      "ru": "Предложение: «Сегодня мы сделали что-то действительно великое вместе — и это стоит запомнить.»\nИнтонация: торжественная"
+    }
+  },
+  {
+    "id": 30,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я просто хотів, щоб ти знав — я завжди був на твоєму боці.»\nІнтонація: щирість",
+      "en": "Sentence: “I just wanted you to know — I’ve always been on your side.”\nIntonation: sincerity",
+      "ru": "Предложение: «Я просто хотел, чтобы ты знал — я всегда был на твоей стороне.»\nИнтонация: искренность"
+    }
+  },
+  {
+    "id": 31,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть коли все здавалося втрачено, ти залишився поруч, і це змінило все.»\nІнтонація: вдячність",
+      "en": "Sentence: “Even when everything seemed lost, you stayed by my side, and that changed everything.”\nIntonation: gratitude",
+      "ru": "Предложение: «Даже когда всё казалось потерянным, ты остался рядом, и это всё изменило.»\nИнтонация: благодарность"
+    }
+  },
+  {
+    "id": 32,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти справді думаєш, що це була гарна ідея після всього, що сталося?»\nІнтонація: іронія",
+      "en": "Sentence: “Do you really think that was a good idea after everything that happened?”\nIntonation: irony",
+      "ru": "Предложение: «Ты правда думаешь, что это была хорошая идея после всего, что произошло?»\nИнтонация: ирония"
+    }
+  },
+  {
+    "id": 33,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я завжди знав, що одного дня ти це скажеш, і я був до цього готовий.»\nІнтонація: спокійна впевненість",
+      "en": "Sentence: “I always knew you’d say that one day, and I was ready for it.”\nIntonation: calm confidence",
+      "ru": "Предложение: «Я всегда знал, что однажды ты это скажешь, и я был к этому готов.»\nИнтонация: спокойная уверенность"
+    }
+  },
+  {
+    "id": 34,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Що б не сталося, я більше ніколи не дозволю тобі завдати мені болю.»\nІнтонація: рішучість",
+      "en": "Sentence: “No matter what happens, I will never let you hurt me again.”\nIntonation: determination",
+      "ru": "Предложение: «Что бы ни случилось, я больше никогда не позволю тебе причинить мне боль.»\nИнтонация: решимость"
+    }
+  },
+  {
+    "id": 35,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це було абсолютно неймовірно, я досі не можу повірити, що це сталося!»\nІнтонація: захоплення",
+      "en": "Sentence: “That was absolutely incredible — I still can’t believe it actually happened!”\nIntonation: amazement",
+      "ru": "Предложение: «Это было просто невероятно — я до сих пор не могу поверить, что это случилось!»\nИнтонация: восхищение"
+    }
+  },
+  {
+    "id": 36,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Звичайно, я зовсім не образився, чому б мені взагалі ображатися?»\nІнтонація: пасивна агресія",
+      "en": "Sentence: “Of course I’m not offended at all — why would I even be?”\nIntonation: passive aggression",
+      "ru": "Предложение: «Конечно, я вовсе не обиделся — с чего бы мне?»\nИнтонация: пассивная агрессия"
+    }
+  },
+  {
+    "id": 37,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Кожне твоє слово залишилось у моїй пам’яті, навіть ті, що були сказані мимохідь.»\nІнтонація: ностальгія",
+      "en": "Sentence: “Every word you said stayed with me, even the ones you barely meant.”\nIntonation: nostalgia",
+      "ru": "Предложение: «Каждое твоё слово осталось в моей памяти, даже те, что были сказаны мимоходом.»\nИнтонация: ностальгия"
+    }
+  },
+  {
+    "id": 38,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Справді цікаво, як ти завжди знаходиш спосіб викрутитися, коли починає пахнути жареним.»\nІнтонація: глузування",
+      "en": "Sentence: “Fascinating how you always find a way out when things start getting hot.”\nIntonation: mockery",
+      "ru": "Предложение: «Интересно, как ты всегда умудряешься выкрутиться, когда становится жарко.»\nИнтонация: насмешка"
+    }
+  },
+  {
+    "id": 39,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «І хоча нам було нелегко, ми не здалися і не зламалися до самого кінця.»\nІнтонація: натхнення",
+      "en": "Sentence: “Even though it wasn’t easy, we didn’t give up and we didn’t break — all the way to the end.”\nIntonation: inspiration",
+      "ru": "Предложение: «Хотя это было нелегко, мы не сдались и не сломались до самого конца.»\nИнтонация: вдохновение"
+    }
+  },
+  {
+    "id": 40,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну, якщо ти так вирішив, то це вже не моя справа — роби, як знаєш.»\nІнтонація: байдужість",
+      "en": "Sentence: “Well, if that’s your decision, then it’s not my concern anymore — do as you wish.”\nIntonation: indifference",
+      "ru": "Предложение: «Ну, если ты так решил, то это уже не моё дело — делай, как знаешь.»\nИнтонация: безразличие"
+    }
+  },
+  {
+    "id": 41,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Справжні герої не завжди виблискують бронею — іноді вони просто мовчки стоять поряд.»\nІнтонація: глибока повага",
+      "en": "Sentence: “True heroes don’t always shine in armor — sometimes, they just quietly stand by your side.”\nIntonation: deep respect",
+      "ru": "Предложение: «Настоящие герои не всегда сверкают бронёй — иногда они просто тихо стоят рядом.»\nИнтонация: глубокое уважение"
+    }
+  },
+  {
+    "id": 42,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «О, то ти дійсно думаєш, що це спрацює? Ну-ну, спробуй.»\nІнтонація: зневага",
+      "en": "Sentence: “Oh, so you really think that will work? Well then, go ahead.”\nIntonation: disdain",
+      "ru": "Предложение: «О, ты правда думаешь, что это сработает? Ну-ну, попробуй.»\nИнтонация: презрение"
+    }
+  },
+  {
+    "id": 43,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Якщо чесно, я взагалі не впевнений, що ми колись зрозуміємо одне одного.»\nІнтонація: втома",
+      "en": "Sentence: “To be honest, I’m not sure we’ll ever really understand each other.”\nIntonation: exhaustion",
+      "ru": "Предложение: «Честно говоря, я не уверен, что мы когда-либо по-настоящему поймём друг друга.»\nИнтонация: усталость"
+    }
+  },
+  {
+    "id": 44,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Невже ти справді думав, що я цього не помічу?»\nІнтонація: підозра",
+      "en": "Sentence: “Did you really think I wouldn’t notice?”\nIntonation: suspicion",
+      "ru": "Предложение: «Неужели ты действительно думал, что я этого не замечу?»\nИнтонация: подозрение"
+    }
+  },
+  {
+    "id": 45,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Цей момент я запам’ятаю до кінця свого життя, він був по-справжньому особливий.»\nІнтонація: щемка ніжність",
+      "en": "Sentence: “I’ll remember this moment for the rest of my life — it was truly special.”\nIntonation: tender emotion",
+      "ru": "Предложение: «Этот момент я запомню на всю жизнь — он был по-настоящему особенным.»\nИнтонация: нежность"
+    }
+  },
+  {
+    "id": 46,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Так, усе саме так, як ти казав — це твоя перемога.»\nІнтонація: саркастичне примирення",
+      "en": "Sentence: “Yes, it’s exactly how you said it would be — your victory.”\nIntonation: sarcastic concession",
+      "ru": "Предложение: «Да, всё именно так, как ты и говорил — твоя победа.»\nИнтонация: саркастическое примирение"
+    }
+  },
+  {
+    "id": 47,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Може, це й кінець, але він був гідним.»\nІнтонація: спокійне прийняття",
+      "en": "Sentence: “Maybe this is the end, but it was a worthy one.”\nIntonation: calm acceptance",
+      "ru": "Предложение: «Может, это и конец, но он был достойным.»\nИнтонация: спокойное принятие"
+    }
+  },
+  {
+    "id": 48,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я більше не збираюся грати в ці ігри, час говорити правду.»\nІнтонація: виклик",
+      "en": "Sentence: “I’m done playing these games — it’s time to tell the truth.”\nIntonation: challenge",
+      "ru": "Предложение: «Я больше не собираюсь играть в эти игры — пора сказать правду.»\nИнтонация: вызов"
+    }
+  },
+  {
+    "id": 49,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти зробив свій вибір, і тепер ми обоє мусимо з цим жити.»\nІнтонація: скорбота",
+      "en": "Sentence: “You made your choice, and now we both have to live with it.”\nIntonation: sorrow",
+      "ru": "Предложение: «Ты сделал свой выбор, и теперь нам обоим придётся с этим жить.»\nИнтонация: скорбь"
+    }
+  },
+  {
+    "id": 50,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ми все ще маємо шанс, і я не дозволю йому зникнути без бою.»\nІнтонація: бойовий дух",
+      "en": "Sentence: “We still have a chance, and I won’t let it slip away without a fight.”\nIntonation: fighting spirit",
+      "ru": "Предложение: «У нас всё ещё есть шанс, и я не позволю ему исчезнуть без борьбы.»\nИнтонация: боевой настрой"
+    }
+  },
+  {
+    "id": 61,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я щиро не розумію, чому все так заплуталося саме зараз, коли все починало налагоджуватися.»\nІнтонація: зневіра",
+      "en": "Sentence: “I honestly don’t understand why everything got so complicated right when things were starting to get better.”\nIntonation: despair",
+      "ru": "Предложение: «Я искренне не понимаю, почему всё так усложнилось именно сейчас, когда всё начинало налаживаться.»\nИнтонация: отчаяние"
+    }
+  },
+  {
+    "id": 62,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Якщо ми ще раз дозволимо цьому статися — наслідки можуть бути справді катастрофічними.»\nІнтонація: урочисте попередження",
+      "en": "Sentence: “If we let this happen again, the consequences could truly be catastrophic.”\nIntonation: solemn warning",
+      "ru": "Предложение: «Если мы снова допустим это — последствия могут быть действительно катастрофическими.»\nИнтонация: торжественное предупреждение"
+    }
+  },
+  {
+    "id": 63,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти серйозно гадаєш, що я просто забуду все, що сталося між нами?»\nІнтонація: образа",
+      "en": "Sentence: “Do you seriously think I’ll just forget everything that happened between us?”\nIntonation: hurt",
+      "ru": "Предложение: «Ты серьёзно думаешь, что я просто забуду всё, что произошло между нами?»\nИнтонация: обида"
+    }
+  },
+  {
+    "id": 64,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «З кожним днем мені дедалі складніше стримувати свої справжні емоції.»\nІнтонація: пригнічення",
+      "en": "Sentence: “Every day it gets harder for me to keep my real emotions inside.”\nIntonation: suppressed",
+      "ru": "Предложение: «С каждым днём мне всё труднее сдерживать свои настоящие эмоции.»\nИнтонация: подавленность"
+    }
+  },
+  {
+    "id": 65,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «О так, це був дійсно геніальний план — повний провал!»\nІнтонація: сарказм",
+      "en": "Sentence: “Oh yes, that was truly a brilliant plan — total disaster!”\nIntonation: sarcasm",
+      "ru": "Предложение: «О да, это был действительно гениальный план — полный провал!»\nИнтонация: сарказм"
+    }
+  },
+  {
+    "id": 66,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Кожне твоє слово відлунює в мені навіть зараз, коли тебе вже давно немає поряд.»\nІнтонація: сум",
+      "en": "Sentence: “Every word you said still echoes in me, even though you’ve been gone for so long.”\nIntonation: sorrow",
+      "ru": "Предложение: «Каждое твоё слово до сих пор отзывается во мне, хотя тебя давно уже нет рядом.»\nИнтонация: грусть"
+    }
+  },
+  {
+    "id": 67,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені не потрібні пояснення, я просто хочу знати правду.»\nІнтонація: твердість",
+      "en": "Sentence: “I don’t need explanations, I just want the truth.”\nIntonation: firmness",
+      "ru": "Предложение: «Мне не нужны объяснения, я просто хочу знать правду.»\nИнтонация: решительность"
+    }
+  },
+  {
+    "id": 68,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти знову забув про наші домовленості, і це вже не вперше.»\nІнтонація: розчарування",
+      "en": "Sentence: “You forgot our agreement again, and it’s not the first time.”\nIntonation: disappointment",
+      "ru": "Предложение: «Ты снова забыл о наших договорённостях, и это уже не в первый раз.»\nИнтонация: разочарование"
+    }
+  },
+  {
+    "id": 69,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це був найщасливіший день у моєму житті, і я хочу запам’ятати його назавжди.»\nІнтонація: ностальгія",
+      "en": "Sentence: “That was the happiest day of my life, and I want to remember it forever.”\nIntonation: nostalgia",
+      "ru": "Предложение: «Это был самый счастливый день в моей жизни, и я хочу запомнить его навсегда.»\nИнтонация: ностальгия"
+    }
+  },
+  {
+    "id": 70,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені справді цікаво, як ти завжди знаходиш спосіб усе зіпсувати.»\nІнтонація: роздратування",
+      "en": "Sentence: “I’m genuinely curious how you always manage to ruin everything.”\nIntonation: annoyance",
+      "ru": "Предложение: «Мне действительно интересно, как у тебя всегда получается всё испортить.»\nИнтонация: раздражение"
+    }
+  },
+  {
+    "id": 71,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я чекав на цей момент усе своє життя, і тепер не впевнений, чи справді він був вартий того.»\nІнтонація: розчарування",
+      "en": "Sentence: “I’ve waited for this moment my entire life, and now I’m not sure it was worth it.”\nIntonation: disappointment",
+      "ru": "Предложение: «Я ждал этого момента всю свою жизнь, и теперь не уверен, стоило ли оно того.»\nИнтонация: разочарование"
+    }
+  },
+  {
+    "id": 72,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Усім здається, що я просто жартую, але я насправді цілком серйозний.»\nІнтонація: образа",
+      "en": "Sentence: “Everyone thinks I’m joking, but I’m actually being completely serious.”\nIntonation: offense",
+      "ru": "Предложение: «Всем кажется, что я шучу, но я на самом деле совершенно серьёзен.»\nИнтонация: обида"
+    }
+  },
+  {
+    "id": 73,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це не просто ідея — це моє бачення, моя мрія, і я не відступлюсь.»\nІнтонація: натхнення",
+      "en": "Sentence: “This isn’t just an idea — it’s my vision, my dream, and I won’t back down.”\nIntonation: inspiration",
+      "ru": "Предложение: «Это не просто идея — это моё видение, моя мечта, и я не отступлюсь.»\nИнтонация: вдохновение"
+    }
+  },
+  {
+    "id": 74,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Так, звісно, бо хто ж іще мусить усе виправляти, як не я?»\nІнтонація: сарказм",
+      "en": "Sentence: “Oh sure, because who else would have to fix everything but me?”\nIntonation: sarcasm",
+      "ru": "Предложение: «Ну конечно, а кто ещё должен всё исправлять, как не я?»\nИнтонация: сарказм"
+    }
+  },
+  {
+    "id": 75,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «І навіть після всього, що сталося, я все ще сподіваюся побачити тебе знову.»\nІнтонація: ніжність",
+      "en": "Sentence: “Even after everything that happened, I still hope to see you again.”\nIntonation: tenderness",
+      "ru": "Предложение: «И даже после всего, что произошло, я всё ещё надеюсь увидеть тебя снова.»\nИнтонация: нежность"
+    }
+  },
+
+  {
+    "id": 76,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я намагався попередити тебе, але, як завжди, ти вирішив не слухати.»\nІнтонація: втома",
+      "en": "Sentence: “I tried to warn you, but as always, you decided not to listen.”\nIntonation: exhaustion",
+      "ru": "Предложение: «Я пытался тебя предупредить, но, как всегда, ты решил не слушать.»\nИнтонация: усталость"
+    }
+  },
+  {
+    "id": 77,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я ніколи не забуду, як ти тоді подивився на мене — ніби побачив уперше.»\nІнтонація: ностальгія",
+      "en": "Sentence: “I’ll never forget how you looked at me that day — like you were seeing me for the first time.”\nIntonation: nostalgia",
+      "ru": "Предложение: «Я никогда не забуду, как ты тогда посмотрел на меня — будто впервые увидел.»\nИнтонация: ностальгия"
+    }
+  },
+  {
+    "id": 78,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я просто не можу повірити, що це відбувається насправді.»\nІнтонація: захоплення",
+      "en": "Sentence: “I just can’t believe this is really happening.”\nIntonation: awe",
+      "ru": "Предложение: «Я просто не могу поверить, что это происходит на самом деле.»\nИнтонация: восхищение"
+    }
+  },
+  {
+    "id": 79,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Коли я сказав, що все буде інакше — я справді мав на увазі саме це.»\nІнтонація: рішучість",
+      "en": "Sentence: “When I said things would be different — I truly meant it.”\nIntonation: determination",
+      "ru": "Предложение: «Когда я сказал, что всё будет иначе — я действительно это имел в виду.»\nИнтонация: решимость"
+    }
+  },
+  {
+    "id": 80,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Що б ти не казав зараз — я вже зробив свій вибір.»\nІнтонація: холодна відстороненість",
+      "en": "Sentence: “No matter what you say now — I’ve already made my decision.”\nIntonation: cold detachment",
+      "ru": "Предложение: «Что бы ты ни сказал сейчас — я уже принял решение.»\nИнтонация: холодное отчуждение"
+    }
+  },
+  {
+    "id": 81,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я зробив усе, що міг, і тепер залишилося тільки чекати, що буде далі.»\nІнтонація: тривожне очікування",
+      "en": "Sentence: “I did everything I could, and now all that’s left is to wait and see what happens.”\nIntonation: anxious anticipation",
+      "ru": "Предложение: «Я сделал всё, что мог, и теперь остаётся только ждать, что будет дальше.»\nИнтонация: тревожное ожидание"
+    }
+  },
+  {
+    "id": 82,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це було несподівано, але я завжди відчував, що щось подібне може статися.»\nІнтонація: здивування",
+      "en": "Sentence: “It was unexpected, but I always had a feeling something like this might happen.”\nIntonation: surprise",
+      "ru": "Предложение: «Это было неожиданно, но у меня всегда было чувство, что что-то подобное может случиться.»\nИнтонация: удивление"
+    }
+  },
+  {
+    "id": 83,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Якщо ти думаєш, що це мене зупинить, то дуже помиляєшся.»\nІнтонація: виклик",
+      "en": "Sentence: “If you think this will stop me, you’re greatly mistaken.”\nIntonation: challenge",
+      "ru": "Предложение: «Если ты думаешь, что это меня остановит — ты глубоко ошибаешься.»\nИнтонация: вызов"
+    }
+  },
+  {
+    "id": 84,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я не знаю, як усе вийде, але маю надію, що буде добре.»\nІнтонація: спокійна надія",
+      "en": "Sentence: “I don’t know how it will turn out, but I hope it will be alright.”\nIntonation: calm hope",
+      "ru": "Предложение: «Я не знаю, как всё получится, но надеюсь, что всё будет хорошо.»\nИнтонация: спокойная надежда"
+    }
+  },
+  {
+    "id": 85,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Можливо, ти цього не помітив, але кожна твоя дія мала значення.»\nІнтонація: щемка щирість",
+      "en": "Sentence: “Maybe you didn’t notice, but every action of yours meant something.”\nIntonation: heartfelt sincerity",
+      "ru": "Предложение: «Возможно, ты этого не заметил, но каждое твоё действие имело значение.»\nИнтонация: искренняя откровенность"
+    }
+  },
+  {
+    "id": 86,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я був там, коли всі інші пішли, і не пошкодував жодної хвилини.»\nІнтонація: гідність",
+      "en": "Sentence: “I was there when everyone else left, and I didn’t regret a single moment.”\nIntonation: dignity",
+      "ru": "Предложение: «Я остался, когда все ушли, и не пожалел ни на секунду.»\nИнтонация: достоинство"
+    }
+  },
+  {
+    "id": 87,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ніхто не питав мене про це, але я маю, що сказати.»\nІнтонація: наполегливість",
+      "en": "Sentence: “No one asked me about this, but I have something to say.”\nIntonation: assertiveness",
+      "ru": "Предложение: «Никто меня об этом не спрашивал, но мне есть что сказать.»\nИнтонация: настойчивость"
+    }
+  },
+  {
+    "id": 88,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Іноді найбільші зміни приходять тоді, коли ми цього найменше чекаємо.»\nІнтонація: спокійне повчання",
+      "en": "Sentence: “Sometimes the biggest changes come when we least expect them.”\nIntonation: calm wisdom",
+      "ru": "Предложение: «Иногда самые большие перемены случаются, когда мы этого меньше всего ждём.»\nИнтонация: спокойная мудрость"
+    }
+  },
+  {
+    "id": 89,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти бачив, як вони на мене подивилися? Це ж просто смішно!»\nІнтонація: обурення",
+      "en": "Sentence: “Did you see how they looked at me? That’s just ridiculous!”\nIntonation: indignation",
+      "ru": "Предложение: «Ты видел, как они на меня посмотрели? Это же смешно!»\nИнтонация: возмущение"
+    }
+  },
+  {
+    "id": 90,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я не з тих, хто просто здається, коли все стає складно.»\nІнтонація: рішучість",
+      "en": "Sentence: “I’m not the kind of person who gives up when things get tough.”\nIntonation: determination",
+      "ru": "Предложение: «Я не из тех, кто сдается, когда становится трудно.»\nИнтонация: решимость"
+    }
+  },
+  {
+    "id": 91,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Те, що ти зробив, важко пробачити, але я намагаюся зрозуміти тебе.»\nІнтонація: співчуття",
+      "en": "Sentence: “What you did is hard to forgive, but I’m trying to understand you.”\nIntonation: compassion",
+      "ru": "Предложение: «То, что ты сделал, трудно простить, но я стараюсь тебя понять.»\nИнтонация: сочувствие"
+    }
+  },
+  {
+    "id": 92,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Усе змінилося в один момент, і ми вже ніколи не будемо тими, ким були.»\nІнтонація: меланхолія",
+      "en": "Sentence: “Everything changed in an instant, and we’ll never be who we once were.”\nIntonation: melancholy",
+      "ru": "Предложение: «Всё изменилось в один миг, и мы уже никогда не будем прежними.»\nИнтонация: меланхолия"
+    }
+  },
+  {
+    "id": 93,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну нарешті ти з’явився, я вже почав думати, що ти передумав.»\nІнтонація: полегшення",
+      "en": "Sentence: “Finally, you showed up — I was starting to think you’d changed your mind.” Intonation: relief",
+      "ru": "Предложение: «Наконец-то ты появился, я уж подумал, что ты передумал.»\nИнтонация: облегчение"
+    }
+  },
+  {
+    "id": 94,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ми стояли там мовчки, бо слів уже не залишилось.»\nІнтонація: спустошення",
+      "en": "Sentence: “We stood there in silence, because there were no words left.”\nIntonation: emptiness",
+      "ru": "Предложение: «Мы стояли в тишине, потому что слов больше не было.»\nИнтонация: опустошение"
+    }
+  },
+  {
+    "id": 95,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Можеш не казати нічого — я все бачив на власні очі.»\nІнтонація: холодна впевненість",
+      "en": "Sentence: “You don’t need to say anything — I saw it all with my own eyes.”\nIntonation: cold certainty",
+      "ru": "Предложение: «Можешь ничего не говорить — я всё видел своими глазами.»\nИнтонация: холодная уверенность"
+    }
+  },
+  {
+    "id": 96,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Якби я знав, чим усе це закінчиться, можливо, я би вчинив інакше.» Інтонація: жаль",
+      "en": "Sentence: “If I had known how it would end, maybe I would’ve done things differently.” Intonation: regret",
+      "ru": "Предложение: «Если бы я знал, чем всё это закончится, возможно, я бы поступил иначе.» Интонация: сожаление"
+    }
+  },
+  {
+    "id": 97,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Усі навколо щось планують, а я навіть не знаю, чого хочу сам.» Інтонація: розгубленість",
+      "en": "Sentence: “Everyone around me is planning things, and I don’t even know what I want.” Intonation: confusion",
+      "ru": "Предложение: «Все вокруг что-то планируют, а я даже не знаю, чего хочу сам.» Интонация: растерянность"
+    }
+  },
+  {
+    "id": 98,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Що б не трапилось, я залишуся поруч, якщо ти цього захочеш.» Інтонація: обіцянка",
+      "en": "Sentence: “No matter what happens, I’ll stay with you — if that’s what you want.” Intonation: promise",
+      "ru": "Предложение: «Что бы ни случилось, я останусь рядом — если ты этого хочешь.» Интонация: обещание"
+    }
+  },
+  {
+    "id": 99,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я казав собі, що не буду більше згадувати, але пам’ять знову повертається.» Інтонація: внутрішній конфлікт",
+      "en": "Sentence: “I told myself I wouldn’t remember again, but the memories keep coming back.” Intonation: inner conflict",
+      "ru": "Предложение: «Я говорил себе, что больше не буду вспоминать, но воспоминания всё возвращаются.» Интонация: внутренний конфликт"
+    }
+  },
+  {
+    "id": 100,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це кінець однієї історії, але, можливо, початок нової.» Інтонація: надія",
+      "en": "Sentence: “This is the end of one story, but maybe the beginning of another.” Intonation: hope",
+      "ru": "Предложение: «Это конец одной истории, но, возможно, начало другой.» Интонация: надежда"
+    }
+  },
+  {
+    "id": 101,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Можливо, колись я зможу пробачити, але не сьогодні.» Інтонація: смуток.",
+      "en": "Sentence: ‘Maybe one day I’ll forgive, but not today.’ Intonation: sadness.",
+      "ru": "Предложение: «Возможно, однажды я смогу простить, но не сегодня.» Интонация: грусть."
+    }
+  },
+  {
+    "id": 102,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ніхто не чекав, що саме я виявлюся тією людиною, яка все змінить.» Інтонація: гордість.",
+      "en": "Sentence: ‘No one expected me to be the one who would change everything.’ Intonation: pride.",
+      "ru": "Предложение: «Никто не ожидал, что именно я окажусь тем, кто всё изменит.» Интонация: гордость."
+    }
+  },
+  {
+    "id": 103,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «І коли ти пішов, я залишився сам із тишею.» Інтонація: туга.",
+      "en": "Sentence: ‘And when you left, I was alone with the silence.’ Intonation: longing.",
+      "ru": "Предложение: «А когда ты ушёл, я остался один с тишиной.» Интонация: тоска."
+    }
+  },
+  {
+    "id": 104,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну звісно, кому ще це могло спастися, як не тобі?» Інтонація: сарказм.",
+      "en": "Sentence: ‘Of course, who else could mess this up but you?’ Intonation: sarcasm.",
+      "ru": "Предложение: «Ну конечно, кто ещё мог это испортить, как не ты?» Интонация: сарказм."
+    }
+  },
+  {
+    "id": 105,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я довго готувався до цієї миті, і вона нарешті настала.» Інтонація: урочистість.",
+      "en": "Sentence: ‘I’ve prepared for this moment for a long time, and now it has finally come.’ Intonation: solemnity.",
+      "ru": "Предложение: «Я долго готовился к этому моменту, и он наконец настал.» Интонация: торжественность."
+    }
+  },
+  {
+    "id": 106,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Справжній героїзм не кричить — він діє тихо, коли це необхідно.» Інтонація: наставництво.",
+      "en": "Sentence: ‘True heroism doesn’t shout — it acts quietly when needed.’ Intonation: mentorship.",
+      "ru": "Предложение: «Настоящий героизм не кричит — он действует тихо, когда это нужно.» Интонация: наставничество."
+    }
+  },
+  {
+    "id": 107,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Іноді найкраще, що можна зробити — це нічого не робити.» Інтонація: філософія.",
+      "en": "Sentence: ‘Sometimes the best thing to do is nothing at all.’ Intonation: philosophy.",
+      "ru": "Предложение: «Иногда лучшее, что можно сделать — это ничего не делать.» Интонация: философия."
+    }
+  },
+  {
+    "id": 108,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти навіть не уявляєш, через що мені довелося пройти.» Інтонація: драма.",
+      "en": "Sentence: ‘You have no idea what I had to go through.’ Intonation: drama.",
+      "ru": "Предложение: «Ты даже не представляешь, через что мне пришлось пройти.» Интонация: драма."
+    }
+  },
+  {
+    "id": 109,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я не хотів цього казати, але мусив бути чесним з тобою.» Інтонація: вибачення.",
+      "en": "Sentence: ‘I didn’t want to say it, but I had to be honest with you.’ Intonation: apology.",
+      "ru": "Предложение: «Я не хотел это говорить, но должен был быть честным с тобой.» Интонация: извинение."
+    }
+  },
+  {
+    "id": 110,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну, удачі тобі з цим, справді.» Інтонація: зневага.",
+      "en": "Sentence: ‘Well, good luck with that, really.’ Intonation: disdain.",
+      "ru": "Предложение: «Ну, удачи тебе с этим, правда.» Интонация: презрение."
+    }
+  },
+  {
+    "id": 111,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я намагався все зробити правильно, але, мабуть, знову щось пішло не так.» Інтонація: розчарування",
+      "en": "Sentence: “I tried to do everything right, but apparently something went wrong again.” Intonation: disappointment",
+      "ru": "Предложение: «Я пытался сделать всё правильно, но, похоже, снова что-то пошло не так.» Интонация: разочарование"
+    }
+  },
+  {
+    "id": 112,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я навіть не здогадувався, що ти все це планував заздалегідь.» Інтонація: здивування",
+      "en": "Sentence: “I had no idea you had planned all of this in advance.” Intonation: surprise",
+      "ru": "Предложение: «Я и не подозревал, что ты всё это запланировал заранее.» Интонация: удивление"
+    }
+  },
+  {
+    "id": 113,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ніхто, крім тебе, не зрозумів, як це насправді важливо.» Інтонація: вдячність",
+      "en": "Sentence: “No one but you understood how truly important this was.” Intonation: gratitude",
+      "ru": "Предложение: «Никто, кроме тебя, не понял, насколько это действительно важно.» Интонация: благодарность"
+    }
+  },
+  {
+    "id": 114,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це вже не має значення, бо ми зробили все, що могли.» Інтонація: примирення",
+      "en": "Sentence: “It doesn’t matter anymore, because we did everything we could.” Intonation: acceptance",
+      "ru": "Предложение: «Это больше не имеет значения, ведь мы сделали всё, что могли.» Интонация: примирение"
+    }
+  },
+  {
+    "id": 115,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я міг залишитися, але вирішив піти, бо так було краще для нас обох.» Інтонація: сум",
+      "en": "Sentence: “I could have stayed, but I chose to leave because it was better for both of us.” Intonation: sadness",
+      "ru": "Предложение: «Я мог бы остаться, но решил уйти, потому что так было лучше для нас обоих.» Интонация: грусть"
+    }
+  },
+  {
+    "id": 116,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мене ніхто не слухав, допоки я не підвищив голос.» Інтонація: обурення",
+      "en": "Sentence: “No one listened to me until I raised my voice.” Intonation: indignation",
+      "ru": "Предложение: «Никто меня не слушал, пока я не повысил голос.» Интонация: возмущение"
+    }
+  },
+  {
+    "id": 117,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Цей день я запам’ятаю на все життя, бо він змінив усе.» Інтонація: захоплення",
+      "en": "Sentence: “I will remember this day for the rest of my life because it changed everything.” Intonation: admiration",
+      "ru": "Предложение: «Этот день я запомню на всю жизнь, потому что он всё изменил.» Интонация: восхищение"
+    }
+  },
+  {
+    "id": 118,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Вибач, якщо мої слова тебе зачепили — я зовсім не це мав на увазі.» Інтонація: каяття",
+      "en": "Sentence: “I’m sorry if my words hurt you — that’s not what I meant at all.” Intonation: remorse",
+      "ru": "Предложение: «Прости, если мои слова тебя задели — я совсем не это имел в виду.» Интонация: раскаяние"
+    }
+  },
+  {
+    "id": 119,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть якби все склалося інакше, я б зробив той самий вибір.» Інтонація: рішучість",
+      "en": "Sentence: “Even if everything had turned out differently, I would still make the same choice.” Intonation: determination",
+      "ru": "Предложение: «Даже если бы всё сложилось иначе, я бы всё равно сделал тот же выбор.» Интонация: решимость"
+    }
+  },
+  {
+    "id": 120,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Можливо, я помилявся, але я щиро вірив у те, що роблю.» Інтонація: виправдання",
+      "en": "Sentence: “Maybe I was wrong, but I genuinely believed in what I was doing.” Intonation: justification",
+      "ru": "Предложение: «Возможно, я ошибался, но я искренне верил в то, что делаю.» Интонация: оправдание"
+    }
+  },
+  {
+    "id": 121,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це було найкраще рішення за весь рік, хоча ніхто тоді в це не повірив.» Інтонація: тріумф",
+      "en": "Sentence: “It was the best decision of the year, even though no one believed it at the time.” Intonation: triumph",
+      "ru": "Предложение: «Это было лучшее решение за год, хотя тогда в это никто не верил.» Интонация: триумф"
+    }
+  },
+  {
+    "id": 122,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Неважливо, хто був правий — важливо, що ми залишилися друзями.» Інтонація: мудрість",
+      "en": "Sentence: “It doesn’t matter who was right — what matters is that we remained friends.” Intonation: wisdom",
+      "ru": "Предложение: «Не важно, кто был прав — важно, что мы остались друзьями.» Интонация: мудрость"
+    }
+  },
+  {
+    "id": 123,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я просто хотів, щоб мене почули, хоча б один раз у житті.» Інтонація: туга",
+      "en": "Sentence: “I just wanted to be heard, at least once in my life.” Intonation: longing",
+      "ru": "Предложение: «Я просто хотел, чтобы меня услышали, хоть раз в жизни.» Интонация: тоска"
+    }
+  },
+  {
+    "id": 124,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Вони сміялися з мене, але тепер дивляться з подивом і повагою.» Інтонація: гордість",
+      "en": "Sentence: “They used to laugh at me, but now they look at me with surprise and respect.” Intonation: pride",
+      "ru": "Предложение: «Они смеялись надо мной, а теперь смотрят с удивлением и уважением.» Интонация: гордость"
+    }
+  },
+  {
+    "id": 125,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це не просто історія — це частина мене, яку я не можу приховати.» Інтонація: відвертість",
+      "en": "Sentence: “This isn’t just a story — it’s a part of me I can’t hide.” Intonation: honesty",
+      "ru": "Предложение: «Это не просто история — это часть меня, которую я не могу скрыть.» Интонация: откровенность"
+    }
+  },
+  {
+    "id": 126,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Часом треба піти, щоби знайти дорогу назад.» Інтонація: філософська",
+      "en": "Sentence: “Sometimes you need to leave in order to find your way back.” Intonation: philosophical",
+      "ru": "Предложение: «Иногда нужно уйти, чтобы найти путь обратно.» Интонация: философская"
+    }
+  },
+  {
+    "id": 127,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Те, що я пережив, неможливо пояснити словами.» Інтонація: тремтіння",
+      "en": "Sentence: “What I went through cannot be explained in words.” Intonation: trembling",
+      "ru": "Предложение: «То, что я пережил, невозможно описать словами.» Интонация: дрожь"
+    }
+  },
+  {
+    "id": 128,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це було моє рішення, і я не шкодую ні про що.» Інтонація: самоповага",
+      "en": "Sentence: “It was my decision, and I regret nothing.” Intonation: self-respect",
+      "ru": "Предложение: «Это было моё решение, и я ни о чём не жалею.» Интонация: самоуважение"
+    }
+  },
+  {
+    "id": 129,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Все було настільки спокійно, що я забув про час.» Інтонація: замріяність",
+      "en": "Sentence: “Everything was so calm, I lost track of time.” Intonation: dreaminess",
+      "ru": "Предложение: «Всё было так спокойно, что я потерял счёт времени.» Интонация: мечтательность"
+    }
+  },
+  {
+    "id": 130,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Коли я побачив тебе там, усе інше перестало мати значення.» Інтонація: захоплення",
+      "en": "Sentence: “When I saw you there, nothing else mattered anymore.” Intonation: awe",
+      "ru": "Предложение: «Когда я увидел тебя там, всё остальное потеряло значение.» Интонация: восхищение"
+    }
+  },
+  {
+    "id": 131,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я щиро не розумію, чому все завжди повинно бути саме так, а не інакше.» Інтонація: здивування",
+      "en": "Sentence: “I truly don’t understand why things always have to be this way and not another.” Intonation: confusion",
+      "ru": "Предложение: «Я искренне не понимаю, почему всё всегда должно быть именно так, а не иначе.» Интонация: недоумение"
+    }
+  },
+  {
+    "id": 132,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Те, що ти щойно зробив, назавжди змінить хід подій.» Інтонація: тривога",
+      "en": "Sentence: “What you just did will forever change the course of events.” Intonation: anxiety",
+      "ru": "Предложение: «То, что ты только что сделал, навсегда изменит ход событий.» Интонация: тревога"
+    }
+  },
+  {
+    "id": 133,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Хоч би як складалося життя, я завжди буду на твоєму боці.» Інтонація: ніжність",
+      "en": "Sentence: “No matter how life turns out, I’ll always be on your side.” Intonation: tenderness",
+      "ru": "Предложение: «Каким бы ни была жизнь, я всегда буду на твоей стороне.» Интонация: нежность"
+    }
+  },
+  {
+    "id": 134,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мене не лякають труднощі, поки ти поруч і ми разом.» Інтонація: впевненість",
+      "en": "Sentence: “I’m not afraid of challenges as long as you’re here and we’re together.” Intonation: confidence",
+      "ru": "Предложение: «Меня не пугают трудности, пока ты рядом и мы вместе.» Интонация: уверенность"
+    }
+  },
+  {
+    "id": 135,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ці стіни чули більше, ніж будь-хто з присутніх тут.» Інтонація: таємничість",
+      "en": "Sentence: “These walls have heard more than anyone present here.” Intonation: mystery",
+      "ru": "Предложение: «Эти стены слышали больше, чем кто-либо из присутствующих здесь.» Интонация: загадочность"
+    }
+  },
+  {
+    "id": 136,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Іноді найскладніше — просто зробити перший крок.» Інтонація: співчуття",
+      "en": "Sentence: “Sometimes the hardest thing is just to take the first step.” Intonation: sympathy",
+      "ru": "Предложение: «Иногда самое трудное — просто сделать первый шаг.» Интонация: сочувствие"
+    }
+  },
+  {
+    "id": 137,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ми пройшли стільки всього, що зламати нас уже неможливо.» Інтонація: гордість",
+      "en": "Sentence: “We’ve been through so much that nothing can break us now.” Intonation: pride",
+      "ru": "Предложение: «Мы прошли через столько всего, что теперь нас уже не сломить.» Интонация: гордость"
+    }
+  },
+  {
+    "id": 138,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Усе, що я хотів — просто, щоб мене почули.» Інтонація: благання",
+      "en": "Sentence: “All I ever wanted was simply to be heard.” Intonation: pleading",
+      "ru": "Предложение: «Всё, чего я хотел — просто, чтобы меня услышали.» Интонация: мольба"
+    }
+  },
+  {
+    "id": 139,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Цей день я пам’ятатиму не через події, а через почуття, які він залишив.» Інтонація: ностальгія",
+      "en": "Sentence: “I’ll remember this day not for what happened, but for the feelings it left behind.” Intonation: nostalgia",
+      "ru": "Предложение: «Этот день я запомню не из-за событий, а из-за чувств, которые он оставил.» Интонация: ностальгия"
+    }
+  },
+  {
+    "id": 140,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Не зважаючи ні на що, я все одно продовжу йти вперед.» Інтонація: впертість",
+      "en": "Sentence: “No matter what, I will keep moving forward.” Intonation: stubbornness",
+      "ru": "Предложение: «Несмотря ни на что, я всё равно буду идти вперёд.» Интонация: упрямство"
+    }
+  },
+  {
+    "id": 141,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я ніколи не думав, що зустріну когось, як ти.» Інтонація: зачарування",
+      "en": "Sentence: “I never thought I’d meet someone like you.” Intonation: enchantment",
+      "ru": "Предложение: «Я никогда не думал, что встречу кого-то, как ты.» Интонация: очарование"
+    }
+  },
+  {
+    "id": 142,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Іноді треба зробити крок назад, щоб побачити всю картину.» Інтонація: спокій",
+      "en": "Sentence: “Sometimes you need to step back to see the whole picture.” Intonation: calm",
+      "ru": "Предложение: «Иногда нужно сделать шаг назад, чтобы увидеть всю картину.» Интонация: спокойствие"
+    }
+  },
+  {
+    "id": 143,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це був не просто вибір — це був мій шлях.» Інтонація: рішучість",
+      "en": "Sentence: “It wasn’t just a choice — it was my path.” Intonation: determination",
+      "ru": "Предложение: «Это был не просто выбор — это был мой путь.» Интонация: решимость"
+    }
+  },
+  {
+    "id": 144,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я бачу більше, ніж ти думаєш, і пам’ятаю кожну дрібницю.» Інтонація: напруга",
+      "en": "Sentence: “I see more than you think, and I remember every little detail.” Intonation: tension",
+      "ru": "Предложение: «Я вижу больше, чем ты думаешь, и помню каждую мелочь.» Интонация: напряжение"
+    }
+  },
+  {
+    "id": 145,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти навіть не уявляєш, скільки це для мене означає.» Інтонація: глибоке зворушення",
+      "en": "Sentence: “You have no idea how much this means to me.” Intonation: deep emotion",
+      "ru": "Предложение: «Ты даже не представляешь, как много это для меня значит.» Интонация: глубокое волнение"
+    }
+  },
+  {
+    "id": 146,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це був мій єдиний шанс, і я ним скористався.» Інтонація: урочистість",
+      "en": "Sentence: “It was my only chance, and I took it.” Intonation: solemnity",
+      "ru": "Предложение: «Это был мой единственный шанс, и я им воспользовался.» Интонация: торжественность"
+    }
+  },
+  {
+    "id": 147,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я досі чую в голові ті слова, які ти сказав тоді.» Інтонація: біль",
+      "en": "Sentence: “I still hear those words you said that day.” Intonation: pain",
+      "ru": "Предложение: «Я до сих пор слышу те слова, которые ты тогда сказал.» Интонация: боль"
+    }
+  },
+  {
+    "id": 148,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ніхто не міг уявити, чим усе це закінчиться.» Інтонація: передчуття",
+      "en": "Sentence: “No one could have imagined how it would all end.” Intonation: foreboding",
+      "ru": "Предложение: «Никто не мог представить, чем всё это закончится.» Интонация: предчувствие"
+    }
+  },
+  {
+    "id": 149,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я відчуваю, що все тільки починається.» Інтонація: натхнення",
+      "en": "Sentence: “I feel like everything is just beginning.” Intonation: inspiration",
+      "ru": "Предложение: «Я чувствую, что всё только начинается.» Интонация: вдохновение"
+    }
+  },
+  {
+    "id": 150,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «У кожному слові твого листа я чув те, що ти не сказав уголос.» Інтонація: пронизлива щирість",
+      "en": "Sentence: “In every word of your letter, I heard what you didn’t say out loud.” Intonation: piercing sincerity",
+      "ru": "Предложение: «В каждом слове твоего письма я слышал то, что ты не сказал вслух.» Интонация: пронзительная искренность"
+    }
+  },
+  {
+    "id": 151,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть якщо весь світ відвернеться, я залишуся з тобою до самого кінця.» Інтонація: вірність",
+      "en": "Sentence: “Even if the whole world turns away, I’ll stay with you till the very end.” Intonation: loyalty",
+      "ru": "Предложение: «Даже если весь мир отвернётся, я останусь с тобой до самого конца.» Интонация: верность"
+    }
+  },
+  {
+    "id": 152,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це не просто історія — це пам’ять, що живе в кожному моєму кроці.» Інтонація: повага",
+      "en": "Sentence: “This is not just a story — it's a memory that lives in every step I take.” Intonation: reverence",
+      "ru": "Предложение: «Это не просто история — это память, живущая в каждом моём шаге.» Интонация: уважение"
+    }
+  },
+  {
+    "id": 153,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «У глибині душі я завжди знав, що цей день настане.» Інтонація: фаталізм",
+      "en": "Sentence: “Deep down I always knew this day would come.” Intonation: fatalism",
+      "ru": "Предложение: «В глубине души я всегда знал, что этот день настанет.» Интонация: фатализм"
+    }
+  },
+  {
+    "id": 154,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Кожна дрібниця, яку ти ігнорував, з часом перетворилась на безодню.» Інтонація: звинувачення",
+      "en": "Sentence: “Every little thing you ignored eventually became an abyss.” Intonation: blame",
+      "ru": "Предложение: «Каждая мелочь, которую ты игнорировал, со временем превратилась в пропасть.» Интонация: обвинение"
+    }
+  },
+  {
+    "id": 155,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ніхто не знав, як воно — стояти на межі між страхом і надією.» Інтонація: напруження",
+      "en": "Sentence: “No one knew what it was like to stand at the edge between fear and hope.” Intonation: tension",
+      "ru": "Предложение: «Никто не знал, каково это — стоять на грани между страхом и надеждой.» Интонация: напряжение"
+    }
+  },
+  {
+    "id": 156,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це було надто добре, щоб тривати вічно, і ти це знав.» Інтонація: гіркота",
+      "en": "Sentence: “It was too good to last forever, and you knew it.” Intonation: bitterness",
+      "ru": "Предложение: «Это было слишком хорошо, чтобы длиться вечно, и ты это знал.» Интонация: горечь"
+    }
+  },
+  {
+    "id": 157,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Коли я бачу тебе зараз, я згадую все, чого ми досягли разом.» Інтонація: захоплення",
+      "en": "Sentence: “When I see you now, I remember everything we achieved together.” Intonation: admiration",
+      "ru": "Предложение: «Когда я вижу тебя сейчас, я вспоминаю всё, чего мы достигли вместе.» Интонация: восхищение"
+    }
+  },
+  {
+    "id": 158,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти можеш не вірити мені, але кожне моє слово — правда.» Інтонація: переконливість",
+      "en": "Sentence: “You may not believe me, but every word I say is true.” Intonation: conviction",
+      "ru": "Предложение: «Ты можешь мне не верить, но каждое моё слово — правда.» Интонация: убеждённость"
+    }
+  },
+  {
+    "id": 159,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Те, що почалося як гра, стало для мене всім.» Інтонація: щирість",
+      "en": "Sentence: “What began as a game became everything to me.” Intonation: sincerity",
+      "ru": "Предложение: «То, что начиналось как игра, стало для меня всем.» Интонация: искренность"
+    }
+  },
+  {
+    "id": 160,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Нам довелося втратити багато, щоб зрозуміти справжню цінність простих речей.» Інтонація: спокійна мудрість",
+      "en": "Sentence: “We had to lose a lot to understand the real value of simple things.” Intonation: calm wisdom",
+      "ru": "Предложение: «Нам пришлось многое потерять, чтобы понять настоящую ценность простых вещей.» Интонация: спокойная мудрость"
+    }
+  },
+  {
+    "id": 161,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я не хотів усе зруйнувати, просто не знав, як інакше бути.» Інтонація: розгубленість",
+      "en": "Sentence: “I didn’t mean to ruin everything, I just didn’t know how else to be.” Intonation: confusion",
+      "ru": "Предложение: «Я не хотел всё разрушить, просто не знал, как быть иначе.» Интонация: растерянность"
+    }
+  },
+  {
+    "id": 162,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть мовчання між нами говорило більше, ніж слова.» Інтонація: емоційна глибина",
+      "en": "Sentence: “Even the silence between us said more than words.” Intonation: emotional depth",
+      "ru": "Предложение: «Даже молчание между нами говорило больше, чем слова.» Интонация: эмоциональная глубина"
+    }
+  },
+  {
+    "id": 163,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я довірив тобі все, і тепер мені нічого не залишилось.» Інтонація: розчарування",
+      "en": "Sentence: “I trusted you with everything, and now I have nothing left.” Intonation: disappointment",
+      "ru": "Предложение: «Я доверил тебе всё, и теперь у меня ничего не осталось.» Интонация: разочарование"
+    }
+  },
+  {
+    "id": 164,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти міг би хоча б спробувати зрозуміти мене.» Інтонація: докір",
+      "en": "Sentence: “You could’ve at least tried to understand me.” Intonation: reproach",
+      "ru": "Предложение: «Ты мог бы хотя бы попытаться меня понять.» Интонация: упрёк"
+    }
+  },
+  {
+    "id": 165,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я зробив це не для слави, а тому що це було правильно.» Інтонація: благородство",
+      "en": "Sentence: “I didn’t do it for glory — I did it because it was right.” Intonation: nobility",
+      "ru": "Предложение: «Я сделал это не ради славы, а потому что это было правильно.» Интонация: благородство"
+    }
+  },
+  {
+    "id": 166,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Кожне твоє слово я носив у серці, як оберіг.» Інтонація: щемлива ніжність",
+      "en": "Sentence: “I carried every one of your words in my heart like a charm.” Intonation: aching tenderness",
+      "ru": "Предложение: «Каждое твоё слово я носил в сердце, как оберег.» Интонация: щемящая нежность"
+    }
+  },
+  {
+    "id": 167,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Цей вибір змінив усе — і я досі відчуваю його наслідки.» Інтонація: глибоке усвідомлення",
+      "en": "Sentence: “That choice changed everything — and I still feel the consequences.” Intonation: deep realization",
+      "ru": "Предложение: «Этот выбор изменил всё — и я до сих пор ощущаю его последствия.» Интонация: глубокое осознание"
+    }
+  },
+  {
+    "id": 168,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені не потрібно було багато, тільки щоб ти був поруч.» Інтонація: туга",
+      "en": "Sentence: “I didn’t need much, just for you to be near.” Intonation: longing",
+      "ru": "Предложение: «Мне не нужно было многого, только чтобы ты был рядом.» Интонация: тоска"
+    }
+  },
+  {
+    "id": 169,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це був лише початок того, що ми ще можемо зробити.» Інтонація: ентузіазм",
+      "en": "Sentence: “This was just the beginning of what we can still do.” Intonation: enthusiasm",
+      "ru": "Предложение: «Это было только начало того, что мы ещё можем сделать.» Интонация: энтузиазм"
+    }
+  },
+  {
+    "id": 170,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Можливо, інші й не зрозуміють, але для мене це — все.» Інтонація: відданість",
+      "en": "Sentence: “Maybe others won’t understand, but to me, this is everything.” Intonation: devotion",
+      "ru": "Предложение: «Может, другие и не поймут, но для меня это — всё.» Интонация: преданность"
+    }
+  },
+  {
+    "id": 171,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Якби я мав ще один шанс, я б усе зробив інакше.» Інтонація: сумна",
+      "en": "Sentence: “If I had one more chance, I’d do everything differently.” Intonation: sad",
+      "ru": "Предложение: «Если бы у меня был ещё один шанс, я бы сделал всё по-другому.» Интонация: грустная"
+    }
+  },
+  {
+    "id": 172,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ми стояли на краю світу, не знаючи, що буде далі.» Інтонація: тривожна",
+      "en": "Sentence: “We stood at the edge of the world, not knowing what would come next.” Intonation: anxious",
+      "ru": "Предложение: «Мы стояли на краю мира, не зная, что будет дальше.» Интонация: тревожная"
+    }
+  },
+  {
+    "id": 173,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть якщо все розсиплеться, я знову зберу нас докупи.» Інтонація: рішуча",
+      "en": "Sentence: “Even if everything falls apart, I’ll piece us back together.” Intonation: determined",
+      "ru": "Предложение: «Даже если всё развалится, я соберу нас заново.» Интонация: решительная"
+    }
+  },
+  {
+    "id": 174,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Серед тиші я вперше почув свій справжній голос.» Інтонація: замислена",
+      "en": "Sentence: “In the silence, I heard my true voice for the first time.” Intonation: thoughtful",
+      "ru": "Предложение: «В тишине я впервые услышал свой настоящий голос.» Интонация: задумчивая"
+    }
+  },
+  {
+    "id": 175,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти сміявся, коли я плакав, і це боліло найбільше.» Інтонація: стримано образлива",
+      "en": "Sentence: “You laughed when I cried, and that hurt the most.” Intonation: restrained hurt",
+      "ru": "Предложение: «Ты смеялся, когда я плакал, и это было больнее всего.» Интонация: сдержанная обида"
+    }
+  },
+  {
+    "id": 176,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «У цьому місті кожен камінь пам’ятає те, що ми хотіли забути.» Інтонація: меланхолійна",
+      "en": "Sentence: “In this city, every stone remembers what we tried to forget.” Intonation: melancholic",
+      "ru": "Предложение: «В этом городе каждый камень помнит то, что мы пытались забыть.» Интонация: меланхоличная"
+    }
+  },
+  {
+    "id": 177,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я знав, що цей день настане, але сподівався, що помилявся.» Інтонація: фаталістична",
+      "en": "Sentence: “I knew this day would come, but I hoped I was wrong.” Intonation: fatalistic",
+      "ru": "Предложение: «Я знал, что этот день настанет, но надеялся, что ошибался.» Интонация: фаталистичная"
+    }
+  },
+  {
+    "id": 178,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Що б не сталося завтра, я все одно залишусь поруч.» Інтонація: заспокійлива",
+      "en": "Sentence: “No matter what happens tomorrow, I’ll still be here.” Intonation: reassuring",
+      "ru": "Предложение: «Что бы ни случилось завтра, я всё равно буду рядом.» Интонация: успокаивающая"
+    }
+  },
+  {
+    "id": 179,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Так, я посміхаюсь, але це не означає, що мені весело.» Інтонація: іронічна",
+      "en": "Sentence: “Yes, I’m smiling, but that doesn’t mean I’m happy.” Intonation: ironic",
+      "ru": "Предложение: «Да, я улыбаюсь, но это не значит, что мне весело.» Интонация: ироничная"
+    }
+  },
+  {
+    "id": 180,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я знову загубився у знайомих місцях — як таке можливо?» Інтонація: розгублена",
+      "en": "Sentence: “I got lost again in familiar places — how is that even possible?” Intonation: confused",
+      "ru": "Предложение: «Я снова потерялся в знакомых местах — как такое возможно?» Интонация: растерянная"
+    }
+  },
+  {
+    "id": 181,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Іноді найголосніше кричить саме тиша, яка залишається після сварки.» Інтонація: меланхолійна",
+      "en": "Sentence: “Sometimes the loudest scream is the silence that follows a fight.” Intonation: melancholic",
+      "ru": "Предложение: «Иногда громче всего кричит тишина после ссоры.» Интонация: меланхоличная"
+    }
+  },
+  {
+    "id": 182,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Він зайшов у кімнату, ніби щось трагічне сталося, але всі мовчали.» Інтонація: напружена",
+      "en": "Sentence: “He entered the room as if something tragic had happened, but everyone remained silent.” Intonation: tense",
+      "ru": "Предложение: «Он вошёл в комнату, как будто случилось что-то трагичное, но все молчали.» Интонация: напряжённая"
+    }
+  },
+  {
+    "id": 183,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть з усім досвідом, я не готовий до цього.» Інтонація: розгублена",
+      "en": "Sentence: “Even with all my experience, I’m not ready for this.” Intonation: confused",
+      "ru": "Предложение: «Даже с моим опытом, я к этому не готов.» Интонация: растерянная"
+    }
+  },
+  {
+    "id": 184,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я чекав цього моменту все життя, але тепер не знаю, що сказати.» Інтонація: розчарована",
+      "en": "Sentence: “I’ve waited my whole life for this moment, but now I don’t know what to say.” Intonation: disappointed",
+      "ru": "Предложение: «Я ждал этого момента всю жизнь, но теперь не знаю, что сказать.» Интонация: разочарованная"
+    }
+  },
+  {
+    "id": 185,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це не просто слова — це обіцянка, яку я ніколи не зламаю.» Інтонація: урочиста",
+      "en": "Sentence: “These aren’t just words — this is a promise I will never break.” Intonation: solemn",
+      "ru": "Предложение: «Это не просто слова — это обещание, которое я никогда не нарушу.» Интонация: торжественная"
+    }
+  },
+  {
+    "id": 186,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Часом здається, що навіть зірки забули про мене.» Інтонація: сумна",
+      "en": "Sentence: “Sometimes it feels like even the stars have forgotten me.” Intonation: sad",
+      "ru": "Предложение: «Иногда кажется, что даже звёзды забыли обо мне.» Интонация: грустная"
+    }
+  },
+  {
+    "id": 187,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я вже чув це сто разів, і кожного разу стає все смішніше.» Інтонація: саркастична",
+      "en": "Sentence: “I’ve heard this a hundred times, and it just keeps getting funnier.” Intonation: sarcastic",
+      "ru": "Предложение: «Я слышал это уже сто раз, и каждый раз становится всё смешнее.» Интонация: саркастическая"
+    }
+  },
+  {
+    "id": 188,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це останній раз, коли я йду тобі назустріч.» Інтонація: втомлена",
+      "en": "Sentence: “This is the last time I’m meeting you halfway.” Intonation: tired",
+      "ru": "Предложение: «Это последний раз, когда я иду тебе навстречу.» Интонация: усталая"
+    }
+  },
+  {
+    "id": 189,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Коли я побачив її погляд, я зрозумів усе без слів.» Інтонація: захоплена",
+      "en": "Sentence: “When I saw her gaze, I understood everything without a word.” Intonation: admiring",
+      "ru": "Предложение: «Когда я увидел её взгляд, я понял всё без слов.» Интонация: восхищённая"
+    }
+  },
+  {
+    "id": 190,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це більше, ніж просто гра — це мій єдиний шанс.» Інтонація: драматична",
+      "en": "Sentence: “This is more than just a game — this is my only chance.” Intonation: dramatic",
+      "ru": "Предложение: «Это больше, чем просто игра — это мой единственный шанс.» Интонация: драматическая"
+    }
+  },
+  {
+    "id": 191,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Не хвилюйся, все буде добре, я це відчуваю.» Інтонація: заспокійлива",
+      "en": "Sentence: “Don’t worry, everything will be fine, I can feel it.” Intonation: reassuring",
+      "ru": "Предложение: «Не волнуйся, всё будет хорошо, я это чувствую.» Интонация: успокаивающая"
+    }
+  },
+  {
+    "id": 192,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «О, ти знову тут? Я вже й не сподівався.» Інтонація: іронічна",
+      "en": "Sentence: “Oh, you’re here again? I wasn’t expecting that.” Intonation: ironic",
+      "ru": "Предложение: «О, ты снова здесь? Я и не надеялся.» Интонация: ироничная"
+    }
+  },
+  {
+    "id": 193,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ще один день, ще один шанс щось змінити.» Інтонація: мотивуюча",
+      "en": "Sentence: “Another day, another chance to change something.” Intonation: motivational",
+      "ru": "Предложение: «Ещё один день, ещё один шанс что-то изменить.» Интонация: мотивирующая"
+    }
+  },
+  {
+    "id": 194,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені не треба нічого говорити — усе вже зрозуміло.» Інтонація: холодна",
+      "en": "Sentence: “I don’t need to say anything — it’s already clear.” Intonation: cold",
+      "ru": "Предложение: «Мне не нужно ничего говорить — всё и так ясно.» Интонация: холодная"
+    }
+  },
+  {
+    "id": 195,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Навіть після всього, я все ще вірю в тебе.» Інтонація: ніжна",
+      "en": "Sentence: “Even after everything, I still believe in you.” Intonation: tender",
+      "ru": "Предложение: «Даже после всего, я всё ещё верю в тебя.» Интонация: нежная"
+    }
+  },
+  {
+    "id": 196,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Здається, хтось тут грає не за правилами.» Інтонація: підозріла",
+      "en": "Sentence: “Seems like someone here isn’t playing by the rules.” Intonation: suspicious",
+      "ru": "Предложение: «Кажется, кто-то здесь играет не по правилам.» Интонация: подозрительная"
+    }
+  },
+  {
+    "id": 197,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я довірив тобі все, а ти просто пішов.» Інтонація: спустошена",
+      "en": "Sentence: “I trusted you with everything, and you just left.” Intonation: devastated",
+      "ru": "Предложение: «Я доверил тебе всё, а ты просто ушёл.» Интонация: опустошённая"
+    }
+  },
+  {
+    "id": 198,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Нарешті ми знову разом, і це все, що має значення.» Інтонація: щаслива",
+      "en": "Sentence: “We’re finally together again, and that’s all that matters.” Intonation: joyful",
+      "ru": "Предложение: «Наконец-то мы снова вместе, и это всё, что важно.» Интонация: радостная"
+    }
+  },
+  {
+    "id": 199,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я попереджав тебе, але ти не послухав.» Інтонація: докірлива",
+      "en": "Sentence: “I warned you, but you didn’t listen.” Intonation: reproachful",
+      "ru": "Предложение: «Я тебя предупреждал, но ты не послушал.» Интонация: укоряющая"
+    }
+  },
+  {
+    "id": 200,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Дивись уважно, бо це трапляється лише раз у житті.» Інтонація: урочиста",
+      "en": "Sentence: “Watch closely, because this happens only once in a lifetime.” Intonation: ceremonial",
+      "ru": "Предложение: «Смотри внимательно, такое случается только раз в жизни.» Интонация: торжественная"
+    }
+  },
+  {
+    "id": 201,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти міг просто сказати правду, замість того щоб ховатися за брехнею.» Інтонація: розчарована",
+      "en": "Sentence: “You could’ve just told the truth instead of hiding behind lies.” Intonation: disappointed",
+      "ru": "Предложение: «Ты мог просто сказать правду, а не прятаться за ложью.» Интонация: разочарованная"
+    }
+  },
+  {
+    "id": 202,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Мені байдуже, що ти про мене думаєш, я роблю це для себе.» Інтонація: незалежна",
+      "en": "Sentence: “I don’t care what you think of me, I’m doing this for myself.” Intonation: independent",
+      "ru": "Предложение: «Мне всё равно, что ты обо мне думаешь, я делаю это для себя.» Интонация: независимая"
+    }
+  },
+  {
+    "id": 203,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я завжди знав, що цей день прийде, просто не думав, що він буде сьогодні.» Інтонація: задумлива",
+      "en": "Sentence: “I always knew this day would come, just didn’t think it’d be today.” Intonation: reflective",
+      "ru": "Предложение: «Я всегда знал, что этот день наступит, просто не думал, что это будет сегодня.» Интонация: задумчивая"
+    }
+  },
+  {
+    "id": 204,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ось воно — мить, заради якої варто було боротися.» Інтонація: тріумфальна",
+      "en": "Sentence: “Here it is — the moment worth fighting for.” Intonation: triumphant",
+      "ru": "Предложение: «Вот она — мгновение, ради которого стоило бороться.» Интонация: торжествующая"
+    }
+  },
+  {
+    "id": 205,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Справжня магія — у звичайних речах, якщо вміти дивитися.» Інтонація: чарівна",
+      "en": "Sentence: “Real magic is in ordinary things, if you know how to look.” Intonation: magical",
+      "ru": "Предложение: «Истинная магия — в обычных вещах, если уметь смотреть.» Интонация: волшебная"
+    }
+  },
+  {
+    "id": 206,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я втомився бути тим, ким усі хочуть мене бачити.» Інтонація: втомлена",
+      "en": "Sentence: “I’m tired of being who everyone wants me to be.” Intonation: exhausted",
+      "ru": "Предложение: «Я устал быть тем, кем все хотят меня видеть.» Интонация: уставшая"
+    }
+  },
+  {
+    "id": 207,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Усе було б інакше, якби ти тоді не пішов.» Інтонація: болісна",
+      "en": "Sentence: “Everything would’ve been different if you hadn’t left.” Intonation: painful",
+      "ru": "Предложение: «Всё было бы иначе, если бы ты тогда не ушёл.» Интонация: болезненная"
+    }
+  },
+  {
+    "id": 208,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я не жартую — це може змінити наше життя назавжди.» Інтонація: серйозна",
+      "en": "Sentence: “I’m not joking — this could change our lives forever.” Intonation: serious",
+      "ru": "Предложение: «Я не шучу — это может изменить нашу жизнь навсегда.» Интонация: серьёзная"
+    }
+  },
+  {
+    "id": 209,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Сонце ще не зійшло, але я вже знаю — це буде великий день.» Інтонація: оптимістична",
+      "en": "Sentence: “The sun hasn’t risen yet, but I already know — this will be a great day.” Intonation: optimistic",
+      "ru": "Предложение: «Солнце ещё не взошло, но я уже знаю — это будет великий день.» Интонация: оптимистичная"
+    }
+  },
+  {
+    "id": 210,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «А тепер уяви, що все це лише сон.» Інтонація: загадкова",
+      "en": "Sentence: “Now imagine that all of this is just a dream.” Intonation: mysterious",
+      "ru": "Предложение: «А теперь представь, что всё это — просто сон.» Интонация: загадочная"
+    }
+  },
+  {
+    "id": 211,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Не кожен день ми приймаємо рішення, що змінюють усе.» Інтонація: урочиста",
+      "en": "Sentence: “It’s not every day we make decisions that change everything.” Intonation: ceremonial",
+      "ru": "Предложение: «Не каждый день мы принимаем решения, меняющие всё.» Интонация: торжественная"
+    }
+  },
+  {
+    "id": 212,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Я більше не боюся, бо знаю, хто я є.» Інтонація: впевнена",
+      "en": "Sentence: “I’m no longer afraid, because I know who I am.” Intonation: confident",
+      "ru": "Предложение: «Я больше не боюсь, потому что знаю, кто я есть.» Интонация: уверенная"
+    }
+  },
+  {
+    "id": 213,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ну добре, покажи, на що ти здатен.» Інтонація: виклична",
+      "en": "Sentence: “Alright then, show me what you’ve got.” Intonation: challenging",
+      "ru": "Предложение: «Ну хорошо, покажи, на что ты способен.» Интонация: вызывающая"
+    }
+  },
+  {
+    "id": 214,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Це лише початок, і ми ще побачимо, чим усе закінчиться.» Інтонація: інтригуюча",
+      "en": "Sentence: “This is just the beginning, and we’ll see how it all ends.” Intonation: intriguing",
+      "ru": "Предложение: «Это только начало, и мы ещё увидим, чем всё закончится.» Интонация: интригующая"
+    }
+  },
+  {
+    "id": 215,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Іноді треба втратити все, щоб знайти себе.» Інтонація: глибока",
+      "en": "Sentence: “Sometimes you have to lose everything to find yourself.” Intonation: profound",
+      "ru": "Предложение: «Иногда нужно потерять всё, чтобы найти себя.» Интонация: глубокая"
+    }
+  },
+  {
+    "id": 216,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Не вір очам своїм — це справді сталося!» Інтонація: здивована",
+      "en": "Sentence: “Don’t trust your eyes — it really happened!” Intonation: surprised",
+      "ru": "Предложение: «Не верь своим глазам — это действительно случилось!» Интонация: удивлённая"
+    }
+  },
+  {
+    "id": 217,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Цей спогад залишиться зі мною назавжди.» Інтонація: сентиментальна",
+      "en": "Sentence: “This memory will stay with me forever.” Intonation: sentimental",
+      "ru": "Предложение: «Это воспоминание останется со мной навсегда.» Интонация: сентиментальная"
+    }
+  },
+  {
+    "id": 218,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Ти справді думаєш, що можеш мене здивувати після всього?» Інтонація: скептична",
+      "en": "Sentence: “You really think you can surprise me after all this?” Intonation: skeptical",
+      "ru": "Предложение: «Ты правда думаешь, что можешь меня удивить после всего этого?» Интонация: скептическая"
+    }
+  },
+  {
+    "id": 219,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Не варто чекати дива, якщо сам не готовий діяти.» Інтонація: повчальна",
+      "en": "Sentence: “Don’t expect a miracle if you’re not ready to act.” Intonation: instructive",
+      "ru": "Предложение: «Не жди чуда, если сам не готов действовать.» Интонация: поучительная"
+    }
+  },
+  {
+    "id": 220,
+    "sentence_type": "INTONATION_MASTER",
+    "sentence": {
+      "ua": "Речення: «Тиша навколо стала гучнішою за будь-який крик.» Інтонація: тривожна",
+      "en": "Sentence: “The silence around became louder than any scream.” Intonation: anxious",
+      "ru": "Предложение: «Тишина вокруг стала громче любого крика.» Интонация: тревожная"
+    }
+  }
+]

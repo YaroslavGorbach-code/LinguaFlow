@@ -1,0 +1,1712 @@
+[
+  {
+    "id": 1,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти вкрав голос у телеведучого.",
+      "en": "You stole the TV host's voice.",
+      "ru": "Ты украл голос у телеведущего."
+    }
+  },
+  {
+    "id": 2,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти підмінив усі кавуни на гарбузи.",
+      "en": "You swapped all the watermelons for pumpkins.",
+      "ru": "Ты поменял все арбузы на тыквы."
+    }
+  },
+  {
+    "id": 3,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив метро їхати задом наперед.",
+      "en": "You made the subway go backward.",
+      "ru": "Ты заставил метро ехать задом наперёд."
+    }
+  },
+  {
+    "id": 4,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив кактуси співати колядки.",
+      "en": "You taught cacti to sing carols.",
+      "ru": "Ты научил кактусы петь колядки."
+    }
+  },
+  {
+    "id": 5,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти вимкнув сонце на обідню перерву.",
+      "en": "You turned off the sun for lunch break.",
+      "ru": "Ты выключил солнце на обеденный перерыв."
+    }
+  },
+  {
+    "id": 6,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти переписав алфавіт навиворіт.",
+      "en": "You rewrote the alphabet backwards.",
+      "ru": "Ты переписал алфавит наоборот."
+    }
+  },
+  {
+    "id": 7,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти збудував вежу з млинців до Місяця.",
+      "en": "You built a pancake tower to the Moon.",
+      "ru": "Ты построил башню из блинов до Луны."
+    }
+  },
+  {
+    "id": 8,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приручив грім і навчив його репу.",
+      "en": "You tamed thunder and taught it to rap.",
+      "ru": "Ты приручил гром и научил его читать рэп."
+    }
+  },
+  {
+    "id": 9,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив зебру пішохідним інструктором.",
+      "en": "You made a zebra a crosswalk instructor.",
+      "ru": "Ты сделал зебру инструктором по переходам."
+    }
+  },
+  {
+    "id": 10,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти поселив русалку в басейні сусіда.",
+      "en": "You moved a mermaid into the neighbor's pool.",
+      "ru": "Ты поселил русалку в бассейне соседа."
+    }
+  },
+  {
+    "id": 11,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти позичив у бібліотеці мрію дракона.",
+      "en": "You borrowed a dragon's dream from the library.",
+      "ru": "Ты взял в библиотеке мечту дракона."
+    }
+  },
+  {
+    "id": 12,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти перетворив чайник на диригента.",
+      "en": "You turned a kettle into a conductor.",
+      "ru": "Ты превратил чайник в дирижёра."
+    }
+  },
+  {
+    "id": 13,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти переконав ліфт стати поетом.",
+      "en": "You convinced the elevator to become a poet.",
+      "ru": "Ты убедил лифт стать поэтом."
+    }
+  },
+  {
+    "id": 14,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував бал для мишей у театрі.",
+      "en": "You threw a ball for mice in the theater.",
+      "ru": "Ты устроил бал для мышей в театре."
+    }
+  },
+  {
+    "id": 15,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запакував бурю в подарунковий папір.",
+      "en": "You wrapped a storm in gift paper.",
+      "ru": "Ты завернул бурю в подарочную бумагу."
+    }
+  },
+  {
+    "id": 16,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив хмари грати в шахи.",
+      "en": "You made the clouds play chess.",
+      "ru": "Ты заставил облака играть в шахматы."
+    }
+  },
+  {
+    "id": 17,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти перетворив каву на пінгвіна.",
+      "en": "You turned coffee into a penguin.",
+      "ru": "Ты превратил кофе в пингвина."
+    }
+  },
+  {
+    "id": 18,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив місяць на вечірку без дозволу.",
+      "en": "You invited the moon to a party without permission.",
+      "ru": "Ты пригласил Луну на вечеринку без разрешения."
+    }
+  },
+  {
+    "id": 19,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив телевізор танцювати сальсу.",
+      "en": "You taught the TV to dance salsa.",
+      "ru": "Ты научил телевизор танцевать сальсу."
+    }
+  },
+  {
+    "id": 20,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти розмалював небо кольоровою крейдою.",
+      "en": "You drew on the sky with colored chalk.",
+      "ru": "Ты разрисовал небо цветным мелом."
+    }
+  },
+  {
+    "id": 21,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив птахів співати реп замість щебету.",
+      "en": "You made the birds rap instead of chirping.",
+      "ru": "Ты заставил птиц читать рэп вместо щебетания."
+    }
+  },
+  {
+    "id": 22,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти пересадив веселку в інший район.",
+      "en": "You relocated the rainbow to another neighborhood.",
+      "ru": "Ты пересадил радугу в другой район."
+    }
+  },
+  {
+    "id": 23,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив годинник бігати марафон.",
+      "en": "You made the clock run a marathon.",
+      "ru": "Ты заставил часы бежать марафон."
+    }
+  },
+  {
+    "id": 24,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти відкрив кав’ярню для привидів.",
+      "en": "You opened a coffee shop for ghosts.",
+      "ru": "Ты открыл кофейню для призраков."
+    }
+  },
+  {
+    "id": 25,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти перетворив ліфт на портал у казку.",
+      "en": "You turned the elevator into a fairy tale portal.",
+      "ru": "Ты превратил лифт в портал в сказку."
+    }
+  },
+  {
+    "id": 26,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти переплутав день і ніч на цілий тиждень.",
+      "en": "You mixed up day and night for a whole week.",
+      "ru": "Ты перепутал день и ночь на целую неделю."
+    }
+  },
+  {
+    "id": 27,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти продав сніг пінгвінам на Антарктиді.",
+      "en": "You sold snow to penguins in Antarctica.",
+      "ru": "Ты продал снег пингвинам в Антарктиде."
+    }
+  },
+  {
+    "id": 28,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив вітер закрутити танець вальсу.",
+      "en": "You made the wind perform a waltz.",
+      "ru": "Ты заставил ветер танцевать вальс."
+    }
+  },
+  {
+    "id": 29,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив торнадо на пікнік.",
+      "en": "You invited a tornado to a picnic.",
+      "ru": "Ты пригласил торнадо на пикник."
+    }
+  },
+  {
+    "id": 30,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив лампу писати вірші.",
+      "en": "You made a lamp write poetry.",
+      "ru": "Ты заставил лампу писать стихи."
+    }
+  },
+  {
+    "id": 31,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти обміняв зорі на блискітки.",
+      "en": "You traded stars for glitter.",
+      "ru": "Ты обменял звёзды на блёстки."
+    }
+  },
+  {
+    "id": 32,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив холодильник співати оперу.",
+      "en": "You taught the fridge to sing opera.",
+      "ru": "Ты научил холодильник петь оперу."
+    }
+  },
+  {
+    "id": 33,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти перетворив пісочний годинник на акваріум.",
+      "en": "You turned the hourglass into an aquarium.",
+      "ru": "Ты превратил песочные часы в аквариум."
+    }
+  },
+  {
+    "id": 34,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти підмінив усі дзеркала на портали.",
+      "en": "You swapped all mirrors for portals.",
+      "ru": "Ты поменял все зеркала на порталы."
+    }
+  },
+  {
+    "id": 35,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив веселку платною.",
+      "en": "You made the rainbow charge a fee.",
+      "ru": "Ты сделал радугу платной."
+    }
+  },
+  {
+    "id": 36,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зіпсував сигнал світлофора сміхом.",
+      "en": "You broke the traffic light with laughter.",
+      "ru": "Ты сломал светофор смехом."
+    }
+  },
+  {
+    "id": 37,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти заховав місяць у морозильник.",
+      "en": "You hid the moon in the freezer.",
+      "ru": "Ты спрятал Луну в морозилке."
+    }
+  },
+  {
+    "id": 38,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив пальму танцювати хіп-хоп.",
+      "en": "You made a palm tree dance hip-hop.",
+      "ru": "Ты заставил пальму танцевать хип-хоп."
+    }
+  },
+  {
+    "id": 39,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти заселив мікрохвильовку інопланетянами.",
+      "en": "You housed aliens in the microwave.",
+      "ru": "Ты заселил микроволновку инопланетянами."
+    }
+  },
+  {
+    "id": 40,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив із хмар морозиво.",
+      "en": "You turned the clouds into ice cream.",
+      "ru": "Ты превратил облака в мороженое."
+    }
+  },
+  {
+    "id": 41,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував дискотеку у вулкані.",
+      "en": "You hosted a disco inside a volcano.",
+      "ru": "Ты устроил дискотеку в вулкане."
+    }
+  },
+  {
+    "id": 42,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив дощ розповідати анекдоти.",
+      "en": "You made the rain tell jokes.",
+      "ru": "Ты заставил дождь рассказывать анекдоты."
+    }
+  },
+  {
+    "id": 43,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти посадив кактуси на карусель.",
+      "en": "You put cacti on a carousel.",
+      "ru": "Ты посадил кактусы на карусель."
+    }
+  },
+  {
+    "id": 44,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти дав холодильнику права водія.",
+      "en": "You gave the fridge a driver's license.",
+      "ru": "Ты выдал холодильнику водительские права."
+    }
+  },
+  {
+    "id": 45,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти намалював світанок раніше графіку.",
+      "en": "You painted the sunrise ahead of schedule.",
+      "ru": "Ты нарисовал рассвет раньше графика."
+    }
+  },
+  {
+    "id": 46,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти загорнув хмари в ковдру.",
+      "en": "You tucked the clouds into a blanket.",
+      "ru": "Ты закутал облака в одеяло."
+    }
+  },
+  {
+    "id": 47,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив велосипед лебедем.",
+      "en": "You turned a bicycle into a swan.",
+      "ru": "Ты превратил велосипед в лебедя."
+    }
+  },
+  {
+    "id": 48,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зарядив ноутбук бананом.",
+      "en": "You charged your laptop with a banana.",
+      "ru": "Ты зарядил ноутбук бананом."
+    }
+  },
+  {
+    "id": 49,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти оживив статую і навчив її плавати.",
+      "en": "You brought a statue to life and taught it to swim.",
+      "ru": "Ты оживил статую и научил её плавать."
+    }
+  },
+  {
+    "id": 50,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти вселив душу в парасольку.",
+      "en": "You gave a soul to an umbrella.",
+      "ru": "Ты вселил душу в зонтик."
+    }
+  },
+  {
+    "id": 51,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив кішку користуватись банкоматом.",
+      "en": "You taught a cat how to use an ATM.",
+      "ru": "Ты научил кошку пользоваться банкоматом."
+    }
+  },
+  {
+    "id": 52,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував модний показ для комарів.",
+      "en": "You organized a fashion show for mosquitoes.",
+      "ru": "Ты устроил показ мод для комаров."
+    }
+  },
+  {
+    "id": 53,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив дерева міняти листя щогодини.",
+      "en": "You made trees change leaves every hour.",
+      "ru": "Ты заставил деревья менять листья каждый час."
+    }
+  },
+  {
+    "id": 54,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти прикрасив хмари новорічними гірляндами.",
+      "en": "You decorated the clouds with Christmas lights.",
+      "ru": "Ты украсил облака новогодними гирляндами."
+    }
+  },
+  {
+    "id": 55,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив риб плавати задом наперед.",
+      "en": "You made fish swim backwards.",
+      "ru": "Ты заставил рыб плавать задом наперёд."
+    }
+  },
+  {
+    "id": 56,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти збудував гойдалку на вершині хмари.",
+      "en": "You built a swing on top of a cloud.",
+      "ru": "Ты построил качели на вершине облака."
+    }
+  },
+  {
+    "id": 57,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти записав симфонію для каструль.",
+      "en": "You composed a symphony for pots and pans.",
+      "ru": "Ты написал симфонию для кастрюль."
+    }
+  },
+  {
+    "id": 58,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запустив шоу талантів серед кактусів.",
+      "en": "You hosted a talent show for cacti.",
+      "ru": "Ты устроил шоу талантов для кактусов."
+    }
+  },
+  {
+    "id": 59,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив вітрогенератор фанатом рок-н-ролу.",
+      "en": "You turned a wind turbine into a rock 'n' roll fan.",
+      "ru": "Ты сделал ветряк фанатом рок-н-ролла."
+    }
+  },
+  {
+    "id": 60,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти переконав сніжинку, що вона — зірка шоу.",
+      "en": "You convinced a snowflake it’s a show star.",
+      "ru": "Ты убедил снежинку, что она звезда шоу."
+    }
+  },
+  {
+    "id": 61,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував вечірку для носорогів у бібліотеці.",
+      "en": "You threw a rhino party in the library.",
+      "ru": "Ты устроил вечеринку носорогов в библиотеке."
+    }
+  },
+  {
+    "id": 62,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив морозиво не танути.",
+      "en": "You made ice cream stop melting.",
+      "ru": "Ты заставил мороженое не таять."
+    }
+  },
+  {
+    "id": 63,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив равлика грати на саксофоні.",
+      "en": "You taught a snail to play saxophone.",
+      "ru": "Ты научил улитку играть на саксофоне."
+    }
+  },
+  {
+    "id": 64,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запустив салют із пелюсток троянд.",
+      "en": "You launched fireworks made of rose petals.",
+      "ru": "Ты устроил салют из лепестков роз."
+    }
+  },
+  {
+    "id": 65,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив тостер цитувати Шекспіра.",
+      "en": "You taught a toaster to quote Shakespeare.",
+      "ru": "Ты научил тостер цитировать Шекспира."
+    }
+  },
+  {
+    "id": 66,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти посадив килим на авіарейси.",
+      "en": "You booked flights for your carpet.",
+      "ru": "Ты купил билеты на самолёт для ковра."
+    }
+  },
+  {
+    "id": 67,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налякав зірку, і вона впала.",
+      "en": "You scared a star and it fell.",
+      "ru": "Ты напугал звезду, и она упала."
+    }
+  },
+  {
+    "id": 68,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував грозу зі сміху.",
+      "en": "You caused a thunderstorm with laughter.",
+      "ru": "Ты устроил грозу из смеха."
+    }
+  },
+  {
+    "id": 69,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив вікна говорити по-французьки.",
+      "en": "You taught windows to speak French.",
+      "ru": "Ты научил окна говорить по-французски."
+    }
+  },
+  {
+    "id": 70,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запакував веселку в коробку з-під взуття.",
+      "en": "You packed a rainbow into a shoebox.",
+      "ru": "Ты упаковал радугу в коробку из-под обуви."
+    }
+  },
+  {
+    "id": 71,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив чайник закипати від сміху.",
+      "en": "You made a kettle boil with laughter.",
+      "ru": "Ты заставил чайник кипеть от смеха."
+    }
+  },
+  {
+    "id": 72,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти натренував хмару танцювати балет.",
+      "en": "You trained a cloud to dance ballet.",
+      "ru": "Ты натренировал облако танцевать балет."
+    }
+  },
+  {
+    "id": 73,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив із торта дирижабль.",
+      "en": "You made a blimp out of a cake.",
+      "ru": "Ты сделал дирижабль из торта."
+    }
+  },
+  {
+    "id": 74,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти надув повітряну кулю й відправив її у космос.",
+      "en": "You inflated a balloon and sent it to space.",
+      "ru": "Ты надул шарик и отправил его в космос."
+    }
+  },
+  {
+    "id": 75,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти дав фламінго мікрофон і вони влаштували караоке.",
+      "en": "You gave flamingos a mic and they started karaoke.",
+      "ru": "Ты дал фламинго микрофон, и они устроили караоке."
+    }
+  },
+  {
+    "id": 76,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти підписав метеликів на курси з бойових мистецтв.",
+      "en": "You signed up butterflies for martial arts classes.",
+      "ru": "Ты записал бабочек на курсы боевых искусств."
+    }
+  },
+  {
+    "id": 77,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змішав пісок і зірки у банці.",
+      "en": "You mixed sand and stars in a jar.",
+      "ru": "Ты смешал песок и звёзды в банке."
+    }
+  },
+  {
+    "id": 78,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти намалював маршрутку на небі.",
+      "en": "You drew a minibus in the sky.",
+      "ru": "Ты нарисовал маршрутку в небе."
+    }
+  },
+  {
+    "id": 79,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив річку закрутитись як спіралька.",
+      "en": "You made the river swirl like a spiral.",
+      "ru": "Ты заставил реку закрутиться как спираль."
+    }
+  },
+  {
+    "id": 80,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приклеїв черевики до хмаринки.",
+      "en": "You glued shoes to a fluffy cloud.",
+      "ru": "Ты приклеил ботинки к облачку."
+    }
+  },
+  {
+    "id": 81,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приручив комету і зробив з неї собаку.",
+      "en": "You tamed a comet and turned it into a dog.",
+      "ru": "Ты приручил комету и сделал из неё собаку."
+    }
+  },
+  {
+    "id": 82,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував дискотеку для пінгвінів на Евересті.",
+      "en": "You threw a disco party for penguins on Everest.",
+      "ru": "Ты устроил дискотеку для пингвинов на Эвересте."
+    }
+  },
+  {
+    "id": 83,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти поміняв всі знаки стоп на знаки обіймів.",
+      "en": "You replaced all stop signs with hug signs.",
+      "ru": "Ты заменил все знаки 'стоп' на знаки 'объятия'."
+    }
+  },
+  {
+    "id": 84,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти розбудив вулкан своїм хропінням.",
+      "en": "You woke up a volcano with your snoring.",
+      "ru": "Ты разбудил вулкан своим храпом."
+    }
+  },
+  {
+    "id": 85,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти обміняв сонце на ліхтарик.",
+      "en": "You traded the sun for a flashlight.",
+      "ru": "Ты обменял солнце на фонарик."
+    }
+  },
+  {
+    "id": 86,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти позичив веселку і не повернув.",
+      "en": "You borrowed a rainbow and didn’t return it.",
+      "ru": "Ты одолжил радугу и не вернул."
+    }
+  },
+  {
+    "id": 87,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив кактусів танцювати сальсу.",
+      "en": "You taught cactuses to dance salsa.",
+      "ru": "Ты научил кактусы танцевать сальсу."
+    }
+  },
+  {
+    "id": 88,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти перемалював Місяць у синій колір.",
+      "en": "You repainted the Moon blue.",
+      "ru": "Ты перекрасил Луну в синий цвет."
+    }
+  },
+  {
+    "id": 89,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти обернув Ейфелеву вежу в ковдру.",
+      "en": "You wrapped the Eiffel Tower in a blanket.",
+      "ru": "Ты завернул Эйфелеву башню в одеяло."
+    }
+  },
+  {
+    "id": 90,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти загубив зірку і намагаєшся знайти її під ліжком.",
+      "en": "You lost a star and are looking for it under your bed.",
+      "ru": "Ты потерял звезду и ищешь её под кроватью."
+    }
+  },
+  {
+    "id": 91,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти натягнув павутиння між двома хмарами.",
+      "en": "You stretched spiderwebs between two clouds.",
+      "ru": "Ты натянул паутину между двумя облаками."
+    }
+  },
+  {
+    "id": 92,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налив чай у кратер вулкана.",
+      "en": "You poured tea into a volcano crater.",
+      "ru": "Ты налил чай в кратер вулкана."
+    }
+  },
+  {
+    "id": 93,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти виростив дерева з крил.",
+      "en": "You grew trees out of wings.",
+      "ru": "Ты вырастил деревья из крыльев."
+    }
+  },
+  {
+    "id": 94,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти сплів шапку з хмар.",
+      "en": "You knitted a hat from clouds.",
+      "ru": "Ты связал шапку из облаков."
+    }
+  },
+  {
+    "id": 95,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приручив грозу і назвав її Борщ.",
+      "en": "You tamed a thunderstorm and named it Borshch.",
+      "ru": "Ты приручил грозу и назвал её Борщ."
+    }
+  },
+  {
+    "id": 96,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти всиновив метеорит.",
+      "en": "You adopted a meteorite.",
+      "ru": "Ты усыновил метеорит."
+    }
+  },
+  {
+    "id": 97,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив черепах літати.",
+      "en": "You taught turtles how to fly.",
+      "ru": "Ты научил черепах летать."
+    }
+  },
+  {
+    "id": 98,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змішав море з лимонадом.",
+      "en": "You mixed the sea with lemonade.",
+      "ru": "Ты смешал море с лимонадом."
+    }
+  },
+  {
+    "id": 99,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти вкрав відлуння з гір.",
+      "en": "You stole the echo from the mountains.",
+      "ru": "Ты украл эхо из гор."
+    }
+  },
+  {
+    "id": 100,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти пересадив соняшники на Місяць.",
+      "en": "You planted sunflowers on the Moon.",
+      "ru": "Ты пересадил подсолнухи на Луну."
+    }
+  },
+  {
+    "id": 101,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти обмотав планету шарфом.",
+      "en": "You wrapped the planet in a scarf.",
+      "ru": "Ты обмотал планету шарфом."
+    }
+  },
+  {
+    "id": 102,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив лося на зустріч із президентом.",
+      "en": "You invited a moose to meet the president.",
+      "ru": "Ты пригласил лося на встречу с президентом."
+    }
+  },
+  {
+    "id": 103,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти посолив хмари.",
+      "en": "You salted the clouds.",
+      "ru": "Ты посолил облака."
+    }
+  },
+  {
+    "id": 104,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти пофарбував пінгвінів у рожевий.",
+      "en": "You painted the penguins pink.",
+      "ru": "Ты покрасил пингвинов в розовый."
+    }
+  },
+  {
+    "id": 105,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налив суп у вікно.",
+      "en": "You poured soup into a window.",
+      "ru": "Ты налил суп в окно."
+    }
+  },
+  {
+    "id": 106,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти продав свій тіньовий клон.",
+      "en": "You sold your shadow clone.",
+      "ru": "Ты продал своего теневого клона."
+    }
+  },
+  {
+    "id": 107,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив блискавку танцювати.",
+      "en": "You made lightning dance.",
+      "ru": "Ты заставил молнию танцевать."
+    }
+  },
+  {
+    "id": 108,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти відкрив парасольку в космосі.",
+      "en": "You opened an umbrella in space.",
+      "ru": "Ты открыл зонт в космосе."
+    }
+  },
+  {
+    "id": 109,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти намагався дресирувати бурю.",
+      "en": "You tried to train a storm.",
+      "ru": "Ты пытался приручить бурю."
+    }
+  },
+  {
+    "id": 110,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив слона сховатися в коробці.",
+      "en": "You made an elephant hide in a box.",
+      "ru": "Ты заставил слона спрятаться в коробке."
+    }
+  },
+  {
+    "id": 111,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зарядив телефон блискавкою.",
+      "en": "You charged your phone with lightning.",
+      "ru": "Ты зарядил телефон молнией."
+    }
+  },
+  {
+    "id": 112,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував вечірку для русалок у басейні.",
+      "en": "You hosted a mermaid party in the pool.",
+      "ru": "Ты устроил вечеринку для русалок в бассейне."
+    }
+  },
+  {
+    "id": 113,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приготував борщ у пральній машині.",
+      "en": "You cooked borscht in the washing machine.",
+      "ru": "Ты приготовил борщ в стиральной машине."
+    }
+  },
+  {
+    "id": 114,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти подарував дракону окуляри для читання.",
+      "en": "You gave a dragon reading glasses.",
+      "ru": "Ты подарил дракону очки для чтения."
+    }
+  },
+  {
+    "id": 115,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти викликав дощ, щоб не йти на урок.",
+      "en": "You summoned rain to skip class.",
+      "ru": "Ты вызвал дождь, чтобы не идти на урок."
+    }
+  },
+  {
+    "id": 116,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив капці з зефіру.",
+      "en": "You made slippers out of marshmallows.",
+      "ru": "Ты сделал тапочки из зефира."
+    }
+  },
+  {
+    "id": 117,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив кішку читати гороскопи.",
+      "en": "You made the cat read horoscopes.",
+      "ru": "Ты заставил кошку читать гороскопы."
+    }
+  },
+  {
+    "id": 118,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти переселив свого хом’яка у ракету.",
+      "en": "You relocated your hamster into a rocket.",
+      "ru": "Ты переселил своего хомяка в ракету."
+    }
+  },
+  {
+    "id": 119,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив сову співати реп.",
+      "en": "You taught an owl to rap.",
+      "ru": "Ты научил сову читать рэп."
+    }
+  },
+  {
+    "id": 120,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти збудував гірку в кабінеті директора.",
+      "en": "You built a slide in the principal’s office.",
+      "ru": "Ты построил горку в кабинете директора."
+    }
+  },
+  {
+    "id": 121,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував пікнік на хмарі.",
+      "en": "You organized a picnic on a cloud.",
+      "ru": "Ты устроил пикник на облаке."
+    }
+  },
+  {
+    "id": 122,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти прикрасив зубну щітку бантиком.",
+      "en": "You decorated your toothbrush with a bow.",
+      "ru": "Ты украсил зубную щетку бантиком."
+    }
+  },
+  {
+    "id": 123,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти залишив морозиво в холодильнику часу.",
+      "en": "You left ice cream in the time fridge.",
+      "ru": "Ты оставил мороженое в холодильнике времени."
+    }
+  },
+  {
+    "id": 124,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти створив лабіринт із макаронів.",
+      "en": "You made a maze out of spaghetti.",
+      "ru": "Ты создал лабиринт из макарон."
+    }
+  },
+  {
+    "id": 125,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив динозавра на чаювання.",
+      "en": "You invited a dinosaur for tea.",
+      "ru": "Ты пригласил динозавра на чай."
+    }
+  },
+  {
+    "id": 126,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти загорнув комп’ютер у ковдру.",
+      "en": "You wrapped your computer in a blanket.",
+      "ru": "Ты завернул компьютер в одеяло."
+    }
+  },
+  {
+    "id": 127,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти підключив холодильник до Wi-Fi.",
+      "en": "You connected the fridge to Wi-Fi.",
+      "ru": "Ты подключил холодильник к Wi-Fi."
+    }
+  },
+  {
+    "id": 128,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти написав листа Санті у червні.",
+      "en": "You wrote a letter to Santa in June.",
+      "ru": "Ты написал письмо Санте в июне."
+    }
+  },
+  {
+    "id": 129,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти надув повітряну кулю шепотом.",
+      "en": "You inflated a balloon by whispering.",
+      "ru": "Ты надул воздушный шар шепотом."
+    }
+  },
+  {
+    "id": 130,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налив сік у глобус.",
+      "en": "You poured juice into a globe.",
+      "ru": "Ты налил сок в глобус."
+    }
+  },
+  {
+    "id": 131,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запакував підручники у торт.",
+      "en": "You packed your textbooks into a cake.",
+      "ru": "Ты упаковал учебники в торт."
+    }
+  },
+  {
+    "id": 132,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти засмажив омлет на батареї.",
+      "en": "You fried an omelet on the radiator.",
+      "ru": "Ты пожарил омлет на батарее."
+    }
+  },
+  {
+    "id": 133,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запрограмував пилосос на вечірку.",
+      "en": "You programmed the vacuum cleaner for a party.",
+      "ru": "Ты запрограммировал пылесос на вечеринку."
+    }
+  },
+  {
+    "id": 134,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змішав фарби в мікрохвильовці.",
+      "en": "You mixed paints in the microwave.",
+      "ru": "Ты смешал краски в микроволновке."
+    }
+  },
+  {
+    "id": 135,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти розмалював капці маркерами.",
+      "en": "You doodled on your slippers with markers.",
+      "ru": "Ты разрисовал тапки маркерами."
+    }
+  },
+  {
+    "id": 136,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приготував чай у вазоні.",
+      "en": "You made tea in a flowerpot.",
+      "ru": "Ты заварил чай в цветочном горшке."
+    }
+  },
+  {
+    "id": 137,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти годував мишу надувною піцею.",
+      "en": "You fed a mouse with inflatable pizza.",
+      "ru": "Ты кормил мышь надувной пиццей."
+    }
+  },
+  {
+    "id": 138,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив парашут із серветки.",
+      "en": "You made a parachute out of a napkin.",
+      "ru": "Ты сделал парашют из салфетки."
+    }
+  },
+  {
+    "id": 139,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти прикрасив холодильник блискітками.",
+      "en": "You decorated the fridge with glitter.",
+      "ru": "Ты украсил холодильник блёстками."
+    }
+  },
+  {
+    "id": 140,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив кактус на побачення.",
+      "en": "You took a cactus on a date.",
+      "ru": "Ты пригласил кактус на свидание."
+    }
+  },
+  {
+    "id": 141,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував дебати між печивами.",
+      "en": "You held a debate between cookies.",
+      "ru": "Ты устроил дебаты между печеньками."
+    }
+  },
+  {
+    "id": 142,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зарядив ліхтарик бананом.",
+      "en": "You charged a flashlight with a banana.",
+      "ru": "Ты зарядил фонарик бананом."
+    }
+  },
+  {
+    "id": 143,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти написав вірш на шкарпетці.",
+      "en": "You wrote a poem on a sock.",
+      "ru": "Ты написал стих на носке."
+    }
+  },
+  {
+    "id": 144,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти купав рибку в газованій воді.",
+      "en": "You bathed your fish in soda.",
+      "ru": "Ты купал рыбку в газировке."
+    }
+  },
+  {
+    "id": 145,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти накрив стіл для привидів.",
+      "en": "You set the table for ghosts.",
+      "ru": "Ты накрыл стол для призраков."
+    }
+  },
+  {
+    "id": 146,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запустив олівці в орбіту.",
+      "en": "You launched pencils into orbit.",
+      "ru": "Ты запустил карандаши на орбиту."
+    }
+  },
+  {
+    "id": 147,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти підписав холодильник як домашнє завдання.",
+      "en": "You submitted the fridge as homework.",
+      "ru": "Ты сдал холодильник как домашку."
+    }
+  },
+  {
+    "id": 148,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налив суп у капелюх.",
+      "en": "You poured soup into a hat.",
+      "ru": "Ты налил суп в шляпу."
+    }
+  },
+  {
+    "id": 149,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти погодував будильник сиром.",
+      "en": "You fed the alarm clock with cheese.",
+      "ru": "Ты покормил будильник сыром."
+    }
+  },
+  {
+    "id": 150,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти відкрив банку фарби без пензля.",
+      "en": "You opened paint without a brush.",
+      "ru": "Ты открыл банку краски без кисточки."
+    }
+  },
+  {
+    "id": 151,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приклеїв рюкзак до стелі.",
+      "en": "You glued your backpack to the ceiling.",
+      "ru": "Ты приклеил рюкзак к потолку."
+    }
+  },
+  {
+    "id": 152,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти написав пароль на піці.",
+      "en": "You wrote your password on a pizza.",
+      "ru": "Ты написал пароль на пицце."
+    }
+  },
+  {
+    "id": 153,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти приготував чай із дзеркала.",
+      "en": "You brewed tea from a mirror.",
+      "ru": "Ты заварил чай из зеркала."
+    }
+  },
+  {
+    "id": 154,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налаштував телевізор на кота.",
+      "en": "You tuned the TV to the cat.",
+      "ru": "Ты настроил телевизор на кота."
+    }
+  },
+  {
+    "id": 155,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти заблокував вхід повітряною кулькою.",
+      "en": "You blocked the entrance with a balloon.",
+      "ru": "Ты заблокировал вход воздушным шариком."
+    }
+  },
+  {
+    "id": 156,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти натягнув навушники на тостер.",
+      "en": "You put headphones on the toaster.",
+      "ru": "Ты надел наушники на тостер."
+    }
+  },
+  {
+    "id": 157,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти переконав рюкзак бути невидимим.",
+      "en": "You convinced your backpack to be invisible.",
+      "ru": "Ты убедил рюкзак стать невидимым."
+    }
+  },
+  {
+    "id": 158,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти вкрив лампу ковдрою, щоб не мерзла.",
+      "en": "You covered the lamp with a blanket so it wouldn’t freeze.",
+      "ru": "Ты укрыл лампу одеялом, чтобы не замерзла."
+    }
+  },
+  {
+    "id": 159,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив морозиво на побачення.",
+      "en": "You invited the ice cream on a date.",
+      "ru": "Ты пригласил мороженое на свидание."
+    }
+  },
+  {
+    "id": 160,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував засідання між подушками.",
+      "en": "You held a meeting between pillows.",
+      "ru": "Ты устроил собрание между подушками."
+    }
+  },
+  {
+    "id": 161,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив тапочки танцювати сальсу.",
+      "en": "You taught your slippers to dance salsa.",
+      "ru": "Ты научил тапочки танцевать сальсу."
+    }
+  },
+  {
+    "id": 162,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти посадив гамбургер у горщик.",
+      "en": "You planted a hamburger in a flowerpot.",
+      "ru": "Ты посадил гамбургер в цветочный горшок."
+    }
+  },
+  {
+    "id": 163,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти побудував намет із книжок.",
+      "en": "You built a tent out of books.",
+      "ru": "Ты построил палатку из книг."
+    }
+  },
+  {
+    "id": 164,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив гойдалку з ковбаси.",
+      "en": "You made a swing out of sausage.",
+      "ru": "Ты сделал качели из колбасы."
+    }
+  },
+  {
+    "id": 165,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти відкрив кав'ярню для мурашок.",
+      "en": "You opened a coffee shop for ants.",
+      "ru": "Ты открыл кафе для муравьев."
+    }
+  },
+  {
+    "id": 166,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти одягнув чайник у светр.",
+      "en": "You dressed the teapot in a sweater.",
+      "ru": "Ты одел чайник в свитер."
+    }
+  },
+  {
+    "id": 167,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив олівець плавати.",
+      "en": "You taught a pencil how to swim.",
+      "ru": "Ты научил карандаш плавать."
+    }
+  },
+  {
+    "id": 168,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти перетворив лампу на фонтан.",
+      "en": "You turned the lamp into a fountain.",
+      "ru": "Ты превратил лампу в фонтан."
+    }
+  },
+  {
+    "id": 169,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив книгу на вечірку.",
+      "en": "You invited a book to the party.",
+      "ru": "Ты пригласил книгу на вечеринку."
+    }
+  },
+  {
+    "id": 170,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти натягнув шкарпетки на кавун.",
+      "en": "You put socks on a watermelon.",
+      "ru": "Ты надел носки на арбуз."
+    }
+  },
+  {
+    "id": 171,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив холодильник співати.",
+      "en": "You taught the fridge to sing.",
+      "ru": "Ты научил холодильник петь."
+    }
+  },
+  {
+    "id": 172,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти розмалював велосипед кетчупом.",
+      "en": "You painted the bike with ketchup.",
+      "ru": "Ты раскрасил велосипед кетчупом."
+    }
+  },
+  {
+    "id": 173,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запрограмував чайник на фільми.",
+      "en": "You programmed the kettle to play movies.",
+      "ru": "Ты запрограммировал чайник показывать фильмы."
+    }
+  },
+  {
+    "id": 174,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти вкрив телефон ковдрою.",
+      "en": "You covered your phone with a blanket.",
+      "ru": "Ты укрыл телефон одеялом."
+    }
+  },
+  {
+    "id": 175,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти відкрив зоопарк для стікерів.",
+      "en": "You opened a zoo for stickers.",
+      "ru": "Ты открыл зоопарк для стикеров."
+    }
+  },
+  {
+    "id": 176,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив тапки розмовляти.",
+      "en": "You taught your slippers to talk.",
+      "ru": "Ты научил тапки говорить."
+    }
+  },
+  {
+    "id": 177,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти побудував гараж для олівців.",
+      "en": "You built a garage for pencils.",
+      "ru": "Ты построил гараж для карандашей."
+    }
+  },
+  {
+    "id": 178,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти зробив селфі з мухою.",
+      "en": "You took a selfie with a fly.",
+      "ru": "Ты сделал селфи с мухой."
+    }
+  },
+  {
+    "id": 179,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти заснував клуб для ложок.",
+      "en": "You founded a club for spoons.",
+      "ru": "Ты основал клуб для ложек."
+    }
+  },
+  {
+    "id": 180,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував похід із праскою.",
+      "en": "You went hiking with an iron.",
+      "ru": "Ты пошел в поход с утюгом."
+    }
+  },
+  {
+    "id": 181,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти намалював мапу на тостах.",
+      "en": "You drew a map on toasts.",
+      "ru": "Ты нарисовал карту на тостах."
+    }
+  },
+  {
+    "id": 182,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти застряг у шкарпетці часу.",
+      "en": "You got stuck in a sock of time.",
+      "ru": "Ты застрял в носке времени."
+    }
+  },
+  {
+    "id": 183,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив каву на побачення.",
+      "en": "You asked coffee out on a date.",
+      "ru": "Ты пригласил кофе на свидание."
+    }
+  },
+  {
+    "id": 184,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти змусив світильник танцювати.",
+      "en": "You made the lamp dance.",
+      "ru": "Ты заставил лампу танцевать."
+    }
+  },
+  {
+    "id": 185,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти влаштував весілля двом подушкам.",
+      "en": "You organized a wedding for two pillows.",
+      "ru": "Ты устроил свадьбу двум подушкам."
+    }
+  },
+  {
+    "id": 186,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти побудував лабіринт із підручників.",
+      "en": "You built a maze out of textbooks.",
+      "ru": "Ты построил лабиринт из учебников."
+    }
+  },
+  {
+    "id": 187,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти налив какао в годинник.",
+      "en": "You poured cocoa into a clock.",
+      "ru": "Ты налил какао в часы."
+    }
+  },
+  {
+    "id": 188,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запакував носорога в рюкзак.",
+      "en": "You packed a rhino into your backpack.",
+      "ru": "Ты упаковал носорога в рюкзак."
+    }
+  },
+  {
+    "id": 189,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти навчив чайник грати в шахи.",
+      "en": "You taught the kettle to play chess.",
+      "ru": "Ты научил чайник играть в шахматы."
+    }
+  },
+  {
+    "id": 190,
+    "sentence_type": "FUNNY_EXCUSE",
+    "sentence": {
+      "ua": "Ти запросив морозиво подивитись серіал.",
+      "en": "You invited the ice cream to watch a show.",
+      "ru": "Ты пригласил мороженое посмотреть сериал."
+    }
+  }
+]

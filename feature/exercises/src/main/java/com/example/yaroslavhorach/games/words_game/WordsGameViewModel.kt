@@ -80,6 +80,10 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.TALK_TILL_EXHAUSTED,
                 Game.GameName.SELL_THIS_THING,
                 Game.GameName.RAP_IMPROV,
+                Game.GameName.ONE_WORD_MANY_MEANINGS,
+                Game.GameName.FLIRTING_WITH_OBJECT,
+                Game.GameName.BOTH_THERE_AND_IN_BED,
+                Game.GameName.HOT_WORD,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)
                 }
@@ -93,23 +97,18 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.FORBIDDEN_WORDS,
                 Game.GameName.BODY_LANGUAGE_EXPRESS,
                 Game.GameName.PERSUASIVE_SHOUT,
+                Game.GameName.SUBTLE_MANIPULATION,
+                Game.GameName.ONE_SYNONYM_PLEASE,
+                Game.GameName.INTONATION_MASTER,
+                Game.GameName.FUNNIEST_ANSWER,
+                Game.GameName.MADMAN_ANNOUNCEMENT,
+                Game.GameName.FUNNY_EXCUSE,
                 Game.GameName.EMOTIONAL_TRANSLATOR -> {
                     game.value?.let(::getGameSentence)
                 }
                 Game.GameName.WORD_IN_TEMPO -> TODO()
-                Game.GameName.SUBTLE_MANIPULATION -> TODO()
-                Game.GameName.ONE_SYNONYM_PLEASE -> TODO()
-                Game.GameName.INTONATION_MASTER -> TODO()
                 Game.GameName.ANTONYM_BATTLE -> TODO()
                 Game.GameName.RHYME_LIGHTNING -> TODO()
-                Game.GameName.FUNNIEST_ANSWER -> TODO()
-                Game.GameName.MADMAN_ANNOUNCEMENT -> TODO()
-                Game.GameName.FUNNY_EXCUSE -> TODO()
-                Game.GameName.ONE_WORD_MANY_MEANINGS -> TODO()
-                Game.GameName.INTONATION_MATTERS -> TODO()
-                Game.GameName.FLIRTING_WITH_OBJECT -> TODO()
-                Game.GameName.BOTH_THERE_AND_IN_BED -> TODO()
-                Game.GameName.HOT_WORD -> TODO()
                 Game.GameName.DOUBLE_MEANING_WORDS -> TODO()
                 null -> TODO()
             }
@@ -152,7 +151,6 @@ class WordsGameViewModel @Inject constructor(
     private fun getGameSentence(game: Game) {
         viewModelScope.launch {
             progress.value = progress.value.inc()
-            Log.v("dssaasads",  exerciseContentRepository.getGameSentence(game.name).toString())
             screenMode.value = WordsGameViewState.ScreenMode.Sentence(exerciseContentRepository.getGameSentence(game.name))
         }
     }

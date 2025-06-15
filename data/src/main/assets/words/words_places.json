@@ -1,0 +1,3080 @@
+[
+  {
+    "id": "1",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кафе",
+      "en": "café",
+      "ru": "кафе"
+    }
+  },
+  {
+    "id": "2",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "перукарня",
+      "en": "hair salon",
+      "ru": "парикмахерская"
+    }
+  },
+  {
+    "id": "3",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "музей",
+      "en": "museum",
+      "ru": "музей"
+    }
+  },
+  {
+    "id": "4",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "аквапарк",
+      "en": "water park",
+      "ru": "аквапарк"
+    }
+  },
+  {
+    "id": "5",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ліфт",
+      "en": "elevator",
+      "ru": "лифт"
+    }
+  },
+  {
+    "id": "6",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пральня",
+      "en": "laundry",
+      "ru": "прачечная"
+    }
+  },
+  {
+    "id": "7",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "літак",
+      "en": "airplane",
+      "ru": "самолёт"
+    }
+  },
+  {
+    "id": "8",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "театр",
+      "en": "theater",
+      "ru": "театр"
+    }
+  },
+  {
+    "id": "9",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "поліція",
+      "en": "police station",
+      "ru": "полиция"
+    }
+  },
+  {
+    "id": "10",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "офіс",
+      "en": "office",
+      "ru": "офис"
+    }
+  },
+  {
+    "id": "11",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "фотостудія",
+      "en": "photo studio",
+      "ru": "фотостудия"
+    }
+  },
+  {
+    "id": "12",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "парк атракціонів",
+      "en": "amusement park",
+      "ru": "парк аттракционов"
+    }
+  },
+  {
+    "id": "13",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кухня",
+      "en": "kitchen",
+      "ru": "кухня"
+    }
+  },
+  {
+    "id": "14",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "автобус",
+      "en": "bus",
+      "ru": "автобус"
+    }
+  },
+  {
+    "id": "15",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сауна",
+      "en": "sauna",
+      "ru": "сауна"
+    }
+  },
+  {
+    "id": "16",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "камінна зала",
+      "en": "fireplace room",
+      "ru": "каминный зал"
+    }
+  },
+  {
+    "id": "17",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "гараж",
+      "en": "garage",
+      "ru": "гараж"
+    }
+  },
+  {
+    "id": "18",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "шкільний клас",
+      "en": "classroom",
+      "ru": "школьный класс"
+    }
+  },
+  {
+    "id": "19",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "балкон",
+      "en": "balcony",
+      "ru": "балкон"
+    }
+  },
+  {
+    "id": "20",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "супермаркет",
+      "en": "supermarket",
+      "ru": "супермаркет"
+    }
+  },
+  {
+    "id": "21",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пляж",
+      "en": "beach",
+      "ru": "пляж"
+    }
+  },
+  {
+    "id": "22",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вітальня",
+      "en": "living room",
+      "ru": "гостиная"
+    }
+  },
+  {
+    "id": "23",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кінотеатр",
+      "en": "cinema",
+      "ru": "кинотеатр"
+    }
+  },
+  {
+    "id": "24",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "аптека",
+      "en": "pharmacy",
+      "ru": "аптека"
+    }
+  },
+  {
+    "id": "25",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "квест-кімната",
+      "en": "escape room",
+      "ru": "квест-комната"
+    }
+  },
+  {
+    "id": "26",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "авто",
+      "en": "car",
+      "ru": "машина"
+    }
+  },
+  {
+    "id": "27",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "підвал",
+      "en": "basement",
+      "ru": "подвал"
+    }
+  },
+  {
+    "id": "28",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "лазертаг-арена",
+      "en": "laser tag arena",
+      "ru": "арена для лазертага"
+    }
+  },
+  {
+    "id": "29",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сад",
+      "en": "garden",
+      "ru": "сад"
+    }
+  },
+  {
+    "id": "30",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "душ",
+      "en": "shower",
+      "ru": "душ"
+    }
+  },
+  {
+    "id": "31",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "фітнес-зал",
+      "en": "fitness studio",
+      "ru": "фитнес-зал"
+    }
+  },
+  {
+    "id": "32",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "церква",
+      "en": "church",
+      "ru": "церковь"
+    }
+  },
+  {
+    "id": "33",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "стайня",
+      "en": "stable",
+      "ru": "конюшня"
+    }
+  },
+  {
+    "id": "34",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "метро",
+      "en": "subway",
+      "ru": "метро"
+    }
+  },
+  {
+    "id": "35",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "танцпол",
+      "en": "dancefloor",
+      "ru": "танцпол"
+    }
+  },
+  {
+    "id": "36",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "тату-салон",
+      "en": "tattoo parlor",
+      "ru": "тату-салон"
+    }
+  },
+  {
+    "id": "37",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ліс",
+      "en": "forest",
+      "ru": "лес"
+    }
+  },
+  {
+    "id": "38",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "поле",
+      "en": "field",
+      "ru": "поле"
+    }
+  },
+  {
+    "id": "39",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пором",
+      "en": "ferry",
+      "ru": "паром"
+    }
+  },
+  {
+    "id": "40",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "цирк",
+      "en": "circus",
+      "ru": "цирк"
+    }
+  },
+  {
+    "id": "41",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "плавальний басейн",
+      "en": "swimming pool",
+      "ru": "бассейн"
+    }
+  },
+  {
+    "id": "42",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната для переговорів",
+      "en": "meeting room",
+      "ru": "переговорная"
+    }
+  },
+  {
+    "id": "43",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "майстерня",
+      "en": "workshop",
+      "ru": "мастерская"
+    }
+  },
+  {
+    "id": "44",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "рибальський човен",
+      "en": "fishing boat",
+      "ru": "рыбацкая лодка"
+    }
+  },
+  {
+    "id": "45",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "підйомник",
+      "en": "ski lift",
+      "ru": "подъемник"
+    }
+  },
+  {
+    "id": "46",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "бібліотека",
+      "en": "library",
+      "ru": "библиотека"
+    }
+  },
+  {
+    "id": "47",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ферма",
+      "en": "farm",
+      "ru": "ферма"
+    }
+  },
+  {
+    "id": "48",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дах",
+      "en": "rooftop",
+      "ru": "крыша"
+    }
+  },
+  {
+    "id": "49",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вокзал",
+      "en": "train station",
+      "ru": "вокзал"
+    }
+  },
+  {
+    "id": "50",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кабінет стоматолога",
+      "en": "dentist's office",
+      "ru": "кабинет стоматолога"
+    }
+  },
+  {
+    "id": "51",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пустеля",
+      "en": "desert",
+      "ru": "пустыня"
+    }
+  },
+  {
+    "id": "52",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "студія йоги",
+      "en": "yoga studio",
+      "ru": "йога-студия"
+    }
+  },
+  {
+    "id": "53",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "книжковий магазин",
+      "en": "bookstore",
+      "ru": "книжный магазин"
+    }
+  },
+  {
+    "id": "54",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ігрова кімната",
+      "en": "game room",
+      "ru": "игровая комната"
+    }
+  },
+  {
+    "id": "55",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "маршрутка",
+      "en": "minibus",
+      "ru": "маршрутка"
+    }
+  },
+  {
+    "id": "56",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "фотолабораторія",
+      "en": "photo lab",
+      "ru": "фотолаборатория"
+    }
+  },
+  {
+    "id": "57",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "заправка",
+      "en": "gas station",
+      "ru": "заправка"
+    }
+  },
+  {
+    "id": "58",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "будівництво",
+      "en": "construction site",
+      "ru": "стройка"
+    }
+  },
+  {
+    "id": "59",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "морозиво-бар",
+      "en": "ice cream shop",
+      "ru": "мороженое-бар"
+    }
+  },
+  {
+    "id": "60",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сходова клітка",
+      "en": "stairwell",
+      "ru": "лестничная клетка"
+    }
+  },
+  {
+    "id": "61",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пивний паб",
+      "en": "beer pub",
+      "ru": "пивной паб"
+    }
+  },
+  {
+    "id": "62",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "акваріум",
+      "en": "aquarium",
+      "ru": "аквариум"
+    }
+  },
+  {
+    "id": "63",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "потяг",
+      "en": "train",
+      "ru": "поезд"
+    }
+  },
+  {
+    "id": "64",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "музична студія",
+      "en": "music studio",
+      "ru": "музыкальная студия"
+    }
+  },
+  {
+    "id": "65",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "човен",
+      "en": "boat",
+      "ru": "лодка"
+    }
+  },
+  {
+    "id": "66",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "японський ресторан",
+      "en": "Japanese restaurant",
+      "ru": "японский ресторан"
+    }
+  },
+  {
+    "id": "67",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "швейна майстерня",
+      "en": "tailor shop",
+      "ru": "портняжная мастерская"
+    }
+  },
+  {
+    "id": "68",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "солярій",
+      "en": "tanning salon",
+      "ru": "солярий"
+    }
+  },
+  {
+    "id": "69",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пивоварня",
+      "en": "brewery",
+      "ru": "пивоварня"
+    }
+  },
+  {
+    "id": "70",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "клуб віртуальної реальності",
+      "en": "VR club",
+      "ru": "VR-клуб"
+    }
+  },
+  {
+    "id": "71",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "гаражний кооператив",
+      "en": "garage block",
+      "ru": "гаражный кооператив"
+    }
+  },
+  {
+    "id": "72",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дах багатоповерхівки",
+      "en": "apartment rooftop",
+      "ru": "крыша многоэтажки"
+    }
+  },
+  {
+    "id": "73",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "космічна станція",
+      "en": "space station",
+      "ru": "космическая станция"
+    }
+  },
+  {
+    "id": "74",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пивний завод",
+      "en": "beer factory",
+      "ru": "пивной завод"
+    }
+  },
+  {
+    "id": "75",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "бетонний майданчик",
+      "en": "concrete yard",
+      "ru": "бетонная площадка"
+    }
+  },
+  {
+    "id": "76",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дзвіниця",
+      "en": "bell tower",
+      "ru": "колокольня"
+    }
+  },
+  {
+    "id": "77",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "спальник у потязі",
+      "en": "train sleeper cabin",
+      "ru": "купе поезда"
+    }
+  },
+  {
+    "id": "78",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "медкабінет",
+      "en": "medical office",
+      "ru": "медицинский кабинет"
+    }
+  },
+  {
+    "id": "79",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "майданчик біля школи",
+      "en": "schoolyard",
+      "ru": "школьный двор"
+    }
+  },
+  {
+    "id": "80",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сховище",
+      "en": "shelter",
+      "ru": "убежище"
+    }
+  },
+  {
+    "id": "81",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "печера",
+      "en": "cave",
+      "ru": "пещера"
+    }
+  },
+  {
+    "id": "82",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "телестудія",
+      "en": "TV studio",
+      "ru": "телестудия"
+    }
+  },
+  {
+    "id": "83",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "квест-кімната",
+      "en": "escape room",
+      "ru": "квест-комната"
+    }
+  },
+  {
+    "id": "84",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дитячий майданчик",
+      "en": "playground",
+      "ru": "детская площадка"
+    }
+  },
+  {
+    "id": "85",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "фотостудія",
+      "en": "photo studio",
+      "ru": "фотостудия"
+    }
+  },
+  {
+    "id": "86",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "барбершоп",
+      "en": "barbershop",
+      "ru": "барбершоп"
+    }
+  },
+  {
+    "id": "87",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "лабораторія",
+      "en": "laboratory",
+      "ru": "лаборатория"
+    }
+  },
+  {
+    "id": "88",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "автомийка",
+      "en": "car wash",
+      "ru": "автомойка"
+    }
+  },
+  {
+    "id": "89",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "будинок престарілих",
+      "en": "nursing home",
+      "ru": "дом престарелых"
+    }
+  },
+  {
+    "id": "90",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пивна",
+      "en": "beer hall",
+      "ru": "пивная"
+    }
+  },
+  {
+    "id": "91",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "інтернет-клуб",
+      "en": "internet café",
+      "ru": "интернет-клуб"
+    }
+  },
+  {
+    "id": "92",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вітальня",
+      "en": "living room",
+      "ru": "гостиная"
+    }
+  },
+  {
+    "id": "93",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "палата",
+      "en": "hospital ward",
+      "ru": "палата"
+    }
+  },
+  {
+    "id": "94",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "металобаза",
+      "en": "scrapyard",
+      "ru": "металлобаза"
+    }
+  },
+  {
+    "id": "95",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "мансарда",
+      "en": "attic",
+      "ru": "мансарда"
+    }
+  },
+  {
+    "id": "96",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "фудкорт",
+      "en": "food court",
+      "ru": "фудкорт"
+    }
+  },
+  {
+    "id": "97",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "віртуальна кімната",
+      "en": "virtual room",
+      "ru": "виртуальная комната"
+    }
+  },
+  {
+    "id": "98",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "футбольне поле",
+      "en": "football field",
+      "ru": "футбольное поле"
+    }
+  },
+  {
+    "id": "99",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "торговий центр",
+      "en": "shopping mall",
+      "ru": "торговый центр"
+    }
+  },
+  {
+    "id": "100",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "спа-салон",
+      "en": "spa salon",
+      "ru": "спа-салон"
+    }
+  },
+  {
+    "id": "101",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вулкан",
+      "en": "volcano",
+      "ru": "вулкан"
+    }
+  },
+  {
+    "id": "102",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "клуб настільних ігор",
+      "en": "board game club",
+      "ru": "клуб настольных игр"
+    }
+  },
+  {
+    "id": "103",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "військова частина",
+      "en": "military base",
+      "ru": "военная часть"
+    }
+  },
+  {
+    "id": "104",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "спальний вагон",
+      "en": "sleeper car",
+      "ru": "спальный вагон"
+    }
+  },
+  {
+    "id": "105",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "казино",
+      "en": "casino",
+      "ru": "казино"
+    }
+  },
+  {
+    "id": "106",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "амфітеатр",
+      "en": "amphitheater",
+      "ru": "амфитеатр"
+    }
+  },
+  {
+    "id": "107",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в’язниця",
+      "en": "prison",
+      "ru": "тюрьма"
+    }
+  },
+  {
+    "id": "108",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "автомобіль",
+      "en": "car",
+      "ru": "автомобиль"
+    }
+  },
+  {
+    "id": "109",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "майданчик для скейтів",
+      "en": "skate park",
+      "ru": "скейт-парк"
+    }
+  },
+  {
+    "id": "110",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кінотеатр під відкритим небом",
+      "en": "open-air cinema",
+      "ru": "кинотеатр под открытым небом"
+    }
+  },
+  {
+    "id": "111",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "телескопічна обсерваторія",
+      "en": "observatory",
+      "ru": "обсерватория"
+    }
+  },
+  {
+    "id": "112",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "майстер-клас",
+      "en": "masterclass room",
+      "ru": "мастер-класс"
+    }
+  },
+  {
+    "id": "113",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пивна тераса",
+      "en": "beer terrace",
+      "ru": "пивная терраса"
+    }
+  },
+  {
+    "id": "114",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "лаунж-зона",
+      "en": "lounge zone",
+      "ru": "лаунж-зона"
+    }
+  },
+  {
+    "id": "115",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "перукарня",
+      "en": "hair salon",
+      "ru": "парикмахерская"
+    }
+  },
+  {
+    "id": "116",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "підвал",
+      "en": "basement",
+      "ru": "подвал"
+    }
+  },
+  {
+    "id": "117",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "морг",
+      "en": "morgue",
+      "ru": "морг"
+    }
+  },
+  {
+    "id": "118",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната сміху",
+      "en": "funny mirrors room",
+      "ru": "комната смеха"
+    }
+  },
+  {
+    "id": "119",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "літак",
+      "en": "airplane",
+      "ru": "самолет"
+    }
+  },
+  {
+    "id": "120",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "амбар",
+      "en": "barn",
+      "ru": "амбар"
+    }
+  },
+  {
+    "id": "121",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ігровий автомат",
+      "en": "arcade machine",
+      "ru": "игровой автомат"
+    }
+  },
+  {
+    "id": "122",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "санаторій",
+      "en": "health resort",
+      "ru": "санаторий"
+    }
+  },
+  {
+    "id": "123",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "міст",
+      "en": "bridge",
+      "ru": "мост"
+    }
+  },
+  {
+    "id": "124",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ангар",
+      "en": "hangar",
+      "ru": "ангар"
+    }
+  },
+  {
+    "id": "125",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "хостел",
+      "en": "hostel",
+      "ru": "хостел"
+    }
+  },
+  {
+    "id": "126",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "лазня",
+      "en": "steam bath",
+      "ru": "баня"
+    }
+  },
+  {
+    "id": "127",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "зал очікування",
+      "en": "waiting room",
+      "ru": "зал ожидания"
+    }
+  },
+  {
+    "id": "128",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "балкон",
+      "en": "balcony",
+      "ru": "балкон"
+    }
+  },
+  {
+    "id": "129",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "нічний експрес",
+      "en": "night express",
+      "ru": "ночной экспресс"
+    }
+  },
+  {
+    "id": "130",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сцена",
+      "en": "stage",
+      "ru": "сцена"
+    }
+  },
+  {
+    "id": "131",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ліфт",
+      "en": "elevator",
+      "ru": "лифт"
+    }
+  },
+  {
+    "id": "132",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "горище",
+      "en": "loft",
+      "ru": "чердак"
+    }
+  },
+  {
+    "id": "133",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "музей воскових фігур",
+      "en": "wax museum",
+      "ru": "музей восковых фигур"
+    }
+  },
+  {
+    "id": "134",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дах хмарочоса",
+      "en": "skyscraper roof",
+      "ru": "крыша небоскрёба"
+    }
+  },
+  {
+    "id": "135",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "стара бібліотека",
+      "en": "old library",
+      "ru": "старая библиотека"
+    }
+  },
+  {
+    "id": "136",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "капітанський місток",
+      "en": "captain’s bridge",
+      "ru": "капитанский мостик"
+    }
+  },
+  {
+    "id": "137",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "акваріум",
+      "en": "aquarium",
+      "ru": "аквариум"
+    }
+  },
+  {
+    "id": "138",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сцена театру",
+      "en": "theater stage",
+      "ru": "сцена театра"
+    }
+  },
+  {
+    "id": "139",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "електричка",
+      "en": "commuter train",
+      "ru": "электричка"
+    }
+  },
+  {
+    "id": "140",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната для допитів",
+      "en": "interrogation room",
+      "ru": "допросная"
+    }
+  },
+  {
+    "id": "141",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "стайня",
+      "en": "stable",
+      "ru": "конюшня"
+    }
+  },
+  {
+    "id": "142",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вітряк",
+      "en": "windmill",
+      "ru": "мельница"
+    }
+  },
+  {
+    "id": "143",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сарай",
+      "en": "shed",
+      "ru": "сарай"
+    }
+  },
+  {
+    "id": "144",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "горнолижний підйомник",
+      "en": "ski lift",
+      "ru": "горнолыжный подъёмник"
+    }
+  },
+  {
+    "id": "145",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сцена для стендапу",
+      "en": "stand-up stage",
+      "ru": "сцена для стендапа"
+    }
+  },
+  {
+    "id": "146",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ринкова площа",
+      "en": "market square",
+      "ru": "рыночная площадь"
+    }
+  },
+  {
+    "id": "147",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "пральня самообслуговування",
+      "en": "laundromat",
+      "ru": "прачечная самообслуживания"
+    }
+  },
+  {
+    "id": "148",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "звукова студія",
+      "en": "sound studio",
+      "ru": "звукостудия"
+    }
+  },
+  {
+    "id": "149",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "зоопарк",
+      "en": "zoo",
+      "ru": "зоопарк"
+    }
+  },
+  {
+    "id": "150",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "японський сад",
+      "en": "Japanese garden",
+      "ru": "японский сад"
+    }
+  },
+  {
+    "id": "151",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "антикварна крамниця",
+      "en": "antique shop",
+      "ru": "антикварная лавка"
+    }
+  },
+  {
+    "id": "152",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "бункер",
+      "en": "bunker",
+      "ru": "бункер"
+    }
+  },
+  {
+    "id": "153",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "тунель метро",
+      "en": "subway tunnel",
+      "ru": "тоннель метро"
+    }
+  },
+  {
+    "id": "154",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "медпункт",
+      "en": "first aid room",
+      "ru": "медпункт"
+    }
+  },
+  {
+    "id": "155",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "арка",
+      "en": "archway",
+      "ru": "арка"
+    }
+  },
+  {
+    "id": "156",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дачний душ",
+      "en": "summer shower",
+      "ru": "дачный душ"
+    }
+  },
+  {
+    "id": "157",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вулканічний кратер",
+      "en": "volcanic crater",
+      "ru": "вулканический кратер"
+    }
+  },
+  {
+    "id": "158",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "міський парк",
+      "en": "city park",
+      "ru": "городской парк"
+    }
+  },
+  {
+    "id": "159",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "відкрита веранда",
+      "en": "open veranda",
+      "ru": "открытая веранда"
+    }
+  },
+  {
+    "id": "160",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "перукарське крісло",
+      "en": "barber chair",
+      "ru": "парикмахерское кресло"
+    }
+  },
+  {
+    "id": "161",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дитячий батут",
+      "en": "trampoline",
+      "ru": "батут"
+    }
+  },
+  {
+    "id": "162",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "аеродром",
+      "en": "airfield",
+      "ru": "аэродром"
+    }
+  },
+  {
+    "id": "163",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "альпіністська база",
+      "en": "climbers’ camp",
+      "ru": "альпинистская база"
+    }
+  },
+  {
+    "id": "164",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дровітня",
+      "en": "woodshed",
+      "ru": "дровяник"
+    }
+  },
+  {
+    "id": "165",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "біотуалет",
+      "en": "portable toilet",
+      "ru": "биотуалет"
+    }
+  },
+  {
+    "id": "166",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сміттєпровід",
+      "en": "garbage chute",
+      "ru": "мусоропровод"
+    }
+  },
+  {
+    "id": "167",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "сходова клітка",
+      "en": "stairwell",
+      "ru": "лестничная клетка"
+    }
+  },
+  {
+    "id": "168",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "акустична камера",
+      "en": "anechoic chamber",
+      "ru": "безэховая камера"
+    }
+  },
+  {
+    "id": "169",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "фойє театру",
+      "en": "theater foyer",
+      "ru": "фойе театра"
+    }
+  },
+  {
+    "id": "170",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната для медитації",
+      "en": "meditation room",
+      "ru": "комната для медитации"
+    }
+  },
+  {
+    "id": "171",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "каюта",
+      "en": "cabin",
+      "ru": "каюта"
+    }
+  },
+  {
+    "id": "172",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вантажівка",
+      "en": "truck",
+      "ru": "грузовик"
+    }
+  },
+  {
+    "id": "173",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "бетонний завод",
+      "en": "concrete plant",
+      "ru": "бетонный завод"
+    }
+  },
+  {
+    "id": "174",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "верхній ярус автобусу",
+      "en": "double-decker bus top deck",
+      "ru": "верхний ярус автобуса"
+    }
+  },
+  {
+    "id": "175",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната за дзеркалом",
+      "en": "room behind the mirror",
+      "ru": "комната за зеркалом"
+    }
+  },
+  {
+    "id": "176",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "старий тролейбус",
+      "en": "old trolleybus",
+      "ru": "старый троллейбус"
+    }
+  },
+  {
+    "id": "177",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната для зберігання інструментів",
+      "en": "tool shed",
+      "ru": "кладовка с инструментами"
+    }
+  },
+  {
+    "id": "178",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "нічна зупинка",
+      "en": "night bus stop",
+      "ru": "ночная остановка"
+    }
+  },
+  {
+    "id": "179",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "галерея сучасного мистецтва",
+      "en": "modern art gallery",
+      "ru": "галерея современного искусства"
+    }
+  },
+  {
+    "id": "180",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "скляна вітрина",
+      "en": "glass showcase",
+      "ru": "стеклянная витрина"
+    }
+  },
+  {
+    "id": "181",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "мотель при дорозі",
+      "en": "roadside motel",
+      "ru": "придорожный мотель"
+    }
+  },
+  {
+    "id": "182",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "порожній кінотеатр",
+      "en": "empty cinema",
+      "ru": "пустой кинотеатр"
+    }
+  },
+  {
+    "id": "183",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "зал очікування вокзалу",
+      "en": "station waiting room",
+      "ru": "зал ожидания вокзала"
+    }
+  },
+  {
+    "id": "184",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "ліжко з балдахіном",
+      "en": "canopy bed",
+      "ru": "кровать с балдахином"
+    }
+  },
+  {
+    "id": "185",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "забута станція метро",
+      "en": "abandoned metro station",
+      "ru": "заброшенная станция метро"
+    }
+  },
+  {
+    "id": "186",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дача під лісом",
+      "en": "cottage by the forest",
+      "ru": "дача у леса"
+    }
+  },
+  {
+    "id": "187",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "дерев'яна лазня",
+      "en": "wooden sauna",
+      "ru": "деревянная баня"
+    }
+  },
+  {
+    "id": "188",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "літак бізнес-класу",
+      "en": "business class plane",
+      "ru": "самолет бизнес-класса"
+    }
+  },
+  {
+    "id": "189",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "гримерна кімната",
+      "en": "dressing room",
+      "ru": "гримерка"
+    }
+  },
+  {
+    "id": "190",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "таємний тунель",
+      "en": "secret tunnel",
+      "ru": "секретный туннель"
+    }
+  },
+  {
+    "id": "191",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "човен на озері",
+      "en": "boat on the lake",
+      "ru": "лодка на озере"
+    }
+  },
+  {
+    "id": "192",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "нічна бібліотека",
+      "en": "library at night",
+      "ru": "ночная библиотека"
+    }
+  },
+  {
+    "id": "193",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "старий автобус",
+      "en": "old bus",
+      "ru": "старый автобус"
+    }
+  },
+  {
+    "id": "194",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "кімната з каміном",
+      "en": "room with fireplace",
+      "ru": "комната с камином"
+    }
+  },
+  {
+    "id": "195",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "вітрильник",
+      "en": "sailing ship",
+      "ru": "парусник"
+    }
+  },
+  {
+    "id": "196",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "спальня готелю",
+      "en": "hotel bedroom",
+      "ru": "спальня в отеле"
+    }
+  },
+  {
+    "id": "197",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "квітковий магазин",
+      "en": "flower shop",
+      "ru": "цветочный магазин"
+    }
+  },
+  {
+    "id": "198",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "біля фонтану",
+      "en": "near the fountain",
+      "ru": "возле фонтана"
+    }
+  },
+  {
+    "id": "199",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "серед мармурових колон",
+      "en": "among marble columns",
+      "ru": "среди мраморных колонн"
+    }
+  },
+  {
+    "id": "200",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в караоке-клубі",
+      "en": "in a karaoke club",
+      "ru": "в караоке"
+    }
+  },
+  {
+    "id": "201",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в оранжереї",
+      "en": "in a greenhouse",
+      "ru": "в оранжерее"
+    }
+  },
+  {
+    "id": "202",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на кухонному столі",
+      "en": "on the kitchen table",
+      "ru": "на кухонном столе"
+    }
+  },
+  {
+    "id": "203",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на даху потяга",
+      "en": "on the train roof",
+      "ru": "на крыше поезда"
+    }
+  },
+  {
+    "id": "204",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в старому ліфті",
+      "en": "in an old elevator",
+      "ru": "в старом лифте"
+    }
+  },
+  {
+    "id": "205",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у скейтпарку",
+      "en": "in a skatepark",
+      "ru": "в скейтпарке"
+    }
+  },
+  {
+    "id": "206",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на ковдрі під зірками",
+      "en": "on a blanket under the stars",
+      "ru": "на пледе под звездами"
+    }
+  },
+  {
+    "id": "207",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в кемпінгу",
+      "en": "at a campsite",
+      "ru": "в кемпинге"
+    }
+  },
+  {
+    "id": "208",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у спортзалі",
+      "en": "in a gym",
+      "ru": "в спортзале"
+    }
+  },
+  {
+    "id": "209",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у готичному соборі",
+      "en": "in a gothic cathedral",
+      "ru": "в готическом соборе"
+    }
+  },
+  {
+    "id": "210",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у човні серед тростин",
+      "en": "in a boat among reeds",
+      "ru": "в лодке среди камышей"
+    }
+  },
+  {
+    "id": "211",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "біля багаття",
+      "en": "by the campfire",
+      "ru": "у костра"
+    }
+  },
+  {
+    "id": "212",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на підвіконні",
+      "en": "on a windowsill",
+      "ru": "на подоконнике"
+    }
+  },
+  {
+    "id": "213",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у ванні з пінкою",
+      "en": "in a bubble bath",
+      "ru": "в ванной с пеной"
+    }
+  },
+  {
+    "id": "214",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на підлозі кухні",
+      "en": "on the kitchen floor",
+      "ru": "на кухонном полу"
+    }
+  },
+  {
+    "id": "215",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у кав’ярні",
+      "en": "in a café",
+      "ru": "в кафе"
+    }
+  },
+  {
+    "id": "216",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на краю обриву",
+      "en": "on the cliff edge",
+      "ru": "на краю обрыва"
+    }
+  },
+  {
+    "id": "217",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на кладці через річку",
+      "en": "on a river footbridge",
+      "ru": "на мостике через реку"
+    }
+  },
+  {
+    "id": "218",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у старій дзвіниці",
+      "en": "in an old bell tower",
+      "ru": "в старой колокольне"
+    }
+  },
+  {
+    "id": "219",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у фотостудії",
+      "en": "in a photo studio",
+      "ru": "в фотостудии"
+    }
+  },
+  {
+    "id": "220",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у планетарії",
+      "en": "in a planetarium",
+      "ru": "в планетарии"
+    }
+  },
+  {
+    "id": "221",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на залізничній колії",
+      "en": "on the railway tracks",
+      "ru": "на железнодорожных путях"
+    }
+  },
+  {
+    "id": "222",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у квест-кімнаті",
+      "en": "in an escape room",
+      "ru": "в квест-комнате"
+    }
+  },
+  {
+    "id": "223",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у кіоску з морозивом",
+      "en": "in an ice cream stand",
+      "ru": "в киоске с мороженым"
+    }
+  },
+  {
+    "id": "224",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у вітальні з гірляндами",
+      "en": "in a living room with garlands",
+      "ru": "в гостиной с гирляндами"
+    }
+  },
+  {
+    "id": "225",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у ретро-автомобілі",
+      "en": "in a vintage car",
+      "ru": "в ретро-автомобиле"
+    }
+  },
+  {
+    "id": "226",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у фотокабінці",
+      "en": "in a photo booth",
+      "ru": "в фотобудке"
+    }
+  },
+  {
+    "id": "227",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на вежі годинника",
+      "en": "on a clock tower",
+      "ru": "на часовой башне"
+    }
+  },
+  {
+    "id": "228",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у наметі",
+      "en": "in a tent",
+      "ru": "в палатке"
+    }
+  },
+  {
+    "id": "229",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на мотузковому парку",
+      "en": "at a rope park",
+      "ru": "в верёвочном парке"
+    }
+  },
+  {
+    "id": "230",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в машині швидкої",
+      "en": "in an ambulance",
+      "ru": "в машине скорой помощи"
+    }
+  },
+  {
+    "id": "231",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на крані",
+      "en": "on a crane",
+      "ru": "на кране"
+    }
+  },
+  {
+    "id": "232",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у приватному кінотеатрі",
+      "en": "in a private cinema",
+      "ru": "в частном кинотеатре"
+    }
+  },
+  {
+    "id": "233",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на сцені",
+      "en": "on stage",
+      "ru": "на сцене"
+    }
+  },
+  {
+    "id": "234",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в антикварній крамниці",
+      "en": "in an antique shop",
+      "ru": "в антикварной лавке"
+    }
+  },
+  {
+    "id": "235",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у джакузі",
+      "en": "in a jacuzzi",
+      "ru": "в джакузи"
+    }
+  },
+  {
+    "id": "236",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на футбольному полі",
+      "en": "on a football field",
+      "ru": "на футбольном поле"
+    }
+  },
+  {
+    "id": "237",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у костюмерній",
+      "en": "in a costume room",
+      "ru": "в костюмерной"
+    }
+  },
+  {
+    "id": "238",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на оглядовому колесі",
+      "en": "on a ferris wheel",
+      "ru": "на колесе обозрения"
+    }
+  },
+  {
+    "id": "239",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в дерев’яній хатині",
+      "en": "in a wooden cabin",
+      "ru": "в деревянной избушке"
+    }
+  },
+  {
+    "id": "240",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у фургоні з кавою",
+      "en": "in a coffee van",
+      "ru": "в кофейном фургоне"
+    }
+  },
+  {
+    "id": "241",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на підводному човні",
+      "en": "on a submarine",
+      "ru": "на подводной лодке"
+    }
+  },
+  {
+    "id": "242",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на відкритому балконі",
+      "en": "on an open balcony",
+      "ru": "на открытом балконе"
+    }
+  },
+  {
+    "id": "243",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у копальні",
+      "en": "in a mine",
+      "ru": "в шахте"
+    }
+  },
+  {
+    "id": "244",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у старій бібліотеці",
+      "en": "in an old library",
+      "ru": "в старой библиотеке"
+    }
+  },
+  {
+    "id": "245",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на танцполі",
+      "en": "on the dance floor",
+      "ru": "на танцполе"
+    }
+  },
+  {
+    "id": "246",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в дровітні",
+      "en": "in a woodshed",
+      "ru": "в дровянике"
+    }
+  },
+  {
+    "id": "247",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на складі",
+      "en": "in a warehouse",
+      "ru": "на складе"
+    }
+  },
+  {
+    "id": "248",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на фортепіано",
+      "en": "on a piano",
+      "ru": "на рояле"
+    }
+  },
+  {
+    "id": "249",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у кінофургоні",
+      "en": "in a movie trailer",
+      "ru": "в кинофургоне"
+    }
+  },
+  {
+    "id": "250",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на гойдалці",
+      "en": "on a swing",
+      "ru": "на качелях"
+    }
+  },
+  {
+    "id": "251",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у вагоні метро",
+      "en": "in a subway car",
+      "ru": "в вагоне метро"
+    }
+  },
+  {
+    "id": "252",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на пляжі вночі",
+      "en": "on the beach at night",
+      "ru": "на пляже ночью"
+    }
+  },
+  {
+    "id": "253",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на фермі",
+      "en": "on a farm",
+      "ru": "на ферме"
+    }
+  },
+  {
+    "id": "254",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у вагоні-ресторані",
+      "en": "in a dining car",
+      "ru": "в вагоне-ресторане"
+    }
+  },
+  {
+    "id": "255",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на сцені нічного клубу",
+      "en": "on a nightclub stage",
+      "ru": "на сцене ночного клуба"
+    }
+  },
+  {
+    "id": "256",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на рибальському човні",
+      "en": "on a fishing boat",
+      "ru": "в рыбацкой лодке"
+    }
+  },
+  {
+    "id": "257",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в лазні",
+      "en": "in a sauna",
+      "ru": "в бане"
+    }
+  },
+  {
+    "id": "258",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на шкільному подвір’ї",
+      "en": "in a school yard",
+      "ru": "на школьном дворе"
+    }
+  },
+  {
+    "id": "259",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у форті",
+      "en": "in a fort",
+      "ru": "в форте"
+    }
+  },
+  {
+    "id": "260",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в автостоянці",
+      "en": "in a parking garage",
+      "ru": "на парковке"
+    }
+  },
+  {
+    "id": "261",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на підвіконні",
+      "en": "on a windowsill",
+      "ru": "на подоконнике"
+    }
+  },
+  {
+    "id": "262",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на причалі",
+      "en": "on a pier",
+      "ru": "на причале"
+    }
+  },
+  {
+    "id": "263",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у фотолабораторії",
+      "en": "in a photo lab",
+      "ru": "в фотолаборатории"
+    }
+  },
+  {
+    "id": "264",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на кладовищі",
+      "en": "in a cemetery",
+      "ru": "на кладбище"
+    }
+  },
+  {
+    "id": "265",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у планетарії",
+      "en": "in a planetarium",
+      "ru": "в планетарии"
+    }
+  },
+  {
+    "id": "266",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на мосту",
+      "en": "on a bridge",
+      "ru": "на мосту"
+    }
+  },
+  {
+    "id": "267",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у зимовому лісі",
+      "en": "in a winter forest",
+      "ru": "в зимнем лесу"
+    }
+  },
+  {
+    "id": "268",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на старій дачі",
+      "en": "at an old dacha",
+      "ru": "на старой даче"
+    }
+  },
+  {
+    "id": "269",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у курнику",
+      "en": "in a henhouse",
+      "ru": "в курятнике"
+    }
+  },
+  {
+    "id": "270",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на пожежній драбині",
+      "en": "on a fire escape",
+      "ru": "на пожарной лестнице"
+    }
+  },
+  {
+    "id": "271",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у фотостудії",
+      "en": "in a photo studio",
+      "ru": "в фотостудии"
+    }
+  },
+  {
+    "id": "272",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в архіві",
+      "en": "in an archive",
+      "ru": "в архиве"
+    }
+  },
+  {
+    "id": "273",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на горищі",
+      "en": "in the attic",
+      "ru": "на чердаке"
+    }
+  },
+  {
+    "id": "274",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на човні-драконі",
+      "en": "on a dragon boat",
+      "ru": "в драконьей лодке"
+    }
+  },
+  {
+    "id": "275",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у телевежі",
+      "en": "in a TV tower",
+      "ru": "в телебашне"
+    }
+  },
+  {
+    "id": "276",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на смітнику",
+      "en": "at the dumpster",
+      "ru": "на мусорке"
+    }
+  },
+  {
+    "id": "277",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у винному погребі",
+      "en": "in a wine cellar",
+      "ru": "в винном погребе"
+    }
+  },
+  {
+    "id": "278",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на сіннику",
+      "en": "in a hayloft",
+      "ru": "на сеновале"
+    }
+  },
+  {
+    "id": "279",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у примірочній",
+      "en": "in a fitting room",
+      "ru": "в примерочной"
+    }
+  },
+  {
+    "id": "280",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у потязі далекого сполучення",
+      "en": "on a long-distance train",
+      "ru": "в поезде дальнего следования"
+    }
+  },
+  {
+    "id": "281",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на кіностудії",
+      "en": "at a film studio",
+      "ru": "на киностудии"
+    }
+  },
+  {
+    "id": "282",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на базарі",
+      "en": "at a bazaar",
+      "ru": "на базаре"
+    }
+  },
+  {
+    "id": "283",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в ратуші",
+      "en": "in the town hall",
+      "ru": "в ратуше"
+    }
+  },
+  {
+    "id": "284",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у шаховому клубі",
+      "en": "in a chess club",
+      "ru": "в шахматном клубе"
+    }
+  },
+  {
+    "id": "285",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у підземному переході",
+      "en": "in an underpass",
+      "ru": "в подземном переходе"
+    }
+  },
+  {
+    "id": "286",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на весільній арці",
+      "en": "under a wedding arch",
+      "ru": "под свадебной аркой"
+    }
+  },
+  {
+    "id": "287",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у кафе самообслуговування",
+      "en": "in a self-service café",
+      "ru": "в кафе самообслуживания"
+    }
+  },
+  {
+    "id": "288",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на лижному підйомнику",
+      "en": "on a ski lift",
+      "ru": "на подъёмнике"
+    }
+  },
+  {
+    "id": "289",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у павільйоні ярмарку",
+      "en": "at a fair pavilion",
+      "ru": "в павильоне ярмарки"
+    }
+  },
+  {
+    "id": "290",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на горі",
+      "en": "on a mountain",
+      "ru": "на горе"
+    }
+  },
+  {
+    "id": "291",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у колодязі",
+      "en": "in a well",
+      "ru": "в колодце"
+    }
+  },
+  {
+    "id": "292",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у квест-кімнаті",
+      "en": "in an escape room",
+      "ru": "в квест-комнате"
+    }
+  },
+  {
+    "id": "293",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на лавці запасних",
+      "en": "on the bench",
+      "ru": "на скамейке запасных"
+    }
+  },
+  {
+    "id": "294",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у вігвамі",
+      "en": "in a wigwam",
+      "ru": "в вигваме"
+    }
+  },
+  {
+    "id": "295",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у старому трамваї",
+      "en": "in an old tram",
+      "ru": "в старом трамвае"
+    }
+  },
+  {
+    "id": "296",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у скляному ліфті",
+      "en": "in a glass elevator",
+      "ru": "в стеклянном лифте"
+    }
+  },
+  {
+    "id": "297",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у салоні краси",
+      "en": "in a beauty salon",
+      "ru": "в салоне красоты"
+    }
+  },
+  {
+    "id": "298",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на трибуні стадіону",
+      "en": "on a stadium stand",
+      "ru": "на трибуне стадиона"
+    }
+  },
+  {
+    "id": "299",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у шкільному туалеті",
+      "en": "in a school bathroom",
+      "ru": "в школьном туалете"
+    }
+  },
+  {
+    "id": "300",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у квітковій оранжереї",
+      "en": "in a flower greenhouse",
+      "ru": "в цветочной оранжерее"
+    }
+  },
+  {
+    "id": "301",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на пляжі з чорним піском",
+      "en": "on a black sand beach",
+      "ru": "на пляже с чёрным песком"
+    }
+  },
+  {
+    "id": "302",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в антикварному магазині",
+      "en": "in an antique shop",
+      "ru": "в антикварном магазине"
+    }
+  },
+  {
+    "id": "303",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на фермі равликів",
+      "en": "at a snail farm",
+      "ru": "на улиточной ферме"
+    }
+  },
+  {
+    "id": "304",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у будинку привидів",
+      "en": "in a haunted house",
+      "ru": "в доме с привидениями"
+    }
+  },
+  {
+    "id": "305",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на даху школи",
+      "en": "on the school roof",
+      "ru": "на крыше школы"
+    }
+  },
+  {
+    "id": "306",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "в заміському котеджі",
+      "en": "in a countryside cottage",
+      "ru": "в загородном коттедже"
+    }
+  },
+  {
+    "id": "307",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на старому кораблі",
+      "en": "on an old ship",
+      "ru": "на старом корабле"
+    }
+  },
+  {
+    "id": "308",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у башті годинника",
+      "en": "in a clock tower",
+      "ru": "в часовой башне"
+    }
+  },
+  {
+    "id": "309",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на станції метро",
+      "en": "at a metro station",
+      "ru": "на станции метро"
+    }
+  },
+  {
+    "id": "310",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у гримерці",
+      "en": "in a dressing room",
+      "ru": "в гримёрке"
+    }
+  },
+  {
+    "id": "311",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на схилі дюни",
+      "en": "on a dune slope",
+      "ru": "на склоне дюны"
+    }
+  },
+  {
+    "id": "312",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на балконі театру",
+      "en": "on a theater balcony",
+      "ru": "на балконе театра"
+    }
+  },
+  {
+    "id": "313",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у підземеллі замку",
+      "en": "in a castle dungeon",
+      "ru": "в подземелье замка"
+    }
+  },
+  {
+    "id": "314",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на місці злочину",
+      "en": "at the crime scene",
+      "ru": "на месте преступления"
+    }
+  },
+  {
+    "id": "315",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у фонтані",
+      "en": "in a fountain",
+      "ru": "в фонтане"
+    }
+  },
+  {
+    "id": "316",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на пустій сцені",
+      "en": "on an empty stage",
+      "ru": "на пустой сцене"
+    }
+  },
+  {
+    "id": "317",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у магазині іграшок",
+      "en": "in a toy store",
+      "ru": "в магазине игрушек"
+    }
+  },
+  {
+    "id": "318",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у печері",
+      "en": "in a cave",
+      "ru": "в пещере"
+    }
+  },
+  {
+    "id": "319",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у мильній ванні",
+      "en": "in a bubble bath",
+      "ru": "в мыльной ванне"
+    }
+  },
+  {
+    "id": "320",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у дерев’яному шале",
+      "en": "in a wooden chalet",
+      "ru": "в деревянном шале"
+    }
+  },
+  {
+    "id": "321",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на покинутій фабриці",
+      "en": "in an abandoned factory",
+      "ru": "на заброшенной фабрике"
+    }
+  },
+  {
+    "id": "322",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на задньому дворі",
+      "en": "in the backyard",
+      "ru": "во дворе"
+    }
+  },
+  {
+    "id": "323",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на палубі яхти",
+      "en": "on a yacht deck",
+      "ru": "на палубе яхты"
+    }
+  },
+  {
+    "id": "324",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у відеоігровій кімнаті",
+      "en": "in a gaming room",
+      "ru": "в игровой комнате"
+    }
+  },
+  {
+    "id": "325",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на пірсі",
+      "en": "on a pier",
+      "ru": "на пирсе"
+    }
+  },
+  {
+    "id": "326",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у ліжку з балдахіном",
+      "en": "in a canopy bed",
+      "ru": "в кровати с балдахином"
+    }
+  },
+  {
+    "id": "327",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на тренажері",
+      "en": "on a treadmill",
+      "ru": "на беговой дорожке"
+    }
+  },
+  {
+    "id": "328",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у підводному барі",
+      "en": "in an underwater bar",
+      "ru": "в подводном баре"
+    }
+  },
+  {
+    "id": "329",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у музичній студії",
+      "en": "in a music studio",
+      "ru": "в музыкальной студии"
+    }
+  },
+  {
+    "id": "330",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на млині",
+      "en": "in a windmill",
+      "ru": "в мельнице"
+    }
+  },
+  {
+    "id": "331",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у зоопарку",
+      "en": "in a zoo",
+      "ru": "в зоопарке"
+    }
+  },
+  {
+    "id": "332",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на айсбергу",
+      "en": "on an iceberg",
+      "ru": "на айсберге"
+    }
+  },
+  {
+    "id": "333",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на арені цирку",
+      "en": "in a circus arena",
+      "ru": "на арене цирка"
+    }
+  },
+  {
+    "id": "334",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у вітряку",
+      "en": "in a wind turbine",
+      "ru": "в ветряке"
+    }
+  },
+  {
+    "id": "335",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на задньому сидінні авто",
+      "en": "in the back seat of a car",
+      "ru": "на заднем сиденье машины"
+    }
+  },
+  {
+    "id": "336",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на вершині маяка",
+      "en": "at the top of a lighthouse",
+      "ru": "на вершине маяка"
+    }
+  },
+  {
+    "id": "337",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у теплиці",
+      "en": "in a greenhouse",
+      "ru": "в теплице"
+    }
+  },
+  {
+    "id": "338",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на верстаті",
+      "en": "on a workbench",
+      "ru": "на верстаке"
+    }
+  },
+  {
+    "id": "339",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на кладовищі кораблів",
+      "en": "at a ship graveyard",
+      "ru": "на кладбище кораблей"
+    }
+  },
+  {
+    "id": "340",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у кінотеатрі під відкритим небом",
+      "en": "in an open-air cinema",
+      "ru": "в кинотеатре под открытым небом"
+    }
+  },
+  {
+    "id": "341",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "на стріху",
+      "en": "on a thatched roof",
+      "ru": "на соломенной крыше"
+    }
+  },
+  {
+    "id": "342",
+    "word_type": "PLACE",
+    "word": {
+      "ua": "у кулуарах",
+      "en": "in the backstage",
+      "ru": "в кулуарах"
+    }
+  }
+]

@@ -174,6 +174,30 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 words.take(Random.nextInt(3, 6)).toSet().toList()
             }
+            Game.GameName.ONE_WORD_MANY_MEANINGS -> {
+                val words = getWords(Word.WordType.NOUN)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(1).map { it.wordText }
+            }
+            Game.GameName.FLIRTING_WITH_OBJECT -> {
+                val words = getWords(Word.WordType.NOUN)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(1).map { it.wordText }
+            }
+            Game.GameName.BOTH_THERE_AND_IN_BED -> {
+                val words = getWords(Word.WordType.PLACE)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(1).map { it.wordText }
+            }
+            Game.GameName.HOT_WORD -> {
+                val words = getWords(Word.WordType.HOT)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(1).map { it.wordText }
+            }
             else -> emptyList()
         }
     }
@@ -257,6 +281,48 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
+            Game.GameName.SUBTLE_MANIPULATION -> {
+                val sentences = getSentences(Sentence.SentenceType.SUBTLE_MANIPULATION)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
+            Game.GameName.ONE_SYNONYM_PLEASE -> {
+                val sentences = getSentences(Sentence.SentenceType.ONE_SYNONYM_PLEASE)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
+            Game.GameName.INTONATION_MASTER -> {
+                val sentences = getSentences(Sentence.SentenceType.INTONATION_MASTER)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
+            Game.GameName.FUNNIEST_ANSWER -> {
+                val sentences = getSentences(Sentence.SentenceType.FUNNIEST_ANSWER)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
+            Game.GameName.MADMAN_ANNOUNCEMENT -> {
+                val sentences = getSentences(Sentence.SentenceType.SELL_THE_MADNESS)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
+            Game.GameName.FUNNY_EXCUSE -> {
+                val sentences = getSentences(Sentence.SentenceType.FUNNY_EXCUSE)
+                val uniqueSentences = sentences.distinctBy { it.text }
+
+                // todo do something not sentence to be repeated for the same exercise session
+                uniqueSentences.shuffled().first().text
+            }
             else -> ""
         }
     }
@@ -267,6 +333,8 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 val fileName = when (wordType) {
                     Word.WordType.NOUN -> "words/words_nouns.json"
+                    Word.WordType.PLACE -> "words/words_places.json"
+                    Word.WordType.HOT -> "words/words_hot.json"
                 }
 
                 val words: List<Word> = loadJsonFromAssets(context, fileName)?.let { json ->
@@ -296,6 +364,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Sentence.SentenceType.FORBIDDEN_WORDS -> "sentences/sentences_forbiden_words_.json"
                     Sentence.SentenceType.BODY_LANGUAGE -> "sentences/sentences_body_language.json"
                     Sentence.SentenceType.PERSUASIVE_SHOUT -> "sentences/sentences_persuative_shout.json"
+                    Sentence.SentenceType.SUBTLE_MANIPULATION -> "sentences/sentences_subtle_manipulation.json"
+                    Sentence.SentenceType.ONE_SYNONYM_PLEASE -> "sentences/sentences_one_sinonim_please.json"
+                    Sentence.SentenceType.INTONATION_MASTER -> "sentences/sentences_intonation_master.json"
+                    Sentence.SentenceType.FUNNIEST_ANSWER -> "sentences/sentences_funniest_answer.json"
+                    Sentence.SentenceType.SELL_THE_MADNESS -> "sentences/sentences_sell_the_madness.json"
+                    Sentence.SentenceType.FUNNY_EXCUSE -> "sentences/sentences_funny_excuse.json"
                 }
 
                 val sentences: List<Sentence> = loadJsonFromAssets(context, fileName)?.let { json ->

@@ -1,0 +1,1937 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе закінчилися гроші на обід, а твій колега щойно розпакував піцу.",
+      "en": "Situation: You're out of money for lunch, and your colleague just unpacked a pizza.",
+      "ru": "Ситуация: У тебя закончились деньги на обед, а коллега только что открыл коробку с пиццей."
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі холодно, а твій друг у теплій куртці й має ще одну з собою.",
+      "en": "Situation: You're cold, and your friend is wearing a warm jacket and has a spare.",
+      "ru": "Ситуация: Тебе знобит, а у друга тёплая куртка и ещё одна про запас."
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твої навушники зламались, а у сусіда по парті лежать новенькі бездротові.",
+      "en": "Situation: Your headphones broke, and your desk neighbor has a shiny new wireless pair.",
+      "ru": "Ситуация: У тебя сломались наушники, а у соседа по парте — новенькие беспроводные."
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти втомився нести сумки, а друг іде поруч із вільними руками.",
+      "en": "Situation: You're tired of carrying bags, and your friend walks beside you empty-handed.",
+      "ru": "Ситуация: Ты устал нести сумки, а друг идёт рядом с пустыми руками."
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не маєш зарядки, а поруч хтось заряджає телефон.",
+      "en": "Situation: You don’t have a charger, and someone nearby is charging their phone.",
+      "ru": "Ситуация: У тебя нет зарядки, а кто-то рядом заряжает свой телефон."
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш потрапити в клуб без черги, а знайомий працює охоронцем.",
+      "en": "Situation: You want to skip the line at a club, and your acquaintance is the bouncer.",
+      "ru": "Ситуация: Ты хочешь пройти в клуб без очереди, а знакомый работает охранником."
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе зламався принтер, а колега щойно купив новий.",
+      "en": "Situation: Your printer broke, and your colleague just bought a new one.",
+      "ru": "Ситуация: У тебя сломался принтер, а коллега только что купил новый."
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі потрібно підвезення додому, а знайомий щойно вийшов з машини.",
+      "en": "Situation: You need a ride home, and your acquaintance just got out of their car.",
+      "ru": "Ситуация: Тебе нужно подвезти домой, а знакомый только что вышел из машины."
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось зробив тобі каву, бо сильно зайнятий.",
+      "en": "Situation: You want someone to make you coffee because you’re very busy.",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то сделал тебе кофе, потому что ты очень занят."
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі нудно, а друг має настільну гру.",
+      "en": "Situation: You’re bored, and your friend has a board game.",
+      "ru": "Ситуация: Тебе скучно, а у друга есть настольная игра."
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе розрядився телефон, а співрозмовник щойно зарядив свій.",
+      "en": "Situation: Your phone is dead, and the other person just charged theirs.",
+      "ru": "Ситуация: У тебя сел телефон, а у собеседника только что зарядился."
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув гаманець вдома перед обідом у кафе з другом.",
+      "en": "Situation: You forgot your wallet at home before lunch in a café with a friend.",
+      "ru": "Ситуация: Ты забыл кошелёк дома перед обедом в кафе с другом."
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У сусіда є драбина, а ти не можеш дістати коробку з антресолі.",
+      "en": "Situation: Your neighbor has a ladder, and you can't reach the top shelf box.",
+      "ru": "Ситуация: У соседа есть лестница, а ты не можешь достать коробку сверху."
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга є запасний квиток на концерт, на який ти хотів потрапити.",
+      "en": "Situation: Your friend has an extra concert ticket you really wanted.",
+      "ru": "Ситуация: У друга есть лишний билет на концерт, на который ты хотел попасть."
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій колега має авто, а тобі далеко йти на зупинку після роботи.",
+      "en": "Situation: Your colleague has a car, and you have a long walk to the bus stop.",
+      "ru": "Ситуация: У коллеги есть машина, а тебе далеко идти до остановки после работы."
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є вільне місце в номері готелю, а ти не встиг забронювати.",
+      "en": "Situation: Your friend has a free hotel room spot, and you didn't manage to book.",
+      "ru": "Ситуация: У друга есть свободное место в номере, а ты не успел забронировать."
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Співрозмовник щойно спік свіжі млинці, а ти нічого не їв зранку.",
+      "en": "Situation: The other person just made pancakes, and you haven’t eaten since morning.",
+      "ru": "Ситуация: Собеседник только что испёк блины, а ты не ел с утра."
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе порвався пакет, а співрозмовник має запасний рюкзак.",
+      "en": "Situation: Your bag tore, and the other person has a spare backpack.",
+      "ru": "Ситуация: У тебя порвался пакет, а у собеседника есть запасной рюкзак."
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч має антисептик, а ти щойно торкнувся чогось брудного.",
+      "en": "Situation: Someone nearby has sanitizer, and you just touched something dirty.",
+      "ru": "Ситуация: У кого-то рядом есть антисептик, а ты только что дотронулся до чего-то грязного."
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У знайомого є ключ від спортзалу, а твій тимчасово недійсний.",
+      "en": "Situation: Your acquaintance has a gym key, and yours is temporarily deactivated.",
+      "ru": "Ситуация: У знакомого есть ключ от спортзала, а твой временно не работает."
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе закінчились гроші на метро, а друг має картку з поїздками.",
+      "en": "Situation: You’ve run out of metro credit, and your friend has a pass.",
+      "ru": "Ситуация: У тебя закончились деньги на метро, а у друга есть проездной."
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга є павербанк, а твоя батарея майже на нулі.",
+      "en": "Situation: Your friend has a power bank, and your battery is almost dead.",
+      "ru": "Ситуация: У друга есть пауэрбанк, а у тебя почти сел телефон."
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг готує каву, а ти виглядаєш дуже сонним.",
+      "en": "Situation: Your friend is brewing coffee, and you look extremely sleepy.",
+      "ru": "Ситуация: Друг варит кофе, а ты выглядишь очень сонным."
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось має ручку, а ти щойно загубив свою перед підписанням документу.",
+      "en": "Situation: Someone has a pen, and you just lost yours before signing a document.",
+      "ru": "Ситуация: У кого-то есть ручка, а ты только что потерял свою перед подписанием документа."
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У колеги є принтер, а тобі терміново треба роздрукувати звіт.",
+      "en": "Situation: A colleague has a printer, and you urgently need to print a report.",
+      "ru": "Ситуация: У коллеги есть принтер, а тебе срочно нужно распечатать отчёт."
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій друг має квитки в кіно, а ти не встиг купити.",
+      "en": "Situation: Your friend has movie tickets, and you didn't manage to buy any.",
+      "ru": "Ситуация: У друга есть билеты в кино, а ты не успел купить."
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти змерз, а твій товариш щойно зняв теплу кофту.",
+      "en": "Situation: You’re cold, and your friend just took off their warm hoodie.",
+      "ru": "Ситуация: Ты замёрз, а твой друг только что снял тёплую кофту."
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У співрозмовника є велосипед, а тобі треба швидко доїхати до магазину.",
+      "en": "Situation: The other person has a bike, and you need to get to the store quickly.",
+      "ru": "Ситуация: У собеседника есть велосипед, а тебе нужно срочно в магазин."
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг має залишки піци, а ти щойно сказав, що не вечеряв.",
+      "en": "Situation: Your friend has leftover pizza, and you just mentioned you skipped dinner.",
+      "ru": "Ситуация: У друга осталась пицца, а ты только что сказал, что не ужинал."
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч щойно купив новий зарядний пристрій, а твій зламаний.",
+      "en": "Situation: Someone nearby just bought a new charger, and yours is broken.",
+      "ru": "Ситуация: Кто-то рядом только что купил новый зарядник, а твой сломан."
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти бачиш, як співрозмовник п’є холодний лимонад, а тобі спекотно і немає води.",
+      "en": "Situation: The other person is drinking cold lemonade, and you're hot with no water.",
+      "ru": "Ситуация: Собеседник пьёт холодный лимонад, а тебе жарко и у тебя нет воды."
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга є парасоля, а дощ несподівано посилився.",
+      "en": "Situation: Your friend has an umbrella, and the rain just got heavier.",
+      "ru": "Ситуация: У друга есть зонт, а дождь только что усилился."
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Колега має обігрівач, а твоє робоче місце біля вікна.",
+      "en": "Situation: A colleague has a heater, and your desk is by the cold window.",
+      "ru": "Ситуация: У коллеги есть обогреватель, а твоё рабочее место у холодного окна."
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твоєму знайомому доставили нову книгу, яку ти давно хотів прочитати.",
+      "en": "Situation: Your acquaintance got a new book you've been wanting to read.",
+      "ru": "Ситуация: Твоему знакомому доставили книгу, которую ты давно хотел прочитать."
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч зібрав великий пакет чіпсів, а ти вже півдня нічого не їв.",
+      "en": "Situation: Someone near you opened a big pack of chips, and you haven't eaten in hours.",
+      "ru": "Ситуация: Кто-то рядом открыл большую пачку чипсов, а ты не ел полдня."
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг готується робити каву, а ти відчуваєш втому.",
+      "en": "Situation: Your friend is about to make coffee, and you're feeling exhausted.",
+      "ru": "Ситуация: Друг собирается сварить кофе, а ты чувствуешь усталость."
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У співрозмовника є пара навушників, а тобі потрібно послухати аудіо.",
+      "en": "Situation: The other person has an extra set of earphones, and you need to listen to something.",
+      "ru": "Ситуация: У собеседника есть запасные наушники, а тебе нужно что-то послушать."
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг щойно купив морозиво, а ти тільки що згадав, як його любиш.",
+      "en": "Situation: Your friend just bought ice cream, and you mentioned loving it.",
+      "ru": "Ситуация: Друг только что купил мороженое, а ты упомянул, как его любишь."
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій співрозмовник має новий дощовик, а ти промок на мотоциклі.",
+      "en": "Situation: Your conversation partner has a raincoat, and you got soaked on your bike.",
+      "ru": "Ситуация: У собеседника есть дождевик, а ты промок, пока ехал на мотоцикле."
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є нова гітара, а ти щойно згадав, як давно не грав.",
+      "en": "Situation: Your friend has a new guitar, and you just mentioned how long it's been since you played.",
+      "ru": "Ситуация: У друга новая гитара, а ты только что сказал, как давно не играл."
+    }
+  },
+  {
+    "id": "61",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч щойно замовив їжу, а твій живіт голосно загуркотів.",
+      "en": "Situation: Someone nearby just ordered food, and your stomach growled loudly.",
+      "ru": "Ситуация: Кто-то рядом только что заказал еду, а у тебя громко заурчал живот."
+    }
+  },
+  {
+    "id": "62",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій друг має автомобіль, а автобуси сьогодні не ходять.",
+      "en": "Situation: Your friend has a car, and the buses aren't running today.",
+      "ru": "Ситуация: У твоего друга есть машина, а автобусы сегодня не ходят."
+    }
+  },
+  {
+    "id": "63",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є термос з чаєм, а ти забув свою пляшку вдома.",
+      "en": "Situation: Someone has a thermos of tea, and you forgot your bottle at home.",
+      "ru": "Ситуация: У кого-то есть термос с чаем, а ты забыл свою бутылку дома."
+    }
+  },
+  {
+    "id": "64",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У співрозмовника є шапка, а на вулиці раптово похолодало.",
+      "en": "Situation: The other person has a hat, and it suddenly got cold outside.",
+      "ru": "Ситуация: У собеседника есть шапка, а на улице резко похолодало."
+    }
+  },
+  {
+    "id": "65",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У твого сусіда є електровідкривачка, а ти не можеш відкрити банку.",
+      "en": "Situation: Your neighbor has an electric opener, and you can’t open your can.",
+      "ru": "Ситуация: У соседа есть электрическая открывалка, а ты не можешь открыть банку."
+    }
+  },
+  {
+    "id": "66",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг має ключ від загального підвалу, а тобі треба занести туди коробки.",
+      "en": "Situation: Your friend has the shared basement key, and you need to drop off boxes.",
+      "ru": "Ситуация: У друга есть ключ от общего подвала, а тебе нужно отнести туда коробки."
+    }
+  },
+  {
+    "id": "67",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч грає в настільну гру, яка тобі дуже подобається.",
+      "en": "Situation: Someone is playing a board game you love.",
+      "ru": "Ситуация: Кто-то рядом играет в настольную игру, которую ты обожаешь."
+    }
+  },
+  {
+    "id": "68",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій знайомий має фотоапарат, а ти хочеш гарне фото на згадку.",
+      "en": "Situation: Your acquaintance has a camera, and you want a nice photo to remember the moment.",
+      "ru": "Ситуация: У твоего знакомого есть фотоаппарат, а ты хочешь хорошее фото на память."
+    }
+  },
+  {
+    "id": "69",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг розпалив багаття, а ти ще не грів руки.",
+      "en": "Situation: Your friend lit a fire, and you haven’t warmed your hands yet.",
+      "ru": "Ситуация: Друг разжёг костёр, а ты ещё не согрел руки."
+    }
+  },
+  {
+    "id": "70",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У колеги є нові навички в Excel, а ти маєш складну таблицю.",
+      "en": "Situation: Your colleague has new Excel skills, and you have a complex spreadsheet.",
+      "ru": "Ситуация: У коллеги новые навыки в Excel, а у тебя сложная таблица."
+    }
+  },
+  {
+    "id": "71",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Співрозмовник добре орієнтується в місті, а ти заблукав.",
+      "en": "Situation: The other person knows the city well, and you’re lost.",
+      "ru": "Ситуация: Собеседник хорошо ориентируется в городе, а ты заблудился."
+    }
+  },
+  {
+    "id": "72",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг знає пароль до Wi-Fi, а ти щойно залишився без інтернету.",
+      "en": "Situation: Your friend knows the Wi-Fi password, and you just lost your internet connection.",
+      "ru": "Ситуация: Друг знает пароль от Wi-Fi, а ты остался без интернета."
+    }
+  },
+  {
+    "id": "73",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У знайомого є запасні серветки, а ти щойно розлив чай.",
+      "en": "Situation: An acquaintance has extra napkins, and you just spilled tea.",
+      "ru": "Ситуация: У знакомого есть салфетки, а ты только что пролил чай."
+    }
+  },
+  {
+    "id": "74",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч щойно натер кремом руки, а в тебе шкіра суха.",
+      "en": "Situation: Someone nearby just used hand cream, and your hands are dry.",
+      "ru": "Ситуация: Кто-то рядом намазал руки кремом, а у тебя сухая кожа."
+    }
+  },
+  {
+    "id": "75",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є ліхтарик, а світло щойно згасло.",
+      "en": "Situation: Your friend has a flashlight, and the lights just went out.",
+      "ru": "Ситуация: У друга есть фонарик, а свет только что погас."
+    }
+  },
+  {
+    "id": "76",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе закінчився гель для душу, а співрозмовник щойно купив новий.",
+      "en": "Situation: You've run out of shower gel, and your conversation partner just bought a new one.",
+      "ru": "Ситуация: У тебя закончился гель для душа, а собеседник только что купил новый."
+    }
+  },
+  {
+    "id": "77",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти дуже змерз, а в друга є зайвий светр у рюкзаку.",
+      "en": "Situation: You're freezing, and your friend has an extra sweater in their backpack.",
+      "ru": "Ситуация: Ты очень замёрз, а у друга есть запасной свитер в рюкзаке."
+    }
+  },
+  {
+    "id": "78",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе не заряджений телефон, а співрозмовник має павербанк.",
+      "en": "Situation: Your phone is dead, and the other person has a power bank.",
+      "ru": "Ситуация: У тебя разрядился телефон, а у собеседника есть пауэрбанк."
+    }
+  },
+  {
+    "id": "79",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не маєш чим нарізати хліб, а знайомий тримає ніж у руках.",
+      "en": "Situation: You don't have anything to cut bread with, and your acquaintance is holding a knife.",
+      "ru": "Ситуация: Тебе нечем порезать хлеб, а знакомый держит нож в руках."
+    }
+  },
+  {
+    "id": "80",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе скінчився папір у принтері, а колега друкує великий звіт.",
+      "en": "Situation: You're out of paper in your printer, and your colleague is printing a big report.",
+      "ru": "Ситуация: У тебя закончилась бумага в принтере, а коллега печатает большой отчёт."
+    }
+  },
+  {
+    "id": "81",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув сніданок, а сусід дістав із сумки канапки.",
+      "en": "Situation: You forgot your breakfast, and your neighbor just pulled out sandwiches.",
+      "ru": "Ситуация: Ты забыл завтрак, а сосед достал из сумки бутерброды."
+    }
+  },
+  {
+    "id": "82",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій ліхтарик не працює, а хтось поруч має запасний.",
+      "en": "Situation: Your flashlight doesn't work, and someone nearby has a spare one.",
+      "ru": "Ситуация: Твой фонарик не работает, а у кого-то рядом есть запасной."
+    }
+  },
+  {
+    "id": "83",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі потрібно щось підклеїти, а співрозмовник тримає клей.",
+      "en": "Situation: You need to glue something, and your conversation partner is holding glue.",
+      "ru": "Ситуация: Тебе нужно что-то подклеить, а собеседник держит клей."
+    }
+  },
+  {
+    "id": "84",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув взяти дощовик, а товариш має запасний.",
+      "en": "Situation: You forgot to bring a raincoat, and your friend has a spare one.",
+      "ru": "Ситуация: Ты забыл дождевик, а у друга есть запасной."
+    }
+  },
+  {
+    "id": "85",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе немає ручки на екзамені, а студент поруч має кілька.",
+      "en": "Situation: You don't have a pen during the exam, and the student next to you has several.",
+      "ru": "Ситуация: У тебя нет ручки на экзамене, а студент рядом держит несколько."
+    }
+  },
+  {
+    "id": "86",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти застряг без дрібних грошей на оплату автобусу, а сусід по черзі щойно дістав гаманець.",
+      "en": "Situation: You're stuck without small change for the bus, and the person behind you just pulled out their wallet.",
+      "ru": "Ситуация: У тебя нет мелочи для автобуса, а человек за тобой достал кошелёк."
+    }
+  },
+  {
+    "id": "87",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі потрібно перенести важку коробку, а співрозмовник щойно розім’яв руки.",
+      "en": "Situation: You need to lift a heavy box, and your partner just stretched their arms.",
+      "ru": "Ситуация: Тебе нужно поднять тяжёлую коробку, а собеседник только что размял руки."
+    }
+  },
+  {
+    "id": "88",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти втомився стояти в черзі, а твій друг — сидить поруч на лавці.",
+      "en": "Situation: You're tired of standing in line, and your friend is sitting nearby on a bench.",
+      "ru": "Ситуация: Ты устал стоять в очереди, а твой друг сидит рядом на лавочке."
+    }
+  },
+  {
+    "id": "89",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти загубив ручку, а колега має запасну, ще й у твоєму улюбленому кольорі.",
+      "en": "Situation: You've lost your pen, and your colleague has a spare one—your favorite color.",
+      "ru": "Ситуация: Ты потерял ручку, а у коллеги есть запасная — твоего любимого цвета."
+    }
+  },
+  {
+    "id": "90",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш слухати музику, але забув навушники, а співрозмовник тримає запасні.",
+      "en": "Situation: You want to listen to music but forgot your headphones, and the other person has an extra pair.",
+      "ru": "Ситуация: Ты хочешь послушать музыку, но забыл наушники, а у собеседника есть запасные."
+    }
+  },
+  {
+    "id": "91",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе зламалася блискавка на куртці, а товариш має з собою канцелярський ніж.",
+      "en": "Situation: Your jacket's zipper broke, and your friend has a utility knife.",
+      "ru": "Ситуация: У тебя сломалась молния на куртке, а у друга с собой канцелярский нож."
+    }
+  },
+  {
+    "id": "92",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш сфотографуватись, а поруч — фотограф із професійною камерою.",
+      "en": "Situation: You want to take a photo, and nearby is a photographer with a professional camera.",
+      "ru": "Ситуация: Ты хочешь сфотографироваться, а рядом фотограф с профессиональной камерой."
+    }
+  },
+  {
+    "id": "93",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій напій надто гарячий, а співрозмовник тримає кілька кубиків льоду.",
+      "en": "Situation: Your drink is too hot, and your partner is holding some ice cubes.",
+      "ru": "Ситуация: Твой напиток слишком горячий, а у собеседника есть лёд."
+    }
+  },
+  {
+    "id": "94",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться почитати, але ти забув окуляри, а друг має запасні.",
+      "en": "Situation: You want to read, but forgot your glasses, and your friend has a spare pair.",
+      "ru": "Ситуация: Ты хочешь почитать, но забыл очки, а у друга есть запасные."
+    }
+  },
+  {
+    "id": "95",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе порвався пакет із продуктами, а перехожий має великий екосумку.",
+      "en": "Situation: Your grocery bag ripped, and a passerby has a big reusable tote.",
+      "ru": "Ситуация: У тебя порвалась сумка с продуктами, а прохожий держит большую экосумку."
+    }
+  },
+  {
+    "id": "96",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не встигаєш на зустріч, а знайомий саме їде в тому ж напрямку на авто.",
+      "en": "Situation: You're late for a meeting, and your acquaintance is driving in that direction.",
+      "ru": "Ситуация: Ты опаздываешь на встречу, а знакомый едет в том же направлении."
+    }
+  },
+  {
+    "id": "97",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти зголоднів, а колега саме дістав ланчбокс.",
+      "en": "Situation: You're hungry, and your colleague just pulled out their lunchbox.",
+      "ru": "Ситуация: Ты проголодался, а коллега достал ланчбокс."
+    }
+  },
+  {
+    "id": "98",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не встигаєш доробити презентацію, а колега — гуру PowerPoint.",
+      "en": "Situation: You can't finish your presentation on time, and your colleague is a PowerPoint expert.",
+      "ru": "Ситуация: Ты не успеваешь закончить презентацию, а коллега — гуру PowerPoint."
+    }
+  },
+  {
+    "id": "99",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не маєш часу помити посуд, а сусід саме прибирає на кухні.",
+      "en": "Situation: You don’t have time to wash the dishes, and your roommate is cleaning the kitchen.",
+      "ru": "Ситуация: У тебя нет времени помыть посуду, а сосед убирает на кухне."
+    }
+  },
+  {
+    "id": "100",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не знаєш, як знайти потрібний автобус, а поряд — місцевий мешканець.",
+      "en": "Situation: You don’t know which bus to take, and a local is standing nearby.",
+      "ru": "Ситуация: Ты не знаешь, какой автобус нужен, а рядом стоит местный житель."
+    }
+  },
+  {
+    "id": "101",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе немає ложки для супу, а друг має дві.",
+      "en": "Situation: You don’t have a spoon for the soup, and your friend has two.",
+      "ru": "Ситуация: У тебя нет ложки для супа, а у друга две."
+    }
+  },
+  {
+    "id": "102",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув ключі, а сусід ще не закрив двері.",
+      "en": "Situation: You forgot your keys, and your neighbor hasn’t locked the door yet.",
+      "ru": "Ситуация: Ты забыл ключи, а сосед ещё не закрыл дверь."
+    }
+  },
+  {
+    "id": "103",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не маєш чим підписати документ, а менеджер щойно підписав свій.",
+      "en": "Situation: You don’t have anything to sign a document with, and your manager just signed theirs.",
+      "ru": "Ситуация: Тебе нечем подписать документ, а менеджер только что подписал свой."
+    }
+  },
+  {
+    "id": "104",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не взяв води на прогулянку, а товариш має пляшку.",
+      "en": "Situation: You didn’t bring water on the walk, and your friend has a bottle.",
+      "ru": "Ситуация: Ты не взял воду на прогулку, а у друга есть бутылка."
+    }
+  },
+  {
+    "id": "105",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не маєш серветки, а знайома щойно витягла цілу упаковку.",
+      "en": "Situation: You don’t have a napkin, and your friend just pulled out a full pack.",
+      "ru": "Ситуация: У тебя нет салфетки, а подруга достала целую упаковку."
+    }
+  },
+  {
+    "id": "106",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб сусід зробив тихіше свою гучну музику",
+      "en": "Situation: You want your neighbor to turn down their loud music",
+      "ru": "Ситуация: Ты хочешь, чтобы сосед убавил громкую музыку"
+    }
+  },
+  {
+    "id": "107",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе закінчилась готівка, і ти хочеш, щоб друг заплатив за каву",
+      "en": "Situation: You ran out of cash and want your friend to pay for the coffee",
+      "ru": "Ситуация: У тебя закончились наличные, и ты хочешь, чтобы друг заплатил за кофе"
+    }
+  },
+  {
+    "id": "108",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти дуже втомлений і хочеш, щоб колега завершив завдання замість тебе",
+      "en": "Situation: You're very tired and want your colleague to finish the task for you",
+      "ru": "Ситуация: Ты очень устал и хочешь, чтобы коллега закончил задание за тебя"
+    }
+  },
+  {
+    "id": "109",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб знайомий підвіз тебе додому після вечірки",
+      "en": "Situation: You want an acquaintance to give you a ride home after the party",
+      "ru": "Ситуация: Ты хочешь, чтобы знакомый подвёз тебя домой после вечеринки"
+    }
+  },
+  {
+    "id": "110",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не маєш часу готувати, і хочеш, щоб хтось замовив їжу",
+      "en": "Situation: You don’t have time to cook and want someone to order food",
+      "ru": "Ситуация: У тебя нет времени готовить, и ты хочешь, чтобы кто-то заказал еду"
+    }
+  },
+  {
+    "id": "111",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі дуже холодно, і ти хочеш, щоб друг поділився з тобою пледом",
+      "en": "Situation: You’re very cold and want your friend to share their blanket",
+      "ru": "Ситуация: Тебе очень холодно, и ты хочешь, чтобы друг поделился с тобой пледом"
+    }
+  },
+  {
+    "id": "112",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув зарядку і хочеш, щоб хтось поділився своєю",
+      "en": "Situation: You forgot your charger and want someone to lend you theirs",
+      "ru": "Ситуация: Ты забыл зарядку и хочешь, чтобы кто-то дал тебе свою"
+    }
+  },
+  {
+    "id": "113",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не хочеш йти на зустріч і сподіваєшся, що її скасують",
+      "en": "Situation: You don’t want to go to a meeting and hope it gets canceled",
+      "ru": "Ситуация: Ты не хочешь идти на встречу и надеешься, что её отменят"
+    }
+  },
+  {
+    "id": "114",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось почастував тебе кавою з автомата",
+      "en": "Situation: You want someone to treat you to coffee from the vending machine",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то угостил тебя кофе из автомата"
+    }
+  },
+  {
+    "id": "115",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб співрозмовник поділився з тобою навушниками у транспорті",
+      "en": "Situation: You want the person next to you to share their headphones on transport",
+      "ru": "Ситуация: Ты хочешь, чтобы собеседник поделился с тобой наушниками в транспорте"
+    }
+  },
+  {
+    "id": "136",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга залишився останній шматок піци, а ти голодний",
+      "en": "Situation: Your friend has the last slice of pizza, and you’re hungry",
+      "ru": "Ситуация: У друга остался последний кусок пиццы, а ты голоден"
+    }
+  },
+  {
+    "id": "137",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе немає навушників, а в друга — дві пари",
+      "en": "Situation: You don't have headphones, and your friend has two pairs",
+      "ru": "Ситуация: У тебя нет наушников, а у друга — две пары"
+    }
+  },
+  {
+    "id": "138",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій знайомий їде машиною в той самий район, що й ти",
+      "en": "Situation: Your acquaintance is driving to the same area you're heading to",
+      "ru": "Ситуация: Знакомый едет в тот же район, что и ты"
+    }
+  },
+  {
+    "id": "139",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув зошит удома, а твій однокласник має два",
+      "en": "Situation: You forgot your notebook at home, and your classmate has two",
+      "ru": "Ситуация: Ты забыл тетрадь дома, а у одноклассника их две"
+    }
+  },
+  {
+    "id": "140",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є запасна батарейка, а в тебе — сіла",
+      "en": "Situation: Your buddy has a spare battery, and yours is dead",
+      "ru": "Ситуация: У друга есть запасная батарейка, а твоя села"
+    }
+  },
+  {
+    "id": "141",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе порвався пакет, а в іншої людини є запасний",
+      "en": "Situation: Your bag tore, and someone nearby has a spare one",
+      "ru": "Ситуация: У тебя порвался пакет, а у кого-то рядом есть запасной"
+    }
+  },
+  {
+    "id": "142",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб друг скинув тобі домашнє завдання",
+      "en": "Situation: You want your friend to send you the homework",
+      "ru": "Ситуация: Ты хочешь, чтобы друг скинул тебе домашнее задание"
+    }
+  },
+  {
+    "id": "143",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: В тебе скінчились гроші на метро, а поруч — знайомий",
+      "en": "Situation: You’ve run out of money for the metro, and a friend is nearby",
+      "ru": "Ситуация: У тебя закончились деньги на метро, а рядом — знакомый"
+    }
+  },
+  {
+    "id": "144",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі дуже хочеться кави, а хтось поруч щойно купив собі",
+      "en": "Situation: You really want coffee, and someone nearby just bought one",
+      "ru": "Ситуация: Тебе очень хочется кофе, а кто-то рядом только что купил себе"
+    }
+  },
+  {
+    "id": "145",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У знайомого є зарядка, а твій телефон майже вимкнувся",
+      "en": "Situation: An acquaintance has a charger, and your phone is dying",
+      "ru": "Ситуация: У знакомого есть зарядка, а твой телефон почти разрядился"
+    }
+  },
+  {
+    "id": "146",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб тебе підвезли до дому після вечірки",
+      "en": "Situation: You want a ride home after a party",
+      "ru": "Ситуация: Ты хочешь, чтобы тебя подвезли домой после вечеринки"
+    }
+  },
+  {
+    "id": "147",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб колега зробив за тебе частину роботи",
+      "en": "Situation: You want a colleague to do part of your task",
+      "ru": "Ситуация: Ты хочешь, чтобы коллега сделал часть твоей работы"
+    }
+  },
+  {
+    "id": "148",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є дощовик, а ти весь промок",
+      "en": "Situation: Your friend has a raincoat, and you're soaking wet",
+      "ru": "Ситуация: У друга есть дождевик, а ты весь промок"
+    }
+  },
+  {
+    "id": "149",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти дуже зголоднів, а хтось поруч щойно відкрив ланч-бокс",
+      "en": "Situation: You’re starving, and someone nearby just opened their lunchbox",
+      "ru": "Ситуация: Ты очень голоден, а кто-то рядом только что открыл свой ланчбокс"
+    }
+  },
+  {
+    "id": "150",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій сусід по кімнаті щойно купив багато смаколиків",
+      "en": "Situation: Your roommate just bought lots of snacks",
+      "ru": "Ситуация: Твой сосед по комнате только что купил много вкусняшек"
+    }
+  },
+  {
+    "id": "151",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не встиг забронювати квитки, а друг — так",
+      "en": "Situation: You didn’t manage to book tickets, but your friend did",
+      "ru": "Ситуация: Ты не успел купить билеты, а друг — да"
+    }
+  },
+  {
+    "id": "152",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб знайома позичила тобі косметику",
+      "en": "Situation: You want an acquaintance to lend you some makeup",
+      "ru": "Ситуация: Ты хочешь, чтобы знакомая одолжила тебе косметику"
+    }
+  },
+  {
+    "id": "153",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій одногрупник має ключі від аудиторії, а ти — ні",
+      "en": "Situation: Your classmate has the key to the room, but you don’t",
+      "ru": "Ситуация: У твоего одногруппника есть ключ от аудитории, а у тебя нет"
+    }
+  },
+  {
+    "id": "154",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі незручно просити про послугу напряму, але дуже потрібно",
+      "en": "Situation: You feel awkward asking directly for a favor, but you really need it",
+      "ru": "Ситуация: Тебе неудобно напрямую просить об услуге, но она очень нужна"
+    }
+  },
+  {
+    "id": "155",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув ланч, а колега їсть прямо перед тобою",
+      "en": "Situation: You forgot your lunch, and a colleague is eating right in front of you",
+      "ru": "Ситуация: Ты забыл ланч, а коллега ест прямо перед тобой"
+    }
+  },
+  {
+    "id": "156",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти знаєш, що друг має абонемент, яким не користується",
+      "en": "Situation: You know your friend has a membership they don’t use",
+      "ru": "Ситуация: Ты знаешь, что у друга есть абонемент, которым он не пользуется"
+    }
+  },
+  {
+    "id": "157",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є знання, які дуже потрібні тобі для проєкту",
+      "en": "Situation: Someone has knowledge you really need for your project",
+      "ru": "Ситуация: У кого-то есть знания, которые тебе очень нужны для проекта"
+    }
+  },
+  {
+    "id": "158",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У знайомої є модна річ, яку ти давно хочеш приміряти",
+      "en": "Situation: An acquaintance has a trendy item you've wanted to try on",
+      "ru": "Ситуация: У знакомой есть модная вещь, которую ты давно хочешь примерить"
+    }
+  },
+  {
+    "id": "159",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій сусід має інструмент, а тобі треба щось полагодити",
+      "en": "Situation: Your neighbor has a tool, and you need to fix something",
+      "ru": "Ситуация: У соседа есть инструмент, а тебе нужно что-то починить"
+    }
+  },
+  {
+    "id": "160",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є книжка, яку ти давно шукаєш",
+      "en": "Situation: Someone has a book you’ve been searching for",
+      "ru": "Ситуация: У кого-то есть книга, которую ты давно ищешь"
+    }
+  },
+  {
+    "id": "161",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб товариш погодився на твою ідею, не пропонуючи прямо",
+      "en": "Situation: You want your friend to support your idea without suggesting it directly",
+      "ru": "Ситуация: Ты хочешь, чтобы друг согласился с твоей идеей, не предлагая её напрямую"
+    }
+  },
+  {
+    "id": "162",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб твій друг пішов з тобою на вечірку",
+      "en": "Situation: You want your friend to come to a party with you",
+      "ru": "Ситуация: Ты хочешь, чтобы друг пошёл с тобой на вечеринку"
+    }
+  },
+  {
+    "id": "163",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось має нову гру, а ти хочеш спробувати",
+      "en": "Situation: Someone has a new game, and you want to try it",
+      "ru": "Ситуация: У кого-то есть новая игра, и ты хочешь попробовать"
+    }
+  },
+  {
+    "id": "164",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб співрозмовник зателефонував замість тебе",
+      "en": "Situation: You’d like the other person to make the call instead of you",
+      "ru": "Ситуация: Тебе хочется, чтобы собеседник позвонил вместо тебя"
+    }
+  },
+  {
+    "id": "165",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось добре розбирається в техніці, а ти — ні",
+      "en": "Situation: Someone is good with tech, and you’re not",
+      "ru": "Ситуация: Кто-то хорошо разбирается в технике, а ты — нет"
+    }
+  },
+  {
+    "id": "166",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось навів лад на спільній кухні",
+      "en": "Situation: You want someone to clean up the shared kitchen",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то прибрался на общей кухне"
+    }
+  },
+  {
+    "id": "167",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі потрібно, щоб хтось зайняв за тебе чергу",
+      "en": "Situation: You need someone to hold your place in line",
+      "ru": "Ситуация: Тебе нужно, чтобы кто-то занял за тебя очередь"
+    }
+  },
+  {
+    "id": "168",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе закінчилась ручка, а поруч — людина з кількома",
+      "en": "Situation: Your pen ran out, and someone nearby has several",
+      "ru": "Ситуация: У тебя закончилась ручка, а рядом кто-то с несколькими"
+    }
+  },
+  {
+    "id": "169",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти дуже втомлений, але не хочеш самостійно нести сумки",
+      "en": "Situation: You're very tired but don't want to carry the bags yourself",
+      "ru": "Ситуация: Ты очень устал, но не хочешь сам нести сумки"
+    }
+  },
+  {
+    "id": "170",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось прочитав інструкцію замість тебе",
+      "en": "Situation: You want someone to read the instructions instead of you",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то прочитал инструкцию вместо тебя"
+    }
+  },
+  {
+    "id": "171",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось пригостив тебе морозивом",
+      "en": "Situation: You want someone to treat you to ice cream",
+      "ru": "Ситуация: Ты хочешь, чтобы тебя угостили мороженым"
+    }
+  },
+  {
+    "id": "172",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб хтось поставив чайник",
+      "en": "Situation: You want someone to put the kettle on",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то поставил чайник"
+    }
+  },
+  {
+    "id": "173",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб друг нагадав тобі про важливу зустріч",
+      "en": "Situation: You want your friend to remind you about an important meeting",
+      "ru": "Ситуация: Ты хочешь, чтобы друг напомнил тебе о важной встрече"
+    }
+  },
+  {
+    "id": "174",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось щойно дістав фотоальбом, а ти хочеш його побачити",
+      "en": "Situation: Someone just pulled out a photo album, and you want to see it",
+      "ru": "Ситуация: Кто-то достал фотоальбом, и ты хочешь его посмотреть"
+    }
+  },
+  {
+    "id": "175",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось приніс тобі воду",
+      "en": "Situation: You want someone to bring you water",
+      "ru": "Ситуация: Ты хочешь, чтобы тебе принесли воды"
+    }
+  },
+  {
+    "id": "176",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є газета з гороскопами, а ти — віриш у них",
+      "en": "Situation: Your friend has a newspaper with horoscopes, and you believe in them",
+      "ru": "Ситуация: У друга есть газета с гороскопами, а ты в них веришь"
+    }
+  },
+  {
+    "id": "177",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось записав лекцію, а ти запізнився",
+      "en": "Situation: Someone recorded the lecture, and you were late",
+      "ru": "Ситуация: Кто-то записал лекцию, а ты опоздал"
+    }
+  },
+  {
+    "id": "178",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб хтось запропонував обмін подарунками",
+      "en": "Situation: You wish someone would suggest exchanging gifts",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то предложил обменяться подарками"
+    }
+  },
+  {
+    "id": "179",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч має приємний парфум, а ти хочеш спробувати",
+      "en": "Situation: Someone nearby wears a nice perfume, and you want to try it",
+      "ru": "Ситуация: Кто-то рядом пользуется приятным парфюмом, а ты хочешь попробовать"
+    }
+  },
+  {
+    "id": "180",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе розрядився ноутбук, а знайомий сидить біля розетки",
+      "en": "Situation: Your laptop is dead, and someone is sitting by the socket",
+      "ru": "Ситуация: У тебя сел ноутбук, а знакомый сидит у розетки"
+    }
+  },
+  {
+    "id": "181",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі дуже нудно, а знайомий читає цікаву книгу",
+      "en": "Situation: You’re bored, and someone you know is reading an interesting book",
+      "ru": "Ситуация: Тебе скучно, а знакомый читает интересную книгу"
+    }
+  },
+  {
+    "id": "182",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У сусіда по парті є копії слайдів, а в тебе — ні",
+      "en": "Situation: Your deskmate has slide copies, and you don’t",
+      "ru": "Ситуация: У соседа по парте есть распечатки слайдов, а у тебя — нет"
+    }
+  },
+  {
+    "id": "183",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг знає жарт, який ти хочеш почути",
+      "en": "Situation: Your friend knows a joke you want to hear",
+      "ru": "Ситуация: Друг знает шутку, которую ты хочешь услышать"
+    }
+  },
+  {
+    "id": "184",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе немає ложки, а в когось — є запасна",
+      "en": "Situation: You don’t have a spoon, and someone has an extra one",
+      "ru": "Ситуация: У тебя нет ложки, а у кого-то есть запасная"
+    }
+  },
+  {
+    "id": "185",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб хтось допоміг нести важкий портфель",
+      "en": "Situation: You wish someone would help you carry your heavy bag",
+      "ru": "Ситуация: Тебе хочется, чтобы кто-то помог нести тяжёлый рюкзак"
+    }
+  },
+  {
+    "id": "186",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось поруч грає музику, яка тобі дуже подобається",
+      "en": "Situation: Someone nearby is playing music you really like",
+      "ru": "Ситуация: Кто-то рядом включает музыку, которая тебе очень нравится"
+    }
+  },
+  {
+    "id": "187",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг має картку знижки в улюбленому кафе",
+      "en": "Situation: Your friend has a discount card for your favorite café",
+      "ru": "Ситуация: У друга есть скидочная карта в твоём любимом кафе"
+    }
+  },
+  {
+    "id": "188",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб хтось відмітив тебе на фото",
+      "en": "Situation: You want someone to tag you in a photo",
+      "ru": "Ситуация: Ты хочешь, чтобы тебя отметили на фото"
+    }
+  },
+  {
+    "id": "189",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У знайомого є запасна маска, а ти свою забув",
+      "en": "Situation: An acquaintance has a spare mask, and you forgot yours",
+      "ru": "Ситуация: У знакомого есть запасная маска, а ты свою забыл"
+    }
+  },
+  {
+    "id": "190",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось навів приклад замість тебе на уроці",
+      "en": "Situation: You want someone to give an example instead of you in class",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то привёл пример на уроке вместо тебя"
+    }
+  },
+  {
+    "id": "191",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій знайомий добре грає в гру, а ти не можеш пройти рівень",
+      "en": "Situation: Your friend is good at the game, and you can’t pass a level",
+      "ru": "Ситуация: Твой знакомый хорошо играет, а ты не можешь пройти уровень"
+    }
+  },
+  {
+    "id": "192",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось має новий додаток, який ти хочеш побачити в дії",
+      "en": "Situation: Someone has a new app, and you want to see how it works",
+      "ru": "Ситуация: У кого-то есть новое приложение, и ты хочешь увидеть, как оно работает"
+    }
+  },
+  {
+    "id": "193",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг знає лайфхак, який міг би тобі зекономити час",
+      "en": "Situation: Your friend knows a life hack that could save you time",
+      "ru": "Ситуация: Друг знает лайфхак, который мог бы сэкономить тебе время"
+    }
+  },
+  {
+    "id": "194",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось поруч дуже смачний обід, і ти хочеш спробувати",
+      "en": "Situation: Someone nearby has a delicious lunch, and you want a taste",
+      "ru": "Ситуация: У кого-то рядом вкусный обед, и ты хочешь попробовать"
+    }
+  },
+  {
+    "id": "195",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось зайнявся оформленням документа замість тебе",
+      "en": "Situation: You want someone to handle the paperwork for you",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то занялся оформлением документов вместо тебя"
+    }
+  },
+  {
+    "id": "196",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі потрібно, щоб хтось відчинив вікно в задушливій кімнаті",
+      "en": "Situation: You need someone to open the window in a stuffy room",
+      "ru": "Ситуация: Тебе нужно, чтобы кто-то открыл окно в душной комнате"
+    }
+  },
+  {
+    "id": "197",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось позичив тобі зарядку для телефону",
+      "en": "Situation: You want someone to lend you a phone charger",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то одолжил тебе зарядку"
+    }
+  },
+  {
+    "id": "198",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти боїшся запізнитися і хочеш, щоб хтось викликав таксі",
+      "en": "Situation: You're afraid of being late and want someone to call a taxi",
+      "ru": "Ситуация: Ты боишься опоздать и хочешь, чтобы кто-то вызвал такси"
+    }
+  },
+  {
+    "id": "199",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе замерзли руки, а поруч хтось у рукавичках",
+      "en": "Situation: Your hands are freezing, and someone nearby is wearing gloves",
+      "ru": "Ситуация: У тебя замерзли руки, а рядом кто-то в перчатках"
+    }
+  },
+  {
+    "id": "200",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб хтось провів тебе додому вночі",
+      "en": "Situation: You want someone to walk you home at night",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то проводил тебя домой ночью"
+    }
+  },
+  {
+    "id": "201",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не можеш відкрити банку, а хтось поруч має сильні руки",
+      "en": "Situation: You can't open a jar, and someone nearby has strong hands",
+      "ru": "Ситуация: Ты не можешь открыть банку, а рядом кто-то с сильными руками"
+    }
+  },
+  {
+    "id": "202",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось виніс сміття замість тебе",
+      "en": "Situation: You want someone to take out the trash instead of you",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то вынес мусор вместо тебя"
+    }
+  },
+  {
+    "id": "203",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе закінчилося мило, а у сусіда по кімнаті — ні",
+      "en": "Situation: You ran out of soap, but your roommate hasn't",
+      "ru": "Ситуация: У тебя закончилось мыло, а у соседа по комнате — нет"
+    }
+  },
+  {
+    "id": "204",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб друг допоміг знайти помилку в твоїй презентації",
+      "en": "Situation: You want your friend to help find a mistake in your presentation",
+      "ru": "Ситуация: Ты хочешь, чтобы друг помог найти ошибку в твоей презентации"
+    }
+  },
+  {
+    "id": "205",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій знайомий має смаколики, а ти голодний",
+      "en": "Situation: Your acquaintance has snacks, and you're hungry",
+      "ru": "Ситуация: У знакомого есть вкусняшки, а ты голоден"
+    }
+  },
+  {
+    "id": "206",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є зволожувач повітря, а в тебе пересохло в горлі",
+      "en": "Situation: Someone has a humidifier, and your throat feels dry",
+      "ru": "Ситуация: У кого-то есть увлажнитель воздуха, а у тебя пересохло в горле"
+    }
+  },
+  {
+    "id": "207",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув ключі, а сусід точно вдома",
+      "en": "Situation: You forgot your keys, and your neighbor is definitely home",
+      "ru": "Ситуация: Ты забыл ключи, а сосед точно дома"
+    }
+  },
+  {
+    "id": "208",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг щойно зробив каву, і запах дуже спокушає",
+      "en": "Situation: Your friend just made coffee, and the smell is tempting",
+      "ru": "Ситуация: Друг только что сварил кофе, и аромат очень соблазнительный"
+    }
+  },
+  {
+    "id": "209",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе немає готівки, а поруч є банкомат і друг",
+      "en": "Situation: You have no cash, there's an ATM nearby, and your friend is there",
+      "ru": "Ситуация: У тебя нет наличных, рядом банкомат и друг"
+    }
+  },
+  {
+    "id": "210",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі хочеться, щоб друг увімкнув серіал, який ти нещодавно згадав",
+      "en": "Situation: You wish your friend would turn on the series you just mentioned",
+      "ru": "Ситуация: Ты хочешь, чтобы друг включил сериал, который ты только что упомянул"
+    }
+  },
+  {
+    "id": "211",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось допоміг тобі з важким ребусом",
+      "en": "Situation: You want someone to help you with a difficult puzzle",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то помог тебе с трудной головоломкой"
+    }
+  },
+  {
+    "id": "212",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось нагадав тобі про зустріч з лікарем",
+      "en": "Situation: You want someone to remind you about your doctor appointment",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то напомнил тебе о визите к врачу"
+    }
+  },
+  {
+    "id": "213",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб тобі дали пас на тренуванні",
+      "en": "Situation: You want to be passed the ball during practice",
+      "ru": "Ситуация: Ты хочешь, чтобы тебе сделали пас на тренировке"
+    }
+  },
+  {
+    "id": "214",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось розповів анекдот у незручній тиші",
+      "en": "Situation: You want someone to tell a joke during an awkward silence",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то рассказал анекдот во время неловкой тишины"
+    }
+  },
+  {
+    "id": "215",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти не хочеш йти на зустріч сам, а друг вільний",
+      "en": "Situation: You don't want to go to a meeting alone, and your friend is free",
+      "ru": "Ситуация: Ты не хочешь идти на встречу один, а друг свободен"
+    }
+  },
+  {
+    "id": "216",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось показав тобі, як користуватись новим додатком",
+      "en": "Situation: You want someone to show you how to use a new app",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то показал тебе, как пользоваться новым приложением"
+    }
+  },
+  {
+    "id": "217",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось нагадав, де ти залишив навушники",
+      "en": "Situation: You want someone to remind you where you left your headphones",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то напомнил тебе, где ты оставил наушники"
+    }
+  },
+  {
+    "id": "218",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є крем від сонця, а ти забув свій",
+      "en": "Situation: Someone has sunscreen, and you forgot yours",
+      "ru": "Ситуация: У кого-то есть солнцезащитный крем, а ты свой забыл"
+    }
+  },
+  {
+    "id": "219",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Твій знайомий знає коротший шлях, а ви поспішаєте",
+      "en": "Situation: Your friend knows a shortcut, and you're in a hurry",
+      "ru": "Ситуация: Твой знакомый знает короткий путь, а вы спешите"
+    }
+  },
+  {
+    "id": "220",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось забрав твою їжу з доставки",
+      "en": "Situation: You want someone to pick up your food delivery",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то забрал твою еду из доставки"
+    }
+  },
+  {
+    "id": "221",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга є ліхтарик, а світло раптово зникло",
+      "en": "Situation: Your friend has a flashlight, and the lights went out",
+      "ru": "Ситуация: У друга есть фонарик, а свет внезапно пропал"
+    }
+  },
+  {
+    "id": "222",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув парасольку, а друг іде в тому ж напрямку",
+      "en": "Situation: You forgot your umbrella, and your friend is heading the same way",
+      "ru": "Ситуация: Ты забыл зонт, а друг идёт в ту же сторону"
+    }
+  },
+  {
+    "id": "223",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга залишився останній шматок піци, а ти все ще голодний",
+      "en": "Situation: Your friend has the last slice of pizza, and you're still hungry",
+      "ru": "Ситуация: У друга остался последний кусок пиццы, а ты ещё голоден"
+    }
+  },
+  {
+    "id": "224",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є антисептик, а ти щойно доторкнувся до поручня",
+      "en": "Situation: Someone has hand sanitizer, and you just touched the railing",
+      "ru": "Ситуация: У кого-то есть антисептик, а ты только что тронулся за поручень"
+    }
+  },
+  {
+    "id": "225",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі незручно просити допомоги, але ніяк не можеш зав'язати шнурки",
+      "en": "Situation: You're too embarrassed to ask for help but can't tie your shoelaces",
+      "ru": "Ситуация: Тебе неловко просить о помощи, но ты не можешь завязать шнурки"
+    }
+  },
+  {
+    "id": "226",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти помітив, що у друга зайва маска, а тобі забракло своєї",
+      "en": "Situation: You noticed your friend has an extra mask, and you forgot yours",
+      "ru": "Ситуация: Ты заметил, что у друга есть лишняя маска, а ты свою забыл"
+    }
+  },
+  {
+    "id": "227",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось щойно купив морозиво, а ти мовчки на нього дивишся",
+      "en": "Situation: Someone just bought ice cream, and you're quietly staring at it",
+      "ru": "Ситуация: Кто-то только что купил мороженое, а ты молча на него смотришь"
+    }
+  },
+  {
+    "id": "228",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб сусід зробив музику трохи тихіше",
+      "en": "Situation: You want your neighbor to turn down the music a bit",
+      "ru": "Ситуация: Ты хочешь, чтобы сосед сделал музыку потише"
+    }
+  },
+  {
+    "id": "229",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга є ковдра, а ти замерз під час фільму",
+      "en": "Situation: Your friend has a blanket, and you're cold during the movie",
+      "ru": "Ситуация: У друга есть плед, а ты замёрз во время фильма"
+    }
+  },
+  {
+    "id": "230",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб хтось підмінив тебе на роботі на годину",
+      "en": "Situation: You want someone to cover your shift for an hour",
+      "ru": "Ситуация: Ты хочешь, чтобы кто-то подменил тебя на работе на час"
+    }
+  },
+  {
+    "id": "231",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе порвався пакет, а знайомий щойно купив міцну сумку",
+      "en": "Situation: Your bag just tore, and your acquaintance has a strong tote",
+      "ru": "Ситуация: У тебя порвался пакет, а у знакомого крепкая сумка"
+    }
+  },
+  {
+    "id": "232",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У знайомого є гітара, а ти дуже хочеш зіграти",
+      "en": "Situation: Your acquaintance has a guitar, and you really want to play",
+      "ru": "Ситуация: У знакомого есть гитара, а тебе очень хочется сыграть"
+    }
+  },
+  {
+    "id": "233",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти бачиш, як хтось їде в ліфті, а тобі важко йти сходами",
+      "en": "Situation: You see someone taking the elevator, and stairs are hard for you",
+      "ru": "Ситуация: Ты видишь, как кто-то едет в лифте, а тебе тяжело идти по лестнице"
+    }
+  },
+  {
+    "id": "234",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У друга новий парасолька, а на вулиці починає лити",
+      "en": "Situation: Your friend has a new umbrella, and it's starting to pour",
+      "ru": "Ситуация: У друга новый зонт, а на улице начинается ливень"
+    }
+  },
+  {
+    "id": "235",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе сіла батарея, а у друга є павербанк",
+      "en": "Situation: Your battery is dead, and your friend has a power bank",
+      "ru": "Ситуация: У тебя сел телефон, а у друга есть павербанк"
+    }
+  },
+  {
+    "id": "236",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти сильно спітнів і побачив, що в друга є серветки",
+      "en": "Situation: You're sweating a lot and notice your friend has tissues",
+      "ru": "Ситуация: Ты сильно вспотел и видишь, что у друга есть салфетки"
+    }
+  },
+  {
+    "id": "237",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Друг їде на авто і проходить повз, а тобі далеко йти",
+      "en": "Situation: Your friend is driving by, and you have a long walk ahead",
+      "ru": "Ситуация: Друг проезжает мимо на машине, а тебе далеко идти"
+    }
+  },
+  {
+    "id": "238",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось щойно приготував чай, а ти змерз",
+      "en": "Situation: Someone just made tea, and you're cold",
+      "ru": "Ситуация: Кто-то только что заварил чай, а тебе холодно"
+    }
+  },
+  {
+    "id": "239",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб тобі допомогли знайти твою рукавичку",
+      "en": "Situation: You want help finding your missing glove",
+      "ru": "Ситуация: Ты хочешь, чтобы тебе помогли найти потерянную перчатку"
+    }
+  },
+  {
+    "id": "240",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі нудно на парі, і хочеться, щоб хтось написав щось смішне",
+      "en": "Situation: You're bored in class and wish someone would text something funny",
+      "ru": "Ситуация: Тебе скучно на паре, и ты хочешь, чтобы кто-то написал что-то смешное"
+    }
+  },
+  {
+    "id": "241",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У товариша є друга ложка, а тобі не дали свою",
+      "en": "Situation: Your mate has an extra spoon, and you weren't given one",
+      "ru": "Ситуация: У товарища есть вторая ложка, а тебе не дали"
+    }
+  },
+  {
+    "id": "242",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти помітив, що хтось узяв дві пляшки води, а ти без жодної",
+      "en": "Situation: You noticed someone took two water bottles, and you have none",
+      "ru": "Ситуация: Ты заметил, что кто-то взял две бутылки воды, а у тебя нет ни одной"
+    }
+  },
+  {
+    "id": "243",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У тебе замерзли ноги, а друг у вовняних шкарпетках має запасну пару",
+      "en": "Situation: Your feet are cold, and your friend in wool socks has an extra pair",
+      "ru": "Ситуация: У тебя мёрзнут ноги, а у друга в шерстяных носках есть запасная пара"
+    }
+  },
+  {
+    "id": "244",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти голодний, а друг щойно отримав доставку їжі",
+      "en": "Situation: You're hungry, and your friend just got a food delivery",
+      "ru": "Ситуация: Ты голоден, а друг только что получил еду из доставки"
+    }
+  },
+  {
+    "id": "245",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось щойно прибрав кімнату, а твоя — в безладі",
+      "en": "Situation: Someone just cleaned their room, and yours is a mess",
+      "ru": "Ситуация: Кто-то только что убрался в комнате, а у тебя беспорядок"
+    }
+  },
+  {
+    "id": "246",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є аптечка, а в тебе з'явився головний біль",
+      "en": "Situation: Someone has a first-aid kit, and you're getting a headache",
+      "ru": "Ситуация: У кого-то есть аптечка, а у тебя начинается головная боль"
+    }
+  },
+  {
+    "id": "247",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти хочеш, щоб друг зателефонував замість тебе",
+      "en": "Situation: You want your friend to make a call instead of you",
+      "ru": "Ситуация: Ты хочешь, чтобы друг позвонил вместо тебя"
+    }
+  },
+  {
+    "id": "248",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є ліхтарик, а ви опинилися в темряві",
+      "en": "Situation: Someone has a flashlight, and you’re stuck in the dark",
+      "ru": "Ситуация: У кого-то есть фонарик, а вы оказались в темноте"
+    }
+  },
+  {
+    "id": "249",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Тобі незручно попросити допомоги з кнопкою в ліфті",
+      "en": "Situation: You're awkward about asking for help pressing the elevator button",
+      "ru": "Ситуация: Тебе неловко просить нажать кнопку в лифте"
+    }
+  },
+  {
+    "id": "250",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Хтось приніс щойно випечені тістечка, а ти не встиг купити обід",
+      "en": "Situation: Someone brought fresh pastries, and you missed lunch",
+      "ru": "Ситуация: Кто-то принёс свежую выпечку, а ты пропустил обед"
+    }
+  },
+  {
+    "id": "251",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти забув ручку на екзамені, а твій сусід має дві",
+      "en": "Situation: You forgot your pen at the exam, and your neighbor has two",
+      "ru": "Ситуация: Ты забыл ручку на экзамене, а у соседа их две"
+    }
+  },
+  {
+    "id": "252",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти спізнюєшся на зустріч, а у друга є скутер",
+      "en": "Situation: You're late for a meeting, and your friend has a scooter",
+      "ru": "Ситуация: Ты опаздываешь на встречу, а у друга есть самокат"
+    }
+  },
+  {
+    "id": "253",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось є заряджені навушники, а твої розряджені",
+      "en": "Situation: Someone has charged earbuds, and yours are dead",
+      "ru": "Ситуация: У кого-то наушники заряжены, а твои сели"
+    }
+  },
+  {
+    "id": "254",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: Ти помітив, що друг випадково взяв дві ложки кави замість однієї",
+      "en": "Situation: You notice your friend accidentally took two spoons of coffee instead of one",
+      "ru": "Ситуация: Ты заметил, что друг случайно взял две ложки кофе вместо одной"
+    }
+  },
+  {
+    "id": "255",
+    "sentence_type": "SUBTLE_MANIPULATION",
+    "sentence": {
+      "ua": "Ситуація: У когось залишилося кілька копійок, а тобі не вистачає на проїзд",
+      "en": "Situation: Someone has spare coins, and you’re short on bus fare",
+      "ru": "Ситуация: У кого-то осталась мелочь, а тебе не хватает на проезд"
+    }
+  }
+]
