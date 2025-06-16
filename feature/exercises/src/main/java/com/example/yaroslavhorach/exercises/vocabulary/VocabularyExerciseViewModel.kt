@@ -46,14 +46,14 @@ class VocabularyExerciseViewModel @Inject constructor(
     private val userWordsCount: MutableStateFlow<Int> = MutableStateFlow(0)
 
     override val state: StateFlow<VocabularyExerciseViewState> = com.example.yaroslavhorach.common.utill.combine(
-        currentExercise,
+        exerciseRepository.getBlock(),
         currentVocabulary,
         isExerciseStarted,
         userWordsCount,
         uiMessageManager.message
-    ) { exercise, currentVocabulary, isTimerStarted, wordsCount, message ->
+    ) { block, currentVocabulary, isTimerStarted, wordsCount, message ->
         VocabularyExerciseViewState(
-            exerciseBlock = exercise?.block ?: ExerciseBlock.ONE,
+            exerciseBlock = block,
             wordsAmount = wordsCount,
             vocabulary = currentVocabulary,
             isExerciseActive = isTimerStarted,

@@ -37,7 +37,9 @@ data class GameUi(val game: Game, val isDescriptionVisible: Boolean = false) {
         Game.GameName.FLIRTING_WITH_OBJECT -> R.drawable.im_lips
         Game.GameName.BOTH_THERE_AND_IN_BED ->  R.drawable.im_bed
         Game.GameName.HOT_WORD -> R.drawable.im_fire
-        Game.GameName.DOUBLE_MEANING_WORDS -> R.drawable.im_exchange
+        Game.GameName.TONGUE_TWISTER_EASY -> R.drawable.im_tongue_easy
+        Game.GameName.TONGUE_TWISTER_MEDIUM -> R.drawable.im_tongue_medium
+        Game.GameName.TONGUE_TWISTER_HARD -> R.drawable.im_tongue_hard
     }
 
     // TODO: is enable implement

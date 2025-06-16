@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.exercises.tongue_twisters
 
-import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -13,15 +12,11 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise.model.mapToTongueTwistDifficulty
 import com.example.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.example.yaroslavhorach.domain.exercise_content.model.TongueTwister
-import com.example.yaroslavhorach.exercises.R
-import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseAction
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseViewState
 import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.TongueTwistersExerciseRoute
-import com.example.yaroslavhorach.ui.UiText
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -31,19 +26,18 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import java.util.ArrayDeque
 import javax.inject.Inject
 
 @HiltViewModel
 class TongueTwisterExerciseViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val exerciseRepository: ExerciseRepository,
-    private val exerciseContentRepository: ExerciseContentRepository,
-    @ApplicationContext private val applicationContext: Context
+    private val exerciseContentRepository: ExerciseContentRepository
 ) : BaseViewModel<TongueTwisterExerciseViewState, TongueTwisterExerciseAction, TongueTwisterExerciseUiMessage>() {
     private val timer = SimpleTimer()
 
     private val exerciseId = savedStateHandle.toRoute<TongueTwistersExerciseRoute>().exerciseId
+
 
     override val pendingActions: MutableSharedFlow<TongueTwisterExerciseAction> = MutableSharedFlow()
 
@@ -64,14 +58,14 @@ class TongueTwisterExerciseViewModel @Inject constructor(
     override val state: StateFlow<TongueTwisterExerciseViewState> = combine(
         twistSpeakingMod,
         overAllProgressValue,
-        currentExercise,
         currentTwist,
+        exerciseRepository.getBlock(),
         uiMessageManager.message
-    ) { speakingMod, progress, exercise, twist, message ->
+    ) { speakingMod, progress, twist, block, message ->
         TongueTwisterExerciseViewState(
             progress = progress,
             twistSpeakingMod = speakingMod,
-            block = exercise?.block ?: ExerciseBlock.ONE,
+            block = block,
             twist = twist,
             uiMessage = message
         )
@@ -128,6 +122,7 @@ class TongueTwisterExerciseViewModel @Inject constructor(
                         currentTwist.value = currentExercise.value?.name?.mapToTongueTwistDifficulty()?.let {
                             exerciseContentRepository.getTongueTwister(it)
                         }
+
                         twistSpeakingMod.value = TongueTwisterExerciseViewState.TwistSpeakingMod.SLOW
                     }
                 }

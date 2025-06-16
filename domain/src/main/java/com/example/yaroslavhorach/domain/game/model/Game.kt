@@ -62,6 +62,8 @@ data class Game(
         FLIRTING_WITH_OBJECT,
         BOTH_THERE_AND_IN_BED,
         HOT_WORD,
-        DOUBLE_MEANING_WORDS,
+        TONGUE_TWISTER_EASY,
+        TONGUE_TWISTER_MEDIUM,
+        TONGUE_TWISTER_HARD,
     }
 }

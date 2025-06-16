@@ -416,21 +416,21 @@
   {
     "id": 20,
     "nameString": {
-      "ua": "Скоромовки: Легкий рівень",
-      "en": "Tongue Twisters: Easy",
-      "ru": "Скороговорки: Легкий уровень"
+      "ua": "Скоромовки: Середній рівень",
+      "en": "Tongue Twisters: Medium",
+      "ru": "Скороговорки: Средний уровень"
     },
     "description": {
-      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
-      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
-      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+      "ua": "Прокачай дикцію та швидкість мовлення з скоромовками середньої складності",
+      "en": "Boost your diction and speech speed with fun medium-level tongue twisters",
+      "ru": "Прокачай дикцию и скорость речи со скороговорками средней сложности"
     },
     "exerciseProgress": {
       "exerciseId": 20,
       "progress": 0,
       "maxProgress": 3
     },
-    "name": "TONGUE_TWISTERS_EASY",
+    "name": "TONGUE_TWISTERS_MEDIUM",
     "skill": "DICTION",
     "block": "THREE",
     "isEnable": false,
@@ -508,21 +508,21 @@
   {
     "id": 24,
     "nameString": {
-      "ua": "Скоромовки: Легкий рівень",
-      "en": "Tongue Twisters: Easy",
-      "ru": "Скороговорки: Легкий уровень"
+      "ua": "Скоромовки: Середній рівень",
+      "en": "Tongue Twisters: Medium",
+      "ru": "Скороговорки: Средний уровень"
     },
     "description": {
-      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
-      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
-      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+      "ua": "Прокачай дикцію та швидкість мовлення з скоромовками середньої складності",
+      "en": "Boost your diction and speech speed with fun medium-level tongue twisters",
+      "ru": "Прокачай дикцию и скорость речи со скороговорками средней сложности"
     },
     "exerciseProgress": {
       "exerciseId": 24,
       "progress": 0,
       "maxProgress": 3
     },
-    "name": "TONGUE_TWISTERS_EASY",
+    "name": "TONGUE_TWISTERS_MEDIUM",
     "skill": "DICTION",
     "block": "THREE",
     "isEnable": false,
@@ -600,21 +600,21 @@
   {
     "id": 28,
     "nameString": {
-      "ua": "Скоромовки: Легкий рівень",
-      "en": "Tongue Twisters: Easy",
-      "ru": "Скороговорки: Легкий уровень"
+      "ua": "Скоромовки: Середній рівень",
+      "en": "Tongue Twisters: Medium",
+      "ru": "Скороговорки: Средний уровень"
     },
     "description": {
-      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
-      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
-      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+      "ua": "Прокачай дикцію та швидкість мовлення з скоромовками середньої складності",
+      "en": "Boost your diction and speech speed with fun medium-level tongue twisters",
+      "ru": "Прокачай дикцию и скорость речи со скороговорками средней сложности"
     },
     "exerciseProgress": {
       "exerciseId": 28,
       "progress": 0,
       "maxProgress": 3
     },
-    "name": "TONGUE_TWISTERS_EASY",
+    "name": "TONGUE_TWISTERS_MEDIUM",
     "skill": "DICTION",
     "block": "THREE",
     "isEnable": false,
@@ -692,21 +692,21 @@
   {
     "id": 32,
     "nameString": {
-      "ua": "Скоромовки: Легкий рівень",
-      "en": "Tongue Twisters: Easy",
-      "ru": "Скороговорки: Легкий уровень"
+      "ua": "Скоромовки: Середній рівень",
+      "en": "Tongue Twisters: Medium",
+      "ru": "Скороговорки: Средний уровень"
     },
     "description": {
-      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
-      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
-      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+      "ua": "Прокачай дикцію та швидкість мовлення з скоромовками середньої складності",
+      "en": "Boost your diction and speech speed with fun medium-level tongue twisters",
+      "ru": "Прокачай дикцию и скорость речи со скороговорками средней сложности"
     },
     "exerciseProgress": {
       "exerciseId": 32,
       "progress": 0,
       "maxProgress": 3
     },
-    "name": "TONGUE_TWISTERS_EASY",
+    "name": "TONGUE_TWISTERS_MEDIUM",
     "skill": "DICTION",
     "block": "FOUR",
     "isEnable": false,
@@ -807,21 +807,21 @@
   {
     "id": 37,
     "nameString": {
-      "ua": "Скоромовки: Легкий рівень",
-      "en": "Tongue Twisters: Easy",
-      "ru": "Скороговорки: Легкий уровень"
+      "ua": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
     },
     "description": {
-      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
-      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
-      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+      "ua": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
     },
     "exerciseProgress": {
       "exerciseId": 37,
       "progress": 0,
       "maxProgress": 3
     },
-    "name": "TONGUE_TWISTERS_EASY",
+    "name": "TONGUE_TWISTERS_HARD",
     "skill": "DICTION",
     "block": "FOUR",
     "isEnable": false,
@@ -899,21 +899,21 @@
   {
     "id": 41,
     "nameString": {
-      "ua": "Скоромовки: Легкий рівень",
-      "en": "Tongue Twisters: Easy",
-      "ru": "Скороговорки: Легкий уровень"
+      "ua": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
     },
     "description": {
-      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
-      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
-      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+      "ua": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
     },
     "exerciseProgress": {
       "exerciseId": 41,
       "progress": 0,
       "maxProgress": 3
     },
-    "name": "TONGUE_TWISTERS_EASY",
+    "name": "TONGUE_TWISTERS_HARD",
     "skill": "DICTION",
     "block": "FIVE",
     "isEnable": false,

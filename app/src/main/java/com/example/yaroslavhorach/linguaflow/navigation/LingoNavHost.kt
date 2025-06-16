@@ -1,16 +1,12 @@
 package com.example.yaroslavhorach.linguaflow.navigation
 
-import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
-import androidx.navigation.NavOptions
 import androidx.navigation.compose.NavHost
-import androidx.navigation.navOptions
 import com.example.yaroslavhorach.domain.exercise.model.Skill
 import com.example.yaroslavhorach.domain.game.model.Game
-import com.example.yaroslavhorach.exercises.exercise_completed.navigation.ExerciseCompletedRoute
 import com.example.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
 import com.example.yaroslavhorach.exercises.exercise_completed.navigation.navigateToExerciseCompleted
 import com.example.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExercise
@@ -19,14 +15,11 @@ import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.navigateT
 import com.example.yaroslavhorach.exercises.tongue_twisters.navigation.tongueTwistersExerciseScreen
 import com.example.yaroslavhorach.exercises.vocabulary.navigation.navigateToVocabularyExercise
 import com.example.yaroslavhorach.exercises.vocabulary.navigation.vocabularyExerciseScreen
-import com.example.yaroslavhorach.games.words_game.navigation.WordsGameNavigationRoute
 import com.example.yaroslavhorach.games.words_game.navigation.navigateToWordsGame
 import com.example.yaroslavhorach.games.words_game.navigation.wordsGameScreen
-import com.example.yaroslavhorach.home.navigation.GamesRoute
 import com.example.yaroslavhorach.home.navigation.HomeRoute
 import com.example.yaroslavhorach.home.navigation.gamesScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
-import com.example.yaroslavhorach.linguaflow.ui.rememberLingoAppState
 
 @Composable
 fun LingoNavHost(
@@ -83,12 +76,20 @@ fun LingoNavHost(
                 Game.GameName.ONE_WORD_MANY_MEANINGS,
                 Game.GameName.FLIRTING_WITH_OBJECT,
                 Game.GameName.BOTH_THERE_AND_IN_BED,
-                Game.GameName.HOT_WORD,
-                Game.GameName.DOUBLE_MEANING_WORDS -> {
+                Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }
                 Game.GameName.WORD_IN_TEMPO -> {
                     navController.navigateToVocabularyExercise(4)
+                }
+                Game.GameName.TONGUE_TWISTER_EASY -> {
+                    navController.navigateToTongueTwistersExercise(3)
+                }
+                Game.GameName.TONGUE_TWISTER_MEDIUM -> {
+                    navController.navigateToTongueTwistersExercise(20)
+                }
+                Game.GameName.TONGUE_TWISTER_HARD -> {
+                    navController.navigateToTongueTwistersExercise(37)
                 }
             }
         }

@@ -70,12 +70,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {
-        withContext(Dispatchers.IO){
+        withContext(Dispatchers.IO) {
             if (cashedTongueTwisters[difficulty].isNullOrEmpty()) {
                 val fileName = when (difficulty) {
                     TongueTwister.Difficulty.EASY -> "tongue_twisters_easy.json"
-                    TongueTwister.Difficulty.MEDIUM -> "tongue_twisters_easy.json"
-                    TongueTwister.Difficulty.HARD -> "tongue_twisters_easy.json"
+                    TongueTwister.Difficulty.MEDIUM -> "tongue_twisters_medium.json"
+                    TongueTwister.Difficulty.HARD -> "tongue_twisters_hard.json"
                 }
 
                 val twisters: List<TongueTwister> = loadJsonFromAssets(context, fileName)?.let { json ->
@@ -194,6 +194,18 @@ class ExerciseContentRepositoryImpl @Inject constructor(
             }
             Game.GameName.HOT_WORD -> {
                 val words = getWords(Word.WordType.HOT)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(1).map { it.wordText }
+            }
+            Game.GameName.ANTONYM_BATTLE -> {
+                val words = getWords(Word.WordType.ANTONIM)
+                val uniqueWords = words.distinctBy { it.wordText }
+
+                uniqueWords.shuffled().take(1).map { it.wordText }
+            }
+            Game.GameName.RHYME_LIGHTNING -> {
+                val words = getWords(Word.WordType.NOUN)
                 val uniqueWords = words.distinctBy { it.wordText }
 
                 uniqueWords.shuffled().take(1).map { it.wordText }
@@ -335,6 +347,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Word.WordType.NOUN -> "words/words_nouns.json"
                     Word.WordType.PLACE -> "words/words_places.json"
                     Word.WordType.HOT -> "words/words_hot.json"
+                    Word.WordType.ANTONIM -> "words/words_antonims.json"
                 }
 
                 val words: List<Word> = loadJsonFromAssets(context, fileName)?.let { json ->

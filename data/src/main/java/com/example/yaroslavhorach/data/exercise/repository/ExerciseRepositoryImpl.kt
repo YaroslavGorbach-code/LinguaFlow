@@ -58,7 +58,7 @@ class ExerciseRepositoryImpl @Inject constructor(
 
     override suspend fun getExercise(exerciseId: Long): Exercise? {
         val progress = exerciseProgressDao.getExerciseProgressEntity(exerciseId)
-        val exercise = getRawExercises().find { it.id == exerciseId }
+        val exercise = getRawExercises().firstOrNull { it.id == exerciseId }
 
         if (progress == null && exercise != null) {
             exerciseProgressDao.upsertExerciseProgress(exercise.exerciseProgress.asEntityModel())

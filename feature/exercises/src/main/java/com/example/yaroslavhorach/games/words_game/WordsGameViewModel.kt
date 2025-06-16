@@ -83,6 +83,8 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.FLIRTING_WITH_OBJECT,
                 Game.GameName.BOTH_THERE_AND_IN_BED,
                 Game.GameName.HOT_WORD,
+                Game.GameName.ANTONYM_BATTLE,
+                Game.GameName.RHYME_LIGHTNING,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)
                 }
@@ -105,11 +107,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.EMOTIONAL_TRANSLATOR -> {
                     game.value?.let(::getGameSentence)
                 }
-                Game.GameName.WORD_IN_TEMPO -> TODO()
-                Game.GameName.ANTONYM_BATTLE -> TODO()
-                Game.GameName.RHYME_LIGHTNING -> TODO()
-                Game.GameName.DOUBLE_MEANING_WORDS -> TODO()
-                null -> TODO()
+                else -> TODO()
             }
         }
 

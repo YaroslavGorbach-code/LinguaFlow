@@ -8,6 +8,8 @@ enum class ExerciseName() {
     FINISH_THE_THOUGHT,
     WHAT_TO_SAY_NEXT,
     TONGUE_TWISTERS_EASY,
+    TONGUE_TWISTERS_MEDIUM,
+    TONGUE_TWISTERS_HARD,
     THE_KEY_TO_SMALL_TALK,
     DATING_ROUTE,
     VOCABULARY,
@@ -43,6 +45,8 @@ enum class ExerciseName() {
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {
     return when (this) {
         ExerciseName.TONGUE_TWISTERS_EASY -> TongueTwister.Difficulty.EASY
+        ExerciseName.TONGUE_TWISTERS_MEDIUM -> TongueTwister.Difficulty.MEDIUM
+        ExerciseName.TONGUE_TWISTERS_HARD -> TongueTwister.Difficulty.HARD
         else -> error(this.name + "is not a tongue twister")
     }
 }
