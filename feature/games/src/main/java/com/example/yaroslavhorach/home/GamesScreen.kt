@@ -8,6 +8,9 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.snapping.SnapPosition
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
@@ -28,15 +31,19 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.derivedStateOf
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
@@ -51,6 +58,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.designsystem.theme.Black_3
 import com.example.yaroslavhorach.designsystem.theme.Golden
+import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
@@ -62,12 +70,15 @@ import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.components.StaticTooltip
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.primaryIcon
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.domain.game.model.Game
+import com.example.yaroslavhorach.games.R
 import com.example.yaroslavhorach.home.model.GameUi
 import com.example.yaroslavhorach.home.model.GamesAction
 import com.example.yaroslavhorach.home.model.GamesViewState
+import com.example.yaroslavhorach.home.model.getText
 
 @Composable
 internal fun GamesRoute(
@@ -99,10 +110,32 @@ internal fun GamesScreen(
 
     Column(Modifier.fillMaxSize()) {
         TopBar(state, listState, actioner)
+        Spacer(Modifier.height(20.dp))
+        LazyRow {
+            itemsIndexed(state.sorts) { index, item ->
+                if (index == 0) { Spacer(Modifier.width(20.dp)) }
+                Text(
+                    modifier = Modifier
+                        .clickable { actioner(GamesAction.OnSortSelected(item)) }
+                        .border(
+                            1.dp,
+                            if (item == state.selectedSort) KellyGreen else MaterialTheme.colorScheme.onBackgroundDark(),
+                            shape = RoundedCornerShape(8.dp)
+                        )
+                        .padding(10.dp),
+                    text = item.getText().asString(),
+                    style = LinguaTypography.body4,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.width(20.dp))
+            }
+        }
+        Spacer(Modifier.height(20.dp))
         LazyColumn(modifier = Modifier.padding(horizontal = 20.dp), state = listState) {
-            itemsIndexed(state.games) { _, item ->
-                Spacer(Modifier.height(20.dp))
+            itemsIndexed(state.games, key = { _, game -> game.game.id }) { index, item ->
+                if (index == 0) Spacer(Modifier.height(8.dp))
                 Game(state, item, listState, actioner)
+                Spacer(Modifier.height(20.dp))
             }
         }
     }
@@ -190,14 +223,18 @@ private fun Tokens(screenState: GamesViewState) {
 
 @Composable
 private fun Challenge(listState: LazyListState) {
-    val isCollapsed = remember {
-        derivedStateOf {
-            listState.firstVisibleItemIndex > 0
+    val isCollapsed = remember { mutableStateOf(false) }
+
+    LaunchedEffect(listState) {
+        snapshotFlow {
+            listState.firstVisibleItemIndex == 0 && listState.firstVisibleItemScrollOffset == 0
+        }.collect { atTop ->
+            isCollapsed.value = !atTop
         }
     }
 
     AnimatedVisibility(
-        visible = isCollapsed.value.not(),
+        visible = !isCollapsed.value,
         enter = fadeIn(tween(300)) + expandVertically(tween(300)),
         exit = shrinkVertically(tween(300)) + fadeOut(tween(200))
     ) {
@@ -372,11 +409,30 @@ private fun ColumnScope.GameDescription(
                     cornerRadius = 12.dp,
                     paddingHorizontal = 0.dp
                 ) {
-                    Text(
-                        text = game.game.nameText,
-                        color = MaterialTheme.colorScheme.typoPrimary(),
-                        style = LinguaTypography.subtitle2
-                    )
+                    Row(modifier = Modifier.fillMaxWidth()) {
+                        Text(
+                            modifier = Modifier.align(Alignment.CenterVertically).weight(1f),
+                            text = game.game.nameText,
+                            color = MaterialTheme.colorScheme.typoPrimary(),
+                            style = LinguaTypography.subtitle2
+                        )
+                        if (state.favorites.contains(game.game.id)) {
+                            Icon(
+                                modifier = Modifier.size(24.dp).clickable { actioner(GamesAction.OnRemoveFavoritesClicked(game)) },
+                                painter = painterResource(LinguaIcons.icStarFilled),
+                                contentDescription = null,
+                                tint = Golden
+                            )
+                        } else {
+                            Icon(
+                                modifier = Modifier.size(24.dp).clickable { actioner(GamesAction.OnAddToFavoritesClicked(game)) },
+                                painter = painterResource(LinguaIcons.icStar),
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.primaryIcon()
+                            )
+                        }
+                    }
+
                     Spacer(Modifier.height(6.dp))
                     Text(
                         text = game.game.descriptionText,

@@ -6,4 +6,5 @@ option java_multiple_files = true;
 message UserPreferences {
   int32 available_tokens = 1;
   int64 last_time_token_was_used = 2;
+  repeated int64 favorite_games = 3;
 }

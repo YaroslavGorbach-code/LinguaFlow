@@ -15,6 +15,18 @@ class PrefsRepositoryImpl @Inject constructor(
         return prefsDataSource.userData.map { it.asDomainModel() }
     }
 
+    override fun getFavoriteGamesIds(): Flow<List<Long>> {
+        return prefsDataSource.getFavoriteGamesIds()
+    }
+
+    override suspend fun addGameToFavorites(gameId: Long) {
+        prefsDataSource.addGameToFavorites(gameId)
+    }
+
+    override suspend fun removeGameFromFavorites(gameId: Long) {
+        prefsDataSource.removeGameFromFavorites(gameId)
+    }
+
     override suspend fun useToken() {
         prefsDataSource.useToken()
     }

@@ -31,6 +31,29 @@ class LinguaPrefsDataSource @Inject constructor(
         }
     }
 
+    fun getFavoriteGamesIds(): Flow<List<Long>> {
+      return userPreferences.data.map { it.favoriteGamesList }
+    }
+
+    suspend fun addGameToFavorites(gameId: Long) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .addFavoriteGames(gameId)
+                .build()
+        }
+    }
+
+    suspend fun removeGameFromFavorites(gameId: Long) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .clearFavoriteGames()
+                .addAllFavoriteGames(
+                    prefs.favoriteGamesList.filter { it != gameId }
+                )
+                .build()
+        }
+    }
+
     suspend fun useToken() {
         userPreferences.updateData { prefs ->
             if (prefs.availableTokens > 0) {

@@ -7,6 +7,9 @@ import com.example.yaroslavhorach.domain.game.model.Game.Skill
 
 data class GamesViewState(
     val games: List<GameUi>,
+    val sorts: List<GameSort> = emptyList(),
+    val favorites: List<Long> = emptyList(),
+    val selectedSort: GameSort? = null,
     val maxTokens: Int = 0,
     val availableTokens: Int = 0,
     val experience: Int = 0,
@@ -23,13 +26,14 @@ data class GamesViewState(
                 minExperienceRequired = 0,
                 maxProgress = 10,
                 name = GameName.HOT_WORD,
-                skills = listOf(Skill.CREATIVE, Skill.STORYTELLING)
+                skills = listOf(Skill.CREATIVE, Skill.STORYTELLING),
             )
         )
 
         val Empty = GamesViewState(emptyList())
         val Preview = GamesViewState(
-            listOf(game)
+            listOf(game),
+            listOf(GameSort.FLIRT, GameSort.HUMOR)
         )
     }
 }

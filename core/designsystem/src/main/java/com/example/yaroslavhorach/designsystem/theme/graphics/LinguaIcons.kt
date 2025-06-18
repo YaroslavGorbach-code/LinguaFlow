@@ -20,4 +20,6 @@ object LinguaIcons {
     val LightingThunder = R.drawable.ic_lightning_thunder
     val Brain = R.drawable.ic_brain
     val Token = R.drawable.ic_token
+    val icStar = R.drawable.ic_star
+    val icStarFilled = R.drawable.ic_star_filled
 }
