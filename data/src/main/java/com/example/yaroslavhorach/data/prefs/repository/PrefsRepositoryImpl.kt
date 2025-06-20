@@ -1,7 +1,7 @@
 package com.example.yaroslavhorach.data.prefs.repository
 
-import com.example.yaroslavhorach.datastore.LinguaPrefsDataSource
-import com.example.yaroslavhorach.datastore.model.asDomainModel
+import com.example.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
+import com.example.yaroslavhorach.datastore.prefs.model.asDomainModel
 import com.example.yaroslavhorach.domain.prefs.PrefsRepository
 import com.example.yaroslavhorach.domain.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow

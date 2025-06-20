@@ -1,21 +1,21 @@
-package com.example.yaroslavhorach.datastore
+package com.example.yaroslavhorach.datastore.prefs
 
 import androidx.datastore.core.DataStore
 import com.example.yaroslavhorach.common.utill.isToday
-import com.example.yaroslavhorach.datastore.model.UserData
+import com.example.yaroslavhorach.datastore.UserPreferences
+import com.example.yaroslavhorach.datastore.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.util.Date
 import javax.inject.Inject
 
-class LinguaPrefsDataSource @Inject constructor(
-    private val userPreferences: DataStore<UserPreferences>,
-) {
+class LinguaPrefsDataSource @Inject constructor(private val userPreferences: DataStore<UserPreferences>) {
     val userData: Flow<UserData> = userPreferences.data
         .map {
             UserData(
                 availableTokens = it.availableTokens,
-                maxTokens = 3
+                maxTokens = 3,
+                experience = 100
             )
         }
 
@@ -32,7 +32,7 @@ class LinguaPrefsDataSource @Inject constructor(
     }
 
     fun getFavoriteGamesIds(): Flow<List<Long>> {
-      return userPreferences.data.map { it.favoriteGamesList }
+        return userPreferences.data.map { it.favoriteGamesList }
     }
 
     suspend fun addGameToFavorites(gameId: Long) {

@@ -1,9 +1,10 @@
 package com.example.yaroslavhorach.home
 
-import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
+import com.example.yaroslavhorach.common.utill.combine
 import com.example.yaroslavhorach.domain.game.GameRepository
+import com.example.yaroslavhorach.domain.game.model.Challenge
 import com.example.yaroslavhorach.domain.prefs.PrefsRepository
 import com.example.yaroslavhorach.home.model.GameSort
 import com.example.yaroslavhorach.home.model.GameUi
@@ -17,7 +18,6 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
@@ -27,7 +27,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class GamesViewModel @Inject constructor(
-    gameRepository: GameRepository,
+    private val gameRepository: GameRepository,
     prefsRepository: PrefsRepository
 ) : BaseViewModel<GamesViewState, GamesAction, GamesUiMessage>() {
 
@@ -40,21 +40,26 @@ class GamesViewModel @Inject constructor(
     override val state: StateFlow<GamesViewState> = combine(
         prefsRepository.getUserData(),
         games,
+        gameRepository.getChallenge(),
         selectedSort,
         prefsRepository.getFavoriteGamesIds(),
         uiMessageManager.message
-    ) { userData, games, selectedSort, favorites, messages ->
+    ) { userData, games, challenge, selectedSort, favorites, messages ->
         GamesViewState(
             sorts = getPermanentSorts().toMutableList().apply {
                 if (favorites.isEmpty().not()) {
                     add(0, GameSort.FAVORITE)
                 }
+                if (challenge.status.started && challenge.status.completed.not()) {
+                    add(0, GameSort.DAILY_CHALLENGE)
+                }
             },
+            challenge = challenge,
             favorites = favorites,
             selectedSort = selectedSort,
             availableTokens = userData.availableTokens,
             maxTokens = userData.maxTokens,
-            games = filterGames(games, selectedSort, favorites),
+            games = filterGames(games, selectedSort, favorites, challenge),
             experience = 5,
             uiMessage = messages
         )
@@ -73,11 +78,15 @@ class GamesViewModel @Inject constructor(
         pendingActions
             .onEach { event ->
                 when (event) {
-                    is GamesAction.OnStartDailyChallengeClicked -> TODO()
+                    is GamesAction.OnStartDailyChallengeClicked -> {
+                        gameRepository.startDailyChallenge()
+                        prefsRepository.useToken()
+                    }
                     is GamesAction.OnGameClicked -> {
                         changeDescriptionState(event.gameUi)
                     }
                     is GamesAction.OnStartGameClicked -> {
+
                   //      prefsRepository.useToken()
                     }
                     is GamesAction.OnPremiumBtnClicked -> {
@@ -97,7 +106,11 @@ class GamesViewModel @Inject constructor(
                         if (selectedSort.value == GameSort.FAVORITE && event.game.isDescriptionVisible) {
                             changeDescriptionState(event.game)
                         }
+
                         prefsRepository.removeGameFromFavorites(event.game.game.id)
+                    }
+                    is GamesAction.OnGoToDailyChallengeExercises -> {
+                        selectedSort.value = GameSort.DAILY_CHALLENGE
                     }
                 }
             }
@@ -105,7 +118,6 @@ class GamesViewModel @Inject constructor(
     }
 
     private fun changeDescriptionState(param: GameUi) {
-        Log.v("asdasdasd", param.game.name.name.toString())
         games.update { gameList ->
             gameList.map { gameUi ->
                 if (gameUi.game.id == param.game.id) {
@@ -120,10 +132,11 @@ class GamesViewModel @Inject constructor(
     private fun filterGames(
         games: List<GameUi>,
         selectedSort: GameSort?,
-        favorites: List<Long>
+        favorites: List<Long>,
+        challenge: Challenge
     ) = games.filter {
         when (selectedSort) {
-            GameSort.DAILY_CHALLENGE -> true
+            GameSort.DAILY_CHALLENGE -> it.game.skills.contains(challenge.theme)
             GameSort.FAVORITE -> favorites.contains(it.game.id)
             GameSort.CREATIVE -> it.game.skills.contains(com.example.yaroslavhorach.domain.game.model.Game.Skill.CREATIVE)
             GameSort.HUMOR -> it.game.skills.contains(com.example.yaroslavhorach.domain.game.model.Game.Skill.HUMOR)

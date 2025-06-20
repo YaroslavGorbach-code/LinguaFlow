@@ -8,10 +8,11 @@ import com.example.yaroslavhorach.common.helpers.SimpleTimer
 import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
-import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.example.yaroslavhorach.domain.exercise_content.model.FeedBack
 import com.example.yaroslavhorach.domain.exercise_content.model.Vocabulary
+import com.example.yaroslavhorach.domain.game.GameRepository
+import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.exercises.speaking.navigation.SpeakingExerciseRoute
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseAction
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiMessage
@@ -31,6 +32,7 @@ import javax.inject.Inject
 class VocabularyExerciseViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val exerciseRepository: ExerciseRepository,
+    private val gameRepository: GameRepository,
     private val exerciseContentRepository: ExerciseContentRepository
 ) : BaseViewModel<VocabularyExerciseViewState, VocabularyExerciseAction, VocabularyExerciseUiMessage>() {
     private val timer = SimpleTimer()
@@ -80,6 +82,7 @@ class VocabularyExerciseViewModel @Inject constructor(
                 when (event) {
                     is VocabularyExerciseAction.OnNextClicked -> {
                         exerciseRepository.markCompleted(exerciseId)
+                        gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.VOCABULARY), timer.getElapsedTimeMillis())
                         uiMessageManager.emitMessage(
                             UiMessage(
                                 VocabularyExerciseUiMessage.NavigateToExerciseResult(

@@ -111,7 +111,7 @@ internal fun ExerciseCompletedScreen(
                 ) {
                     Text(
                         text = "Твій рівень вільного мовлення зріс! Так тримати \uD83D\uDC4F",
-                        color = MaterialTheme.colorScheme.typoDisabled(),
+                        color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.subtitle4
                     )
                 }

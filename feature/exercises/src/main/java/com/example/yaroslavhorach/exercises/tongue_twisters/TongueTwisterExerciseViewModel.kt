@@ -8,10 +8,11 @@ import com.example.yaroslavhorach.common.helpers.SimpleTimer
 import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
-import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise.model.mapToTongueTwistDifficulty
 import com.example.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.example.yaroslavhorach.domain.exercise_content.model.TongueTwister
+import com.example.yaroslavhorach.domain.game.GameRepository
+import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseAction
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseViewState
@@ -32,6 +33,7 @@ import javax.inject.Inject
 class TongueTwisterExerciseViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val exerciseRepository: ExerciseRepository,
+    private val gameRepository: GameRepository,
     private val exerciseContentRepository: ExerciseContentRepository
 ) : BaseViewModel<TongueTwisterExerciseViewState, TongueTwisterExerciseAction, TongueTwisterExerciseUiMessage>() {
     private val timer = SimpleTimer()
@@ -106,6 +108,7 @@ class TongueTwisterExerciseViewModel @Inject constructor(
 
                     viewModelScope.launch {
                         exerciseRepository.markCompleted(exerciseId)
+                        gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.DICTION), timer.getElapsedTimeMillis())
                         uiMessageManager.emitMessage(
                             UiMessage(
                                 TongueTwisterExerciseUiMessage.NavigateToExerciseResult(

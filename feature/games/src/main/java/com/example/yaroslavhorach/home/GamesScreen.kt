@@ -10,7 +10,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.gestures.snapping.SnapPosition
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
@@ -73,8 +72,8 @@ import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.primaryIcon
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
+import com.example.yaroslavhorach.domain.game.model.Challenge
 import com.example.yaroslavhorach.domain.game.model.Game
-import com.example.yaroslavhorach.games.R
 import com.example.yaroslavhorach.home.model.GameUi
 import com.example.yaroslavhorach.home.model.GamesAction
 import com.example.yaroslavhorach.home.model.GamesViewState
@@ -192,7 +191,7 @@ private fun TopBar(screenState: GamesViewState, listState: LazyListState, action
             }
 
             Spacer(Modifier.height(20.dp))
-            Challenge(listState)
+            Challenge(screenState, listState, actioner)
         }
     }
 }
@@ -222,7 +221,7 @@ private fun Tokens(screenState: GamesViewState) {
 }
 
 @Composable
-private fun Challenge(listState: LazyListState) {
+private fun Challenge(state: GamesViewState, listState: LazyListState, actioner: (GamesAction) -> Unit) {
     val isCollapsed = remember { mutableStateOf(false) }
 
     LaunchedEffect(listState) {
@@ -245,21 +244,130 @@ private fun Challenge(listState: LazyListState) {
                 .background(color = White_40, RoundedCornerShape(16.dp))
                 .padding(20.dp)
         ) {
-            Text(
-                text = "\uD83C\uDFAF Виклик на сьогодні: Прокачай креативність",
-                color = MaterialTheme.colorScheme.typoPrimary(),
-                style = LinguaTypography.subtitle2
-            )
-            Spacer(Modifier.height(8.dp))
-            Text(
-                text = "Порівняй непорівнюване, переверни звичайне, вигадуй нове. Покажи, на що здатен твій мозок!",
-                color = MaterialTheme.colorScheme.typoSecondary(),
-                style = LinguaTypography.body4
-            )
-            Spacer(Modifier.height(40.dp))
-            PrimaryButton(text = "\uD83D\uDD25 ПРИЙНЯТИ") { }
+            when {
+                state.challenge?.status?.started?.not() == true -> {
+                    ChallengeNotStarted(state.challenge, actioner)
+                }
+                state.challenge?.status?.started == true && state.challenge.status.completed.not() -> {
+                    ChallengeStarted(state.challenge, actioner)
+                }
+                state.challenge?.status?.completed == true -> {
+                    ChallengeCompleted(state.challenge)
+                }
+            }
         }
     }
+}
+
+@Composable
+private fun ChallengeCompleted(challenge: Challenge) {
+    Text(
+        text = "\uD83C\uDF89 Виклик виконано!",
+        color = MaterialTheme.colorScheme.typoPrimary(),
+        style = LinguaTypography.subtitle2
+    )
+    Spacer(Modifier.height(8.dp))
+    Text(
+        text = challenge.completeMessage,
+        color = MaterialTheme.colorScheme.typoSecondary(),
+        style = LinguaTypography.body4
+    )
+    Spacer(Modifier.height(20.dp))
+    StaticTooltip(
+        modifier = Modifier.fillMaxWidth(),
+        enableFloatAnimation = false,
+        backgroundColor = Color.Transparent,
+        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        borderSize = 1.dp,
+        paddingHorizontal = 0.dp,
+        triangleAlignment = Alignment.Start,
+        contentPadding = 16.dp,
+        cornerRadius = 12.dp,
+    ) {
+        Text(
+            text = "Виклик дня — виконано! \uD83C\uDFAF\n +${challenge.bonusOnComplete} досвіду, рівень підвищено! \uD83D\uDD25",
+            color = MaterialTheme.colorScheme.typoSecondary(),
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.body4
+        )
+    }
+
+    // TODO: implement in the future
+    LinguaProgressBar(
+        modifier = Modifier
+            .height(50.dp)
+            .fillMaxWidth(),
+        progress = 0.5f,
+        progressBarHeight = 22.dp
+    ) {
+        Image(
+            modifier = Modifier
+                .size(50.dp)
+                .offset(x = 22.dp)
+                .padding(bottom = 12.dp)
+                .align(Alignment.CenterEnd),
+            painter = painterResource(LinguaIcons.Confetti),
+            contentDescription = ""
+        )
+    }
+}
+
+@Composable
+private fun ChallengeStarted(
+    challenge: Challenge,
+    actioner: (GamesAction) -> Unit
+) {
+    LinguaProgressBar(
+        challenge.progressInMinutes.toFloat() / challenge.durationMinutes.toFloat(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(32.dp)
+    ) {
+        Text(
+            modifier = Modifier.align(Alignment.Center),
+            text = challenge.progressInMinutes.toString() + " хв.",
+            color = White,
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.body5
+        )
+
+        Image(
+            modifier = Modifier
+                .size(32.dp)
+                .offset(x = 10.dp)
+                .align(Alignment.CenterEnd),
+            painter = painterResource(LinguaIcons.LightingThunder),
+            contentDescription = ""
+        )
+    }
+    Spacer(Modifier.height(12.dp))
+    Text(
+        text = challenge.acceptMessage,
+        color = MaterialTheme.colorScheme.typoSecondary(),
+        style = LinguaTypography.body4
+    )
+    Spacer(Modifier.height(40.dp))
+    PrimaryButton(text = "ПЕРЕЙТИ ДО ВПРАВ") { actioner(GamesAction.OnGoToDailyChallengeExercises) }
+}
+
+@Composable
+private fun ChallengeNotStarted(
+    challenge: Challenge,
+    actioner: (GamesAction) -> Unit
+) {
+    Text(
+        text = challenge.title,
+        color = MaterialTheme.colorScheme.typoPrimary(),
+        style = LinguaTypography.subtitle2
+    )
+    Spacer(Modifier.height(8.dp))
+    Text(
+        text = challenge.description,
+        color = MaterialTheme.colorScheme.typoSecondary(),
+        style = LinguaTypography.body4
+    )
+    Spacer(Modifier.height(40.dp))
+    PrimaryButton(text = "\uD83D\uDD25 ПРИЙНЯТИ (1 ТОКЕН)") { actioner(GamesAction.OnStartDailyChallengeClicked) }
 }
 
 @Composable
@@ -332,124 +440,161 @@ private fun ColumnScope.GameDescription(
     ) {
         when {
             game.isEnable.not() -> {
-                StaticTooltip(
-                    enableFloatAnimation = true,
-                    backgroundColor = MaterialTheme.colorScheme.surface,
-                    borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-                    triangleAlignment = Alignment.Start,
-                    contentPadding = 20.dp,
-                    cornerRadius = 12.dp,
-                    paddingHorizontal = 0.dp
-                ) {
-                    Text(
-                        text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",
-                        color = MaterialTheme.colorScheme.typoSecondary(),
-                        textAlign = TextAlign.Center,
-                        style = LinguaTypography.body3
-                    )
-                    Spacer(Modifier.height(20.dp))
-
-                    LinguaProgressBar(
-                        modifier = Modifier.fillMaxWidth(),
-                        progress = (state.experience.toFloat() / game.game.minExperienceRequired.toFloat()),
-                        progressColor = Golden,
-                        progressShadow = Color(0xFFE8BC02)
-                    ) {
-                        Text(
-                            modifier = Modifier.align(Alignment.Center),
-                            text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + " xp.",
-                            color = White,
-                            textAlign = TextAlign.Center,
-                            style = LinguaTypography.body5
-                        )
-                    }
-                    Spacer(Modifier.height(20.dp))
-                    PremiumButton(text = "\uD83D\uDC51 ВІДКРИТИ З PREMIUM") {
-                        actioner(GamesAction.OnStartGameClicked(game))
-                    }
-                }
+                GameDescriptionNotEnable(state, game, actioner)
             }
             state.availableTokens <= 0 -> {
-                StaticTooltip(
-                    enableFloatAnimation = true,
-                    backgroundColor = MaterialTheme.colorScheme.surface,
-                    borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-                    triangleAlignment = Alignment.Start,
-                    contentPadding = 20.dp,
-                    cornerRadius = 12.dp,
-                    paddingHorizontal = 0.dp
-                ) {
-                    Text(
-                        text = "\uD83D\uDD12 Упс! Жетони на сьогодні закінчились",
-                        color = MaterialTheme.colorScheme.typoPrimary(),
-                        textAlign = TextAlign.Center,
-                        style = LinguaTypography.subtitle2
-                    )
-                    Spacer(Modifier.height(6.dp))
-                    Text(
-                        text = "Нові з’являться після 00:00 ⏳\nАбо продовжуй гру вже зараз — без обмежень!",
-                        color = MaterialTheme.colorScheme.typoSecondary(),
-                        textAlign = TextAlign.Center,
-                        style = LinguaTypography.body4
-                    )
-                    Spacer(Modifier.height(20.dp))
-
-                    PremiumButton(text = "\uD83D\uDC51 ГРАТИ БЕЗ ОБМЕЖЕНЬ") {
-                        actioner(GamesAction.OnPremiumBtnClicked)
-                    }
-                }
+                DameDescriptionNoTokens(actioner)
             }
             else -> {
-                StaticTooltip(
-                    enableFloatAnimation = true,
-                    backgroundColor = MaterialTheme.colorScheme.surface,
-                    borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-                    triangleAlignment = Alignment.Start,
-                    contentPadding = 20.dp,
-                    cornerRadius = 12.dp,
-                    paddingHorizontal = 0.dp
-                ) {
-                    Row(modifier = Modifier.fillMaxWidth()) {
-                        Text(
-                            modifier = Modifier.align(Alignment.CenterVertically).weight(1f),
-                            text = game.game.nameText,
-                            color = MaterialTheme.colorScheme.typoPrimary(),
-                            style = LinguaTypography.subtitle2
-                        )
-                        if (state.favorites.contains(game.game.id)) {
-                            Icon(
-                                modifier = Modifier.size(24.dp).clickable { actioner(GamesAction.OnRemoveFavoritesClicked(game)) },
-                                painter = painterResource(LinguaIcons.icStarFilled),
-                                contentDescription = null,
-                                tint = Golden
-                            )
-                        } else {
-                            Icon(
-                                modifier = Modifier.size(24.dp).clickable { actioner(GamesAction.OnAddToFavoritesClicked(game)) },
-                                painter = painterResource(LinguaIcons.icStar),
-                                contentDescription = null,
-                                tint = MaterialTheme.colorScheme.primaryIcon()
-                            )
-                        }
-                    }
-
-                    Spacer(Modifier.height(6.dp))
-                    Text(
-                        text = game.game.descriptionText,
-                        color = MaterialTheme.colorScheme.typoSecondary(),
-                        style = LinguaTypography.body4
-                    )
-                    Spacer(Modifier.height(20.dp))
-
-                    PrimaryButton(text = "ПОЧАТИ (1 ТОКЕН)") {
-                        actioner(GamesAction.OnStartGameClicked(game))
-                    }
-                }
+                GameDescriptionEnable(game, state, actioner)
             }
         }
     }
 
     if (game.isDescriptionVisible) Spacer(Modifier.height(14.dp))
+}
+
+@Composable
+private fun GameDescriptionEnable(
+    game: GameUi,
+    state: GamesViewState,
+    actioner: (GamesAction) -> Unit
+) {
+    StaticTooltip(
+        enableFloatAnimation = true,
+        backgroundColor = MaterialTheme.colorScheme.surface,
+        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        triangleAlignment = Alignment.Start,
+        contentPadding = 20.dp,
+        cornerRadius = 12.dp,
+        paddingHorizontal = 0.dp
+    ) {
+        Row(modifier = Modifier.fillMaxWidth()) {
+            Text(
+                modifier = Modifier
+                    .align(Alignment.CenterVertically)
+                    .weight(1f),
+                text = game.game.nameText,
+                color = MaterialTheme.colorScheme.typoPrimary(),
+                style = LinguaTypography.subtitle2
+            )
+            if (state.favorites.contains(game.game.id)) {
+                Icon(
+                    modifier = Modifier
+                        .size(24.dp)
+                        .clickable { actioner(GamesAction.OnRemoveFavoritesClicked(game)) },
+                    painter = painterResource(LinguaIcons.icStarFilled),
+                    contentDescription = null,
+                    tint = Golden
+                )
+            } else {
+                Icon(
+                    modifier = Modifier
+                        .size(24.dp)
+                        .clickable { actioner(GamesAction.OnAddToFavoritesClicked(game)) },
+                    painter = painterResource(LinguaIcons.icStar),
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.primaryIcon()
+                )
+            }
+        }
+
+        Spacer(Modifier.height(6.dp))
+        Text(
+            text = game.game.descriptionText,
+            color = MaterialTheme.colorScheme.typoSecondary(),
+            style = LinguaTypography.body4
+        )
+        Spacer(Modifier.height(20.dp))
+
+        val useToken = game.game.skills.contains(state.challenge?.theme)
+                && state.challenge?.status?.completed?.not() == true
+
+        val btnText = if (useToken) {
+            "ПОЧАТИ"
+        } else {
+            "ПОЧАТИ (1 ТОКЕН)"
+        }
+        PrimaryButton(text = btnText) {
+            actioner(GamesAction.OnStartGameClicked(game, useToken))
+        }
+    }
+}
+
+@Composable
+private fun DameDescriptionNoTokens(actioner: (GamesAction) -> Unit) {
+    StaticTooltip(
+        enableFloatAnimation = true,
+        backgroundColor = MaterialTheme.colorScheme.surface,
+        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        triangleAlignment = Alignment.Start,
+        contentPadding = 20.dp,
+        cornerRadius = 12.dp,
+        paddingHorizontal = 0.dp
+    ) {
+        Text(
+            text = "\uD83D\uDD12 Упс! Жетони на сьогодні закінчились",
+            color = MaterialTheme.colorScheme.typoPrimary(),
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.subtitle2
+        )
+        Spacer(Modifier.height(6.dp))
+        Text(
+            text = "Нові з’являться після 00:00 ⏳\nАбо продовжуй гру вже зараз — без обмежень!",
+            color = MaterialTheme.colorScheme.typoSecondary(),
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.body4
+        )
+        Spacer(Modifier.height(20.dp))
+
+        PremiumButton(text = "\uD83D\uDC51 ГРАТИ БЕЗ ОБМЕЖЕНЬ") {
+            actioner(GamesAction.OnPremiumBtnClicked)
+        }
+    }
+}
+
+@Composable
+private fun GameDescriptionNotEnable(
+    state: GamesViewState,
+    game: GameUi,
+    actioner: (GamesAction) -> Unit
+) {
+    StaticTooltip(
+        enableFloatAnimation = true,
+        backgroundColor = MaterialTheme.colorScheme.surface,
+        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        triangleAlignment = Alignment.Start,
+        contentPadding = 20.dp,
+        cornerRadius = 12.dp,
+        paddingHorizontal = 0.dp
+    ) {
+        Text(
+            text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",
+            color = MaterialTheme.colorScheme.typoSecondary(),
+            textAlign = TextAlign.Center,
+            style = LinguaTypography.body3
+        )
+        Spacer(Modifier.height(20.dp))
+
+        LinguaProgressBar(
+            modifier = Modifier.fillMaxWidth(),
+            progress = (state.experience.toFloat() / game.game.minExperienceRequired.toFloat()),
+            progressColor = Golden,
+            progressShadow = Color(0xFFE8BC02)
+        ) {
+            Text(
+                modifier = Modifier.align(Alignment.Center),
+                text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + " xp.",
+                color = White,
+                textAlign = TextAlign.Center,
+                style = LinguaTypography.body5
+            )
+        }
+        Spacer(Modifier.height(20.dp))
+        PremiumButton(text = "\uD83D\uDC51 ВІДКРИТИ З PREMIUM") {
+            actioner(GamesAction.OnPremiumBtnClicked)
+        }
+    }
 }
 
 @Preview

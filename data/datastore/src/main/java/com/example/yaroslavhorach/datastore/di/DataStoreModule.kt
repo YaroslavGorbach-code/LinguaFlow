@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.core.DataStoreFactory
 import androidx.datastore.dataStoreFile
+import com.example.yaroslavhorach.datastore.ChallengeProgress
 import com.example.yaroslavhorach.datastore.UserPreferences
-import com.example.yaroslavhorach.datastore.UserPreferencesSerializer
+import com.example.yaroslavhorach.datastore.challenge.ChallengeSerializer
+import com.example.yaroslavhorach.datastore.prefs.UserPreferencesSerializer
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -30,6 +32,19 @@ object DataStoreModule {
             scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
         ) {
             context.dataStoreFile("user_preferences.pb")
+        }
+    }
+
+    @Provides
+    @Singleton
+    fun provideChallengeProgressDataStore(
+        @ApplicationContext context: Context
+    ): DataStore<ChallengeProgress> {
+        return DataStoreFactory.create(
+            serializer = ChallengeSerializer,
+            scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+        ) {
+            context.dataStoreFile("challenge_progress.pb")
         }
     }
 }

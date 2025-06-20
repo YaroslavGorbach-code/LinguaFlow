@@ -115,7 +115,12 @@ class WordsGameViewModel @Inject constructor(
             .onEach { event ->
                 when (event) {
                     is WordsGameAction.OnNextClicked -> {
-                        if (state.value.isLastExercise){
+                        if (state.value.isLastExercise) {
+                            gameRepository.requestUpdateDailyChallengeCompleteTime(
+                                game.value?.skills ?: emptyList(),
+                                timer.getElapsedTimeMillis()
+                            )
+
                             uiMessageManager.emitMessage(
                                 UiMessage(
                                     WordsGameUiMessage.NavigateToExerciseResult(

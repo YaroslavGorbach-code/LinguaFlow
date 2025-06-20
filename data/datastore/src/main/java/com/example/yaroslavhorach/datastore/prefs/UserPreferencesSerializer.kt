@@ -1,8 +1,9 @@
-package com.example.yaroslavhorach.datastore
+package com.example.yaroslavhorach.datastore.prefs
 
 import androidx.datastore.core.CorruptionException
 import androidx.datastore.core.Serializer
 import androidx.datastore.preferences.protobuf.InvalidProtocolBufferException
+import com.example.yaroslavhorach.datastore.UserPreferences
 import java.io.InputStream
 import java.io.OutputStream
 
