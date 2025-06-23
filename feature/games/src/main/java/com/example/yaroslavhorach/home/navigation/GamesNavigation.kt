@@ -11,10 +11,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data object GamesRoute
 
-// TODO: temp remove then
-@Serializable
-data object ProfileRoute
-
 fun NavController.navigateToGames(navOptions: NavOptions? = null) {
     this.navigate(GamesRoute, navOptions)
 }

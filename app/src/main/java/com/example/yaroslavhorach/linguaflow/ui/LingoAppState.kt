@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import com.example.yaroslavhorach.home.navigation.navigateToGames
 import com.example.yaroslavhorach.home.navigation.navigateToHome
+import com.example.yaroslavhorach.home.navigation.navigateToProfile
 import com.example.yaroslavhorach.linguaflow.navigation.TopLevelDestination
 import kotlinx.coroutines.CoroutineScope
 
@@ -78,7 +79,7 @@ class LingoAppState(
         when (topLevelDestination) {
             TopLevelDestination.Home -> navController.navigateToHome(topLevelNavOptions)
             TopLevelDestination.Games -> navController.navigateToGames(topLevelNavOptions)
-            TopLevelDestination.Profile -> {}
+            TopLevelDestination.Profile -> navController.navigateToProfile(topLevelNavOptions)
         }
     }
 }

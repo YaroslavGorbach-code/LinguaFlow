@@ -1,0 +1,8 @@
+<resources>
+    <string name="home_user_grating_text">Hi, %1$s ✌️</string>
+    <string name="communication_skills_exercise_section_name">Communication Practice</string>
+    <string name="vocabulary_practice_exercise_section_name">Vocabulary Practice</string>
+    <string name="diction_practice_exercise_section_name">Diction Practice</string>
+    <string name="not_active_exercise_description_text">Complete all levels above to unlock access</string>
+    <string name="not_active_exercise_btn_text">Not available</string>
+</resources>

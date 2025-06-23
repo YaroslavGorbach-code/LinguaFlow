@@ -20,6 +20,7 @@ import com.example.yaroslavhorach.games.words_game.navigation.wordsGameScreen
 import com.example.yaroslavhorach.home.navigation.HomeRoute
 import com.example.yaroslavhorach.home.navigation.gamesScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
+import com.example.yaroslavhorach.home.navigation.profileScreen
 
 @Composable
 fun LingoNavHost(
@@ -33,6 +34,7 @@ fun LingoNavHost(
         startDestination = HomeRoute,
         modifier = modifier,
     ) {
+        profileScreen()
         homeScreen(onNavigateToExercise = { exercise ->
             when (exercise.skill) {
                 Skill.COMMUNICATION -> {

@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/feature/exercises" />
             <option value="$PROJECT_DIR$/feature/games" />
             <option value="$PROJECT_DIR$/feature/home" />
+            <option value="$PROJECT_DIR$/feature/profile" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

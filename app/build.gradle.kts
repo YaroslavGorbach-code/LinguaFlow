@@ -38,6 +38,7 @@ dependencies {
     implementation(project(Modules.coreDesignSystem))
     implementation(project(Modules.featureHome))
     implementation(project(Modules.featureGames))
+    implementation(project(Modules.featureProfile))
     implementation(project(Modules.featureExercises))
 
     implementation(Libs.activityCompose)

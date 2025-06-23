@@ -110,32 +110,51 @@ internal fun GamesScreen(
     Column(Modifier.fillMaxSize()) {
         TopBar(state, listState, actioner)
         Spacer(Modifier.height(20.dp))
-        LazyRow {
-            itemsIndexed(state.sorts) { index, item ->
-                if (index == 0) { Spacer(Modifier.width(20.dp)) }
-                Text(
-                    modifier = Modifier
-                        .clickable { actioner(GamesAction.OnSortSelected(item)) }
-                        .border(
-                            1.dp,
-                            if (item == state.selectedSort) KellyGreen else MaterialTheme.colorScheme.onBackgroundDark(),
-                            shape = RoundedCornerShape(8.dp)
-                        )
-                        .padding(10.dp),
-                    text = item.getText().asString(),
-                    style = LinguaTypography.body4,
-                    color = MaterialTheme.colorScheme.typoPrimary()
-                )
+        Sorts(state, actioner)
+        Spacer(Modifier.height(20.dp))
+        Games(listState, state, actioner)
+    }
+}
+
+@Composable
+private fun Games(
+    listState: LazyListState,
+    state: GamesViewState,
+    actioner: (GamesAction) -> Unit
+) {
+    LazyColumn(modifier = Modifier.padding(horizontal = 20.dp), state = listState) {
+        itemsIndexed(state.games, key = { _, game -> game.game.id }) { index, item ->
+            if (index == 0) Spacer(Modifier.height(8.dp))
+            Game(state, item, listState, actioner)
+            Spacer(Modifier.height(20.dp))
+        }
+    }
+}
+
+@Composable
+private fun Sorts(
+    state: GamesViewState,
+    actioner: (GamesAction) -> Unit
+) {
+    LazyRow {
+        itemsIndexed(state.sorts) { index, item ->
+            if (index == 0) {
                 Spacer(Modifier.width(20.dp))
             }
-        }
-        Spacer(Modifier.height(20.dp))
-        LazyColumn(modifier = Modifier.padding(horizontal = 20.dp), state = listState) {
-            itemsIndexed(state.games, key = { _, game -> game.game.id }) { index, item ->
-                if (index == 0) Spacer(Modifier.height(8.dp))
-                Game(state, item, listState, actioner)
-                Spacer(Modifier.height(20.dp))
-            }
+            Text(
+                modifier = Modifier
+                    .clickable { actioner(GamesAction.OnSortSelected(item)) }
+                    .border(
+                        1.dp,
+                        if (item == state.selectedSort) KellyGreen else MaterialTheme.colorScheme.onBackgroundDark(),
+                        shape = RoundedCornerShape(8.dp)
+                    )
+                    .padding(10.dp),
+                text = item.getText().asString(),
+                style = LinguaTypography.body4,
+                color = MaterialTheme.colorScheme.typoPrimary()
+            )
+            Spacer(Modifier.width(20.dp))
         }
     }
 }
