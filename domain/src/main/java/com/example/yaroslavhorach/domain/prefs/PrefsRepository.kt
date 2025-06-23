@@ -10,4 +10,5 @@ interface PrefsRepository {
     suspend fun removeGameFromFavorites(gameId: Long)
     suspend fun useToken()
     suspend fun refreshTokens()
+    suspend fun markCurrentDayAsActive()
 }

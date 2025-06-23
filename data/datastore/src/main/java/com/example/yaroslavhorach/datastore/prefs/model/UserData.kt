@@ -12,5 +12,7 @@ data class UserData(
 fun UserData.asDomainModel() = DomainUserData(
     availableTokens  = this.availableTokens,
     maxTokens = this.maxTokens,
-    experience = this.experience
+    experience = this.experience,
+    activeDays = this.activeDays,
+    avatarResId = this.avatarResId
 )

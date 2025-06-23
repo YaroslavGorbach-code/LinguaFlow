@@ -28,8 +28,6 @@ data class HomeViewState(
 
             val totalProgress = blockExercises.sumOf { it.progressPercent.toDouble() }
 
-            Log.v("dasdasdasdasd", totalProgress.toString())
-            Log.v("dasdasdasdasd", blockExercises.size.toString())
             return (totalProgress / blockExercises.size).toFloat()
         }
 

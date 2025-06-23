@@ -83,6 +83,11 @@ fun Long.isToday(): Boolean {
             calendar.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR)
 }
 
+fun Long.isSameDay(targetDate: Date): Boolean {
+    val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+    return formatter.format(Date(this)) == formatter.format(targetDate)
+}
+
 fun Long.isTomorrow(): Boolean {
     val calendar = Calendar.getInstance().apply { timeInMillis = this@isTomorrow }
     val tomorrow = Calendar.getInstance().apply { add(Calendar.DAY_OF_YEAR, 1) }
@@ -108,6 +113,11 @@ fun getTomorrowInMs(): Long {
     }.timeInMillis
 }
 
+fun Long.formatToShortDayOfWeek(): String {
+    val date = Date(this)
+    val formatter = SimpleDateFormat("EEE", Locale.getDefault())
+    return formatter.format(date)
+}
 
 fun Long.toReadableDate(): String {
     val date = Date(this)

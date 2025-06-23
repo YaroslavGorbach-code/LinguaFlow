@@ -1,11 +1,13 @@
 package com.example.yaroslavhorach.home.model
 
 import com.example.yaroslavhorach.common.utill.UiMessage
+import java.util.Calendar
+import java.util.Date
 
 data class ProfileViewState(
     val userName: String = "Вікторія",
     val isPremiumUser: Boolean = false,
-    val lastSevenDays: List<CalendarDay> = emptyList(),
+    val lasActiveDays: List<CalendarDay> = emptyList(),
     val activeDays: Int = 0,
     val activeDaysInRow: Int = 0,
     val avatarResId: Int = com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_1,
@@ -16,7 +18,10 @@ data class ProfileViewState(
         val Preview = ProfileViewState(
             userName = "Вікторія",
             isPremiumUser = false,
-            lastSevenDays = emptyList(),
+            lasActiveDays = listOf(
+                CalendarDay(Calendar.getInstance().timeInMillis, false),
+                CalendarDay(Calendar.getInstance().timeInMillis, true)
+            ),
             activeDays = 22,
             activeDaysInRow = 5,
             avatarResId = com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_1

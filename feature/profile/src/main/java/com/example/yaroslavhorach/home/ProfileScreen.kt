@@ -2,6 +2,7 @@ package com.example.yaroslavhorach.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,18 +20,22 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -38,13 +43,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.example.yaroslavhorach.common.utill.formatToShortDayOfWeek
+import com.example.yaroslavhorach.common.utill.isToday
 import com.example.yaroslavhorach.designsystem.R
+import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
+import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.home.model.ProfileAction
 import com.example.yaroslavhorach.home.model.ProfileViewState
+import com.example.yaroslavhorach.ui.utils.conditional
 
 @Composable
 internal fun ProfileRoute(viewModel: ProfileViewModel = hiltViewModel()) {
@@ -75,6 +85,71 @@ internal fun ProfileScreen(
         TopBar(state, actioner)
         Spacer(Modifier.height(20.dp))
         PremiumBanner(state, actioner)
+        Spacer(Modifier.height(20.dp))
+        Text(
+            modifier = Modifier.padding(horizontal = 20.dp),
+            text = "Активність",
+            color = MaterialTheme.colorScheme.typoPrimary(),
+            style = LinguaTypography.subtitle2
+        )
+        Spacer(Modifier.height(14.dp))
+        LastActiveDays(state)
+    }
+}
+
+@Composable
+private fun LastActiveDays(state: ProfileViewState) {
+    val listState = rememberLazyListState()
+    val todayIndex = state.lasActiveDays.indexOfFirst { it.time.isToday() }
+
+    LaunchedEffect(todayIndex) {
+        if (todayIndex >= 0) {
+            listState.scrollToItem(todayIndex)
+        }
+    }
+
+    LazyRow(state = listState) {
+        itemsIndexed(state.lasActiveDays) { index, item ->
+            Spacer(Modifier.width(20.dp))
+
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Box(
+                    modifier = Modifier
+                        .background(MaterialTheme.colorScheme.onBackgroundDark(), CircleShape)
+                        .conditional(item.time.isToday()) {
+                            border(1.dp, color = KellyGreen, CircleShape)
+                        }
+                ) {
+                    if (item.isActive) {
+                        Image(
+                            modifier = Modifier
+                                .padding(12.dp)
+                                .size(24.dp),
+                            painter = painterResource(R.drawable.ic_fire_burning),
+                            contentDescription = null
+                        )
+                    } else {
+                        Image(
+                            modifier = Modifier
+                                .padding(12.dp)
+                                .size(24.dp),
+                            painter = painterResource(R.drawable.ic_fire),
+                            contentDescription = null
+                        )
+                    }
+                }
+                Spacer(Modifier.height(10.dp))
+                Text(
+                    text = item.time.formatToShortDayOfWeek(),
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.body5
+                )
+            }
+
+            if (index == state.lasActiveDays.lastIndex) {
+                Spacer(Modifier.width(20.dp))
+            }
+        }
     }
 }
 

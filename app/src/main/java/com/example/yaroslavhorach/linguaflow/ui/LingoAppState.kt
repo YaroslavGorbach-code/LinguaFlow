@@ -40,7 +40,6 @@ class LingoAppState(
     val currentTopLevelDestination: TopLevelDestination?
         @Composable get() {
             return TopLevelDestination.entries.firstOrNull { topLevelDestination ->
-                Log.v("dsdasdasd",  currentDestination?.route.toString())
                 currentDestination?.route == topLevelDestination.route.qualifiedName
             }
         }

@@ -1,7 +1,11 @@
 package com.example.yaroslavhorach.home
 
+import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
+import com.example.yaroslavhorach.common.utill.isSameDay
+import com.example.yaroslavhorach.domain.prefs.PrefsRepository
+import com.example.yaroslavhorach.home.model.CalendarDay
 import com.example.yaroslavhorach.home.model.ProfileAction
 import com.example.yaroslavhorach.home.model.ProfileUiMessage
 import com.example.yaroslavhorach.home.model.ProfileViewState
@@ -14,19 +18,25 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Date
+import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel
-class ProfileViewModel @Inject constructor() : BaseViewModel<ProfileViewState, ProfileAction, ProfileUiMessage>() {
+class ProfileViewModel @Inject constructor(private val prefsRepository: PrefsRepository) : BaseViewModel<ProfileViewState, ProfileAction, ProfileUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<ProfileAction> = MutableSharedFlow(extraBufferCapacity = 1, onBufferOverflow = BufferOverflow.DROP_OLDEST)
 
-
     override val state: StateFlow<ProfileViewState> = combine(
+        prefsRepository.getUserData(),
         uiMessageManager.message,
-        uiMessageManager.message,
-        ) { _, messages ->
+        ) { userData, messages ->
             ProfileViewState(
+                activeDays = userData.activeDays.count(),
+                activeDaysInRow = calculateActiveDaysInRowFromTimestamps(userData.activeDays.toSet()),
+                lasActiveDays = getLastSevenDays(userData.activeDays),
                 uiMessage = messages,
             )
         }.stateIn(
@@ -44,5 +54,47 @@ class ProfileViewModel @Inject constructor() : BaseViewModel<ProfileViewState, P
                 }
             }
             .launchIn(viewModelScope)
+    }
+
+    private fun getLastSevenDays(activeDays: List<Long>): List<CalendarDay> {
+        val calendar = Calendar.getInstance()
+        calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
+
+        val weekDates = mutableListOf<Date>()
+        for (i in 0 until 7) {
+            weekDates.add(calendar.time)
+            calendar.add(Calendar.DAY_OF_MONTH, 1)
+        }
+
+        return  weekDates
+            .map { weekDay ->
+                CalendarDay(
+                    time = weekDay.time,
+                    isActive = activeDays.any { activeDay -> activeDay.isSameDay(weekDay) })
+            }
+    }
+
+    private fun calculateActiveDaysInRowFromTimestamps(timestamps: Set<Long>): Int {
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+
+        val activeDates = timestamps
+            .map { dateFormat.format(Date(it)) }
+            .toSet()
+
+        var count = 0
+        val calendar = Calendar.getInstance()
+
+        while (true) {
+            val dateStr = dateFormat.format(calendar.time)
+
+            if (activeDates.contains(dateStr)) {
+                count++
+                calendar.add(Calendar.DAY_OF_YEAR, -1)
+            } else {
+                break
+            }
+        }
+
+        return count
     }
 }

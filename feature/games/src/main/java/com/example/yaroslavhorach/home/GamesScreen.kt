@@ -486,7 +486,8 @@ private fun GameDescriptionEnable(
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
-        paddingHorizontal = 0.dp
+        paddingHorizontal = 0.dp,
+        borderSize = 1.5.dp
     ) {
         Row(modifier = Modifier.fillMaxWidth()) {
             Text(
@@ -549,7 +550,8 @@ private fun DameDescriptionNoTokens(actioner: (GamesAction) -> Unit) {
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
-        paddingHorizontal = 0.dp
+        paddingHorizontal = 0.dp,
+        borderSize = 1.5.dp
     ) {
         Text(
             text = "\uD83D\uDD12 Упс! Жетони на сьогодні закінчились",
@@ -585,7 +587,8 @@ private fun GameDescriptionNotEnable(
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
-        paddingHorizontal = 0.dp
+        paddingHorizontal = 0.dp,
+        borderSize = 1.5.dp
     ) {
         Text(
             text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",

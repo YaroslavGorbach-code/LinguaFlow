@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.datastore.prefs
 
+import android.util.Log
 import androidx.datastore.core.DataStore
 import com.example.yaroslavhorach.common.utill.isToday
 import com.example.yaroslavhorach.datastore.UserPreferences
@@ -15,7 +16,9 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
             UserData(
                 availableTokens = it.availableTokens,
                 maxTokens = 3,
-                experience = 100
+                experience = it.experience,
+                avatarResId = it.avatarRes,
+                activeDays = it.activeDaysList
             )
         }
 
@@ -24,6 +27,18 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
             if (prefs.lastTimeTokenWasUsed.isToday().not()) {
                 prefs.toBuilder()
                     .setAvailableTokens(3)
+                    .build()
+            } else {
+                prefs
+            }
+        }
+    }
+
+    suspend fun addCurrentDayToActiveDays() {
+        userPreferences.updateData { prefs ->
+            if (prefs.activeDaysList.any { it.isToday() }.not()) {
+                prefs.toBuilder()
+                    .addActiveDays(Date().time)
                     .build()
             } else {
                 prefs

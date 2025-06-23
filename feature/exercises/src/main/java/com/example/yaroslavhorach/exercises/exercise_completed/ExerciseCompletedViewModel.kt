@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.utill.toMinutesSecondsFormat
+import com.example.yaroslavhorach.domain.prefs.PrefsRepository
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedUiMessage
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedViewState
@@ -18,10 +19,11 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ExerciseCompletedViewModel @Inject constructor(savedStateHandle: SavedStateHandle) :
+class ExerciseCompletedViewModel @Inject constructor(savedStateHandle: SavedStateHandle, prefsRepository: PrefsRepository) :
     BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<ExerciseCompletedAction> = MutableSharedFlow()
@@ -39,6 +41,8 @@ class ExerciseCompletedViewModel @Inject constructor(savedStateHandle: SavedStat
     )
 
     init {
+        viewModelScope.launch { prefsRepository.markCurrentDayAsActive() }
+
         pendingActions
             .onEach { event ->
                 when (event) {

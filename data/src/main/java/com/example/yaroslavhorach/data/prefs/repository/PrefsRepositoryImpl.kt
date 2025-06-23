@@ -34,4 +34,8 @@ class PrefsRepositoryImpl @Inject constructor(
     override suspend fun refreshTokens() {
         prefsDataSource.refreshTokens()
     }
+
+    override suspend fun markCurrentDayAsActive() {
+        prefsDataSource.addCurrentDayToActiveDays()
+    }
 }
