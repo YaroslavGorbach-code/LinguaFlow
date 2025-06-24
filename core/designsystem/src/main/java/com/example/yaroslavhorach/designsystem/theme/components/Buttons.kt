@@ -188,6 +188,7 @@ fun TextButton(
     pressOffset: Dp = 2.dp,
     textColor: Color = MaterialTheme.colorScheme.primary,
     style: TextStyle =  LinguaTypography.subtitle3,
+    alignment: Alignment = Alignment.Center
 ) {
     val isPressed = remember { mutableStateOf(false) }
     val boxSize = remember { mutableStateOf(IntSize.Zero) }
@@ -238,7 +239,7 @@ fun TextButton(
             text = text.uppercase(),
             color = textColor,
             style = style,
-            modifier = Modifier.align(Alignment.Center)
+            modifier = Modifier.align(alignment)
         )
     }
 }

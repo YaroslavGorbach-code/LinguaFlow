@@ -36,6 +36,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -53,7 +54,10 @@ import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
+import com.example.yaroslavhorach.designsystem.theme.components.TextButton
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.typoControlSecondary
+import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.home.model.ProfileAction
@@ -96,6 +100,78 @@ internal fun ProfileScreen(
         SectionProgress(state)
         Spacer(Modifier.height(20.dp))
         SpeakerLevelProgress(state)
+        Spacer(Modifier.height(14.dp))
+        Achievements()
+        Spacer(Modifier.height(20.dp))
+    }
+}
+
+@Composable
+private fun Achievements() {
+    Column(modifier = Modifier.padding(horizontal = 20.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                modifier = Modifier.weight(1f),
+                text = "Досягнення",
+                color = MaterialTheme.colorScheme.typoPrimary(),
+                style = LinguaTypography.subtitle2
+            )
+
+            TextButton(
+                modifier = Modifier.weight(1f),
+                text = "ПЕРЕГЛЯНУТИ ВСІ",
+                textColor = MaterialTheme.colorScheme.typoDisabled(),
+                onClick = {},
+                alignment = Alignment.CenterEnd
+            )
+        }
+        Spacer(Modifier.height(8.dp))
+        Box {
+            BoxWithStripes(
+                stripeColor = Color.Transparent,
+                isEnabled = false,
+                rawShadowYOffset = 0.dp,
+                background = Color.Transparent,
+                contentPadding = 0.dp,
+                shape = RoundedCornerShape(16.dp)
+            ) {
+                Row(
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(16.dp))
+                        .background(color = MaterialTheme.colorScheme.surface)
+                        .border(1.dp, MaterialTheme.colorScheme.onBackgroundDark(), RoundedCornerShape(16.dp))
+                ) {
+                    val images = listOf(
+                        R.drawable.im_achevement_1,
+                        R.drawable.im_achevement_2,
+                        R.drawable.im_achevement_3,
+                        R.drawable.im_achevement_4
+                    )
+                    val borderColor = MaterialTheme.colorScheme.onBackgroundDark()
+
+                    images.forEachIndexed { index, i ->
+                        Image(
+                            modifier = Modifier
+                                .conditional(index % 2 == 0) {
+                                    border(1.dp, borderColor, RoundedCornerShape(0.dp))
+                                }
+                                .padding(14.dp)
+                                .weight(1f),
+                            painter = painterResource(i),
+                            contentDescription = null
+                        )
+                    }
+
+                }
+            }
+
+            Text(
+                modifier = Modifier.align(Alignment.Center),
+                text = "COMMING SOON",
+                color = MaterialTheme.colorScheme.typoControlSecondary(),
+                style = LinguaTypography.subtitle2
+            )
+        }
     }
 }
 
@@ -232,7 +308,7 @@ private fun InfoItem(modifier: Modifier, title: String, subtitle: String, iconRe
                 Text(
                     text = subtitle,
                     color = MaterialTheme.colorScheme.typoSecondary(),
-                    style = LinguaTypography.body4
+                    style = LinguaTypography.body4,
                 )
             }
         }

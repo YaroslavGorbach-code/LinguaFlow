@@ -105,7 +105,7 @@ fun BoxWithStripes(
                     .rotate(rotation)
                     .matchParentSize()
                     .clip(shape)
-                    .background(color = Black_35, shape = RoundedCornerShape(12.dp))
+                    .background(color = Black_35, shape = shape)
             )
         }
 
@@ -146,7 +146,7 @@ fun BoxWithStripes(
                 modifier = Modifier
                     .offset(y = -shadowYOffset.value)
                     .matchParentSize()
-                    .background(color = Black_35, shape = RoundedCornerShape(12.dp))
+                    .background(color = Black_35, shape = shape)
             )
         }
 
