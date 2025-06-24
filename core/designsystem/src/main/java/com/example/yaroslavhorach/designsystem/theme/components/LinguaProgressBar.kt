@@ -20,7 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import com.example.yaroslavhorach.designsystem.theme.Gainsboro
+import com.example.yaroslavhorach.designsystem.theme.BrightGray
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.Menthol
 
@@ -29,7 +29,7 @@ fun LinguaProgressBar(
     progress: Float,
     progressBarHeight: Dp = 20.dp,
     modifier: Modifier = Modifier,
-    backgroundColor: Color = Gainsboro,
+    backgroundColor: Color = BrightGray,
     progressColor: Color = KellyGreen,
     progressShadow: Color = Menthol,
     minValue: Float = 0f,

@@ -46,14 +46,19 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.common.utill.formatToShortDayOfWeek
 import com.example.yaroslavhorach.common.utill.isToday
 import com.example.yaroslavhorach.designsystem.R
+import com.example.yaroslavhorach.designsystem.theme.Black_3
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
+import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
+import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.home.model.ProfileAction
 import com.example.yaroslavhorach.home.model.ProfileViewState
+import com.example.yaroslavhorach.home.model.SpeakingLevel
 import com.example.yaroslavhorach.ui.utils.conditional
 
 @Composable
@@ -86,14 +91,151 @@ internal fun ProfileScreen(
         Spacer(Modifier.height(20.dp))
         PremiumBanner(state, actioner)
         Spacer(Modifier.height(20.dp))
+        SectionActivity(state)
+        Spacer(Modifier.height(20.dp))
+        SectionProgress(state)
+        Spacer(Modifier.height(20.dp))
+        SpeakerLevelProgress(state)
+    }
+}
+
+@Composable
+private fun SectionActivity(state: ProfileViewState) {
+    Text(
+        modifier = Modifier.padding(horizontal = 20.dp),
+        text = "Активність",
+        color = MaterialTheme.colorScheme.typoPrimary(),
+        style = LinguaTypography.subtitle2
+    )
+    Spacer(Modifier.height(14.dp))
+    LastActiveDays(state)
+    Spacer(Modifier.height(20.dp))
+    Row(modifier = Modifier.padding(horizontal = 20.dp)) {
+        InfoItem(
+            modifier = Modifier.weight(1f),
+            title = state.activeDaysInRow.toString(),
+            subtitle = "Активна Хвиля",
+            iconRes = R.drawable.ic_fire_burning
+        )
+        Spacer(Modifier.width(20.dp))
+        InfoItem(
+            modifier = Modifier.weight(1f),
+            title = state.activeDays.toString(),
+            subtitle = "Активних днів",
+            iconRes = R.drawable.ic_calendar
+        )
+    }
+}
+
+@Composable
+private fun SectionProgress(state: ProfileViewState) {
+    Text(
+        modifier = Modifier.padding(horizontal = 20.dp),
+        text = "Прогресс",
+        color = MaterialTheme.colorScheme.typoPrimary(),
+        style = LinguaTypography.subtitle2
+    )
+    Spacer(Modifier.height(14.dp))
+    Row(modifier = Modifier.padding(horizontal = 20.dp)) {
+        InfoItem(
+            modifier = Modifier.weight(1f),
+            title = state.experience.toString(),
+            subtitle = "Рівень досвіду",
+            iconRes = R.drawable.ic_lightning_thunder
+        )
+        Spacer(Modifier.width(20.dp))
+        InfoItem(
+            modifier = Modifier.weight(1f),
+            title = state.levelOfSpeaking.level.toString() + ": " + state.levelOfSpeaking.title,
+            subtitle = "Рівень мовлення",
+            iconRes = R.drawable.ic_brain
+        )
+    }
+}
+
+@Composable
+private fun SpeakerLevelProgress(state: ProfileViewState) {
+    Column(
+        modifier = Modifier
+            .padding(horizontal = 20.dp)
+            .clip(RoundedCornerShape(16.dp))
+            .background(color = MaterialTheme.colorScheme.surface)
+            .border(1.dp, MaterialTheme.colorScheme.onBackgroundDark(), RoundedCornerShape(16.dp))
+    ) {
+        Row(
+            modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 20.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = state.levelOfSpeaking.level.toString(),
+                color = MaterialTheme.colorScheme.typoPrimary(),
+                style = LinguaTypography.h6
+            )
+            Spacer(Modifier.width(12.dp))
+            LinguaProgressBar(
+                state.experience.toFloat() / state.levelOfSpeaking.experienceRequired.last.toFloat(),
+                modifier = Modifier
+                    .weight(1f)
+                    .height(18.dp)
+            )
+            Spacer(Modifier.width(12.dp))
+            Text(
+                text = SpeakingLevel.nextLevel(state.levelOfSpeaking.level)?.level.toString(),
+                color = MaterialTheme.colorScheme.typoPrimary(),
+                style = LinguaTypography.h6
+            )
+        }
+        Spacer(Modifier.height(12.dp))
         Text(
             modifier = Modifier.padding(horizontal = 20.dp),
-            text = "Активність",
+            text = state.levelOfSpeaking.description,
             color = MaterialTheme.colorScheme.typoPrimary(),
-            style = LinguaTypography.subtitle2
+            style = LinguaTypography.body4,
+            textAlign = TextAlign.Justify
         )
-        Spacer(Modifier.height(14.dp))
-        LastActiveDays(state)
+        Spacer(Modifier.height(20.dp))
+    }
+}
+
+@Composable
+private fun InfoItem(modifier: Modifier, title: String, subtitle: String, iconRes: Int) {
+    BoxWithStripes(
+        rawShadowYOffset = 0.dp,
+        contentPadding = 12.dp,
+        background = MaterialTheme.colorScheme.surface,
+        backgroundShadow = MaterialTheme.colorScheme.onBackgroundDark(),
+        modifier = modifier
+            .fillMaxWidth()
+            .wrapContentHeight(),
+        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        borderWidth = 1.dp,
+        stripeWidth = 50.dp,
+        stripeSpacing = 100.dp,
+        stripeColor = Black_3
+    ) {
+        Row(modifier = Modifier.fillMaxWidth()) {
+            Image(
+                modifier = Modifier
+                    .align(Alignment.Top)
+                    .size(24.dp),
+                painter = painterResource(iconRes),
+                contentDescription = ""
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Column(modifier = Modifier) {
+                Text(
+                    text = title,
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.subtitle2
+                )
+                Spacer(modifier = Modifier.height(6.dp))
+                Text(
+                    text = subtitle,
+                    color = MaterialTheme.colorScheme.typoSecondary(),
+                    style = LinguaTypography.body4
+                )
+            }
+        }
     }
 }
 
@@ -111,11 +253,10 @@ private fun LastActiveDays(state: ProfileViewState) {
     LazyRow(state = listState) {
         itemsIndexed(state.lasActiveDays) { index, item ->
             Spacer(Modifier.width(20.dp))
-
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Box(
                     modifier = Modifier
-                        .background(MaterialTheme.colorScheme.onBackgroundDark(), CircleShape)
+                        .background(MaterialTheme.colorScheme.onBackground, CircleShape)
                         .conditional(item.time.isToday()) {
                             border(1.dp, color = KellyGreen, CircleShape)
                         }
@@ -145,7 +286,6 @@ private fun LastActiveDays(state: ProfileViewState) {
                     style = LinguaTypography.body5
                 )
             }
-
             if (index == state.lasActiveDays.lastIndex) {
                 Spacer(Modifier.width(20.dp))
             }

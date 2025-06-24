@@ -42,4 +42,4 @@ internal val AmericanSilver = Color(0xFFCFCFCF)
 internal val Calamansi = Color(0xFFFFF4F5)
 
 internal val BlackOlive = Color(0xFF3F3F3F)
-internal val BrightGray = Color(0xFFF1F1F1)
+internal val BrightGray = Color(0xFFEEEEEE)

@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.home
 
-import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.utill.isSameDay
@@ -9,6 +8,7 @@ import com.example.yaroslavhorach.home.model.CalendarDay
 import com.example.yaroslavhorach.home.model.ProfileAction
 import com.example.yaroslavhorach.home.model.ProfileUiMessage
 import com.example.yaroslavhorach.home.model.ProfileViewState
+import com.example.yaroslavhorach.home.model.SpeakingLevel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -35,6 +35,8 @@ class ProfileViewModel @Inject constructor(private val prefsRepository: PrefsRep
         ) { userData, messages ->
             ProfileViewState(
                 activeDays = userData.activeDays.count(),
+                experience = userData.experience,
+                levelOfSpeaking = SpeakingLevel.fromExperience(userData.experience),
                 activeDaysInRow = calculateActiveDaysInRowFromTimestamps(userData.activeDays.toSet()),
                 lasActiveDays = getLastSevenDays(userData.activeDays),
                 uiMessage = messages,

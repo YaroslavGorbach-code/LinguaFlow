@@ -28,11 +28,11 @@ object LinguaTypography {
     val subtitle6: TextStyle = TextStyle(fontFamily = popinsSemiBold, fontSize = 10.sp)
     val subtitle7: TextStyle = TextStyle(fontFamily = popinsSemiBold, fontSize = 8.sp)
 
-    val body1: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 20.sp)
-    val body2: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 18.sp)
-    val body3: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 16.sp)
-    val body4: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 14.sp)
-    val body5: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 12.sp)
-    val body6: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 10.sp)
-    val body7: TextStyle = TextStyle(fontFamily = popinsMedium, fontSize = 8.sp)
+    val body1: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 20.sp)
+    val body2: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 18.sp)
+    val body3: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 16.sp)
+    val body4: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 14.sp)
+    val body5: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 12.sp)
+    val body6: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 10.sp)
+    val body7: TextStyle = TextStyle(fontFamily = popinsRegular, fontSize = 8.sp)
 }
