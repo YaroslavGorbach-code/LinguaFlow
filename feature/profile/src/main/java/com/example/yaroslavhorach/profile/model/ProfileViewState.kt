@@ -1,6 +1,7 @@
-package com.example.yaroslavhorach.home.model
+package com.example.yaroslavhorach.profile.model
 
 import com.example.yaroslavhorach.common.utill.UiMessage
+import com.example.yaroslavhorach.designsystem.R
 import java.util.Calendar
 
 data class ProfileViewState(
@@ -25,7 +26,7 @@ data class ProfileViewState(
             ),
             activeDays = 22,
             activeDaysInRow = 5,
-            avatarResId = com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_1,
+            avatarResId = R.drawable.im_avatar_1,
             levelOfSpeaking = SpeakingLevel.Master()
         )
     }

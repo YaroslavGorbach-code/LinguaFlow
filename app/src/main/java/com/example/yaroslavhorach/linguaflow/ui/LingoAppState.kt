@@ -14,7 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import com.example.yaroslavhorach.home.navigation.navigateToGames
 import com.example.yaroslavhorach.home.navigation.navigateToHome
-import com.example.yaroslavhorach.home.navigation.navigateToProfile
+import com.example.yaroslavhorach.profile.navigation.navigateToProfile
 import com.example.yaroslavhorach.linguaflow.navigation.TopLevelDestination
 import kotlinx.coroutines.CoroutineScope
 

@@ -20,7 +20,7 @@ import com.example.yaroslavhorach.games.words_game.navigation.wordsGameScreen
 import com.example.yaroslavhorach.home.navigation.HomeRoute
 import com.example.yaroslavhorach.home.navigation.gamesScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
-import com.example.yaroslavhorach.home.navigation.profileScreen
+import com.example.yaroslavhorach.profile.navigation.profileScreen
 
 @Composable
 fun LingoNavHost(

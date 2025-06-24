@@ -1,4 +1,4 @@
-package com.example.yaroslavhorach.home.model
+package com.example.yaroslavhorach.profile.model
 
 
 sealed class SpeakingLevel(

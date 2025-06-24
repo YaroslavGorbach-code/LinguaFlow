@@ -1,14 +1,14 @@
-package com.example.yaroslavhorach.home
+package com.example.yaroslavhorach.profile
 
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.utill.isSameDay
 import com.example.yaroslavhorach.domain.prefs.PrefsRepository
-import com.example.yaroslavhorach.home.model.CalendarDay
-import com.example.yaroslavhorach.home.model.ProfileAction
-import com.example.yaroslavhorach.home.model.ProfileUiMessage
-import com.example.yaroslavhorach.home.model.ProfileViewState
-import com.example.yaroslavhorach.home.model.SpeakingLevel
+import com.example.yaroslavhorach.profile.model.CalendarDay
+import com.example.yaroslavhorach.profile.model.ProfileAction
+import com.example.yaroslavhorach.profile.model.ProfileUiMessage
+import com.example.yaroslavhorach.profile.model.ProfileViewState
+import com.example.yaroslavhorach.profile.model.SpeakingLevel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.MutableSharedFlow

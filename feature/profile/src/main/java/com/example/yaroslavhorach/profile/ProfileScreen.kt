@@ -1,4 +1,4 @@
-package com.example.yaroslavhorach.home
+package com.example.yaroslavhorach.profile
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -60,9 +60,9 @@ import com.example.yaroslavhorach.designsystem.theme.typoControlSecondary
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
-import com.example.yaroslavhorach.home.model.ProfileAction
-import com.example.yaroslavhorach.home.model.ProfileViewState
-import com.example.yaroslavhorach.home.model.SpeakingLevel
+import com.example.yaroslavhorach.profile.model.ProfileAction
+import com.example.yaroslavhorach.profile.model.ProfileViewState
+import com.example.yaroslavhorach.profile.model.SpeakingLevel
 import com.example.yaroslavhorach.ui.utils.conditional
 
 @Composable

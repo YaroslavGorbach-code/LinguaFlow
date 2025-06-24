@@ -7,7 +7,7 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.example.yaroslavhorach.home.navigation.GamesRoute
 import com.example.yaroslavhorach.home.navigation.HomeRoute
-import com.example.yaroslavhorach.home.navigation.ProfileRoute
+import com.example.yaroslavhorach.profile.navigation.ProfileRoute
 import com.example.yaroslavhorach.lingoFlow.R
 import kotlin.reflect.KClass
 
