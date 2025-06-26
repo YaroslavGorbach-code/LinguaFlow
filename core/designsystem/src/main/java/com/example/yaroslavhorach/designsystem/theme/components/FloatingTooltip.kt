@@ -50,7 +50,7 @@ fun FloatingTooltip(
     backgroundColor: Color = MaterialTheme.colorScheme.surface,
     borderColor: Color = MaterialTheme.colorScheme.onBackground,
     borderSize: Dp = 2.dp,
-    cornerRadius: Dp = 8.dp,
+    cornerRadius: Dp = 16.dp,
     triangleHeight: Dp = 10.dp,
     triangleWidth: Dp = 20.dp,
     contentPadding: Dp = 12.dp,

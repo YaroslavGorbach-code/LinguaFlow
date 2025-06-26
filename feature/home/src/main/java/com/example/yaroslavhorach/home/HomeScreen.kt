@@ -401,7 +401,7 @@ private fun Exercise(
         Box {
             BoxWithStripes(
                 offsetX = offset,
-                borderWidth = 2.dp,
+                borderWidth = 0.dp,
                 borderColor = exercise.exercise.block.blockColorSecondary(),
                 contentPadding = 8.dp,
                 background = exercise.exercise.block.blockColorPrimary(),
@@ -423,7 +423,7 @@ private fun Exercise(
                     },
                 stripeWidth = 20.dp,
                 stripeSpacing = 45.dp,
-                rawShadowYOffset = 0.dp
+                rawShadowYOffset = 5.dp
             ) {
                 Box(modifier = Modifier.size(exerciseSize)) {
 
@@ -475,6 +475,7 @@ private fun DescriptionTooltip(
         borderColor = if (exercise?.isEnable == true) MaterialTheme.colorScheme.secondary else if (exercise != null) MaterialTheme.colorScheme.onBackgroundDark() else Color.Transparent,
         contentPadding = 20.dp,
         appearPosition = position,
+        borderSize = 0.dp,
         onGloballyPositioned = onGloballyPositioned,
         onRequireRootTopPadding = onRequireRootTopPadding
     ) {
