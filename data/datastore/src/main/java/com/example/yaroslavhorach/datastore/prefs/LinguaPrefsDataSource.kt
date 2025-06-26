@@ -1,8 +1,8 @@
 package com.example.yaroslavhorach.datastore.prefs
 
-import android.util.Log
 import androidx.datastore.core.DataStore
 import com.example.yaroslavhorach.common.utill.isToday
+import com.example.yaroslavhorach.datastore.R
 import com.example.yaroslavhorach.datastore.UserPreferences
 import com.example.yaroslavhorach.datastore.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
@@ -18,7 +18,9 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 maxTokens = 3,
                 experience = it.experience,
                 avatarResId = it.avatarRes,
-                activeDays = it.activeDaysList
+                activeDays = it.activeDaysList,
+                userName = it.name ?: "",
+                isPremium = it.isPremium
             )
         }
 
@@ -54,6 +56,30 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         userPreferences.updateData { prefs ->
             prefs.toBuilder()
                 .addFavoriteGames(gameId)
+                .build()
+        }
+    }
+
+    suspend fun changeAvatar(avatarResId: Int) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setAvatarRes(avatarResId)
+                .build()
+        }
+    }
+
+    suspend fun changeName(name: String) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setName(name)
+                .build()
+        }
+    }
+
+    suspend fun changePremiumState(isPremium: Boolean) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setIsPremium(isPremium)
                 .build()
         }
     }

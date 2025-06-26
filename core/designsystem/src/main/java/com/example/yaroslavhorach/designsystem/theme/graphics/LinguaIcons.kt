@@ -13,6 +13,7 @@ object LinguaIcons {
     val Microphone = R.drawable.ic_microphone
     val BlockWithLetters = R.drawable.ic_block_with_letters
     val CircleClose = R.drawable.ic_circle_close
+    val CircleCloseDark = R.drawable.ic_circle_close
     val PlayCircle = R.drawable.ic_play_circle
     val PauseCircle = R.drawable.ic_pause_circle
     val Confetti = R.drawable.ic_confetti

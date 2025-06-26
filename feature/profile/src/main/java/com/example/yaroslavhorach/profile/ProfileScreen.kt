@@ -3,6 +3,7 @@ package com.example.yaroslavhorach.profile
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -66,7 +67,10 @@ import com.example.yaroslavhorach.profile.model.SpeakingLevel
 import com.example.yaroslavhorach.ui.utils.conditional
 
 @Composable
-internal fun ProfileRoute(viewModel: ProfileViewModel = hiltViewModel()) {
+internal fun ProfileRoute(
+    viewModel: ProfileViewModel = hiltViewModel(),
+    onNavigateToAvatarChange: () -> Unit
+) {
     val profileState by viewModel.state.collectAsStateWithLifecycle()
 
     ProfileScreen(
@@ -74,7 +78,9 @@ internal fun ProfileRoute(viewModel: ProfileViewModel = hiltViewModel()) {
         onMessageShown = viewModel::clearMessage,
         actioner = { action ->
             when (action) {
-
+                ProfileAction.OnEditProfileClicked -> {
+                    onNavigateToAvatarChange()
+                }
                 else -> viewModel.submitAction(action)
             }
         })
@@ -383,22 +389,23 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
             modifier = Modifier
                 .matchParentSize()
         )
-
         Column(
             modifier = Modifier
                 .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top))
+                .clickable { actioner(ProfileAction.OnEditProfileClicked) }
                 .align(Alignment.TopCenter),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(Modifier.height(40.dp))
-            Image(
-                modifier = Modifier
-                    .size(120.dp),
-                painter = painterResource(R.drawable.im_avatar_1),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-
+            if (screenState.avatarResId != null) {
+                Image(
+                    modifier = Modifier
+                        .size(120.dp),
+                    painter = painterResource(screenState.avatarResId),
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop,
                 )
+            }
             Spacer(Modifier.height(22.dp))
             Text(
                 modifier = Modifier.fillMaxWidth(),

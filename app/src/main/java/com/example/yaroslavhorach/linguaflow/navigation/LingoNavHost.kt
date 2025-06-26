@@ -5,6 +5,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import com.example.yaroslavhorach.avatar_change.navigation.avatarChangeScreen
+import com.example.yaroslavhorach.avatar_change.navigation.navigateToAvatarChange
 import com.example.yaroslavhorach.domain.exercise.model.Skill
 import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
@@ -34,7 +36,9 @@ fun LingoNavHost(
         startDestination = HomeRoute,
         modifier = modifier,
     ) {
-        profileScreen()
+        profileScreen {
+            navController.navigateToAvatarChange()
+        }
         homeScreen(onNavigateToExercise = { exercise ->
             when (exercise.skill) {
                 Skill.COMMUNICATION -> {
@@ -117,6 +121,10 @@ fun LingoNavHost(
         })
         exerciseCompletedScreen {
             navController.popBackStack()
+        }
+        avatarChangeScreen {
+            navController.popBackStack()
+
         }
     }
 }

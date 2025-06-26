@@ -12,7 +12,7 @@ data class ProfileViewState(
     val experience: Int = 0,
     val levelOfSpeaking: SpeakingLevel = SpeakingLevel.Listener(),
     val activeDaysInRow: Int = 0,
-    val avatarResId: Int = com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_1,
+    val avatarResId: Int? = null,
     val uiMessage: UiMessage<ProfileUiMessage>? = null
 ) {
     companion object {

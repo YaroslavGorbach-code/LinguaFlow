@@ -10,4 +10,6 @@ message UserPreferences {
   repeated int64 favorite_games = 4;
   repeated int64 active_days = 5;
   int32 avatarRes = 6;
+  string name = 7;
+  bool is_premium = 8;
 }

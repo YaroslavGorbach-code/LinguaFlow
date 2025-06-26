@@ -14,9 +14,8 @@ fun NavController.navigateToProfile(navOptions: NavOptions? = null) {
     this.navigate(ProfileRoute, navOptions)
 }
 
-fun NavGraphBuilder.profileScreen(
-) {
+fun NavGraphBuilder.profileScreen(onNavigateToAvatarChange: ()-> Unit) {
     composable<ProfileRoute> {
-        ProfileRoute()
+        ProfileRoute(onNavigateToAvatarChange = onNavigateToAvatarChange)
     }
 }

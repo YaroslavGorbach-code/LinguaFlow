@@ -34,6 +34,8 @@ class ProfileViewModel @Inject constructor(private val prefsRepository: PrefsRep
         uiMessageManager.message,
         ) { userData, messages ->
             ProfileViewState(
+                avatarResId = userData.avatarResId ?: com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_1,
+                userName = userData.userName,
                 activeDays = userData.activeDays.count(),
                 experience = userData.experience,
                 levelOfSpeaking = SpeakingLevel.fromExperience(userData.experience),
@@ -51,7 +53,6 @@ class ProfileViewModel @Inject constructor(private val prefsRepository: PrefsRep
         pendingActions
             .onEach { event ->
                 when (event) {
-
                     else -> {}
                 }
             }
