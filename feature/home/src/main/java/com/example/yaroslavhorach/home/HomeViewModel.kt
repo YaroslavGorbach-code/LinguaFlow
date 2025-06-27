@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
+import com.example.yaroslavhorach.domain.prefs.PrefsRepository
 import com.example.yaroslavhorach.home.model.ExerciseUi
 import com.example.yaroslavhorach.home.model.HomeAction
 import com.example.yaroslavhorach.home.model.HomeUiMessage
@@ -23,7 +24,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    exerciseRepository: ExerciseRepository
+    exerciseRepository: ExerciseRepository,
+    prefsRepository: PrefsRepository,
 ) : BaseViewModel<HomeViewState, HomeAction, HomeUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<HomeAction> = MutableSharedFlow(extraBufferCapacity = 1, onBufferOverflow = BufferOverflow.DROP_OLDEST)
@@ -34,15 +36,17 @@ class HomeViewModel @Inject constructor(
 
     private val startExerciseTooltipPosition: MutableStateFlow<Offset> = MutableStateFlow(Offset.Zero)
 
-    override val state: StateFlow<HomeViewState> = combine(
+    override val state: StateFlow<HomeViewState> = com.example.yaroslavhorach.common.utill.combine(
             exerciseRepository.getExercises(),
+            prefsRepository.getUserData(),
             descriptionState,
             exerciseRepository.getBlock(),
             startExerciseTooltipPosition,
             uiMessageManager.message
-        ) { exercises, description, exercisesBlock, startExerciseTooltipPosition, messages ->
+        ) { exercises, userData, description, exercisesBlock, startExerciseTooltipPosition, messages ->
             HomeViewState(
                 uiMessage = messages,
+                userName = userData.userName,
                 startExerciseTooltipPosition = startExerciseTooltipPosition,
                 descriptionState = description,
                 exerciseBlock = exercisesBlock,

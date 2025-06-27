@@ -3,10 +3,12 @@ package com.example.yaroslavhorach.home
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -29,6 +31,7 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -38,9 +41,16 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Path
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.asAndroidPath
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.LayoutCoordinates
@@ -63,10 +73,11 @@ import com.example.yaroslavhorach.designsystem.extentions.blockColorPrimary
 import com.example.yaroslavhorach.designsystem.extentions.blockColorSecondary
 import com.example.yaroslavhorach.designsystem.extentions.blockDescription
 import com.example.yaroslavhorach.designsystem.extentions.blockTitle
-import com.example.yaroslavhorach.designsystem.theme.Black_35
+import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
+import com.example.yaroslavhorach.designsystem.theme.White_70
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.components.FloatingTooltip
 import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
@@ -74,10 +85,10 @@ import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBa
 import com.example.yaroslavhorach.designsystem.theme.components.SecondaryButton
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.example.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.example.yaroslavhorach.designsystem.theme.typoControlPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoControlSecondary
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
-import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.home.model.ExerciseUi
@@ -85,6 +96,8 @@ import com.example.yaroslavhorach.home.model.HomeAction
 import com.example.yaroslavhorach.home.model.HomeViewState
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
+import kotlin.math.cos
+import kotlin.math.sin
 
 @Composable
 internal fun HomeRoute(
@@ -99,14 +112,15 @@ internal fun HomeRoute(
         onMessageShown = viewModel::clearMessage,
         onChangeColorScheme = onChangeColorScheme,
         actioner = { action ->
-        when (action) {
-            is HomeAction.OnStartExerciseClicked -> {
-                viewModel.submitAction(HomeAction.OnHideDescription)
-                onNavigateToExercise(action.exercise)
+            when (action) {
+                is HomeAction.OnStartExerciseClicked -> {
+                    viewModel.submitAction(HomeAction.OnHideDescription)
+                    onNavigateToExercise(action.exercise)
+                }
+
+                else -> viewModel.submitAction(action)
             }
-            else -> viewModel.submitAction(action)
-        }
-    })
+        })
 }
 
 @Composable
@@ -152,19 +166,11 @@ internal fun HomeScreen(
                 }
             }
     ) {
-        Column(
-            modifier = Modifier
-                .padding(horizontal = 20.dp)
-                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
-        ) {
-            UserGreeting(screenState)
-            Spacer(Modifier.height(20.dp))
-            BlockDescription(screenState, modifier = Modifier.onGloballyPositioned {
+        Column {
+            TopBar(screenState, modifier = Modifier.onGloballyPositioned {
                 descriptionBlockBounds.value = it.boundsInRoot().roundToIntRect()
             })
-            Spacer(
-                Modifier.height(animatedTopPadding)
-            )
+            Spacer(Modifier.height(animatedTopPadding))
             Exercises(exercisesState, screenState, actioner, density)
         }
 
@@ -208,27 +214,34 @@ private fun Exercises(
             if (index > 0) Spacer(Modifier.size(20.dp))
             if (index == 0) Spacer(Modifier.size(40.dp))
 
-            if (index != 0 && block != previousBlock) {
+            if (block != previousBlock) {
                 BlockTitle(block)
             }
 
-            Exercise(
-                exercise = exercise,
+            ExerciseProgressContainer(
+                size = 80.dp,
                 moveElementRight = (index % 2) != 0,
-                onClickWithCoordinates = { offset ->
-                    actioner(
-                        HomeAction.OnExerciseClicked(
-                            exercise,
-                            offset.copy(
-                                y = offset.y - with(density) { screenState.descriptionState.listTopExtraPadding.toPx() }
+                progress = exercise.progressPercent,
+                content = {
+                    Exercise(
+                        exercise = exercise,
+                        exerciseSize = 80.dp,
+                        onClickWithCoordinates = { offset ->
+                            actioner(
+                                HomeAction.OnExerciseClicked(
+                                    exercise,
+                                    offset.copy(
+                                        y = offset.y - with(density) { screenState.descriptionState.listTopExtraPadding.toPx() }
+                                    )
+                                )
                             )
-                        )
-                    )
-                },
-                onGloballyPositioned = {
-                    if (exercise.isLastActive && screenState.descriptionState.isVisible.not()) {
-                        actioner(HomeAction.OnShowStartExerciseTooltip(it))
-                    }
+                        },
+                        onGloballyPositioned = {
+                            if (exercise.isLastActive && screenState.descriptionState.isVisible.not()) {
+                                actioner(HomeAction.OnShowStartExerciseTooltip(it))
+                            }
+
+                        })
                 }
             )
         }
@@ -239,7 +252,7 @@ private fun Exercises(
 private fun BlockTitle(block: ExerciseBlock) {
     Row(
         modifier = Modifier
-            .padding(bottom = 24.dp, top = 4.dp)
+            .padding(bottom = 40.dp, top = 4.dp)
             .fillMaxWidth()
             .padding(horizontal = 16.dp),
         verticalAlignment = Alignment.CenterVertically
@@ -339,15 +352,22 @@ private fun StartTooltip(position: Offset) {
 }
 
 @Composable
-private fun BlockDescription(state: HomeViewState, modifier: Modifier) {
+private fun TopBar(state: HomeViewState, modifier: Modifier) {
     BoxWithStripes(
+        shape = RoundedCornerShape(0),
         rawShadowYOffset = 5.dp,
         background = state.exerciseBlock.blockColorPrimary(),
         backgroundShadow = state.exerciseBlock.blockColorSecondary(),
         modifier = modifier
             .fillMaxWidth()
     ) {
-        Column(modifier = Modifier.animateContentSize()) {
+        Column(
+            modifier = Modifier
+                .animateContentSize()
+                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+        ) {
+            UserGreeting(state)
+            Spacer(Modifier.height(20.dp))
             Text(
                 modifier = Modifier,
                 text = state.exerciseBlock.blockTitle().asString(),
@@ -380,6 +400,8 @@ private fun BlockDescription(state: HomeViewState, modifier: Modifier) {
                         contentDescription = ""
                     )
                 }
+            } else{
+                Spacer(Modifier.height(8.dp))
             }
         }
     }
@@ -388,26 +410,24 @@ private fun BlockDescription(state: HomeViewState, modifier: Modifier) {
 @Composable
 private fun Exercise(
     exercise: ExerciseUi,
-    moveElementRight: Boolean,
+    exerciseSize: Dp,
     onClickWithCoordinates: (Offset) -> Unit,
     onGloballyPositioned: (Offset) -> Unit,
 ) {
-    val exerciseSize = 90.dp
-    val layoutCoordinates = remember { mutableStateOf<LayoutCoordinates?>(null) }
+    val shadow = 0.dp
 
-    val offset = if (moveElementRight) exerciseSize / 1.5f else -exerciseSize / 1.5f
+    val layoutCoordinates = remember { mutableStateOf<LayoutCoordinates?>(null) }
 
     Row {
         Box {
             BoxWithStripes(
-                offsetX = offset,
-                borderWidth = 0.dp,
-                borderColor = exercise.exercise.block.blockColorSecondary(),
+                stripeColor = Color.Transparent,
                 contentPadding = 8.dp,
-                background = exercise.exercise.block.blockColorPrimary(),
-                backgroundShadow = exercise.exercise.block.blockColorSecondary(),
+                background = if (exercise.isEnable) exercise.exercise.block.blockColorPrimary() else MaterialTheme.colorScheme.onBackground,
+                backgroundShadow = if (exercise.isEnable) exercise.exercise.block.blockColorSecondary() else MaterialTheme.colorScheme.onBackgroundDark(),
                 modifier = Modifier
-                    .size(exerciseSize)
+                    .width(exerciseSize)
+                    .height(exerciseSize - shadow)
                     .onGloballyPositioned { coordinates ->
                         val center = coordinates.boundsInRoot().topCenter
                         onGloballyPositioned(Offset(center.x, center.y))
@@ -421,40 +441,29 @@ private fun Exercise(
                             onClickWithCoordinates(Offset(center.x + (exerciseSize.value / 2), center.y))
                         }
                     },
+                shape = RoundedCornerShape(16.dp),
                 stripeWidth = 20.dp,
-                stripeSpacing = 45.dp,
-                rawShadowYOffset = 5.dp
+                stripeSpacing = 90.dp,
+                rawShadowYOffset = shadow
             ) {
                 Box(modifier = Modifier.size(exerciseSize)) {
-
-                if (exercise.isStarted) {
-                    LinguaProgressBar(
-                        exercise.progressPercent,
+                    val iconColor = when {
+//                        exercise.isFinished -> Golden
+                        exercise.isEnable.not() -> Color(0xFFAFAFAF)
+                        exercise.isEnable -> White_70
+                        else -> MaterialTheme.colorScheme.secondaryIcon()
+                    }
+                    Icon(
                         modifier = Modifier
-                            .align(Alignment.TopCenter)
-                            .fillMaxWidth()
-                            .height(6.dp)
+                            .size(38.dp)
+                            .rotate(30f)
+                            .align(Alignment.Center)
+                            .padding(top = 3.dp),
+                        tint = iconColor,
+                        painter = painterResource(exercise.iconResId),
+                        contentDescription = ""
                     )
                 }
-
-                Icon(
-                    modifier = Modifier
-                        .size(34.dp)
-                        .align(Alignment.Center)
-                        .padding(top = 3.dp),
-                    tint = White,
-                    painter = painterResource(exercise.iconResId),
-                    contentDescription = ""
-                )
-                }
-            }
-            if (exercise.isEnable.not()) {
-                Spacer(
-                    modifier = Modifier
-                        .offset(x = offset)
-                        .size(exerciseSize)
-                        .background(color = Black_35, shape = RoundedCornerShape(12.dp))
-                )
             }
         }
     }
@@ -482,8 +491,13 @@ private fun DescriptionTooltip(
         if (exercise?.isEnable == true) {
             Column {
                 Row {
-                    Icon(painter = painterResource(exercise.iconResId), null, tint = White)
-                    Spacer(Modifier.width(4.dp))
+                    Icon(
+                        modifier = modifier.size(35.dp),
+                        painter = painterResource(exercise.iconResId),
+                        contentDescription = null,
+                        tint = White
+                    )
+                    Spacer(Modifier.width(8.dp))
                     Text(
                         modifier = Modifier.align(Alignment.CenterVertically),
                         text = stringResource(exercise.skillNameResId),
@@ -511,19 +525,21 @@ private fun DescriptionTooltip(
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(16.dp))
-                SecondaryButton(text = "ПОЧАТИ", onClick = {
+                val startBtnText = if(exercise.isFinished) "ПОВТОРИТИ" else "ПОЧАТИ"
+                SecondaryButton(text = startBtnText, onClick = {
                     onStartExerciseClicked(exercise)
                 })
             }
-        }else if (exercise != null) {
+        } else if (exercise != null) {
             Column {
                 Row {
                     Icon(
+                        modifier = modifier.size(35.dp),
                         painter = painterResource(exercise.iconResId),
-                        null,
+                        contentDescription = null,
                         tint = MaterialTheme.colorScheme.typoDisabled()
                     )
-                    Spacer(Modifier.width(4.dp))
+                    Spacer(Modifier.width(8.dp))
                     Text(
                         modifier = Modifier.align(Alignment.CenterVertically),
                         text = stringResource(exercise.skillNameResId),
@@ -555,15 +571,16 @@ private fun UserGreeting(screenState: HomeViewState) {
     Text(
         text = stringResource(id = R.string.home_user_grating_text, screenState.userName),
         style = LinguaTypography.h2,
-        color = MaterialTheme.colorScheme.typoPrimary()
+        color = MaterialTheme.colorScheme.typoControlPrimary()
     )
 }
 
 @Preview
 @Composable
 private fun HomePreview() {
-    Column {
-        LinguaTheme {
+
+    LinguaTheme {
+        Surface {
             HomeScreen(
                 HomeViewState.Preview,
                 {},

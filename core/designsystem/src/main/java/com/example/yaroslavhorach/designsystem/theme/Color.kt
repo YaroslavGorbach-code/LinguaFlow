@@ -4,10 +4,13 @@ import androidx.compose.ui.graphics.Color
 
 val White = Color(0xFFFFFFFF)
 val White_90 = Color(0xE6FFFFFF)
+val White_70 = Color(0xB3FFFFFF)
 val White_10 = Color(0x1AFFFFFF)
 val White_20 = Color(0x33FFFFFF)
+val White_30 = Color(0x33FFFFFF)
 val White_40 = Color(0x66FFFFFF)
 val Black_35 = Color(0x59000000)
+val Black_30 = Color(0x4D000000)
 val Black_3 = Color(0x08000000)
 val LightSilver = Color(0xFFD9D9D9)
 val SonicSilver = Color(0xFF797979)

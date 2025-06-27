@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.home.model
 
-import android.util.Log
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.unit.Dp
@@ -36,7 +35,7 @@ data class HomeViewState(
         val exercise: ExerciseUi? = null,
         val position: Offset? = null,
         val bounds: Rect? = null,
-    ){
+    ) {
         val isVisible
             get() = exercise != null
 
@@ -46,8 +45,6 @@ data class HomeViewState(
     }
 
     companion object {
-        val Empty = HomeViewState()
-        val Preview = HomeViewState()
         val PreviewExercise = ExerciseUi(
             Exercise(
                 id = ExerciseName.ICEBREAKERS.ordinal.toLong(),
@@ -59,5 +56,9 @@ data class HomeViewState(
                 description = hashMapOf("en" to "test")
             )
         )
+
+        val Empty = HomeViewState()
+        val Preview =
+            HomeViewState(exercises = listOf(PreviewExercise, PreviewExercise, PreviewExercise, PreviewExercise))
     }
 }
