@@ -223,7 +223,7 @@ private fun TopBar(screenState: AvatarChangeViewState, actioner: (AvatarChangeAc
             .wrapContentHeight()
     ) {
         Image(
-            painter = painterResource(R.drawable.im_games_gradient),
+            painter = painterResource(R.drawable.im_profile_gradient),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier

@@ -1,5 +1,12 @@
 package com.example.yaroslavhorach.profile
 
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -37,7 +44,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -49,6 +60,7 @@ import com.example.yaroslavhorach.common.utill.formatToShortDayOfWeek
 import com.example.yaroslavhorach.common.utill.isToday
 import com.example.yaroslavhorach.designsystem.R
 import com.example.yaroslavhorach.designsystem.theme.Black_3
+import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -383,7 +395,7 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
             .wrapContentHeight()
     ) {
         Image(
-            painter = painterResource(R.drawable.im_games_gradient),
+            painter = painterResource(R.drawable.im_profile_gradient),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier
@@ -421,29 +433,53 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
 
 @Composable
 private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileAction) -> Unit) {
+    val infiniteTransition = rememberInfiniteTransition(label = "premium_border")
+
+    val alpha = infiniteTransition.animateFloat(
+        initialValue = 0.2f,
+        targetValue = 1f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = 800, easing = FastOutSlowInEasing),
+            repeatMode = RepeatMode.Reverse
+        ), label = "alpha"
+    )
+
+    val scale = infiniteTransition.animateFloat(
+        initialValue = 0.98f,
+        targetValue = 1.02f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = 800, easing = FastOutSlowInEasing),
+            repeatMode = RepeatMode.Reverse
+        ), label = "scale"
+    )
+
     Box(
         modifier = Modifier
+            .graphicsLayer {
+                scaleX = scale.value
+                scaleY = scale.value
+            }
             .fillMaxWidth()
             .wrapContentHeight()
             .padding(horizontal = 20.dp)
+            .drawBehind {
+                drawRoundRect(
+                    color = Golden.copy(alpha = alpha.value),
+                    style = Stroke(width = 4.dp.toPx()),
+                    cornerRadius = CornerRadius(12.dp.toPx())
+                )
+            }
             .clip(RoundedCornerShape(12.dp))
+            .background(MaterialTheme.colorScheme.surface)
+            .clickable { actioner(ProfileAction.OnActivatePremiumClicked) }
     ) {
-        Image(
-            modifier = Modifier
-                .matchParentSize()
-                .align(Alignment.Center),
-            painter = painterResource(R.drawable.im_gradient_premium),
-            contentScale = ContentScale.Crop,
-            contentDescription = null
-        )
         Row(
-            modifier = Modifier
-                .wrapContentSize(),
+            modifier = Modifier.wrapContentSize(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Spacer(Modifier.width(20.dp))
+            Spacer(Modifier.width(16.dp))
             Image(
-                modifier = Modifier.size(50.dp),
+                modifier = Modifier.size(45.dp),
                 painter = painterResource(R.drawable.ic_premium_crown),
                 contentDescription = null
             )
@@ -454,12 +490,12 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
                         modifier = Modifier.weight(1f),
                         text = "Активувати Преміум",
                         style = LinguaTypography.subtitle2,
-                        color = White
+                        color = MaterialTheme.colorScheme.typoPrimary()
                     )
                     Icon(
                         modifier = Modifier.size(20.dp),
                         painter = painterResource(R.drawable.ic_circle_right),
-                        tint = White,
+                        tint = Golden,
                         contentDescription = null
                     )
                 }
@@ -467,7 +503,7 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
                 Text(
                     "Користуйся всіма можливостями застосунку — без реклами та обмежень",
                     style = LinguaTypography.body5,
-                    color = White
+                    color = MaterialTheme.colorScheme.typoPrimary()
                 )
             }
         }
