@@ -34,20 +34,16 @@ class HomeViewModel @Inject constructor(
         HomeViewState.DescriptionState.EMPTY
     )
 
-    private val startExerciseTooltipPosition: MutableStateFlow<Offset> = MutableStateFlow(Offset.Zero)
-
     override val state: StateFlow<HomeViewState> = com.example.yaroslavhorach.common.utill.combine(
             exerciseRepository.getExercises(),
             prefsRepository.getUserData(),
             descriptionState,
             exerciseRepository.getBlock(),
-            startExerciseTooltipPosition,
             uiMessageManager.message
-        ) { exercises, userData, description, exercisesBlock, startExerciseTooltipPosition, messages ->
+        ) { exercises, userData, description, exercisesBlock, messages ->
             HomeViewState(
                 uiMessage = messages,
                 userName = userData.userName,
-                startExerciseTooltipPosition = startExerciseTooltipPosition,
                 descriptionState = description,
                 exerciseBlock = exercisesBlock,
                 exercises = exercises.map { ExerciseUi(it) }
@@ -81,9 +77,6 @@ class HomeViewModel @Inject constructor(
                     }
                     is HomeAction.OnDescriptionListTopPaddingChanged -> {
                         descriptionState.value = descriptionState.value.copy(listTopExtraPadding = event.padding)
-                    }
-                    is HomeAction.OnShowStartExerciseTooltip -> {
-                        startExerciseTooltipPosition.value = event.position
                     }
                     is HomeAction.OnTouchOutside -> {
                         state.value.descriptionState.bounds?.let { bounds ->

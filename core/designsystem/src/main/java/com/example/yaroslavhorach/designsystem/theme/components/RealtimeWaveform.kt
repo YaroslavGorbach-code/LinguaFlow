@@ -30,7 +30,7 @@ fun RealtimeWaveform(
     amplitude: Int,
     isSpeaking: Boolean,
     modifier: Modifier = Modifier,
-    barWidth: Dp = 8.dp,
+    barWidth: Dp = 4.dp,
     barSpacing: Dp = 4.dp
 ) {
     val amplitudeBoost = 13f
@@ -62,7 +62,7 @@ fun RealtimeWaveform(
         val targetHeights = remember(estimatedBarCount) { List(estimatedBarCount) { Animatable(0f) } }
 
         LaunchedEffect(amplitude, estimatedBarCount) {
-            val peakIndex = (estimatedBarCount * 0.4f).toInt()
+            val peakIndex = (estimatedBarCount * 0.5f).toInt()
 
             for (i in 0 until estimatedBarCount) {
                 val distance = abs(i - peakIndex).toFloat()

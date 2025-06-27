@@ -16,6 +16,7 @@ import com.example.yaroslavhorach.domain.exercise.model.Exercise
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.example.yaroslavhorach.domain.exercise_content.model.Test
+import com.example.yaroslavhorach.domain.prefs.PrefsRepository
 import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
@@ -44,6 +45,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     private val recorder: AudioRecorder,
     private val exerciseRepository: ExerciseRepository,
     private val exerciseContentRepository: ExerciseContentRepository,
+    private val prefsRepository: PrefsRepository,
    @ApplicationContext private val applicationContext: Context
 ) : BaseViewModel<SpeakingExerciseViewState, SpeakingExerciseAction, SpeakingExerciseUiMessage>() {
     private val timer = SimpleTimer()
@@ -79,8 +81,9 @@ class SpeakingExerciseViewModel @Inject constructor(
         mode,
         overAllProgressValue,
         isSpeakingResulVisible,
+        prefsRepository.getUserData(),
         uiMessageManager.message
-    ) { btnTooltipText, currentExercise, isRecording, isRationalToAllowStopManually, isSpeaking, amplitude, secondsTillFinish, playProgress, isPlayingRecordPaused, mode, progress, isSpeakingResulVisible, messages ->
+    ) { btnTooltipText, currentExercise, isRecording, isRationalToAllowStopManually, isSpeaking, amplitude, secondsTillFinish, playProgress, isPlayingRecordPaused, mode, progress, isSpeakingResulVisible, userDsta, messages ->
         SpeakingExerciseViewState(
             mode = when (mode) {
                 is SpeakingExerciseViewState.ScreenMode.IntroTest -> mode
@@ -101,6 +104,7 @@ class SpeakingExerciseViewModel @Inject constructor(
             exerciseBlock = currentExercise?.block ?: ExerciseBlock.ONE,
             btnTooltipText = btnTooltipText,
             progress = progress,
+            userAvatarRes = userDsta.avatarResId,
             uiMessage = messages,
         )
     }.stateIn(

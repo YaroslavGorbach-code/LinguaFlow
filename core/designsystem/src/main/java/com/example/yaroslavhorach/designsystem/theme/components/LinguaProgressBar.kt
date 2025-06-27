@@ -29,7 +29,7 @@ fun LinguaProgressBar(
     progress: Float,
     progressBarHeight: Dp = 20.dp,
     modifier: Modifier = Modifier,
-    backgroundColor: Color = BrightGray,
+    progressBackgroundColor: Color = BrightGray,
     progressColor: Color = KellyGreen,
     progressShadow: Color = Menthol,
     minValue: Float = 0f,
@@ -60,7 +60,7 @@ fun LinguaProgressBar(
             val barHeight = size.height
 
             drawRoundRect(
-                color = backgroundColor,
+                color = progressBackgroundColor,
                 cornerRadius = CornerRadius(barHeight / 2, barHeight / 2),
                 size = size
             )

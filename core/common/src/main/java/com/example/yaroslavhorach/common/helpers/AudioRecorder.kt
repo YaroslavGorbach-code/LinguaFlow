@@ -55,7 +55,7 @@ class AudioRecorder @Inject constructor() {
     private val _isPlayingPausedFlow = MutableStateFlow(false)
     val isPlayingPausedFlow = _isPlayingPausedFlow.asStateFlow()
 
-    private val _isRationalToAllowStopManually = MutableStateFlow(false)
+    private val _isRationalToAllowStopManually = MutableStateFlow(true)
     val isRationalToAllowStopManually = _isRationalToAllowStopManually.asStateFlow()
 
     private val _onStopRecordingFlow = MutableSharedFlow<Unit>(1)
@@ -73,8 +73,8 @@ class AudioRecorder @Inject constructor() {
     private var recordingJob: Job? = null
     private var silenceTimerJob: Job? = null
 
-    private val silenceDurationMillis = 6000L
-    private val triggerSilenceDurationMillis = 5000L
+    private val triggerSilenceDurationMillis = 10000L
+    private val allowedSilenceDurationMillis = triggerSilenceDurationMillis + 2000
 
     @SuppressLint("MissingPermission")
     fun startRecording(context: Context) {
@@ -118,7 +118,7 @@ class AudioRecorder @Inject constructor() {
                         if (silenceTimerJob == null) {
 
                             silenceTimerJob = launch {
-                                var millisLeft = silenceDurationMillis
+                                var millisLeft = allowedSilenceDurationMillis
 
                                 while (millisLeft > 0 && _isRecordingFlow.value && _amplitudeFlow.value < minAmplitude) {
                                     _secondsLeftFlow.value = if (triggerSilenceDurationMillis >= millisLeft) {
@@ -234,7 +234,7 @@ class AudioRecorder @Inject constructor() {
         _secondsLeftFlow.value = 0
         _onStopRecordingFlow.emit(Unit)
         attemptsToAutoReconnoitring = 0
-        _isRationalToAllowStopManually.value = false
+//        _isRationalToAllowStopManually.value = false
     }
 
     private fun resumePlayback() {

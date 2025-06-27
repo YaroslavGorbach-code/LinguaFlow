@@ -5,10 +5,12 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.example.yaroslavhorach.domain.exercise_content.model.Situation
 import com.example.yaroslavhorach.domain.exercise_content.model.Test
+import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.ui.UiText
 
 data class SpeakingExerciseViewState(
     val btnTooltipText: UiText = UiText.Empty,
+    val userAvatarRes: Int? = null,
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
     val mode: ScreenMode? = null,
     val progress: Float = 0f,
@@ -48,6 +50,7 @@ data class SpeakingExerciseViewState(
     companion object {
         val Empty = SpeakingExerciseViewState()
         val PreviewSpeaking = SpeakingExerciseViewState(
+            userAvatarRes = com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_15,
             mode = ScreenMode.Speaking(
                 situation = Situation(
                     1,

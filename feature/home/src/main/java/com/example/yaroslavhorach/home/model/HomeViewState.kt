@@ -14,7 +14,6 @@ import com.example.yaroslavhorach.domain.exercise.model.Skill
 data class HomeViewState(
     val userName: String = "",
     val exercises: List<ExerciseUi> = emptyList(),
-    val startExerciseTooltipPosition: Offset? = null,
     val descriptionState: DescriptionState = DescriptionState(),
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
     val uiMessage: UiMessage<HomeUiMessage>? = null

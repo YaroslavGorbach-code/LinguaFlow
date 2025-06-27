@@ -11,6 +11,7 @@ class ExerciseUi(val exercise: Exercise) {
     val isLastActive: Boolean = exercise.isLastActive
     val isEnable: Boolean = exercise.isEnable
     val isFinished: Boolean = exercise.exerciseProgress.isFinished
+    val isInProgress: Boolean = isStarted && isFinished.not()
 
     val skillNameResId: Int = when (exercise.skill) {
         Skill.COMMUNICATION -> R.string.communication_skills_exercise_section_name
