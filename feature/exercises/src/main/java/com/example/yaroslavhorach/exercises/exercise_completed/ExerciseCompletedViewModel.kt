@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.exercises.exercise_completed
 
-import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -35,7 +34,6 @@ class ExerciseCompletedViewModel @Inject constructor(
         prefsRepository.getUserData(),
         uiMessageManager.message
     ) { user, message ->
-        Log.v("dasaasdasd", user.experience.toString())
         ExerciseCompletedViewState(
             savedStateHandle.toRoute<ExerciseCompletedRoute>().time.toMinutesSecondsFormat(),
             savedStateHandle.toRoute<ExerciseCompletedRoute>().experience,
@@ -50,12 +48,9 @@ class ExerciseCompletedViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-
             prefsRepository.addExperience(savedStateHandle.toRoute<ExerciseCompletedRoute>().experience)
-
             prefsRepository.markCurrentDayAsActive()
         }
-        Log.v("dasasdsd", state.value.experience.toString())
 
         pendingActions
             .onEach { event ->

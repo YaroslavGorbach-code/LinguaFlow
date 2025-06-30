@@ -55,7 +55,6 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.yaroslavhorach.designsystem.theme.Black_3
 import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
@@ -63,6 +62,7 @@ import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.White_40
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.example.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.PremiumButton
 import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
@@ -82,22 +82,30 @@ import com.example.yaroslavhorach.home.model.getText
 @Composable
 internal fun GamesRoute(
     onNavigateToGame: (gameId: Long, gameName: Game.GameName) -> Unit,
+    onNavigateToPremium: () -> Unit,
     viewModel: GamesViewModel = hiltViewModel(),
 ) {
     val homeState by viewModel.state.collectAsStateWithLifecycle()
 
-    GamesScreen(
-        state = homeState,
-        onMessageShown = viewModel::clearMessage,
-        actioner = { action ->
-            when (action) {
-                is GamesAction.OnStartGameClicked -> {
-                    onNavigateToGame(action.gameUi.game.id, action.gameUi.game.name)
-                    viewModel.submitAction(action)
+    LinguaBackground {
+        GamesScreen(
+            state = homeState,
+            onMessageShown = viewModel::clearMessage,
+            actioner = { action ->
+                when (action) {
+                    is GamesAction.OnStartGameClicked -> {
+                        onNavigateToGame(action.gameUi.game.id, action.gameUi.game.name)
+                        viewModel.submitAction(action)
+                    }
+
+                    is GamesAction.OnPremiumBtnClicked -> {
+                        onNavigateToPremium()
+                    }
+
+                    else -> viewModel.submitAction(action)
                 }
-                else -> viewModel.submitAction(action)
-            }
-        })
+            })
+    }
 }
 
 @Composable
@@ -486,7 +494,7 @@ private fun GameDescriptionEnable(
 ) {
     StaticTooltip(
         enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.surface,
+        backgroundColor = MaterialTheme.colorScheme.onBackground,
         borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
@@ -550,13 +558,13 @@ private fun GameDescriptionEnable(
 private fun DameDescriptionNoTokens(actioner: (GamesAction) -> Unit) {
     StaticTooltip(
         enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.surface,
+        backgroundColor = MaterialTheme.colorScheme.onBackground,
         borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
         paddingHorizontal = 0.dp,
-        borderSize = 1.5.dp
+        borderSize = 0.dp
     ) {
         Text(
             text = "\uD83D\uDD12 Упс! Жетони на сьогодні закінчились",
@@ -587,7 +595,7 @@ private fun GameDescriptionNotEnable(
 ) {
     StaticTooltip(
         enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.surface,
+        backgroundColor = MaterialTheme.colorScheme.onBackground,
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,

@@ -1,0 +1,82 @@
+package com.example.yaroslavhorach.designsystem.screens.premium
+
+import androidx.lifecycle.viewModelScope
+import com.example.yaroslavhorach.common.base.BaseViewModel
+import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumAction
+import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumUiMessage
+import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumVariant
+import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumViewState
+import com.example.yaroslavhorach.domain.prefs.PrefsRepository
+import com.example.yaroslavhorach.ui.UiText
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
+import javax.inject.Inject
+
+@HiltViewModel
+class PremiumViewModel @Inject constructor(
+    prefsRepository: PrefsRepository
+) : BaseViewModel<PremiumViewState, PremiumAction, PremiumUiMessage>() {
+
+    override val pendingActions: MutableSharedFlow<PremiumAction> = MutableSharedFlow()
+
+    private val variants: MutableStateFlow<List<PremiumVariant>> = MutableStateFlow(emptyList())
+
+    override val state: StateFlow<PremiumViewState> = combine(
+        variants,
+        uiMessageManager.message
+    ) { variants, message ->
+        PremiumViewState(variants = variants, message)
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = PremiumViewState.Empty
+    )
+
+    init {
+        variants.value = listOf(
+            PremiumVariant.Month("Місячна", UiText.FromString("99 ₴/місяць"), UiText.Empty),
+            PremiumVariant.SixMonth(
+                "6 - місячна",
+                UiText.FromString("239 ₴/півроку"),
+                UiText.FromString("39 ₴/місяць")
+            ),
+            PremiumVariant.Forever("Постійна", UiText.FromString("399 ₴/∞"), UiText.FromString("Найвигідніше"))
+        )
+
+        pendingActions
+            .onEach { event ->
+                when (event) {
+                    is PremiumAction.OnGetPremiumClicked -> {
+                        prefsRepository.activatePremium()
+                    }
+                    is PremiumAction.OnVariantChosen -> {
+                        variants.update { list ->
+                            list.map { variant ->
+                                when (variant) {
+                                    is PremiumVariant.Month -> variant.copy(
+                                        isSelected = variant.title == event.premiumVariant.title
+                                    )
+                                    is PremiumVariant.SixMonth -> variant.copy(
+                                        isSelected = variant.title == event.premiumVariant.title
+                                    )
+                                    is PremiumVariant.Forever -> variant.copy(
+                                        isSelected = variant.title == event.premiumVariant.title
+                                    )
+                                }
+                            }
+                        }
+                    }
+                    else -> error("Action $event is not handled")
+                }
+            }
+            .launchIn(viewModelScope)
+    }
+}

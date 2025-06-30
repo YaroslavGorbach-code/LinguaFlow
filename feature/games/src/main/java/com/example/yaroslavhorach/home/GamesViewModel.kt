@@ -95,9 +95,6 @@ class GamesViewModel @Inject constructor(
                             prefsRepository.useToken()
                         }
                     }
-                    is GamesAction.OnPremiumBtnClicked -> {
-
-                    }
                     is GamesAction.OnSortSelected -> {
                         if (selectedSort.value == event.item) {
                             selectedSort.value = null
@@ -118,6 +115,7 @@ class GamesViewModel @Inject constructor(
                     is GamesAction.OnGoToDailyChallengeExercises -> {
                         selectedSort.value = GameSort.DAILY_CHALLENGE
                     }
+                    else -> {}
                 }
             }
             .launchIn(viewModelScope)

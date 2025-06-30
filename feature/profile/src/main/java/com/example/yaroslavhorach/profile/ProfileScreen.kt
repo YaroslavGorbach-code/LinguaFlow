@@ -80,7 +80,8 @@ import com.example.yaroslavhorach.ui.utils.conditional
 @Composable
 internal fun ProfileRoute(
     viewModel: ProfileViewModel = hiltViewModel(),
-    onNavigateToAvatarChange: () -> Unit
+    onNavigateToAvatarChange: () -> Unit,
+    onNavigateToPremium: () -> Unit,
 ) {
     val profileState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -89,8 +90,11 @@ internal fun ProfileRoute(
         onMessageShown = viewModel::clearMessage,
         actioner = { action ->
             when (action) {
-                ProfileAction.OnEditProfileClicked -> {
+                is ProfileAction.OnEditProfileClicked -> {
                     onNavigateToAvatarChange()
+                }
+                is ProfileAction.OnActivatePremiumClicked -> {
+                    onNavigateToPremium()
                 }
                 else -> viewModel.submitAction(action)
             }
@@ -470,7 +474,7 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
             .drawBehind {
                 drawRoundRect(
                     color = Golden.copy(alpha = alpha.value),
-                    style = Stroke(width = 8.dp.toPx()),
+                    style = Stroke(width = 6.dp.toPx()),
                     cornerRadius = CornerRadius(12.dp.toPx())
                 )
             }

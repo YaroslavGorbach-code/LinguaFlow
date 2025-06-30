@@ -16,4 +16,5 @@ interface PrefsRepository {
     suspend fun changeAvatar(resId: Int)
     suspend fun changeName(name: String)
     suspend fun addExperience(xp: Int)
+    suspend fun activatePremium()
 }

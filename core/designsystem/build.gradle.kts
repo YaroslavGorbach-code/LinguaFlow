@@ -1,7 +1,12 @@
+import Plugins.ksp
+
 plugins {
     id(Plugins.androidLibrary)
     id(Plugins.kotlinAndroid)
     id(Plugins.compose)
+    id(Plugins.kotlinXserealisation)
+    id(Plugins.hilt)
+    id(Plugins.ksp)
 }
 
 apply {
@@ -30,4 +35,9 @@ dependencies {
     api(Libs.lifecycleCompose)
     api(Libs.lifecycle)
     api(Libs.lottie)
+    api(Libs.kotlinSerealistion)
+
+    ksp(Libs.hiltCompiler)
+    implementation(Libs.hilt)
+    implementation(Libs.hiltNavigationCompose)
 }

@@ -61,7 +61,7 @@ internal fun ExerciseCompletedRoute(
 ) {
     val exerciseCompletedViewState by viewModel.state.collectAsStateWithLifecycle()
 
-    Surface(Modifier.fillMaxSize()) {
+    LinguaBackground {
         ExerciseCompletedScreen(
             state = exerciseCompletedViewState,
             actioner = { action ->

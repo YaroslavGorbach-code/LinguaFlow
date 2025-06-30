@@ -15,6 +15,8 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.domain))
+
     implementation(Libs.coreKtx)
     implementation(Libs.appCompat)
     implementation(Libs.viewModel)

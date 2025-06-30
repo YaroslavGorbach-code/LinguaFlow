@@ -239,8 +239,6 @@ private fun TopBar(screenState: AvatarChangeViewState, actioner: (AvatarChangeAc
     }
 }
 
-
-
 @Preview
 @Composable
 private fun AvatarChangePreview() {

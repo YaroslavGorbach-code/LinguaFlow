@@ -327,7 +327,7 @@ private fun HandleOnScrollBlockChange(
 private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeAction) -> Unit) {
     BoxWithStripes(
         shape = RoundedCornerShape(bottomEnd = 0.dp, bottomStart = 0.dp),
-        rawShadowYOffset = 3.dp,
+        rawShadowYOffset = 0.dp,
         contentPadding = 0.dp,
         background = state.exerciseBlock.blockColorPrimary(),
         backgroundShadow = state.exerciseBlock.blockColorSecondary(),

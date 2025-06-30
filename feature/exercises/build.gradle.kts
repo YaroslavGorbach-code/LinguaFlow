@@ -17,8 +17,8 @@ android {
 
 dependencies {
     implementation(project(Modules.coreDesignSystem))
-    implementation(Libs.hilt)
-    implementation(Libs.hiltNavigationCompose)
     implementation(Libs.kotlinSerealistion)
     ksp(Libs.hiltCompiler)
+    implementation(Libs.hilt)
+    implementation(Libs.hiltNavigationCompose)
 }

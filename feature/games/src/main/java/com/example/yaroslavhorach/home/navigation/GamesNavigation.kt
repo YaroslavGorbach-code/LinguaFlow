@@ -16,9 +16,10 @@ fun NavController.navigateToGames(navOptions: NavOptions? = null) {
 }
 
 fun NavGraphBuilder.gamesScreen(
-    onNavigateToGame: (gameId: Long, gameName: Game.GameName) -> Unit
+    onNavigateToGame: (gameId: Long, gameName: Game.GameName) -> Unit,
+    onNavigateToPremium: () -> Unit,
 ) {
     composable<GamesRoute> {
-        GamesRoute(onNavigateToGame)
+        GamesRoute(onNavigateToGame, onNavigateToPremium)
     }
 }

@@ -12,7 +12,7 @@ fun LinguaBackground(
     content: @Composable () -> Unit,
 ) {
     Surface(
-        color = MaterialTheme.colorScheme.background,
+        color = MaterialTheme.colorScheme.surface,
         modifier = modifier.fillMaxSize(),
     ) {
         content()
