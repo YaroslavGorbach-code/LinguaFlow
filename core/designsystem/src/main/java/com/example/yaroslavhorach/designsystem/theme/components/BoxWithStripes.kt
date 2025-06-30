@@ -29,6 +29,7 @@ import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
+import com.example.yaroslavhorach.designsystem.theme.Black_10
 import com.example.yaroslavhorach.designsystem.theme.Black_35
 import com.example.yaroslavhorach.designsystem.theme.White_10
 import com.example.yaroslavhorach.ui.utils.conditional

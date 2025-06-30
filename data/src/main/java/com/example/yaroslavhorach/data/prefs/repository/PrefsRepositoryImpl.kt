@@ -49,6 +49,10 @@ class PrefsRepositoryImpl @Inject constructor(
         prefsDataSource.changeName(name)
     }
 
+    override suspend fun addExperience(xp: Int) {
+        prefsDataSource.addExperience(xp)
+    }
+
     override fun getAvatars(): List<Avatar> {
         val premiumAvatars = listOf(
             R.drawable.im_avatar_5,

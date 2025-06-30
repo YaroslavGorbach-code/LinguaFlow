@@ -44,6 +44,7 @@ class HomeViewModel @Inject constructor(
             HomeViewState(
                 uiMessage = messages,
                 userName = userData.userName,
+                userAvatar = userData.avatarResId,
                 descriptionState = description,
                 exerciseBlock = exercisesBlock,
                 exercises = exercises.map { ExerciseUi(it) }
@@ -94,6 +95,7 @@ class HomeViewModel @Inject constructor(
                     is HomeAction.OnExercisesBlockChanged -> {
                         exerciseRepository.changeBlock(event.block)
                     }
+                    else -> {}
                 }
             }
             .launchIn(viewModelScope)

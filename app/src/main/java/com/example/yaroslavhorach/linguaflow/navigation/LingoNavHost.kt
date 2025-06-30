@@ -51,7 +51,9 @@ fun LingoNavHost(
                     navController.navigateToTongueTwistersExercise(exercise.id)
                 }
             }
-        }, onChangeColorScheme)
+        }, onChangeColorScheme = onChangeColorScheme, onNavigateToAvatarChange = {
+            navController.navigateToAvatarChange()
+        })
         gamesScreen { id, name ->
             when(name){
                 Game.GameName.RAVEN_LIKE_A_CHAIR,

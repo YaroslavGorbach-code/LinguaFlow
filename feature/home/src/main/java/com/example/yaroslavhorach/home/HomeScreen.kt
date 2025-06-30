@@ -31,6 +31,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -44,6 +45,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
@@ -51,6 +53,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
@@ -98,6 +101,7 @@ import kotlinx.coroutines.flow.map
 @Composable
 internal fun HomeRoute(
     onNavigateToExercise: (Exercise) -> Unit,
+    onNavigateToAvatarChange: () -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
@@ -113,7 +117,9 @@ internal fun HomeRoute(
                     viewModel.submitAction(HomeAction.OnHideDescription)
                     onNavigateToExercise(action.exercise)
                 }
-
+                is HomeAction.OnAvatarClicked -> {
+                    onNavigateToAvatarChange()
+                }
                 else -> viewModel.submitAction(action)
             }
         })
@@ -165,7 +171,7 @@ internal fun HomeScreen(
         Column {
             TopBar(screenState, modifier = Modifier.onGloballyPositioned {
                 descriptionBlockBounds.value = it.boundsInRoot().roundToIntRect()
-            })
+            }, actioner)
             Spacer(Modifier.height(animatedTopPadding))
             Exercises(exercisesState, screenState, actioner, density)
         }
@@ -318,11 +324,11 @@ private fun HandleOnScrollBlockChange(
 }
 
 @Composable
-private fun TopBar(state: HomeViewState, modifier: Modifier) {
+private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeAction) -> Unit) {
     BoxWithStripes(
-        shape = RoundedCornerShape(bottomEnd = 14.dp, bottomStart = 14.dp),
+        shape = RoundedCornerShape(bottomEnd = 0.dp, bottomStart = 0.dp),
         rawShadowYOffset = 3.dp,
-        contentPadding = 20.dp,
+        contentPadding = 0.dp,
         background = state.exerciseBlock.blockColorPrimary(),
         backgroundShadow = state.exerciseBlock.blockColorSecondary(),
         modifier = modifier
@@ -330,11 +336,12 @@ private fun TopBar(state: HomeViewState, modifier: Modifier) {
     ) {
         Column(
             modifier = Modifier
+                .padding(horizontal = 20.dp)
                 .animateContentSize()
                 .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
         ) {
-            UserGreeting(state)
-            Spacer(Modifier.height(20.dp))
+            UserGreeting(state, actioner)
+            Spacer(Modifier.height(14.dp))
             Text(
                 modifier = Modifier,
                 text = state.exerciseBlock.blockTitle().asString(),
@@ -367,8 +374,9 @@ private fun TopBar(state: HomeViewState, modifier: Modifier) {
                         contentDescription = ""
                     )
                 }
+                Spacer(Modifier.height(14.dp))
             } else{
-                Spacer(Modifier.height(4.dp))
+                Spacer(Modifier.height(20.dp))
             }
         }
     }
@@ -546,12 +554,26 @@ private fun DescriptionTooltip(
 }
 
 @Composable
-private fun UserGreeting(screenState: HomeViewState) {
-    Text(
-        text = stringResource(id = R.string.home_user_grating_text, screenState.userName),
-        style = LinguaTypography.h2,
-        color = MaterialTheme.colorScheme.typoControlPrimary()
-    )
+private fun UserGreeting(screenState: HomeViewState, actioner: (HomeAction) -> Unit) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Text(
+            modifier = Modifier.weight(1f),
+            text = stringResource(id = R.string.home_user_grating_text, screenState.userName),
+            style = LinguaTypography.h2,
+            color = MaterialTheme.colorScheme.typoControlPrimary()
+        )
+        Spacer(Modifier.width(20.dp))
+        screenState.userAvatar?.let {
+            Image(
+                modifier = Modifier
+                    .clickable { actioner(HomeAction.OnAvatarClicked) }
+                    .size(45.dp),
+                painter = painterResource(it),
+                contentDescription = null,
+                contentScale = ContentScale.Crop
+            )
+        }
+    }
 }
 
 @Preview

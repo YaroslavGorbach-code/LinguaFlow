@@ -18,9 +18,10 @@ fun NavController.navigateToHome(navOptions: NavOptions? = null) {
 
 fun NavGraphBuilder.homeScreen(
     onNavigateToExercise: (Exercise) -> Unit,
+    onNavigateToAvatarChange: () -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
     composable<HomeRoute> {
-        HomeRoute(onNavigateToExercise, onChangeColorScheme)
+        HomeRoute(onNavigateToExercise, onNavigateToAvatarChange, onChangeColorScheme)
     }
 }

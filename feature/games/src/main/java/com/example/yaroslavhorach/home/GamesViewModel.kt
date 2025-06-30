@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home
 
+import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.utill.combine
@@ -59,8 +60,9 @@ class GamesViewModel @Inject constructor(
             selectedSort = selectedSort,
             availableTokens = userData.availableTokens,
             maxTokens = userData.maxTokens,
-            games = filterGames(games, selectedSort, favorites, challenge),
-            experience = 5,
+            games = filterGames(games, selectedSort, favorites, challenge)
+                .sortedBy { it.game.minExperienceRequired },
+            experience = userData.experience,
             uiMessage = messages
         )
     }.stateIn(
@@ -79,15 +81,19 @@ class GamesViewModel @Inject constructor(
             .onEach { event ->
                 when (event) {
                     is GamesAction.OnStartDailyChallengeClicked -> {
-                        gameRepository.startDailyChallenge()
-                        prefsRepository.useToken()
+                        if (state.value.availableTokens > 0) {
+                            gameRepository.startDailyChallenge()
+                            prefsRepository.useToken()
+                        }
                     }
                     is GamesAction.OnGameClicked -> {
                         changeDescriptionState(event.gameUi)
                     }
                     is GamesAction.OnStartGameClicked -> {
-
-                  //      prefsRepository.useToken()
+                        Log.v("dsasd", "dd")
+                        if (event.useToken) {
+                            prefsRepository.useToken()
+                        }
                     }
                     is GamesAction.OnPremiumBtnClicked -> {
 

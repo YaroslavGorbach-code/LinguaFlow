@@ -2,6 +2,7 @@ package com.example.yaroslavhorach.profile.model
 
 import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.designsystem.R
+import com.example.yaroslavhorach.ui.SpeakingLevel
 import java.util.Calendar
 
 data class ProfileViewState(

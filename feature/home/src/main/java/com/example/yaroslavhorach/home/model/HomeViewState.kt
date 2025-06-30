@@ -10,9 +10,11 @@ import com.example.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.example.yaroslavhorach.domain.exercise.model.ExerciseProgress
 import com.example.yaroslavhorach.domain.exercise.model.Skill
+import com.example.yaroslavhorach.home.R
 
 data class HomeViewState(
     val userName: String = "",
+    val userAvatar: Int? = null,
     val exercises: List<ExerciseUi> = emptyList(),
     val descriptionState: DescriptionState = DescriptionState(),
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
@@ -58,6 +60,9 @@ data class HomeViewState(
 
         val Empty = HomeViewState()
         val Preview =
-            HomeViewState(exercises = listOf(PreviewExercise, PreviewExercise, PreviewExercise, PreviewExercise))
+            HomeViewState(
+                exercises = listOf(PreviewExercise, PreviewExercise, PreviewExercise, PreviewExercise),
+                userAvatar = com.example.yaroslavhorach.designsystem.R.drawable.im_avatar_1
+            )
     }
 }

@@ -158,6 +158,6 @@ class WordsGameViewModel @Inject constructor(
     }
 
     companion object {
-        private const val EXPERIENCE_REWORD = 10
+        private const val EXPERIENCE_REWORD = 25
     }
 }

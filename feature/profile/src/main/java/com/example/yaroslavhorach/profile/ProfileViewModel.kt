@@ -8,7 +8,7 @@ import com.example.yaroslavhorach.profile.model.CalendarDay
 import com.example.yaroslavhorach.profile.model.ProfileAction
 import com.example.yaroslavhorach.profile.model.ProfileUiMessage
 import com.example.yaroslavhorach.profile.model.ProfileViewState
-import com.example.yaroslavhorach.profile.model.SpeakingLevel
+import com.example.yaroslavhorach.ui.SpeakingLevel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.MutableSharedFlow

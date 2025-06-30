@@ -93,6 +93,7 @@ internal fun GamesRoute(
             when (action) {
                 is GamesAction.OnStartGameClicked -> {
                     onNavigateToGame(action.gameUi.game.id, action.gameUi.game.name)
+                    viewModel.submitAction(action)
                 }
                 else -> viewModel.submitAction(action)
             }
@@ -202,7 +203,7 @@ private fun TopBar(screenState: GamesViewState, listState: LazyListState, action
                     Text(
                         text = "Тренуй мовлення в ігрових режимах: трохи гумору, трохи фентезі, і максимум користі",
                         color = MaterialTheme.colorScheme.typoSecondary(),
-                        style = LinguaTypography.body5
+                        style = LinguaTypography.body4
                     )
                 }
                 Spacer(Modifier.width(8.dp))
@@ -398,9 +399,10 @@ private fun Game(
 ) {
     Column {
         GameDescription(state, game, actioner)
+        val isEnable = state.experience >= game.game.minExperienceRequired
 
         BoxWithStripes(
-            isEnabled = game.isEnable,
+            isEnabled = isEnable,
             rawShadowYOffset = 3.dp,
             contentPadding = 16.dp,
             background = MaterialTheme.colorScheme.surface,
@@ -417,7 +419,7 @@ private fun Game(
             borderWidth = 1.dp,
             stripeWidth = 70.dp,
             stripeSpacing = 190.dp,
-            stripeColor = Black_3
+            stripeColor = Color.Transparent
         ) {
             Row(modifier = Modifier.fillMaxWidth()) {
                 Column(modifier = Modifier.weight(1f)) {
@@ -452,16 +454,19 @@ private fun ColumnScope.GameDescription(
     game: GameUi,
     actioner: (GamesAction) -> Unit
 ) {
+    val useToken = game.game.skills.contains(state.challenge?.theme).not()
+            && state.challenge?.status?.completed?.not() == true
+
     AnimatedVisibility(
         visible = game.isDescriptionVisible,
         enter = fadeIn() + expandVertically(),
         exit = fadeOut() + shrinkVertically()
     ) {
         when {
-            game.isEnable.not() -> {
+            state.experience < game.game.minExperienceRequired -> {
                 GameDescriptionNotEnable(state, game, actioner)
             }
-            state.availableTokens <= 0 -> {
+            state.availableTokens <= 0 && useToken -> {
                 DameDescriptionNoTokens(actioner)
             }
             else -> {
@@ -487,7 +492,7 @@ private fun GameDescriptionEnable(
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
         paddingHorizontal = 0.dp,
-        borderSize = 1.5.dp
+        borderSize = 0.dp
     ) {
         Row(modifier = Modifier.fillMaxWidth()) {
             Text(
@@ -527,13 +532,13 @@ private fun GameDescriptionEnable(
         )
         Spacer(Modifier.height(20.dp))
 
-        val useToken = game.game.skills.contains(state.challenge?.theme)
+        val useToken = game.game.skills.contains(state.challenge?.theme).not()
                 && state.challenge?.status?.completed?.not() == true
 
         val btnText = if (useToken) {
-            "ПОЧАТИ"
-        } else {
             "ПОЧАТИ (1 ТОКЕН)"
+        } else {
+            "ПОЧАТИ"
         }
         PrimaryButton(text = btnText) {
             actioner(GamesAction.OnStartGameClicked(game, useToken))
@@ -583,16 +588,15 @@ private fun GameDescriptionNotEnable(
     StaticTooltip(
         enableFloatAnimation = true,
         backgroundColor = MaterialTheme.colorScheme.surface,
-        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
         paddingHorizontal = 0.dp,
-        borderSize = 1.5.dp
+        borderSize = 0.dp
     ) {
         Text(
             text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",
-            color = MaterialTheme.colorScheme.typoSecondary(),
+            color = MaterialTheme.colorScheme.typoPrimary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body3
         )

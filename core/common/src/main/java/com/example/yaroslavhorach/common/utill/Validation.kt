@@ -43,7 +43,7 @@ object Validation {
 
 sealed class ValidationState {
     data object Idle : ValidationState()
-    data object Success : ValidationState()
+    data object SSuccess : ValidationState()
     class Error(val errorText: UiText) : ValidationState()
 }
 

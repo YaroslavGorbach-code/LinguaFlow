@@ -15,4 +15,5 @@ interface PrefsRepository {
     fun getAvatars(): List<Avatar>
     suspend fun changeAvatar(resId: Int)
     suspend fun changeName(name: String)
+    suspend fun addExperience(xp: Int)
 }

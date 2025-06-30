@@ -1,7 +1,6 @@
 package com.example.yaroslavhorach.profile
 
 import androidx.compose.animation.core.FastOutSlowInEasing
-import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
@@ -52,6 +51,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -64,7 +64,6 @@ import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.KellyGreen
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
-import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.TextButton
@@ -75,7 +74,7 @@ import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.profile.model.ProfileAction
 import com.example.yaroslavhorach.profile.model.ProfileViewState
-import com.example.yaroslavhorach.profile.model.SpeakingLevel
+import com.example.yaroslavhorach.ui.SpeakingLevel
 import com.example.yaroslavhorach.ui.utils.conditional
 
 @Composable
@@ -249,6 +248,10 @@ private fun SectionProgress(state: ProfileViewState) {
 
 @Composable
 private fun SpeakerLevelProgress(state: ProfileViewState) {
+    val level = SpeakingLevel.fromExperience(state.experience)
+    val progress = (state.experience - level.experienceRequired.first).toFloat() /
+            (level.experienceRequired.last - level.experienceRequired.first).toFloat()
+    
     Column(
         modifier = Modifier
             .padding(horizontal = 20.dp)
@@ -267,7 +270,7 @@ private fun SpeakerLevelProgress(state: ProfileViewState) {
             )
             Spacer(Modifier.width(12.dp))
             LinguaProgressBar(
-                state.experience.toFloat() / state.levelOfSpeaking.experienceRequired.last.toFloat(),
+                progress,
                 modifier = Modifier
                     .weight(1f)
                     .height(18.dp)
@@ -319,8 +322,10 @@ private fun InfoItem(modifier: Modifier, title: String, subtitle: String, iconRe
             Column(modifier = Modifier) {
                 Text(
                     text = title,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
                     color = MaterialTheme.colorScheme.typoPrimary(),
-                    style = LinguaTypography.subtitle2
+                    style = LinguaTypography.subtitle3
                 )
                 Spacer(modifier = Modifier.height(6.dp))
                 Text(
@@ -465,7 +470,7 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
             .drawBehind {
                 drawRoundRect(
                     color = Golden.copy(alpha = alpha.value),
-                    style = Stroke(width = 4.dp.toPx()),
+                    style = Stroke(width = 8.dp.toPx()),
                     cornerRadius = CornerRadius(12.dp.toPx())
                 )
             }

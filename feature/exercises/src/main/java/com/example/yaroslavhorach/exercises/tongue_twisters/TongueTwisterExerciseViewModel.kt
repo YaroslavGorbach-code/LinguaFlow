@@ -28,6 +28,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlin.math.roundToInt
 
 @HiltViewModel
 class TongueTwisterExerciseViewModel @Inject constructor(
@@ -109,11 +110,22 @@ class TongueTwisterExerciseViewModel @Inject constructor(
                     viewModelScope.launch {
                         exerciseRepository.markCompleted(exerciseId)
                         gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.DICTION), timer.getElapsedTimeMillis())
+
+                        val elapsedTime = timer.getElapsedTimeMillis()
+                        val requiredTime = 2 * 60 * 1000L
+
+                        val experience = if (elapsedTime >= requiredTime) {
+                            EXPERIENCE_REWORD
+                        } else {
+                            val proportional = (EXPERIENCE_REWORD * elapsedTime.toDouble() / requiredTime)
+                            proportional.roundToInt()
+                        }
+
                         uiMessageManager.emitMessage(
                             UiMessage(
                                 TongueTwisterExerciseUiMessage.NavigateToExerciseResult(
                                     time = timer.getElapsedTimeMillis(),
-                                    EXPERIENCE_REWORD
+                                    experience
                                 )
                             )
                         )
@@ -148,6 +160,6 @@ class TongueTwisterExerciseViewModel @Inject constructor(
 
     companion object {
        private const val MAX_PROGRESS = 3
-       private const val EXPERIENCE_REWORD = 10
+       private const val EXPERIENCE_REWORD = 25
     }
 }

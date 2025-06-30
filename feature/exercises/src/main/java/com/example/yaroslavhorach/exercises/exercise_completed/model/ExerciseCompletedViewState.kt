@@ -5,6 +5,7 @@ import com.example.yaroslavhorach.common.utill.UiMessage
 data class ExerciseCompletedViewState(
     val time: String = "",
     val experience: Int = 0,
+    val allUserExperience: Int = 0,
     val uiMessage: UiMessage<ExerciseCompletedUiMessage>? = null
 ) {
 

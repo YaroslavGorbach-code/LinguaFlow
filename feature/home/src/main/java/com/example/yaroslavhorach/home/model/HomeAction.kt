@@ -14,4 +14,5 @@ sealed class HomeAction {
     class OnDescriptionListTopPaddingChanged(val padding: Dp): HomeAction()
     class OnExercisesBlockChanged(val block: ExerciseBlock): HomeAction()
     data object OnHideDescription : HomeAction()
+    data object OnAvatarClicked : HomeAction()
 }

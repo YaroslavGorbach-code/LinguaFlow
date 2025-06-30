@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.exercises.exercise_completed
 
+import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -15,7 +16,6 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
@@ -23,17 +23,25 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ExerciseCompletedViewModel @Inject constructor(savedStateHandle: SavedStateHandle, prefsRepository: PrefsRepository) :
+class ExerciseCompletedViewModel @Inject constructor(
+    savedStateHandle: SavedStateHandle,
+    prefsRepository: PrefsRepository
+) :
     BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<ExerciseCompletedAction> = MutableSharedFlow()
 
     override val state: StateFlow<ExerciseCompletedViewState> = combine(
-        flowOf(savedStateHandle.toRoute<ExerciseCompletedRoute>().time),
-        flowOf(savedStateHandle.toRoute<ExerciseCompletedRoute>().experience),
+        prefsRepository.getUserData(),
         uiMessageManager.message
-    ) { time, xp, message ->
-        ExerciseCompletedViewState(time.toMinutesSecondsFormat(), xp, message)
+    ) { user, message ->
+        Log.v("dasaasdasd", user.experience.toString())
+        ExerciseCompletedViewState(
+            savedStateHandle.toRoute<ExerciseCompletedRoute>().time.toMinutesSecondsFormat(),
+            savedStateHandle.toRoute<ExerciseCompletedRoute>().experience,
+            user.experience,
+            message
+        )
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),
@@ -41,7 +49,13 @@ class ExerciseCompletedViewModel @Inject constructor(savedStateHandle: SavedStat
     )
 
     init {
-        viewModelScope.launch { prefsRepository.markCurrentDayAsActive() }
+        viewModelScope.launch {
+
+            prefsRepository.addExperience(savedStateHandle.toRoute<ExerciseCompletedRoute>().experience)
+
+            prefsRepository.markCurrentDayAsActive()
+        }
+        Log.v("dasasdsd", state.value.experience.toString())
 
         pendingActions
             .onEach { event ->

@@ -152,6 +152,6 @@ class VocabularyExerciseViewModel @Inject constructor(
     }
 
     companion object {
-        const val EXPERIENCE_REWARD = 10
+        const val EXPERIENCE_REWARD = 25
     }
 }

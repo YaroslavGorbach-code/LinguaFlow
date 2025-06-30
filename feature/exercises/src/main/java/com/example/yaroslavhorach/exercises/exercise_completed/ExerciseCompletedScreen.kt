@@ -1,6 +1,7 @@
 package com.example.yaroslavhorach.exercises.exercise_completed
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -22,6 +23,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -50,6 +52,7 @@ import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedViewState
+import com.example.yaroslavhorach.ui.SpeakingLevel
 
 @Composable
 internal fun ExerciseCompletedRoute(
@@ -58,17 +61,19 @@ internal fun ExerciseCompletedRoute(
 ) {
     val exerciseCompletedViewState by viewModel.state.collectAsStateWithLifecycle()
 
-    ExerciseCompletedScreen(
-        screenState = exerciseCompletedViewState,
-        actioner = { action ->
-            when (action) {
-                is ExerciseCompletedAction.OnContinueClicked -> {
-                    onNavigateBack()
+    Surface(Modifier.fillMaxSize()) {
+        ExerciseCompletedScreen(
+            state = exerciseCompletedViewState,
+            actioner = { action ->
+                when (action) {
+                    is ExerciseCompletedAction.OnContinueClicked -> {
+                        onNavigateBack()
+                    }
+                    else -> viewModel.submitAction(action)
                 }
-                else -> viewModel.submitAction(action)
-            }
-        },
-    )
+            },
+        )
+    }
 
     BackHandler {  }
 }
@@ -76,7 +81,7 @@ internal fun ExerciseCompletedRoute(
 @SuppressLint("UnusedContentLambdaTargetStateParameter")
 @Composable
 internal fun ExerciseCompletedScreen(
-    screenState: ExerciseCompletedViewState,
+    state: ExerciseCompletedViewState,
     actioner: (ExerciseCompletedAction) -> Unit
 ) {
     Column(Modifier.fillMaxSize()) {
@@ -102,27 +107,30 @@ internal fun ExerciseCompletedScreen(
                 Spacer(Modifier.height(80.dp))
                 StaticTooltip(
                     enableFloatAnimation = true,
-                    backgroundColor = MaterialTheme.colorScheme.background,
+                    backgroundColor = MaterialTheme.colorScheme.surface,
                     borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
                     triangleAlignment = Alignment.Start,
                     paddingHorizontal = 20.dp,
                     contentPadding = 16.dp,
                     cornerRadius = 12.dp,
+                    borderSize = 1.5.dp
                 ) {
                     Text(
                         text = "Твій рівень вільного мовлення зріс! Так тримати \uD83D\uDC4F",
                         color = MaterialTheme.colorScheme.typoSecondary(),
-                        style = LinguaTypography.subtitle4
+                        style = LinguaTypography.body4
                     )
                 }
+                val level = SpeakingLevel.fromExperience(state.allUserExperience)
+                val progress = (state.allUserExperience - level.experienceRequired.first).toFloat() /
+                        (level.experienceRequired.last - level.experienceRequired.first).toFloat()
 
-                // TODO: implement in the future
                 LinguaProgressBar(
                     modifier = Modifier
                         .padding(horizontal = 10.dp)
                         .height(60.dp)
                         .fillMaxWidth(),
-                    progress = 0.5f,
+                    progress = progress,
                     progressBarHeight = 22.dp
                 ) {
                     Image(
@@ -168,7 +176,7 @@ internal fun ExerciseCompletedScreen(
                             )
                             Spacer(Modifier.width(12.dp))
                             Text(
-                                text = screenState.time,
+                                text = state.time,
                                 color = MaterialTheme.colorScheme.typoSecondary(),
                                 style = LinguaTypography.subtitle4
                             )
@@ -204,7 +212,7 @@ internal fun ExerciseCompletedScreen(
                             )
                             Spacer(Modifier.width(12.dp))
                             Text(
-                                text = "+" + screenState.experience.toString(),
+                                text = "+" + state.experience.toString(),
                                 color = MaterialTheme.colorScheme.typoSecondary(),
                                 style = LinguaTypography.subtitle4
                             )

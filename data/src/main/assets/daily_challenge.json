@@ -24,7 +24,7 @@
       "en": "You did it! More bold ideas — more confidence in your speaking.",
       "ru": "Ты справился! Больше смелых идей — больше уверенности в речи."
     },
-    "bonusOnComplete": 25,
+    "bonusOnComplete": 50,
     "status": { "started": false, "completed": false }
   },
   {
@@ -52,7 +52,7 @@
       "en": "Smiles guaranteed! You've trained your ability to be funny and lighten the mood.",
       "ru": "Улыбки обеспечены! Ты потренировал навык смешить и разряжать атмосферу."
     },
-    "bonusOnComplete": 25,
+    "bonusOnComplete": 50,
     "status": { "started": false, "completed": false }
   },
   {
@@ -80,7 +80,7 @@
       "en": "Storytelling leveled up! Your speech is now more vivid and compelling.",
       "ru": "Сторителлинг прокачан! Твоя речь стала живее и выразительнее."
     },
-    "bonusOnComplete": 25,
+    "bonusOnComplete": 50,
     "status": { "started": false, "completed": false }
   },
   {
@@ -108,7 +108,7 @@
       "en": "Word bank updated! The more words — the sharper your speech.",
       "ru": "Словарный запас пополнен! Чем больше слов — тем точнее речь."
     },
-    "bonusOnComplete": 25,
+    "bonusOnComplete": 50,
     "status": { "started": false, "completed": false }
   },
   {
@@ -136,7 +136,7 @@
       "en": "Speech is sharp, diction is crisp. Training complete!",
       "ru": "Речь чёткая, дикция — как бритва. Тренировка сработала!"
     },
-    "bonusOnComplete": 25,
+    "bonusOnComplete": 50,
     "status": { "started": false, "completed": false }
   }
 ]

@@ -37,6 +37,7 @@ import kotlinx.coroutines.launch
 import java.util.ArrayDeque
 import java.util.Queue
 import javax.inject.Inject
+import kotlin.math.roundToInt
 
 @HiltViewModel
 class SpeakingExerciseViewModel @Inject constructor(
@@ -166,14 +167,24 @@ class SpeakingExerciseViewModel @Inject constructor(
 
     private suspend fun handleNextSituation() {
         if (overAllProgress.value == overAllMaxProgress.value) {
-            timer.stop()
             exerciseRepository.markCompleted(exerciseId)
+            timer.stop()
+
+            val elapsedTime = timer.getElapsedTimeMillis()
+            val requiredTime = 2 * 60 * 1000L
+
+            val experience = if (elapsedTime >= requiredTime) {
+                EXPERIENCE_REWARD
+            } else {
+                val proportional = (EXPERIENCE_REWARD * elapsedTime.toDouble() / requiredTime)
+                proportional.roundToInt()
+            }
 
             uiMessageManager.emitMessage(
                 UiMessage(
                     SpeakingExerciseUiMessage.NavigateToExerciseResult(
                         time = timer.getElapsedTimeMillis(),
-                        experience = EXPERIENCE_REWARD
+                        experience = experience
                     )
                 )
             )
@@ -301,7 +312,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     companion object {
-        const val EXPERIENCE_REWARD = 10
+        const val EXPERIENCE_REWARD = 25
         const val AFTER_TEST_SPEAKING_MAX_PROGRESS = 2
         const val SPEAKING_MAX_PROGRESS = 3
     }

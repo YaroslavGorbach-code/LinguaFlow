@@ -42,8 +42,5 @@ data class GameUi(val game: Game, val isDescriptionVisible: Boolean = false) {
         Game.GameName.TONGUE_TWISTER_HARD -> R.drawable.im_tongue_hard
     }
 
-    // TODO: is enable implement
-    val isEnable = game.minExperienceRequired == 0
-
     val skills = game.skills.map { it.nameString }
 }

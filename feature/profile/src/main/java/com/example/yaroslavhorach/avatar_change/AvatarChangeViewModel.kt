@@ -5,14 +5,7 @@ import com.example.yaroslavhorach.avatar_change.model.AvatarChangeAction
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeUiMessage
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeViewState
 import com.example.yaroslavhorach.common.base.BaseViewModel
-import com.example.yaroslavhorach.common.utill.isSameDay
 import com.example.yaroslavhorach.domain.prefs.PrefsRepository
-import com.example.yaroslavhorach.profile.R
-import com.example.yaroslavhorach.profile.model.CalendarDay
-import com.example.yaroslavhorach.profile.model.ProfileAction
-import com.example.yaroslavhorach.profile.model.ProfileUiMessage
-import com.example.yaroslavhorach.profile.model.ProfileViewState
-import com.example.yaroslavhorach.profile.model.SpeakingLevel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -23,10 +16,6 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Date
-import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.datastore.prefs
 
+import android.util.Log
 import androidx.datastore.core.DataStore
 import com.example.yaroslavhorach.common.utill.isToday
 import com.example.yaroslavhorach.datastore.R
@@ -72,6 +73,16 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         userPreferences.updateData { prefs ->
             prefs.toBuilder()
                 .setName(name)
+                .build()
+        }
+    }
+
+    suspend fun addExperience(xp: Int) {
+        userPreferences.updateData { prefs ->
+            val newXp = prefs.experience + xp
+
+            prefs.toBuilder()
+                .setExperience(newXp)
                 .build()
         }
     }

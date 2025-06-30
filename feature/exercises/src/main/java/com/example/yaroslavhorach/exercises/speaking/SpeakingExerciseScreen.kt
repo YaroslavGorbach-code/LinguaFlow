@@ -665,7 +665,7 @@ private fun Player(
                     .height(18.dp),
                 progressColor = MaterialTheme.colorScheme.surface,
                 progressShadow = MaterialTheme.colorScheme.surface,
-                progressBackgroundColor = MaterialTheme.colorScheme.surface,
+                progressBackgroundColor = MaterialTheme.colorScheme.onBackground,
                 minValue = 0f
             )
         }
