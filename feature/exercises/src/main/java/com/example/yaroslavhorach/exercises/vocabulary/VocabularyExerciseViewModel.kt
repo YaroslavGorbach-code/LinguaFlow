@@ -14,6 +14,7 @@ import com.example.yaroslavhorach.domain.exercise_content.model.Vocabulary
 import com.example.yaroslavhorach.domain.game.GameRepository
 import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.exercises.speaking.navigation.SpeakingExerciseRoute
+import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseAction
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiMessage
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseViewState
@@ -27,6 +28,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlin.math.roundToInt
 
 @HiltViewModel
 class VocabularyExerciseViewModel @Inject constructor(
@@ -83,11 +85,21 @@ class VocabularyExerciseViewModel @Inject constructor(
                     is VocabularyExerciseAction.OnNextClicked -> {
                         exerciseRepository.markCompleted(exerciseId)
                         gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.VOCABULARY), timer.getElapsedTimeMillis())
+                        val elapsedTime = timer.getElapsedTimeMillis()
+                        val requiredTime = 2 * 60 * 1000L
+
+                        val experience = if (elapsedTime >= requiredTime) {
+                            EXPERIENCE_REWARD
+                        } else {
+                            val proportional = (EXPERIENCE_REWARD * elapsedTime.toDouble() / requiredTime)
+                            proportional.roundToInt()
+                        }
+
                         uiMessageManager.emitMessage(
                             UiMessage(
                                 VocabularyExerciseUiMessage.NavigateToExerciseResult(
-                                    timer.getElapsedTimeMillis(),
-                                    EXPERIENCE_REWARD
+                                    time = timer.getElapsedTimeMillis(),
+                                    experience
                                 )
                             )
                         )

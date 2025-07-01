@@ -606,12 +606,12 @@ private fun GameDescriptionNotEnable(
 ) {
     StaticTooltip(
         enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.onBackground,
+        backgroundColor = MaterialTheme.colorScheme.surface,
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
         paddingHorizontal = 0.dp,
-        borderSize = 0.dp
+        borderSize = 1.dp
     ) {
         Text(
             text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",
@@ -630,7 +630,7 @@ private fun GameDescriptionNotEnable(
             Text(
                 modifier = Modifier.align(Alignment.Center),
                 text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + " xp.",
-                color = White,
+                color = Golden,
                 textAlign = TextAlign.Center,
                 style = LinguaTypography.body5
             )

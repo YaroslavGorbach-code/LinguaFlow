@@ -11,16 +11,19 @@ import com.example.yaroslavhorach.domain.exercise_content.model.TongueTwister
 import com.example.yaroslavhorach.domain.exercise_content.model.Vocabulary
 import com.example.yaroslavhorach.domain.exercise_content.model.Word
 import com.example.yaroslavhorach.domain.game.model.Game
+import com.example.yaroslavhorach.domain.prefs.PrefsRepository
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import kotlin.random.Random
 
 class ExerciseContentRepositoryImpl @Inject constructor(
-    @ApplicationContext private val context: Context
+    @ApplicationContext private val context: Context,
+    private val prefsRepository: PrefsRepository
 ) : ExerciseContentRepository {
     private var cashedSituations: MutableMap<ExerciseName, List<Situation>> = mutableMapOf()
     private var cashedTongueTwisters: MutableMap<TongueTwister.Difficulty, List<TongueTwister>> = mutableMapOf()
@@ -65,8 +68,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
             }
         }
 
-        // TODO: do not do random here replace in the future
-        return cashedSituations[exerciseName]!!.random()
+        return getAndUseSituation(exerciseName)
     }
 
     override suspend fun getTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {
@@ -86,8 +88,54 @@ class ExerciseContentRepositoryImpl @Inject constructor(
             }
         }
 
-        // TODO: do not do random here replace in the future
-        return cashedTongueTwisters[difficulty]!!.random()
+        return getAndUseTongueTwister(difficulty)
+    }
+
+    private suspend fun getAndUseSituation(exerciseName: ExerciseName): Situation {
+        val used = prefsRepository.getUsedContent(exerciseName.name).first()
+
+        val unusedSituations = cashedSituations[exerciseName]
+            ?.filter { sit -> sit.id !in used }
+
+        if (unusedSituations.isNullOrEmpty()) {
+            prefsRepository.clearUsedExerciseContent(exerciseName.name)
+
+            val allSituations = cashedSituations[exerciseName].orEmpty()
+            val situation = allSituations.random()
+
+            prefsRepository.useExerciseContent(situation.id, exerciseName.name)
+
+            return situation
+        } else {
+            val situation = unusedSituations.random()
+            prefsRepository.useExerciseContent(situation.id, exerciseName.name)
+
+            return situation
+        }
+    }
+
+    private suspend fun getAndUseTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {
+        val used = prefsRepository.getUsedContent(difficulty.name).first()
+
+        val unusedTongueTwisters = cashedTongueTwisters[difficulty]
+            ?.filter { tt -> tt.id !in used }
+
+        if (unusedTongueTwisters.isNullOrEmpty()) {
+            prefsRepository.clearUsedExerciseContent(difficulty.name)
+
+            val allTwisters = cashedTongueTwisters[difficulty].orEmpty()
+            val twister = allTwisters.random()
+
+            prefsRepository.useExerciseContent(twister.id, difficulty.name)
+
+            return twister
+        } else {
+            val twister = unusedTongueTwisters.random()
+
+            prefsRepository.useExerciseContent(twister.id, difficulty.name)
+
+            return twister
+        }
     }
 
     override suspend fun getVocabulary(wordType: Vocabulary.WordType): Vocabulary {
@@ -220,119 +268,102 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                 val sentences = getSentences(Sentence.SentenceType.SIMPLE_QUESTION)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.EMOTIONAL_TRANSLATOR -> {
                 val sentences = getSentences(Sentence.SentenceType.EMOTIONAL_TRANSLATION)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.DEVILS_ADVOCATE -> {
                 val sentences = getSentences(Sentence.SentenceType.DEVILS_ADVOCATE)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.DIALOGUE_WITH_SELF -> {
                 val sentences = getSentences(Sentence.SentenceType.DIALOGUE_WITH_SELF)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.IMAGINARY_SITUATION -> {
                 val sentences = getSentences(Sentence.SentenceType.IMAGINARY_SITUATION)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.EMOTION_TO_FACT -> {
                 val sentences = getSentences(Sentence.SentenceType.EMOTION_TO_FACT)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.WHO_AM_I_MONOLOGUE -> {
                 val sentences = getSentences(Sentence.SentenceType.WHO_AM_I)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.I_AM_EXPERT -> {
                 val sentences = getSentences(Sentence.SentenceType.I_AM_EXPERT)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.FORBIDDEN_WORDS -> {
                 val sentences = getSentences(Sentence.SentenceType.FORBIDDEN_WORDS)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.BODY_LANGUAGE_EXPRESS -> {
                 val sentences = getSentences(Sentence.SentenceType.BODY_LANGUAGE)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.PERSUASIVE_SHOUT -> {
                 val sentences = getSentences(Sentence.SentenceType.PERSUASIVE_SHOUT)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.SUBTLE_MANIPULATION -> {
                 val sentences = getSentences(Sentence.SentenceType.SUBTLE_MANIPULATION)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.ONE_SYNONYM_PLEASE -> {
                 val sentences = getSentences(Sentence.SentenceType.ONE_SYNONYM_PLEASE)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.INTONATION_MASTER -> {
                 val sentences = getSentences(Sentence.SentenceType.INTONATION_MASTER)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.FUNNIEST_ANSWER -> {
                 val sentences = getSentences(Sentence.SentenceType.FUNNIEST_ANSWER)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.MADMAN_ANNOUNCEMENT -> {
                 val sentences = getSentences(Sentence.SentenceType.SELL_THE_MADNESS)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             Game.GameName.FUNNY_EXCUSE -> {
                 val sentences = getSentences(Sentence.SentenceType.FUNNY_EXCUSE)
                 val uniqueSentences = sentences.distinctBy { it.text }
 
-                // todo do something not sentence to be repeated for the same exercise session
                 uniqueSentences.shuffled().first().text
             }
             else -> ""

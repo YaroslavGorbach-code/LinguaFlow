@@ -3,6 +3,10 @@ syntax = "proto3";
 option java_package = "com.example.yaroslavhorach.datastore";
 option java_multiple_files = true;
 
+message IntList {
+  repeated int64 values = 1;
+}
+
 message UserPreferences {
   int32 available_tokens = 1;
   int64 last_time_token_was_used = 2;
@@ -12,4 +16,5 @@ message UserPreferences {
   int32 avatarRes = 6;
   string name = 7;
   bool is_premium = 8;
+  map<string, IntList> used_exercises_content = 9;
 }

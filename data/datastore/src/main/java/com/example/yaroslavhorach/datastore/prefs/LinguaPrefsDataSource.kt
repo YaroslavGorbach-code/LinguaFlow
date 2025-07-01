@@ -1,13 +1,13 @@
 package com.example.yaroslavhorach.datastore.prefs
 
-import android.util.Log
 import androidx.datastore.core.DataStore
 import com.example.yaroslavhorach.common.utill.isToday
-import com.example.yaroslavhorach.datastore.R
+import com.example.yaroslavhorach.datastore.IntList
 import com.example.yaroslavhorach.datastore.UserPreferences
 import com.example.yaroslavhorach.datastore.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.toList
 import java.util.Date
 import javax.inject.Inject
 
@@ -61,6 +61,32 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         }
     }
 
+    fun getUsedContent(name: String): Flow<List<Long>> {
+        return userPreferences.data.map { it.usedExercisesContentMap[name]?.valuesList ?: emptyList() }
+    }
+
+    suspend fun useExerciseContent(id: Long, name: String) {
+        userPreferences.updateData { prefs ->
+            val currentList = prefs.usedExercisesContentMap[name]?.valuesList?.toMutableList() ?: mutableListOf()
+
+            currentList.add(id)
+
+            val updatedIntList = IntList.newBuilder()
+                .addAllValues(currentList)
+                .build()
+
+            prefs.toBuilder()
+                .putUsedExercisesContent(name, updatedIntList)
+                .build()
+        }
+    }
+
+    suspend fun clearUsedExerciseContent(name: String) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder().putUsedExercisesContent(name, IntList.getDefaultInstance()).build()
+        }
+    }
+
     suspend fun changeAvatar(avatarResId: Int) {
         userPreferences.updateData { prefs ->
             prefs.toBuilder()
@@ -86,6 +112,7 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 .build()
         }
     }
+
 
     suspend fun changePremiumState(isPremium: Boolean) {
         userPreferences.updateData { prefs ->

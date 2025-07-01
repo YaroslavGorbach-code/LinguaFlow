@@ -57,6 +57,18 @@ class PrefsRepositoryImpl @Inject constructor(
         prefsDataSource.changePremiumState(true)
     }
 
+    override suspend fun getUsedContent(name: String): Flow<List<Long>> {
+        return prefsDataSource.getUsedContent(name)
+    }
+
+    override suspend fun useExerciseContent(id: Long, name: String) {
+        prefsDataSource.useExerciseContent(id, name)
+    }
+
+    override suspend fun clearUsedExerciseContent(name: String) {
+        prefsDataSource.clearUsedExerciseContent(name)
+    }
+
     override fun getAvatars(): List<Avatar> {
         val premiumAvatars = listOf(
             R.drawable.im_avatar_5,
