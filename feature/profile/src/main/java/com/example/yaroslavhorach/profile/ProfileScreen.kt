@@ -113,8 +113,10 @@ internal fun ProfileScreen(
             .verticalScroll(rememberScrollState())
     ) {
         TopBar(state, actioner)
-        Spacer(Modifier.height(20.dp))
-        PremiumBanner(state, actioner)
+        if (state.isPremiumUser.not()){
+            Spacer(Modifier.height(20.dp))
+            PremiumBanner(state, actioner)
+        }
         Spacer(Modifier.height(20.dp))
         SectionActivity(state)
         Spacer(Modifier.height(20.dp))

@@ -1,0 +1,3 @@
+package com.example.yaroslavhorach.designsystem.screens.premium_success.model
+
+sealed class PremiumSuccessUiMessage

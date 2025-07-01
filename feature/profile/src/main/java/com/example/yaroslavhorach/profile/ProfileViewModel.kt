@@ -41,6 +41,7 @@ class ProfileViewModel @Inject constructor(private val prefsRepository: PrefsRep
                 levelOfSpeaking = SpeakingLevel.fromExperience(userData.experience),
                 activeDaysInRow = calculateActiveDaysInRowFromTimestamps(userData.activeDays.toSet()),
                 lasActiveDays = getLastSevenDays(userData.activeDays),
+                isPremiumUser = userData.isPremium,
                 uiMessage = messages,
             )
         }.stateIn(

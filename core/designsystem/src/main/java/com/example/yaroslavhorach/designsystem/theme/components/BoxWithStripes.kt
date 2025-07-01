@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.example.yaroslavhorach.designsystem.theme.Black_10
+import com.example.yaroslavhorach.designsystem.theme.Black_30
 import com.example.yaroslavhorach.designsystem.theme.Black_35
 import com.example.yaroslavhorach.designsystem.theme.White_10
 import com.example.yaroslavhorach.ui.utils.conditional
@@ -147,7 +148,7 @@ fun BoxWithStripes(
                 modifier = Modifier
                     .offset(y = -shadowYOffset.value)
                     .matchParentSize()
-                    .background(color = Black_35, shape = shape)
+                    .background(color = Black_30, shape = shape)
             )
         }
 

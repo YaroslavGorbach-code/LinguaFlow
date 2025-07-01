@@ -63,6 +63,7 @@ class GamesViewModel @Inject constructor(
             games = filterGames(games, selectedSort, favorites, challenge)
                 .sortedBy { it.game.minExperienceRequired },
             experience = userData.experience,
+            isUserPremium = userData.isPremium,
             uiMessage = messages
         )
     }.stateIn(

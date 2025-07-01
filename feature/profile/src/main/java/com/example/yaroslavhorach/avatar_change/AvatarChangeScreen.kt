@@ -1,6 +1,7 @@
 package com.example.yaroslavhorach.avatar_change
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -14,6 +15,7 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
@@ -47,18 +49,22 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeAction
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeViewState
 import com.example.yaroslavhorach.designsystem.R
+import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
+import com.example.yaroslavhorach.domain.prefs.model.Avatar
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.filter
 
 @Composable
 internal fun AvatarChangeRoute(
-    viewModel: AvatarChangeViewModel = hiltViewModel(), navigateBack: () -> Unit
+    viewModel: AvatarChangeViewModel = hiltViewModel(),
+    navigateBack: () -> Unit,
+    navigateToPremium: ()-> Unit
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
@@ -68,6 +74,7 @@ internal fun AvatarChangeRoute(
         actioner = { action ->
             when (action) {
                 is AvatarChangeAction.OnBackClicked -> navigateBack()
+                is AvatarChangeAction.OnPremiumClicked -> navigateToPremium()
                 else -> viewModel.submitAction(action)
             }
         })
@@ -90,9 +97,7 @@ internal fun AvatarChangeScreen(
         snapshotFlow { typedText.value }
             .debounce(500)
             .filter { it.isEmpty().not() }
-            .collect {
-                actioner(AvatarChangeAction.OnNameTyped(it))
-            }
+            .collect { actioner(AvatarChangeAction.OnNameTyped(it)) }
     }
 
     Column(
@@ -148,38 +153,76 @@ private fun Avatars(
         color = MaterialTheme.colorScheme.typoPrimary(),
         style = LinguaTypography.subtitle2
     )
-    Spacer(Modifier.height(20.dp))
+    Spacer(Modifier.height(10.dp))
     LazyVerticalGrid(
         columns = GridCells.Fixed(3),
         modifier = Modifier
             .fillMaxSize()
             .padding(bottom = 16.dp),
-        contentPadding = PaddingValues(start = 20.dp, end = 20.dp, top = 2.dp),
+        contentPadding = PaddingValues(start = 20.dp, end = 20.dp, top = 10.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp),
         horizontalArrangement = Arrangement.spacedBy(14.dp)
     ) {
         items(state.avatars) { avatar ->
-            BoxWithStripes(
-                stripeColor = Color.Transparent,
-                rawShadowYOffset = 2.3.dp,
-                contentPadding = 16.dp,
-                background = MaterialTheme.colorScheme.background,
-                backgroundShadow = MaterialTheme.colorScheme.onBackgroundDark(),
-                borderWidth = 1.5.dp,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .aspectRatio(1f),
-                onClick = {
+            AvatarItem(state, avatar, actioner)
+        }
+    }
+}
+
+@Composable
+private fun AvatarItem(
+    state: AvatarChangeViewState,
+    avatar: Avatar,
+    actioner: (AvatarChangeAction) -> Unit,
+    ) {
+    val isPremiumAvatar = avatar.isPremium && state.isPremiumUser.not()
+
+    Box {
+        BoxWithStripes(
+            stripeColor = Color.Transparent,
+            rawShadowYOffset = 2.3.dp,
+            contentPadding = 16.dp,
+            background = MaterialTheme.colorScheme.background,
+            backgroundShadow = MaterialTheme.colorScheme.onBackgroundDark(),
+            borderWidth = 1.5.dp,
+            modifier = Modifier
+                .fillMaxWidth()
+                .aspectRatio(1f),
+            onClick = {
+                if (isPremiumAvatar) {
+                    actioner(AvatarChangeAction.OnPremiumClicked)
+                } else {
                     actioner(AvatarChangeAction.OnAvatarChosen(avatar.resId))
-                },
-                borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+                }
+            },
+            borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        ) {
+            Image(
+                modifier = Modifier
+                    .fillMaxSize(),
+                painter = painterResource(avatar.resId),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+            )
+        }
+        if (isPremiumAvatar) {
+            Box(
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .offset(y = (-10).dp)
+                    .background(
+                        color = Golden,
+                        shape = RoundedCornerShape(
+                            bottomStart = 8.dp,
+                            topEnd = 8.dp
+                        )
+                    )
+                    .padding(horizontal = 8.dp, vertical = 4.dp)
             ) {
-                Image(
-                    modifier = Modifier
-                        .fillMaxSize(),
-                    painter = painterResource(avatar.resId),
-                    contentDescription = null,
-                    contentScale = ContentScale.Crop,
+                Text(
+                    text = "PREMIUM",
+                    color = Color.White,
+                    style = LinguaTypography.subtitle6
                 )
             }
         }

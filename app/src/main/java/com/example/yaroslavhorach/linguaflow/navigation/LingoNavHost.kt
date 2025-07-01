@@ -9,6 +9,8 @@ import com.example.yaroslavhorach.avatar_change.navigation.avatarChangeScreen
 import com.example.yaroslavhorach.avatar_change.navigation.navigateToAvatarChange
 import com.example.yaroslavhorach.designsystem.screens.premium.navigation.navigateToPremium
 import com.example.yaroslavhorach.designsystem.screens.premium.navigation.premiumScreen
+import com.example.yaroslavhorach.designsystem.screens.premium_success.navigation.navigateToPremiumSuccess
+import com.example.yaroslavhorach.designsystem.screens.premium_success.navigation.premiumSuccessScreen
 import com.example.yaroslavhorach.domain.exercise.model.Skill
 import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
@@ -132,11 +134,18 @@ fun LingoNavHost(
         exerciseCompletedScreen {
             navController.popBackStack()
         }
-        premiumScreen {
+        premiumScreen(onNavigateBack = {
+            navController.popBackStack()
+        }, onNavigateToSuccess = {
+            navController.navigateToPremiumSuccess()
+        })
+        premiumSuccessScreen {
             navController.popBackStack()
         }
-        avatarChangeScreen {
+        avatarChangeScreen(navigateBack = {
             navController.popBackStack()
-        }
+        }, navigateToPremium = {
+            navController.navigateToPremium()
+        })
     }
 }

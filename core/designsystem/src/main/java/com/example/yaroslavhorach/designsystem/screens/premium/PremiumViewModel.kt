@@ -2,6 +2,7 @@ package com.example.yaroslavhorach.designsystem.screens.premium
 
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
+import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumAction
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumUiMessage
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumVariant
@@ -55,6 +56,7 @@ class PremiumViewModel @Inject constructor(
             .onEach { event ->
                 when (event) {
                     is PremiumAction.OnGetPremiumClicked -> {
+                        uiMessageManager.emitMessage(UiMessage(PremiumUiMessage.NavigateToSuccess))
                         prefsRepository.activatePremium()
                     }
                     is PremiumAction.OnVariantChosen -> {

@@ -181,12 +181,12 @@ private fun VocabularyContent(
     if (screenState.vocabulary != null) {
         Column(
             modifier = Modifier
-                .padding(horizontal = 20.dp)
-                .padding(top = 24.dp)
-                .fillMaxSize()
                 .conditional(screenState.isExerciseActive){
                     clickable { actioner(VocabularyExerciseAction.OnScreenClicked) }
                 }
+                .padding(horizontal = 20.dp)
+                .padding(top = 24.dp)
+                .fillMaxSize()
         ) {
             Text(
                 "\uD83C\uDFAF Твоя задача:",
@@ -234,11 +234,12 @@ private fun VocabularyContent(
                     paddingHorizontal = 20.dp,
                     contentPadding = 16.dp,
                     cornerRadius = 12.dp,
+                    borderSize = 1.5.dp
                 ) {
                     Text(
                         text = "Головне — не зупиняйся! Кажеш слово — тап — і далі поїхали! \uD83E\uDDE0⚡",
-                        color = MaterialTheme.colorScheme.typoDisabled(),
-                        style = LinguaTypography.subtitle4
+                        color = MaterialTheme.colorScheme.typoPrimary(),
+                        style = LinguaTypography.body4
                     )
                 }
                 Spacer(Modifier.height(16.dp))
@@ -246,7 +247,6 @@ private fun VocabularyContent(
                     actioner(VocabularyExerciseAction.OnStartClicked)
                 }
             }
-            // TODO: INsets?
             Spacer(Modifier.padding(20.dp))
         }
     }

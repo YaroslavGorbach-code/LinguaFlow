@@ -214,8 +214,10 @@ private fun TopBar(screenState: GamesViewState, listState: LazyListState, action
                         style = LinguaTypography.body4
                     )
                 }
-                Spacer(Modifier.width(8.dp))
-                Tokens(screenState)
+                if (screenState.isUserPremium.not()) {
+                    Spacer(Modifier.width(8.dp))
+                    Tokens(screenState)
+                }
             }
 
             Spacer(Modifier.height(20.dp))
@@ -274,7 +276,7 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
         ) {
             when {
                 state.challenge?.status?.started?.not() == true -> {
-                    ChallengeNotStarted(state.challenge, actioner)
+                    ChallengeNotStarted(state, state.challenge, actioner)
                 }
                 state.challenge?.status?.started == true && state.challenge.status.completed.not() -> {
                     ChallengeStarted(state.challenge, actioner)
@@ -380,6 +382,7 @@ private fun ChallengeStarted(
 
 @Composable
 private fun ChallengeNotStarted(
+    state: GamesViewState,
     challenge: Challenge,
     actioner: (GamesAction) -> Unit
 ) {
@@ -395,7 +398,13 @@ private fun ChallengeNotStarted(
         style = LinguaTypography.body4
     )
     Spacer(Modifier.height(40.dp))
-    PrimaryButton(text = "\uD83D\uDD25 ПРИЙНЯТИ (1 ТОКЕН)") { actioner(GamesAction.OnStartDailyChallengeClicked) }
+
+    val startBtnText = if (state.isUserPremium) {
+        "\uD83D\uDD25 ПРИЙНЯТИ"
+    } else {
+        "\uD83D\uDD25 ПРИЙНЯТИ (1 ТОКЕН)"
+    }
+    PrimaryButton(text = startBtnText) { actioner(GamesAction.OnStartDailyChallengeClicked) }
 }
 
 @Composable
@@ -407,7 +416,7 @@ private fun Game(
 ) {
     Column {
         GameDescription(state, game, actioner)
-        val isEnable = state.experience >= game.game.minExperienceRequired
+        val isEnable = state.experience >= game.game.minExperienceRequired || state.isUserPremium
 
         BoxWithStripes(
             isEnabled = isEnable,
@@ -471,7 +480,7 @@ private fun ColumnScope.GameDescription(
         exit = fadeOut() + shrinkVertically()
     ) {
         when {
-            state.experience < game.game.minExperienceRequired -> {
+            state.experience < game.game.minExperienceRequired && state.isUserPremium.not() -> {
                 GameDescriptionNotEnable(state, game, actioner)
             }
             state.availableTokens <= 0 && useToken -> {
@@ -494,13 +503,13 @@ private fun GameDescriptionEnable(
 ) {
     StaticTooltip(
         enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.onBackground,
+        backgroundColor = MaterialTheme.colorScheme.surface,
         borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
         triangleAlignment = Alignment.Start,
         contentPadding = 20.dp,
         cornerRadius = 12.dp,
         paddingHorizontal = 0.dp,
-        borderSize = 0.dp
+        borderSize = 1.dp
     ) {
         Row(modifier = Modifier.fillMaxWidth()) {
             Text(
@@ -540,8 +549,10 @@ private fun GameDescriptionEnable(
         )
         Spacer(Modifier.height(20.dp))
 
-        val useToken = game.game.skills.contains(state.challenge?.theme).not()
-                && state.challenge?.status?.completed?.not() == true
+        val useToken = (game.game.skills.contains(state.challenge?.theme).not()
+                && state.challenge?.status?.completed?.not() == true)
+                && state.challenge.status.started
+                && state.isUserPremium.not()
 
         val btnText = if (useToken) {
             "ПОЧАТИ (1 ТОКЕН)"

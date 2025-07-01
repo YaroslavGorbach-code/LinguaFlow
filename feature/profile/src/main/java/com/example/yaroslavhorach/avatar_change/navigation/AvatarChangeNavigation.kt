@@ -17,9 +17,10 @@ fun NavController.navigateToAvatarChange(navOptions: NavOptions? = null) {
 }
 
 fun NavGraphBuilder.avatarChangeScreen(
-    navigateBack: () -> Unit
+    navigateBack: () -> Unit,
+    navigateToPremium: () -> Unit
 ) {
     composable<AvatarChange> {
-        AvatarChangeRoute(navigateBack = navigateBack)
+        AvatarChangeRoute(navigateBack = navigateBack, navigateToPremium = navigateToPremium)
     }
 }

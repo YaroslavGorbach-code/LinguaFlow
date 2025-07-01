@@ -46,6 +46,7 @@ import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.yaroslavhorach.designsystem.R
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumAction
+import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumUiMessage
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumVariant
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumViewState
 import com.example.yaroslavhorach.designsystem.theme.Golden
@@ -63,7 +64,8 @@ import com.example.yaroslavhorach.ui.UiText
 @Composable
 internal fun PremiumRoute(
     viewModel: PremiumViewModel = hiltViewModel(),
-    onNavigateBack: () -> Unit
+    onNavigateBack: () -> Unit,
+    onNavigateToSuccess: () -> Unit
 ) {
     val viewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -75,11 +77,19 @@ internal fun PremiumRoute(
                     is PremiumAction.OnBack -> {
                         onNavigateBack()
                     }
-
                     else -> viewModel.submitAction(action)
                 }
             },
         )
+    }
+
+    viewState.uiMessage?.let { uiMessage ->
+        when (uiMessage.message) {
+            is PremiumUiMessage.NavigateToSuccess -> {
+                onNavigateToSuccess()
+                viewModel.clearMessage(uiMessage.id)
+            }
+        }
     }
 }
 
@@ -143,7 +153,7 @@ internal fun PremiumScreen(
                 }
                 is PremiumVariant.SixMonth,
                 is PremiumVariant.Forever -> {
-                    Spacer(Modifier.height(18.dp))
+                    Spacer(Modifier.height(20.dp))
                 }
             }
             SubscriptionVariant(variant) { actioner(PremiumAction.OnVariantChosen(variant)) }
@@ -233,7 +243,7 @@ private fun SubscriptionVariant(
             Box(
                 modifier = Modifier
                     .align(Alignment.TopEnd)
-                    .offset(y = (-8).dp)
+                    .offset(y = (-10).dp)
                     .background(
                         color = Golden,
                         shape = RoundedCornerShape(
@@ -246,7 +256,7 @@ private fun SubscriptionVariant(
                 Text(
                     text = variant.badgeText.asString(),
                     color = Color.White,
-                    style = LinguaTypography.body6
+                    style = LinguaTypography.body5
                 )
             }
         }

@@ -15,6 +15,7 @@ data class GamesViewState(
     val maxTokens: Int = 0,
     val availableTokens: Int = 0,
     val experience: Int = 0,
+    val isUserPremium: Boolean = false,
     val uiMessage: UiMessage<GamesUiMessage>? = null
 ) {
 

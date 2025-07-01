@@ -16,10 +16,11 @@ fun NavController.navigateToPremium() {
     }
 }
 
-fun NavGraphBuilder.premiumScreen(onNavigateBack: () -> Unit) {
+fun NavGraphBuilder.premiumScreen(onNavigateBack: () -> Unit, onNavigateToSuccess: ()-> Unit) {
     composable<PremiumRoute> {
         PremiumRoute(
             onNavigateBack = onNavigateBack,
+            onNavigateToSuccess = onNavigateToSuccess
         )
     }
 }
