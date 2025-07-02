@@ -1,11 +1,13 @@
 package com.example.yaroslavhorach.ui
 
+import com.example.yaroslavhorach.common.R
+
 
 sealed class SpeakingLevel(
     val level: Int,
     val experienceRequired: IntRange,
-    val title: String,
-    val description: String,
+    val title: UiText,
+    val description: UiText,
     val emoji: String
 ) {
 
@@ -31,49 +33,49 @@ sealed class SpeakingLevel(
     class Listener : SpeakingLevel(
         level = 1,
         experienceRequired = 0..500,
-        title = "Слухач",
+        title = UiText.FromResource(R.string.speaking_level_1_title_text),
         emoji = "🧱",
-        description = "Ти починаєш чути мову по-новому. Спостерігаєш, запам’ятовуєш, пробуєш перші фрази. Це фундамент, на якому збудується твоя впевненість. Вітаємо на старті!"
+        description = UiText.FromResource(R.string.speaking_level_1_subtitle_text)
     )
 
     class Conversationalist : SpeakingLevel(
         level = 2,
         experienceRequired = 500..1000,
-        title = "Співрозмовник",
+        title = UiText.FromResource(R.string.speaking_level_2_title_text),
         emoji = "💬",
-        description = "Ти вже не просто слухаєш — ти вступаєш у діалог. Вмієш підтримати розмову, поставити запитання, сказати “своє слово”. Комунікація стає природнішою."
+        description = UiText.FromResource(R.string.speaking_level_2_subtitle_text)
     )
 
     class Communicator : SpeakingLevel(
         level = 3,
         experienceRequired = 1000..2000,
-        title = "Комунікатор",
+        title = UiText.FromResource(R.string.speaking_level_3_title_text),
         emoji = "🧭",
-        description = "Твої думки стають чіткими, ти легко обираєш слова і будуєш логіку. Ти не губишся у мовленні — ти керуєш ним. Спілкування — вже твоя зона комфорту."
+        description = UiText.FromResource(R.string.speaking_level_3_subtitle_text)
     )
 
     class Storyteller : SpeakingLevel(
         level = 4,
         experienceRequired = 2000..3000,
-        title = "Оповідач",
+        title = UiText.FromResource(R.string.speaking_level_4_title_text),
         emoji = "🎙️",
-        description = "Ти вмієш розповісти історію так, щоб тебе слухали. Працюєш з інтонацією, структурою, емоціями. Слова більше не просто інформація — вони несуть смисл."
+        description = UiText.FromResource(R.string.speaking_level_4_subtitle_text)
     )
 
     class ConfidentSpeaker : SpeakingLevel(
         level = 5,
         experienceRequired = 3000..4000,
-        title = "Впевнений оратор",
+        title = UiText.FromResource(R.string.speaking_level_5_title_text),
         emoji = "🔥",
-        description = "Ти звучиш переконливо, спокійно й яскраво. Можеш імпровізувати, переконувати, бути лідером розмови. Твоє мовлення — інструмент, яким ти володієш."
+        description = UiText.FromResource(R.string.speaking_level_5_description_text)
     )
 
     class Master : SpeakingLevel(
         level = 6,
         experienceRequired = 4000..5000,
-        title = "Майстер мовлення",
+        title = UiText.FromResource(R.string.speaking_level_6_title_text),
         emoji = "🦾",
-        description = "Твоя мова — це мистецтво. Ти використовуєш її свідомо, точно, на рівні майстерності. Відкривається після значного прогресу."
+        description = UiText.FromResource(R.string.speaking_level_6_subtitle_text)
     )
 
 }

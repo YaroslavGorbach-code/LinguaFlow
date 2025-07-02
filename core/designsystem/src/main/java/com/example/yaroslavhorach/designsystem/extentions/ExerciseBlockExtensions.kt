@@ -1,6 +1,7 @@
 package com.example.yaroslavhorach.designsystem.extentions
 
 import androidx.compose.ui.graphics.Color
+import com.example.yaroslavhorach.designsystem.R
 import com.example.yaroslavhorach.designsystem.theme.BlockFiveDark
 import com.example.yaroslavhorach.designsystem.theme.BlockFiveLight
 import com.example.yaroslavhorach.designsystem.theme.BlockTwoDark
@@ -16,32 +17,32 @@ import com.example.yaroslavhorach.ui.UiText
 
 val ExerciseBlock.topBarBgRes: Int
     get() = when (this) {
-        ExerciseBlock.ONE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_one
-        ExerciseBlock.TWO -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_two
-        ExerciseBlock.THREE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_three
-        ExerciseBlock.FOUR -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_four
-        ExerciseBlock.FIVE -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_five
-        ExerciseBlock.SIX -> com.example.yaroslavhorach.designsystem.R.drawable.gradient_block_one
+        ExerciseBlock.ONE -> R.drawable.gradient_block_one
+        ExerciseBlock.TWO -> R.drawable.gradient_block_two
+        ExerciseBlock.THREE -> R.drawable.gradient_block_three
+        ExerciseBlock.FOUR -> R.drawable.gradient_block_four
+        ExerciseBlock.FIVE -> R.drawable.gradient_block_five
+        ExerciseBlock.SIX -> R.drawable.gradient_block_one
     }
 
-fun ExerciseBlock.blockTitle(): UiText.FromString {
+fun ExerciseBlock.blockTitle(): UiText {
     return when (this) {
-        ExerciseBlock.ONE -> UiText.FromString("Блок 1: Small Talk & Знайомство")
-        ExerciseBlock.TWO -> UiText.FromString("Блок 2: Особисті теми & Повсякденне життя")
-        ExerciseBlock.THREE -> UiText.FromString("Блок 3: Соціальні ситуації & Групова розмова")
-        ExerciseBlock.FOUR -> UiText.FromString("Блок 4: Аргументація & М’які суперечки")
-        ExerciseBlock.FIVE -> UiText.FromString("Блок 5: Емпатія & Активне слухання")
+        ExerciseBlock.ONE -> UiText.FromResource(R.string.block_1_small_talk_title_text)
+        ExerciseBlock.TWO -> UiText.FromResource(R.string.block_2_title_text)
+        ExerciseBlock.THREE -> UiText.FromResource(R.string.block_3_title_text)
+        ExerciseBlock.FOUR -> UiText.FromResource(R.string.block_4_title_text)
+        ExerciseBlock.FIVE -> UiText.FromResource(R.string.block_5_title_text)
         ExerciseBlock.SIX -> TODO()
     }
 }
 
-fun ExerciseBlock.blockDescription(): UiText.FromString {
+fun ExerciseBlock.blockDescription(): UiText {
     return when (this) {
-        ExerciseBlock.ONE -> UiText.FromString("Навчись легко починати розмову, підтримувати бесіду і знайомитись з новими людьми")
-        ExerciseBlock.TWO -> UiText.FromString("Розвивай впевненність в розмовах про себе, свої інтереси, думки, почуття")
-        ExerciseBlock.THREE -> UiText.FromString("Навчися не губитися серед людей, підтримувати темп розмови й знаходити свій голос у будь-якій компанії")
-        ExerciseBlock.FOUR -> UiText.FromString("Тренуйся ввічливо висловлювати свою думку та аргументувати позицію")
-        ExerciseBlock.FIVE -> UiText.FromString("Тренуй здатність відчувати емоції інших і виражати підтримку словами з теплом і турботою")
+        ExerciseBlock.ONE -> UiText.FromResource(R.string.block_1_subtitle_text)
+        ExerciseBlock.TWO -> UiText.FromResource(R.string.block_2_subtitle_text)
+        ExerciseBlock.THREE -> UiText.FromResource(R.string.block_3_subtitle_text)
+        ExerciseBlock.FOUR -> UiText.FromResource(R.string.block_4_subtitle_text)
+        ExerciseBlock.FIVE -> UiText.FromResource(R.string.block_5_subtitle_text)
         ExerciseBlock.SIX -> TODO()
     }
 }

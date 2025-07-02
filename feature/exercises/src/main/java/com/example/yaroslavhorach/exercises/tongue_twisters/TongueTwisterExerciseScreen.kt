@@ -38,6 +38,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -51,6 +52,7 @@ import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
+import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseAction
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
 import com.example.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseViewState
@@ -204,7 +206,7 @@ private fun TwisterContent(
         }
 
         PrimaryButton(
-            modifier = Modifier, text = "Далі"
+            modifier = Modifier, text = stringResource(R.string.tongue_twister_exercise_primary_btn_text)
         ) {
             allowAnimate.value = true
             actioner(TongueTwisterExerciseAction.OnNextClicked)

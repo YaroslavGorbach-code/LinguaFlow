@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_screen_subscription_forever_subtitle_text">One-time payment — lifetime access</string>
+
+    <string name="block_1_small_talk_title_text"><![CDATA[Block 1: Small Talk & Getting to Know Each Other]]></string>
+    <string name="block_2_title_text"><![CDATA[Block 2: Personal Topics & Everyday Life]]></string>
+    <string name="block_3_title_text"><![CDATA[Block 3: Social Situations & Group Conversations]]></string>
+    <string name="block_4_title_text"><![CDATA[Block 4: Argumentation & Soft Disagreements]]></string>
+    <string name="block_5_title_text"><![CDATA[Block 5: Empathy & Active Listening]]></string>
+
+    <string name="block_1_subtitle_text">Learn to start conversations easily, keep them going, and connect with new people</string>
+    <string name="block_2_subtitle_text">Build confidence when talking about yourself, your interests, thoughts, and feelings</string>
+    <string name="block_3_subtitle_text">Learn to stay confident in groups, keep the conversation flowing, and find your voice in any crowd</string>
+    <string name="block_4_subtitle_text">Practice expressing your opinion politely and backing it up with solid arguments</string>
+    <string name="block_5_subtitle_text">Train your ability to sense others’ emotions and offer warm, caring verbal support</string>
+
+    <string name="game_skill_creativity_text">creativity</string>
+    <string name="game_skill_humor_text">humor</string>
+    <string name="game_skill_storytelling_title_text">storytelling</string>
+    <string name="game_skill_vocabulary_text">vocabulary</string>
+    <string name="game_skill_distion_text">diction</string>
+    <string name="game_skill_flirt_text">flirting</string>
+    <string name="onboarding_title_text">Speaking confidently is a skill — and you’ll build it here 👇</string>
+    <string name="onboarding_benfit_1_text">🗣️ Tongue twisters — clarity, rhythm, confidence</string>
+    <string name="onboarding_benefit_2_text">🎯 Language games — quick thinking, wit</string>
+    <string name="onboarding_benefit_3_text">🎬 Real-life scenes — how to respond in real conversations</string>
+    <string name="onboarding_benefit_4_text">📚 New words — speak with variety and interest</string>
+    <string name="onboarding_benefit_5_text">🎙️ Improvisation — confidence without a script</string>
+    <string name="onboarding_primary_btn_text">GET STARTED</string>
+
+    <string name="premium_title_text">Unlock your full speaking potential with Premium</string>
+    <string name="premium_benefit_1_text">No ads — nothing distracts you</string>
+    <string name="premium_benefit_2_text">All language games unlocked from day one</string>
+    <string name="premium_benefit_3_text">Unlimited tokens</string>
+    <string name="premium_benefit_4_text">No limits — full access to everything</string>
+    <string name="premium_variants_title_text">Subscriptions</string>
+    <string name="premium_primary_btn_text">👑 GET PREMIUM</string>
+    <string name="premium_success_title_text">Welcome to Premium!</string>
+    <string name="premium_success_subtitle_text">You now have access to all games, unlimited tokens, and no ads!</string>
+    <string name="premium_success_primary_btn_text">START TRAINING</string>
+    <string name="premium_variant_mounth_title_text">Monthly</string>
+    <string name="premium_variant_6_mounth_title_text">6 Months</string>
+    <string name="premium_variant_permanent_title_text">Lifetime</string>
+    <string name="premium_variant_the_best_bage_title_text">Best Value</string>
+</resources>

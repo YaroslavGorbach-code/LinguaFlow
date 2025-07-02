@@ -32,6 +32,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -114,26 +115,26 @@ internal fun OnboardingScreen(
                 Text(
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Center,
-                    text = "Говорити впевнено — це навичка. І ти її прокачаєш тут 👇",
+                    text = stringResource(R.string.onboarding_title_text),
                     style = LinguaTypography.h4,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
                 Spacer(Modifier.height(24.dp))
-                AppBenefit("🗣️ Скоромовки — чіткість, ритм, впевненість")
+                AppBenefit(stringResource(R.string.onboarding_benfit_1_text))
                 Spacer(Modifier.height(12.dp))
-                AppBenefit("🎯 Мовні ігри — швидка реакція, дотепність")
+                AppBenefit(stringResource(R.string.onboarding_benefit_2_text))
                 Spacer(Modifier.height(12.dp))
-                AppBenefit("🎬 Життєві сцени — як відповідати у реальних діалогах")
+                AppBenefit(stringResource(R.string.onboarding_benefit_3_text))
                 Spacer(Modifier.height(12.dp))
-                AppBenefit("📚 Нові слова — говори цікаво і різноманітно")
+                AppBenefit(stringResource(R.string.onboarding_benefit_4_text))
                 Spacer(Modifier.height(12.dp))
-                AppBenefit("🎙️ Імпровізації — впевненість без сценарію")
+                AppBenefit(stringResource(R.string.onboarding_benefit_5_text))
             }
         }
         Spacer(Modifier.weight(1f))
         Spacer(Modifier.height(24.dp))
 
-        PrimaryButton(text = "ПОЧАТИ") {
+        PrimaryButton(text = stringResource(R.string.onboarding_primary_btn_text)) {
             actioner(OnboardingAction.OnStartClicked)
         }
         Spacer(Modifier.height(20.dp))

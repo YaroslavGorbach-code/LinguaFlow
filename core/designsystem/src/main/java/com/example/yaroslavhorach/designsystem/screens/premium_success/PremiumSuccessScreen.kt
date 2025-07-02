@@ -19,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -28,6 +29,7 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
+import com.example.yaroslavhorach.designsystem.R
 import com.example.yaroslavhorach.designsystem.screens.premium_success.model.PremiumSuccessAction
 import com.example.yaroslavhorach.designsystem.screens.premium_success.model.PremiumSuccessViewState
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
@@ -86,7 +88,7 @@ internal fun PremiumSuccessScreen(
             modifier = Modifier
                 .fillMaxWidth(),
             textAlign = TextAlign.Center,
-            text = "Вітаємо в Premium!",
+            text = stringResource(R.string.premium_success_title_text),
             style = LinguaTypography.h2,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
@@ -95,13 +97,13 @@ internal fun PremiumSuccessScreen(
             modifier = Modifier
                 .fillMaxWidth(),
             textAlign = TextAlign.Center,
-            text = "Тепер тобі доступні всі ігри, необмежені токени та жодної реклами!",
+            text = stringResource(R.string.premium_success_subtitle_text),
             style = LinguaTypography.body3,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
 
         Spacer(Modifier.weight(1f))
-        PremiumButton(text = "ДО ТРЕНУВАНЬ") {
+        PremiumButton(text = stringResource(R.string.premium_success_primary_btn_text)) {
             actioner(PremiumSuccessAction.OnPrimaryBtnClicked)
         }
         Spacer(Modifier.height(20.dp))

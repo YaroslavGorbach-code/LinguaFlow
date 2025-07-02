@@ -48,6 +48,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -75,6 +76,7 @@ import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
+import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
@@ -236,7 +238,7 @@ private fun SpeakingContent(
             .fillMaxSize()
     ) {
         Text(
-            "\uD83E\uDDE0 Уяви ситуацію:",
+            stringResource(R.string.speaking_exercise_situation_title_text),
             style = LinguaTypography.h5,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
@@ -248,7 +250,7 @@ private fun SpeakingContent(
         )
         Spacer(Modifier.height(24.dp))
         Text(
-            "\uD83C\uDFAF Твоя задача:",
+            stringResource(R.string.speaking_exercise_task_title_text),
             style = LinguaTypography.h5,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
@@ -297,7 +299,7 @@ private fun SpeakingContent(
             if (speakingMode.isStopRecordingBtnVisible){
                 TextButton(
                     textColor = MaterialTheme.colorScheme.typoDisabled(),
-                    text = "Закінчити Говорити",
+                    text = stringResource(R.string.speaking_exercise_stop_speaking_btn_text),
                     onClick = {
                     actioner(SpeakingExerciseAction.OnStopSpeakingClicked)
                 })
@@ -305,9 +307,12 @@ private fun SpeakingContent(
             }
 
             if (speakingMode.secondsTillFinish > 0) {
-                InactiveButton(text = "Кінець вправи через: ${speakingMode.secondsTillFinish}")
+                InactiveButton(text = stringResource(
+                    R.string.speaking_exercise_finish_btn_format,
+                    speakingMode.secondsTillFinish
+                ))
             } else {
-                InactiveButton(text = "Говори...")
+                InactiveButton(text = stringResource(R.string.speaking_exercise_in_progress_btn_text))
             }
         } else {
             if (tooltipText.asString().isEmpty().not()) {
@@ -329,7 +334,7 @@ private fun SpeakingContent(
                 }
             }
             Spacer(Modifier.height(16.dp))
-            PrimaryButton(text = "Говорити") {
+            PrimaryButton(text = stringResource(R.string.speaking_exercise_start_btn_text)) {
                 actioner(SpeakingExerciseAction.OnStartSpikingClicked)
             }
         }
@@ -350,7 +355,7 @@ private fun TestContent(
             .fillMaxSize()
     ) {
         Text(
-            "\uD83E\uDDE0 Уяви ситуацію:",
+            stringResource(R.string.speaking_exercise_test_situation_title_text),
             style = LinguaTypography.h5,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
@@ -362,7 +367,7 @@ private fun TestContent(
         )
         Spacer(Modifier.height(24.dp))
         Text(
-            "\uD83C\uDFAF Твоя задача:",
+            stringResource(R.string.speaking_exercise_test_task_title_text),
             style = LinguaTypography.h5,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
@@ -400,11 +405,11 @@ private fun TestContent(
         }
         Spacer(Modifier.weight(1f))
         if (testMode.chosenVariant != null) {
-            PrimaryButton(text = "Перевірити") {
+            PrimaryButton(text = stringResource(R.string.speaking_exercise_test_check_btn_text)) {
                 actioner(SpeakingExerciseAction.OnCheckTestVariantClicked)
             }
         } else {
-            InactiveButton(text = "Перевірити")
+            InactiveButton(text = stringResource(R.string.speaking_exercise_test_check_btn_text))
         }
 
         Spacer(Modifier.padding(20.dp))
@@ -463,7 +468,7 @@ private fun BoxScope.WrongTestAnswer(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = "СПРОБУВАТИ ЗНОВУ", textColor = Red) {
+                SecondaryButton(text = stringResource(R.string.speaking_exercise_test_try_again_btn_text), textColor = Red) {
                     isVisible.value = false
 
                     onMessageShown(uiMessage.id)
@@ -526,7 +531,7 @@ private fun BoxScope.CorrectTestAnswer(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = "ДАЛІ", textColor = KellyGreen) {
+                SecondaryButton(text = stringResource(R.string.speaking_exercise_next_btn_text), textColor = KellyGreen) {
                     isVisible.value = false
                     onMessageShown(uiMessage.id)
                     actioner(SpeakingExerciseAction.OnNextTestClicked)
@@ -575,24 +580,24 @@ private fun BoxScope.SpeakingResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = "Класна спроба!",
+                    text = stringResource(R.string.speaking_exercise_success_dialog_title_text),
                     style = LinguaTypography.h4,
                     color = Color.White
                 )
                 Spacer(Modifier.height(8.dp))
                 Text(
-                    text = "Послухай себе — і якщо хочеш, зроби ще краще \uD83D\uDE09",
+                    text = stringResource(R.string.speaking_exercise_success_dialog_subtitle_text),
                     style = LinguaTypography.body3,
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
                 Player(state, actioner)
                 Spacer(Modifier.height(18.dp))
-                TextButton(text = "СПРОБУВАТИ ЗНОВУ", textColor = Color.White, onClick = {
+                TextButton(text = stringResource(R.string.speaking_exercise_success_dialog_secondary_btn_text), textColor = Color.White, onClick = {
                     actioner(SpeakingExerciseAction.OnTryAgainSituationClicked)
                 })
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = "ДАЛІ", textColor = KellyGreen) {
+                SecondaryButton(text = stringResource(R.string.speaking_exercise_success_dialog_primary_btn_text), textColor = KellyGreen) {
                     actioner(SpeakingExerciseAction.OnNextSituationClicked)
                 }
                 Spacer(Modifier.height(16.dp))

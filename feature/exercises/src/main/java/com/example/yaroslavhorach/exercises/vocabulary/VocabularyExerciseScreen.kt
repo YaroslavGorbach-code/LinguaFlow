@@ -45,6 +45,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -69,6 +70,7 @@ import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
+import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseAction
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiMessage
 import com.example.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseViewState
@@ -181,7 +183,7 @@ private fun VocabularyContent(
     if (screenState.vocabulary != null) {
         Column(
             modifier = Modifier
-                .conditional(screenState.isExerciseActive){
+                .conditional(screenState.isExerciseActive) {
                     clickable { actioner(VocabularyExerciseAction.OnScreenClicked) }
                 }
                 .padding(horizontal = 20.dp)
@@ -189,7 +191,7 @@ private fun VocabularyContent(
                 .fillMaxSize()
         ) {
             Text(
-                "\uD83C\uDFAF Твоя задача:",
+                stringResource(R.string.vocabulary_exercise_task_title_text),
                 style = LinguaTypography.h5,
                 color = MaterialTheme.colorScheme.typoPrimary()
             )
@@ -201,7 +203,7 @@ private fun VocabularyContent(
             )
             Spacer(Modifier.height(24.dp))
             Text(
-                "\uD83D\uDCCB Наприклад:",
+                stringResource(R.string.vocabulary_exercise_example_title_text),
                 style = LinguaTypography.h5,
                 color = MaterialTheme.colorScheme.typoPrimary()
             )
@@ -224,7 +226,7 @@ private fun VocabularyContent(
             Spacer(Modifier.Companion.weight(1f))
 
             if (screenState.isExerciseActive) {
-                InactiveButton(text = "Далі")
+                InactiveButton(text = stringResource(R.string.vocabulary_exercise_next_btn_text))
             } else {
                 StaticTooltip(
                     enableFloatAnimation = true,
@@ -237,13 +239,13 @@ private fun VocabularyContent(
                     borderSize = 1.5.dp
                 ) {
                     Text(
-                        text = "Головне — не зупиняйся! Кажеш слово — тап — і далі поїхали! \uD83E\uDDE0⚡",
+                        text = stringResource(R.string.vocabulary_exercise_motivation_text),
                         color = MaterialTheme.colorScheme.typoPrimary(),
                         style = LinguaTypography.body4
                     )
                 }
                 Spacer(Modifier.height(16.dp))
-                PrimaryButton(text = "Почати") {
+                PrimaryButton(text = stringResource(R.string.vocabulary_exercise_start_text)) {
                     actioner(VocabularyExerciseAction.OnStartClicked)
                 }
             }
@@ -366,7 +368,7 @@ private fun BoxScope.BadResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = "Твій результат: " + message.amountWords,
+                    text = stringResource(R.string.vocabulary_exercise_result_title_text) + message.amountWords,
                     style = LinguaTypography.h4,
                     color = Color.White
                 )
@@ -377,7 +379,7 @@ private fun BoxScope.BadResult(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = "СПРОБУВАТИ ЗНОВУ", textColor = Red) {
+                SecondaryButton(text = stringResource(R.string.vocabulary_exercise_result_try_again_btn_text), textColor = Red) {
                     isVisible.value = false
                     actioner(VocabularyExerciseAction.OnTryAgainClicked)
                     onMessageShown(uiMessage.id)
@@ -435,7 +437,7 @@ private fun BoxScope.GoodResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = "Твій результат: " + message.amountWords,
+                    text = stringResource(R.string.voacabulary_exercise_result_title_text) + message.amountWords,
                     style = LinguaTypography.h4,
                     color = Color.White
                 )
@@ -446,7 +448,7 @@ private fun BoxScope.GoodResult(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = "ДАЛІ", textColor = KellyGreen) {
+                SecondaryButton(text = stringResource(R.string.vocabulary_exercise_result_next_btn_text), textColor = KellyGreen) {
                     isVisible.value = false
                     onMessageShown(uiMessage.id)
                     actioner(VocabularyExerciseAction.OnNextClicked)
@@ -504,7 +506,7 @@ private fun BoxScope.NotBadResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = "Твій результат: " + message.amountWords,
+                    text = stringResource(R.string.voacabulary_exercise_result_title_text) + message.amountWords,
                     style = LinguaTypography.h4,
                     color = Color.White
                 )
@@ -515,13 +517,13 @@ private fun BoxScope.NotBadResult(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                TextButton(text = "СПРОБУВАТИ ЗНОВУ", textColor = Color.White, onClick = {
+                TextButton(text = stringResource(R.string.vocabulary_exercise_result_try_again_btn_text), textColor = Color.White, onClick = {
                     isVisible.value = false
                     onMessageShown(uiMessage.id)
                     actioner(VocabularyExerciseAction.OnTryAgainClicked)
                 })
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = "ДАЛІ", textColor = KellyGreen) {
+                SecondaryButton(text = stringResource(R.string.vocabulary_exercise_next_btn_text), textColor = KellyGreen) {
                     isVisible.value = false
                     onMessageShown(uiMessage.id)
                     actioner(VocabularyExerciseAction.OnNextClicked)

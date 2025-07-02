@@ -8,4 +8,58 @@
         <item>📣 Говорити легко, коли маєш досвід. Почни тут</item>
         <item>🔄 Що більше практики — то менше незручності</item>
     </array>
+
+    <array name="speaking_exercise_intro_text">
+        <item>Тепер твоя черга сказати це по-своєму. 🗣️ Спробуй озвучити вголос.</item>
+        <item>Твоя черга заговорити. 🗣️ Скажи своїми словами — так народжується впевненість і навичка спілкування.</item>
+        <item>Обрав варіант? А тепер скажи його вголос! 🎤 Навичка розвивається через мовлення, а не тільки кліки.</item>
+        <item>Спробуй сказати це по-своєму. Це вже не тест — це справжня практика.</item>
+    </array>
+
+    <string name="tongue_twister_slow_speaking_mode_title">🧘 Почни повільно</string>
+    <string name="tongue_twister_medium_speaking_mode_title">🚀 Час пришвидшитися!</string>
+    <string name="tongue_twister_fast_speaking_mode_title">⚡ Готовий до випробування?</string>
+
+    <string name="tongue_twister_slow_speaking_mode_description">Вимовляй скоромовку чітко, звертаючи увагу на кожен звук</string>
+    <string name="tongue_twister_medium_speaking_mode_description">Повтори скоромовку — тепер трохи швидше</string>
+    <string name="tongue_twister_fast_speaking_mode_description">Вимов її якомога швидше — викладайся на повну!</string>
+
+    <string name="exercise_success_title_text">Твій рівень мовлення зріс! Так тримати 👏</string>
+    <string name="exercise_succcess_time_title_text">Час</string>
+    <string name="exercise_success_xp_title_text">XP</string>
+    <string name="exercise_success_primary_btn_text">ПРОДОВЖИТИ</string>
+    <string name="speaking_exercise_situation_title_text">🧠 Уяви ситуацію:</string>
+    <string name="speaking_exercise_task_title_text">🎯 Твоє завдання:</string>
+    <string name="speaking_exercise_stop_speaking_btn_text">Завершити вправу</string>
+    <string name="speaking_exercise_finish_btn_format">Вправа завершиться через: %1$s</string>
+    <string name="speaking_exercise_in_progress_btn_text">Говори…</string>
+    <string name="speaking_exercise_start_btn_text">Почати говорити</string>
+
+    <string name="speaking_exercise_test_situation_title_text">🧠 Уяви ситуацію:</string>
+    <string name="speaking_exercise_test_task_title_text">🎯 Твоє завдання:</string>
+    <string name="speaking_exercise_test_check_btn_text">Перевірити</string>
+    <string name="speaking_exercise_test_try_again_btn_text">СПРОБУВАТИ ЩЕ РАЗ</string>
+    <string name="speaking_exercise_next_btn_text">ДАЛІ</string>
+
+    <string name="speaking_exercise_success_dialog_title_text">Гарна спроба!</string>
+    <string name="speaking_exercise_success_dialog_subtitle_text">Послухай себе — і вдоскональ, якщо хочеш 😉</string>
+    <string name="speaking_exercise_success_dialog_secondary_btn_text">СПРОБУВАТИ ЩЕ РАЗ</string>
+    <string name="speaking_exercise_success_dialog_primary_btn_text">ДАЛІ</string>
+
+    <string name="tongue_twister_exercise_primary_btn_text">Далі</string>
+
+    <string name="vocabulary_exercise_task_title_text">🎯 Твоє завдання:</string>
+    <string name="vocabulary_exercise_example_title_text">📋 Приклад:</string>
+    <string name="vocabulary_exercise_next_btn_text">Далі</string>
+    <string name="vocabulary_exercise_motivation_text">Головне — не зупиняйся! Скажи слово, натисни й уперед! 🧠⚡</string>
+    <string name="vocabulary_exercise_start_text">Почати</string>
+
+    <string name="vocabulary_exercise_result_title_text">Твій результат:</string>
+    <string name="vocabulary_exercise_result_try_again_btn_text">СПРОБУВАТИ ЩЕ РАЗ</string>
+    <string name="vocabulary_exercise_result_next_btn_text">ДАЛІ</string>
+
+    <string name="words_game_task_title_text">🎯 Твоє завдання:</string>
+    <string name="words_game_example_title_text">📋 Приклад:</string>
+    <string name="words_game_finish_btn_text">Завершити</string>
+    <string name="words_game_next_btn_text">Далі</string>
 </resources>

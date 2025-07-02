@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home
 
+import android.app.GameState
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.expandVertically
@@ -49,6 +50,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
@@ -74,10 +76,12 @@ import com.example.yaroslavhorach.designsystem.theme.typoPrimary
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
 import com.example.yaroslavhorach.domain.game.model.Challenge
 import com.example.yaroslavhorach.domain.game.model.Game
+import com.example.yaroslavhorach.games.R
 import com.example.yaroslavhorach.home.model.GameUi
 import com.example.yaroslavhorach.home.model.GamesAction
 import com.example.yaroslavhorach.home.model.GamesViewState
 import com.example.yaroslavhorach.home.model.getText
+import com.example.yaroslavhorach.ui.SpeakingLevel
 
 @Composable
 internal fun GamesRoute(
@@ -97,11 +101,9 @@ internal fun GamesRoute(
                         onNavigateToGame(action.gameUi.game.id, action.gameUi.game.name)
                         viewModel.submitAction(action)
                     }
-
                     is GamesAction.OnPremiumBtnClicked -> {
                         onNavigateToPremium()
                     }
-
                     else -> viewModel.submitAction(action)
                 }
             })
@@ -203,13 +205,13 @@ private fun TopBar(screenState: GamesViewState, listState: LazyListState, action
             Row {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "\uD83C\uDFB2 Мовні ігри",
+                        text = stringResource(R.string.games_title_text),
                         color = MaterialTheme.colorScheme.typoPrimary(),
                         style = LinguaTypography.h2
                     )
                     Spacer(Modifier.height(8.dp))
                     Text(
-                        text = "Тренуй мовлення в ігрових режимах: трохи гумору, трохи фентезі, і максимум користі",
+                        text = stringResource(R.string.games_subtitle_text),
                         color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.body4
                     )
@@ -282,7 +284,7 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
                     ChallengeStarted(state.challenge, actioner)
                 }
                 state.challenge?.status?.completed == true -> {
-                    ChallengeCompleted(state.challenge)
+                    ChallengeCompleted(state, state.challenge)
                 }
             }
         }
@@ -290,9 +292,9 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
 }
 
 @Composable
-private fun ChallengeCompleted(challenge: Challenge) {
+private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
     Text(
-        text = "\uD83C\uDF89 Виклик виконано!",
+        text = stringResource(R.string.challenge_completed_title_text),
         color = MaterialTheme.colorScheme.typoPrimary(),
         style = LinguaTypography.subtitle2
     )
@@ -315,19 +317,21 @@ private fun ChallengeCompleted(challenge: Challenge) {
         cornerRadius = 12.dp,
     ) {
         Text(
-            text = "Виклик дня — виконано! \uD83C\uDFAF\n +${challenge.bonusOnComplete} досвіду, рівень підвищено! \uD83D\uDD25",
+            text = stringResource(R.string.challenge_completed_subtitle_text, challenge.bonusOnComplete),
             color = MaterialTheme.colorScheme.typoSecondary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body4
         )
     }
+    val level = SpeakingLevel.fromExperience(state.experience)
+    val progress = (state.experience - level.experienceRequired.first).toFloat() /
+            (level.experienceRequired.last - level.experienceRequired.first).toFloat()
 
-    // TODO: implement in the future
     LinguaProgressBar(
         modifier = Modifier
             .height(50.dp)
             .fillMaxWidth(),
-        progress = 0.5f,
+        progress = progress,
         progressBarHeight = 22.dp
     ) {
         Image(
@@ -355,7 +359,7 @@ private fun ChallengeStarted(
     ) {
         Text(
             modifier = Modifier.align(Alignment.Center),
-            text = challenge.progressInMinutes.toString() + " хв.",
+            text = challenge.progressInMinutes.toString() + stringResource(R.string.minute_short_text),
             color = White,
             textAlign = TextAlign.Center,
             style = LinguaTypography.body5
@@ -377,7 +381,7 @@ private fun ChallengeStarted(
         style = LinguaTypography.body4
     )
     Spacer(Modifier.height(40.dp))
-    PrimaryButton(text = "ПЕРЕЙТИ ДО ВПРАВ") { actioner(GamesAction.OnGoToDailyChallengeExercises) }
+    PrimaryButton(text = stringResource(R.string.challange_go_to_exercises_btn_text)) { actioner(GamesAction.OnGoToDailyChallengeExercises) }
 }
 
 @Composable
@@ -400,9 +404,9 @@ private fun ChallengeNotStarted(
     Spacer(Modifier.height(40.dp))
 
     val startBtnText = if (state.isUserPremium) {
-        "\uD83D\uDD25 ПРИЙНЯТИ"
+        stringResource(R.string.challange_btn_start_text)
     } else {
-        "\uD83D\uDD25 ПРИЙНЯТИ (1 ТОКЕН)"
+        stringResource(R.string.challenge_btn_start_with_tokens_text)
     }
     PrimaryButton(text = startBtnText) { actioner(GamesAction.OnStartDailyChallengeClicked) }
 }
@@ -447,7 +451,7 @@ private fun Game(
                     )
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = "Прокачує: " + game.skills.map { it.asString() }.joinToString(separator = ", "),
+                        text = stringResource(R.string.game_item_skill_sufix_text) + game.skills.map { it.asString() }.joinToString(separator = ", "),
                         color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.body4
                     )
@@ -555,9 +559,9 @@ private fun GameDescriptionEnable(
                 && state.isUserPremium.not()
 
         val btnText = if (useToken) {
-            "ПОЧАТИ (1 ТОКЕН)"
+            stringResource(R.string.game_description_start_btn_text)
         } else {
-            "ПОЧАТИ"
+            stringResource(R.string.game_desctiption_start_with_no_tokens_btn_text)
         }
         PrimaryButton(text = btnText) {
             actioner(GamesAction.OnStartGameClicked(game, useToken))
@@ -578,21 +582,21 @@ private fun DameDescriptionNoTokens(actioner: (GamesAction) -> Unit) {
         borderSize = 0.dp
     ) {
         Text(
-            text = "\uD83D\uDD12 Упс! Жетони на сьогодні закінчились",
+            text = stringResource(R.string.game_description_tokens_are_out_text),
             color = MaterialTheme.colorScheme.typoPrimary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.subtitle2
         )
         Spacer(Modifier.height(6.dp))
         Text(
-            text = "Нові з’являться після 00:00 ⏳\nАбо продовжуй гру вже зараз — без обмежень!",
+            text = stringResource(R.string.game_desctiption_tokens_are_out_subtitle_text),
             color = MaterialTheme.colorScheme.typoSecondary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body4
         )
         Spacer(Modifier.height(20.dp))
 
-        PremiumButton(text = "\uD83D\uDC51 ГРАТИ БЕЗ ОБМЕЖЕНЬ") {
+        PremiumButton(text = stringResource(R.string.game_description_premium_btn_text)) {
             actioner(GamesAction.OnPremiumBtnClicked)
         }
     }
@@ -614,7 +618,7 @@ private fun GameDescriptionNotEnable(
         borderSize = 1.dp
     ) {
         Text(
-            text = "Збери ще трохи досвіду або стань Premium і грай без обмежень!",
+            text = stringResource(R.string.game_description_xp_requried_title_text),
             color = MaterialTheme.colorScheme.typoPrimary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body3
@@ -629,14 +633,14 @@ private fun GameDescriptionNotEnable(
         ) {
             Text(
                 modifier = Modifier.align(Alignment.Center),
-                text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + " xp.",
+                text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + stringResource(R.string.xp_postfix_text),
                 color = Golden,
                 textAlign = TextAlign.Center,
                 style = LinguaTypography.body5
             )
         }
         Spacer(Modifier.height(20.dp))
-        PremiumButton(text = "\uD83D\uDC51 ВІДКРИТИ З PREMIUM") {
+        PremiumButton(text = stringResource(R.string.game_description_no_tokens_premium_btn_text)) {
             actioner(GamesAction.OnPremiumBtnClicked)
         }
     }

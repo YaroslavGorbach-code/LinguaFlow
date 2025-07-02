@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_screen_subscription_forever_subtitle_text">Одноразовий платіж — довічний доступ</string>
+
+    <string name="block_1_small_talk_title_text"><![CDATA[Блок 1: Смолток і знайомство]]></string>
+    <string name="block_2_title_text"><![CDATA[Блок 2: Особисті теми та повсякденне життя]]></string>
+    <string name="block_3_title_text"><![CDATA[Блок 3: Соціальні ситуації та групове спілкування]]></string>
+    <string name="block_4_title_text"><![CDATA[Блок 4: Аргументація та м’які незгоди]]></string>
+    <string name="block_5_title_text"><![CDATA[Блок 5: Емпатія та активне слухання]]></string>
+
+    <string name="block_1_subtitle_text">Навчися легко починати розмову, підтримувати її та знайомитися з новими людьми</string>
+    <string name="block_2_subtitle_text">Ставай упевненішим, говорячи про себе, свої інтереси, думки та почуття</string>
+    <string name="block_3_subtitle_text">Відчувай себе впевнено у групах, веди бесіду та знаходь свій голос у будь-якій компанії</string>
+    <string name="block_4_subtitle_text">Практикуй ввічливе висловлення думки та аргументацію</string>
+    <string name="block_5_subtitle_text">Розвивай чутливість до емоцій інших і вміння підтримати теплим словом</string>
+
+    <string name="game_skill_creativity_text">креативність</string>
+    <string name="game_skill_humor_text">гумор</string>
+    <string name="game_skill_storytelling_title_text">розповідання історій</string>
+    <string name="game_skill_vocabulary_text">словниковий запас</string>
+    <string name="game_skill_distion_text">дикція</string>
+    <string name="game_skill_flirt_text">флірт</string>
+
+    <string name="onboarding_title_text">Упевнено говорити — це навичка, і ти її прокачаєш тут 👇</string>
+    <string name="onboarding_benfit_1_text">🗣️ Скоромовки — чіткість, ритм, впевненість</string>
+    <string name="onboarding_benefit_2_text">🎯 Мовні ігри — швидкість мислення, дотепність</string>
+    <string name="onboarding_benefit_3_text">🎬 Життєві сцени — як відповідати в реальних розмовах</string>
+    <string name="onboarding_benefit_4_text">📚 Нові слова — говори цікаво й різноманітно</string>
+    <string name="onboarding_benefit_5_text">🎙️ Імпровізація — впевненість без сценарію</string>
+    <string name="onboarding_primary_btn_text">ПОЧАТИ</string>
+
+    <string name="premium_title_text">Відкрий свій мовний потенціал із Преміум</string>
+    <string name="premium_benefit_1_text">Без реклами — ніщо не відволікає</string>
+    <string name="premium_benefit_2_text">Усі мовні ігри доступні з першого дня</string>
+    <string name="premium_benefit_3_text">Безлімітні токени</string>
+    <string name="premium_benefit_4_text">Без обмежень — повний доступ до всього</string>
+
+    <string name="premium_variants_title_text">Підписки</string>
+    <string name="premium_primary_btn_text">👑 ОТРИМАТИ ПРЕМІУМ</string>
+    <string name="premium_success_title_text">Ласкаво просимо до Преміум!</string>
+    <string name="premium_success_subtitle_text">Тепер у тебе є доступ до всіх ігор, безлімітні токени та жодної реклами!</string>
+    <string name="premium_success_primary_btn_text">ДО ТРЕНУВАНЬ</string>
+
+    <string name="premium_variant_mounth_title_text">Місяць</string>
+    <string name="premium_variant_6_mounth_title_text">6 місяців</string>
+    <string name="premium_variant_permanent_title_text">Довічно</string>
+    <string name="premium_variant_the_best_bage_title_text">Вигідно</string>
+</resources>

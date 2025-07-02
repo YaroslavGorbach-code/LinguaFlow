@@ -1,0 +1,22 @@
+<resources>
+    <string name="home_user_grating_text">Привіт, %1$s ✌️</string>
+    <string name="communication_skills_exercise_section_name">Практика спілкування</string>
+    <string name="vocabulary_practice_exercise_section_name">Тренування словникового запасу</string>
+    <string name="diction_practice_exercise_section_name">Вправи на дикцію</string>
+    <string name="not_active_exercise_description_text">Заверши всі рівні вище, щоб відкрити доступ</string>
+    <string name="not_active_exercise_btn_text">Недоступно</string>
+    <string name="avatar_change_avatar_block_name_title_text">Твоє ім’я</string>
+    <string name="avatar_change_primary_btn_text">ДАЛІ</string>
+    <string name="avatar_change_avatar_blick_title_text">Твій аватар</string>
+    <string name="profile_achevements_title_text">Досягнення</string>
+    <string name="profile_achevements_see_all_btn_text">ПЕРЕГЛЯНУТИ ВСЕ</string>
+    <string name="profile_achevements_comming_soon">СКОРО</string>
+    <string name="profile_activity_title_text">Активність</string>
+    <string name="profile_active_days_in_row_title_text">Серія активних днів</string>
+    <string name="profile_active_days_title_text">Активні дні</string>
+    <string name="profile_progress_title_text">Прогрес</string>
+    <string name="profile_xp_tilte_text">Рівень досвіду</string>
+    <string name="profile_level_of_speaking_title_text">Рівень мовлення</string>
+    <string name="profile_premium_baner_title_text">Активувати Преміум</string>
+    <string name="profile_premium_banner_subtitle_text">Отримай повний доступ до застосунку — без реклами й обмежень</string>
+</resources>

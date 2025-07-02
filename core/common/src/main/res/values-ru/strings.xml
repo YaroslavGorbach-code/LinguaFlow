@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="plurals_hours">
+        <item quantity="one">%1$s час</item>
+        <item quantity="few">%1$s часа</item>
+        <item quantity="many">%1$s часов</item>
+        <item quantity="other">%1$s часов</item>
+    </plurals>
+
+    <plurals name="plurals_minutes">
+        <item quantity="one">%1$s минута</item>
+        <item quantity="few">%1$s минуты</item>
+        <item quantity="many">%1$s минут</item>
+        <item quantity="other">%1$s минут</item>
+    </plurals>
+
+    <string name="minutes_short_format">%1$s м</string>
+    <string name="hours_short_format">%1$s ч</string>
+
+    <string name="speaking_level_1_title_text">Слушатель</string>
+    <string name="speaking_level_1_subtitle_text">Ты начинаешь слышать язык по-новому. Ты наблюдаешь, запоминаешь и пробуешь первые фразы. Это основа, на которой вырастет твоя уверенность. Добро пожаловать в начало!</string>
+
+    <string name="speaking_level_2_title_text">Собеседник</string>
+    <string name="speaking_level_2_subtitle_text">Ты больше не просто слушаешь — ты вступаешь в диалог. Ты можешь поддерживать беседу, задавать вопросы и выражать себя. Общение становится естественным.</string>
+
+    <string name="speaking_level_3_title_text">Коммуникатор</string>
+    <string name="speaking_level_3_subtitle_text">Твои мысли становятся яснее, ты легко подбираешь слова и строишь логичную речь. Ты больше не теряешься в языке — ты управляешь им. Говорить стало комфортно.</string>
+
+    <string name="speaking_level_4_title_text">Рассказчик</string>
+    <string name="speaking_level_4_subtitle_text">Ты умеешь рассказывать истории так, чтобы удерживать внимание. Работаешь с интонацией, структурой и эмоциями. Слова — это уже не просто информация, а носители смысла.</string>
+
+    <string name="speaking_level_5_title_text">Уверенный оратор</string>
+    <string name="speaking_level_5_description_text">Ты звучишь убедительно, спокойно и выразительно. Умеешь импровизировать, убеждать и вести разговор. Твоя речь — инструмент, которым ты владеешь в совершенстве.</string>
+
+    <string name="speaking_level_6_title_text">Мастер речи</string>
+    <string name="speaking_level_6_subtitle_text">Твоя речь — это искусство. Ты используешь язык осознанно, точно и мастерски. Этот уровень открывается после значительного прогресса.</string>
+</resources>

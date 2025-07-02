@@ -31,7 +31,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -45,7 +44,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
@@ -513,7 +511,9 @@ private fun DescriptionTooltip(
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(16.dp))
-                val startBtnText = if(exercise.isFinished) "ПОВТОРИТИ" else "ПОЧАТИ"
+                val startBtnText = if(exercise.isFinished) stringResource(R.string.home_repeat_exercise_btn_text) else stringResource(
+                    R.string.home_start_exercise_btn_text
+                )
                 SecondaryButton(text = startBtnText, onClick = {
                     onStartExerciseClicked(exercise)
                 })

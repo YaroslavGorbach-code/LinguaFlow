@@ -5,4 +5,6 @@
     <string name="diction_practice_exercise_section_name">Diction Practice</string>
     <string name="not_active_exercise_description_text">Complete all levels above to unlock access</string>
     <string name="not_active_exercise_btn_text">Not available</string>
+    <string name="home_repeat_exercise_btn_text">REPEAT</string>
+    <string name="home_start_exercise_btn_text">START</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.designsystem.screens.premium
 
-import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -35,6 +34,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -126,23 +126,23 @@ internal fun PremiumScreen(
             modifier = Modifier
                 .fillMaxWidth(),
             textAlign = TextAlign.Center,
-            text = "Розкрий весь потенціал мовлення з Premium",
+            text = stringResource(R.string.premium_title_text),
             style = LinguaTypography.h4,
             color = MaterialTheme.colorScheme.typoPrimary()
         )
         Spacer(Modifier.height(20.dp))
         Column(Modifier.padding(horizontal = 14.dp)) {
-            PremiumBenefit("Без реклами — нічого не відволікає")
+            PremiumBenefit(stringResource(R.string.premium_benefit_1_text))
             Spacer(Modifier.height(14.dp))
-            PremiumBenefit("Усі мовні ігри відкриті з першого дня")
+            PremiumBenefit(stringResource(R.string.premium_benefit_2_text))
             Spacer(Modifier.height(14.dp))
-            PremiumBenefit("Безкінечні токени")
+            PremiumBenefit(stringResource(R.string.premium_benefit_3_text))
             Spacer(Modifier.height(14.dp))
-            PremiumBenefit("Жодних обмежень — повний доступ до всього")
+            PremiumBenefit(stringResource(R.string.premium_benefit_4_text))
         }
         Spacer(Modifier.height(20.dp))
         Text(
-            text = "Підписки",
+            text = stringResource(R.string.premium_variants_title_text),
             color = MaterialTheme.colorScheme.typoPrimary(),
             style = LinguaTypography.subtitle2
         )
@@ -160,7 +160,7 @@ internal fun PremiumScreen(
         }
 
         Spacer(Modifier.height(32.dp))
-        PremiumButton(text = "\uD83D\uDC51 ОТРИМАТИ PREMIUM") {
+        PremiumButton(text = stringResource(R.string.premium_primary_btn_text)) {
             actioner(PremiumAction.OnGetPremiumClicked)
         }
         Spacer(Modifier.height(20.dp))
@@ -214,13 +214,13 @@ private fun SubscriptionVariant(
                     Spacer(Modifier.width(10.dp))
                     Column( modifier = Modifier.align(Alignment.Top)) {
                         Text(
-                            text = variant.title,
+                            text = variant.title.asString(),
                             color = MaterialTheme.colorScheme.typoPrimary(),
                             style = LinguaTypography.subtitle3
                         )
                         if (variant is PremiumVariant.Forever){
                             Text(
-                                text = "Оплата один раз — доступ назавжди",
+                                text = stringResource(R.string.premium_screen_subscription_forever_subtitle_text),
                                 color = MaterialTheme.colorScheme.typoSecondary(),
                                 style = LinguaTypography.body6
                             )

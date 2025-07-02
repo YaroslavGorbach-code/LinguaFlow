@@ -1,0 +1,64 @@
+<resources>
+    <array name="speaking_exercise_motivation">
+        <item>🗣 Тренируй речь здесь, чтобы не молчать там</item>
+        <item>💬 Говори сейчас — чтобы звучать уверенно в жизни</item>
+        <item>🎯 Каждое слово — шаг к лёгкому общению</item>
+        <item>🛠 Общение — это навык. И здесь ты его оттачиваешь</item>
+        <item>📣 Говорить легко, когда ты практиковался. Начни здесь</item>
+        <item>🔄 Чем больше практики — тем меньше неловкости</item>
+    </array>
+
+    <array name="speaking_exercise_intro_text">
+        <item>Теперь твоя очередь сказать это по-своему. 🗣️ Попробуй озвучить вслух.</item>
+        <item>Твоя очередь заговорить. 🗣️ Скажи своими словами — так рождается уверенность и навык общения.</item>
+        <item>Выбрал вариант? А теперь скажи его вслух! 🎤 Навык развивается через речь, а не только клики.</item>
+        <item>Попробуй сказать это по-своему. Это уже не тест — это настоящая практика.</item>
+    </array>
+
+    <string name="tongue_twister_slow_speaking_mode_title">🧘 Начни медленно</string>
+    <string name="tongue_twister_medium_speaking_mode_title">🚀 Пора ускориться!</string>
+    <string name="tongue_twister_fast_speaking_mode_title">⚡ Готов к испытанию?</string>
+
+    <string name="tongue_twister_slow_speaking_mode_description">Произнеси скороговорку чётко, обращая внимание на каждый звук</string>
+    <string name="tongue_twister_medium_speaking_mode_description">Повтори скороговорку — теперь немного быстрее</string>
+    <string name="tongue_twister_fast_speaking_mode_description">Произнеси её как можно быстрее — выложись на полную!</string>
+
+    <string name="exercise_success_title_text">Твой уровень речи повысился! Так держать 👏</string>
+    <string name="exercise_succcess_time_title_text">Время</string>
+    <string name="exercise_success_xp_title_text">ХP</string>
+    <string name="exercise_success_primary_btn_text">ПРОДОЛЖИТЬ</string>
+    <string name="speaking_exercise_situation_title_text">🧠 Представь ситуацию:</string>
+    <string name="speaking_exercise_task_title_text">🎯 Твоя задача:</string>
+    <string name="speaking_exercise_stop_speaking_btn_text">Закончить упражнение</string>
+    <string name="speaking_exercise_finish_btn_format">Упражнение закончится через: %1$s</string>
+    <string name="speaking_exercise_in_progress_btn_text">Говори…</string>
+    <string name="speaking_exercise_start_btn_text">Начать говорить</string>
+
+    <string name="speaking_exercise_test_situation_title_text">🧠 Представь ситуацию:</string>
+    <string name="speaking_exercise_test_task_title_text">🎯 Твоя задача:</string>
+    <string name="speaking_exercise_test_check_btn_text">Проверить</string>
+    <string name="speaking_exercise_test_try_again_btn_text">ПОПРОБОВАТЬ ЕЩЁ РАЗ</string>
+    <string name="speaking_exercise_next_btn_text">ДАЛЕЕ</string>
+
+    <string name="speaking_exercise_success_dialog_title_text">Хорошая попытка!</string>
+    <string name="speaking_exercise_success_dialog_subtitle_text">Послушай себя — и улучши, если хочешь 😉</string>
+    <string name="speaking_exercise_success_dialog_secondary_btn_text">ПОПРОБОВАТЬ ЕЩЁ РАЗ</string>
+    <string name="speaking_exercise_success_dialog_primary_btn_text">ДАЛЕЕ</string>
+
+    <string name="tongue_twister_exercise_primary_btn_text">Далее</string>
+
+    <string name="vocabulary_exercise_task_title_text">🎯 Твоя задача:</string>
+    <string name="vocabulary_exercise_example_title_text">📋 Пример:</string>
+    <string name="vocabulary_exercise_next_btn_text">Далее</string>
+    <string name="vocabulary_exercise_motivation_text">Главное — не останавливайся! Скажи слово, нажми и вперёд! 🧠⚡</string>
+    <string name="vocabulary_exercise_start_text">Начать</string>
+
+    <string name="vocabulary_exercise_result_title_text">Твой результат:</string>
+    <string name="vocabulary_exercise_result_try_again_btn_text">ПОПРОБОВАТЬ ЕЩЁ РАЗ</string>
+    <string name="vocabulary_exercise_result_next_btn_text">ДАЛЕЕ</string>
+
+    <string name="words_game_task_title_text">🎯 Твоя задача:</string>
+    <string name="words_game_example_title_text">📋 Пример:</string>
+    <string name="words_game_finish_btn_text">Завершить</string>
+    <string name="words_game_next_btn_text">Далее</string>
+</resources>

@@ -12,4 +12,21 @@
 
     <string name="minutes_short_format">%1$s m</string>
     <string name="hours_short_format">%1$s h</string>
+    <string name="speaking_level_1_title_text">Listener</string>
+    <string name="speaking_level_1_subtitle_text">You’re starting to hear the language in a new way. You observe, memorize, and try your first phrases. This is the foundation your confidence will be built on. Welcome to the beginning!</string>
+
+    <string name="speaking_level_2_title_text">Conversationalist</string>
+    <string name="speaking_level_2_subtitle_text">You’re not just listening anymore — you’re entering a dialogue. You can keep a conversation going, ask questions, and express yourself. Communication is becoming more natural.</string>
+
+    <string name="speaking_level_3_title_text">Communicator</string>
+    <string name="speaking_level_3_subtitle_text">Your thoughts are becoming clearer, you choose words easily and build logical speech. You’re no longer lost in language — you’re in control. Speaking is now your comfort zone.</string>
+
+    <string name="speaking_level_4_title_text">Storyteller</string>
+    <string name="speaking_level_4_subtitle_text">You can tell a story in a way that holds attention. You work with intonation, structure, and emotion. Words are no longer just information — they carry meaning.</string>
+
+    <string name="speaking_level_5_title_text">Confident Speaker</string>
+    <string name="speaking_level_5_description_text">You sound convincing, calm, and expressive. You can improvise, persuade, and lead the conversation. Your speech is a tool you truly master.</string>
+
+    <string name="speaking_level_6_title_text">Master of Speech</string>
+    <string name="speaking_level_6_subtitle_text">Your speech is an art form. You use language consciously, precisely, and masterfully. This level opens after significant progress.</string>
 </resources>

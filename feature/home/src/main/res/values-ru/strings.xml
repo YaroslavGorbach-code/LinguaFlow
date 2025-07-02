@@ -1,0 +1,10 @@
+<resources>
+    <string name="home_user_grating_text">Привет, %1$s ✌️</string>
+    <string name="communication_skills_exercise_section_name">Практика общения</string>
+    <string name="vocabulary_practice_exercise_section_name">Тренировка словарного запаса</string>
+    <string name="diction_practice_exercise_section_name">Развитие дикции</string>
+    <string name="not_active_exercise_description_text">Пройди все уровни выше, чтобы открыть доступ</string>
+    <string name="not_active_exercise_btn_text">Недоступно</string>
+    <string name="home_repeat_exercise_btn_text">ПОВТОРИТЬ</string>
+    <string name="home_start_exercise_btn_text">НАЧАТЬ</string>
+</resources>

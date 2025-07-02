@@ -1,0 +1,22 @@
+<resources>
+    <string name="home_user_grating_text">Привет, %1$s ✌️</string>
+    <string name="communication_skills_exercise_section_name">Практика общения</string>
+    <string name="vocabulary_practice_exercise_section_name">Тренировка словарного запаса</string>
+    <string name="diction_practice_exercise_section_name">Упражнения на дикцию</string>
+    <string name="not_active_exercise_description_text">Пройди все уровни выше, чтобы открыть доступ</string>
+    <string name="not_active_exercise_btn_text">Недоступно</string>
+    <string name="avatar_change_avatar_block_name_title_text">Твоё имя</string>
+    <string name="avatar_change_primary_btn_text">ДАЛЕЕ</string>
+    <string name="avatar_change_avatar_blick_title_text">Твой аватар</string>
+    <string name="profile_achevements_title_text">Достижения</string>
+    <string name="profile_achevements_see_all_btn_text">ПОСМОТРЕТЬ ВСЕ</string>
+    <string name="profile_achevements_comming_soon">СКОРО</string>
+    <string name="profile_activity_title_text">Активность</string>
+    <string name="profile_active_days_in_row_title_text">Серия активных дней</string>
+    <string name="profile_active_days_title_text">Активные дни</string>
+    <string name="profile_progress_title_text">Прогресс</string>
+    <string name="profile_xp_tilte_text">Очки опыта</string>
+    <string name="profile_level_of_speaking_title_text">Уровень речи</string>
+    <string name="profile_premium_baner_title_text">Активируй Премиум</string>
+    <string name="profile_premium_banner_subtitle_text">Полный доступ к приложению — без рекламы и ограничений</string>
+</resources>

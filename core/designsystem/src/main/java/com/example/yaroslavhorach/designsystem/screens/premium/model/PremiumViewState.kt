@@ -12,13 +12,13 @@ data class PremiumViewState(
         val Empty = PremiumViewState(emptyList())
         val Preview = PremiumViewState(
             listOf(
-                PremiumVariant.Month("Місячна", UiText.FromString("99 ₴/місяць"), UiText.Empty),
+                PremiumVariant.Month(UiText.FromString("Місячна"), UiText.FromString("99 ₴/місяць"), UiText.Empty),
                 PremiumVariant.SixMonth(
-                    "6 - місячна",
+                    UiText.FromString("6 - місячна"),
                     UiText.FromString("239 ₴/півроку"),
                     UiText.FromString("39 ₴/місяць")
                 ),
-                PremiumVariant.Forever("Постійна", UiText.FromString("399 ₴/∞"), UiText.FromString("Найвигідніше"))
+                PremiumVariant.Forever(UiText.FromString("Постійна"), UiText.FromString("399 ₴/∞"), UiText.FromString("Найвигідніше"))
             ),
         )
     }

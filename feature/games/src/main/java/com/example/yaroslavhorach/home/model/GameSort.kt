@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home.model
 
+import com.example.yaroslavhorach.games.R
 import com.example.yaroslavhorach.ui.UiText
 
 enum class GameSort {
@@ -17,13 +18,13 @@ fun getPermanentSorts() = listOf(
 
 fun GameSort.getText(): UiText {
    return when (this) {
-        GameSort.DAILY_CHALLENGE -> UiText.FromString("\uD83D\uDD25 Виклик дня")
-        GameSort.FAVORITE -> UiText.FromString("⭐ Улюблене")
-        GameSort.CREATIVE -> UiText.FromString("\uD83E\uDDE0 Креативність")
-        GameSort.HUMOR -> UiText.FromString("\uD83D\uDE04 Почуття гумору")
-        GameSort.STORYTELLING -> UiText.FromString("\uD83D\uDCD6 Сторітелінг")
-        GameSort.VOCABULARY -> UiText.FromString("\uD83D\uDDE3\uFE0F Словниковий запас")
-        GameSort.DICTION -> UiText.FromString("\uD83D\uDC44 Дикція")
-        GameSort.FLIRT -> UiText.FromString("\uD83D\uDC98 Флірт")
+        GameSort.DAILY_CHALLENGE -> UiText.FromResource(R.string.sort_daily_chalange_text)
+        GameSort.FAVORITE -> UiText.FromResource(R.string.sort_favorite_text)
+        GameSort.CREATIVE -> UiText.FromResource(R.string.sort_creativity_text)
+        GameSort.HUMOR -> UiText.FromResource(R.string.sort_humor_text)
+        GameSort.STORYTELLING -> UiText.FromResource(R.string.sort_story_text)
+        GameSort.VOCABULARY -> UiText.FromResource(R.string.sort_vocabulary_text)
+        GameSort.DICTION -> UiText.FromResource(R.string.sort_diction_text)
+        GameSort.FLIRT -> UiText.FromResource(R.string.sort_flirt_text)
     }
 }

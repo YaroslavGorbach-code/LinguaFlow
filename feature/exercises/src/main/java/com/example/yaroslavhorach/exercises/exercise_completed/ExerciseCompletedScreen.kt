@@ -31,6 +31,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -50,6 +51,7 @@ import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoDisabled
 import com.example.yaroslavhorach.designsystem.theme.typoSecondary
+import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
 import com.example.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedViewState
 import com.example.yaroslavhorach.ui.SpeakingLevel
@@ -116,7 +118,7 @@ internal fun ExerciseCompletedScreen(
                     borderSize = 1.5.dp
                 ) {
                     Text(
-                        text = "Твій рівень вільного мовлення зріс! Так тримати \uD83D\uDC4F",
+                        text = stringResource(R.string.exercise_success_title_text),
                         color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.body4
                     )
@@ -162,7 +164,7 @@ internal fun ExerciseCompletedScreen(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
-                            text = "Час",
+                            text = stringResource(R.string.exercise_succcess_time_title_text),
                             color = MaterialTheme.colorScheme.typoDisabled(),
                             style = LinguaTypography.body4
                         )
@@ -198,7 +200,7 @@ internal fun ExerciseCompletedScreen(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
-                            text = "Досвід",
+                            text = stringResource(R.string.exercise_success_xp_title_text),
                             color = MaterialTheme.colorScheme.typoDisabled(),
                             style = LinguaTypography.body4
                         )
@@ -229,7 +231,7 @@ internal fun ExerciseCompletedScreen(
                     .fillMaxWidth()
                     .padding(bottom = 16.dp)
                     .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom)),
-                text = "ПРОДОВЖИТИ",
+                text = stringResource(R.string.exercise_success_primary_btn_text),
             ) {
                 actioner(ExerciseCompletedAction.OnContinueClicked)
             }

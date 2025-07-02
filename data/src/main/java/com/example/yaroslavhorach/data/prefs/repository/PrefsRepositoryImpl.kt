@@ -81,6 +81,7 @@ class PrefsRepositoryImpl @Inject constructor(
             R.drawable.im_avatar_8,
             R.drawable.im_avatar_9,
             R.drawable.im_avatar_10,
+            R.drawable.im_avatar_11,
             R.drawable.im_avatar_12,
             R.drawable.im_avatar_13,
             R.drawable.im_avatar_14,
@@ -96,10 +97,18 @@ class PrefsRepositoryImpl @Inject constructor(
             R.drawable.im_avatar_24,
             R.drawable.im_avatar_25,
             R.drawable.im_avatar_26,
+            R.drawable.im_avatar_27,
             R.drawable.im_avatar_28,
             R.drawable.im_avatar_29,
             R.drawable.im_avatar_30,
-            R.drawable.im_avatar_31
+            R.drawable.im_avatar_31,
+            R.drawable.im_avatar_32,
+            R.drawable.im_avatar_33,
+            R.drawable.im_avatar_34,
+            R.drawable.im_avatar_35,
+            R.drawable.im_avatar_36,
+            R.drawable.im_avatar_37,
+            R.drawable.im_avatar_38
         )
 
         return buildList {

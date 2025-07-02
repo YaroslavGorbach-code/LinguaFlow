@@ -3,6 +3,7 @@ package com.example.yaroslavhorach.designsystem.screens.premium
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.utill.UiMessage
+import com.example.yaroslavhorach.designsystem.R
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumAction
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumUiMessage
 import com.example.yaroslavhorach.designsystem.screens.premium.model.PremiumVariant
@@ -43,13 +44,16 @@ class PremiumViewModel @Inject constructor(
 
     init {
         variants.value = listOf(
-            PremiumVariant.Month("Місячна", UiText.FromString("99 ₴/місяць"), UiText.Empty),
-            PremiumVariant.SixMonth(
-                "6 - місячна",
+            PremiumVariant.Month(UiText.FromResource(R.string.premium_variant_mounth_title_text), UiText.FromString("99 ₴/місяць"), UiText.Empty),
+            PremiumVariant.SixMonth(UiText.FromResource(R.string.premium_variant_6_mounth_title_text),
                 UiText.FromString("239 ₴/півроку"),
                 UiText.FromString("39 ₴/місяць")
             ),
-            PremiumVariant.Forever("Постійна", UiText.FromString("399 ₴/∞"), UiText.FromString("Найвигідніше"))
+            PremiumVariant.Forever(
+                UiText.FromResource(R.string.premium_variant_permanent_title_text),
+                UiText.FromString("399 ₴/∞"),
+                UiText.FromResource(R.string.premium_variant_the_best_bage_title_text)
+            )
         )
 
         pendingActions

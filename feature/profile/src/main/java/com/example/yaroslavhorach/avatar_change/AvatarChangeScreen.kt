@@ -43,6 +43,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -52,7 +53,6 @@ import com.example.yaroslavhorach.avatar_change.model.AvatarChangeAction
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeUiMessage
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeViewState
 import com.example.yaroslavhorach.designsystem.R
-import com.example.yaroslavhorach.designsystem.screens.onboarding.model.OnboardingAction
 import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -130,7 +130,7 @@ internal fun AvatarChangeScreen(
         TopBar(state, actioner)
         Spacer(Modifier.height(20.dp))
         Text(
-            text = "Твоє ім'я",
+            text = stringResource(com.example.yaroslavhorach.profile.R.string.avatar_change_avatar_block_name_title_text),
             modifier = Modifier
                 .padding(horizontal = 20.dp),
             color = MaterialTheme.colorScheme.typoPrimary(),
@@ -162,7 +162,7 @@ internal fun AvatarChangeScreen(
         Avatars(state, actioner)
         if (state.isOnboarding) {
             PrimaryButton(
-                text = "ДАЛІ",
+                text = stringResource(com.example.yaroslavhorach.profile.R.string.avatar_change_primary_btn_text),
                 modifier = Modifier
                     .padding(horizontal = 20.dp)
             ) {
@@ -179,7 +179,7 @@ private fun ColumnScope.Avatars(
     actioner: (AvatarChangeAction) -> Unit
 ) {
     Text(
-        text = "Твій аватар",
+        text = stringResource(com.example.yaroslavhorach.profile.R.string.avatar_change_avatar_blick_title_text),
         modifier = Modifier
             .padding(horizontal = 20.dp),
         color = MaterialTheme.colorScheme.typoPrimary(),

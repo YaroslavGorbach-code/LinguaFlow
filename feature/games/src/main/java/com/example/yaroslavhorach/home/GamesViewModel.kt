@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.home
 
-import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
 import com.example.yaroslavhorach.common.utill.combine
@@ -91,7 +90,6 @@ class GamesViewModel @Inject constructor(
                         changeDescriptionState(event.gameUi)
                     }
                     is GamesAction.OnStartGameClicked -> {
-                        Log.v("dsasd", "dd")
                         if (event.useToken) {
                             prefsRepository.useToken()
                         }

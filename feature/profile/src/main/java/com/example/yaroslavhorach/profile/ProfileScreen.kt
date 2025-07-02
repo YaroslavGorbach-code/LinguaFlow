@@ -50,6 +50,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
@@ -135,14 +136,14 @@ private fun Achievements() {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
                 modifier = Modifier.weight(1f),
-                text = "Досягнення",
+                text = stringResource(com.example.yaroslavhorach.profile.R.string.profile_achevements_title_text),
                 color = MaterialTheme.colorScheme.typoPrimary(),
                 style = LinguaTypography.subtitle2
             )
 
             TextButton(
                 modifier = Modifier.weight(1f),
-                text = "ПЕРЕГЛЯНУТИ ВСІ",
+                text = stringResource(com.example.yaroslavhorach.profile.R.string.profile_achevements_see_all_btn_text),
                 textColor = MaterialTheme.colorScheme.typoDisabled(),
                 onClick = {},
                 alignment = Alignment.CenterEnd
@@ -190,7 +191,7 @@ private fun Achievements() {
 
             Text(
                 modifier = Modifier.align(Alignment.Center),
-                text = "COMMING SOON",
+                text = stringResource(com.example.yaroslavhorach.profile.R.string.profile_achevements_comming_soon),
                 color = MaterialTheme.colorScheme.typoControlSecondary(),
                 style = LinguaTypography.subtitle2
             )
@@ -202,7 +203,7 @@ private fun Achievements() {
 private fun SectionActivity(state: ProfileViewState) {
     Text(
         modifier = Modifier.padding(horizontal = 20.dp),
-        text = "Активність",
+        text = stringResource(com.example.yaroslavhorach.profile.R.string.profile_activity_title_text),
         color = MaterialTheme.colorScheme.typoPrimary(),
         style = LinguaTypography.subtitle2
     )
@@ -213,14 +214,14 @@ private fun SectionActivity(state: ProfileViewState) {
         InfoItem(
             modifier = Modifier.weight(1f),
             title = state.activeDaysInRow.toString(),
-            subtitle = "Активна Хвиля",
+            subtitle = stringResource(com.example.yaroslavhorach.profile.R.string.profile_active_days_in_row_title_text),
             iconRes = R.drawable.ic_fire_burning
         )
         Spacer(Modifier.width(20.dp))
         InfoItem(
             modifier = Modifier.weight(1f),
             title = state.activeDays.toString(),
-            subtitle = "Активних днів",
+            subtitle = stringResource(com.example.yaroslavhorach.profile.R.string.profile_active_days_title_text),
             iconRes = R.drawable.ic_calendar
         )
     }
@@ -230,7 +231,7 @@ private fun SectionActivity(state: ProfileViewState) {
 private fun SectionProgress(state: ProfileViewState) {
     Text(
         modifier = Modifier.padding(horizontal = 20.dp),
-        text = "Прогресс",
+        text = stringResource(com.example.yaroslavhorach.profile.R.string.profile_progress_title_text),
         color = MaterialTheme.colorScheme.typoPrimary(),
         style = LinguaTypography.subtitle2
     )
@@ -239,14 +240,14 @@ private fun SectionProgress(state: ProfileViewState) {
         InfoItem(
             modifier = Modifier.weight(1f),
             title = state.experience.toString(),
-            subtitle = "Рівень досвіду",
+            subtitle = stringResource(com.example.yaroslavhorach.profile.R.string.profile_xp_tilte_text),
             iconRes = R.drawable.ic_lightning_thunder
         )
         Spacer(Modifier.width(20.dp))
         InfoItem(
             modifier = Modifier.weight(1f),
-            title = state.levelOfSpeaking.level.toString() + ": " + state.levelOfSpeaking.title,
-            subtitle = "Рівень мовлення",
+            title = state.levelOfSpeaking.level.toString() + ": " + state.levelOfSpeaking.title.asString(),
+            subtitle = stringResource(com.example.yaroslavhorach.profile.R.string.profile_level_of_speaking_title_text),
             iconRes = R.drawable.ic_brain
         )
     }
@@ -291,7 +292,7 @@ private fun SpeakerLevelProgress(state: ProfileViewState) {
         Spacer(Modifier.height(12.dp))
         Text(
             modifier = Modifier.padding(horizontal = 20.dp),
-            text = state.levelOfSpeaking.description,
+            text = state.levelOfSpeaking.description.asString(),
             color = MaterialTheme.colorScheme.typoPrimary(),
             style = LinguaTypography.body4,
             textAlign = TextAlign.Justify
@@ -499,7 +500,7 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(
                         modifier = Modifier.weight(1f),
-                        text = "Активувати Преміум",
+                        text = stringResource(com.example.yaroslavhorach.profile.R.string.profile_premium_baner_title_text),
                         style = LinguaTypography.subtitle2,
                         color = MaterialTheme.colorScheme.typoPrimary()
                     )
@@ -512,7 +513,7 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
                 }
                 Spacer(Modifier.height(3.dp))
                 Text(
-                    "Користуйся всіма можливостями застосунку — без реклами та обмежень",
+                    stringResource(com.example.yaroslavhorach.profile.R.string.profile_premium_banner_subtitle_text),
                     style = LinguaTypography.body5,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )

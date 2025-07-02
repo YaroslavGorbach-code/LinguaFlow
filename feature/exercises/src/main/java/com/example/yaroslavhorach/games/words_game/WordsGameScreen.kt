@@ -43,6 +43,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -60,6 +61,7 @@ import com.example.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.example.yaroslavhorach.designsystem.theme.Black_3
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.example.yaroslavhorach.exercises.R
 import com.example.yaroslavhorach.games.words_game.model.WordsGameAction
 import com.example.yaroslavhorach.games.words_game.model.WordsGameUiMessage
 import com.example.yaroslavhorach.games.words_game.model.WordsGameViewState
@@ -185,7 +187,7 @@ private fun GameContent(
                     .verticalScroll(rememberScrollState())
             ) {
                 Text(
-                    "\uD83C\uDFAF Твоя задача:",
+                    stringResource(R.string.words_game_task_title_text),
                     style = LinguaTypography.h5,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
@@ -197,7 +199,7 @@ private fun GameContent(
                 )
                 Spacer(Modifier.height(24.dp))
                 Text(
-                    "\uD83D\uDCCB Наприклад:",
+                    stringResource(R.string.words_game_example_title_text),
                     style = LinguaTypography.h5,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
@@ -221,7 +223,7 @@ private fun GameContent(
 
         PrimaryButton(
             modifier = Modifier.padding(horizontal = 20.dp),
-            text = if (state.isLastExercise) "Закінчити" else "Далі"
+            text = if (state.isLastExercise) stringResource(R.string.words_game_finish_btn_text) else stringResource(R.string.words_game_next_btn_text)
         ) {
             allowAnimate.value = true
             actioner(WordsGameAction.OnNextClicked)

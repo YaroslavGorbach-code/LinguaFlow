@@ -15,11 +15,48 @@
         <item>Try saying it your own way. This isn’t a test anymore — it’s real practice.</item>
     </array>
 
-    <string name="tongue_twister_slow_speaking_mode_title">🧘 Почни повільно</string>
-    <string name="tongue_twister_medium_speaking_mode_title">🚀 Час пришвидшитись!</string>
-    <string name="tongue_twister_fast_speaking_mode_title">⚡ Готовий(-а) до виклику?</string>
+    <string name="tongue_twister_slow_speaking_mode_title">🧘 Start Slow</string>
+    <string name="tongue_twister_medium_speaking_mode_title">🚀 Time to Speed Up!</string>
+    <string name="tongue_twister_fast_speaking_mode_title">⚡ Ready for a Challenge?</string>
 
-    <string name="tongue_twister_slow_speaking_mode_description">Прочитай скоромовку чітко, з акцентом на кожен звук</string>
-    <string name="tongue_twister_medium_speaking_mode_description">Повтори скоромовку ще раз — цього разу трошки швидше</string>
-    <string name="tongue_twister_fast_speaking_mode_description">Скажи скоромовку максимально швидко — наскільки зможеш!</string>
+    <string name="tongue_twister_slow_speaking_mode_description">Say the tongue twister clearly, with focus on every sound</string>
+    <string name="tongue_twister_medium_speaking_mode_description">Repeat the tongue twister — a bit faster this time</string>
+    <string name="tongue_twister_fast_speaking_mode_description">Say it as fast as you can — go all out!</string>
+
+    <string name="exercise_success_title_text">Your speaking level just went up! Keep it up 👏</string>
+    <string name="exercise_succcess_time_title_text">Time</string>
+    <string name="exercise_success_xp_title_text">XP</string>
+    <string name="exercise_success_primary_btn_text">CONTINUE</string>
+    <string name="speaking_exercise_situation_title_text">🧠 Imagine the situation:</string>
+    <string name="speaking_exercise_task_title_text">🎯 Your task:</string>
+    <string name="speaking_exercise_stop_speaking_btn_text">Stop Speaking</string>
+    <string name="speaking_exercise_finish_btn_format">Exercise ends in: %1$s</string>
+    <string name="speaking_exercise_in_progress_btn_text">Speaking...</string>
+    <string name="speaking_exercise_start_btn_text">Start Speaking</string>
+    <string name="speaking_exercise_test_situation_title_text">🧠 Imagine the situation:</string>
+    <string name="speaking_exercise_test_task_title_text">🎯 Your task:</string>
+    <string name="speaking_exercise_test_check_btn_text">Check</string>
+    <string name="speaking_exercise_test_try_again_btn_text">TRY AGAIN</string>
+    <string name="speaking_exercise_next_btn_text">NEXT</string>
+    <string name="speaking_exercise_success_dialog_title_text">Great try!</string>
+    <string name="speaking_exercise_success_dialog_subtitle_text">Listen to yourself — and improve it if you want 😉</string>
+    <string name="speaking_exercise_success_dialog_secondary_btn_text">TRY AGAIN</string>
+    <string name="speaking_exercise_success_dialog_primary_btn_text">NEXT</string>
+    <string name="tongue_twister_exercise_primary_btn_text">Next</string>
+
+    <string name="vocabulary_exercise_task_title_text">🎯 Your task:</string>
+    <string name="vocabulary_exercise_example_title_text">📋 Example:</string>
+    <string name="vocabulary_exercise_next_btn_text">Next</string>
+    <string name="vocabulary_exercise_motivation_text">The key is — don’t stop! Say the word, tap, and go! 🧠⚡</string>
+    <string name="vocabulary_exercise_start_text">Start</string>
+
+    <string name="vocabulary_exercise_result_title_text">Your result:</string>
+    <string name="vocabulary_exercise_result_try_again_btn_text">TRY AGAIN</string>
+    <string name="voacabulary_exercise_result_title_text">Your result:</string>
+    <string name="vocabulary_exercise_result_next_btn_text">NEXT</string>
+
+    <string name="words_game_task_title_text">🎯 Your task:</string>
+    <string name="words_game_example_title_text">📋 Example:</string>
+    <string name="words_game_finish_btn_text">Finish</string>
+    <string name="words_game_next_btn_text">Next</string>
 </resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="plurals_hours">
+        <item quantity="one">%1$s година</item>
+        <item quantity="few">%1$s години</item>
+        <item quantity="many">%1$s годин</item>
+        <item quantity="other">%1$s годин</item>
+    </plurals>
+
+    <plurals name="plurals_minutes">
+        <item quantity="one">%1$s хвилина</item>
+        <item quantity="few">%1$s хвилини</item>
+        <item quantity="many">%1$s хвилин</item>
+        <item quantity="other">%1$s хвилин</item>
+    </plurals>
+
+    <string name="minutes_short_format">%1$s хв</string>
+    <string name="hours_short_format">%1$s год</string>
+
+    <string name="speaking_level_1_title_text">Слухач</string>
+    <string name="speaking_level_1_subtitle_text">Ти починаєш чути мову по-новому. Спостерігаєш, запам’ятовуєш і пробуєш перші фрази. Це основа, на якій зросте твоя впевненість. Ласкаво просимо на старт!</string>
+
+    <string name="speaking_level_2_title_text">Співрозмовник</string>
+    <string name="speaking_level_2_subtitle_text">Ти вже не просто слухаєш — ти вступаєш у діалог. Вмієш підтримати розмову, ставити запитання й висловлювати думки. Спілкування стає природним.</string>
+
+    <string name="speaking_level_3_title_text">Комунікатор</string>
+    <string name="speaking_level_3_subtitle_text">Твої думки стають чіткішими, ти легко добираєш слова й будуєш логічне мовлення. Ти більше не губишся в мові — ти керуєш нею. Говорити стає комфортно.</string>
+
+    <string name="speaking_level_4_title_text">Оповідач</string>
+    <string name="speaking_level_4_subtitle_text">Ти вмієш розповідати історії так, щоб утримати увагу. Працюєш з інтонацією, структурою та емоцією. Слова — це вже не просто інформація, а сенс.</string>
+
+    <string name="speaking_level_5_title_text">Упевнений мовник</string>
+    <string name="speaking_level_5_description_text">Ти звучиш переконливо, спокійно й виразно. Можеш імпровізувати, переконувати й вести розмову. Твоя мова — інструмент, яким ти майстерно володієш.</string>
+
+    <string name="speaking_level_6_title_text">Майстер мовлення</string>
+    <string name="speaking_level_6_subtitle_text">Твоє мовлення — це мистецтво. Ти використовуєш мову свідомо, точно й майстерно. Цей рівень відкривається після значного прогресу.</string>
+</resources>
