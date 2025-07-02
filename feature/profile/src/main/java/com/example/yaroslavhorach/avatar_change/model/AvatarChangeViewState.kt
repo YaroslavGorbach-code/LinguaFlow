@@ -8,6 +8,7 @@ data class AvatarChangeViewState(
     val userName: String = "",
     val isPremiumUser: Boolean = false,
     val avatarResId: Int? = null,
+    val isOnboarding: Boolean = false,
     val avatars: List<Avatar> = emptyList(),
     val uiMessage: UiMessage<AvatarChangeUiMessage>? = null
 ) {

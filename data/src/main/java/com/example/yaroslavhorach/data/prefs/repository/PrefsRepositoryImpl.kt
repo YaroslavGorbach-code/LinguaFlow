@@ -69,6 +69,10 @@ class PrefsRepositoryImpl @Inject constructor(
         prefsDataSource.clearUsedExerciseContent(name)
     }
 
+    override suspend fun finishOnboarding() {
+        prefsDataSource.finishOnboarding()
+    }
+
     override fun getAvatars(): List<Avatar> {
         val premiumAvatars = listOf(
             R.drawable.im_avatar_5,

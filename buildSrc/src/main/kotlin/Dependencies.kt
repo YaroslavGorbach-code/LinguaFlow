@@ -54,7 +54,7 @@ object Versions {
     const val gson = "2.13.1"
     const val datastorePrefs = "1.1.0"
     const val hiltNavigationCompose = "1.0.0"
-    const val hilt = "2.51.1"
+    const val hilt = "2.56.2"
     const val systemUiController = "0.30.0"
     const val splashScreen = "1.0.1"
     const val navigationCompose = "2.9.0"

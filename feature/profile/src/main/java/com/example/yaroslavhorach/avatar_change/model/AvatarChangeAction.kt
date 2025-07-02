@@ -5,4 +5,5 @@ sealed class AvatarChangeAction {
     data class OnNameTyped(val name: String): AvatarChangeAction()
     data object OnBackClicked: AvatarChangeAction()
     data object OnPremiumClicked: AvatarChangeAction()
+    data object OnNextClicked: AvatarChangeAction()
 }

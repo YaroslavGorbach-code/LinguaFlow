@@ -85,21 +85,12 @@ class VocabularyExerciseViewModel @Inject constructor(
                     is VocabularyExerciseAction.OnNextClicked -> {
                         exerciseRepository.markCompleted(exerciseId)
                         gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.VOCABULARY), timer.getElapsedTimeMillis())
-                        val elapsedTime = timer.getElapsedTimeMillis()
-                        val requiredTime = 2 * 60 * 1000L
-
-                        val experience = if (elapsedTime >= requiredTime) {
-                            EXPERIENCE_REWARD
-                        } else {
-                            val proportional = (EXPERIENCE_REWARD * elapsedTime.toDouble() / requiredTime)
-                            proportional.roundToInt()
-                        }
 
                         uiMessageManager.emitMessage(
                             UiMessage(
                                 VocabularyExerciseUiMessage.NavigateToExerciseResult(
                                     time = timer.getElapsedTimeMillis(),
-                                    experience
+                                    EXPERIENCE_REWARD
                                 )
                             )
                         )

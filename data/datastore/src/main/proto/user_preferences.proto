@@ -17,4 +17,5 @@ message UserPreferences {
   string name = 7;
   bool is_premium = 8;
   map<string, IntList> used_exercises_content = 9;
+  bool is_onboarding = 10;
 }

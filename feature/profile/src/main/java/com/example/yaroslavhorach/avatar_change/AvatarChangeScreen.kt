@@ -7,6 +7,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -40,6 +41,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -47,12 +49,15 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeAction
+import com.example.yaroslavhorach.avatar_change.model.AvatarChangeUiMessage
 import com.example.yaroslavhorach.avatar_change.model.AvatarChangeViewState
 import com.example.yaroslavhorach.designsystem.R
+import com.example.yaroslavhorach.designsystem.screens.onboarding.model.OnboardingAction
 import com.example.yaroslavhorach.designsystem.theme.Golden
 import com.example.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.example.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.example.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.example.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.example.yaroslavhorach.designsystem.theme.typoPrimary
@@ -64,17 +69,34 @@ import kotlinx.coroutines.flow.filter
 internal fun AvatarChangeRoute(
     viewModel: AvatarChangeViewModel = hiltViewModel(),
     navigateBack: () -> Unit,
-    navigateToPremium: ()-> Unit
+    navigateToPremium: () -> Unit,
+    navigateHome: () -> Unit
 ) {
+    val keyboardController = LocalSoftwareKeyboardController.current
     val state by viewModel.state.collectAsStateWithLifecycle()
+
+    state.uiMessage?.let { uiMessage ->
+        when (uiMessage.message) {
+            is AvatarChangeUiMessage.NavigateToHome -> {
+                navigateHome()
+                keyboardController?.hide()
+                viewModel.clearMessage(uiMessage.id)
+            }
+        }
+    }
 
     AvatarChangeScreen(
         state = state,
-        onMessageShown = viewModel::clearMessage,
         actioner = { action ->
             when (action) {
-                is AvatarChangeAction.OnBackClicked -> navigateBack()
-                is AvatarChangeAction.OnPremiumClicked -> navigateToPremium()
+                is AvatarChangeAction.OnBackClicked -> {
+                    navigateBack()
+                    keyboardController?.hide()
+                }
+                is AvatarChangeAction.OnPremiumClicked -> {
+                    navigateToPremium()
+                    keyboardController?.hide()
+                }
                 else -> viewModel.submitAction(action)
             }
         })
@@ -83,7 +105,6 @@ internal fun AvatarChangeRoute(
 @Composable
 internal fun AvatarChangeScreen(
     state: AvatarChangeViewState,
-    onMessageShown: (id: Long) -> Unit,
     actioner: (AvatarChangeAction) -> Unit,
 ) {
     val typedText = remember { mutableStateOf("") }
@@ -93,6 +114,7 @@ internal fun AvatarChangeScreen(
             typedText.value = state.userName
         }
     }
+
     LaunchedEffect(Unit) {
         snapshotFlow { typedText.value }
             .debounce(500)
@@ -124,8 +146,9 @@ internal fun AvatarChangeScreen(
                     MaterialTheme.colorScheme.onBackgroundDark(),
                     shape = RoundedCornerShape(8.dp)
                 ),
+
             value = typedText.value,
-            onValueChange = { typedText.value = it },
+            onValueChange = { if (it.length <= 50) { typedText.value = it } },
             colors = TextFieldDefaults.colors(
                 focusedContainerColor = Color.Transparent,
                 unfocusedContainerColor = Color.Transparent,
@@ -137,12 +160,21 @@ internal fun AvatarChangeScreen(
         )
         Spacer(Modifier.height(20.dp))
         Avatars(state, actioner)
+        if (state.isOnboarding) {
+            PrimaryButton(
+                text = "ДАЛІ",
+                modifier = Modifier
+                    .padding(horizontal = 20.dp)
+            ) {
+                actioner(AvatarChangeAction.OnNextClicked)
+            }
+        }
         Spacer(Modifier.height(20.dp))
     }
 }
 
 @Composable
-private fun Avatars(
+private fun ColumnScope.Avatars(
     state: AvatarChangeViewState,
     actioner: (AvatarChangeAction) -> Unit
 ) {
@@ -157,7 +189,7 @@ private fun Avatars(
     LazyVerticalGrid(
         columns = GridCells.Fixed(3),
         modifier = Modifier
-            .fillMaxSize()
+            .weight(1f)
             .padding(bottom = 16.dp),
         contentPadding = PaddingValues(start = 20.dp, end = 20.dp, top = 10.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp),
@@ -182,7 +214,7 @@ private fun AvatarItem(
             stripeColor = Color.Transparent,
             rawShadowYOffset = 2.3.dp,
             contentPadding = 16.dp,
-            background = MaterialTheme.colorScheme.background,
+            background = MaterialTheme.colorScheme.surface,
             backgroundShadow = MaterialTheme.colorScheme.onBackgroundDark(),
             borderWidth = 1.5.dp,
             modifier = Modifier
@@ -250,14 +282,16 @@ private fun TopBar(screenState: AvatarChangeViewState, actioner: (AvatarChangeAc
                 .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top))
                 .align(Alignment.TopCenter),
         ) {
-            Image(
-                modifier = Modifier
-                    .padding(start = 20.dp)
-                    .size(50.dp)
-                    .clickable { actioner(AvatarChangeAction.OnBackClicked) },
-                painter = painterResource(LinguaIcons.CircleCloseDark),
-                contentDescription = null
-            )
+            if (screenState.isOnboarding.not()){
+                Image(
+                    modifier = Modifier
+                        .padding(start = 20.dp)
+                        .size(50.dp)
+                        .clickable { actioner(AvatarChangeAction.OnBackClicked) },
+                    painter = painterResource(LinguaIcons.CircleCloseDark),
+                    contentDescription = null
+                )
+            }
             Spacer(Modifier.height(20.dp))
             if (screenState.avatarResId != null) {
                 Image(
@@ -289,7 +323,6 @@ private fun AvatarChangePreview() {
         LinguaTheme {
             AvatarChangeScreen(
                 AvatarChangeViewState.Preview,
-                {},
                 actioner = { _ -> },
             )
         }

@@ -7,7 +7,6 @@ import com.example.yaroslavhorach.datastore.UserPreferences
 import com.example.yaroslavhorach.datastore.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.toList
 import java.util.Date
 import javax.inject.Inject
 
@@ -21,7 +20,8 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 avatarResId = it.avatarRes,
                 activeDays = it.activeDaysList,
                 userName = it.name ?: "",
-                isPremium = it.isPremium
+                isPremium = it.isPremium,
+                isOnboarding = !it.isOnboarding
             )
         }
 
@@ -91,6 +91,14 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         userPreferences.updateData { prefs ->
             prefs.toBuilder()
                 .setAvatarRes(avatarResId)
+                .build()
+        }
+    }
+
+    suspend fun finishOnboarding() {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setIsOnboarding(true)
                 .build()
         }
     }

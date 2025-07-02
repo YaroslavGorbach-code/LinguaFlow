@@ -10,6 +10,7 @@ data class UserData(
     val activeDays: List<Long> = emptyList(),
     val avatarResId: Int? = null,
     val isPremium: Boolean = false,
+    val isOnboarding: Boolean = false,
 )
 
 fun UserData.asDomainModel() = DomainUserData(
@@ -19,5 +20,6 @@ fun UserData.asDomainModel() = DomainUserData(
     experience = this.experience,
     activeDays = this.activeDays,
     avatarResId = if (this.avatarResId == 0) null else this.avatarResId,
-    isPremium = this.isPremium
+    isPremium = this.isPremium,
+    isOnboarding = this.isOnboarding
 )

@@ -32,6 +32,7 @@ import com.example.yaroslavhorach.linguaflow.navigation.TopLevelDestination
 
 @Composable
 fun LingoApp(
+    isOnboarding: Boolean,
     appState: LingoAppState = rememberLingoAppState(),
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
@@ -65,7 +66,8 @@ fun LingoApp(
                     ),
             ) {
                 LingoNavHost(
-                    appState.navController,
+                    navController = appState.navController,
+                    isOnboarding = isOnboarding,
                     onChangeColorScheme = onChangeColorScheme
                 )
             }

@@ -7,6 +7,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.example.yaroslavhorach.avatar_change.navigation.avatarChangeScreen
 import com.example.yaroslavhorach.avatar_change.navigation.navigateToAvatarChange
+import com.example.yaroslavhorach.designsystem.screens.onboarding.navigation.OnboardingRoute
+import com.example.yaroslavhorach.designsystem.screens.onboarding.navigation.onboardingScreen
 import com.example.yaroslavhorach.designsystem.screens.premium.navigation.navigateToPremium
 import com.example.yaroslavhorach.designsystem.screens.premium.navigation.premiumScreen
 import com.example.yaroslavhorach.designsystem.screens.premium_success.navigation.navigateToPremiumSuccess
@@ -26,18 +28,19 @@ import com.example.yaroslavhorach.games.words_game.navigation.wordsGameScreen
 import com.example.yaroslavhorach.home.navigation.HomeRoute
 import com.example.yaroslavhorach.home.navigation.gamesScreen
 import com.example.yaroslavhorach.home.navigation.homeScreen
+import com.example.yaroslavhorach.home.navigation.navigateToHome
 import com.example.yaroslavhorach.profile.navigation.profileScreen
 
 @Composable
 fun LingoNavHost(
+    isOnboarding: Boolean,
     navController: NavHostController,
     modifier: Modifier = Modifier,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
-
     NavHost(
         navController = navController,
-        startDestination = HomeRoute,
+        startDestination = if (isOnboarding) OnboardingRoute else HomeRoute,
         modifier = modifier,
     ) {
         profileScreen(onNavigateToAvatarChange = {
@@ -45,6 +48,10 @@ fun LingoNavHost(
         }, onNavigateToPremium = {
             navController.navigateToPremium()
         })
+
+        onboardingScreen {
+            navController.navigateToAvatarChange()
+        }
 
         homeScreen(onNavigateToExercise = { exercise ->
             when (exercise.skill) {
@@ -146,6 +153,8 @@ fun LingoNavHost(
             navController.popBackStack()
         }, navigateToPremium = {
             navController.navigateToPremium()
+        }, navigateHome = {
+            navController.navigateToHome()
         })
     }
 }
