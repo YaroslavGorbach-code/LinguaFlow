@@ -4,8 +4,8 @@ import com.example.yaroslavhorach.designsystem.R
 
 object LinguaIcons {
     val Home = R.drawable.ic_home
-    val Calendar = Home
-    val User = Home
+    val Game = R.drawable.ic_gamepad
+    val Profile = R.drawable.ic_profile
     val Cup = R.drawable.ic_cup
     val Fire = R.drawable.ic_fire
     val FireBurning = R.drawable.ic_fire_burning

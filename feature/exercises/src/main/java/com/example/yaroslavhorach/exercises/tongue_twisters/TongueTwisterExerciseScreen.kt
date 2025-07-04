@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -107,7 +108,6 @@ internal fun TongueTwisterExerciseScreen(
     }
 }
 
-
 @Composable
 private fun TopBar(screenState: TongueTwisterExerciseViewState, actioner: (TongueTwisterExerciseAction) -> Unit) {
     Box(
@@ -189,7 +189,8 @@ private fun TwisterContent(
                 )
                 Spacer(Modifier.height(10.dp))
                 Text(
-                    state.description.asString(),
+                    modifier = Modifier.defaultMinSize(minHeight = 100.dp),
+                    text = state.description.asString(),
                     style = LinguaTypography.body3,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )

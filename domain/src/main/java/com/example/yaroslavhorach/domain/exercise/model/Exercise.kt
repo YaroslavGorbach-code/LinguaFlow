@@ -11,7 +11,8 @@ data class Exercise(
     val skill: Skill,
     val block: ExerciseBlock,
     val isEnable: Boolean = true,
-    val isLastActive: Boolean = false
+    val isLastActive: Boolean = false,
+    val isVisible: Boolean = true
 ){
     private val currentLang = Locale.getDefault().language
 

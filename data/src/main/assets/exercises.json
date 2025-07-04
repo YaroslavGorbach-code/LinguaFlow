@@ -1,5 +1,105 @@
 [
   {
+    "id": 1001,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 1001,
+      "progress": 1,
+      "maxProgress": 1
+    },
+    "name": "TONGUE_TWISTERS_EASY",
+    "skill": "DICTION",
+    "block": "ONE",
+    "isEnable": false,
+    "isVisible": false,
+    "isLastActive": false
+  },
+
+  {
+    "id": 1002,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 1002,
+      "progress": 1,
+      "maxProgress": 1
+    },
+    "name": "TONGUE_TWISTERS_MEDIUM",
+    "skill": "DICTION",
+    "block": "ONE",
+    "isEnable": false,
+    "isVisible": false,
+    "isLastActive": false
+  },
+
+  {
+    "id": 1003,
+    "nameString": {
+      "ua": "Скоромовки: Легкий рівень",
+      "en": "Tongue Twisters: Easy",
+      "ru": "Скороговорки: Легкий уровень"
+    },
+    "description": {
+      "ua": "Тренуй чітку вимову та впевнене мовлення з легкими скоромовками",
+      "en": "Practice simple tongue twisters to improve your pronunciation and fluency",
+      "ru": "Практикуй простые скороговорки, чтобы улучшить произношение и беглость"
+    },
+    "exerciseProgress": {
+      "exerciseId": 1003,
+      "progress": 1,
+      "maxProgress": 1
+    },
+    "name": "TONGUE_TWISTERS_HARD",
+    "skill": "DICTION",
+    "block": "ONE",
+    "isEnable": false,
+    "isVisible": false,
+    "isLastActive": false
+  },
+
+  {
+    "id": 1004,
+    "nameString": {
+      "ua": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "ua": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 1004,
+      "progress": 1,
+      "maxProgress": 1
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "ONE",
+    "isEnable": false,
+    "isVisible": false,
+    "isLastActive": false
+  },
+
+  {
     "id": 1,
     "nameString": {
       "ua": "Айсбрейкери",
@@ -20,6 +120,7 @@
     "skill": "COMMUNICATION",
     "block": "ONE",
     "isEnable": true,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -43,6 +144,7 @@
     "skill": "COMMUNICATION",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -66,6 +168,7 @@
     "skill": "DICTION",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -89,6 +192,7 @@
     "skill": "VOCABULARY",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -112,6 +216,7 @@
     "skill": "COMMUNICATION",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -135,6 +240,7 @@
     "skill": "COMMUNICATION",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -158,6 +264,7 @@
     "skill": "DICTION",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -181,6 +288,7 @@
     "skill": "VOCABULARY",
     "block": "ONE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -204,6 +312,7 @@
     "skill": "COMMUNICATION",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -227,6 +336,7 @@
     "skill": "COMMUNICATION",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -250,6 +360,7 @@
     "skill": "DICTION",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -273,6 +384,7 @@
     "skill": "VOCABULARY",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -296,6 +408,7 @@
     "skill": "COMMUNICATION",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -319,6 +432,7 @@
     "skill": "COMMUNICATION",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -342,6 +456,7 @@
     "skill": "DICTION",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -365,6 +480,7 @@
     "skill": "VOCABULARY",
     "block": "TWO",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -388,6 +504,7 @@
     "skill": "COMMUNICATION",
     "block": "THREE",
     "isEnable": true,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -411,6 +528,7 @@
     "skill": "COMMUNICATION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -434,6 +552,7 @@
     "skill": "DICTION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -457,6 +576,7 @@
     "skill": "VOCABULARY",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -480,6 +600,7 @@
     "skill": "COMMUNICATION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -503,6 +624,7 @@
     "skill": "COMMUNICATION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -526,6 +648,7 @@
     "skill": "DICTION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -549,6 +672,7 @@
     "skill": "VOCABULARY",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -572,6 +696,7 @@
     "skill": "COMMUNICATION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -595,6 +720,7 @@
     "skill": "COMMUNICATION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -618,6 +744,7 @@
     "skill": "DICTION",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -641,6 +768,7 @@
     "skill": "VOCABULARY",
     "block": "THREE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -664,6 +792,7 @@
     "skill": "COMMUNICATION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -687,6 +816,7 @@
     "skill": "COMMUNICATION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -710,6 +840,7 @@
     "skill": "DICTION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -733,6 +864,7 @@
     "skill": "VOCABULARY",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -756,6 +888,7 @@
     "skill": "COMMUNICATION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -779,6 +912,7 @@
     "skill": "COMMUNICATION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -802,6 +936,7 @@
     "skill": "COMMUNICATION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -825,6 +960,7 @@
     "skill": "DICTION",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -848,6 +984,7 @@
     "skill": "VOCABULARY",
     "block": "FOUR",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -871,6 +1008,7 @@
     "skill": "COMMUNICATION",
     "block": "FIVE",
     "isEnable": true,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -894,6 +1032,7 @@
     "skill": "COMMUNICATION",
     "block": "FIVE",
     "isEnable": true,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -917,6 +1056,7 @@
     "skill": "DICTION",
     "block": "FIVE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   },
   {
@@ -940,6 +1080,7 @@
     "skill": "VOCABULARY",
     "block": "FIVE",
     "isEnable": false,
+    "isVisible": true,
     "isLastActive": false
   }
 ]

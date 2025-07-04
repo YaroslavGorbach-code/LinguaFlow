@@ -2,6 +2,7 @@ package com.example.yaroslavhorach.home
 
 import androidx.lifecycle.viewModelScope
 import com.example.yaroslavhorach.common.base.BaseViewModel
+import com.example.yaroslavhorach.common.utill.UiMessage
 import com.example.yaroslavhorach.common.utill.combine
 import com.example.yaroslavhorach.domain.game.GameRepository
 import com.example.yaroslavhorach.domain.game.model.Challenge
@@ -91,7 +92,26 @@ class GamesViewModel @Inject constructor(
                     }
                     is GamesAction.OnStartGameClicked -> {
                         if (event.useToken) {
+                            if ((state.value.availableTokens > 0)){
+                                uiMessageManager.emitMessage(
+                                    UiMessage(
+                                        GamesUiMessage.NavigateToExercise(
+                                            event.gameUi.game.id,
+                                            event.gameUi.game.name
+                                        )
+                                    )
+                                )
+                            }
                             prefsRepository.useToken()
+                        } else {
+                            uiMessageManager.emitMessage(
+                                UiMessage(
+                                    GamesUiMessage.NavigateToExercise(
+                                        event.gameUi.game.id,
+                                        event.gameUi.game.name
+                                    )
+                                )
+                            )
                         }
                     }
                     is GamesAction.OnSortSelected -> {

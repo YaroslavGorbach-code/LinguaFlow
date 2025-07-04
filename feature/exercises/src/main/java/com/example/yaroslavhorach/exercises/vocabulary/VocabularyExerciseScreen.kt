@@ -368,7 +368,7 @@ private fun BoxScope.BadResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = stringResource(R.string.vocabulary_exercise_result_title_text) + message.amountWords,
+                    text = stringResource(R.string.vocabulary_exercise_result_title_text) +" " + message.amountWords,
                     style = LinguaTypography.h4,
                     color = Color.White
                 )
@@ -437,7 +437,7 @@ private fun BoxScope.GoodResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = stringResource(R.string.voacabulary_exercise_result_title_text) + message.amountWords,
+                    text = stringResource(R.string.vocabulary_exercise_result_title_text) + " " + message.amountWords,
                     style = LinguaTypography.h4,
                     color = Color.White
                 )
@@ -506,7 +506,7 @@ private fun BoxScope.NotBadResult(
             ) {
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = stringResource(R.string.voacabulary_exercise_result_title_text) + message.amountWords,
+                    text = stringResource(R.string.vocabulary_exercise_result_title_text) + " " + message.amountWords,
                     style = LinguaTypography.h4,
                     color = Color.White
                 )

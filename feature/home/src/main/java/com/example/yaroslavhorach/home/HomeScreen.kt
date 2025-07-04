@@ -1,5 +1,6 @@
 package com.example.yaroslavhorach.home
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode
@@ -8,6 +9,7 @@ import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -116,9 +118,11 @@ internal fun HomeRoute(
                     viewModel.submitAction(HomeAction.OnHideDescription)
                     onNavigateToExercise(action.exercise)
                 }
+
                 is HomeAction.OnAvatarClicked -> {
                     onNavigateToAvatarChange()
                 }
+
                 else -> viewModel.submitAction(action)
             }
         })
@@ -167,12 +171,24 @@ internal fun HomeScreen(
                 }
             }
     ) {
-        Column {
-            TopBar(screenState, modifier = Modifier.onGloballyPositioned {
-                descriptionBlockBounds.value = it.boundsInRoot().roundToIntRect()
-            }, actioner)
-            Spacer(Modifier.height(animatedTopPadding))
-            Exercises(exercisesState, screenState, actioner, density)
+
+        val visible = remember { mutableStateOf(false) }
+
+        LaunchedEffect(Unit) {
+            visible.value = true
+        }
+
+        AnimatedVisibility(
+            visible = visible.value,
+            enter = fadeIn(animationSpec = tween(300))
+        ) {
+            Column {
+                TopBar(screenState, modifier = Modifier.onGloballyPositioned {
+                    descriptionBlockBounds.value = it.boundsInRoot().roundToIntRect()
+                }, actioner)
+                Spacer(Modifier.height(animatedTopPadding))
+                Exercises(exercisesState, screenState, actioner, density)
+            }
         }
 
         DescriptionTooltip(
@@ -194,6 +210,16 @@ private fun Exercises(
     actioner: (HomeAction) -> Unit,
     density: Density
 ) {
+    val lastActiveIndex = remember(screenState.exercises) {
+        screenState.exercises.indexOfFirst { it.isLastActive }
+    }
+
+    LaunchedEffect(lastActiveIndex) {
+        if (lastActiveIndex > 1) {
+            exercisesState.scrollToItem(lastActiveIndex)
+        }
+    }
+
     LazyColumn(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -224,7 +250,9 @@ private fun Exercises(
                                 HomeAction.OnExerciseClicked(
                                     exercise,
                                     offset.copy(
-                                        y = offset.y - with(density) { screenState.descriptionState.listTopExtraPadding.toPx() }
+                                        y = offset.y - with(density) {
+                                            screenState.descriptionState.listTopExtraPadding.toPx()
+                                        }
                                     )
                                 )
                             )
@@ -324,6 +352,7 @@ private fun HandleOnScrollBlockChange(
 
 @Composable
 private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeAction) -> Unit) {
+
     BoxWithStripes(
         shape = RoundedCornerShape(bottomEnd = 0.dp, bottomStart = 0.dp),
         rawShadowYOffset = 0.dp,
@@ -374,7 +403,7 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                     )
                 }
                 Spacer(Modifier.height(14.dp))
-            } else{
+            } else {
                 Spacer(Modifier.height(20.dp))
             }
         }
@@ -511,9 +540,10 @@ private fun DescriptionTooltip(
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(16.dp))
-                val startBtnText = if(exercise.isFinished) stringResource(R.string.home_repeat_exercise_btn_text) else stringResource(
-                    R.string.home_start_exercise_btn_text
-                )
+                val startBtnText =
+                    if (exercise.isFinished) stringResource(R.string.home_repeat_exercise_btn_text) else stringResource(
+                        R.string.home_start_exercise_btn_text
+                    )
                 SecondaryButton(text = startBtnText, onClick = {
                     onStartExerciseClicked(exercise)
                 })

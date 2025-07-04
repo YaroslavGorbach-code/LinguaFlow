@@ -32,7 +32,9 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -43,6 +45,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
@@ -121,69 +124,74 @@ internal fun SpeakingExerciseScreen(
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.background, RoundedCornerShape(16.dp))
         ) {
-             when (val mode = screenState.mode) {
-                    is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
-                        AnimatedContent(
-                            targetState = mode.test.id,
-                            transitionSpec = {
-                                slideInHorizontally(
-                                    initialOffsetX = { fullWidth -> fullWidth },
-                                    animationSpec = tween(durationMillis = 500)
-                                ) togetherWith slideOutHorizontally(
-                                    targetOffsetX = { fullWidth -> -fullWidth },
-                                    animationSpec = tween(durationMillis = 500)
-                                )
-                            },
-                            label = "ScreenContentAnimation"
-                        ) {
-                            TestContent(mode, actioner)
-                        }
+            when (val mode = screenState.mode) {
+                is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
+                    AnimatedContent(
+                        targetState = mode.test.id,
+                        transitionSpec = {
+                            slideInHorizontally(
+                                initialOffsetX = { fullWidth -> fullWidth },
+                                animationSpec = tween(durationMillis = 500)
+                            ) togetherWith slideOutHorizontally(
+                                targetOffsetX = { fullWidth -> -fullWidth },
+                                animationSpec = tween(durationMillis = 500)
+                            )
+                        },
+                        label = "ScreenContentAnimation"
+                    ) {
+                        TestContent(mode, actioner)
                     }
-                    is SpeakingExerciseViewState.ScreenMode.Speaking -> {
-                        AnimatedContent(
-                            targetState = mode.situation.id,
-                            transitionSpec = {
-                                slideInHorizontally(
-                                    initialOffsetX = { fullWidth -> fullWidth },
-                                    animationSpec = tween(durationMillis = 500)
-                                ) togetherWith slideOutHorizontally(
-                                    targetOffsetX = { fullWidth -> -fullWidth },
-                                    animationSpec = tween(durationMillis = 500)
-                                )
-                            },
-                            label = "ScreenContentAnimation"
-                        ) {
-                            SpeakingContent(screenState.userAvatarRes, screenState.btnTooltipText, mode, actioner)
-                            SpeakingResult(state = mode, actioner)
-                        }
-                    }
-                    null -> {}
                 }
-                screenState.uiMessage?.let { uiMessage ->
-                    when (val message = uiMessage.message) {
-                        is SpeakingExerciseUiMessage.RequestRecordAudio -> {
-                            permissionManager.AskPermission(Manifest.permission.RECORD_AUDIO) { isGranted ->
-                                if (isGranted) {
-                                    actioner(SpeakingExerciseAction.OnStartSpikingClicked)
-                                }
+
+                is SpeakingExerciseViewState.ScreenMode.Speaking -> {
+                    AnimatedContent(
+                        targetState = mode.situation.id,
+                        transitionSpec = {
+                            slideInHorizontally(
+                                initialOffsetX = { fullWidth -> fullWidth },
+                                animationSpec = tween(durationMillis = 500)
+                            ) togetherWith slideOutHorizontally(
+                                targetOffsetX = { fullWidth -> -fullWidth },
+                                animationSpec = tween(durationMillis = 500)
+                            )
+                        },
+                        label = "ScreenContentAnimation"
+                    ) {
+                        SpeakingContent(screenState.userAvatarRes, screenState.btnTooltipText, mode, actioner)
+                        SpeakingResult(state = mode, actioner)
+                    }
+                }
+
+                null -> {}
+            }
+            screenState.uiMessage?.let { uiMessage ->
+                when (val message = uiMessage.message) {
+                    is SpeakingExerciseUiMessage.RequestRecordAudio -> {
+                        permissionManager.AskPermission(Manifest.permission.RECORD_AUDIO) { isGranted ->
+                            if (isGranted) {
+                                actioner(SpeakingExerciseAction.OnStartSpikingClicked)
                             }
-                            onMessageShown(uiMessage.id)
                         }
-                        is SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation -> {
-                            CorrectTestAnswer(uiMessage, message, onMessageShown, actioner)
-                        }
-                        is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
-                            WrongTestAnswer(uiMessage, message, onMessageShown)
-                        }
-                        is SpeakingExerciseUiMessage.NavigateToExerciseResult -> {
-                            onNavigateToExerciseResult(message.time, message.experience)
-                            onMessageShown(uiMessage.id)
-                        }
+                        onMessageShown(uiMessage.id)
+                    }
+
+                    is SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation -> {
+                        CorrectTestAnswer(uiMessage, message, onMessageShown, actioner)
+                    }
+
+                    is SpeakingExerciseUiMessage.ShowWrongAnswerExplanation -> {
+                        WrongTestAnswer(uiMessage, message, onMessageShown)
+                    }
+
+                    is SpeakingExerciseUiMessage.NavigateToExerciseResult -> {
+                        onNavigateToExerciseResult(message.time, message.experience)
+                        onMessageShown(uiMessage.id)
                     }
                 }
             }
         }
     }
+}
 
 @Composable
 private fun TopBar(screenState: SpeakingExerciseViewState, actioner: (SpeakingExerciseAction) -> Unit) {
@@ -233,89 +241,79 @@ private fun SpeakingContent(
 ) {
     Column(
         modifier = Modifier
-            .padding(horizontal = 20.dp)
-            .padding(top = 24.dp)
             .fillMaxSize()
+            .padding(horizontal = 20.dp, vertical = 24.dp)
     ) {
-        Text(
-            stringResource(R.string.speaking_exercise_situation_title_text),
-            style = LinguaTypography.h5,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.height(10.dp))
-        Text(
-            speakingMode.situation.situationText ?: "",
-            style = LinguaTypography.body3,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.height(24.dp))
-        Text(
-            stringResource(R.string.speaking_exercise_task_title_text),
-            style = LinguaTypography.h5,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.height(10.dp))
-        Text(
-            speakingMode.situation.taskText,
-            style = LinguaTypography.body3,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.Companion.weight(0.7f))
         Column(
             modifier = Modifier
-                .border(
-                    1.5.dp,
-                    color = MaterialTheme.colorScheme.onBackgroundDark(),
-                    shape = RoundedCornerShape(16.dp)
-                )
-                .fillMaxWidth()
-                .align(Alignment.CenterHorizontally)
+                .weight(1f)
+                .verticalScroll(rememberScrollState())
         ) {
-            if (avatarRes != null) {
-                Spacer(Modifier.height(20.dp))
-                Image(
+            Task(speakingMode)
+            Spacer(Modifier.height(40.dp))
+
+            Column(
+                modifier = Modifier
+                    .border(
+                        1.5.dp,
+                        color = MaterialTheme.colorScheme.onBackgroundDark(),
+                        shape = RoundedCornerShape(16.dp)
+                    )
+                    .fillMaxWidth()
+                    .align(Alignment.CenterHorizontally)
+            ) {
+                if (avatarRes != null) {
+                    Spacer(Modifier.height(20.dp))
+                    Image(
+                        modifier = Modifier
+                            .align(Alignment.CenterHorizontally)
+                            .size(90.dp),
+                        painter = painterResource(avatarRes),
+                        contentDescription = null,
+                        contentScale = ContentScale.Crop,
+                    )
+                    Spacer(Modifier.height(20.dp))
+                }
+
+                RealtimeWaveform(
+                    speakingMode.amplitude ?: 0,
+                    speakingMode.isSpeaking,
                     modifier = Modifier
                         .align(Alignment.CenterHorizontally)
-                        .size(90.dp),
-                    painter = painterResource(avatarRes),
-                    contentDescription = null,
-                    contentScale = ContentScale.Crop,
+                        .padding(horizontal = 40.dp)
+                        .fillMaxWidth()
+                        .height(60.dp)
                 )
                 Spacer(Modifier.height(20.dp))
             }
-            RealtimeWaveform(
-                speakingMode.amplitude ?: 0,
-                speakingMode.isSpeaking,
-                modifier = Modifier.Companion
-                    .align(Alignment.CenterHorizontally)
-                    .padding(horizontal = 40.dp)
-                    .fillMaxWidth()
-                    .height(60.dp)
-            )
-            Spacer(Modifier.height(20.dp))
+
+            Spacer(Modifier.height(40.dp))
         }
-        Spacer(Modifier.Companion.weight(1f))
+
         if (speakingMode.isRecording) {
-            if (speakingMode.isStopRecordingBtnVisible){
+            if (speakingMode.isStopRecordingBtnVisible) {
                 TextButton(
                     textColor = MaterialTheme.colorScheme.typoDisabled(),
                     text = stringResource(R.string.speaking_exercise_stop_speaking_btn_text),
                     onClick = {
-                    actioner(SpeakingExerciseAction.OnStopSpeakingClicked)
-                })
+                        actioner(SpeakingExerciseAction.OnStopSpeakingClicked)
+                    }
+                )
                 Spacer(Modifier.height(16.dp))
             }
 
             if (speakingMode.secondsTillFinish > 0) {
-                InactiveButton(text = stringResource(
-                    R.string.speaking_exercise_finish_btn_format,
-                    speakingMode.secondsTillFinish
-                ))
+                InactiveButton(
+                    text = stringResource(
+                        R.string.speaking_exercise_finish_btn_format,
+                        speakingMode.secondsTillFinish
+                    )
+                )
             } else {
                 InactiveButton(text = stringResource(R.string.speaking_exercise_in_progress_btn_text))
             }
         } else {
-            if (tooltipText.asString().isEmpty().not()) {
+            if (tooltipText.asString().isNotEmpty()) {
                 StaticTooltip(
                     enableFloatAnimation = true,
                     backgroundColor = MaterialTheme.colorScheme.background,
@@ -334,13 +332,42 @@ private fun SpeakingContent(
                 }
             }
             Spacer(Modifier.height(16.dp))
-            PrimaryButton(text = stringResource(R.string.speaking_exercise_start_btn_text)) {
+            PrimaryButton(
+                text = stringResource(R.string.speaking_exercise_start_btn_text)
+            ) {
                 actioner(SpeakingExerciseAction.OnStartSpikingClicked)
             }
         }
-        // TODO: INsets?
-        Spacer(Modifier.padding(20.dp))
+
+        Spacer(Modifier.height(20.dp))
     }
+}
+
+@Composable
+private fun Task(speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking) {
+    Text(
+        stringResource(R.string.speaking_exercise_situation_title_text),
+        style = LinguaTypography.h5,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(10.dp))
+    Text(
+        speakingMode.situation.situationText,
+        style = LinguaTypography.body3,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(24.dp))
+    Text(
+        stringResource(R.string.speaking_exercise_task_title_text),
+        style = LinguaTypography.h5,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
+    Spacer(Modifier.height(10.dp))
+    Text(
+        speakingMode.situation.taskText,
+        style = LinguaTypography.body3,
+        color = MaterialTheme.colorScheme.typoPrimary()
+    )
 }
 
 @Composable
@@ -354,40 +381,45 @@ private fun TestContent(
             .padding(top = 24.dp)
             .fillMaxSize()
     ) {
-        Text(
-            stringResource(R.string.speaking_exercise_test_situation_title_text),
-            style = LinguaTypography.h5,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.height(10.dp))
-        Text(
-            testMode.test.situationText ?: "",
-            style = LinguaTypography.body3,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.height(24.dp))
-        Text(
-            stringResource(R.string.speaking_exercise_test_task_title_text),
-            style = LinguaTypography.h5,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.height(10.dp))
-        Text(
-            testMode.test.taskText,
-            style = LinguaTypography.body3,
-            color = MaterialTheme.colorScheme.typoPrimary()
-        )
-        Spacer(Modifier.weight(1f))
-        LazyColumn(
-            Modifier
-                .fillMaxWidth()
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .verticalScroll(rememberScrollState())
         ) {
-            itemsIndexed(testMode.test.variants) { index, variant ->
+            Text(
+                stringResource(R.string.speaking_exercise_test_situation_title_text),
+                style = LinguaTypography.h5,
+                color = MaterialTheme.colorScheme.typoPrimary()
+            )
+            Spacer(Modifier.height(10.dp))
+            Text(
+                testMode.test.situationText,
+                style = LinguaTypography.body3,
+                color = MaterialTheme.colorScheme.typoPrimary()
+            )
+            Spacer(Modifier.height(24.dp))
+            Text(
+                stringResource(R.string.speaking_exercise_test_task_title_text),
+                style = LinguaTypography.h5,
+                color = MaterialTheme.colorScheme.typoPrimary()
+            )
+            Spacer(Modifier.height(10.dp))
+            Text(
+                testMode.test.taskText,
+                style = LinguaTypography.body3,
+                color = MaterialTheme.colorScheme.typoPrimary()
+            )
+            Spacer(Modifier.height(20.dp))
+            Spacer(Modifier.weight(1f))
+
+            testMode.test.variants.forEachIndexed { index, variant ->
                 if (index > 0) Spacer(Modifier.height(20.dp))
 
                 Text(
                     modifier = Modifier
                         .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp))
+                        .clickable { actioner(SpeakingExerciseAction.OnVariantChosen(variant)) }
                         .border(
                             1.5.dp, if (variant == testMode.chosenVariant) {
                                 KellyGreen
@@ -395,15 +427,16 @@ private fun TestContent(
                                 MaterialTheme.colorScheme.onBackgroundDark()
                             }, RoundedCornerShape(12.dp)
                         )
-                        .padding(16.dp)
-                        .clickable { actioner(SpeakingExerciseAction.OnVariantChosen(variant)) },
+                        .padding(16.dp),
                     text = variant.variantText,
                     color = MaterialTheme.colorScheme.typoPrimary(),
                     style = LinguaTypography.subtitle3
                 )
             }
+
+            Spacer(Modifier.height(20.dp))
+            Spacer(Modifier.weight(1f))
         }
-        Spacer(Modifier.weight(1f))
         if (testMode.chosenVariant != null) {
             PrimaryButton(text = stringResource(R.string.speaking_exercise_test_check_btn_text)) {
                 actioner(SpeakingExerciseAction.OnCheckTestVariantClicked)
@@ -468,7 +501,10 @@ private fun BoxScope.WrongTestAnswer(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = stringResource(R.string.speaking_exercise_test_try_again_btn_text), textColor = Red) {
+                SecondaryButton(
+                    text = stringResource(R.string.speaking_exercise_test_try_again_btn_text),
+                    textColor = Red
+                ) {
                     isVisible.value = false
 
                     onMessageShown(uiMessage.id)
@@ -531,7 +567,10 @@ private fun BoxScope.CorrectTestAnswer(
                     color = Color.White
                 )
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = stringResource(R.string.speaking_exercise_next_btn_text), textColor = KellyGreen) {
+                SecondaryButton(
+                    text = stringResource(R.string.speaking_exercise_next_btn_text),
+                    textColor = KellyGreen
+                ) {
                     isVisible.value = false
                     onMessageShown(uiMessage.id)
                     actioner(SpeakingExerciseAction.OnNextTestClicked)
@@ -593,11 +632,17 @@ private fun BoxScope.SpeakingResult(
                 Spacer(Modifier.height(20.dp))
                 Player(state, actioner)
                 Spacer(Modifier.height(18.dp))
-                TextButton(text = stringResource(R.string.speaking_exercise_success_dialog_secondary_btn_text), textColor = Color.White, onClick = {
-                    actioner(SpeakingExerciseAction.OnTryAgainSituationClicked)
-                })
+                TextButton(
+                    text = stringResource(R.string.speaking_exercise_success_dialog_secondary_btn_text),
+                    textColor = Color.White,
+                    onClick = {
+                        actioner(SpeakingExerciseAction.OnTryAgainSituationClicked)
+                    })
                 Spacer(Modifier.height(20.dp))
-                SecondaryButton(text = stringResource(R.string.speaking_exercise_success_dialog_primary_btn_text), textColor = KellyGreen) {
+                SecondaryButton(
+                    text = stringResource(R.string.speaking_exercise_success_dialog_primary_btn_text),
+                    textColor = KellyGreen
+                ) {
                     actioner(SpeakingExerciseAction.OnNextSituationClicked)
                 }
                 Spacer(Modifier.height(16.dp))
@@ -687,7 +732,7 @@ private fun SpeakingExercisePreview() {
                     SpeakingExerciseViewState.PreviewSpeaking,
                     PermissionManager(LocalContext.current),
                     {},
-                    {_, _ ->},
+                    { _, _ -> },
                     {})
             }
         }
@@ -704,7 +749,7 @@ private fun TestsExercisePreview() {
                     SpeakingExerciseViewState.PreviewTest,
                     PermissionManager(LocalContext.current),
                     {},
-                    {_, _ ->},
+                    { _, _ -> },
                     {})
             }
         }

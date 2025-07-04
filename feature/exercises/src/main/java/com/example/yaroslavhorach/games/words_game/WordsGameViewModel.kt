@@ -10,6 +10,8 @@ import com.example.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.example.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.example.yaroslavhorach.domain.game.GameRepository
 import com.example.yaroslavhorach.domain.game.model.Game
+import com.example.yaroslavhorach.exercises.speaking.SpeakingExerciseViewModel.Companion.EXPERIENCE_REWARD
+import com.example.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.example.yaroslavhorach.games.words_game.model.WordsGameAction
 import com.example.yaroslavhorach.games.words_game.model.WordsGameUiMessage
 import com.example.yaroslavhorach.games.words_game.model.WordsGameViewState
@@ -24,6 +26,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlin.math.roundToInt
 
 @HiltViewModel
 class WordsGameViewModel @Inject constructor(
@@ -120,12 +123,21 @@ class WordsGameViewModel @Inject constructor(
                                 game.value?.skills ?: emptyList(),
                                 timer.getElapsedTimeMillis()
                             )
+                            val elapsedTime = timer.getElapsedTimeMillis()
+                            val requiredTime = 2 * 60 * 1000L
+
+                            val experience = if (elapsedTime >= requiredTime) {
+                                EXPERIENCE_REWARD
+                            } else {
+                                val proportional = (EXPERIENCE_REWARD * elapsedTime.toDouble() / requiredTime)
+                                proportional.roundToInt()
+                            }
 
                             uiMessageManager.emitMessage(
                                 UiMessage(
                                     WordsGameUiMessage.NavigateToExerciseResult(
-                                        timer.getElapsedTimeMillis(),
-                                        EXPERIENCE_REWORD
+                                        time = timer.getElapsedTimeMillis(),
+                                        experience = experience
                                     )
                                 )
                             )

@@ -1,6 +1,5 @@
 package com.example.yaroslavhorach.home
 
-import android.app.GameState
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.expandVertically
@@ -64,6 +63,7 @@ import com.example.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.example.yaroslavhorach.designsystem.theme.White
 import com.example.yaroslavhorach.designsystem.theme.White_40
 import com.example.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.example.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.example.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.example.yaroslavhorach.designsystem.theme.components.PremiumButton
@@ -79,6 +79,7 @@ import com.example.yaroslavhorach.domain.game.model.Game
 import com.example.yaroslavhorach.games.R
 import com.example.yaroslavhorach.home.model.GameUi
 import com.example.yaroslavhorach.home.model.GamesAction
+import com.example.yaroslavhorach.home.model.GamesUiMessage
 import com.example.yaroslavhorach.home.model.GamesViewState
 import com.example.yaroslavhorach.home.model.getText
 import com.example.yaroslavhorach.ui.SpeakingLevel
@@ -97,16 +98,21 @@ internal fun GamesRoute(
             onMessageShown = viewModel::clearMessage,
             actioner = { action ->
                 when (action) {
-                    is GamesAction.OnStartGameClicked -> {
-                        onNavigateToGame(action.gameUi.game.id, action.gameUi.game.name)
-                        viewModel.submitAction(action)
-                    }
                     is GamesAction.OnPremiumBtnClicked -> {
                         onNavigateToPremium()
                     }
                     else -> viewModel.submitAction(action)
                 }
             })
+    }
+
+    homeState.uiMessage?.let { uiMessage ->
+        when (val message = uiMessage.message) {
+            is GamesUiMessage.NavigateToExercise -> {
+                onNavigateToGame(message.gameId, message.gameName)
+                viewModel.clearMessage(uiMessage.id)
+            }
+        }
     }
 }
 
@@ -207,7 +213,7 @@ private fun TopBar(screenState: GamesViewState, listState: LazyListState, action
                     Text(
                         text = stringResource(R.string.games_title_text),
                         color = MaterialTheme.colorScheme.typoPrimary(),
-                        style = LinguaTypography.h2
+                        style = LinguaTypography.h3
                     )
                     Spacer(Modifier.height(8.dp))
                     Text(
@@ -359,7 +365,7 @@ private fun ChallengeStarted(
     ) {
         Text(
             modifier = Modifier.align(Alignment.Center),
-            text = challenge.progressInMinutes.toString() + stringResource(R.string.minute_short_text),
+            text = challenge.progressInMinutes.toString() + " "+  stringResource(R.string.minute_short_text),
             color = White,
             textAlign = TextAlign.Center,
             style = LinguaTypography.body5
@@ -408,7 +414,11 @@ private fun ChallengeNotStarted(
     } else {
         stringResource(R.string.challenge_btn_start_with_tokens_text)
     }
-    PrimaryButton(text = startBtnText) { actioner(GamesAction.OnStartDailyChallengeClicked) }
+    if (state.availableTokens > 0) {
+        PrimaryButton(text = startBtnText) { actioner(GamesAction.OnStartDailyChallengeClicked) }
+    } else {
+        InactiveButton(text = startBtnText)
+    }
 }
 
 @Composable
@@ -451,7 +461,7 @@ private fun Game(
                     )
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = stringResource(R.string.game_item_skill_sufix_text) + game.skills.map { it.asString() }.joinToString(separator = ", "),
+                        text = stringResource(R.string.game_item_skill_sufix_text) + " " + game.skills.map { it.asString() }.joinToString(separator = ", "),
                         color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.body4
                     )
@@ -475,8 +485,11 @@ private fun ColumnScope.GameDescription(
     game: GameUi,
     actioner: (GamesAction) -> Unit
 ) {
-    val useToken = game.game.skills.contains(state.challenge?.theme).not()
-            && state.challenge?.status?.completed?.not() == true
+    val useToken = if (state.challenge?.status?.inProgress == true) {
+        state.isUserPremium.not() && (game.game.skills.contains(state.challenge.theme).not())
+    } else {
+        state.isUserPremium.not()
+    }
 
     AnimatedVisibility(
         visible = game.isDescriptionVisible,
@@ -553,16 +566,19 @@ private fun GameDescriptionEnable(
         )
         Spacer(Modifier.height(20.dp))
 
-        val useToken = (game.game.skills.contains(state.challenge?.theme).not()
-                && state.challenge?.status?.completed?.not() == true)
-                && state.challenge.status.started
-                && state.isUserPremium.not()
+        val useToken = if (state.challenge?.status?.inProgress == true) {
+            state.isUserPremium.not() && (game.game.skills.contains(state.challenge.theme).not())
+        } else {
+            state.isUserPremium.not()
+        }
 
         val btnText = if (useToken) {
             stringResource(R.string.game_description_start_btn_text)
         } else {
             stringResource(R.string.game_desctiption_start_with_no_tokens_btn_text)
         }
+
+
         PrimaryButton(text = btnText) {
             actioner(GamesAction.OnStartGameClicked(game, useToken))
         }

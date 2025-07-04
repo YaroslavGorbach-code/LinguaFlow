@@ -102,16 +102,16 @@ fun LingoNavHost(
                         navController.navigateToWordsGame(id)
                     }
                     Game.GameName.WORD_IN_TEMPO -> {
-                        navController.navigateToVocabularyExercise(4)
+                        navController.navigateToVocabularyExercise(1004)
                     }
                     Game.GameName.TONGUE_TWISTER_EASY -> {
-                        navController.navigateToTongueTwistersExercise(3)
+                        navController.navigateToTongueTwistersExercise(1001)
                     }
                     Game.GameName.TONGUE_TWISTER_MEDIUM -> {
-                        navController.navigateToTongueTwistersExercise(20)
+                        navController.navigateToTongueTwistersExercise(1002)
                     }
                     Game.GameName.TONGUE_TWISTER_HARD -> {
-                        navController.navigateToTongueTwistersExercise(37)
+                        navController.navigateToTongueTwistersExercise(1003)
                     }
                 }
             }, onNavigateToPremium = {

@@ -119,8 +119,7 @@ class SpeakingExerciseViewModel @Inject constructor(
 
         recorder.onStopRecordingFlow
             .onEach {
-                overAllProgress.value = overAllProgress.value.inc()
-                isSpeakingResulVisible.value = true
+
             }
             .launchIn(viewModelScope)
 
@@ -158,6 +157,7 @@ class SpeakingExerciseViewModel @Inject constructor(
                     }
                     is SpeakingExerciseAction.OnStopSpeakingClicked -> {
                        viewModelScope.launch { recorder.stopRecording() }
+                        isSpeakingResulVisible.value = true
                     }
                     else -> error("Action $event is not handled")
                 }
@@ -166,6 +166,8 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     private suspend fun handleNextSituation() {
+        overAllProgress.value = overAllProgress.value.inc()
+
         if (overAllProgress.value == overAllMaxProgress.value) {
             exerciseRepository.markCompleted(exerciseId)
             timer.stop()

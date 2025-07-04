@@ -20,8 +20,8 @@ enum class TopLevelDestination(
     val route: KClass<*>
 ) {
     Home(LinguaIcons.Home, R.string.nav_bar_home_title, HomeRoute::class),
-    Games(LinguaIcons.Calendar, R.string.nav_bar_calendar_title, GamesRoute::class),
-    Profile(LinguaIcons.User, R.string.nav_bar_profile_title, ProfileRoute::class);
+    Games(LinguaIcons.Game, R.string.nav_bar_calendar_title, GamesRoute::class),
+    Profile(LinguaIcons.Profile, R.string.nav_bar_profile_title, ProfileRoute::class);
 
     @Composable
     fun getUnselectedIconColor(): Color = MaterialTheme.colorScheme.secondaryIcon()

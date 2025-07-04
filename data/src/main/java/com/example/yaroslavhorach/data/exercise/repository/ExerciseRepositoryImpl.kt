@@ -1,6 +1,7 @@
 package com.example.yaroslavhorach.data.exercise.repository
 
 import android.content.Context
+import androidx.compose.ui.util.fastFilter
 import com.example.yaroslavhorach.common.utill.loadJsonFromAssets
 import com.example.yaroslavhorach.database.dao.ExerciseProgressDao
 import com.example.yaroslavhorach.database.task.model.asDomainModel
@@ -30,7 +31,7 @@ class ExerciseRepositoryImpl @Inject constructor(
         return exerciseProgressDao.getExerciseProgressEntities()
             .flatMapLatest { progressList ->
                 val progressMap = progressList.associateBy { it.exerciseId }
-                val exercises = getRawExercises()
+                val exercises = getRawExercises().fastFilter { it.isVisible }
 
                 flowOf(
                     exercises.mapIndexed { index, exercise ->
@@ -86,8 +87,8 @@ class ExerciseRepositoryImpl @Inject constructor(
     }
 
     private fun getRawExercises(): List<Exercise> {
-        return loadJsonFromAssets(context, "exercises.json")?.let { exercises ->
+        return (loadJsonFromAssets(context, "exercises.json")?.let { exercises ->
             Gson().fromJson(exercises, object : TypeToken<List<Exercise>>() {}.type)
-        } ?: emptyList()
+        } ?: emptyList<Exercise>())
     }
 }
