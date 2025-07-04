@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Talksy</string>
+    <string name="nav_bar_home_title">Головна</string>
+    <string name="nav_bar_calendar_title">Ігри</string>
+    <string name="nav_bar_profile_title">Профіль</string>
+</resources>
