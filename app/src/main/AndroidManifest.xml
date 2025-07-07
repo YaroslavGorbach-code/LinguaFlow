@@ -12,12 +12,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name="com.example.yaroslavhorach.linguaflow.LinguaFlowApplication"
+        android:name="com.korop.yaroslavhorach.linguaflow.LinguaFlowApplication"
         android:theme="@style/Theme.LinguaFlow"
         tools:targetApi="31">
 
         <activity
-            android:name="com.example.yaroslavhorach.linguaflow.MainActivity"
+            android:name="com.korop.yaroslavhorach.linguaflow.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.LinguaFlow"

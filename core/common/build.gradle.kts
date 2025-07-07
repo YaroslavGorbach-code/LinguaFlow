@@ -11,7 +11,7 @@ apply {
 }
 
 android {
-    namespace = "com.example.yaroslavhorach.common"
+    namespace = "com.korop.yaroslavhorach.common"
 }
 
 dependencies {

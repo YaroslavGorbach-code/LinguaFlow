@@ -12,7 +12,7 @@ apply {
 }
 
 android {
-    namespace = "com.example.yaroslavhorach.exercises"
+    namespace = "com.korop.yaroslavhorach.exercises"
 }
 
 dependencies {

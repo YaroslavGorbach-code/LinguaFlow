@@ -14,7 +14,7 @@ apply {
 }
 
 android {
-    namespace = "com.example.yaroslavhorach.designsystem"
+    namespace = "com.korop.yaroslavhorach.designsystem"
 }
 
 dependencies {

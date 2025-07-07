@@ -4,7 +4,7 @@ object AppConfig {
     const val compileSdkVersion = 35
     const val targetSdkVersion = 35
     const val minSdkVersion = 24
-    const val applicationId = "com.example.yaroslavhorach.lingoFlow"
+    const val applicationId = "com.korop.yaroslavhorach.lingoFlow"
     const val versionCode = 1
     const val versionName = "0.1"
     const val jvmTarget = "21"

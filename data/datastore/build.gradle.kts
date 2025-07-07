@@ -13,7 +13,7 @@ apply {
 }
 
 android {
-    namespace = "com.example.yaroslavhorach.datastore"
+    namespace = "com.korop.yaroslavhorach.datastore"
     sourceSets {
         getByName("main") {
             proto {srcDir("src/main/proto") }

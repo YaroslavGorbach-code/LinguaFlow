@@ -10,7 +10,7 @@ apply {
 }
 
 android {
-    namespace = "com.example.yaroslavhorach.database"
+    namespace = "com.korop.yaroslavhorach.database"
 }
 
 dependencies {
