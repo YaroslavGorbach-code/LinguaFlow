@@ -44,6 +44,7 @@ dependencies {
     implementation(Libs.activityCompose)
     implementation(Libs.systemUiController)
     implementation(Libs.splashScreen)
+    implementation(Libs.ads)
 
     implementation(Libs.hilt)
     implementation(Libs.hiltNavigationCompose)

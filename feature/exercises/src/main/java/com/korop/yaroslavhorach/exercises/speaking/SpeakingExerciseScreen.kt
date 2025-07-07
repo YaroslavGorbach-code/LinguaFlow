@@ -56,6 +56,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.korop.yaroslavhorach.common.helpers.PermissionManager
 import com.korop.yaroslavhorach.common.utill.UiMessage
+import com.korop.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.korop.yaroslavhorach.designsystem.theme.Avocado
 import com.korop.yaroslavhorach.designsystem.theme.KellyGreen
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
@@ -75,7 +76,6 @@ import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
-import com.korop.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.korop.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage

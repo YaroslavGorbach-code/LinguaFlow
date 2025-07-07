@@ -62,6 +62,7 @@ object Versions {
     const val lottie = "6.6.6"
     const val composeDialogs = "1.2.0"
     const val protobuf = "4.29.2"
+    const val ads = "24.4.0"
 }
 
 object Libs {
@@ -94,4 +95,5 @@ object Libs {
     const val lottie = "com.airbnb.android:lottie-compose:${Versions.lottie}"
     const val protobufJavalite = "com.google.protobuf:protobuf-javalite:${Versions.protobuf}"
     const val protobufKotlinlite = "com.google.protobuf:protobuf-kotlin-lite:${Versions.protobuf}"
+    const val ads = "com.google.android.gms:play-services-ads:${Versions.ads}"
 }

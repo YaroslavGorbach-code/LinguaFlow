@@ -26,4 +26,5 @@ dependencies {
     implementation(Libs.composeFoundation)
     implementation(Libs.hilt)
     ksp(Libs.hiltCompiler)
+    implementation(Libs.ads)
 }

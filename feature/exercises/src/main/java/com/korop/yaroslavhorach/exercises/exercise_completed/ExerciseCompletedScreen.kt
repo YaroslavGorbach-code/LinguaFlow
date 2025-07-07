@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.exercises.exercise_completed
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -24,10 +25,12 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -51,6 +54,7 @@ import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
 import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
+import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedUiMessage
 import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedViewState
 import com.korop.yaroslavhorach.ui.SpeakingLevel
 
@@ -59,23 +63,34 @@ internal fun ExerciseCompletedRoute(
     viewModel: ExerciseCompletedViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit
 ) {
-    val exerciseCompletedViewState by viewModel.state.collectAsStateWithLifecycle()
+    val activity = LocalContext.current as Activity
+
+    val state by viewModel.state.collectAsStateWithLifecycle()
+
+    state.uiMessage?.let { uiMessage ->
+        when (uiMessage.message) {
+            is ExerciseCompletedUiMessage.ShowAd -> {
+                LaunchedEffect(uiMessage.id) {
+                    viewModel.adManager.showInterstitial(activity)
+                    viewModel.clearMessage(uiMessage.id)
+                }
+                onNavigateBack()
+            }
+        }
+    }
 
     LinguaBackground {
         ExerciseCompletedScreen(
-            state = exerciseCompletedViewState,
+            state = state,
             actioner = { action ->
                 when (action) {
-                    is ExerciseCompletedAction.OnContinueClicked -> {
-                        onNavigateBack()
-                    }
                     else -> viewModel.submitAction(action)
                 }
             },
         )
     }
 
-    BackHandler {  }
+    BackHandler { }
 }
 
 @SuppressLint("UnusedContentLambdaTargetStateParameter")
@@ -157,8 +172,7 @@ internal fun ExerciseCompletedScreen(
                                 color = MaterialTheme.colorScheme.onBackgroundDark(),
                                 RoundedCornerShape(9.dp)
                             )
-                            .padding(vertical = 16.dp, horizontal = 18.dp)
-                        ,
+                            .padding(vertical = 16.dp, horizontal = 18.dp),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
@@ -193,8 +207,7 @@ internal fun ExerciseCompletedScreen(
                                 color = MaterialTheme.colorScheme.onBackgroundDark(),
                                 RoundedCornerShape(9.dp)
                             )
-                            .padding(vertical = 16.dp, horizontal = 18.dp)
-                        ,
+                            .padding(vertical = 16.dp, horizontal = 18.dp),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(

@@ -3,7 +3,6 @@ package com.korop.yaroslavhorach.linguaflow
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
@@ -11,21 +10,31 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.korop.yaroslavhorach.common.helpers.AdManager
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.linguaflow.ui.LingoApp
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    private val appScope = CoroutineScope(Dispatchers.Main)
 
     @Inject
     lateinit var prefsRepository: PrefsRepository
 
+    @Inject
+    lateinit var addManager: AdManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
        installSplashScreen()
+
+        appScope.launch { addManager.loadInterstitial() }
 
         super.onCreate(savedInstanceState)
 
@@ -33,7 +42,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             val systemUiController = rememberSystemUiController()
-            val darkTheme = isSystemInDarkTheme()
+            val darkTheme = false
             val primaryColor = remember { mutableStateOf<Color?>(null) }
             val secondaryColor = remember { mutableStateOf<Color?>(null) }
             val userData = prefsRepository.getUserData().collectAsState(null)

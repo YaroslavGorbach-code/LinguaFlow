@@ -4,6 +4,8 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.korop.yaroslavhorach.common.base.BaseViewModel
+import com.korop.yaroslavhorach.common.helpers.AdManager
+import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.common.utill.toMinutesSecondsFormat
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
@@ -23,8 +25,9 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ExerciseCompletedViewModel @Inject constructor(
+    val adManager: AdManager,
     savedStateHandle: SavedStateHandle,
-    prefsRepository: PrefsRepository
+    prefsRepository: PrefsRepository,
 ) :
     BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
 
@@ -55,6 +58,9 @@ class ExerciseCompletedViewModel @Inject constructor(
         pendingActions
             .onEach { event ->
                 when (event) {
+                    is ExerciseCompletedAction.OnContinueClicked -> {
+                        uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.ShowAd()))
+                    }
                     else -> error("Action $event is not handled")
                 }
             }
