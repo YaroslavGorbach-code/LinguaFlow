@@ -7,7 +7,8 @@ class Sentence(
     val sentenceType: SentenceType,
     private val sentence: Map<String, String>,
 ) {
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val text: String
         get() = sentence[currentLang] ?: this.sentence["en"] ?: ""

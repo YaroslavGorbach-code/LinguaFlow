@@ -12,18 +12,20 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.korop.yaroslavhorach.common.helpers.AdManager
+import com.korop.yaroslavhorach.common.helpers.BillingManager
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.linguaflow.ui.LingoApp
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    private val appScope = CoroutineScope(Dispatchers.Main)
+    private val appScope = CoroutineScope(Dispatchers.Main + SupervisorJob())
 
     @Inject
     lateinit var prefsRepository: PrefsRepository
@@ -31,12 +33,32 @@ class MainActivity : ComponentActivity() {
     @Inject
     lateinit var addManager: AdManager
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-       installSplashScreen()
+    @Inject
+    lateinit var billingManager: BillingManager
 
-        appScope.launch { addManager.loadInterstitial() }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
 
         super.onCreate(savedInstanceState)
+
+        appScope.launch {
+            addManager.loadInterstitial()
+        }
+        appScope.launch {
+
+            if (billingManager.getAllActivePurchases(this@MainActivity).isEmpty()) {
+                prefsRepository.deactivatePremium()
+            } else {
+                prefsRepository.activatePremium()
+            }
+
+            // FOR TEST ONLY
+//            billingManager.billingClient?.consumeAsync(
+//                ConsumeParams.newBuilder()
+//                    .setPurchaseToken(billingManager.getAllActivePurchases(this@MainActivity).get(0).purchaseToken)
+//                    .build(),
+//                { _, _ -> })
+        }
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
@@ -52,8 +74,12 @@ class MainActivity : ComponentActivity() {
                 onDispose {}
             }
 
-            if (userData.value != null){
-                LinguaTheme(darkTheme = darkTheme, primaryColor = primaryColor.value, secondaryColor = secondaryColor.value) {
+            if (userData.value != null) {
+                LinguaTheme(
+                    darkTheme = darkTheme,
+                    primaryColor = primaryColor.value,
+                    secondaryColor = secondaryColor.value
+                ) {
                     LingoApp(isOnboarding = userData.value!!.isOnboarding, onChangeColorScheme = { primary, secondary ->
                         primaryColor.value = primary
                         secondaryColor.value = secondary

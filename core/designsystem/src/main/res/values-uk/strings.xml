@@ -2,7 +2,7 @@
 <resources>
     <string name="premium_screen_subscription_forever_subtitle_text">Одноразовий платіж — довічний доступ</string>
 
-    <string name="block_1_small_talk_title_text"><![CDATA[Блок 1: Смолток і знайомство]]></string>
+    <string name="block_1_small_talk_title_text"><![CDATA[Блок 1: Small Talk і знайомство]]></string>
     <string name="block_2_title_text"><![CDATA[Блок 2: Особисті теми та повсякденне життя]]></string>
     <string name="block_3_title_text"><![CDATA[Блок 3: Соціальні ситуації та групове спілкування]]></string>
     <string name="block_4_title_text"><![CDATA[Блок 4: Аргументація та м’які незгоди]]></string>
@@ -45,4 +45,8 @@
     <string name="premium_variant_6_mounth_title_text">6 місяців</string>
     <string name="premium_variant_permanent_title_text">Довічно</string>
     <string name="premium_variant_the_best_bage_title_text">Вигідно</string>
+
+    <string name="premium_variant_prise_mounthly_format">%1$s/місяць"</string>
+    <string name="premium_variant_prise_half_a_year_roemat">%1$s/півроку"</string>
+
 </resources>

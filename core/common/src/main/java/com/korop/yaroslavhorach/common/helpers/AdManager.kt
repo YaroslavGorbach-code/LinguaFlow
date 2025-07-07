@@ -2,7 +2,6 @@ package com.korop.yaroslavhorach.common.helpers
 
 import android.app.Activity
 import android.app.Application
-import android.util.Log
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
@@ -30,7 +29,7 @@ class AdManager @Inject constructor(
     private var _interstitialAd: InterstitialAd? = null
 
     suspend fun loadInterstitial() {
-        withContext(Dispatchers.Main){
+        withContext(Dispatchers.Main) {
             prefsRepository.getUserData()
                 .onEach { userData ->
                     if (userData.isPremium.not()) {
@@ -71,8 +70,13 @@ class AdManager @Inject constructor(
 
     suspend fun showInterstitial(activity: Activity) {
         withContext(Dispatchers.Main) {
-            _interstitialAd?.show(activity)
-            loadInterstitial()
+            prefsRepository.getUserData()
+                .onEach { userData ->
+                    if (userData.isPremium.not()) {
+                        _interstitialAd?.show(activity)
+                        loadInterstitial()
+                    }
+                }
         }
     }
 }

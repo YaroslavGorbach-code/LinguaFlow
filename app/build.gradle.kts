@@ -45,6 +45,8 @@ dependencies {
     implementation(Libs.systemUiController)
     implementation(Libs.splashScreen)
     implementation(Libs.ads)
+    implementation(Libs.billing)
+    implementation(Libs.billingKts)
 
     implementation(Libs.hilt)
     implementation(Libs.hiltNavigationCompose)

@@ -153,8 +153,6 @@ fun LingoNavHost(
             navController.popBackStack()
         }, navigateToPremium = {
             navController.navigateToPremium()
-        }, navigateHome = {
-            navController.navigateToHome()
         })
     }
 }

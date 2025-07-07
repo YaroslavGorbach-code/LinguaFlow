@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.designsystem.screens.premium
 
+import android.app.Activity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -33,6 +34,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -44,6 +46,8 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
+import com.korop.yaroslavhorach.common.helpers.BillingManager.Companion.IN_6_MONTHLY_SUBSCRIPTION
+import com.korop.yaroslavhorach.common.helpers.BillingManager.Companion.IN_MONTHLY_SUBSCRIPTION
 import com.korop.yaroslavhorach.designsystem.R
 import com.korop.yaroslavhorach.designsystem.screens.premium.model.PremiumAction
 import com.korop.yaroslavhorach.designsystem.screens.premium.model.PremiumUiMessage
@@ -68,6 +72,7 @@ internal fun PremiumRoute(
     onNavigateToSuccess: () -> Unit
 ) {
     val viewState by viewModel.state.collectAsStateWithLifecycle()
+    val activity = LocalContext.current as Activity
 
     LinguaBackground {
         PremiumScreen(
@@ -87,6 +92,18 @@ internal fun PremiumRoute(
         when (uiMessage.message) {
             is PremiumUiMessage.NavigateToSuccess -> {
                 onNavigateToSuccess()
+                viewModel.clearMessage(uiMessage.id)
+            }
+            is PremiumUiMessage.ShowLifeTimeSubscriptionDialog -> {
+                viewModel.billingManager.showOneTimeProduct(activity)
+                viewModel.clearMessage(uiMessage.id)
+            }
+            is PremiumUiMessage.Show6MonthSubscriptionDialog -> {
+                viewModel.billingManager.showSubscription(activity, subscriptionId = IN_6_MONTHLY_SUBSCRIPTION)
+                viewModel.clearMessage(uiMessage.id)
+            }
+            is PremiumUiMessage.ShowMonthSubscriptionDialog -> {
+                viewModel.billingManager.showSubscription(activity, subscriptionId = IN_MONTHLY_SUBSCRIPTION)
                 viewModel.clearMessage(uiMessage.id)
             }
         }
@@ -212,13 +229,13 @@ private fun SubscriptionVariant(
                         )
                     }
                     Spacer(Modifier.width(10.dp))
-                    Column( modifier = Modifier.align(Alignment.Top)) {
+                    Column(modifier = Modifier.align(Alignment.Top)) {
                         Text(
                             text = variant.title.asString(),
                             color = MaterialTheme.colorScheme.typoPrimary(),
                             style = LinguaTypography.subtitle3
                         )
-                        if (variant is PremiumVariant.Forever){
+                        if (variant is PremiumVariant.Forever) {
                             Text(
                                 text = stringResource(R.string.premium_screen_subscription_forever_subtitle_text),
                                 color = MaterialTheme.colorScheme.typoSecondary(),

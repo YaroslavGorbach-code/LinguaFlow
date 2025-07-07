@@ -13,7 +13,8 @@ data class Game(
     val name: GameName,
     val skills: List<Skill>,
 ) {
-    private val currentLang: String = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val nameText: String
         get() = nameString[currentLang] ?: nameString["en"] ?: ""

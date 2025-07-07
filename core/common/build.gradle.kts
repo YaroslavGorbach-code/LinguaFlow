@@ -27,4 +27,6 @@ dependencies {
     implementation(Libs.hilt)
     ksp(Libs.hiltCompiler)
     implementation(Libs.ads)
+    api(Libs.billing)
+    api(Libs.billingKts)
 }

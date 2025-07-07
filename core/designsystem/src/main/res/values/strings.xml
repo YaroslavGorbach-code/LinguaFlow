@@ -42,4 +42,7 @@
     <string name="premium_variant_6_mounth_title_text">6 Months</string>
     <string name="premium_variant_permanent_title_text">Lifetime</string>
     <string name="premium_variant_the_best_bage_title_text">Best Value</string>
+
+    <string name="premium_variant_prise_mounthly_format">%1$s/month</string>
+    <string name="premium_variant_prise_half_a_year_roemat">%1$s/half year</string>
 </resources>

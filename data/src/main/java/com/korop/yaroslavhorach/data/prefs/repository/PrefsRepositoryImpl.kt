@@ -57,6 +57,10 @@ class PrefsRepositoryImpl @Inject constructor(
         prefsDataSource.changePremiumState(true)
     }
 
+    override suspend fun deactivatePremium() {
+        prefsDataSource.changePremiumState(false)
+    }
+
     override suspend fun getUsedContent(name: String): Flow<List<Long>> {
         return prefsDataSource.getUsedContent(name)
     }

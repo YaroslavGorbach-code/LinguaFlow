@@ -3,7 +3,7 @@
     "id": "1",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як організувати вечірку для котів",
+      "uk": "Тема: Як організувати вечірку для котів",
       "en": "Topic: How to organize a party for cats",
       "ru": "Тема: Как организовать вечеринку для кошек"
     }
@@ -12,7 +12,7 @@
     "id": "2",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому дощ корисний для Wi-Fi сигналу",
+      "uk": "Тема: Чому дощ корисний для Wi-Fi сигналу",
       "en": "Topic: Why rain is beneficial for Wi-Fi signal",
       "ru": "Тема: Почему дождь полезен для сигнала Wi-Fi"
     }
@@ -21,7 +21,7 @@
     "id": "3",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити кавун літати",
+      "uk": "Тема: Як навчити кавун літати",
       "en": "Topic: How to teach a watermelon to fly",
       "ru": "Тема: Как научить арбуз летать"
     }
@@ -30,7 +30,7 @@
     "id": "4",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Таємне життя домашніх пилососів",
+      "uk": "Тема: Таємне життя домашніх пилососів",
       "en": "Topic: The secret life of home vacuum cleaners",
       "ru": "Тема: Тайная жизнь домашних пылесосов"
     }
@@ -39,7 +39,7 @@
     "id": "5",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як створити емоційний зв’язок з холодильником",
+      "uk": "Тема: Як створити емоційний зв’язок з холодильником",
       "en": "Topic: How to form an emotional bond with your fridge",
       "ru": "Тема: Как установить эмоциональную связь с холодильником"
     }
@@ -48,7 +48,7 @@
     "id": "6",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому равлики — ідеальні спортсмени",
+      "uk": "Тема: Чому равлики — ідеальні спортсмени",
       "en": "Topic: Why snails are the perfect athletes",
       "ru": "Тема: Почему улитки — идеальные спортсмены"
     }
@@ -57,7 +57,7 @@
     "id": "7",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як переконати телевізор не перемикати канал",
+      "uk": "Тема: Як переконати телевізор не перемикати канал",
       "en": "Topic: How to convince your TV not to change the channel",
       "ru": "Тема: Как убедить телевизор не переключать канал"
     }
@@ -66,7 +66,7 @@
     "id": "8",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Секрети садівництва на Місяці",
+      "uk": "Тема: Секрети садівництва на Місяці",
       "en": "Topic: Secrets of gardening on the Moon",
       "ru": "Тема: Секреты садоводства на Луне"
     }
@@ -75,7 +75,7 @@
     "id": "9",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому понеділки мають особистість",
+      "uk": "Тема: Чому понеділки мають особистість",
       "en": "Topic: Why Mondays have a personality",
       "ru": "Тема: Почему у понедельников есть характер"
     }
@@ -84,7 +84,7 @@
     "id": "10",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як приборкати дикого офісного принтера",
+      "uk": "Тема: Як приборкати дикого офісного принтера",
       "en": "Topic: How to tame a wild office printer",
       "ru": "Тема: Как приручить дикого офисного принтера"
     }
@@ -93,7 +93,7 @@
     "id": "11",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як перевчити чайник не свистіти",
+      "uk": "Тема: Як перевчити чайник не свистіти",
       "en": "Topic: How to retrain a kettle to stop whistling",
       "ru": "Тема: Как отучить чайник свистеть"
     }
@@ -102,7 +102,7 @@
     "id": "12",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Еволюція шкарпеток у дикій природі",
+      "uk": "Тема: Еволюція шкарпеток у дикій природі",
       "en": "Topic: The evolution of socks in the wild",
       "ru": "Тема: Эволюция носков в дикой природе"
     }
@@ -111,7 +111,7 @@
     "id": "13",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому кавові зерна слухають джаз",
+      "uk": "Тема: Чому кавові зерна слухають джаз",
       "en": "Topic: Why coffee beans listen to jazz",
       "ru": "Тема: Почему кофейные зёрна слушают джаз"
     }
@@ -120,7 +120,7 @@
     "id": "14",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчитись говорити з мікрохвильовкою",
+      "uk": "Тема: Як навчитись говорити з мікрохвильовкою",
       "en": "Topic: How to learn to talk to your microwave",
       "ru": "Тема: Как научиться разговаривать с микроволновкой"
     }
@@ -129,7 +129,7 @@
     "id": "15",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Філософія сплячих котів",
+      "uk": "Тема: Філософія сплячих котів",
       "en": "Topic: The philosophy of sleeping cats",
       "ru": "Тема: Философия спящих котов"
     }
@@ -138,7 +138,7 @@
     "id": "16",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зробити чай із хмар",
+      "uk": "Тема: Як зробити чай із хмар",
       "en": "Topic: How to make tea from clouds",
       "ru": "Тема: Как заварить чай из облаков"
     }
@@ -147,7 +147,7 @@
     "id": "17",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Мистецтво сніданку у невагомості",
+      "uk": "Тема: Мистецтво сніданку у невагомості",
       "en": "Topic: The art of breakfast in zero gravity",
       "ru": "Тема: Искусство завтрака в невесомости"
     }
@@ -156,7 +156,7 @@
     "id": "18",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як побудувати будинок із зефіру",
+      "uk": "Тема: Як побудувати будинок із зефіру",
       "en": "Topic: How to build a house out of marshmallows",
       "ru": "Тема: Как построить дом из зефира"
     }
@@ -165,7 +165,7 @@
     "id": "19",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Спортивні досягнення черепах у слоумо",
+      "uk": "Тема: Спортивні досягнення черепах у слоумо",
       "en": "Topic: Athletic achievements of turtles in slow motion",
       "ru": "Тема: Спортивные достижения черепах в замедленном режиме"
     }
@@ -174,7 +174,7 @@
     "id": "20",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як переконати килим літати",
+      "uk": "Тема: Як переконати килим літати",
       "en": "Topic: How to convince a carpet to fly",
       "ru": "Тема: Как убедить ковёр летать"
     }
@@ -183,7 +183,7 @@
     "id": "21",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Економіка чарівних бобів",
+      "uk": "Тема: Економіка чарівних бобів",
       "en": "Topic: The economy of magic beans",
       "ru": "Тема: Экономика волшебных бобов"
     }
@@ -192,7 +192,7 @@
     "id": "22",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зварити борщ на сонячній енергії",
+      "uk": "Тема: Як зварити борщ на сонячній енергії",
       "en": "Topic: How to cook borscht with solar energy",
       "ru": "Тема: Как сварить борщ на солнечной энергии"
     }
@@ -201,7 +201,7 @@
     "id": "23",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Тактична поведінка холодильників у дикій природі",
+      "uk": "Тема: Тактична поведінка холодильників у дикій природі",
       "en": "Topic: Tactical behavior of fridges in the wild",
       "ru": "Тема: Тактическое поведение холодильников в дикой природе"
     }
@@ -210,7 +210,7 @@
     "id": "24",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як визначити настрій стільця",
+      "uk": "Тема: Як визначити настрій стільця",
       "en": "Topic: How to determine the mood of a chair",
       "ru": "Тема: Как определить настроение стула"
     }
@@ -219,7 +219,7 @@
     "id": "25",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Причини ліні у рослин",
+      "uk": "Тема: Причини ліні у рослин",
       "en": "Topic: Causes of laziness in plants",
       "ru": "Тема: Причины лени у растений"
     }
@@ -228,7 +228,7 @@
     "id": "26",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому рюкзаки втомлюються",
+      "uk": "Тема: Чому рюкзаки втомлюються",
       "en": "Topic: Why backpacks get tired",
       "ru": "Тема: Почему рюкзаки устают"
     }
@@ -237,7 +237,7 @@
     "id": "27",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як шампунь вибирає настрій",
+      "uk": "Тема: Як шампунь вибирає настрій",
       "en": "Topic: How shampoo chooses a mood",
       "ru": "Тема: Как шампунь выбирает настроение"
     }
@@ -246,7 +246,7 @@
     "id": "28",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зробити фільм з життя тостера",
+      "uk": "Тема: Як зробити фільм з життя тостера",
       "en": "Topic: How to make a movie about a toaster’s life",
       "ru": "Тема: Как снять фильм о жизни тостера"
     }
@@ -255,7 +255,7 @@
     "id": "29",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Вплив пінгвінів на глобальну економіку",
+      "uk": "Тема: Вплив пінгвінів на глобальну економіку",
       "en": "Topic: The impact of penguins on the global economy",
       "ru": "Тема: Влияние пингвинов на мировую экономику"
     }
@@ -264,7 +264,7 @@
     "id": "30",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно організувати конкурс серед подушок",
+      "uk": "Тема: Як правильно організувати конкурс серед подушок",
       "en": "Topic: How to properly organize a pillow competition",
       "ru": "Тема: Как правильно организовать конкурс среди подушек"
     }
@@ -273,7 +273,7 @@
     "id": "31",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому кавові чашки мають свої симфонії",
+      "uk": "Тема: Чому кавові чашки мають свої симфонії",
       "en": "Topic: Why coffee cups have their own symphonies",
       "ru": "Тема: Почему у кофейных чашек есть свои симфонии"
     }
@@ -282,7 +282,7 @@
     "id": "32",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Магія ранкових шнурків",
+      "uk": "Тема: Магія ранкових шнурків",
       "en": "Topic: The magic of morning shoelaces",
       "ru": "Тема: Магия утренних шнурков"
     }
@@ -291,7 +291,7 @@
     "id": "33",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно сваритися з кавоваркою",
+      "uk": "Тема: Як правильно сваритися з кавоваркою",
       "en": "Topic: How to argue properly with a coffee machine",
       "ru": "Тема: Как правильно ссориться с кофеваркой"
     }
@@ -300,7 +300,7 @@
     "id": "34",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Експрес-перукарня для кактусів",
+      "uk": "Тема: Експрес-перукарня для кактусів",
       "en": "Topic: Express hair salon for cactuses",
       "ru": "Тема: Экспресс-парикмахерская для кактусов"
     }
@@ -309,7 +309,7 @@
     "id": "35",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як тапки планують втечу",
+      "uk": "Тема: Як тапки планують втечу",
       "en": "Topic: How slippers plan an escape",
       "ru": "Тема: Как тапки планируют побег"
     }
@@ -318,7 +318,7 @@
     "id": "36",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Геополітика серед холодильних магнітів",
+      "uk": "Тема: Геополітика серед холодильних магнітів",
       "en": "Topic: Geopolitics among fridge magnets",
       "ru": "Тема: Геополитика среди магнитов на холодильнике"
     }
@@ -327,7 +327,7 @@
     "id": "37",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як пояснити рослині концепцію щастя",
+      "uk": "Тема: Як пояснити рослині концепцію щастя",
       "en": "Topic: How to explain the concept of happiness to a plant",
       "ru": "Тема: Как объяснить растению концепцию счастья"
     }
@@ -336,7 +336,7 @@
     "id": "38",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому лампи ревнують до сонця",
+      "uk": "Тема: Чому лампи ревнують до сонця",
       "en": "Topic: Why lamps are jealous of the sun",
       "ru": "Тема: Почему лампы ревнуют к солнцу"
     }
@@ -345,7 +345,7 @@
     "id": "39",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як вести блог від імені ручки",
+      "uk": "Тема: Як вести блог від імені ручки",
       "en": "Topic: How to blog on behalf of a pen",
       "ru": "Тема: Как вести блог от имени ручки"
     }
@@ -354,7 +354,7 @@
     "id": "40",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчитись відрізняти настрій хмари за формою",
+      "uk": "Тема: Як навчитись відрізняти настрій хмари за формою",
       "en": "Topic: How to tell a cloud’s mood by its shape",
       "ru": "Тема: Как определить настроение облака по форме"
     }
@@ -363,7 +363,7 @@
     "id": "41",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому варто щодня гладити кактус",
+      "uk": "Тема: Чому варто щодня гладити кактус",
       "en": "Topic: Why you should pet a cactus every day",
       "ru": "Тема: Почему стоит гладить кактус каждый день"
     }
@@ -372,7 +372,7 @@
     "id": "42",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно співати для кімнатних рослин",
+      "uk": "Тема: Як правильно співати для кімнатних рослин",
       "en": "Topic: How to sing properly for houseplants",
       "ru": "Тема: Как правильно петь для комнатных растений"
     }
@@ -381,7 +381,7 @@
     "id": "43",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Секрети дипломатії серед голубів",
+      "uk": "Тема: Секрети дипломатії серед голубів",
       "en": "Topic: Secrets of pigeon diplomacy",
       "ru": "Тема: Секреты дипломатии среди голубей"
     }
@@ -390,7 +390,7 @@
     "id": "44",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як скласти резюме для холодильника",
+      "uk": "Тема: Як скласти резюме для холодильника",
       "en": "Topic: How to write a résumé for a refrigerator",
       "ru": "Тема: Как составить резюме для холодильника"
     }
@@ -399,7 +399,7 @@
     "id": "45",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому равлики — ідеальні наставники з тайм-менеджменту",
+      "uk": "Тема: Чому равлики — ідеальні наставники з тайм-менеджменту",
       "en": "Topic: Why snails are perfect time management mentors",
       "ru": "Тема: Почему улитки — идеальные наставники по тайм-менеджменту"
     }
@@ -408,7 +408,7 @@
     "id": "46",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як переконати холодильник не шуміти вночі",
+      "uk": "Тема: Як переконати холодильник не шуміти вночі",
       "en": "Topic: How to convince a fridge to stop humming at night",
       "ru": "Тема: Как убедить холодильник не шуметь ночью"
     }
@@ -417,7 +417,7 @@
     "id": "47",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно тренувати мильні бульбашки",
+      "uk": "Тема: Як правильно тренувати мильні бульбашки",
       "en": "Topic: How to properly train soap bubbles",
       "ru": "Тема: Как правильно тренировать мыльные пузыри"
     }
@@ -426,7 +426,7 @@
     "id": "48",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому носіння ковдри на голові покращує креативність",
+      "uk": "Тема: Чому носіння ковдри на голові покращує креативність",
       "en": "Topic: Why wearing a blanket on your head boosts creativity",
       "ru": "Тема: Почему ношение одеяла на голове повышает креативность"
     }
@@ -435,7 +435,7 @@
     "id": "49",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як спілкуватися з меблями, щоб вони служили довше",
+      "uk": "Тема: Як спілкуватися з меблями, щоб вони служили довше",
       "en": "Topic: How to talk to furniture so it lasts longer",
       "ru": "Тема: Как разговаривать с мебелью, чтобы она служила дольше"
     }
@@ -444,7 +444,7 @@
     "id": "50",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Секрети ведення щоденника для рибок",
+      "uk": "Тема: Секрети ведення щоденника для рибок",
       "en": "Topic: Secrets of journaling for pet fish",
       "ru": "Тема: Секреты ведения дневника для аквариумных рыбок"
     }
@@ -453,7 +453,7 @@
     "id": "51",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як відрізнити справжній банан від двійника",
+      "uk": "Тема: Як відрізнити справжній банан від двійника",
       "en": "Topic: How to tell a real banana from an impostor",
       "ru": "Тема: Как отличить настоящий банан от самозванца"
     }
@@ -462,7 +462,7 @@
     "id": "52",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Етика спілкування з мікрохвильовкою",
+      "uk": "Тема: Етика спілкування з мікрохвильовкою",
       "en": "Topic: The ethics of communicating with microwaves",
       "ru": "Тема: Этика общения с микроволновкой"
     }
@@ -471,7 +471,7 @@
     "id": "53",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому пил — це майбутнє енергетики",
+      "uk": "Тема: Чому пил — це майбутнє енергетики",
       "en": "Topic: Why dust is the future of energy",
       "ru": "Тема: Почему пыль — это будущее энергетики"
     }
@@ -480,7 +480,7 @@
     "id": "54",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як налаштувати Wi-Fi для привидів",
+      "uk": "Тема: Як налаштувати Wi-Fi для привидів",
       "en": "Topic: How to set up Wi-Fi for ghosts",
       "ru": "Тема: Как настроить Wi-Fi для призраков"
     }
@@ -489,7 +489,7 @@
     "id": "55",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Мода серед домашніх тапочок",
+      "uk": "Тема: Мода серед домашніх тапочок",
       "en": "Topic: Fashion trends among house slippers",
       "ru": "Тема: Мода среди домашних тапочек"
     }
@@ -498,7 +498,7 @@
     "id": "56",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому кавові зерна мають спілкуватися перед обсмажуванням",
+      "uk": "Тема: Чому кавові зерна мають спілкуватися перед обсмажуванням",
       "en": "Topic: Why coffee beans should socialize before roasting",
       "ru": "Тема: Почему кофейные зёрна должны общаться перед обжаркой"
     }
@@ -507,7 +507,7 @@
     "id": "57",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно вітати сонце вранці",
+      "uk": "Тема: Як правильно вітати сонце вранці",
       "en": "Topic: How to properly greet the sun in the morning",
       "ru": "Тема: Как правильно приветствовать солнце по утрам"
     }
@@ -516,7 +516,7 @@
     "id": "58",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Тайм-менеджмент для мух",
+      "uk": "Тема: Тайм-менеджмент для мух",
       "en": "Topic: Time management for flies",
       "ru": "Тема: Тайм-менеджмент для мух"
     }
@@ -525,7 +525,7 @@
     "id": "59",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як заспокоїти телевізор після страшного фільму",
+      "uk": "Тема: Як заспокоїти телевізор після страшного фільму",
       "en": "Topic: How to calm a TV after a horror movie",
       "ru": "Тема: Как успокоить телевизор после фильма ужасов"
     }
@@ -534,7 +534,7 @@
     "id": "60",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Йога для столових приборів",
+      "uk": "Тема: Йога для столових приборів",
       "en": "Topic: Yoga for kitchen utensils",
       "ru": "Тема: Йога для столовых приборов"
     }
@@ -543,7 +543,7 @@
     "id": "61",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як розпізнати характер парасолі за кольором",
+      "uk": "Тема: Як розпізнати характер парасолі за кольором",
       "en": "Topic: How to tell an umbrella’s personality by its color",
       "ru": "Тема: Как определить характер зонта по его цвету"
     }
@@ -552,7 +552,7 @@
     "id": "62",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому драбини бояться висоти",
+      "uk": "Тема: Чому драбини бояться висоти",
       "en": "Topic: Why ladders are afraid of heights",
       "ru": "Тема: Почему лестницы боятся высоты"
     }
@@ -561,7 +561,7 @@
     "id": "63",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Психологія дзеркал: як не образити їх відображенням",
+      "uk": "Тема: Психологія дзеркал: як не образити їх відображенням",
       "en": "Topic: Mirror psychology: how not to offend their reflection",
       "ru": "Тема: Психология зеркал: как не обидеть их отражением"
     }
@@ -570,7 +570,7 @@
     "id": "64",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як створити соціальну мережу для грибів",
+      "uk": "Тема: Як створити соціальну мережу для грибів",
       "en": "Topic: How to create a social network for mushrooms",
       "ru": "Тема: Как создать социальную сеть для грибов"
     }
@@ -579,7 +579,7 @@
     "id": "65",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому паперові літачки мають права",
+      "uk": "Тема: Чому паперові літачки мають права",
       "en": "Topic: Why paper planes have rights",
       "ru": "Тема: Почему у бумажных самолётиков есть права"
     }
@@ -588,7 +588,7 @@
     "id": "66",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити пісочний годинник зупиняти час",
+      "uk": "Тема: Як навчити пісочний годинник зупиняти час",
       "en": "Topic: How to teach an hourglass to stop time",
       "ru": "Тема: Как научить песочные часы останавливать время"
     }
@@ -597,7 +597,7 @@
     "id": "67",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Мистецтво балансування на пульті дистанційного керування",
+      "uk": "Тема: Мистецтво балансування на пульті дистанційного керування",
       "en": "Topic: The art of balancing on a TV remote",
       "ru": "Тема: Искусство балансирования на пульте от телевизора"
     }
@@ -606,7 +606,7 @@
     "id": "68",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як привчити годинник не поспішати",
+      "uk": "Тема: Як привчити годинник не поспішати",
       "en": "Topic: How to train a clock not to rush",
       "ru": "Тема: Как приучить часы не спешить"
     }
@@ -615,7 +615,7 @@
     "id": "69",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому павуки — природжені музиканти",
+      "uk": "Тема: Чому павуки — природжені музиканти",
       "en": "Topic: Why spiders are natural musicians",
       "ru": "Тема: Почему пауки — прирождённые музыканты"
     }
@@ -624,7 +624,7 @@
     "id": "70",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як організувати весілля для двох кактусів",
+      "uk": "Тема: Як організувати весілля для двох кактусів",
       "en": "Topic: How to organize a wedding for two cacti",
       "ru": "Тема: Как организовать свадьбу для двух кактусов"
     }
@@ -633,7 +633,7 @@
     "id": "71",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому лампочки бояться темряви",
+      "uk": "Тема: Чому лампочки бояться темряви",
       "en": "Topic: Why lightbulbs are afraid of the dark",
       "ru": "Тема: Почему лампочки боятся темноты"
     }
@@ -642,7 +642,7 @@
     "id": "72",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Тайні сигнали серед килимів",
+      "uk": "Тема: Тайні сигнали серед килимів",
       "en": "Topic: Secret signals among carpets",
       "ru": "Тема: Тайные сигналы среди ковров"
     }
@@ -651,7 +651,7 @@
     "id": "73",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як холодильники вибирають, що охолоджувати першочергово",
+      "uk": "Тема: Як холодильники вибирають, що охолоджувати першочергово",
       "en": "Topic: How fridges choose what to cool first",
       "ru": "Тема: Как холодильники выбирают, что охлаждать в первую очередь"
     }
@@ -660,7 +660,7 @@
     "id": "74",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити зубну щітку танцювати",
+      "uk": "Тема: Як навчити зубну щітку танцювати",
       "en": "Topic: How to teach a toothbrush to dance",
       "ru": "Тема: Как научить зубную щётку танцевать"
     }
@@ -669,7 +669,7 @@
     "id": "75",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Психологічні потреби шкарпеток",
+      "uk": "Тема: Психологічні потреби шкарпеток",
       "en": "Topic: The psychological needs of socks",
       "ru": "Тема: Психологические потребности носков"
     }
@@ -678,7 +678,7 @@
     "id": "76",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як влаштувати марафон для равликів",
+      "uk": "Тема: Як влаштувати марафон для равликів",
       "en": "Topic: How to organize a marathon for snails",
       "ru": "Тема: Как устроить марафон для улиток"
     }
@@ -687,7 +687,7 @@
     "id": "77",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Таємне життя стільців після опівночі",
+      "uk": "Тема: Таємне життя стільців після опівночі",
       "en": "Topic: The secret life of chairs after midnight",
       "ru": "Тема: Тайная жизнь стульев после полуночи"
     }
@@ -696,7 +696,7 @@
     "id": "78",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як пояснити кішці основи астрономії",
+      "uk": "Тема: Як пояснити кішці основи астрономії",
       "en": "Topic: How to explain astronomy basics to a cat",
       "ru": "Тема: Как объяснить коту основы астрономии"
     }
@@ -705,7 +705,7 @@
     "id": "79",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому календарі бояться грудня",
+      "uk": "Тема: Чому календарі бояться грудня",
       "en": "Topic: Why calendars are afraid of December",
       "ru": "Тема: Почему календари боятся декабря"
     }
@@ -714,7 +714,7 @@
     "id": "80",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як врятуватися, якщо на вас напали подушки",
+      "uk": "Тема: Як врятуватися, якщо на вас напали подушки",
       "en": "Topic: How to survive a pillow attack",
       "ru": "Тема: Как выжить при нападении подушек"
     }
@@ -723,7 +723,7 @@
     "id": "81",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Правила дорожнього руху для кімнатних рослин",
+      "uk": "Тема: Правила дорожнього руху для кімнатних рослин",
       "en": "Topic: Traffic rules for houseplants",
       "ru": "Тема: Правила дорожного движения для комнатных растений"
     }
@@ -732,7 +732,7 @@
     "id": "82",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити будильник співчуттю",
+      "uk": "Тема: Як навчити будильник співчуттю",
       "en": "Topic: How to teach an alarm clock empathy",
       "ru": "Тема: Как научить будильник сочувствию"
     }
@@ -741,7 +741,7 @@
     "id": "83",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому зефір — найкращий радник",
+      "uk": "Тема: Чому зефір — найкращий радник",
       "en": "Topic: Why marshmallows make the best advisors",
       "ru": "Тема: Почему зефир — лучший советник"
     }
@@ -750,7 +750,7 @@
     "id": "84",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчитись читати між смужками на матраці",
+      "uk": "Тема: Як навчитись читати між смужками на матраці",
       "en": "Topic: How to read between the stripes on a mattress",
       "ru": "Тема: Как научиться читать между полосками на матрасе"
     }
@@ -759,7 +759,7 @@
     "id": "85",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Техніка безпеки при гладінні часу",
+      "uk": "Тема: Техніка безпеки при гладінні часу",
       "en": "Topic: Time-smoothing safety techniques",
       "ru": "Тема: Техника безопасности при разглаживании времени"
     }
@@ -768,7 +768,7 @@
     "id": "86",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як підготувати ручку до великого виступу",
+      "uk": "Тема: Як підготувати ручку до великого виступу",
       "en": "Topic: How to prepare a pen for a big performance",
       "ru": "Тема: Как подготовить ручку к большому выступлению"
     }
@@ -777,7 +777,7 @@
     "id": "87",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як приборкати непокірну ковдру",
+      "uk": "Тема: Як приборкати непокірну ковдру",
       "en": "Topic: How to tame a rebellious blanket",
       "ru": "Тема: Как приручить непослушное одеяло"
     }
@@ -786,7 +786,7 @@
     "id": "88",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Еволюція гумок для волосся",
+      "uk": "Тема: Еволюція гумок для волосся",
       "en": "Topic: The evolution of hair ties",
       "ru": "Тема: Эволюция резинок для волос"
     }
@@ -795,7 +795,7 @@
     "id": "89",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити килим літати за власним маршрутом",
+      "uk": "Тема: Як навчити килим літати за власним маршрутом",
       "en": "Topic: How to teach a carpet to fly its own route",
       "ru": "Тема: Как научить ковер летать по собственному маршруту"
     }
@@ -804,7 +804,7 @@
     "id": "90",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Роль холодильника в розвитку демократії",
+      "uk": "Тема: Роль холодильника в розвитку демократії",
       "en": "Topic: The role of fridges in the development of democracy",
       "ru": "Тема: Роль холодильника в развитии демократии"
     }
@@ -813,7 +813,7 @@
     "id": "91",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як розпізнати фальшиву посмішку у праски",
+      "uk": "Тема: Як розпізнати фальшиву посмішку у праски",
       "en": "Topic: How to detect a fake smile in an iron",
       "ru": "Тема: Как распознать фальшивую улыбку у утюга"
     }
@@ -822,7 +822,7 @@
     "id": "92",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як домовитися про обід із годинником",
+      "uk": "Тема: Як домовитися про обід із годинником",
       "en": "Topic: How to negotiate lunch with a clock",
       "ru": "Тема: Как договориться о ланче с часами"
     }
@@ -831,7 +831,7 @@
     "id": "93",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Міжгалактичні проблеми пральних машин",
+      "uk": "Тема: Міжгалактичні проблеми пральних машин",
       "en": "Topic: Intergalactic issues of washing machines",
       "ru": "Тема: Межгалактические проблемы стиральных машин"
     }
@@ -840,7 +840,7 @@
     "id": "94",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно аплодувати мухам",
+      "uk": "Тема: Як правильно аплодувати мухам",
       "en": "Topic: How to properly applaud flies",
       "ru": "Тема: Как правильно аплодировать мухам"
     }
@@ -849,7 +849,7 @@
     "id": "95",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити кран не тікати від емоцій",
+      "uk": "Тема: Як навчити кран не тікати від емоцій",
       "en": "Topic: How to teach a faucet not to run from emotions",
       "ru": "Тема: Как научить кран не убегать от эмоций"
     }
@@ -858,7 +858,7 @@
     "id": "146",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як збудувати ракету з пластикових виделок",
+      "uk": "Тема: Як збудувати ракету з пластикових виделок",
       "en": "Topic: How to build a rocket out of plastic forks",
       "ru": "Тема: Как построить ракету из пластиковых вилок"
     }
@@ -867,7 +867,7 @@
     "id": "147",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому у равликів найкраща памʼять у тваринному світі",
+      "uk": "Тема: Чому у равликів найкраща памʼять у тваринному світі",
       "en": "Topic: Why snails have the best memory in the animal kingdom",
       "ru": "Тема: Почему у улиток лучшая память в животном мире"
     }
@@ -876,7 +876,7 @@
     "id": "148",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як читати думки кімнатних рослин",
+      "uk": "Тема: Як читати думки кімнатних рослин",
       "en": "Topic: How to read the minds of houseplants",
       "ru": "Тема: Как читать мысли комнатных растений"
     }
@@ -885,7 +885,7 @@
     "id": "149",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Теорія змови про те, що чайники — агенти часу",
+      "uk": "Тема: Теорія змови про те, що чайники — агенти часу",
       "en": "Topic: The conspiracy theory that kettles are time agents",
       "ru": "Тема: Теория заговора о том, что чайники — агенты времени"
     }
@@ -894,7 +894,7 @@
     "id": "150",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити жабу бути менеджером",
+      "uk": "Тема: Як навчити жабу бути менеджером",
       "en": "Topic: How to train a frog to be a manager",
       "ru": "Тема: Как научить лягушку быть менеджером"
     }
@@ -903,7 +903,7 @@
     "id": "151",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Шкарпетки як нова валюта майбутнього",
+      "uk": "Тема: Шкарпетки як нова валюта майбутнього",
       "en": "Topic: Socks as the new currency of the future",
       "ru": "Тема: Носки как новая валюта будущего"
     }
@@ -912,7 +912,7 @@
     "id": "152",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як відрізнити хорошого банана від геніального",
+      "uk": "Тема: Як відрізнити хорошого банана від геніального",
       "en": "Topic: How to tell a good banana from a genius one",
       "ru": "Тема: Как отличить хороший банан от гениального"
     }
@@ -921,7 +921,7 @@
     "id": "153",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як переконати холодильник не ображатися",
+      "uk": "Тема: Як переконати холодильник не ображатися",
       "en": "Topic: How to convince your fridge not to be offended",
       "ru": "Тема: Как убедить холодильник не обижаться"
     }
@@ -930,7 +930,7 @@
     "id": "154",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити хмари писати поезію",
+      "uk": "Тема: Як навчити хмари писати поезію",
       "en": "Topic: How to teach clouds to write poetry",
       "ru": "Тема: Как научить облака писать поэзию"
     }
@@ -939,7 +939,7 @@
     "id": "155",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому вікна — найкращі філософи",
+      "uk": "Тема: Чому вікна — найкращі філософи",
       "en": "Topic: Why windows are the best philosophers",
       "ru": "Тема: Почему окна — лучшие философы"
     }
@@ -948,7 +948,7 @@
     "id": "156",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як стати королем мурах без перевороту",
+      "uk": "Тема: Як стати королем мурах без перевороту",
       "en": "Topic: How to become the king of ants without a coup",
       "ru": "Тема: Как стать королём муравьёв без переворота"
     }
@@ -957,7 +957,7 @@
     "id": "157",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як правильно медитувати з тостером",
+      "uk": "Тема: Як правильно медитувати з тостером",
       "en": "Topic: How to properly meditate with a toaster",
       "ru": "Тема: Как правильно медитировать с тостером"
     }
@@ -966,7 +966,7 @@
     "id": "158",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому пластилін — ключ до міжгалактичної дипломатії",
+      "uk": "Тема: Чому пластилін — ключ до міжгалактичної дипломатії",
       "en": "Topic: Why plasticine is the key to intergalactic diplomacy",
       "ru": "Тема: Почему пластилин — ключ к межгалактической дипломатии"
     }
@@ -975,7 +975,7 @@
     "id": "159",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як кіт може навчити вас лідерству",
+      "uk": "Тема: Як кіт може навчити вас лідерству",
       "en": "Topic: How a cat can teach you leadership",
       "ru": "Тема: Как кот может научить вас лидерству"
     }
@@ -984,7 +984,7 @@
     "id": "160",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як танцювати з холодильником, не злякавши його",
+      "uk": "Тема: Як танцювати з холодильником, не злякавши його",
       "en": "Topic: How to dance with your fridge without scaring it",
       "ru": "Тема: Как танцевать с холодильником, не испугав его"
     }
@@ -993,7 +993,7 @@
     "id": "161",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Що насправді думає будильник про ваші понеділки",
+      "uk": "Тема: Що насправді думає будильник про ваші понеділки",
       "en": "Topic: What your alarm clock really thinks about your Mondays",
       "ru": "Тема: Что на самом деле будильник думает о ваших понедельниках"
     }
@@ -1002,7 +1002,7 @@
     "id": "162",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як олівці влаштовують вибори серед себе",
+      "uk": "Тема: Як олівці влаштовують вибори серед себе",
       "en": "Topic: How pencils conduct elections among themselves",
       "ru": "Тема: Как карандаши проводят выборы среди себя"
     }
@@ -1011,7 +1011,7 @@
     "id": "163",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому бегемоти — найкращі бухгалтери",
+      "uk": "Тема: Чому бегемоти — найкращі бухгалтери",
       "en": "Topic: Why hippos make the best accountants",
       "ru": "Тема: Почему бегемоты — лучшие бухгалтеры"
     }
@@ -1020,7 +1020,7 @@
     "id": "164",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити камінь грати у покер",
+      "uk": "Тема: Як навчити камінь грати у покер",
       "en": "Topic: How to teach a rock to play poker",
       "ru": "Тема: Как научить камень играть в покер"
     }
@@ -1029,7 +1029,7 @@
     "id": "165",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як виявити зрадника серед каструль",
+      "uk": "Тема: Як виявити зрадника серед каструль",
       "en": "Topic: How to spot a traitor among your pots",
       "ru": "Тема: Как выявить предателя среди кастрюль"
     }
@@ -1038,7 +1038,7 @@
     "id": "166",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як провести інтерв’ю з подушкою",
+      "uk": "Тема: Як провести інтерв’ю з подушкою",
       "en": "Topic: How to interview a pillow",
       "ru": "Тема: Как взять интервью у подушки"
     }
@@ -1047,7 +1047,7 @@
     "id": "167",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому тарілки мають складне особисте життя",
+      "uk": "Тема: Чому тарілки мають складне особисте життя",
       "en": "Topic: Why plates have complicated personal lives",
       "ru": "Тема: Почему у тарелок сложная личная жизнь"
     }
@@ -1056,7 +1056,7 @@
     "id": "168",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зловити натхнення за допомогою віника",
+      "uk": "Тема: Як зловити натхнення за допомогою віника",
       "en": "Topic: How to catch inspiration using a broom",
       "ru": "Тема: Как поймать вдохновение с помощью веника"
     }
@@ -1065,7 +1065,7 @@
     "id": "169",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як відрізнити сумну лампу від філософської",
+      "uk": "Тема: Як відрізнити сумну лампу від філософської",
       "en": "Topic: How to tell a sad lamp from a philosophical one",
       "ru": "Тема: Как отличить грустную лампу от философской"
     }
@@ -1074,7 +1074,7 @@
     "id": "170",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як розшифрувати любовні послання чайника",
+      "uk": "Тема: Як розшифрувати любовні послання чайника",
       "en": "Topic: How to decode a kettle's love messages",
       "ru": "Тема: Как расшифровать любовные послания чайника"
     }
@@ -1083,7 +1083,7 @@
     "id": "171",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому холодильник краще за психолога",
+      "uk": "Тема: Чому холодильник краще за психолога",
       "en": "Topic: Why the fridge is better than a therapist",
       "ru": "Тема: Почему холодильник лучше психотерапевта"
     }
@@ -1092,7 +1092,7 @@
     "id": "172",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як розбудити у собі внутрішню картоплину",
+      "uk": "Тема: Як розбудити у собі внутрішню картоплину",
       "en": "Topic: How to awaken your inner potato",
       "ru": "Тема: Как пробудить в себе внутреннюю картошку"
     }
@@ -1101,7 +1101,7 @@
     "id": "173",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як підкорити Всесвіт за допомогою шкарпеток",
+      "uk": "Тема: Як підкорити Всесвіт за допомогою шкарпеток",
       "en": "Topic: How to conquer the universe using socks",
       "ru": "Тема: Как покорить Вселенную с помощью носков"
     }
@@ -1110,7 +1110,7 @@
     "id": "174",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Таємна мова чайних пакетиків",
+      "uk": "Тема: Таємна мова чайних пакетиків",
       "en": "Topic: The secret language of teabags",
       "ru": "Тема: Тайный язык чайных пакетиков"
     }
@@ -1119,7 +1119,7 @@
     "id": "175",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як відправити думку поштою",
+      "uk": "Тема: Як відправити думку поштою",
       "en": "Topic: How to mail a thought",
       "ru": "Тема: Как отправить мысль по почте"
     }
@@ -1128,7 +1128,7 @@
     "id": "176",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому рибки — головні інвестори акваріумного ринку",
+      "uk": "Тема: Чому рибки — головні інвестори акваріумного ринку",
       "en": "Topic: Why fish are the main investors of the aquarium market",
       "ru": "Тема: Почему рыбки — главные инвесторы аквариумного рынка"
     }
@@ -1137,7 +1137,7 @@
     "id": "177",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як змайструвати портал у п’ятницю",
+      "uk": "Тема: Як змайструвати портал у п’ятницю",
       "en": "Topic: How to craft a portal on a Friday",
       "ru": "Тема: Как соорудить портал в пятницу"
     }
@@ -1146,7 +1146,7 @@
     "id": "178",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зарядити телефон енергією оптимізму",
+      "uk": "Тема: Як зарядити телефон енергією оптимізму",
       "en": "Topic: How to charge your phone with optimism",
       "ru": "Тема: Как зарядить телефон энергией оптимизма"
     }
@@ -1155,7 +1155,7 @@
     "id": "179",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як стати улюбленцем магнітного поля Землі",
+      "uk": "Тема: Як стати улюбленцем магнітного поля Землі",
       "en": "Topic: How to become the Earth’s magnetic field’s favorite",
       "ru": "Тема: Как стать любимчиком магнитного поля Земли"
     }
@@ -1164,7 +1164,7 @@
     "id": "180",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як приборкати власну тінь",
+      "uk": "Тема: Як приборкати власну тінь",
       "en": "Topic: How to tame your own shadow",
       "ru": "Тема: Как приручить собственную тень"
     }
@@ -1173,7 +1173,7 @@
     "id": "181",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як організувати весілля для кактусів",
+      "uk": "Тема: Як організувати весілля для кактусів",
       "en": "Topic: How to organize a wedding for cacti",
       "ru": "Тема: Как организовать свадьбу для кактусов"
     }
@@ -1182,7 +1182,7 @@
     "id": "182",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому пінгвіни — природжені диригенти",
+      "uk": "Тема: Чому пінгвіни — природжені диригенти",
       "en": "Topic: Why penguins are natural-born conductors",
       "ru": "Тема: Почему пингвины — прирожденные дирижёры"
     }
@@ -1191,7 +1191,7 @@
     "id": "183",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як вирахувати свій рівень чарівності за запахом кави",
+      "uk": "Тема: Як вирахувати свій рівень чарівності за запахом кави",
       "en": "Topic: How to calculate your charm level by coffee aroma",
       "ru": "Тема: Как определить уровень своей привлекательности по аромату кофе"
     }
@@ -1200,7 +1200,7 @@
     "id": "184",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як спілкуватися з холодильником телепатично",
+      "uk": "Тема: Як спілкуватися з холодильником телепатично",
       "en": "Topic: How to telepathically communicate with your fridge",
       "ru": "Тема: Как телепатически общаться с холодильником"
     }
@@ -1209,7 +1209,7 @@
     "id": "185",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому тапки — найкращі порадники у складні часи",
+      "uk": "Тема: Чому тапки — найкращі порадники у складні часи",
       "en": "Topic: Why slippers are the best advisors in hard times",
       "ru": "Тема: Почему тапочки — лучшие советчики в трудные времена"
     }
@@ -1218,7 +1218,7 @@
     "id": "186",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як закохати в себе будильник",
+      "uk": "Тема: Як закохати в себе будильник",
       "en": "Topic: How to make your alarm clock fall in love with you",
       "ru": "Тема: Как влюбить в себя будильник"
     }
@@ -1227,7 +1227,7 @@
     "id": "187",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити вітер робити масаж",
+      "uk": "Тема: Як навчити вітер робити масаж",
       "en": "Topic: How to teach the wind to give massages",
       "ru": "Тема: Как научить ветер делать массаж"
     }
@@ -1236,7 +1236,7 @@
     "id": "188",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як скласти резюме для пельменя",
+      "uk": "Тема: Як скласти резюме для пельменя",
       "en": "Topic: How to write a résumé for a dumpling",
       "ru": "Тема: Как составить резюме для пельменя"
     }
@@ -1245,7 +1245,7 @@
     "id": "189",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Що робити, якщо килим почав філософствувати",
+      "uk": "Тема: Що робити, якщо килим почав філософствувати",
       "en": "Topic: What to do if your carpet starts philosophizing",
       "ru": "Тема: Что делать, если ковёр начал философствовать"
     }
@@ -1254,7 +1254,7 @@
     "id": "190",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як змусити носок перестати зникати у пранні",
+      "uk": "Тема: Як змусити носок перестати зникати у пранні",
       "en": "Topic: How to stop your sock from disappearing in the wash",
       "ru": "Тема: Как заставить носок перестать исчезать при стирке"
     }
@@ -1263,7 +1263,7 @@
     "id": "191",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як мотивувати кактус на великі досягнення",
+      "uk": "Тема: Як мотивувати кактус на великі досягнення",
       "en": "Topic: How to motivate a cactus for great achievements",
       "ru": "Тема: Как мотивировать кактус на великие достижения"
     }
@@ -1272,7 +1272,7 @@
     "id": "192",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зняти фільм з точки зору ложки",
+      "uk": "Тема: Як зняти фільм з точки зору ложки",
       "en": "Topic: How to film a movie from a spoon's point of view",
       "ru": "Тема: Как снять фильм с точки зрения ложки"
     }
@@ -1281,7 +1281,7 @@
     "id": "193",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як проводити уроки етикету для мух",
+      "uk": "Тема: Як проводити уроки етикету для мух",
       "en": "Topic: How to teach etiquette classes to flies",
       "ru": "Тема: Как проводить уроки этикета для мух"
     }
@@ -1290,7 +1290,7 @@
     "id": "194",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому дзеркала мають почуття гумору",
+      "uk": "Тема: Чому дзеркала мають почуття гумору",
       "en": "Topic: Why mirrors have a sense of humor",
       "ru": "Тема: Почему у зеркал есть чувство юмора"
     }
@@ -1299,7 +1299,7 @@
     "id": "195",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як пройти співбесіду у світі гусениць",
+      "uk": "Тема: Як пройти співбесіду у світі гусениць",
       "en": "Topic: How to pass a job interview in the caterpillar world",
       "ru": "Тема: Как пройти собеседование в мире гусениц"
     }
@@ -1308,7 +1308,7 @@
     "id": "196",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як організувати революцію серед парасольок",
+      "uk": "Тема: Як організувати революцію серед парасольок",
       "en": "Topic: How to organize a revolution among umbrellas",
       "ru": "Тема: Как организовать революцию среди зонтов"
     }
@@ -1317,7 +1317,7 @@
     "id": "197",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як розв'язати конфлікт між чайником і плитою",
+      "uk": "Тема: Як розв'язати конфлікт між чайником і плитою",
       "en": "Topic: How to resolve a conflict between a kettle and a stove",
       "ru": "Тема: Как уладить конфликт между чайником и плитой"
     }
@@ -1326,7 +1326,7 @@
     "id": "198",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як створити музику тишею",
+      "uk": "Тема: Як створити музику тишею",
       "en": "Topic: How to compose music using silence",
       "ru": "Тема: Как сочинять музыку из тишины"
     }
@@ -1335,7 +1335,7 @@
     "id": "199",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як приручити будильник і не проспати життя",
+      "uk": "Тема: Як приручити будильник і не проспати життя",
       "en": "Topic: How to tame an alarm clock and not sleep through life",
       "ru": "Тема: Как приручить будильник и не проспать жизнь"
     }
@@ -1344,7 +1344,7 @@
     "id": "200",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як отримати диплом із балаканини",
+      "uk": "Тема: Як отримати диплом із балаканини",
       "en": "Topic: How to earn a degree in rambling",
       "ru": "Тема: Как получить диплом по пустословию"
     }
@@ -1353,7 +1353,7 @@
     "id": "201",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зробити селфі з думкою",
+      "uk": "Тема: Як зробити селфі з думкою",
       "en": "Topic: How to take a selfie with a thought",
       "ru": "Тема: Как сделать селфи с мыслью"
     }
@@ -1362,7 +1362,7 @@
     "id": "202",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як перетворити пельмені на бізнес-стратегію",
+      "uk": "Тема: Як перетворити пельмені на бізнес-стратегію",
       "en": "Topic: How to turn dumplings into a business strategy",
       "ru": "Тема: Как превратить пельмени в бизнес-стратегию"
     }
@@ -1371,7 +1371,7 @@
     "id": "203",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як вивчити мову килимів",
+      "uk": "Тема: Як вивчити мову килимів",
       "en": "Topic: How to learn the language of carpets",
       "ru": "Тема: Как выучить язык ковров"
     }
@@ -1380,7 +1380,7 @@
     "id": "204",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як прокачати харизму з допомогою лимону",
+      "uk": "Тема: Як прокачати харизму з допомогою лимону",
       "en": "Topic: How to boost charisma using a lemon",
       "ru": "Тема: Как прокачать харизму с помощью лимона"
     }
@@ -1389,7 +1389,7 @@
     "id": "205",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як відрізнити сумного голуба від задуманого",
+      "uk": "Тема: Як відрізнити сумного голуба від задуманого",
       "en": "Topic: How to tell a sad pigeon from a thoughtful one",
       "ru": "Тема: Как отличить грустного голубя от задумчивого"
     }
@@ -1398,7 +1398,7 @@
     "id": "206",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як вести переговори з морозивом перед поїданням",
+      "uk": "Тема: Як вести переговори з морозивом перед поїданням",
       "en": "Topic: How to negotiate with ice cream before eating it",
       "ru": "Тема: Как вести переговоры с мороженым перед поеданием"
     }
@@ -1407,7 +1407,7 @@
     "id": "207",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як переконати тінь залишитися вдома",
+      "uk": "Тема: Як переконати тінь залишитися вдома",
       "en": "Topic: How to convince your shadow to stay home",
       "ru": "Тема: Как убедить тень остаться дома"
     }
@@ -1416,7 +1416,7 @@
     "id": "208",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як виграти суперечку з ехо",
+      "uk": "Тема: Як виграти суперечку з ехо",
       "en": "Topic: How to win an argument with an echo",
       "ru": "Тема: Как выиграть спор с эхом"
     }
@@ -1425,7 +1425,7 @@
     "id": "209",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як навчити шкарпетки не втрачатися",
+      "uk": "Тема: Як навчити шкарпетки не втрачатися",
       "en": "Topic: How to teach socks not to disappear",
       "ru": "Тема: Как научить носки не теряться"
     }
@@ -1434,7 +1434,7 @@
     "id": "210",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як читати між шпаринами",
+      "uk": "Тема: Як читати між шпаринами",
       "en": "Topic: How to read between the cracks",
       "ru": "Тема: Как читать между трещинами"
     }
@@ -1443,7 +1443,7 @@
     "id": "211",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як зрозуміти, що твій стілець має характер",
+      "uk": "Тема: Як зрозуміти, що твій стілець має характер",
       "en": "Topic: How to know if your chair has a personality",
       "ru": "Тема: Как понять, что у твоего стула есть характер"
     }
@@ -1452,7 +1452,7 @@
     "id": "212",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як медитувати разом із чайником",
+      "uk": "Тема: Як медитувати разом із чайником",
       "en": "Topic: How to meditate with your kettle",
       "ru": "Тема: Как медитировать вместе с чайником"
     }
@@ -1461,7 +1461,7 @@
     "id": "213",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому олівці ревнують ручки",
+      "uk": "Тема: Чому олівці ревнують ручки",
       "en": "Topic: Why pencils are jealous of pens",
       "ru": "Тема: Почему карандаши ревнуют ручки"
     }
@@ -1470,7 +1470,7 @@
     "id": "214",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як влаштувати вечірку для сніжинок",
+      "uk": "Тема: Як влаштувати вечірку для сніжинок",
       "en": "Topic: How to throw a party for snowflakes",
       "ru": "Тема: Как устроить вечеринку для снежинок"
     }
@@ -1479,7 +1479,7 @@
     "id": "215",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як привчити подушку до щоденника",
+      "uk": "Тема: Як привчити подушку до щоденника",
       "en": "Topic: How to get your pillow to keep a diary",
       "ru": "Тема: Как приучить подушку вести дневник"
     }
@@ -1488,7 +1488,7 @@
     "id": "216",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як дресирувати власну інтуїцію",
+      "uk": "Тема: Як дресирувати власну інтуїцію",
       "en": "Topic: How to train your own intuition",
       "ru": "Тема: Как дрессировать свою интуицию"
     }
@@ -1497,7 +1497,7 @@
     "id": "217",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як слухати музику носом",
+      "uk": "Тема: Як слухати музику носом",
       "en": "Topic: How to listen to music with your nose",
       "ru": "Тема: Как слушать музыку носом"
     }
@@ -1506,7 +1506,7 @@
     "id": "218",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як підкорити серце холодильника",
+      "uk": "Тема: Як підкорити серце холодильника",
       "en": "Topic: How to win a fridge’s heart",
       "ru": "Тема: Как покорить сердце холодильника"
     }
@@ -1515,7 +1515,7 @@
     "id": "219",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як виміряти рівень драми у каві",
+      "uk": "Тема: Як виміряти рівень драми у каві",
       "en": "Topic: How to measure the drama level in your coffee",
       "ru": "Тема: Как измерить уровень драмы в кофе"
     }
@@ -1524,7 +1524,7 @@
     "id": "220",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як обдурити час за допомогою тапок",
+      "uk": "Тема: Як обдурити час за допомогою тапок",
       "en": "Topic: How to trick time using slippers",
       "ru": "Тема: Как обмануть время при помощи тапочек"
     }
@@ -1533,7 +1533,7 @@
     "id": "221",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Чому кавун — ідеальний ментор",
+      "uk": "Тема: Чому кавун — ідеальний ментор",
       "en": "Topic: Why a watermelon is the perfect mentor",
       "ru": "Тема: Почему арбуз — идеальный наставник"
     }
@@ -1542,7 +1542,7 @@
     "id": "223",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як провести майстер-клас для тіней",
+      "uk": "Тема: Як провести майстер-клас для тіней",
       "en": "Topic: How to run a masterclass for shadows",
       "ru": "Тема: Как провести мастер-класс для теней"
     }
@@ -1551,7 +1551,7 @@
     "id": "225",
     "sentence_type": "I_AM_EXPERT",
     "sentence": {
-      "ua": "Тема: Як вижити в кімнаті з надто розумним пилососом",
+      "uk": "Тема: Як вижити в кімнаті з надто розумним пилососом",
       "en": "Topic: How to survive in a room with an overly smart vacuum",
       "ru": "Тема: Как выжить в комнате с чересчур умным пылесосом"
     }

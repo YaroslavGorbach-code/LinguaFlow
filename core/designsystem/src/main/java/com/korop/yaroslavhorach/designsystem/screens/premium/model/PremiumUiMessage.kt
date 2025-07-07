@@ -1,5 +1,8 @@
 package com.korop.yaroslavhorach.designsystem.screens.premium.model
 
 sealed class PremiumUiMessage {
-    data object NavigateToSuccess : PremiumUiMessage()
+    class NavigateToSuccess : PremiumUiMessage()
+    data object ShowLifeTimeSubscriptionDialog : PremiumUiMessage()
+    data object ShowMonthSubscriptionDialog : PremiumUiMessage()
+    data object Show6MonthSubscriptionDialog : PremiumUiMessage()
 }

@@ -11,7 +11,8 @@ class TongueTwister(
         EASY, MEDIUM, HARD
     }
 
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val textString: String
         get() = text[currentLang] ?: text["en"] ?: ""

@@ -5,7 +5,6 @@ import com.korop.yaroslavhorach.avatar_change.model.AvatarChangeAction
 import com.korop.yaroslavhorach.avatar_change.model.AvatarChangeUiMessage
 import com.korop.yaroslavhorach.avatar_change.model.AvatarChangeViewState
 import com.korop.yaroslavhorach.common.base.BaseViewModel
-import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.BufferOverflow
@@ -47,7 +46,6 @@ class AvatarChangeViewModel @Inject constructor(private val prefsRepository: Pre
 
     init {
 
-
         pendingActions
             .onEach { event ->
                 when (event) {
@@ -59,8 +57,6 @@ class AvatarChangeViewModel @Inject constructor(private val prefsRepository: Pre
                     }
                     is AvatarChangeAction.OnNextClicked -> {
                         prefsRepository.finishOnboarding()
-                        uiMessageManager.emitMessage(UiMessage(AvatarChangeUiMessage.NavigateToHome))
-                        state.value.avatarResId?.let { prefsRepository.changeAvatar(it) }
                     }
                     else -> {}
                 }

@@ -15,7 +15,8 @@ data class Challenge(
     val status: Status = Status(),
     val progressInMinutes: Int
 ) {
-    private val currentLang: String = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val title: String
         get() = titleText[currentLang] ?: titleText["en"] ?: ""

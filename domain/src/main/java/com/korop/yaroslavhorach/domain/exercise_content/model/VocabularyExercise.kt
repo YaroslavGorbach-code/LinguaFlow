@@ -16,7 +16,8 @@ data class Vocabulary(
         NOUN, ADJECTIVE, VERB
     }
 
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val taskText: String
         get() = task[currentLang] ?: task["en"] ?: ""
@@ -49,7 +50,8 @@ data class ScoreFeedback(
     val maxValue: Int,
     private val text: Map<String, String>
 ) {
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val feedbackText: String
         get() = text[currentLang] ?: text["en"] ?: ""

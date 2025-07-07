@@ -7,7 +7,8 @@ class Word(
     val exerciseName: WordType,
     private val word: Map<String, String>,
 ) {
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val wordText: String
         get() = word[currentLang] ?: this.word["en"] ?: ""

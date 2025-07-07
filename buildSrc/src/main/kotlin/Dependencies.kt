@@ -5,7 +5,7 @@ object AppConfig {
     const val targetSdkVersion = 35
     const val minSdkVersion = 24
     const val applicationId = "com.korop.yaroslavhorach.lingoFlow"
-    const val versionCode = 1
+    const val versionCode = 3
     const val versionName = "0.1"
     const val jvmTarget = "21"
     const val kotlinCompiler = "1.9.22"
@@ -63,6 +63,7 @@ object Versions {
     const val composeDialogs = "1.2.0"
     const val protobuf = "4.29.2"
     const val ads = "24.4.0"
+    const val billing = "8.0.0"
 }
 
 object Libs {
@@ -96,4 +97,6 @@ object Libs {
     const val protobufJavalite = "com.google.protobuf:protobuf-javalite:${Versions.protobuf}"
     const val protobufKotlinlite = "com.google.protobuf:protobuf-kotlin-lite:${Versions.protobuf}"
     const val ads = "com.google.android.gms:play-services-ads:${Versions.ads}"
+    const val billing = "com.android.billingclient:billing:${Versions.billing}"
+    const val billingKts = "com.android.billingclient:billing-ktx:${Versions.billing}"
 }

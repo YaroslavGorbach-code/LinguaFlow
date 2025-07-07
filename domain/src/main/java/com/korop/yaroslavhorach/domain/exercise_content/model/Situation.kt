@@ -9,7 +9,8 @@ class Situation(
     private val situation: Map<String, String>,
     private val task: Map<String, String>
 ) {
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val situationText: String
         get() = situation[currentLang] ?: this.situation["en"] ?: ""

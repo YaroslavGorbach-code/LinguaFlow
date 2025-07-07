@@ -13,8 +13,9 @@ data class Exercise(
     val isEnable: Boolean = true,
     val isLastActive: Boolean = false,
     val isVisible: Boolean = true
-){
-    private val currentLang = Locale.getDefault().language
+) {
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
     val nameText: String
         get() = nameString[currentLang] ?: this.nameString["en"] ?: ""

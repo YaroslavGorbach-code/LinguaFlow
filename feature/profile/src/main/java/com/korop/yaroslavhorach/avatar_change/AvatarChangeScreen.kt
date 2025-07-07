@@ -50,7 +50,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.korop.yaroslavhorach.avatar_change.model.AvatarChangeAction
-import com.korop.yaroslavhorach.avatar_change.model.AvatarChangeUiMessage
 import com.korop.yaroslavhorach.avatar_change.model.AvatarChangeViewState
 import com.korop.yaroslavhorach.designsystem.R
 import com.korop.yaroslavhorach.designsystem.theme.Golden
@@ -70,20 +69,9 @@ internal fun AvatarChangeRoute(
     viewModel: AvatarChangeViewModel = hiltViewModel(),
     navigateBack: () -> Unit,
     navigateToPremium: () -> Unit,
-    navigateHome: () -> Unit
 ) {
     val keyboardController = LocalSoftwareKeyboardController.current
     val state by viewModel.state.collectAsStateWithLifecycle()
-
-    state.uiMessage?.let { uiMessage ->
-        when (uiMessage.message) {
-            is AvatarChangeUiMessage.NavigateToHome -> {
-                navigateHome()
-                keyboardController?.hide()
-                viewModel.clearMessage(uiMessage.id)
-            }
-        }
-    }
 
     AvatarChangeScreen(
         state = state,

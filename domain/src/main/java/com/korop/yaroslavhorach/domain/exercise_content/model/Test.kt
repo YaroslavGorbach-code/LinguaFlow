@@ -12,13 +12,15 @@ data class Test(
     private val wrongAnswer: Map<String, String>,
     val variants: List<Variant>
 ) {
-    private val currentLang = Locale.getDefault().language
+    private val currentLang: String
+        get() = Locale.getDefault().language
 
      class Variant(
         private val texts: Map<String, String>,
         val isCorrect: Boolean
     ) {
-         private val currentLang = Locale.getDefault().language
+         private val currentLang: String
+             get() = Locale.getDefault().language
 
          val variantText: String
             get() = texts[currentLang] ?: this.texts["en"] ?: ""

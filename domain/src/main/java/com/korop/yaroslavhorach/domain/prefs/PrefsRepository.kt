@@ -17,6 +17,7 @@ interface PrefsRepository {
     suspend fun changeName(name: String)
     suspend fun addExperience(xp: Int)
     suspend fun activatePremium()
+    suspend fun deactivatePremium()
     suspend fun getUsedContent(name: String): Flow<List<Long>>
     suspend fun useExerciseContent(id: Long, name: String)
     suspend fun clearUsedExerciseContent(name: String)
