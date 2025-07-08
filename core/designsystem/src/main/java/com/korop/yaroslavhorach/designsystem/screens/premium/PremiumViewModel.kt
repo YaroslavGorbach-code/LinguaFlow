@@ -48,17 +48,43 @@ class PremiumViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            val permanentSubscription = billingManager.queryPermanentSubscriptionProduct()
-            val sixMonthSubscription = billingManager.query6MonthSubscriptions()
-            val monthSubscription = billingManager.queryMonthSubscriptions()
+            val currency = mapCurrencySymbol(billingManager.queryMonthSubscriptions()
+                .first()
+                .subscriptionOfferDetails
+                ?.first()
+                ?.pricingPhases?.pricingPhaseList
+                ?.first()
+                ?.priceCurrencyCode)
+
+            val permanentSubscriptionPrice = billingManager.queryPermanentSubscriptionProduct()
+                .first()
+                .oneTimePurchaseOfferDetails
+                ?.priceAmountMicros?.div(1_000_000.0)
+
+            val sixMonthSubscriptionPrice = billingManager.query6MonthSubscriptions()
+                .first()
+                .subscriptionOfferDetails
+                ?.first()
+                ?.pricingPhases?.pricingPhaseList
+                ?.first()
+                ?.priceAmountMicros?.div(1_000_000.0)
+
+            val monthSubscriptionPrice = billingManager.queryMonthSubscriptions()
+                .first()
+                .subscriptionOfferDetails
+                ?.first()
+                ?.pricingPhases?.pricingPhaseList
+                ?.first()
+                ?.priceAmountMicros?.div(1_000_000.0)
+
 
             variants.value = listOf(
                 PremiumVariant.Month(
                     UiText.FromResource(R.string.premium_variant_mounth_title_text),
                     UiText.FromResource(
                         R.string.premium_variant_prise_mounthly_format,
-                        extractAmountAndCurrency(monthSubscription.joinToString())?.first.toString()
-                                + " " +  extractAmountAndCurrency(monthSubscription.joinToString())?.second
+                        monthSubscriptionPrice.toString()
+                                + " " + mapCurrencySymbol(currency)
                     ),
                     UiText.Empty
                 ),
@@ -66,20 +92,20 @@ class PremiumViewModel @Inject constructor(
                     UiText.FromResource(R.string.premium_variant_6_mounth_title_text),
                     UiText.FromResource(
                         R.string.premium_variant_prise_half_a_year_roemat,
-                        extractAmountAndCurrency(sixMonthSubscription.joinToString())?.first.toString()
-                                + " " +  extractAmountAndCurrency(sixMonthSubscription.joinToString())?.second
+                        sixMonthSubscriptionPrice.toString()
+                                + " " +  mapCurrencySymbol(currency)
                     ),
                     UiText.FromResource(
                         R.string.premium_variant_prise_mounthly_format,
-                        ((extractAmountAndCurrency(sixMonthSubscription.joinToString())?.first ?: 0.0) / 6).roundToInt()
-                            .toString() + " " + extractAmountAndCurrency(sixMonthSubscription.joinToString())?.second
+                        ((sixMonthSubscriptionPrice ?: 0.0) / 6).roundToInt()
+                            .toString() + " " +  mapCurrencySymbol(currency)
                     )
                 ),
                 PremiumVariant.Forever(
                     UiText.FromResource(R.string.premium_variant_permanent_title_text),
                     UiText.FromString(
-                        extractAmountAndCurrency(permanentSubscription.joinToString())?.first.toString()
-                                + " " +  extractAmountAndCurrency(permanentSubscription.joinToString())?.second + "/∞"
+                        permanentSubscriptionPrice.toString()
+                                + " " +  mapCurrencySymbol(currency) + "/∞"
                     ),
                     UiText.FromResource(R.string.premium_variant_the_best_bage_title_text)
                 )
@@ -141,33 +167,45 @@ class PremiumViewModel @Inject constructor(
         })
     }
 
-    private fun extractAmountAndCurrency(logString: String): Pair<Double, String>? {
-        val jsonRegex = Regex("""jsonString='(.*?)'""", RegexOption.DOT_MATCHES_ALL)
-        val jsonMatch = jsonRegex.find(logString) ?: return null
-        val jsonString = jsonMatch.groupValues[1]
-
-        val priceRegex = Regex(""""formattedPrice"\s*:\s*"(.*?)"""")
-        val priceMatch = priceRegex.find(jsonString)
-        val formattedPrice = priceMatch?.groupValues?.get(1) ?: return null
-
-        val match = Regex("""([\d,.]+)[\s\u00A0]*(\D+)""").find(formattedPrice)
-            ?: return null
-
-        val amountString = match.groupValues[1].replace(",", ".")
-        val currencyRaw = match.groupValues[2].trim()
-
-        val amount = amountString.toDoubleOrNull() ?: return null
-        val currencySymbol = mapCurrencySymbol(currencyRaw)
-
-        return Pair(amount, currencySymbol)
-    }
-
-    private fun mapCurrencySymbol(code: String): String {
-        return when (code) {
+    private fun mapCurrencySymbol(code: String?): String {
+        return when (code?.uppercase()) {
             "UAH" -> "₴"
             "USD" -> "$"
             "EUR" -> "€"
             "GBP" -> "£"
+            "JPY" -> "¥"
+            "CNY", "RMB" -> "¥"
+            "KRW" -> "₩"
+            "INR" -> "₹"
+            "RUB" -> "₽"
+            "TRY" -> "₺"
+            "BRL" -> "R$"
+            "MXN" -> "MX$"
+            "CAD" -> "C$"
+            "AUD" -> "A$"
+            "NZD" -> "NZ$"
+            "CHF" -> "CHF"
+            "SEK" -> "kr"
+            "NOK" -> "kr"
+            "DKK" -> "kr"
+            "PLN" -> "zł"
+            "CZK" -> "Kč"
+            "HUF" -> "Ft"
+            "ZAR" -> "R"
+            "ILS" -> "₪"
+            "SAR" -> "﷼"
+            "AED" -> "د.إ"
+            "IDR" -> "Rp"
+            "VND" -> "₫"
+            "THB" -> "฿"
+            "MYR" -> "RM"
+            "SGD" -> "S$"
+            "HKD" -> "HK$"
+            "TWD" -> "NT$"
+            "ARS" -> "AR$"
+            "CLP" -> "CLP$"
+            "COP" -> "COL$"
+            null -> ""
             else -> code
         }
     }
