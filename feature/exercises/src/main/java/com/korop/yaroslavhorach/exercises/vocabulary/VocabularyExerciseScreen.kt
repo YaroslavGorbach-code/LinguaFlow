@@ -313,7 +313,7 @@ private fun CircularTimer(
         }
 
         Text(
-            text = "${timeLeft.intValue}s",
+            text = "${timeLeft.intValue}",
             style = LinguaTypography.h2,
             color = MaterialTheme.colorScheme.typoPrimary()
         )

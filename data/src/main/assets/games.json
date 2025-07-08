@@ -50,7 +50,7 @@
       "en": "🎭 Make up a short story using 4 random words. All words must be included! This activity builds imagination, creativity, and coherent speech.",
       "ru": "🎭 Придумай короткую историю, используя 4 случайных слова. Все слова должны быть в рассказе! Упражнение развивает воображение, креативность и связную речь."
     },
-    "minExperienceRequired": 100,
+    "minExperienceRequired": 85,
     "maxProgress": 3,
     "name": "FOUR_WORDS_ONE_STORY",
     "skills": [
@@ -514,7 +514,7 @@
       "en": "🎯 In this exercise, you’ll get a part of speech — and need to recall as many relevant words as possible. For example, nouns: book, house, table... This challenge develops vocabulary, mental flexibility, and verbal fluency. The time is limited, but there’s no strict pause limit per word.",
       "ru": "🎯 В этом упражнении ты получаешь часть речи — и стараешься вспомнить как можно больше подходящих слов. Например, существительные: книга, дом, стол... Упражнение развивает словарный запас, гибкость мышления и беглость речи. Время ограничено, но строгого лимита на паузу нет."
     },
-    "minExperienceRequired": 200,
+    "minExperienceRequired": 150,
     "maxProgress": 0,
     "name": "WORD_IN_TEMPO",
     "skills": [
@@ -572,7 +572,7 @@
       "en": "🧠 Upgrade your language! In this exercise, you replace boring or repetitive words with synonyms that sound sharper, richer, or more expressive. It builds vocabulary and helps you spot and fix weak language.",
       "ru": "🧠 Прокачай речь! В этом упражнении ты заменяешь скучные или повторяющиеся слова на синонимы, которые звучат точнее, богаче и выразительнее. Это развивает словарный запас и умение улучшать формулировки."
     },
-    "minExperienceRequired": 300,
+    "minExperienceRequired": 350,
     "maxProgress": 5,
     "name": "ONE_SYNONYM_PLEASE",
     "skills": [

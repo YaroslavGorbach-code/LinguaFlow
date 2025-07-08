@@ -32,10 +32,22 @@ data class GamesViewState(
                 skills = listOf(Skill.CREATIVE, Skill.STORYTELLING),
             )
         )
+        private val game2 = GameUi(
+            Game(
+                0, nameString = mapOf("en" to "test"),
+                task = emptyMap(),
+                example = emptyMap(),
+                description = mapOf("en" to "test"),
+                minExperienceRequired = 1000,
+                maxProgress = 10,
+                name = GameName.HOT_WORD,
+                skills = listOf(Skill.CREATIVE, Skill.STORYTELLING),
+            )
+        )
 
         val Empty = GamesViewState(emptyList())
         val Preview = GamesViewState(
-            listOf(game),
+            listOf(game, game2),
             sorts = listOf(GameSort.FLIRT, GameSort.HUMOR)
         )
     }

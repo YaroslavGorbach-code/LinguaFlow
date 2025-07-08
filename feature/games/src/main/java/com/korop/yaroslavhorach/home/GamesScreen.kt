@@ -33,6 +33,7 @@ import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -433,7 +434,6 @@ private fun Game(
         val isEnable = state.experience >= game.game.minExperienceRequired || state.isUserPremium
 
         BoxWithStripes(
-            isEnabled = isEnable,
             rawShadowYOffset = 3.dp,
             contentPadding = 16.dp,
             background = MaterialTheme.colorScheme.surface,
@@ -467,13 +467,27 @@ private fun Game(
                     )
                 }
                 Spacer(modifier = Modifier.width(8.dp))
-                Image(
-                    modifier = Modifier
-                        .align(Alignment.CenterVertically)
-                        .size(60.dp),
-                    painter = painterResource(game.iconResId),
-                    contentDescription = ""
-                )
+                Box(modifier = Modifier.align(Alignment.CenterVertically)) {
+                    Image(
+                        modifier = Modifier
+                            .size(60.dp),
+                        painter = painterResource(game.iconResId),
+                        contentDescription = ""
+                    )
+                    if (isEnable.not()){
+                        Icon(
+                            modifier = Modifier
+                                .align(Alignment.TopEnd)
+                                .offset(y = (-10).dp, x = 10.dp)
+                                .size(35.dp)
+                                .background(MaterialTheme.colorScheme.surface, CircleShape)
+                                .padding(6.dp),
+                            tint = MaterialTheme.colorScheme.primaryIcon(),
+                            painter = painterResource(com.korop.yaroslavhorach.designsystem.R.drawable.ic_lock),
+                            contentDescription = ""
+                        )
+                    }
+                }
             }
         }
     }
