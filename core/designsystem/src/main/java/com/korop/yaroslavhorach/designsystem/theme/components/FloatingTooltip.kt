@@ -43,7 +43,6 @@ import androidx.compose.ui.unit.toSize
 import androidx.compose.ui.zIndex
 import kotlin.math.abs
 import kotlin.math.roundToInt
-
 @Composable
 fun FloatingTooltip(
     modifier: Modifier = Modifier,
@@ -73,38 +72,61 @@ fun FloatingTooltip(
     val safeTopInset = WindowInsets.statusBars.getTop(density).toFloat()
     val visible = appearPosition != null
 
+    val rootPosition = remember { mutableStateOf(Offset.Zero) }
+
     val alpha by animateFloatAsState(
         targetValue = if (visible) 1f else 0f,
         animationSpec = tween(durationMillis = 300),
         label = "tooltip_alpha"
     )
 
-    val targetX = remember(visible, appearPosition, descriptionTooltipSize.value) {
+    val appearLocalOffset = remember(appearPosition, rootPosition.value) {
+        if (appearPosition != null) {
+            appearPosition - rootPosition.value
+        } else Offset.Zero
+    }
+
+    val targetX = remember(visible, appearPosition, descriptionTooltipSize.value, appearLocalOffset) {
         with(density) {
             val screenWidth = configuration.screenWidthDp.dp.toPx()
             val tooltipWidth = descriptionTooltipSize.value.width.toFloat()
 
-            fillMaxsize.value = tooltipWidth > screenWidth * 0.9
+            fillMaxsize.value = tooltipWidth > screenWidth * 0.9f
 
-            if (fillMaxsize.value) {
+            val finalX = if (fillMaxsize.value) {
                 0f
-            } else ((appearPosition?.x ?: 0f) - (tooltipWidth + paddingHorizontal.toPx() * 2) / 2f)
+            } else {
+                var x = appearLocalOffset.x - (tooltipWidth + paddingHorizontal.toPx() * 2) / 2f
+                val maxX = (screenWidth - tooltipWidth - paddingHorizontal.toPx() * 2).coerceAtLeast(0f)
+                x = x.coerceIn(0f, maxX)
+                x
+            }
+
+            val localTriangleX = appearLocalOffset.x - finalX - paddingHorizontal.toPx()
+
+            val triangleMargin = 8.dp.toPx()
+            val minX = triangleMargin
+            val maxX = (tooltipWidth - triangleMargin).coerceAtLeast(triangleMargin)
+
+            triangleStart.floatValue = localTriangleX
+                .coerceIn(minX, maxX)
+
+            finalX
         }
     }
 
-    val targetY = remember(visible, appearPosition, descriptionTooltipSize.value) {
+    val targetY = remember(visible, appearPosition, descriptionTooltipSize.value, appearLocalOffset) {
         with(density) {
-            var y = (appearPosition?.y ?: 0f) - descriptionTooltipSize.value.height - bottomPadding.toPx()
+            var y = appearLocalOffset.y - descriptionTooltipSize.value.height - bottomPadding.toPx()
 
             if (y < safeTopInset) {
                 if (visible) onRequireRootTopPadding((safeTopInset + abs(y)).toDp())
-
                 y = (safeTopInset + y).coerceAtLeast(safeTopInset)
             } else {
                 onRequireRootTopPadding(0.dp)
             }
 
-            triangleStart.floatValue = appearPosition?.x ?: 0f
+            triangleStart.floatValue = appearLocalOffset.x - targetX
             y
         }
     }
@@ -131,7 +153,6 @@ fun FloatingTooltip(
             ), label = "YOffset"
         )
 
-
     val animatedModifier = if (enableFloatAnimation)
         modifier.offset { IntOffset(0, offsetY.roundToInt()) }
     else modifier
@@ -142,6 +163,7 @@ fun FloatingTooltip(
             .wrapContentSize()
             .zIndex(1f)
             .onGloballyPositioned {
+                rootPosition.value = it.localToWindow(Offset.Zero)
                 descriptionTooltipSize.value = it.size
             }
             .absoluteOffset {
@@ -157,12 +179,9 @@ fun FloatingTooltip(
                 val height = size.height
                 val rectBottom = height - triangleHeightPx
 
-                // Calculate start point of triangle
-                val triangleStartPx =
-                    if (fillMaxsize.value) triangleStart.floatValue else (width - triangleWidthPx) / 2f
+                val triangleStartPx = triangleStart.floatValue
 
                 val triangleEnd = triangleStartPx + triangleWidthPx
-
 
                 val path = Path().apply {
                     moveTo(cornerRadiusPx, 0f)
@@ -180,11 +199,11 @@ fun FloatingTooltip(
                     lineTo(triangleStartPx + triangleWidthPx / 2f, height)
                     lineTo(triangleStartPx, rectBottom)
 
-                    // left bottom
+                    // Left bottom
                     lineTo(cornerRadiusPx, rectBottom)
                     quadraticTo(0f, rectBottom, 0f, rectBottom - cornerRadiusPx)
 
-                    // left
+                    // Left
                     lineTo(0f, cornerRadiusPx)
                     quadraticTo(0f, 0f, cornerRadiusPx, 0f)
 
@@ -198,7 +217,6 @@ fun FloatingTooltip(
                 this.alpha = alpha
             }
             .padding(bottom = triangleHeight)
-
     ) {
         Column(
             modifier = Modifier

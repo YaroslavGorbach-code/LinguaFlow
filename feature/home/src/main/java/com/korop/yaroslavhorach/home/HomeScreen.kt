@@ -46,6 +46,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
@@ -439,6 +440,7 @@ private fun Exercise(
                 }
             }
     ) {
+
         BoxWithStripes(
             stripeColor = Color.Transparent,
             contentPadding = 8.dp,
@@ -450,11 +452,12 @@ private fun Exercise(
                 .onGloballyPositioned { coordinates ->
                     layoutCoordinates.value = coordinates
                 }
+                .clip(RoundedCornerShape(16.dp))
                 .clickable {
                     layoutCoordinates.value?.let { coordinates ->
-                        val center = coordinates.boundsInRoot().topLeft
+                        val center = coordinates.localToWindow(Offset.Zero)
 
-                        onClickWithCoordinates(Offset(center.x + (exerciseSize.value / 2), center.y))
+                        onClickWithCoordinates(Offset(center.x + (exerciseSize.value), center.y))
                     }
                 },
             shape = RoundedCornerShape(16.dp),
