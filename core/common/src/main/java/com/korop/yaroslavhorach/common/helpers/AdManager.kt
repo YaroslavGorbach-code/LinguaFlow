@@ -76,7 +76,7 @@ class AdManager @Inject constructor(
                         _interstitialAd?.show(activity)
                         loadInterstitial()
                     }
-                }
+                }.collect()
         }
     }
 }

@@ -664,7 +664,7 @@ private fun GameDescriptionNotEnable(
             Text(
                 modifier = Modifier.align(Alignment.Center),
                 text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + stringResource(R.string.xp_postfix_text),
-                color = Golden,
+                color = MaterialTheme.colorScheme.typoPrimary(),
                 textAlign = TextAlign.Center,
                 style = LinguaTypography.body5
             )
