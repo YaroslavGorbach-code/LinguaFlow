@@ -5,9 +5,8 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -53,7 +52,7 @@ fun SecondaryButton(
     Box(
         modifier = modifier
             .onSizeChanged { boxSize.value = it }
-            .height(45.dp)
+            .defaultMinSize(minHeight = 45.dp)
             .pointerInput(Unit) {
                 awaitPointerEventScope {
                     while (true) {
@@ -86,7 +85,7 @@ fun SecondaryButton(
     ) {
         Spacer(
             modifier = Modifier
-                .fillMaxSize()
+                .matchParentSize()
                 .clip(RoundedCornerShape(8.dp))
                 .background(color = MaterialTheme.colorScheme.onBackgroundDark())
         )
@@ -94,7 +93,7 @@ fun SecondaryButton(
         Spacer(
             modifier = Modifier
                 .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
-                .fillMaxSize()
+                .matchParentSize()
                 .clip(RoundedCornerShape(8.dp))
                 .background(color = MaterialTheme.colorScheme.surface)
         )
@@ -121,7 +120,7 @@ fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
     Box(
         modifier = modifier
             .onSizeChanged { boxSize.value = it }
-            .height(45.dp)
+            .defaultMinSize(minHeight = 45.dp)
             .pointerInput(Unit) {
                 awaitPointerEventScope {
                     while (true) {
@@ -154,7 +153,7 @@ fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
     ) {
         Spacer(
             modifier = Modifier
-                .fillMaxSize()
+                .matchParentSize()
                 .clip(RoundedCornerShape(8.dp))
                 .background(color = MaterialTheme.colorScheme.secondary)
         )
@@ -162,7 +161,7 @@ fun PrimaryButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
         Spacer(
             modifier = Modifier
                 .offset { IntOffset(x = 0, -shadowYOffset.value.value.roundToInt()) }
-                .fillMaxSize()
+                .matchParentSize()
                 .clip(RoundedCornerShape(8.dp))
                 .background(color = MaterialTheme.colorScheme.primary)
         )
@@ -233,7 +232,7 @@ fun TextButton(
             }
             .offset(y = offsetY.value)
             .fillMaxWidth()
-            .height(45.dp)
+            .defaultMinSize(minHeight = 43.dp)
     ) {
         Text(
             text = text.uppercase(),
@@ -251,7 +250,7 @@ fun PremiumButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
         stripeColor = White_20,
         rawShadowYOffset = 4.dp,
         modifier = modifier
-            .height(45.dp),
+            .defaultMinSize(minHeight = 43.dp),
         onClick = onClick,
         shape = RoundedCornerShape(8.dp),
         backgroundShadow = ChineseGold,
@@ -275,7 +274,7 @@ fun PremiumButton(modifier: Modifier = Modifier, text: String, onClick: () -> Un
 fun InactiveButton(modifier: Modifier = Modifier, text: String) {
     Box(
         modifier = modifier
-            .height(45.dp)
+            .defaultMinSize(minHeight = 43.dp)
             .background(color = MaterialTheme.colorScheme.onBackgroundDark(), shape = RoundedCornerShape(8.dp))
     ) {
         Text(

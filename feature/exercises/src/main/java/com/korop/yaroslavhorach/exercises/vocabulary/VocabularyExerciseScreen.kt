@@ -28,7 +28,9 @@ import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -40,6 +42,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
@@ -183,77 +186,84 @@ private fun VocabularyContent(
 ) {
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
 
-    if (screenState.vocabulary != null) {
-        Column(
-            modifier = Modifier
-                .conditional(screenState.isExerciseActive) {
-                    clickable { actioner(VocabularyExerciseAction.OnScreenClicked) }
-                }
-                .padding(horizontal = 20.dp)
-                .padding(top = 24.dp)
-                .fillMaxSize()
-        ) {
-            Text(
-                stringResource(R.string.vocabulary_exercise_task_title_text),
-                style = LinguaTypography.h5,
-                color = MaterialTheme.colorScheme.typoPrimary()
-            )
-            Spacer(Modifier.height(10.dp))
-            Text(
-                screenState.vocabulary.getTaskText(lang),
-                style = LinguaTypography.body3,
-                color = MaterialTheme.colorScheme.typoPrimary()
-            )
-            Spacer(Modifier.height(24.dp))
-            Text(
-                stringResource(R.string.vocabulary_exercise_example_title_text),
-                style = LinguaTypography.h5,
-                color = MaterialTheme.colorScheme.typoPrimary()
-            )
-            Spacer(Modifier.height(10.dp))
-            Text(
-                screenState.vocabulary.getExampleText(lang),
-                style = LinguaTypography.body3,
-                color = MaterialTheme.colorScheme.typoPrimary()
-            )
-            Spacer(Modifier.Companion.weight(0.8f))
-
-            if (screenState.isExerciseActive) {
-                Box(Modifier.fillMaxWidth()) {
-                    CircularTimer(modifier = Modifier.align(Alignment.Center), isRunning = true, onFinished = {
-                        actioner(VocabularyExerciseAction.OnTimerFinished)
-                    })
-                }
+    Column(
+        modifier = Modifier
+            .clip(RoundedCornerShape(16.dp))
+            .conditional(screenState.isExerciseActive) {
+                clickable { actioner(VocabularyExerciseAction.OnScreenClicked) }
             }
+            .padding(horizontal = 20.dp)
+            .padding(top = 24.dp)
+            .fillMaxSize()
+    ) {
+        if (screenState.vocabulary != null) {
+            Column(
+                modifier = Modifier
+                    .verticalScroll(rememberScrollState())
+                    .weight(1f)
+            ) {
+                Text(
+                    stringResource(R.string.vocabulary_exercise_task_title_text),
+                    style = LinguaTypography.h5,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.height(10.dp))
+                Text(
+                    screenState.vocabulary.getTaskText(lang),
+                    style = LinguaTypography.body3,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.height(24.dp))
+                Text(
+                    stringResource(R.string.vocabulary_exercise_example_title_text),
+                    style = LinguaTypography.h5,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.height(10.dp))
+                Text(
+                    screenState.vocabulary.getExampleText(lang),
+                    style = LinguaTypography.body3,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.Companion.weight(0.8f))
 
-            Spacer(Modifier.Companion.weight(1f))
+                if (screenState.isExerciseActive) {
+                    Box(Modifier.fillMaxWidth()) {
+                        CircularTimer(modifier = Modifier.align(Alignment.Center), isRunning = true, onFinished = {
+                            actioner(VocabularyExerciseAction.OnTimerFinished)
+                        })
+                    }
+                }
 
-            if (screenState.isExerciseActive) {
-                InactiveButton(text = stringResource(R.string.vocabulary_exercise_next_btn_text))
-            } else {
-                StaticTooltip(
-                    enableFloatAnimation = true,
-                    backgroundColor = MaterialTheme.colorScheme.background,
-                    borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-                    triangleAlignment = Alignment.Start,
-                    paddingHorizontal = 20.dp,
-                    contentPadding = 16.dp,
-                    cornerRadius = 12.dp,
-                    borderSize = 1.5.dp
-                ) {
-                    Text(
-                        text = stringResource(R.string.vocabulary_exercise_motivation_text),
-                        color = MaterialTheme.colorScheme.typoPrimary(),
-                        style = LinguaTypography.body4
-                    )
-                }
-                Spacer(Modifier.height(16.dp))
-                PrimaryButton(text = stringResource(R.string.vocabulary_exercise_start_text)) {
-                    actioner(VocabularyExerciseAction.OnStartClicked)
-                }
+                Spacer(Modifier.Companion.weight(1f))
             }
-            Spacer(Modifier.padding(20.dp))
         }
+
+        if (screenState.isExerciseActive) {
+            InactiveButton(text = stringResource(R.string.vocabulary_exercise_next_btn_text))
+        } else {
+            StaticTooltip(
+                enableFloatAnimation = true,
+                backgroundColor = MaterialTheme.colorScheme.background,
+                borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+                triangleAlignment = Alignment.Start,
+                paddingHorizontal = 20.dp,
+                contentPadding = 16.dp,
+                cornerRadius = 12.dp,
+                borderSize = 1.5.dp
+            ) {
+                Text(
+                    text = stringResource(R.string.vocabulary_exercise_motivation_text),
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.body4
+                )
+            }
+            Spacer(Modifier.height(16.dp))
+            PrimaryButton(text = stringResource(R.string.vocabulary_exercise_start_text)) {
+                actioner(VocabularyExerciseAction.OnStartClicked)
+            }
+        }
+        Spacer(Modifier.padding(20.dp))
     }
 }
 

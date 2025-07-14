@@ -5,8 +5,8 @@ object AppConfig {
     const val targetSdkVersion = 35
     const val minSdkVersion = 24
     const val applicationId = "com.korop.yaroslavhorach.lingoFlow"
-    const val versionCode = 7
-    const val versionName = "0.0.7"
+    const val versionCode = 8
+    const val versionName = "0.0.8"
     const val jvmTarget = "21"
     const val kotlinCompiler = "1.9.22"
 

@@ -21,6 +21,7 @@ import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
@@ -34,8 +35,10 @@ import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -51,6 +54,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -63,7 +67,6 @@ import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.KellyGreen
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
-import com.korop.yaroslavhorach.designsystem.theme.White
 import com.korop.yaroslavhorach.designsystem.theme.White_40
 import com.korop.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.korop.yaroslavhorach.designsystem.theme.components.InactiveButton
@@ -128,7 +131,10 @@ internal fun GamesScreen(
 ) {
     val listState = rememberLazyListState()
 
-    Column(Modifier.fillMaxSize()) {
+    Column(
+        Modifier
+            .fillMaxSize()
+    ) {
         TopBar(state, listState, actioner)
         Spacer(Modifier.height(20.dp))
         Sorts(state, actioner)
@@ -183,10 +189,15 @@ private fun Sorts(
 
 @Composable
 private fun TopBar(screenState: GamesViewState, listState: LazyListState, actioner: (GamesAction) -> Unit) {
+    val screenHeight = LocalConfiguration.current.screenHeightDp.dp
+    val maxHeight = screenHeight / 1.8f
+
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .wrapContentHeight()
+            .fillMaxWidth()
+            .heightIn(max = maxHeight)
+            .verticalScroll(rememberScrollState())
     ) {
         Image(
             painter = painterResource(com.korop.yaroslavhorach.designsystem.R.drawable.im_games_gradient),
