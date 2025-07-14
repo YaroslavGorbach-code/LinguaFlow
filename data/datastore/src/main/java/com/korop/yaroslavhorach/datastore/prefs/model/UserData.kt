@@ -23,5 +23,5 @@ fun UserData.asDomainModel() = DomainUserData(
     avatarResId = if (this.avatarResId == 0) null else this.avatarResId,
     isPremium = this.isPremium,
     isOnboarding = this.isOnboarding,
-    deviceLanguage = this.deviceLanguage
+    deviceLanguage = this.deviceLanguage?.takeIf { it.isNotEmpty() }
 )

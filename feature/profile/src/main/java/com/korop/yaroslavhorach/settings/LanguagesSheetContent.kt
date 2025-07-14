@@ -84,7 +84,7 @@ fun LanguagesSheetContent(
                                 modifier = Modifier
                                     .align(CenterVertically)
                                     .size(24.dp),
-                                painter = painterResource(id = com.korop.yaroslavhorach.designsystem.R.drawable.ic_check_circle_checked),
+                                painter = painterResource(id = com.korop.yaroslavhorach.designsystem.R.drawable.ic_check),
                                 tint = MaterialTheme.colorScheme.primaryIcon(),
                                 contentDescription = null
                             )

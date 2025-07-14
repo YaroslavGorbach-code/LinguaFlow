@@ -23,7 +23,6 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
@@ -41,9 +40,8 @@ class SettingsViewModel @Inject constructor(
 
     override val state: StateFlow<SettingsViewState> = combine(
         prefsRepository.getUserData(),
-        flowOf(prefsRepository.getAvatars()),
         uiMessageManager.message,
-    ) { userData, avatars, messages ->
+    ) { userData, messages ->
         val supportedLanguages = prefsRepository.getSupportedAppLanguages().map(::Language)
 
         val deviseLanguage = Language((userData.deviceLanguage ?: run {
@@ -105,9 +103,10 @@ class SettingsViewModel @Inject constructor(
                         }
                     }
                     is SettingsAction.OnLanguageSelected -> {
-                        prefsRepository.changeLanguage(event.language.value)
                         val appLocale: LocaleListCompat = LocaleListCompat.create(Locale(event.language.value))
                         AppCompatDelegate.setApplicationLocales(appLocale)
+
+                        prefsRepository.changeLanguage(event.language.value)
                     }
                     else -> {}
                 }
