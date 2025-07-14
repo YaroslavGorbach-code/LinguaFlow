@@ -1,17 +1,12 @@
 package com.korop.yaroslavhorach.domain.exercise_content.model
 
-import java.util.Locale
-
-class Word(
+data class Word(
     val id: Long,
-    val exerciseName: WordType,
     private val word: Map<String, String>,
 ) {
-    private val currentLang: String
-        get() = Locale.getDefault().language
-
-    val wordText: String
-        get() = word[currentLang] ?: this.word["en"] ?: ""
+    fun getWordText(lang: String): String {
+        return word[lang] ?: this.word["en"] ?: ""
+    }
 
     enum class WordType {
         NOUN, PLACE, HOT, ANTONIM

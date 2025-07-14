@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.home
 
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -99,6 +100,7 @@ import com.korop.yaroslavhorach.home.model.HomeViewState
 import com.korop.yaroslavhorach.ui.utils.conditional
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
+import java.util.Locale
 
 @Composable
 internal fun HomeRoute(
@@ -495,6 +497,8 @@ private fun DescriptionTooltip(
     onRequireRootTopPadding: (Dp) -> Unit,
     onStartExerciseClicked: (ExerciseUi) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     FloatingTooltip(
         modifier = modifier,
         backgroundColor = if (exercise?.isEnable == true) MaterialTheme.colorScheme.primary else if (exercise != null) MaterialTheme.colorScheme.onBackground else Color.Transparent,
@@ -531,13 +535,13 @@ private fun DescriptionTooltip(
                 }
                 Spacer(Modifier.height(12.dp))
                 Text(
-                    text = exercise.exercise.nameText,
+                    text = exercise.exercise.getNameText(lang),
                     style = LinguaTypography.h4,
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    text = exercise.exercise.descriptionText,
+                    text = exercise.exercise.getDescriptionText(lang),
                     style = LinguaTypography.body4,
                     color = MaterialTheme.colorScheme.typoControlPrimary()
                 )
@@ -569,7 +573,7 @@ private fun DescriptionTooltip(
                 }
                 Spacer(Modifier.height(12.dp))
                 Text(
-                    text = exercise.exercise.nameText,
+                    text = exercise.exercise.getNameText(lang),
                     style = LinguaTypography.subtitle2,
                     color = MaterialTheme.colorScheme.typoDisabled()
                 )

@@ -1,7 +1,5 @@
 package com.korop.yaroslavhorach.domain.exercise.model
 
-import java.util.Locale
-
 data class Exercise(
     val id: Long = 0,
     private val nameString: HashMap<String, String>,
@@ -12,14 +10,13 @@ data class Exercise(
     val block: ExerciseBlock,
     val isEnable: Boolean = true,
     val isLastActive: Boolean = false,
-    val isVisible: Boolean = true
+    val isVisible: Boolean = true,
 ) {
-    private val currentLang: String
-        get() = Locale.getDefault().language
+    fun getNameText(lang: String): String {
+        return nameString[lang] ?: this.nameString["en"] ?: ""
+    }
 
-    val nameText: String
-        get() = nameString[currentLang] ?: this.nameString["en"] ?: ""
-
-    val descriptionText: String
-        get() = description[currentLang] ?: this.description["en"] ?: ""
+    fun getDescriptionText(lang: String): String {
+        return description[lang] ?: this.description["en"] ?: ""
+    }
 }

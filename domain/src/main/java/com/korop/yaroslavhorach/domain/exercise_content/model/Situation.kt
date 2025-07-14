@@ -1,20 +1,15 @@
 package com.korop.yaroslavhorach.domain.exercise_content.model
 
-import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
-import java.util.Locale
-
-class Situation(
+data class Situation(
     val id: Long,
-    val exerciseName: ExerciseName,
     private val situation: Map<String, String>,
-    private val task: Map<String, String>
+    private val task: Map<String, String>,
 ) {
-    private val currentLang: String
-        get() = Locale.getDefault().language
+    fun getSituationText(lang: String): String {
+        return situation[lang] ?: this.situation["en"] ?: ""
+    }
 
-    val situationText: String
-        get() = situation[currentLang] ?: this.situation["en"] ?: ""
-
-    val taskText: String
-        get() = this.task[currentLang] ?: this.task["en"] ?: ""
+    fun getTaskText(lang: String): String {
+        return this.task[lang] ?: this.task["en"] ?: ""
+    }
 }

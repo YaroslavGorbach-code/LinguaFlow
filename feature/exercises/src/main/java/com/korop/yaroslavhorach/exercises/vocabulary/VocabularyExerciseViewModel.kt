@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.exercises.vocabulary
 
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -26,6 +27,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel
@@ -105,10 +107,12 @@ class VocabularyExerciseViewModel @Inject constructor(
                         userWordsCount.value = 0
                     }
                     is VocabularyExerciseAction.OnTimerFinished -> {
+                        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
                         timer.stop()
                         isExerciseStarted.value = false
 
-                        when (val feedback = currentVocabulary.value!!.getFeedback(userWordsCount.value)) {
+                        when (val feedback = currentVocabulary.value!!.getFeedback(userWordsCount.value, lang)) {
                             is FeedBack.Bad -> {
                                 uiMessageManager.emitMessage(
                                     UiMessage(

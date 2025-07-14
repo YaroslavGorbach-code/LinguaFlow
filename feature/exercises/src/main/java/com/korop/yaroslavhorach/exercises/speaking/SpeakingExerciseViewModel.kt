@@ -2,6 +2,7 @@ package com.korop.yaroslavhorach.exercises.speaking
 
 import android.Manifest
 import android.content.Context
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -35,6 +36,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.util.ArrayDeque
+import java.util.Locale
 import java.util.Queue
 import javax.inject.Inject
 import kotlin.math.roundToInt
@@ -223,13 +225,16 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     private suspend fun checkTestAnswer() {
+        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
         when (val mode = mode.value) {
+
             is SpeakingExerciseViewState.ScreenMode.IntroTest -> {
                 if (mode.chosenVariant?.isCorrect == true) {
                     uiMessageManager.emitMessage(
                         UiMessage(
                             SpeakingExerciseUiMessage.ShowCorrectAnswerExplanation(
-                                mode.test.correctAnswerExplanation
+                                mode.test.getCorrectAnswerExplanation(lang)
                             )
                         )
                     )
@@ -237,7 +242,7 @@ class SpeakingExerciseViewModel @Inject constructor(
                     uiMessageManager.emitMessage(
                         UiMessage(
                             SpeakingExerciseUiMessage.ShowWrongAnswerExplanation(
-                                mode.test.wrongAnswerExplanation
+                                mode.test.getWrongAnswerExplanation(lang)
                             )
                         )
                     )

@@ -1,17 +1,13 @@
 package com.korop.yaroslavhorach.domain.exercise_content.model
 
-import java.util.Locale
-
-class Sentence(
+data class Sentence(
     val id: Long,
-    val sentenceType: SentenceType,
     private val sentence: Map<String, String>,
 ) {
-    private val currentLang: String
-        get() = Locale.getDefault().language
 
-    val text: String
-        get() = sentence[currentLang] ?: this.sentence["en"] ?: ""
+    fun getText(lang: String): String {
+        return sentence[lang] ?: this.sentence["en"] ?: ""
+    }
 
     enum class SentenceType {
         SIMPLE_QUESTION,

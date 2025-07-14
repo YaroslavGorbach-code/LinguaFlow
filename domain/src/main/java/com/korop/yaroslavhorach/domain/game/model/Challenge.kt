@@ -1,7 +1,5 @@
 package com.korop.yaroslavhorach.domain.game.model
 
-import java.util.Locale
-
 data class Challenge(
     val id: Long = 0,
     private val titleText: Map<String, String>,
@@ -13,22 +11,23 @@ data class Challenge(
     val tokenCost: Int,
     val bonusOnComplete: Int,
     val status: Status = Status(),
-    val progressInMinutes: Int
+    val progressInMinutes: Int,
 ) {
-    private val currentLang: String
-        get() = Locale.getDefault().language
+    fun getTitle(lang: String): String {
+        return titleText[lang] ?: titleText["en"] ?: ""
+    }
 
-    val title: String
-        get() = titleText[currentLang] ?: titleText["en"] ?: ""
+    fun getDescription(lang: String): String {
+        return descriptionText[lang] ?: descriptionText["en"] ?: ""
+    }
 
-    val description: String
-        get() = descriptionText[currentLang] ?: descriptionText["en"] ?: ""
+    fun getAcceptMessage(lang: String): String {
+        return acceptText[lang] ?: acceptText["en"] ?: ""
+    }
 
-    val acceptMessage: String
-        get() = acceptText[currentLang] ?: acceptText["en"] ?: ""
-
-    val completeMessage: String
-        get() = completeText[currentLang] ?: completeText["en"] ?: ""
+    fun getCompleteMessage(lang: String): String {
+        return completeText[lang] ?: completeText["en"] ?: ""
+    }
 
     data class Status(
         val started: Boolean = false,

@@ -54,11 +54,11 @@ data class SpeakingExerciseViewState(
             mode = ScreenMode.Speaking(
                 situation = Situation(
                     1,
-                    ExerciseName.ICEBREAKERS,
                     mapOf("ru" to "Ти вперше бачиш нового сусіда по сходовому майданчику."),
-                    mapOf("ru" to "Привітайся та почни розмову")
-                )
-            )
+                    mapOf("ru" to "Привітайся та почни розмову"),
+                ),
+            ),
+
         )
         val PreviewTest = SpeakingExerciseViewState(
             mode = ScreenMode.IntroTest(
@@ -66,16 +66,11 @@ data class SpeakingExerciseViewState(
                 maxProgress = 0,
                 test = Test(
                     1,
-                    ExerciseName.ICEBREAKERS,
                     situation = mapOf("ru" to "Ти вперше бачиш нового сусіда по сходовому майданчику."),
                     task = mapOf("ru" to "Привітайся та почни розмову"),
                     correctAnswer = mapOf("ru" to "Привітайся та почни розмову"),
                     wrongAnswer = mapOf("ru" to "Привітайся та почни розмову"),
-                    variants = listOf(
-                        Test.Variant(mapOf("ru" to "Привітайся та почни розмову"), false),
-                        Test.Variant(mapOf("ru" to "Віка ПРивіт!"), true),
-                        Test.Variant(mapOf("ru" to "Привітайся"), false)
-                    )
+                    variants = listOf()
                 )
             )
         )

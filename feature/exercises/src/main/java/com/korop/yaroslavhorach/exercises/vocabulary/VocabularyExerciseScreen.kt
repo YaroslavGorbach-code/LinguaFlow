@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.exercises.vocabulary
 
 import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -75,6 +76,7 @@ import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiM
 import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseViewState
 import com.korop.yaroslavhorach.ui.utils.conditional
 import kotlinx.coroutines.delay
+import java.util.Locale
 
 @Composable
 internal fun VocabularyExerciseRoute(
@@ -179,6 +181,8 @@ private fun VocabularyContent(
     screenState: VocabularyExerciseViewState,
     actioner: (VocabularyExerciseAction) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     if (screenState.vocabulary != null) {
         Column(
             modifier = Modifier
@@ -196,7 +200,7 @@ private fun VocabularyContent(
             )
             Spacer(Modifier.height(10.dp))
             Text(
-                screenState.vocabulary.taskText,
+                screenState.vocabulary.getTaskText(lang),
                 style = LinguaTypography.body3,
                 color = MaterialTheme.colorScheme.typoPrimary()
             )
@@ -208,7 +212,7 @@ private fun VocabularyContent(
             )
             Spacer(Modifier.height(10.dp))
             Text(
-                screenState.vocabulary.exampleText,
+                screenState.vocabulary.getExampleText(lang),
                 style = LinguaTypography.body3,
                 color = MaterialTheme.colorScheme.typoPrimary()
             )

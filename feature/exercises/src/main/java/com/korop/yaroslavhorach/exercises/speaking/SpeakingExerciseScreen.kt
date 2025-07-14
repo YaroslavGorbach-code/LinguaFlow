@@ -2,6 +2,7 @@ package com.korop.yaroslavhorach.exercises.speaking
 
 import android.Manifest
 import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -81,6 +82,7 @@ import com.korop.yaroslavhorach.exercises.speaking.model.SpeakingExerciseAction
 import com.korop.yaroslavhorach.exercises.speaking.model.SpeakingExerciseUiMessage
 import com.korop.yaroslavhorach.exercises.speaking.model.SpeakingExerciseViewState
 import com.korop.yaroslavhorach.ui.UiText
+import java.util.Locale
 
 @Composable
 internal fun SpeakingExerciseRoute(
@@ -342,6 +344,8 @@ private fun SpeakingContent(
 
 @Composable
 private fun Task(speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     Text(
         stringResource(R.string.speaking_exercise_situation_title_text),
         style = LinguaTypography.h5,
@@ -349,7 +353,7 @@ private fun Task(speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking) {
     )
     Spacer(Modifier.height(10.dp))
     Text(
-        speakingMode.situation.situationText,
+        speakingMode.situation.getSituationText(lang),
         style = LinguaTypography.body3,
         color = MaterialTheme.colorScheme.typoPrimary()
     )
@@ -361,7 +365,7 @@ private fun Task(speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking) {
     )
     Spacer(Modifier.height(10.dp))
     Text(
-        speakingMode.situation.taskText,
+        speakingMode.situation.getTaskText(lang),
         style = LinguaTypography.body3,
         color = MaterialTheme.colorScheme.typoPrimary()
     )
@@ -372,6 +376,8 @@ private fun TestContent(
     testMode: SpeakingExerciseViewState.ScreenMode.IntroTest,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     Column(
         modifier = Modifier
             .padding(horizontal = 20.dp)
@@ -390,7 +396,7 @@ private fun TestContent(
             )
             Spacer(Modifier.height(10.dp))
             Text(
-                testMode.test.situationText,
+                testMode.test.getSituationTex(lang),
                 style = LinguaTypography.body3,
                 color = MaterialTheme.colorScheme.typoPrimary()
             )
@@ -402,7 +408,7 @@ private fun TestContent(
             )
             Spacer(Modifier.height(10.dp))
             Text(
-                testMode.test.taskText,
+                testMode.test.getTaskText(lang),
                 style = LinguaTypography.body3,
                 color = MaterialTheme.colorScheme.typoPrimary()
             )
@@ -425,7 +431,7 @@ private fun TestContent(
                             }, RoundedCornerShape(12.dp)
                         )
                         .padding(16.dp),
-                    text = variant.variantText,
+                    text = variant.getVariantText(lang),
                     color = MaterialTheme.colorScheme.typoPrimary(),
                     style = LinguaTypography.subtitle3
                 )

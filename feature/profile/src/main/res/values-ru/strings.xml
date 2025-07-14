@@ -19,4 +19,13 @@
     <string name="profile_level_of_speaking_title_text">Уровень речи</string>
     <string name="profile_premium_baner_title_text">Активируй Премиум</string>
     <string name="profile_premium_banner_subtitle_text">Полный доступ к приложению — без рекламы и ограничений</string>
+    <string name="settings_parameters_section_title_text">Параметры</string>
+    <string name="settings_language_title_text">Язык приложения</string>
+    <string name="settings_support_section_title_text">Благодарность и поддержка</string>
+    <string name="setings_rate_app_title_text">Оценить приложение</string>
+    <string name="settings_rate_app_subtilte_text">Нам важно твоё мнение💛</string>
+    <string name="settings_conenct_with_developer_title_text">Связаться с разработчиком</string>
+    <string name="settings_conenct_with_developer_subtitle_text">Есть вопросы или фидбек?</string>
+    <string name="settings_toolbar_title_text">Настройки</string>
+    <string name="choose_language_tilte_text">Выбери язык приложения</string>
 </resources>

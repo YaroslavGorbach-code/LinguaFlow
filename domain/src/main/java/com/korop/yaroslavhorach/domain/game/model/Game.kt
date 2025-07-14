@@ -1,7 +1,5 @@
 package com.korop.yaroslavhorach.domain.game.model
 
-import java.util.Locale
-
 data class Game(
     val id: Long = 0,
     private val nameString: Map<String, String>,
@@ -13,20 +11,22 @@ data class Game(
     val name: GameName,
     val skills: List<Skill>,
 ) {
-    private val currentLang: String
-        get() = Locale.getDefault().language
 
-    val nameText: String
-        get() = nameString[currentLang] ?: nameString["en"] ?: ""
+    fun getNameText(lang: String): String {
+        return nameString[lang] ?: nameString["en"] ?: ""
+    }
 
-    val taskText: String
-        get() = task[currentLang] ?: task["en"] ?: ""
+    fun getTaskText(lang: String): String {
+        return task[lang] ?: task["en"] ?: ""
+    }
 
-    val exampleText: String
-        get() = example[currentLang] ?: example["en"] ?: ""
+    fun getExampleText(lang: String): String {
+        return example[lang] ?: example["en"] ?: ""
+    }
 
-    val descriptionText: String
-        get() = description[currentLang] ?: description["en"] ?: ""
+    fun getDescriptionText(lang: String): String {
+        return description[lang] ?: description["en"] ?: ""
+    }
 
     enum class Skill {
         CREATIVE, HUMOR, STORYTELLING, VOCABULARY, DICTION, FLIRT

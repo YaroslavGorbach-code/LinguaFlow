@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.home
 
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.expandVertically
@@ -85,6 +86,7 @@ import com.korop.yaroslavhorach.home.model.GamesUiMessage
 import com.korop.yaroslavhorach.home.model.GamesViewState
 import com.korop.yaroslavhorach.home.model.getText
 import com.korop.yaroslavhorach.ui.SpeakingLevel
+import java.util.Locale
 
 @Composable
 internal fun GamesRoute(
@@ -302,6 +304,8 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
 
 @Composable
 private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     Text(
         text = stringResource(R.string.challenge_completed_title_text),
         color = MaterialTheme.colorScheme.typoPrimary(),
@@ -309,7 +313,7 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
     )
     Spacer(Modifier.height(8.dp))
     Text(
-        text = challenge.completeMessage,
+        text = challenge.getCompleteMessage(lang),
         color = MaterialTheme.colorScheme.typoSecondary(),
         style = LinguaTypography.body4
     )
@@ -360,6 +364,8 @@ private fun ChallengeStarted(
     challenge: Challenge,
     actioner: (GamesAction) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     LinguaProgressBar(
         challenge.progressInMinutes.toFloat() / challenge.durationMinutes.toFloat(),
         modifier = Modifier
@@ -385,7 +391,7 @@ private fun ChallengeStarted(
     }
     Spacer(Modifier.height(12.dp))
     Text(
-        text = challenge.acceptMessage,
+        text = challenge.getAcceptMessage(lang),
         color = MaterialTheme.colorScheme.typoSecondary(),
         style = LinguaTypography.body4
     )
@@ -399,14 +405,16 @@ private fun ChallengeNotStarted(
     challenge: Challenge,
     actioner: (GamesAction) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     Text(
-        text = challenge.title,
+        text = challenge.getTitle(lang),
         color = MaterialTheme.colorScheme.typoPrimary(),
         style = LinguaTypography.subtitle2
     )
     Spacer(Modifier.height(8.dp))
     Text(
-        text = challenge.description,
+        text = challenge.getDescription(lang),
         color = MaterialTheme.colorScheme.typoSecondary(),
         style = LinguaTypography.body4
     )
@@ -431,6 +439,8 @@ private fun Game(
     listState: LazyListState,
     actioner: (GamesAction) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     Column {
         GameDescription(state, game, actioner)
         val isEnable = state.experience >= game.game.minExperienceRequired || state.isUserPremium
@@ -457,7 +467,7 @@ private fun Game(
             Row(modifier = Modifier.fillMaxWidth()) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = game.game.nameText,
+                        text = game.game.getNameText(lang = lang),
                         color = MaterialTheme.colorScheme.typoPrimary(),
                         style = LinguaTypography.subtitle2
                     )
@@ -534,6 +544,8 @@ private fun GameDescriptionEnable(
     state: GamesViewState,
     actioner: (GamesAction) -> Unit
 ) {
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
     StaticTooltip(
         enableFloatAnimation = true,
         backgroundColor = MaterialTheme.colorScheme.surface,
@@ -549,7 +561,7 @@ private fun GameDescriptionEnable(
                 modifier = Modifier
                     .align(Alignment.CenterVertically)
                     .weight(1f),
-                text = game.game.nameText,
+                text = game.game.getNameText(lang),
                 color = MaterialTheme.colorScheme.typoPrimary(),
                 style = LinguaTypography.subtitle2
             )
@@ -576,7 +588,7 @@ private fun GameDescriptionEnable(
 
         Spacer(Modifier.height(6.dp))
         Text(
-            text = game.game.descriptionText,
+            text = game.game.getDescriptionText(lang),
             color = MaterialTheme.colorScheme.typoSecondary(),
             style = LinguaTypography.body4
         )

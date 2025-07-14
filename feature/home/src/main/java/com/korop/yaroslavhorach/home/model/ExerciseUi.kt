@@ -4,7 +4,9 @@ import com.korop.yaroslavhorach.domain.exercise.model.Exercise
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
 import com.korop.yaroslavhorach.home.R
 
-class ExerciseUi(val exercise: Exercise) {
+class ExerciseUi(
+    val exercise: Exercise
+) {
     val progressPercent = (exercise.exerciseProgress.progress.toFloat() / exercise.exerciseProgress.maxProgress.toFloat()).coerceAtMost(1f)
     val progress = exercise.exerciseProgress.progress.toString() + "/" + exercise.exerciseProgress.maxProgress.toString()
     val isStarted: Boolean = exercise.exerciseProgress.progress > 0

@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.data.exercise_content.repository
 
 import android.content.Context
+import androidx.appcompat.app.AppCompatDelegate
 import com.korop.yaroslavhorach.common.utill.loadJsonFromAssets
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.korop.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
@@ -18,6 +19,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
+import java.util.Locale
 import javax.inject.Inject
 import kotlin.random.Random
 
@@ -183,188 +185,192 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getGameWords(gameName: Game.GameName): List<String> {
+        val lang = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
         return when (gameName) {
             Game.GameName.RAVEN_LIKE_A_CHAIR -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(2).map { it.wordText }
+                uniqueWords.shuffled().take(2).map { it.getWordText(lang) }
             }
             Game.GameName.FOUR_WORDS_ONE_STORY -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(4).map { it.wordText }
+                uniqueWords.shuffled().take(4).map { it.getWordText(lang) }
             }
             Game.GameName.TALK_TILL_EXHAUSTED -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.SELL_THIS_THING -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.DEFINE_PRECISELY -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.RAP_IMPROV -> {
                 val words = getWords(Word.WordType.NOUN)
-                    .distinctBy { it.wordText }
+                    .distinctBy { it.getWordText(lang) }
                     .shuffled()
-                    .map { it.wordText }
+                    .map { it.getWordText(lang) }
 
                 words.take(Random.nextInt(3, 6)).toSet().toList()
             }
             Game.GameName.ONE_WORD_MANY_MEANINGS -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.FLIRTING_WITH_OBJECT -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.BOTH_THERE_AND_IN_BED -> {
                 val words = getWords(Word.WordType.PLACE)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.HOT_WORD -> {
                 val words = getWords(Word.WordType.HOT)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.ANTONYM_BATTLE -> {
                 val words = getWords(Word.WordType.ANTONIM)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             Game.GameName.RHYME_LIGHTNING -> {
                 val words = getWords(Word.WordType.NOUN)
-                val uniqueWords = words.distinctBy { it.wordText }
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
 
-                uniqueWords.shuffled().take(1).map { it.wordText }
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
             else -> emptyList()
         }
     }
 
     override suspend fun getGameSentence(gameName: Game.GameName): String {
+        val lang = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+
         return when (gameName) {
             Game.GameName.BIG_ANSWER -> {
                 val sentences = getSentences(Sentence.SentenceType.SIMPLE_QUESTION)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.EMOTIONAL_TRANSLATOR -> {
                 val sentences = getSentences(Sentence.SentenceType.EMOTIONAL_TRANSLATION)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.DEVILS_ADVOCATE -> {
                 val sentences = getSentences(Sentence.SentenceType.DEVILS_ADVOCATE)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.DIALOGUE_WITH_SELF -> {
                 val sentences = getSentences(Sentence.SentenceType.DIALOGUE_WITH_SELF)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.IMAGINARY_SITUATION -> {
                 val sentences = getSentences(Sentence.SentenceType.IMAGINARY_SITUATION)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.EMOTION_TO_FACT -> {
                 val sentences = getSentences(Sentence.SentenceType.EMOTION_TO_FACT)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.WHO_AM_I_MONOLOGUE -> {
                 val sentences = getSentences(Sentence.SentenceType.WHO_AM_I)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.I_AM_EXPERT -> {
                 val sentences = getSentences(Sentence.SentenceType.I_AM_EXPERT)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.FORBIDDEN_WORDS -> {
                 val sentences = getSentences(Sentence.SentenceType.FORBIDDEN_WORDS)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.BODY_LANGUAGE_EXPRESS -> {
                 val sentences = getSentences(Sentence.SentenceType.BODY_LANGUAGE)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.PERSUASIVE_SHOUT -> {
                 val sentences = getSentences(Sentence.SentenceType.PERSUASIVE_SHOUT)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.SUBTLE_MANIPULATION -> {
                 val sentences = getSentences(Sentence.SentenceType.SUBTLE_MANIPULATION)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.ONE_SYNONYM_PLEASE -> {
                 val sentences = getSentences(Sentence.SentenceType.ONE_SYNONYM_PLEASE)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.INTONATION_MASTER -> {
                 val sentences = getSentences(Sentence.SentenceType.INTONATION_MASTER)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.FUNNIEST_ANSWER -> {
                 val sentences = getSentences(Sentence.SentenceType.FUNNIEST_ANSWER)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.MADMAN_ANNOUNCEMENT -> {
                 val sentences = getSentences(Sentence.SentenceType.SELL_THE_MADNESS)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             Game.GameName.FUNNY_EXCUSE -> {
                 val sentences = getSentences(Sentence.SentenceType.FUNNY_EXCUSE)
-                val uniqueSentences = sentences.distinctBy { it.text }
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
 
-                uniqueSentences.shuffled().first().text
+                uniqueSentences.shuffled().first().getText(lang)
             }
             else -> ""
         }

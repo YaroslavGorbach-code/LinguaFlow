@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.games.words_game
 
 import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
@@ -64,6 +65,7 @@ import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.games.words_game.model.WordsGameAction
 import com.korop.yaroslavhorach.games.words_game.model.WordsGameUiMessage
 import com.korop.yaroslavhorach.games.words_game.model.WordsGameViewState
+import java.util.Locale
 
 @Composable
 internal fun WordsGameRoute(
@@ -171,6 +173,7 @@ private fun GameContent(
     actioner: (WordsGameAction) -> Unit
 ) {
     val allowAnimate = remember { mutableStateOf(false) }
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
 
     Column(
         modifier = Modifier
@@ -192,7 +195,7 @@ private fun GameContent(
                 )
                 Spacer(Modifier.height(10.dp))
                 Text(
-                    state.game?.taskText ?: "",
+                    state.game?.getTaskText(lang) ?: "",
                     style = LinguaTypography.body3,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
@@ -204,7 +207,7 @@ private fun GameContent(
                 )
                 Spacer(Modifier.height(10.dp))
                 Text(
-                    state.game?.exampleText ?: "",
+                    state.game?.getExampleText(lang) ?: "",
                     style = LinguaTypography.body3,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )

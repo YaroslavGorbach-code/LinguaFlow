@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.exercises.tongue_twisters
 
 import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
@@ -57,6 +58,7 @@ import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseAction
 import com.korop.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
 import com.korop.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseViewState
+import java.util.Locale
 
 @Composable
 internal fun TongueTwisterExerciseRoute(
@@ -154,6 +156,7 @@ private fun TwisterContent(
     actioner: (TongueTwisterExerciseAction) -> Unit
 ) {
     val allowAnimate = remember { mutableStateOf(false) }
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
 
     Column(
         modifier = Modifier
@@ -197,7 +200,7 @@ private fun TwisterContent(
                 Spacer(Modifier.Companion.weight(0.7f))
                 Text(
                     modifier = Modifier.fillMaxWidth(),
-                    text = state.twist?.textString ?: "",
+                    text = state.twist?.getTextString(lang) ?: "",
                     color = MaterialTheme.colorScheme.typoPrimary(),
                     style = LinguaTypography.body1.copy(fontSize = 24.sp)
                 )
