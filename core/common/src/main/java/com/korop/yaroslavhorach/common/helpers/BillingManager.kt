@@ -152,7 +152,11 @@ class BillingManager @Inject constructor(
             .build()
 
         withContext(Dispatchers.Main) {
-            billingClient?.launchBillingFlow(activity, billingFlowParams)
+            val result = billingClient?.launchBillingFlow(activity, billingFlowParams)
+
+            if (result?.responseCode == BillingClient.BillingResponseCode.ITEM_ALREADY_OWNED) {
+                listener?.onPurchaseAcknowledged()
+            }
         }
     }
 
@@ -177,7 +181,11 @@ class BillingManager @Inject constructor(
             .build()
 
         withContext(Dispatchers.Main) {
-            billingClient?.launchBillingFlow(activity, billingFlowParams)
+            val result = billingClient?.launchBillingFlow(activity, billingFlowParams)
+
+            if (result?.responseCode == BillingClient.BillingResponseCode.ITEM_ALREADY_OWNED) {
+                listener?.onPurchaseAcknowledged()
+            }
         }
     }
 
@@ -211,13 +219,13 @@ class BillingManager @Inject constructor(
                     .build()
 
                 billingClient?.acknowledgePurchase(acknowledgeParams) {
-                    listener?.onPurchaseAcknowledged(purchase)
+                    listener?.onPurchaseAcknowledged()
                 }
             }
         }
     }
 
-    suspend fun getAllActivePurchases(context: Context): List<Purchase>{
+    suspend fun getAllActivePurchases(): List<Purchase>{
         ensureBillingConnected()
         val inAppDeferred = scope.async {
             suspendCancellableCoroutine<List<Purchase>> { cont ->
@@ -259,7 +267,7 @@ class BillingManager @Inject constructor(
 
 
     interface PurchaseListener {
-        fun onPurchaseAcknowledged(purchase: Purchase)
+        fun onPurchaseAcknowledged()
         fun onUserHasNoPurchases()
     }
 }

@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
         appScope.launch {
 
-            if (billingManager.getAllActivePurchases(this@MainActivity).isEmpty()) {
+            if (billingManager.getAllActivePurchases().isEmpty()) {
                 prefsRepository.deactivatePremium()
             } else {
                 prefsRepository.activatePremium()

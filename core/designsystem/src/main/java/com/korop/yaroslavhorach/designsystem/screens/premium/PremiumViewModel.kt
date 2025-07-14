@@ -152,7 +152,7 @@ class PremiumViewModel @Inject constructor(
             .launchIn(viewModelScope)
 
         billingManager.setOnAcknowledgedListener(object : BillingManager.PurchaseListener {
-            override fun onPurchaseAcknowledged(purchase: com.android.billingclient.api.Purchase) {
+            override fun onPurchaseAcknowledged() {
                 viewModelScope.launch {
                     prefsRepository.activatePremium()
                     uiMessageManager.emitMessage(UiMessage(PremiumUiMessage.NavigateToSuccess()))
