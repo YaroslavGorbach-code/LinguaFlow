@@ -11,3 +11,7 @@ fun Context.findActivity(): Activity? = when (this) {
     is ContextWrapper -> baseContext.findActivity()
     else -> null
 }
+fun Context.getCurrentUserLanguage(): String {
+    return resources.configuration.locales.get(0).language
+        ?: "en"
+}

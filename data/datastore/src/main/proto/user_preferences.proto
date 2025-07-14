@@ -18,4 +18,5 @@ message UserPreferences {
   bool is_premium = 8;
   map<string, IntList> used_exercises_content = 9;
   bool is_onboarding = 10;
+  string device_language = 11;
 }

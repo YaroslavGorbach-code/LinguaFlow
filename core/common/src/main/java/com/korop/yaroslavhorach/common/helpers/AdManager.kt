@@ -11,6 +11,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -30,41 +31,36 @@ class AdManager @Inject constructor(
 
     suspend fun loadInterstitial() {
         withContext(Dispatchers.Main) {
-            prefsRepository.getUserData()
-                .onEach { userData ->
-                    if (userData.isPremium.not()) {
-                        InterstitialAd.load(
-                            app,
-                            INTERSTITIAL_AD_ID,
-                            AdRequest.Builder().build(),
-                            object : InterstitialAdLoadCallback() {
-                                override fun onAdLoaded(interstitialAd: InterstitialAd) {
-                                    _interstitialAd = interstitialAd
+            if (prefsRepository.getUserData().first().isPremium.not()) {
+                InterstitialAd.load(
+                    app,
+                    INTERSTITIAL_AD_ID,
+                    AdRequest.Builder().build(),
+                    object : InterstitialAdLoadCallback() {
+                        override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                            _interstitialAd = interstitialAd
 
-                                    interstitialAd.fullScreenContentCallback =
-                                        object : FullScreenContentCallback() {
-                                            override fun onAdDismissedFullScreenContent() {
-                                                _interstitialAd = null
-                                            }
+                            interstitialAd.fullScreenContentCallback =
+                                object : FullScreenContentCallback() {
+                                    override fun onAdDismissedFullScreenContent() {
+                                        _interstitialAd = null
+                                    }
 
-                                            override fun onAdFailedToShowFullScreenContent(adError: AdError) {
-                                                _interstitialAd = null
-                                            }
+                                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                                        _interstitialAd = null
+                                    }
 
-                                            override fun onAdShowedFullScreenContent() {
+                                    override fun onAdShowedFullScreenContent() {
 
-                                            }
-                                        }
+                                    }
                                 }
+                        }
 
-                                override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-                                    _interstitialAd = null
-                                }
-                            })
-                    }
-
-                }
-                .collect()
+                        override fun onAdFailedToLoad(loadAdError: LoadAdError) {
+                            _interstitialAd = null
+                        }
+                    })
+            }
         }
     }
 

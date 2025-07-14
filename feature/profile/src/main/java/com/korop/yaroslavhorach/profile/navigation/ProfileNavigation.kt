@@ -14,8 +14,16 @@ fun NavController.navigateToProfile(navOptions: NavOptions? = null) {
     this.navigate(ProfileRoute, navOptions)
 }
 
-fun NavGraphBuilder.profileScreen(onNavigateToAvatarChange: ()-> Unit, onNavigateToPremium: ()-> Unit) {
+fun NavGraphBuilder.profileScreen(
+    onNavigateToAvatarChange: () -> Unit,
+    onNavigateToPremium: () -> Unit,
+    onNavigateToSettings: () -> Unit
+) {
     composable<ProfileRoute> {
-        ProfileRoute(onNavigateToAvatarChange = onNavigateToAvatarChange, onNavigateToPremium = onNavigateToPremium)
+        ProfileRoute(
+            onNavigateToAvatarChange = onNavigateToAvatarChange,
+            onNavigateToPremium = onNavigateToPremium,
+            onNavigateToSettings = onNavigateToSettings
+        )
     }
 }

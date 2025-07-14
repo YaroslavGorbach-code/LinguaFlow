@@ -77,6 +77,14 @@ class PrefsRepositoryImpl @Inject constructor(
         prefsDataSource.finishOnboarding()
     }
 
+    override fun getSupportedAppLanguages(): List<String> {
+        return listOf("en", "uk", "ru")
+    }
+
+    override suspend fun changeLanguage(lang: String) {
+        prefsDataSource.changeLanguage(lang)
+    }
+
     override fun getAvatars(): List<Avatar> {
         val premiumAvatars = listOf(
             R.drawable.im_avatar_5,

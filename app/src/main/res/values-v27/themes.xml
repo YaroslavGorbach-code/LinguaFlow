@@ -16,8 +16,10 @@
 -->
 <resources>
 
-    <style name="PlatformAdjusted.Theme.LinguaFlow" parent="NightAdjusted.Theme.LinguaFlow">
+
+    <style name="PlatformAdjusted.Theme" parent="NightAdjusted.Theme">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
+
 </resources>

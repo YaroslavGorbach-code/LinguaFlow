@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Allows us to override night specific attributes in the
-         values-night folder. -->
-    <style name="NightAdjusted.Theme.LinguaFlow" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:windowLightStatusBar" >true</item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    <!-- The final theme we use -->
+    <style name="AppTheme" parent="BaseAppTheme" />
+
+    <style name="BaseAppTheme" parent="PlatformAdjusted.Theme">
+        <!--        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>-->
+        <!--        <item name="bottomSheetDialogTheme">@style/TransparentBottomSheetDialogTheme</item>-->
     </style>
 
-    <style name="PlatformAdjusted.Theme.LinguaFlow" parent="NightAdjusted.Theme.LinguaFlow">
+    <!-- Allows us to override platform version specific attributes -->
+    <style name="PlatformAdjusted.Theme" parent="NightAdjusted.Theme">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <!-- The final theme we use -->
-    <style name="Theme.LinguaFlow" parent="PlatformAdjusted.Theme.LinguaFlow" />
-
-    <style name="NightAdjusted.Theme.Splash" parent="Theme.SplashScreen">
-        <item name="android:windowLightStatusBar" >true</item>
+    <!-- Allows us to override night specific attributes in the values-night folder. -->
+    <style name="NightAdjusted.Theme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
     </style>
 
-    <style name="Theme.LinguaFlow.Splash" parent="NightAdjusted.Theme.Splash">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="postSplashScreenTheme">@style/Theme.LinguaFlow</item>
+    <style name="AppTheme.Splash">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
 </resources>

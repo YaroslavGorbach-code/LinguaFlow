@@ -19,4 +19,13 @@
     <string name="profile_level_of_speaking_title_text">Speaking Level</string>
     <string name="profile_premium_baner_title_text">Activate Premium</string>
     <string name="profile_premium_banner_subtitle_text">Get full access to the app — no ads, no limits</string>
+    <string name="settings_parameters_section_title_text">Параметри</string>
+    <string name="settings_language_title_text">Мова додатку</string>
+    <string name="settings_support_section_title_text">Подяка та підтримка</string>
+    <string name="setings_rate_app_title_text">Оцінити додаток</string>
+    <string name="settings_rate_app_subtilte_text">Нам важлива твоя думка💛</string>
+    <string name="settings_conenct_with_developer_title_text">Зв’язатись з розробником</string>
+    <string name="settings_conenct_with_developer_subtitle_text">Маєш запитання чи фідбек?</string>
+    <string name="settings_toolbar_title_text">Налаштування</string>
+    <string name="choose_language_tilte_text">Обери мову додатку</string>
 </resources>

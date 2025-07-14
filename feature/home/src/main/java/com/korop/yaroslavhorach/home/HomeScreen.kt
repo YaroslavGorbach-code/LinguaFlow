@@ -172,7 +172,6 @@ internal fun HomeScreen(
                 }
             }
     ) {
-
         val visible = remember { mutableStateOf(false) }
 
         LaunchedEffect(Unit) {

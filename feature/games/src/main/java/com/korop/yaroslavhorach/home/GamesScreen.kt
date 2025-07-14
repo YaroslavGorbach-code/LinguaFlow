@@ -46,6 +46,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -161,12 +162,13 @@ private fun Sorts(
             }
             Text(
                 modifier = Modifier
-                    .clickable { actioner(GamesAction.OnSortSelected(item)) }
                     .border(
                         1.dp,
                         if (item == state.selectedSort) KellyGreen else MaterialTheme.colorScheme.onBackgroundDark(),
                         shape = RoundedCornerShape(8.dp)
                     )
+                    .clip(shape = RoundedCornerShape(8.dp))
+                    .clickable { actioner(GamesAction.OnSortSelected(item)) }
                     .padding(10.dp),
                 text = item.getText().asString(),
                 style = LinguaTypography.body4,
@@ -367,7 +369,7 @@ private fun ChallengeStarted(
         Text(
             modifier = Modifier.align(Alignment.Center),
             text = challenge.progressInMinutes.toString() + " "+  stringResource(R.string.minute_short_text),
-            color = White,
+            color = MaterialTheme.colorScheme.typoPrimary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body5
         )

@@ -21,7 +21,8 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 activeDays = it.activeDaysList,
                 userName = it.name ?: "",
                 isPremium = it.isPremium,
-                isOnboarding = !it.isOnboarding
+                isOnboarding = !it.isOnboarding,
+                deviceLanguage = it.deviceLanguage
             )
         }
 
@@ -151,6 +152,14 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
             } else {
                 prefs
             }
+        }
+    }
+
+    suspend fun changeLanguage(lang: String) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setDeviceLanguage(lang)
+                .build()
         }
     }
 }

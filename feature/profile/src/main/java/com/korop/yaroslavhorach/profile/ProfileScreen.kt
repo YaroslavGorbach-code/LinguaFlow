@@ -63,12 +63,13 @@ import com.korop.yaroslavhorach.designsystem.R
 import com.korop.yaroslavhorach.designsystem.theme.Black_3
 import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.KellyGreen
-import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.korop.yaroslavhorach.designsystem.theme.components.BoxWithStripes
+import com.korop.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.korop.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.korop.yaroslavhorach.designsystem.theme.components.TextButton
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.korop.yaroslavhorach.designsystem.theme.typoControlPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoControlSecondary
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
@@ -83,6 +84,7 @@ internal fun ProfileRoute(
     viewModel: ProfileViewModel = hiltViewModel(),
     onNavigateToAvatarChange: () -> Unit,
     onNavigateToPremium: () -> Unit,
+    onNavigateToSettings: () -> Unit,
 ) {
     val profileState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -91,6 +93,9 @@ internal fun ProfileRoute(
         onMessageShown = viewModel::clearMessage,
         actioner = { action ->
             when (action) {
+                is ProfileAction.OnSettingsClicked -> {
+                    onNavigateToSettings()
+                }
                 is ProfileAction.OnEditProfileClicked -> {
                     onNavigateToAvatarChange()
                 }
@@ -114,7 +119,7 @@ internal fun ProfileScreen(
             .verticalScroll(rememberScrollState())
     ) {
         TopBar(state, actioner)
-        if (state.isPremiumUser.not()){
+        if (state.isPremiumUser.not()) {
             Spacer(Modifier.height(20.dp))
             PremiumBanner(state, actioner)
         }
@@ -258,7 +263,7 @@ private fun SpeakerLevelProgress(state: ProfileViewState) {
     val level = SpeakingLevel.fromExperience(state.experience)
     val progress = (state.experience - level.experienceRequired.first).toFloat() /
             (level.experienceRequired.last - level.experienceRequired.first).toFloat()
-    
+
     Column(
         modifier = Modifier
             .padding(horizontal = 20.dp)
@@ -420,7 +425,18 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
                 .align(Alignment.TopCenter),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Spacer(Modifier.height(40.dp))
+            Spacer(Modifier.height(10.dp))
+            Row(Modifier.fillMaxWidth().padding(end = 20.dp)) {
+                Spacer(Modifier.weight(1f))
+                Icon(
+                    modifier = Modifier.size(40.dp)
+                        .clickable { actioner(ProfileAction.OnSettingsClicked) },
+                    painter = painterResource(R.drawable.ic_settings),
+                    tint = MaterialTheme.colorScheme.typoControlPrimary(),
+                    contentDescription = null
+                )
+            }
+            Spacer(Modifier.height(10.dp))
             if (screenState.avatarResId != null) {
                 Image(
                     modifier = Modifier
@@ -525,14 +541,12 @@ private fun PremiumBanner(screenState: ProfileViewState, actioner: (ProfileActio
 @Preview
 @Composable
 private fun ProfilePreview() {
-    Column {
-        LinguaTheme {
-            ProfileScreen(
-                ProfileViewState.Preview,
-                {},
-                actioner = { _ -> },
-            )
-        }
+    LinguaBackground {
+        ProfileScreen(
+            ProfileViewState.Preview,
+            {},
+            actioner = { _ -> },
+        )
     }
 }
 

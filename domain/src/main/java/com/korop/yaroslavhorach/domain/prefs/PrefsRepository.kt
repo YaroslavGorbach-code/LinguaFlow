@@ -22,4 +22,6 @@ interface PrefsRepository {
     suspend fun useExerciseContent(id: Long, name: String)
     suspend fun clearUsedExerciseContent(name: String)
     suspend fun finishOnboarding()
+    fun getSupportedAppLanguages(): List<String>
+    suspend fun changeLanguage(lang: String)
 }

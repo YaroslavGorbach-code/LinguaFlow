@@ -16,12 +16,10 @@ fun buildSMSIntent(body: String): Intent =
         type = "vnd.android-dir/mms-sms"
     }
 
-fun buildEmailIntent(email: String, subject: String, body: String): Intent =
-    Intent(Intent.ACTION_SEND).apply {
-        type = "text/plain"
+fun buildEmailIntent(email: String): Intent =
+    Intent(Intent.ACTION_SENDTO).apply {
+        data = Uri.parse("mailto:$email")
         putExtra(Intent.EXTRA_EMAIL, email)
-        putExtra(Intent.EXTRA_SUBJECT, subject)
-        putExtra(Intent.EXTRA_TEXT, body)
     }
 
 fun buildSendIntent(text: String): Intent {
@@ -85,4 +83,28 @@ fun buildPdfFileIntent(url: String): Intent {
         flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
     }
     return Intent.createChooser(intent, null)
+}
+
+fun buildRateAppIntent(): Intent {
+    val packageName = "com.korop.yaroslavhorach.lingoFlow"
+
+    return Intent(
+        Intent.ACTION_VIEW,
+        Uri.parse("market://details?id=$packageName")
+    ).apply {
+        addFlags(
+            Intent.FLAG_ACTIVITY_NO_HISTORY or
+                    Intent.FLAG_ACTIVITY_NEW_DOCUMENT or
+                    Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+        )
+    }
+}
+
+fun buildRateAppWebIntent(): Intent {
+    val packageName = "com.korop.yaroslavhorach.lingoFlow"
+
+    return Intent(
+        Intent.ACTION_VIEW,
+        Uri.parse("https://play.google.com/store/apps/details?id=$packageName")
+    )
 }
