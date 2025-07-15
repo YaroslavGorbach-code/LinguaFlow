@@ -185,7 +185,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getGameWords(gameName: Game.GameName): List<String> {
-        val lang = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
         return when (gameName) {
             Game.GameName.RAVEN_LIKE_A_CHAIR -> {
@@ -267,7 +267,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getGameSentence(gameName: Game.GameName): String {
-        val lang = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
         return when (gameName) {
             Game.GameName.BIG_ANSWER -> {

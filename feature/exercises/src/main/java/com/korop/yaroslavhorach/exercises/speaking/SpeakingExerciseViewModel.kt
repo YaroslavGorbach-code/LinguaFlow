@@ -225,7 +225,7 @@ class SpeakingExerciseViewModel @Inject constructor(
     }
 
     private suspend fun checkTestAnswer() {
-        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
         when (val mode = mode.value) {
 

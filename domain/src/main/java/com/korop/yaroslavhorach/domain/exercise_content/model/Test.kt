@@ -13,24 +13,24 @@ data class Test(
         val isCorrect: Boolean
     ) {
         fun getVariantText(lang: String): String {
-            return texts[lang] ?: this.texts["en"] ?: ""
+            return texts[lang] ?: ""
         }
     }
 
     fun getSituationTex(lang: String): String {
-        return situation[lang] ?: this.situation["en"] ?: ""
+        return situation[lang]  ?: ""
     }
 
     fun getTaskText(lang: String): String {
-        return this.task[lang] ?: this.task["en"] ?: ""
+        return this.task[lang]?: ""
     }
 
     fun getWrongAnswerExplanation(lang: String): String {
-        return wrongAnswer[lang] ?: this.wrongAnswer["en"] ?: ""
+        return wrongAnswer[lang]  ?: ""
     }
 
     fun getCorrectAnswerExplanation(lang: String): String {
-        return correctAnswer[lang] ?: this.correctAnswer["en"] ?: ""
+        return correctAnswer[lang]  ?: ""
     }
 }
 

@@ -497,7 +497,7 @@ private fun DescriptionTooltip(
     onRequireRootTopPadding: (Dp) -> Unit,
     onStartExerciseClicked: (ExerciseUi) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     FloatingTooltip(
         modifier = modifier,

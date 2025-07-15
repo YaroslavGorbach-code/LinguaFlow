@@ -156,7 +156,7 @@ private fun TwisterContent(
     actioner: (TongueTwisterExerciseAction) -> Unit
 ) {
     val allowAnimate = remember { mutableStateOf(false) }
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Column(
         modifier = Modifier

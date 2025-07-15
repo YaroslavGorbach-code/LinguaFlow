@@ -107,7 +107,7 @@ class VocabularyExerciseViewModel @Inject constructor(
                         userWordsCount.value = 0
                     }
                     is VocabularyExerciseAction.OnTimerFinished -> {
-                        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+                        val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
                         timer.stop()
                         isExerciseStarted.value = false

@@ -344,7 +344,7 @@ private fun SpeakingContent(
 
 @Composable
 private fun Task(speakingMode: SpeakingExerciseViewState.ScreenMode.Speaking) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Text(
         stringResource(R.string.speaking_exercise_situation_title_text),
@@ -376,7 +376,7 @@ private fun TestContent(
     testMode: SpeakingExerciseViewState.ScreenMode.IntroTest,
     actioner: (SpeakingExerciseAction) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Column(
         modifier = Modifier

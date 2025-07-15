@@ -315,7 +315,7 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
 
 @Composable
 private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Text(
         text = stringResource(R.string.challenge_completed_title_text),
@@ -375,7 +375,7 @@ private fun ChallengeStarted(
     challenge: Challenge,
     actioner: (GamesAction) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     LinguaProgressBar(
         challenge.progressInMinutes.toFloat() / challenge.durationMinutes.toFloat(),
@@ -416,7 +416,7 @@ private fun ChallengeNotStarted(
     challenge: Challenge,
     actioner: (GamesAction) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Text(
         text = challenge.getTitle(lang),
@@ -450,7 +450,7 @@ private fun Game(
     listState: LazyListState,
     actioner: (GamesAction) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Column {
         GameDescription(state, game, actioner)
@@ -555,7 +555,7 @@ private fun GameDescriptionEnable(
     state: GamesViewState,
     actioner: (GamesAction) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     StaticTooltip(
         enableFloatAnimation = true,

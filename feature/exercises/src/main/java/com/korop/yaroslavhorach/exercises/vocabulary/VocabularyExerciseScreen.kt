@@ -184,7 +184,7 @@ private fun VocabularyContent(
     screenState: VocabularyExerciseViewState,
     actioner: (VocabularyExerciseAction) -> Unit
 ) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale("en")).language
+    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Column(
         modifier = Modifier

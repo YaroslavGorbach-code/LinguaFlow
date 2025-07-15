@@ -13,10 +13,10 @@ data class Exercise(
     val isVisible: Boolean = true,
 ) {
     fun getNameText(lang: String): String {
-        return nameString[lang] ?: this.nameString["en"] ?: ""
+        return nameString[lang]  ?: ""
     }
 
     fun getDescriptionText(lang: String): String {
-        return description[lang] ?: this.description["en"] ?: ""
+        return description[lang]  ?: ""
     }
 }
