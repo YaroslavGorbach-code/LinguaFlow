@@ -1,14 +1,14 @@
 package com.korop.yaroslavhorach.home.model
 
 import com.korop.yaroslavhorach.common.utill.UiMessage
-import com.korop.yaroslavhorach.domain.game.model.Challenge
+import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.game.model.Game.GameName
 import com.korop.yaroslavhorach.domain.game.model.Game.Skill
 
 data class GamesViewState(
     val games: List<GameUi>,
-    val challenge: Challenge? = null,
+    val challengeTimeLimited: ChallengeTimeLimited? = null,
     val sorts: List<GameSort> = emptyList(),
     val favorites: List<Long> = emptyList(),
     val selectedSort: GameSort? = null,

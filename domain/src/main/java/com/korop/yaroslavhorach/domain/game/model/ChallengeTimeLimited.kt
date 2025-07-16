@@ -1,6 +1,6 @@
 package com.korop.yaroslavhorach.domain.game.model
 
-data class Challenge(
+data class ChallengeTimeLimited(
     val id: Long = 0,
     private val titleText: Map<String, String>,
     private val descriptionText: Map<String, String>,

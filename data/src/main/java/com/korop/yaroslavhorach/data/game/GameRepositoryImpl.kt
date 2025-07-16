@@ -4,9 +4,9 @@ import android.content.Context
 import com.korop.yaroslavhorach.common.utill.isToday
 import com.korop.yaroslavhorach.common.utill.loadJsonFromAssets
 import com.korop.yaroslavhorach.datastore.challenge.LinguaChallengeDataSource
-import com.korop.yaroslavhorach.datastore.challenge.model.DailyChallengeProgress
+import com.korop.yaroslavhorach.datastore.challenge.model.DailyChallengeTimeLimitedProgress
 import com.korop.yaroslavhorach.domain.game.GameRepository
-import com.korop.yaroslavhorach.domain.game.model.Challenge
+import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.google.gson.GsonBuilder
@@ -28,7 +28,7 @@ class GameRepositoryImpl @Inject constructor(
     private val challengeDataSource: LinguaChallengeDataSource
 ) : GameRepository {
     private var cachedGames: List<Game> = emptyList()
-    private var cachedChallenge: Challenge? = null
+    private var cachedChallengeTimeLimited: ChallengeTimeLimited? = null
 
     override fun getGames(): Flow<List<Game>> {
         return flow {
@@ -45,7 +45,7 @@ class GameRepositoryImpl @Inject constructor(
         return cachedGames.find { it.id == gameId }!!
     }
 
-    override fun getChallenge(): Flow<Challenge> {
+    override fun getChallengeTimeLimited(): Flow<ChallengeTimeLimited> {
         val gson = GsonBuilder()
             .registerTypeAdapter(Game.Skill::class.java, JsonDeserializer { json, _, _ ->
                 try {
@@ -58,27 +58,27 @@ class GameRepositoryImpl @Inject constructor(
 
        return kotlinx.coroutines.flow.combine(
             flow {
-                val challenges: List<Challenge> = loadJsonFromAssets(context, "daily_challenge.json")?.let { challenges ->
-                    gson.fromJson(challenges, object : TypeToken<List<Challenge>>() {}.type)
+                val challengeTimeLimited: List<ChallengeTimeLimited> = loadJsonFromAssets(context, "daily_challenge.json")?.let { challenges ->
+                    gson.fromJson(challenges, object : TypeToken<List<ChallengeTimeLimited>>() {}.type)
                 } ?: emptyList()
-                emit(challenges)
+                emit(challengeTimeLimited)
             },
             prefsRepository.getUserData(),
             getGames(),
-            challengeDataSource.getChallengeProgress()
+            challengeDataSource.getChallengeTimeLimitedProgress()
         ) { challenges, userData, games, progress ->
 
            if (progress.availableDuringDate.isToday()) {
                val startedChallenge = challenges.find { it.id == progress.id }
 
-               cachedChallenge = startedChallenge!!.copy(
-                   status = Challenge.Status(
+               cachedChallengeTimeLimited = startedChallenge!!.copy(
+                   status = ChallengeTimeLimited.Status(
                        started = progress.isStarted,
                        completed = (progress.progressInMs / 60_000).toInt() >= startedChallenge.durationMinutes
                    ),
                    progressInMinutes = (progress.progressInMs / 60_000).toInt()
                )
-               cachedChallenge!!
+               cachedChallengeTimeLimited!!
            } else{
                val skillForChallenge = games
                    .asSequence()
@@ -92,15 +92,15 @@ class GameRepositoryImpl @Inject constructor(
                val challenge = challenges.first { it.theme == skillForChallenge }
 
                challengeDataSource.updateChallengeProgress(
-                   DailyChallengeProgress(
+                   DailyChallengeTimeLimitedProgress(
                        id = challenge.id,
                        availableDuringDate = Calendar.getInstance().timeInMillis,
                        progressInMs = 0,
                        isStarted = false,
                    )
                )
-               cachedChallenge = challenge
-               cachedChallenge!!
+               cachedChallengeTimeLimited = challenge
+               cachedChallengeTimeLimited!!
            }
        }
     }
@@ -110,7 +110,7 @@ class GameRepositoryImpl @Inject constructor(
     }
 
     override suspend fun requestUpdateDailyChallengeCompleteTime(skill: List<Game.Skill>, time: Long) {
-        if (skill.contains(cachedChallenge?.theme)) {
+        if (skill.contains(cachedChallengeTimeLimited?.theme)) {
             withContext(Dispatchers.IO) {
                 challengeDataSource.updateChallengeTimeProgress(time)
             }

@@ -5,7 +5,7 @@ import com.korop.yaroslavhorach.common.base.BaseViewModel
 import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.common.utill.combine
 import com.korop.yaroslavhorach.domain.game.GameRepository
-import com.korop.yaroslavhorach.domain.game.model.Challenge
+import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.home.model.GameSort
 import com.korop.yaroslavhorach.home.model.GameUi
@@ -41,7 +41,7 @@ class GamesViewModel @Inject constructor(
     override val state: StateFlow<GamesViewState> = combine(
         prefsRepository.getUserData(),
         games,
-        gameRepository.getChallenge(),
+        gameRepository.getChallengeTimeLimited(),
         selectedSort,
         prefsRepository.getFavoriteGamesIds(),
         uiMessageManager.message
@@ -55,7 +55,7 @@ class GamesViewModel @Inject constructor(
                     add(0, GameSort.DAILY_CHALLENGE)
                 }
             },
-            challenge = challenge,
+            challengeTimeLimited = challenge,
             favorites = favorites,
             selectedSort = selectedSort,
             availableTokens = userData.availableTokens,
@@ -156,10 +156,10 @@ class GamesViewModel @Inject constructor(
         games: List<GameUi>,
         selectedSort: GameSort?,
         favorites: List<Long>,
-        challenge: Challenge
+        challengeTimeLimited: ChallengeTimeLimited
     ) = games.filter {
         when (selectedSort) {
-            GameSort.DAILY_CHALLENGE -> it.game.skills.contains(challenge.theme)
+            GameSort.DAILY_CHALLENGE -> it.game.skills.contains(challengeTimeLimited.theme)
             GameSort.FAVORITE -> favorites.contains(it.game.id)
             GameSort.CREATIVE -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.CREATIVE)
             GameSort.HUMOR -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.HUMOR)

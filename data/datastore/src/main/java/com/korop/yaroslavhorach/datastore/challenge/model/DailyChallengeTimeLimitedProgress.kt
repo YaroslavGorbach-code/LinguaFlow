@@ -1,6 +1,6 @@
 package com.korop.yaroslavhorach.datastore.challenge.model
 
-data class DailyChallengeProgress(
+data class DailyChallengeTimeLimitedProgress(
     val id: Long,
     val availableDuringDate: Long,
     val progressInMs: Long,

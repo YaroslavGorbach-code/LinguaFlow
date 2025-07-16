@@ -17,6 +17,8 @@ object LinguaIcons {
     val Chronometer = R.drawable.ic_chronometer
     val LightingThunder = R.drawable.ic_lightning_thunder
     val Brain = R.drawable.ic_brain
+    val Microphone = R.drawable.ic_microphone
+    val Microphone2 = R.drawable.ic_microphone_2
     val Token = R.drawable.ic_token
     val icStar = R.drawable.ic_star
     val icStarFilled = R.drawable.ic_star_filled

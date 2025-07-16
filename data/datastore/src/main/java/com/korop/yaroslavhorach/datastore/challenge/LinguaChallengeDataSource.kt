@@ -2,7 +2,7 @@ package com.korop.yaroslavhorach.datastore.challenge
 
 import androidx.datastore.core.DataStore
 import com.korop.yaroslavhorach.datastore.ChallengeProgress
-import com.korop.yaroslavhorach.datastore.challenge.model.DailyChallengeProgress
+import com.korop.yaroslavhorach.datastore.challenge.model.DailyChallengeTimeLimitedProgress
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
@@ -10,7 +10,7 @@ import javax.inject.Inject
 class LinguaChallengeDataSource @Inject constructor(
     private val challengeProgress: DataStore<ChallengeProgress>
 ) {
-    suspend fun updateChallengeProgress(progress: DailyChallengeProgress) {
+    suspend fun updateChallengeProgress(progress: DailyChallengeTimeLimitedProgress) {
         challengeProgress.updateData { prefs ->
             prefs.toBuilder()
                 .setChallengeId(progress.id)
@@ -37,9 +37,9 @@ class LinguaChallengeDataSource @Inject constructor(
         }
     }
 
-    fun getChallengeProgress(): Flow<DailyChallengeProgress> {
+    fun getChallengeTimeLimitedProgress(): Flow<DailyChallengeTimeLimitedProgress> {
         return challengeProgress.data.map {
-            DailyChallengeProgress(
+            DailyChallengeTimeLimitedProgress(
                 id = it.challengeId,
                 isStarted = it.isStarted,
                 availableDuringDate = it.availableDuringDate,

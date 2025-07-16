@@ -2,7 +2,6 @@ package com.korop.yaroslavhorach.home
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateDpAsState
@@ -23,6 +22,7 @@ import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
@@ -30,11 +30,14 @@ import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -52,13 +55,19 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -77,9 +86,11 @@ import com.korop.yaroslavhorach.designsystem.extentions.blockColorPrimary
 import com.korop.yaroslavhorach.designsystem.extentions.blockColorSecondary
 import com.korop.yaroslavhorach.designsystem.extentions.blockDescription
 import com.korop.yaroslavhorach.designsystem.extentions.blockTitle
+import com.korop.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.korop.yaroslavhorach.designsystem.theme.White
+import com.korop.yaroslavhorach.designsystem.theme.White_40
 import com.korop.yaroslavhorach.designsystem.theme.White_70
 import com.korop.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.korop.yaroslavhorach.designsystem.theme.components.FloatingTooltip
@@ -90,8 +101,9 @@ import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoControlPrimary
-import com.korop.yaroslavhorach.designsystem.theme.typoControlSecondary
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
+import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
+import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
 import com.korop.yaroslavhorach.domain.exercise.model.Exercise
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.home.model.ExerciseUi
@@ -354,42 +366,74 @@ private fun HandleOnScrollBlockChange(
 
 @Composable
 private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeAction) -> Unit) {
+    val screenHeight = LocalConfiguration.current.screenHeightDp.dp
+    val maxHeight = screenHeight / 1.8f
 
-    BoxWithStripes(
-        shape = RoundedCornerShape(bottomEnd = 0.dp, bottomStart = 0.dp),
-        rawShadowYOffset = 0.dp,
-        contentPadding = 0.dp,
-        background = state.exerciseBlock.blockColorPrimary(),
-        backgroundShadow = state.exerciseBlock.blockColorSecondary(),
+
+    Box(
         modifier = modifier
             .fillMaxWidth()
+            .heightIn(max = maxHeight)
+            .verticalScroll(rememberScrollState())
     ) {
+        Image(
+            painter = painterResource(state.exerciseBlock.topBarBgRes),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .matchParentSize()
+        )
+
+//        Spacer( modifier = Modifier
+//                .matchParentSize()
+//            .background(color = Color(0x1A000000))
+//        )
+
+        Image(
+            painter = painterResource(LinguaIcons.Microphone2),
+            contentDescription = null,
+            modifier = Modifier
+                .align(Alignment.CenterEnd)
+                .rotate(-18f)
+                .offset { IntOffset(x = 100, y = 100) }
+                .size(200.dp)
+        )
+
         Column(
             modifier = Modifier
-                .padding(horizontal = 20.dp)
-                .animateContentSize()
                 .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+                .wrapContentHeight()
+                .fillMaxWidth()
+                .padding(start = 20.dp, top = 12.dp, end = 20.dp)
         ) {
-            UserGreeting(state, actioner)
-            Spacer(Modifier.height(14.dp))
-            Text(
-                modifier = Modifier,
-                text = state.exerciseBlock.blockTitle().asString(),
-                color = MaterialTheme.colorScheme.typoControlPrimary(),
-                style = LinguaTypography.h5
-            )
-            Spacer(Modifier.height(4.dp))
-            Text(
-                modifier = Modifier,
-                text = state.exerciseBlock.blockDescription().asString(),
-                color = MaterialTheme.colorScheme.typoControlSecondary(),
-                style = LinguaTypography.subtitle4
-            )
+            Row {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "\uD83C\uDFAF Розмовний курс",
+                        color = MaterialTheme.colorScheme.typoPrimary(),
+                        style = LinguaTypography.h3
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    Text(
+                        text = "Прокачай спілкування через імітацію реальних діалогів",
+                        color = MaterialTheme.colorScheme.typoSecondary(),
+                        style = LinguaTypography.body4
+                    )
+                }
+            }
 
-            if (state.exerciseBlock == ExerciseBlock.ONE || state.blockProgress != 0f) {
-                Spacer(Modifier.height(14.dp))
+            Spacer(Modifier.height(20.dp))
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 20.dp)
+                    .background(color = White_40, RoundedCornerShape(16.dp))
+                    .padding(horizontal = 20.dp)
+            ) {
+                Spacer(Modifier.height(16.dp))
                 LinguaProgressBar(
                     progress = state.blockProgress,
+                    progressColor = MaterialTheme.colorScheme.primary,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(end = 14.dp)
@@ -404,13 +448,86 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                         contentDescription = ""
                     )
                 }
-                Spacer(Modifier.height(14.dp))
-            } else {
-                Spacer(Modifier.height(20.dp))
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    modifier = Modifier,
+                    text = state.exerciseBlock.blockTitle().asString(),
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.h5
+                )
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    modifier = Modifier,
+                    text = state.exerciseBlock.blockDescription().asString(),
+                    color = MaterialTheme.colorScheme.typoSecondary(),
+                    style = LinguaTypography.body4
+                )
+                Spacer(Modifier.height(16.dp))
             }
         }
     }
 }
+
+
+//@Composable
+//private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeAction) -> Unit) {
+//
+//    BoxWithStripes(
+//        shape = RoundedCornerShape(bottomEnd = 0.dp, bottomStart = 0.dp),
+//        rawShadowYOffset = 0.dp,
+//        contentPadding = 0.dp,
+//        background = state.exerciseBlock.blockColorPrimary(),
+//        backgroundShadow = state.exerciseBlock.blockColorSecondary(),
+//        modifier = modifier
+//            .fillMaxWidth()
+//    ) {
+//        Column(
+//            modifier = Modifier
+//                .padding(horizontal = 20.dp)
+//                .animateContentSize()
+//                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
+//        ) {
+//            UserGreeting(state, actioner)
+//            Spacer(Modifier.height(14.dp))
+//            Text(
+//                modifier = Modifier,
+//                text = state.exerciseBlock.blockTitle().asString(),
+//                color = MaterialTheme.colorScheme.typoControlPrimary(),
+//                style = LinguaTypography.h5
+//            )
+//            Spacer(Modifier.height(4.dp))
+//            Text(
+//                modifier = Modifier,
+//                text = state.exerciseBlock.blockDescription().asString(),
+//                color = MaterialTheme.colorScheme.typoControlSecondary(),
+//                style = LinguaTypography.subtitle4
+//            )
+//
+//            if (state.exerciseBlock == ExerciseBlock.ONE || state.blockProgress != 0f) {
+//                Spacer(Modifier.height(14.dp))
+//                LinguaProgressBar(
+//                    progress = state.blockProgress,
+//                    modifier = Modifier
+//                        .fillMaxWidth()
+//                        .padding(end = 14.dp)
+//                        .height(40.dp),
+//                ) {
+//                    Image(
+//                        modifier = Modifier
+//                            .size(40.dp)
+//                            .offset(x = 15.dp)
+//                            .align(Alignment.CenterEnd),
+//                        painter = painterResource(LinguaIcons.Cup),
+//                        contentDescription = ""
+//                    )
+//                }
+//                Spacer(Modifier.height(14.dp))
+//            } else {
+//                Spacer(Modifier.height(20.dp))
+//            }
+//        }
+//    }
+//}
 
 @Composable
 private fun Exercise(

@@ -80,7 +80,7 @@ import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
-import com.korop.yaroslavhorach.domain.game.model.Challenge
+import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.games.R
 import com.korop.yaroslavhorach.home.model.GameUi
@@ -299,14 +299,14 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
                 .padding(20.dp)
         ) {
             when {
-                state.challenge?.status?.started?.not() == true -> {
-                    ChallengeNotStarted(state, state.challenge, actioner)
+                state.challengeTimeLimited?.status?.started?.not() == true -> {
+                    ChallengeNotStarted(state, state.challengeTimeLimited, actioner)
                 }
-                state.challenge?.status?.started == true && state.challenge.status.completed.not() -> {
-                    ChallengeStarted(state.challenge, actioner)
+                state.challengeTimeLimited?.status?.started == true && state.challengeTimeLimited.status.completed.not() -> {
+                    ChallengeStarted(state.challengeTimeLimited, actioner)
                 }
-                state.challenge?.status?.completed == true -> {
-                    ChallengeCompleted(state, state.challenge)
+                state.challengeTimeLimited?.status?.completed == true -> {
+                    ChallengeCompleted(state, state.challengeTimeLimited)
                 }
             }
         }
@@ -314,7 +314,7 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
 }
 
 @Composable
-private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
+private fun ChallengeCompleted(state: GamesViewState, challengeTimeLimited: ChallengeTimeLimited) {
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Text(
@@ -324,7 +324,7 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
     )
     Spacer(Modifier.height(8.dp))
     Text(
-        text = challenge.getCompleteMessage(lang),
+        text = challengeTimeLimited.getCompleteMessage(lang),
         color = MaterialTheme.colorScheme.typoSecondary(),
         style = LinguaTypography.body4
     )
@@ -341,7 +341,7 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
         cornerRadius = 12.dp,
     ) {
         Text(
-            text = stringResource(R.string.challenge_completed_subtitle_text, challenge.bonusOnComplete),
+            text = stringResource(R.string.challenge_completed_subtitle_text, challengeTimeLimited.bonusOnComplete),
             color = MaterialTheme.colorScheme.typoSecondary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body4
@@ -372,20 +372,20 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
 
 @Composable
 private fun ChallengeStarted(
-    challenge: Challenge,
+    challengeTimeLimited: ChallengeTimeLimited,
     actioner: (GamesAction) -> Unit
 ) {
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     LinguaProgressBar(
-        challenge.progressInMinutes.toFloat() / challenge.durationMinutes.toFloat(),
+        challengeTimeLimited.progressInMinutes.toFloat() / challengeTimeLimited.durationMinutes.toFloat(),
         modifier = Modifier
             .fillMaxWidth()
             .height(32.dp)
     ) {
         Text(
             modifier = Modifier.align(Alignment.Center),
-            text = challenge.progressInMinutes.toString() + " "+  stringResource(R.string.minute_short_text),
+            text = challengeTimeLimited.progressInMinutes.toString() + " "+  stringResource(R.string.minute_short_text),
             color = MaterialTheme.colorScheme.typoPrimary(),
             textAlign = TextAlign.Center,
             style = LinguaTypography.body5
@@ -402,7 +402,7 @@ private fun ChallengeStarted(
     }
     Spacer(Modifier.height(12.dp))
     Text(
-        text = challenge.getAcceptMessage(lang),
+        text = challengeTimeLimited.getAcceptMessage(lang),
         color = MaterialTheme.colorScheme.typoSecondary(),
         style = LinguaTypography.body4
     )
@@ -413,19 +413,19 @@ private fun ChallengeStarted(
 @Composable
 private fun ChallengeNotStarted(
     state: GamesViewState,
-    challenge: Challenge,
+    challengeTimeLimited: ChallengeTimeLimited,
     actioner: (GamesAction) -> Unit
 ) {
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Text(
-        text = challenge.getTitle(lang),
+        text = challengeTimeLimited.getTitle(lang),
         color = MaterialTheme.colorScheme.typoPrimary(),
         style = LinguaTypography.subtitle2
     )
     Spacer(Modifier.height(8.dp))
     Text(
-        text = challenge.getDescription(lang),
+        text = challengeTimeLimited.getDescription(lang),
         color = MaterialTheme.colorScheme.typoSecondary(),
         style = LinguaTypography.body4
     )
@@ -522,8 +522,8 @@ private fun ColumnScope.GameDescription(
     game: GameUi,
     actioner: (GamesAction) -> Unit
 ) {
-    val useToken = if (state.challenge?.status?.inProgress == true) {
-        state.isUserPremium.not() && (game.game.skills.contains(state.challenge.theme).not())
+    val useToken = if (state.challengeTimeLimited?.status?.inProgress == true) {
+        state.isUserPremium.not() && (game.game.skills.contains(state.challengeTimeLimited.theme).not())
     } else {
         state.isUserPremium.not()
     }
@@ -605,8 +605,8 @@ private fun GameDescriptionEnable(
         )
         Spacer(Modifier.height(20.dp))
 
-        val useToken = if (state.challenge?.status?.inProgress == true) {
-            state.isUserPremium.not() && (game.game.skills.contains(state.challenge.theme).not())
+        val useToken = if (state.challengeTimeLimited?.status?.inProgress == true) {
+            state.isUserPremium.not() && (game.game.skills.contains(state.challengeTimeLimited.theme).not())
         } else {
             state.isUserPremium.not()
         }
