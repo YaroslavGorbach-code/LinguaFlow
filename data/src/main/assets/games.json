@@ -516,9 +516,9 @@
     },
     "minExperienceRequired": 0,
     "maxProgress": 0,
-    "name": "WORD_IN_TEMPO",
+    "name": "VOCABULARY",
     "skills": [
-      "VOCABULARY", "CREATIVE"
+      "VOCABULARY"
     ]
   },
   {
@@ -572,7 +572,7 @@
       "en": "🧠 Upgrade your language! In this exercise, you replace boring or repetitive words with synonyms that sound sharper, richer, or more expressive. It builds vocabulary and helps you spot and fix weak language.",
       "ru": "🧠 Прокачай речь! В этом упражнении ты заменяешь скучные или повторяющиеся слова на синонимы, которые звучат точнее, богаче и выразительнее. Это развивает словарный запас и умение улучшать формулировки."
     },
-    "minExperienceRequired": 0,
+    "minExperienceRequired": 600,
     "maxProgress": 5,
     "name": "ONE_SYNONYM_PLEASE",
     "skills": [
@@ -630,7 +630,7 @@
       "en": "This exercise helps you quickly find antonyms — words with opposite meanings. Words will appear on the screen, and you need to say their antonyms. Answer accurately and logically to improve your vocabulary and thinking skills.",
       "ru": "Это упражнение поможет тебе быстро находить антонимы — слова с противоположным значением. На экране появляются слова, и тебе нужно называть их антонимы. Отвечай точно и логично, чтобы улучшить словарный запас и навыки мышления."
     },
-    "minExperienceRequired": 500,
+    "minExperienceRequired": 0,
     "maxProgress": 10,
     "name": "ANTONYM_BATTLE",
     "skills": [
@@ -903,7 +903,7 @@
     },
     "minExperienceRequired": 0,
     "maxProgress": 10,
-    "name": "TONGUE_TWISTER_EASY",
+    "name": "TONGUE_TWISTERS_EASY",
     "skills": [
       "DICTION"
     ]
@@ -932,7 +932,7 @@
     },
     "minExperienceRequired": 500,
     "maxProgress": 10,
-    "name": "TONGUE_TWISTER_MEDIUM",
+    "name": "TONGUE_TWISTERS_MEDIUM",
     "skills": [
       "DICTION"
     ]
@@ -961,7 +961,7 @@
     },
     "minExperienceRequired": 1000,
     "maxProgress": 10,
-    "name": "TONGUE_TWISTER_HARD",
+    "name": "TONGUE_TWISTERS_HARD",
     "skills": [
       "DICTION"
     ]

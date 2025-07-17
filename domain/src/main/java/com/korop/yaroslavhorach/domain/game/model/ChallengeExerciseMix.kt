@@ -1,6 +1,6 @@
 package com.korop.yaroslavhorach.domain.game.model
 
- class ChallengeTimeLimited(
+class ChallengeExerciseMix(
     id: Long = 0,
     titleText: Map<String, String>,
     descriptionText: Map<String, String>,
@@ -9,9 +9,7 @@ package com.korop.yaroslavhorach.domain.game.model
     tokenCost: Int,
     bonusOnComplete: Int,
     status: Status = Status(),
-    var progressInMinutes: Int,
-    val theme: Game.Skill,
-    val durationMinutes: Int,
+    var exercisesAndCompletedMark: List<Pair<Game.GameName, Boolean>>
 ) : Challenge(
     id,
     titleText,
@@ -21,6 +19,4 @@ package com.korop.yaroslavhorach.domain.game.model
     tokenCost,
     bonusOnComplete,
     status
-){
-
-}
+)

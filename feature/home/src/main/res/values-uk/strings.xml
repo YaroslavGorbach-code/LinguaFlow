@@ -7,4 +7,6 @@
     <string name="not_active_exercise_btn_text">Недоступно</string>
     <string name="home_repeat_exercise_btn_text">ПОВТОРИТИ</string>
     <string name="home_start_exercise_btn_text">ПОЧАТИ</string>
+    <string name="home_title_text">🎯 Розмовний курс</string>
+    <string name="home_subtitle_text">Прокачай спілкування через імітацію реальних діалогів</string>
 </resources>

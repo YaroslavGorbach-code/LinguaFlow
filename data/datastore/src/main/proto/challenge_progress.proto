@@ -3,9 +3,15 @@ syntax = "proto3";
 option java_package = "com.korop.yaroslavhorach.datastore";
 option java_multiple_files = true;
 
+message ExerciseProgress {
+  string name = 1;
+  bool completed = 2;
+}
+
 message ChallengeProgress {
   int64 challenge_id = 1;
   bool isStarted = 2;
   int64 availableDuringDate = 3;
   int64 progress_in_ms = 4;
+  repeated ExerciseProgress exercisesAndCompleted = 5;
 }

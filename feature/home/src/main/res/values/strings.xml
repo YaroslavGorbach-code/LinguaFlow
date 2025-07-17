@@ -7,4 +7,6 @@
     <string name="not_active_exercise_btn_text">Not available</string>
     <string name="home_repeat_exercise_btn_text">REPEAT</string>
     <string name="home_start_exercise_btn_text">START</string>
+    <string name="home_title_text">🎯 Speaking Course</string>
+    <string name="home_subtitle_text">Boost your communication through real-life dialogue simulations</string>
 </resources>

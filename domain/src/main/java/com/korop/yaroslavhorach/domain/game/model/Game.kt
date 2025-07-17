@@ -50,7 +50,7 @@ data class Game(
         BODY_LANGUAGE_EXPRESS,
         RAP_IMPROV,
         PERSUASIVE_SHOUT,
-        WORD_IN_TEMPO,
+        VOCABULARY,
         SUBTLE_MANIPULATION,
         ONE_SYNONYM_PLEASE,
         INTONATION_MASTER,
@@ -63,8 +63,8 @@ data class Game(
         FLIRTING_WITH_OBJECT,
         BOTH_THERE_AND_IN_BED,
         HOT_WORD,
-        TONGUE_TWISTER_EASY,
-        TONGUE_TWISTER_MEDIUM,
-        TONGUE_TWISTER_HARD,
+        TONGUE_TWISTERS_EASY,
+        TONGUE_TWISTERS_MEDIUM,
+        TONGUE_TWISTERS_HARD,
     }
 }

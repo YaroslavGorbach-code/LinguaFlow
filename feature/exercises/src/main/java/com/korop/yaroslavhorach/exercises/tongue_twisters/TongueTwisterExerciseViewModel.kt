@@ -41,7 +41,6 @@ class TongueTwisterExerciseViewModel @Inject constructor(
 
     private val exerciseId = savedStateHandle.toRoute<TongueTwistersExerciseRoute>().exerciseId
 
-
     override val pendingActions: MutableSharedFlow<TongueTwisterExerciseAction> = MutableSharedFlow()
 
     private var currentExercise: MutableStateFlow<Exercise?> = MutableStateFlow(null)
@@ -110,6 +109,15 @@ class TongueTwisterExerciseViewModel @Inject constructor(
                     viewModelScope.launch {
                         exerciseRepository.markCompleted(exerciseId)
                         gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.DICTION), timer.getElapsedTimeMillis())
+                        try {
+                            currentExercise.value?.name?.let {
+                                gameRepository.requestCompleteDailyChallengeGame(
+                                    Game.GameName.valueOf(
+                                        it.name
+                                    )
+                                )
+                            }
+                        } catch (_: Throwable) { }
 
                         val elapsedTime = timer.getElapsedTimeMillis()
                         val requiredTime = 2 * 60 * 1000L

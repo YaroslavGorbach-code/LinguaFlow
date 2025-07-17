@@ -122,6 +122,8 @@ class WordsGameViewModel @Inject constructor(
                                 game.value?.skills ?: emptyList(),
                                 timer.getElapsedTimeMillis()
                             )
+                            game.value?.name?.let { gameRepository.requestCompleteDailyChallengeGame(it) }
+
                             val elapsedTime = timer.getElapsedTimeMillis()
                             val requiredTime = 2 * 60 * 1000L
 

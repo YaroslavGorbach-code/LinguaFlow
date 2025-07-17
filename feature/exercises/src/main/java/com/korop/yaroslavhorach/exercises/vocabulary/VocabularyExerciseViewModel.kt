@@ -85,6 +85,15 @@ class VocabularyExerciseViewModel @Inject constructor(
                     is VocabularyExerciseAction.OnNextClicked -> {
                         exerciseRepository.markCompleted(exerciseId)
                         gameRepository.requestUpdateDailyChallengeCompleteTime(listOf(Game.Skill.VOCABULARY), timer.getElapsedTimeMillis())
+                        try {
+                            currentExercise.value?.name?.let {
+                                gameRepository.requestCompleteDailyChallengeGame(
+                                    Game.GameName.valueOf(
+                                        it.name
+                                    )
+                                )
+                            }
+                        } catch (_: Throwable) { }
 
                         uiMessageManager.emitMessage(
                             UiMessage(

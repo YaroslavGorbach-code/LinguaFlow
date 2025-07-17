@@ -55,12 +55,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.graphics.vector.PathParser
-import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
@@ -86,11 +81,9 @@ import com.korop.yaroslavhorach.designsystem.extentions.blockColorPrimary
 import com.korop.yaroslavhorach.designsystem.extentions.blockColorSecondary
 import com.korop.yaroslavhorach.designsystem.extentions.blockDescription
 import com.korop.yaroslavhorach.designsystem.extentions.blockTitle
-import com.korop.yaroslavhorach.designsystem.extentions.topBarBgRes
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.korop.yaroslavhorach.designsystem.theme.White
-import com.korop.yaroslavhorach.designsystem.theme.White_40
 import com.korop.yaroslavhorach.designsystem.theme.White_70
 import com.korop.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.korop.yaroslavhorach.designsystem.theme.components.FloatingTooltip
@@ -243,8 +236,7 @@ private fun Exercises(
             val block = exercise.exercise.block
             val previousBlock = screenState.exercises.getOrNull(index - 1)?.exercise?.block
 
-            if (index > 0) Spacer(Modifier.size(20.dp))
-            if (index == 0) Spacer(Modifier.size(40.dp))
+            Spacer(Modifier.size(20.dp))
 
             if (block != previousBlock) {
                 BlockTitle(block)
@@ -369,26 +361,12 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
     val screenHeight = LocalConfiguration.current.screenHeightDp.dp
     val maxHeight = screenHeight / 1.8f
 
-
     Box(
         modifier = modifier
             .fillMaxWidth()
             .heightIn(max = maxHeight)
             .verticalScroll(rememberScrollState())
     ) {
-        Image(
-            painter = painterResource(state.exerciseBlock.topBarBgRes),
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
-            modifier = Modifier
-                .matchParentSize()
-        )
-
-//        Spacer( modifier = Modifier
-//                .matchParentSize()
-//            .background(color = Color(0x1A000000))
-//        )
-
         Image(
             painter = painterResource(LinguaIcons.Microphone2),
             contentDescription = null,
@@ -409,13 +387,13 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
             Row {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "\uD83C\uDFAF Розмовний курс",
+                        text = stringResource(R.string.home_title_text),
                         color = MaterialTheme.colorScheme.typoPrimary(),
                         style = LinguaTypography.h3
                     )
                     Spacer(Modifier.height(8.dp))
                     Text(
-                        text = "Прокачай спілкування через імітацію реальних діалогів",
+                        text = stringResource(R.string.home_subtitle_text),
                         color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.body4
                     )
@@ -423,16 +401,17 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
             }
 
             Spacer(Modifier.height(20.dp))
+
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(bottom = 20.dp)
-                    .background(color = White_40, RoundedCornerShape(16.dp))
+                    .background(color = MaterialTheme.colorScheme.primary.copy(alpha = 0.8f), RoundedCornerShape(16.dp))
                     .padding(horizontal = 20.dp)
             ) {
                 Spacer(Modifier.height(16.dp))
                 LinguaProgressBar(
                     progress = state.blockProgress,
+                    progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
                     progressColor = MaterialTheme.colorScheme.primary,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -452,14 +431,14 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                 Text(
                     modifier = Modifier,
                     text = state.exerciseBlock.blockTitle().asString(),
-                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    color = White,
                     style = LinguaTypography.h5
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
                     modifier = Modifier,
                     text = state.exerciseBlock.blockDescription().asString(),
-                    color = MaterialTheme.colorScheme.typoSecondary(),
+                    color = White,
                     style = LinguaTypography.body4
                 )
                 Spacer(Modifier.height(16.dp))
@@ -467,67 +446,6 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
         }
     }
 }
-
-
-//@Composable
-//private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeAction) -> Unit) {
-//
-//    BoxWithStripes(
-//        shape = RoundedCornerShape(bottomEnd = 0.dp, bottomStart = 0.dp),
-//        rawShadowYOffset = 0.dp,
-//        contentPadding = 0.dp,
-//        background = state.exerciseBlock.blockColorPrimary(),
-//        backgroundShadow = state.exerciseBlock.blockColorSecondary(),
-//        modifier = modifier
-//            .fillMaxWidth()
-//    ) {
-//        Column(
-//            modifier = Modifier
-//                .padding(horizontal = 20.dp)
-//                .animateContentSize()
-//                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
-//        ) {
-//            UserGreeting(state, actioner)
-//            Spacer(Modifier.height(14.dp))
-//            Text(
-//                modifier = Modifier,
-//                text = state.exerciseBlock.blockTitle().asString(),
-//                color = MaterialTheme.colorScheme.typoControlPrimary(),
-//                style = LinguaTypography.h5
-//            )
-//            Spacer(Modifier.height(4.dp))
-//            Text(
-//                modifier = Modifier,
-//                text = state.exerciseBlock.blockDescription().asString(),
-//                color = MaterialTheme.colorScheme.typoControlSecondary(),
-//                style = LinguaTypography.subtitle4
-//            )
-//
-//            if (state.exerciseBlock == ExerciseBlock.ONE || state.blockProgress != 0f) {
-//                Spacer(Modifier.height(14.dp))
-//                LinguaProgressBar(
-//                    progress = state.blockProgress,
-//                    modifier = Modifier
-//                        .fillMaxWidth()
-//                        .padding(end = 14.dp)
-//                        .height(40.dp),
-//                ) {
-//                    Image(
-//                        modifier = Modifier
-//                            .size(40.dp)
-//                            .offset(x = 15.dp)
-//                            .align(Alignment.CenterEnd),
-//                        painter = painterResource(LinguaIcons.Cup),
-//                        contentDescription = ""
-//                    )
-//                }
-//                Spacer(Modifier.height(14.dp))
-//            } else {
-//                Spacer(Modifier.height(20.dp))
-//            }
-//        }
-//    }
-//}
 
 @Composable
 private fun Exercise(
@@ -558,7 +476,6 @@ private fun Exercise(
                 }
             }
     ) {
-
         BoxWithStripes(
             stripeColor = Color.Transparent,
             contentPadding = 8.dp,

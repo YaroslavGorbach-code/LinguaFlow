@@ -104,16 +104,16 @@ fun LingoNavHost(
                 Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }
-                Game.GameName.WORD_IN_TEMPO -> {
+                Game.GameName.VOCABULARY -> {
                     navController.navigateToVocabularyExercise(1004)
                 }
-                Game.GameName.TONGUE_TWISTER_EASY -> {
+                Game.GameName.TONGUE_TWISTERS_EASY -> {
                     navController.navigateToTongueTwistersExercise(1001)
                 }
-                Game.GameName.TONGUE_TWISTER_MEDIUM -> {
+                Game.GameName.TONGUE_TWISTERS_MEDIUM -> {
                     navController.navigateToTongueTwistersExercise(1002)
                 }
-                Game.GameName.TONGUE_TWISTER_HARD -> {
+                Game.GameName.TONGUE_TWISTERS_HARD -> {
                     navController.navigateToTongueTwistersExercise(1003)
                 }
             }

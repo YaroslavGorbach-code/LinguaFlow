@@ -32,5 +32,5 @@
     <string name="game_description_premium_btn_text">👑 ГРАТИ БЕЗ ОБМЕЖЕНЬ</string>
     <string name="game_description_xp_requried_title_text">Заробіть ще трохи XP або відкрийте Преміум, щоб грати без обмежень!</string>
     <string name="xp_postfix_text"> XP.</string>
-    <string name="game_description_no_tokens_premium_btn_text">👑 ВІДКРИТИ З ПРЕМІУМОМ</string>
+    <string name="game_description_no_tokens_premium_btn_text">👑 ВІДКРИТИ З ПРЕМІУМ</string>
 </resources>

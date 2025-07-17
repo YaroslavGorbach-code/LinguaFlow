@@ -1,10 +1,13 @@
 package com.korop.yaroslavhorach.home
 
+import android.icu.util.Calendar
 import androidx.lifecycle.viewModelScope
 import com.korop.yaroslavhorach.common.base.BaseViewModel
 import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.common.utill.combine
 import com.korop.yaroslavhorach.domain.game.GameRepository
+import com.korop.yaroslavhorach.domain.game.model.Challenge
+import com.korop.yaroslavhorach.domain.game.model.ChallengeExerciseMix
 import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.home.model.GameSort
@@ -42,26 +45,46 @@ class GamesViewModel @Inject constructor(
         prefsRepository.getUserData(),
         games,
         gameRepository.getChallengeTimeLimited(),
+        gameRepository.getChallengeExerciseMix(),
         selectedSort,
         prefsRepository.getFavoriteGamesIds(),
         uiMessageManager.message
-    ) { userData, games, challenge, selectedSort, favorites, messages ->
+    ) { userData, games, challengeTimeLimited, challengeExerciseMix, selectedSort, favorites, messages ->
+        val dayNumber = Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+        val todayChallenge = if (dayNumber % 2 == 0) challengeExerciseMix else challengeTimeLimited
+
         GamesViewState(
             sorts = getPermanentSorts().toMutableList().apply {
                 if (favorites.isEmpty().not()) {
                     add(0, GameSort.FAVORITE)
                 }
-                if (challenge.status.started && challenge.status.completed.not()) {
+                if (todayChallenge.status.started && todayChallenge.status.completed.not()) {
                     add(0, GameSort.DAILY_CHALLENGE)
                 }
             },
-            challengeTimeLimited = challenge,
+            challenge = todayChallenge,
             favorites = favorites,
             selectedSort = selectedSort,
             availableTokens = userData.availableTokens,
             maxTokens = userData.maxTokens,
-            games = filterGames(games, selectedSort, favorites, challenge)
-                .sortedBy { it.game.minExperienceRequired },
+            allGames =  filterGames(games, null, favorites, todayChallenge),
+            gamesForDisplay = filterGames(games, selectedSort, favorites, todayChallenge)
+                .sortedWith(
+                    compareBy(
+                        { game ->
+                            if (todayChallenge.status.inProgress) {
+                                when {
+                                    game.isChallengeGame && !game.isChallengeGameCompleted -> 0
+                                    game.isChallengeGame && game.isChallengeGameCompleted -> 1
+                                    else -> 2
+                                }
+                            } else {
+                                2
+                            }
+                        },
+                        { it.game.minExperienceRequired }
+                    )
+                ),
             experience = userData.experience,
             isUserPremium = userData.isPremium,
             uiMessage = messages
@@ -156,18 +179,44 @@ class GamesViewModel @Inject constructor(
         games: List<GameUi>,
         selectedSort: GameSort?,
         favorites: List<Long>,
-        challengeTimeLimited: ChallengeTimeLimited
-    ) = games.filter {
+        challenge: Challenge
+    ) = games.filter { game ->
         when (selectedSort) {
-            GameSort.DAILY_CHALLENGE -> it.game.skills.contains(challengeTimeLimited.theme)
-            GameSort.FAVORITE -> favorites.contains(it.game.id)
-            GameSort.CREATIVE -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.CREATIVE)
-            GameSort.HUMOR -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.HUMOR)
-            GameSort.STORYTELLING -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.STORYTELLING)
-            GameSort.VOCABULARY -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.VOCABULARY)
-            GameSort.DICTION -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.DICTION)
-            GameSort.FLIRT -> it.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.FLIRT)
+            GameSort.DAILY_CHALLENGE -> {
+                when (challenge) {
+                    is ChallengeExerciseMix -> {
+                        challenge.exercisesAndCompletedMark.any { it.first.name == game.game.name.name }
+                    }
+                    is ChallengeTimeLimited -> {
+                        game.game.skills.contains(challenge.theme)
+                    }
+                    else -> true
+                }
+            }
+            GameSort.FAVORITE -> favorites.contains(game.game.id)
+            GameSort.CREATIVE -> game.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.CREATIVE)
+            GameSort.HUMOR -> game.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.HUMOR)
+            GameSort.STORYTELLING -> game.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.STORYTELLING)
+            GameSort.VOCABULARY -> game.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.VOCABULARY)
+            GameSort.DICTION -> game.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.DICTION)
+            GameSort.FLIRT -> game.game.skills.contains(com.korop.yaroslavhorach.domain.game.model.Game.Skill.FLIRT)
             null -> true
+        }
+    }.map { game ->
+
+        if (challenge is ChallengeExerciseMix) {
+            val exerciseStatusMap = challenge.exercisesAndCompletedMark
+                .associate { it.first to it.second }
+
+            val isChallengeGame = exerciseStatusMap.containsKey(game.game.name)
+            val isChallengeGameCompleted = exerciseStatusMap[game.game.name] == true
+
+            game.copy(
+                isChallengeGame = isChallengeGame,
+                isChallengeGameCompleted = isChallengeGameCompleted
+            )
+        } else {
+            game
         }
     }
 }
