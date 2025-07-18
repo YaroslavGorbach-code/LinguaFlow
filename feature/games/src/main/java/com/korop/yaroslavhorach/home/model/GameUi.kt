@@ -45,6 +45,7 @@ data class GameUi(
         Game.GameName.ONE_LETTER -> R.drawable.ic_alphabet
         Game.GameName.FIVE_TO_THE_POINT -> R.drawable.ic_target
         Game.GameName.VOCABULARY_BURST -> R.drawable.ic_bomb
+        Game.GameName.WORST_IN_THE_WORLD -> R.drawable.im_hide
         Game.GameName.QUICK_ASSOCIATION -> R.drawable.im_acotiation
         Game.GameName.TONGUE_TWISTERS_EASY -> R.drawable.im_tongue_easy
         Game.GameName.TONGUE_TWISTERS_MEDIUM -> R.drawable.im_tongue_medium

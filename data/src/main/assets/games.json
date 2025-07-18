@@ -1093,5 +1093,35 @@
     "skills": [
       "VOCABULARY"
     ]
+  },
+  {
+    "id": 40,
+    "nameString": {
+      "uk": "Найгірший у світі",
+      "en": "The Worst in the World",
+      "ru": "Худший в мире"
+    },
+    "task": {
+      "uk": "Отримай професію й опиши, як виглядає її найгірший представник.",
+      "en": "Get a profession and describe its worst possible representative.",
+      "ru": "Получи профессию и опиши её худшего представителя."
+    },
+    "example": {
+      "uk": "Професія: Перукар\nСитуація: Замість ножиць використовує запальничку й бензин, бо так 'швидше й дешевше'.",
+      "en": "Profession: Hairdresser\nScenario: Uses a lighter and gasoline instead of scissors because it's 'faster and cheaper'.",
+      "ru": "Профессия: Парикмахер\nСитуация: Вместо ножниц пользуется зажигалкой и бензином, ведь так 'быстрее и дешевле'."
+    },
+    "description": {
+      "uk": "Отримай випадкову професію й уяви абсурдно поганий варіант її виконання. Це розвиває уяву, гумор і вміння швидко придумувати креативні ідеї.",
+      "en": "Get a random profession and imagine an absurdly bad way of performing it. This develops imagination, humor, and quick creative thinking.",
+      "ru": "Получи случайную профессию и представь абсурдно плохой вариант её выполнения. Это развивает воображение, чувство юмора и умение быстро придумывать креативные идеи."
+    },
+    "minExperienceRequired": 2800,
+    "maxProgress": 5,
+    "name": "WORST_IN_THE_WORLD",
+    "skills": [
+      "CREATIVE",
+      "HUMOR"
+    ]
   }
 ]
