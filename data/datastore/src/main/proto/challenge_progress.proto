@@ -9,9 +9,11 @@ message ExerciseProgress {
 }
 
 message ChallengeProgress {
-  int64 challenge_id = 1;
+  int64 challenge_15_minutes_id = 1;
   bool isStarted = 2;
-  int64 availableDuringDate = 3;
+  int64 timedChallengeAvailableDuringDate = 3;
   int64 progress_in_ms = 4;
   repeated ExerciseProgress exercisesAndCompleted = 5;
+  int64 challenge_mix_id = 6;
+  int64 mixChallengeAvailableDuringDate = 7;
 }

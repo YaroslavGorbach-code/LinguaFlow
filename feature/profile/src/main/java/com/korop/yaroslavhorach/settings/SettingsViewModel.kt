@@ -66,6 +66,21 @@ class SettingsViewModel @Inject constructor(
                     )
                 ),
                 SettingsSectionUi(
+                    title = UiText.FromString(context.getString(R.string.settings_daily_challange_title_text)),
+                    items = listOf(
+                        SettingsItemUi(
+                            title = UiText.FromString(context.getString(R.string.settings_daily_challange_mix_activate_title_text)),
+                            subtitle = UiText.FromString(context.getString(R.string.settings_daily_challange_mix_activate_subtitle_text)),
+                            type = SettingsItemType.ACTIVATE_DAILY_MIX
+                        ),
+                        SettingsItemUi(
+                            title = UiText.FromString(context.getString(R.string.settings_daily_challange_timed_activate_title_text)),
+                            subtitle = UiText.FromString(context.getString(R.string.settings_daily_challange_timed_activate_subtitle_text)),
+                            type = SettingsItemType.ACTIVATE_15_MINUTES_TOPIC
+                        )
+                    )
+                ),
+                SettingsSectionUi(
                     title = UiText.FromString(context.getString(R.string.settings_support_section_title_text)),
                     items = listOf(
                         SettingsItemUi(
@@ -79,8 +94,10 @@ class SettingsViewModel @Inject constructor(
                             type = SettingsItemType.FEEDBACK
                         )
                     )
-                )
+                ),
             ),
+            isMixTrainingAvailable = userData.isMixTrainingAvailable,
+            is15MinutesTrainingAvailable = userData.is15MinutesTrainingAvailable,
             languages = supportedLanguages,
             currentLanguage = deviseLanguage.value,
             uiMessage = messages,
@@ -100,6 +117,28 @@ class SettingsViewModel @Inject constructor(
                             SettingsItemType.CHANGE_LANGUAGE -> uiMessageManager.emitMessage(UiMessage(SettingsUiMessage.ShowChooseLanguageBottomSheet))
                             SettingsItemType.RATE -> uiMessageManager.emitMessage(UiMessage(SettingsUiMessage.ToRateApp))
                             SettingsItemType.FEEDBACK -> uiMessageManager.emitMessage(UiMessage(SettingsUiMessage.ToGiveFeedback))
+                            else -> {}
+                        }
+                    }
+                    is SettingsAction.OnSettingsItemChecked -> {
+                        when (event.type) {
+                            SettingsItemType.ACTIVATE_DAILY_MIX -> {
+                                prefsRepository.changeMixDailyTrainingActive(event.isChecked)
+                                uiMessageManager.emitMessage(UiMessage(SettingsUiMessage.ShowDailyTrainingChangesToast))
+
+                                if (event.isChecked.not() && state.value.is15MinutesTrainingAvailable.not()){
+                                    prefsRepository.change15MinutesTopicDailyTrainingActive(true)
+                                }
+                            }
+                            SettingsItemType.ACTIVATE_15_MINUTES_TOPIC -> {
+                                prefsRepository.change15MinutesTopicDailyTrainingActive(event.isChecked)
+                                uiMessageManager.emitMessage(UiMessage(SettingsUiMessage.ShowDailyTrainingChangesToast))
+
+                                if (event.isChecked.not() && state.value.isMixTrainingAvailable.not()){
+                                    prefsRepository.changeMixDailyTrainingActive(true)
+                                }
+                            }
+                            else -> {}
                         }
                     }
                     is SettingsAction.OnLanguageSelected -> {

@@ -29,6 +29,7 @@ import androidx.compose.material.ModalBottomSheetValue
 import androidx.compose.material.rememberModalBottomSheetState
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -55,6 +56,7 @@ import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.settings.model.SettingsAction
+import com.korop.yaroslavhorach.settings.model.SettingsItemType
 import com.korop.yaroslavhorach.settings.model.SettingsItemUi
 import com.korop.yaroslavhorach.settings.model.SettingsSectionUi
 import com.korop.yaroslavhorach.settings.model.SettingsUiMessage
@@ -94,11 +96,14 @@ internal fun SettingsRoute(
                     context.startActivity(buildRateAppWebIntent())
                 }
             }
-
             is SettingsUiMessage.ShowChooseLanguageBottomSheet -> {
                 coroutineScope.launch {
                     sheetState.show()
                 }
+            }
+            is SettingsUiMessage.ShowDailyTrainingChangesToast -> {
+                Toast.makeText(context,
+                    stringResource(com.korop.yaroslavhorach.profile.R.string.settings_daily_challange_changes_toast_text), Toast.LENGTH_LONG).show()
             }
         }
     }
@@ -141,7 +146,7 @@ internal fun SettingsScreen(
         LazyColumn {
             itemsIndexed(state.sections) { index, item ->
                 Spacer(Modifier.height(20.dp))
-                SettingsSection(item, actioner)
+                SettingsSection(state, item, actioner)
             }
         }
     }
@@ -149,6 +154,7 @@ internal fun SettingsScreen(
 
 @Composable
 private fun SettingsSection(
+    state: SettingsViewState,
     sectionItem: SettingsSectionUi,
     actioner: (action: SettingsAction) -> Unit
 ) {
@@ -172,13 +178,14 @@ private fun SettingsSection(
             if (index > 0) {
                 Divider(Modifier.fillMaxWidth(), color = MaterialTheme.colorScheme.onBackgroundDark())
             }
-            DetailsItem(item, index, sectionItem, actioner)
+            DetailsItem(state, item, index, sectionItem, actioner)
         }
     }
 }
 
 @Composable
 private fun DetailsItem(
+    state: SettingsViewState,
     item: SettingsItemUi,
     index: Int,
     sectionItem: SettingsSectionUi,
@@ -227,12 +234,31 @@ private fun DetailsItem(
                 )
             }
         }
-        Icon(
-            modifier = Modifier.size(24.dp),
-            painter = painterResource(R.drawable.ic_arrow_right),
-            tint = MaterialTheme.colorScheme.primaryIcon(),
-            contentDescription = null
-        )
+        when (item.type) {
+            SettingsItemType.CHANGE_LANGUAGE,
+            SettingsItemType.RATE,
+            SettingsItemType.FEEDBACK -> {
+                Icon(
+                    modifier = Modifier.size(24.dp),
+                    painter = painterResource(R.drawable.ic_arrow_right),
+                    tint = MaterialTheme.colorScheme.primaryIcon(),
+                    contentDescription = null
+                )
+            }
+
+            SettingsItemType.ACTIVATE_DAILY_MIX -> {
+                Switch(checked = state.isMixTrainingAvailable, onCheckedChange = {
+                    actioner(SettingsAction.OnSettingsItemChecked(item.type, it))
+                })
+            }
+
+            SettingsItemType.ACTIVATE_15_MINUTES_TOPIC -> {
+                Switch(checked = state.is15MinutesTrainingAvailable, onCheckedChange = {
+                    actioner(SettingsAction.OnSettingsItemChecked(item.type, it))
+                })
+            }
+        }
+
         Spacer(Modifier.width(12.dp))
     }
 }

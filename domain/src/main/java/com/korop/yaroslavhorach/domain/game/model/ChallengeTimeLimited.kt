@@ -1,6 +1,6 @@
 package com.korop.yaroslavhorach.domain.game.model
 
- class ChallengeTimeLimited(
+ class  ChallengeTimeLimited(
     id: Long = 0,
     titleText: Map<String, String>,
     descriptionText: Map<String, String>,

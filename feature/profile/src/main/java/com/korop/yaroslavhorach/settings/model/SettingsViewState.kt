@@ -9,7 +9,9 @@ data class SettingsViewState(
     val sections: List<SettingsSectionUi> = emptyList(),
     val uiMessage: UiMessage<SettingsUiMessage>? = null,
     val languages: List<Language> = emptyList(),
-    val currentLanguage: String = "en"
+    val currentLanguage: String = "en",
+    val isMixTrainingAvailable: Boolean = true,
+    val is15MinutesTrainingAvailable: Boolean = true
 ) {
     companion object {
         val Empty = SettingsViewState()

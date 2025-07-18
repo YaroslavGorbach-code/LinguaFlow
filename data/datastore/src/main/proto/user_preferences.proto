@@ -19,4 +19,6 @@ message UserPreferences {
   map<string, IntList> used_exercises_content = 9;
   bool is_onboarding = 10;
   string device_language = 11;
+  bool is_mix_taring_active = 12;
+  bool is_15_minute_taring_active = 13;
 }

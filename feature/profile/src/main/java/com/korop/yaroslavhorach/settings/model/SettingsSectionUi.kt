@@ -7,5 +7,5 @@ data class SettingsSectionUi(val title: UiText, val items: List<SettingsItemUi>)
 data class SettingsItemUi(val title: UiText, val subtitle: UiText, val type: SettingsItemType)
 
 enum class SettingsItemType {
-    CHANGE_LANGUAGE, RATE, FEEDBACK
+    CHANGE_LANGUAGE, RATE, FEEDBACK, ACTIVATE_DAILY_MIX, ACTIVATE_15_MINUTES_TOPIC
 }

@@ -28,7 +28,7 @@ sealed class Challenge(
 
     data class Status(
         val started: Boolean = false,
-        val completed: Boolean = false
+        val completed: Boolean = false,
     ) {
         val inProgress: Boolean
             get() = started && completed.not()

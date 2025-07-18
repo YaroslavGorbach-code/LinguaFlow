@@ -28,4 +28,10 @@
     <string name="settings_conenct_with_developer_subtitle_text">Маєш запитання чи фідбек?</string>
     <string name="settings_toolbar_title_text">Налаштування</string>
     <string name="choose_language_tilte_text">Обери мову додатку</string>
+    <string name="settings_daily_challange_title_text">Виклик дня</string>
+    <string name="settings_daily_challange_mix_activate_title_text">Активувати «Розмовний мікс»</string>
+    <string name="settings_daily_challange_mix_activate_subtitle_text">Щоденне тренування з виконанням заданої кількості вправ</string>
+    <string name="settings_daily_challange_timed_activate_title_text">Активувати «Занурення в тему»</string>
+    <string name="settings_daily_challange_timed_activate_subtitle_text">Тренування, у якому ти прокачуєш один навик протягом 15 хвилин</string>
+    <string name="settings_daily_challange_changes_toast_text">Зміни набудуть чинності з наступного тренування</string>
 </resources>

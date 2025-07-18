@@ -28,4 +28,10 @@
     <string name="settings_conenct_with_developer_subtitle_text">Got a question or feedback?</string>
     <string name="settings_toolbar_title_text">Settings</string>
     <string name="choose_language_tilte_text">Choose app language</string>
+    <string name="settings_daily_challange_title_text">Daily Challenge</string>
+    <string name="settings_daily_challange_mix_activate_title_text">Activate “Speaking Mix”</string>
+    <string name="settings_daily_challange_mix_activate_subtitle_text">A daily training with a set number of exercises to complete</string>
+    <string name="settings_daily_challange_timed_activate_title_text">Activate “Deep Dive”</string>
+    <string name="settings_daily_challange_timed_activate_subtitle_text">A training where you improve one skill for 15 minutes straight</string>
+    <string name="settings_daily_challange_changes_toast_text">Changes will take effect from the next training session</string>
 </resources>

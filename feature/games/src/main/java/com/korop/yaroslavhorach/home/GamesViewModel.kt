@@ -44,24 +44,26 @@ class GamesViewModel @Inject constructor(
     override val state: StateFlow<GamesViewState> = combine(
         prefsRepository.getUserData(),
         games,
-        gameRepository.getChallengeTimeLimited(),
-        gameRepository.getChallengeExerciseMix(),
+        gameRepository.getTodayChallenge(),
         selectedSort,
         prefsRepository.getFavoriteGamesIds(),
         uiMessageManager.message
-    ) { userData, games, challengeTimeLimited, challengeExerciseMix, selectedSort, favorites, messages ->
-        val dayNumber = Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
-        val todayChallenge = if (dayNumber % 2 == 0) challengeExerciseMix else challengeTimeLimited
+    ) { userData, games, todayChallenge, selectedSort, favorites, messages ->
+        val sorts = getPermanentSorts().toMutableList().apply {
+            if (favorites.isEmpty().not()) {
+                add(0, GameSort.FAVORITE)
+            }
+            if (todayChallenge.status.started && todayChallenge.status.completed.not()) {
+                add(0, GameSort.DAILY_CHALLENGE)
+            } else {
+                if (selectedSort == GameSort.DAILY_CHALLENGE) {
+                    this@GamesViewModel.selectedSort.value = null
+                }
+            }
+        }
 
         GamesViewState(
-            sorts = getPermanentSorts().toMutableList().apply {
-                if (favorites.isEmpty().not()) {
-                    add(0, GameSort.FAVORITE)
-                }
-                if (todayChallenge.status.started && todayChallenge.status.completed.not()) {
-                    add(0, GameSort.DAILY_CHALLENGE)
-                }
-            },
+            sorts = sorts,
             challenge = todayChallenge,
             favorites = favorites,
             selectedSort = selectedSort,

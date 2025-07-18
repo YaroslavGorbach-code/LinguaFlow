@@ -15,10 +15,10 @@ class LinguaChallengeDataSource @Inject constructor(
     suspend fun updateChallengeTimeLimitedProgress(progress: DailyChallengeTimeLimitedProgress) {
         challengeProgress.updateData { prefs ->
             prefs.toBuilder()
-                .setChallengeId(progress.id)
+                .setChallenge15MinutesId(progress.id)
                 .setProgressInMs(progress.progressInMs)
                 .setIsStarted(progress.isStarted)
-                .setAvailableDuringDate(progress.availableDuringDate)
+                .setTimedChallengeAvailableDuringDate(progress.availableDuringDate)
                 .build()
         }
     }
@@ -26,9 +26,9 @@ class LinguaChallengeDataSource @Inject constructor(
     suspend fun updateChallengeExerciseMixProgress(progress: DailyChallengeExerciseMixProgress) {
         challengeProgress.updateData { prefs ->
             prefs.toBuilder()
-                .setChallengeId(progress.id)
+                .setChallengeMixId(progress.id)
                 .setIsStarted(progress.isStarted)
-                .setAvailableDuringDate(progress.availableDuringDate)
+                .setMixChallengeAvailableDuringDate(progress.availableDuringDate)
                 .addAllExercisesAndCompleted(progress.exercisesAndCompleted.map {
                     ExerciseProgress
                         .newBuilder()
@@ -86,9 +86,9 @@ class LinguaChallengeDataSource @Inject constructor(
     fun getChallengeTimeLimitedProgress(): Flow<DailyChallengeTimeLimitedProgress> {
         return challengeProgress.data.map {
             DailyChallengeTimeLimitedProgress(
-                id = it.challengeId,
+                id = it.challenge15MinutesId,
                 isStarted = it.isStarted,
-                availableDuringDate = it.availableDuringDate,
+                availableDuringDate = it.timedChallengeAvailableDuringDate,
                 progressInMs = it.progressInMs
             )
         }
@@ -97,9 +97,9 @@ class LinguaChallengeDataSource @Inject constructor(
     fun getChallengeExerciseMixProgress(): Flow<DailyChallengeExerciseMixProgress> {
         return challengeProgress.data.map {
             DailyChallengeExerciseMixProgress(
-                id = it.challengeId,
+                id = it.challengeMixId,
                 isStarted = it.isStarted,
-                availableDuringDate = it.availableDuringDate,
+                availableDuringDate = it.mixChallengeAvailableDuringDate,
                 exercisesAndCompleted = it.exercisesAndCompletedList.map { it.name to it.completed }
             )
         }

@@ -9,5 +9,7 @@ data class UserData(
     val isPremium: Boolean = false,
     val isOnboarding: Boolean = false,
     val activeDays: List<Long> = emptyList(),
-    val deviceLanguage: String? = null
+    val deviceLanguage: String? = null,
+    val is15MinutesTrainingAvailable: Boolean = true,
+    val isMixTrainingAvailable: Boolean = true,
 )

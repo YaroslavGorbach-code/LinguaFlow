@@ -22,7 +22,9 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 userName = it.name ?: "",
                 isPremium = it.isPremium,
                 isOnboarding = !it.isOnboarding,
-                deviceLanguage = it.deviceLanguage
+                deviceLanguage = it.deviceLanguage,
+                isMixTrainingAvailable = !it.isMixTaringActive,
+                is15MinutesTrainingAvailable = !it.is15MinuteTaringActive
             )
         }
 
@@ -159,6 +161,21 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         userPreferences.updateData { prefs ->
             prefs.toBuilder()
                 .setDeviceLanguage(lang)
+                .build()
+        }
+    }
+    suspend fun changeMixTrainingAvailable(isAvailable: Boolean) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setIsMixTaringActive(!isAvailable)
+                .build()
+        }
+    }
+
+    suspend fun change15MinutesTrainingAvailable(isAvailable: Boolean) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setIs15MinuteTaringActive(!isAvailable)
                 .build()
         }
     }

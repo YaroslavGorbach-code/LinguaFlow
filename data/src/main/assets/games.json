@@ -253,7 +253,7 @@
       "en": "🗨️ Create a short dialogue, inventing both your lines and the responses of your imaginary conversation partner. It helps train dialogue flow, conversational logic, and tone.",
       "ru": "🗨️ Придумай короткий диалог, составляя реплики за себя и за воображаемого собеседника. Это развивает логику разговора, гибкость мышления и чувство живого общения."
     },
-    "minExperienceRequired": 700,
+    "minExperienceRequired": 800,
     "maxProgress": 3,
     "name": "DIALOGUE_WITH_SELF",
     "skills": [
@@ -282,7 +282,7 @@
       "en": "🎭 Imagine yourself in a strange or emotional situation. Come up with what you’d say. This builds improvisation skills, emotional expression, and adaptability in unusual contexts.",
       "ru": "🎭 Представь себя в странной или эмоциональной ситуации. Придумай, что бы ты сказал. Это развивает импровизацию, выразительность и умение реагировать в нестандартных условиях."
     },
-    "minExperienceRequired": 800,
+    "minExperienceRequired": 900,
     "maxProgress": 3,
     "name": "IMAGINARY_SITUATION",
     "skills": [
@@ -311,7 +311,7 @@
       "en": "🔄 Rewrite an emotional statement in a calm, constructive way. This helps with self-awareness and avoiding conflict in communication. Builds emotional intelligence, self-reflection, and non-violent communication skills.",
       "ru": "🔄 Перепиши эмоциональное высказывание в спокойной, конструктивной форме. Это помогает лучше понимать себя и избегать конфликтов. Развивает эмоциональный интеллект и навыки ненасильственного общения."
     },
-    "minExperienceRequired": 900,
+    "minExperienceRequired": 1200,
     "maxProgress": 5,
     "name": "EMOTION_TO_FACT",
     "skills": [
@@ -340,7 +340,7 @@
       "en": "🕵️ Imagine yourself in a character’s shoes — and speak in their voice. This exercise boosts acting skills, intonation, empathy, and imagination. Create a persona, experiment, improvise.",
       "ru": "🕵️ Представь себя в роли персонажа — и говори его голосом. Упражнение развивает актёрские навыки, интонацию, эмпатию и воображение. Создавай образы, импровизируй."
     },
-    "minExperienceRequired": 1000,
+    "minExperienceRequired": 1400,
     "maxProgress": 5,
     "name": "WHO_AM_I_MONOLOGUE",
     "skills": [
@@ -369,7 +369,7 @@
       "en": "🥇 Activate your inner TED speaker! Speak confidently about absurd or unfamiliar topics as if you're a recognized specialist. This exercise builds charisma, improvisation, and persuasive communication skills.",
       "ru": "🥇 Включи внутреннего TED-спикера! Говори уверенно об абсурдных или незнакомых темах, будто ты признанный эксперт. Упражнение развивает харизму, импровизацию и убедительность в речи."
     },
-    "minExperienceRequired": 1100,
+    "minExperienceRequired": 1300,
     "maxProgress": 3,
     "name": "I_AM_EXPERT",
     "skills": [
@@ -398,7 +398,7 @@
       "en": "🤐 You’ll get a topic and a list of words you’re not allowed to use. Your task is to talk about the topic without using those words. Find other ways to express the idea. This develops creativity, verbal precision, and the ability to express thoughts in new ways.",
       "ru": "🤐 Ты получишь тему и список слов, которые нельзя использовать. Твоя задача — высказаться по теме, не употребляя эти слова. Нужно искать другие способы передать мысль. Это упражнение развивает креативность, точность речи и умение выражаться разнообразно."
     },
-    "minExperienceRequired": 1200,
+    "minExperienceRequired": 1500,
     "maxProgress": 3,
     "name": "FORBIDDEN_WORDS",
     "skills": [
@@ -427,7 +427,7 @@
       "en": "🧍‍♂️ Show the emotion without words! In this exercise, you get an emotion or situation — and express it only through facial expressions, gestures, or posture. No talking, just the body. It’s a great way to boost emotional expression, body awareness, and nonverbal skills.",
       "ru": "🧍‍♂️ Покажи эмоцию без слов! В этом упражнении ты получаешь эмоцию или ситуацию — и выражаешь её только через мимику, жесты или позу. Без слов, только тело. Отличный способ прокачать выразительность, осознанность тела и невербальное общение."
     },
-    "minExperienceRequired": 1300,
+    "minExperienceRequired": 1600,
     "maxProgress": 5,
     "name": "BODY_LANGUAGE_EXPRESS",
     "skills": [
@@ -485,7 +485,7 @@
       "en": "📢 How to say something simple — convincingly? You’ll get a basic phrase and a role — and must say the phrase the way that character would: an actor on stage, a politician at a rally, a teenager at home, or a diplomat in negotiations. Change your voice, tone, pace, and emotion — and train your expressiveness and speech flexibility.",
       "ru": "📢 Как сказать простое — но убедительно? Ты получишь обычную фразу и роль — и должен произнести её так, как сделал бы это персонаж в заданной ситуации: актёр на сцене, политик на митинге, подросток дома или дипломат на переговорах. Меняй голос, интонацию, темп, добавляй эмоции — тренируй выразительность и гибкость речи."
     },
-    "minExperienceRequired": 1500,
+    "minExperienceRequired": 1700,
     "maxProgress": 8,
     "name": "PERSUASIVE_SHOUT",
     "skills": [
@@ -543,7 +543,7 @@
       "en": "😏 Your goal is to get someone to do something for you—without saying it directly. Practice diplomacy, implication, and subtle phrasing. This exercise sharpens your sense of indirect communication and boosts emotional intelligence.",
       "ru": "😏 Твоя цель — добиться от собеседника нужного действия, не говоря об этом напрямую. Тренируйся в дипломатии, намёках и тонких формулировках. Это упражнение помогает чувствовать грань между просьбой и манипуляцией и развивает эмоциональный интеллект."
     },
-    "minExperienceRequired": 1600,
+    "minExperienceRequired": 1800,
     "maxProgress": 5,
     "name": "SUBTLE_MANIPULATION",
     "skills": [
@@ -572,7 +572,7 @@
       "en": "🧠 Upgrade your language! In this exercise, you replace boring or repetitive words with synonyms that sound sharper, richer, or more expressive. It builds vocabulary and helps you spot and fix weak language.",
       "ru": "🧠 Прокачай речь! В этом упражнении ты заменяешь скучные или повторяющиеся слова на синонимы, которые звучат точнее, богаче и выразительнее. Это развивает словарный запас и умение улучшать формулировки."
     },
-    "minExperienceRequired": 600,
+    "minExperienceRequired": 700,
     "maxProgress": 5,
     "name": "ONE_SYNONYM_PLEASE",
     "skills": [
@@ -601,7 +601,7 @@
       "en": "🎬 Learn to control your voice! This exercise helps you master intonation — saying the same sentence differently depending on emotion or context. It boosts expressiveness and emotional delivery.",
       "ru": "🎬 Учись управлять голосом! В этом упражнении ты тренируешь интонацию — один и тот же текст подаётся по-разному в зависимости от эмоции или ситуации. Это развивает выразительность и эмоциональную подачу."
     },
-    "minExperienceRequired": 1700,
+    "minExperienceRequired": 1900,
     "maxProgress": 5,
     "name": "INTONATION_MASTER",
     "skills": [
@@ -659,7 +659,7 @@
       "en": "🎤 Sharpen your rhymes, imagination, and wordplay! In “Rhyme Lightning,” you get a word and come up with rhymes — from simple to unexpected. Speed doesn’t matter — it’s all about sound, rhythm, and your creativity.",
       "ru": "🎤 Прокачай рифмы, фантазию и игру слов! В «Молниеносных Рифмах» ты получаешь слово и придумываешь рифмы — от простых до оригинальных. Скорость не важна — главное звук, ритм и твой креатив."
     },
-    "minExperienceRequired": 700,
+    "minExperienceRequired": 1000,
     "maxProgress": 10,
     "name": "RHYME_LIGHTNING",
     "skills": [
@@ -688,7 +688,7 @@
       "en": "🎭 Let your imagination go! Come up with funny and unexpected answers to simple questions.",
       "ru": "🎭 Дай волю фантазии! Придумывай смешные и нестандартные ответы на простые вопросы."
     },
-    "minExperienceRequired": 1800,
+    "minExperienceRequired": 2000,
     "maxProgress": 5,
     "name": "FUNNIEST_ANSWER",
     "skills": [
@@ -719,7 +719,7 @@
       "en": "🌀 Sell things that don’t exist — convince, invent and make us laugh! Develops creativity, humor and persuasive skills.",
       "ru": "🌀 Продавай то, чего нет — убеждай, выдумывай и развлекай! Развивает креативность, юмор и навыки убеждения."
     },
-    "minExperienceRequired": 1900,
+    "minExperienceRequired": 2100,
     "maxProgress": 5,
     "name": "MADMAN_ANNOUNCEMENT",
     "skills": [
@@ -779,7 +779,7 @@
       "en": "🧠 The given word can have multiple meanings or evoke various associations. Your goal is to name as many as possible using your knowledge, imagination, and personal experience. This exercise helps better understand word polysemy, develops creativity, linguistic flexibility, and expands vocabulary.",
       "ru": "🧠 Полученное слово может иметь несколько разных значений или вызывать различные ассоциации. Ваша цель — назвать их как можно больше, используя знания, фантазию и личный опыт. Это упражнение помогает лучше понять многозначность слов, развивает креативность, языковую гибкость и расширяет словарный запас."
     },
-    "minExperienceRequired": 1000,
+    "minExperienceRequired": 550,
     "maxProgress": 5,
     "name": "ONE_WORD_MANY_MEANINGS",
     "skills": [
@@ -809,7 +809,7 @@
       "en": "😉 In this exercise, you create a flirtatious or playful phrase addressing an inanimate object as if it were alive and could respond. This develops imagination, creativity, and wordplay skills, making communication more engaging.",
       "ru": "😉 В этом упражнении ты придумываешь флиртующую или шутливую фразу, обращаясь к неодушевлённому предмету, будто он живой и может ответить. Это развивает воображение, креативность и умение играть словами, делая общение интереснее."
     },
-    "minExperienceRequired": 2000,
+    "minExperienceRequired": 2200,
     "maxProgress": 5,
     "name": "FLIRTING_WITH_OBJECT",
     "skills": [
@@ -840,7 +840,7 @@
       "en": "Create universal phrases that can be said both in the given place and in bed. This develops creativity and wordplay skills.",
       "ru": "Создавай универсальные фразы, которые можно сказать и в заданном месте, и в кровати. Это развивает креативность и умение играть со словами."
     },
-    "minExperienceRequired": 1000,
+    "minExperienceRequired": 1100,
     "maxProgress": 5,
     "name": "BOTH_THERE_AND_IN_BED",
     "skills": [
@@ -871,7 +871,7 @@
       "en": "Create phrases using the given word that can sound like playful hints or flirt. This develops creativity and wordplay skills.",
       "ru": "Придумывай фразы с заданным словом, которые могут звучать как игривые намёки или флирт. Это развивает креативность и умение играть со словами."
     },
-    "minExperienceRequired": 2200,
+    "minExperienceRequired": 2300,
     "maxProgress": 5,
     "name": "HOT_WORD",
     "skills": [

@@ -24,4 +24,6 @@ interface PrefsRepository {
     suspend fun finishOnboarding()
     fun getSupportedAppLanguages(): List<String>
     suspend fun changeLanguage(lang: String)
+    suspend fun change15MinutesTopicDailyTrainingActive(isActive: Boolean)
+    suspend fun changeMixDailyTrainingActive(isActive: Boolean)
 }

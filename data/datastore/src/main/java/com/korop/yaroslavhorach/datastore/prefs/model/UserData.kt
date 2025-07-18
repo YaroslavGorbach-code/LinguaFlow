@@ -11,7 +11,9 @@ data class UserData(
     val avatarResId: Int? = null,
     val isPremium: Boolean = false,
     val isOnboarding: Boolean = false,
-    val deviceLanguage: String? = null
+    val deviceLanguage: String? = null,
+    val is15MinutesTrainingAvailable: Boolean = true,
+    val isMixTrainingAvailable: Boolean = true,
 )
 
 fun UserData.asDomainModel() = DomainUserData(
@@ -23,5 +25,7 @@ fun UserData.asDomainModel() = DomainUserData(
     avatarResId = if (this.avatarResId == 0) null else this.avatarResId,
     isPremium = this.isPremium,
     isOnboarding = this.isOnboarding,
-    deviceLanguage = this.deviceLanguage?.takeIf { it.isNotEmpty() }
+    deviceLanguage = this.deviceLanguage?.takeIf { it.isNotEmpty() },
+    isMixTrainingAvailable = this.isMixTrainingAvailable,
+    is15MinutesTrainingAvailable = this.is15MinutesTrainingAvailable
 )

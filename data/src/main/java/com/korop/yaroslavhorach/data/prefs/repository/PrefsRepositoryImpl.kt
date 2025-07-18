@@ -85,6 +85,14 @@ class PrefsRepositoryImpl @Inject constructor(
         prefsDataSource.changeLanguage(lang)
     }
 
+    override suspend fun change15MinutesTopicDailyTrainingActive(isActive: Boolean) {
+        prefsDataSource.change15MinutesTrainingAvailable(isActive)
+    }
+
+    override suspend fun changeMixDailyTrainingActive(isActive: Boolean) {
+        prefsDataSource.changeMixTrainingAvailable(isActive)
+    }
+
     override fun getAvatars(): List<Avatar> {
         val premiumAvatars = listOf(
             R.drawable.im_avatar_5,

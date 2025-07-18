@@ -15,9 +15,11 @@ import com.korop.yaroslavhorach.domain.game.model.ChallengeExerciseMix
 import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
+import com.korop.yaroslavhorach.domain.prefs.model.UserData
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.withContext
@@ -50,67 +52,25 @@ class GameRepositoryImpl @Inject constructor(
         return cachedGames.find { it.id == gameId }!!
     }
 
-    override fun getChallengeTimeLimited(): Flow<ChallengeTimeLimited> {
-        val gson = GsonBuilder()
-            .registerTypeAdapter(Game.Skill::class.java, JsonDeserializer { json, _, _ ->
-                try {
-                    Game.Skill.valueOf(json.asString)
-                } catch (e: Exception) {
-                    null
-                }
+    override fun getTodayChallenge(): Flow<Challenge> {
+        return flow {
+            val userData = prefsRepository.getUserData().first()
+            val dayNumber = android.icu.util.Calendar.getInstance().get(android.icu.util.Calendar.DAY_OF_MONTH)
+            val mixProgress = challengeDataSource.getChallengeExerciseMixProgress()
+            val limitedTimeProgress = challengeDataSource.getChallengeTimeLimitedProgress()
+
+
+            emitAll(when {
+                mixProgress.first().availableDuringDate.isToday() -> getChallengeExerciseMix()
+                limitedTimeProgress.first().availableDuringDate.isToday() -> getChallengeTimeLimited()
+                userData.is15MinutesTrainingAvailable && userData.isMixTrainingAvailable.not() -> getChallengeTimeLimited()
+                userData.is15MinutesTrainingAvailable.not() && userData.isMixTrainingAvailable -> getChallengeExerciseMix()
+                else -> if (dayNumber % 2 == 0) getChallengeExerciseMix() else getChallengeTimeLimited()
             })
-            .create()
-
-       return kotlinx.coroutines.flow.combine(
-            flow {
-                val challengeTimeLimited: List<ChallengeTimeLimited> = loadJsonFromAssets(context, "daily_challenge.json")?.let { challenges ->
-                    gson.fromJson(challenges, object : TypeToken<List<ChallengeTimeLimited>>() {}.type)
-                } ?: emptyList()
-                emit(challengeTimeLimited)
-            },
-            prefsRepository.getUserData(),
-            getGames(),
-            challengeDataSource.getChallengeTimeLimitedProgress()
-        ) { challenges, userData, games, progress ->
-
-           if (progress.availableDuringDate.isToday()) {
-               val startedChallenge = challenges.find { it.id == progress.id }
-
-               cachedChallengeTimeLimited = startedChallenge?.apply {
-                   status = Challenge.Status(
-                       started = progress.isStarted,
-                       completed = (progress.progressInMs / 60_000).toInt() >= startedChallenge.durationMinutes
-                   )
-                   progressInMinutes = (progress.progressInMs / 60_000).toInt()
-               }
-               cachedChallengeTimeLimited!!
-           } else{
-               val skillForChallenge = games
-                   .asSequence()
-                   .filter { it.minExperienceRequired <= userData.experience }
-                   .map { it.skills }
-                   .flatten()
-                   .toSet()
-                   .filter { it != Game.Skill.FLIRT }
-                   .random()
-
-               val challenge = challenges.first { it.theme == skillForChallenge }
-
-               challengeDataSource.updateChallengeTimeLimitedProgress(
-                   DailyChallengeTimeLimitedProgress(
-                       id = challenge.id,
-                       availableDuringDate = Calendar.getInstance().timeInMillis,
-                       progressInMs = 0,
-                       isStarted = false,
-                   )
-               )
-               cachedChallengeTimeLimited = challenge
-               cachedChallengeTimeLimited!!
-           }
-       }
+        }
     }
 
-    override fun getChallengeExerciseMix(): Flow<ChallengeExerciseMix> {
+    private fun getChallengeTimeLimited(): Flow<ChallengeTimeLimited> {
         val gson = GsonBuilder()
             .registerTypeAdapter(Game.Skill::class.java, JsonDeserializer { json, _, _ ->
                 try {
@@ -123,68 +83,177 @@ class GameRepositoryImpl @Inject constructor(
 
         return kotlinx.coroutines.flow.combine(
             flow {
-                val challengeTimeLimited: List<ChallengeExerciseMix> = loadJsonFromAssets(context, "daily_challenge_exercise_mix.json")?.let { challenges ->
-                    gson.fromJson(challenges, object : TypeToken<List<ChallengeExerciseMix>>() {}.type)
-                } ?: emptyList()
+                val challengeTimeLimited: List<ChallengeTimeLimited> =
+                    loadJsonFromAssets(context, "daily_challenge.json")?.let { challenges ->
+                        gson.fromJson(challenges, object : TypeToken<List<ChallengeTimeLimited>>() {}.type)
+                    } ?: emptyList()
+                emit(challengeTimeLimited)
+            },
+            prefsRepository.getUserData(),
+            getGames(),
+            challengeDataSource.getChallengeTimeLimitedProgress()
+        ) { challenges, userData, games, progress ->
+
+            cachedChallengeTimeLimited = if (progress.availableDuringDate.isToday()) {
+                getActiveTimeLimitedChallenge(games, userData, challenges, progress)
+            } else {
+                createNewTimeLimitedChallenge(games, userData, challenges)
+            }
+            cachedChallengeTimeLimited!!
+        }
+    }
+
+    private suspend fun getActiveTimeLimitedChallenge(
+        games: List<Game>,
+        userData: UserData,
+        challenges: List<ChallengeTimeLimited>,
+        progress: DailyChallengeTimeLimitedProgress
+    ): ChallengeTimeLimited {
+        val startedChallenge = challenges.find { it.id == progress.id } ?: run {
+            return@run createNewTimeLimitedChallenge(
+                games,
+                userData,
+                challenges
+            )
+        }
+
+        return startedChallenge.apply {
+            status = Challenge.Status(
+                started = progress.isStarted,
+                completed = (progress.progressInMs / 60_000).toInt() >= startedChallenge.durationMinutes
+            )
+            progressInMinutes = (progress.progressInMs / 60_000).toInt()
+        }
+    }
+
+    private suspend fun createNewTimeLimitedChallenge(
+        games: List<Game>,
+        userData: UserData,
+        challenges: List<ChallengeTimeLimited>
+    ): ChallengeTimeLimited {
+        challengeDataSource.clearChallengeExerciseCompleted()
+        val skillForChallenge = games
+            .asSequence()
+            .filter { it.minExperienceRequired <= userData.experience }
+            .map { it.skills }
+            .flatten()
+            .toSet()
+            .filter { it != Game.Skill.FLIRT }
+            .random()
+
+        val challenge = challenges.first { it.theme == skillForChallenge }
+
+        val progress = DailyChallengeTimeLimitedProgress(
+            id = challenge.id,
+            availableDuringDate = Calendar.getInstance().timeInMillis,
+            progressInMs = 0,
+            isStarted = false,
+        )
+        challengeDataSource.updateChallengeTimeLimitedProgress(progress)
+
+        return getActiveTimeLimitedChallenge(games, userData, challenges, progress)
+    }
+
+    private fun getChallengeExerciseMix(): Flow<ChallengeExerciseMix> {
+        val gson = GsonBuilder()
+            .registerTypeAdapter(Game.Skill::class.java, JsonDeserializer { json, _, _ ->
+                try {
+                    Game.Skill.valueOf(json.asString)
+                } catch (e: Exception) {
+                    null
+                }
+            })
+            .create()
+
+        return kotlinx.coroutines.flow.combine(
+            flow {
+                val challengeTimeLimited: List<ChallengeExerciseMix> =
+                    loadJsonFromAssets(context, "daily_challenge_exercise_mix.json")?.let { challenges ->
+                        gson.fromJson(challenges, object : TypeToken<List<ChallengeExerciseMix>>() {}.type)
+                    } ?: emptyList()
                 emit(challengeTimeLimited)
             },
             prefsRepository.getUserData(),
             getGames(),
             challengeDataSource.getChallengeExerciseMixProgress()
         ) { challenges, userData, games, progress ->
-
-            if (progress.availableDuringDate.isToday()) {
-                val startedChallenge = challenges.find { it.id == progress.id }
-
-                cachedChallengeExerciseMix = startedChallenge?.apply {
-                    status = Challenge.Status(
-                        started = progress.isStarted,
-                        completed = progress.exercisesAndCompleted.all { it.second }
-                    )
-                    exercisesAndCompletedMark = progress.exercisesAndCompleted.map { Game.GameName.valueOf(it.first) to it.second }
-                }
-                cachedChallengeExerciseMix!!
+            cachedChallengeExerciseMix = if (progress.availableDuringDate.isToday()) {
+                getActiveExerciseMixChallenge(challenges, progress, games, userData)
             } else {
-                val filteredGames = games
-                    .filter { it.minExperienceRequired <= userData.experience }
+                crateNewExercisesMixChallenge(games, userData, challenges)
+            }
+            cachedChallengeExerciseMix!!
+        }
+    }
 
-                val skills = filteredGames
-                    .flatMap { it.skills }
-                    .toSet()
-                    .filter { it != Game.Skill.FLIRT }
+    private suspend fun getActiveExerciseMixChallenge(
+        challenges: List<ChallengeExerciseMix>,
+        progress: DailyChallengeExerciseMixProgress,
+        games: List<Game>,
+        userData: UserData
+    ): ChallengeExerciseMix {
+        val startedChallenge = challenges.find { it.id == progress.id } ?: run {
+            return@run crateNewExercisesMixChallenge(
+                games,
+                userData,
+                challenges
+            )
+        }
 
-                val usedGames = mutableSetOf<Game>()
-                val gamesForChallenge = mutableListOf<Game>()
+        cachedChallengeExerciseMix = startedChallenge.apply {
+            status = Challenge.Status(
+                started = progress.isStarted,
+                completed = progress.exercisesAndCompleted.all { it.second }
+            )
+            exercisesAndCompletedMark =
+                progress.exercisesAndCompleted.map { Game.GameName.valueOf(it.first) to it.second }
+        }
+        return cachedChallengeExerciseMix!!
+    }
 
-                skills.forEach { skill ->
-                    val available = filteredGames
-                        .filter { it.skills.contains(skill) && it !in usedGames }
+    private suspend fun crateNewExercisesMixChallenge(
+        games: List<Game>,
+        userData: UserData,
+        challenges: List<ChallengeExerciseMix>
+    ): ChallengeExerciseMix {
+        val filteredGames = games
+            .filter { it.minExperienceRequired <= userData.experience }
 
-                    val selected = available.randomOrNull()
+        val skills = filteredGames
+            .flatMap { it.skills }
+            .toSet()
+            .filter { it != Game.Skill.FLIRT }
 
-                    if (selected != null) {
-                        usedGames.add(selected)
-                        gamesForChallenge.add(selected)
-                    }
-                }
+        val usedGames = mutableSetOf<Game>()
+        val gamesForChallenge = mutableListOf<Game>()
 
-                val challenge = challenges.first().apply {
-                    exercisesAndCompletedMark = gamesForChallenge.map { it.name to false }
-                }
+        skills.forEach { skill ->
+            val available = filteredGames
+                .filter { it.skills.contains(skill) && it !in usedGames }
 
-                challengeDataSource.clearChallengeExerciseCompleted()
-                challengeDataSource.updateChallengeExerciseMixProgress(
-                    DailyChallengeExerciseMixProgress(
-                        id = challenge.id,
-                        availableDuringDate = Calendar.getInstance().timeInMillis,
-                        exercisesAndCompleted = gamesForChallenge.map { it.name.name to false },
-                        isStarted = false,
-                    )
-                )
-                cachedChallengeExerciseMix = challenge
-                cachedChallengeExerciseMix!!
+            val selected = available.randomOrNull()
+
+            if (selected != null) {
+                usedGames.add(selected)
+                gamesForChallenge.add(selected)
             }
         }
+
+        val challenge = challenges.first().apply {
+            exercisesAndCompletedMark = gamesForChallenge.map { it.name to false }
+        }
+
+        challengeDataSource.clearChallengeExerciseCompleted()
+        challengeDataSource.updateChallengeExerciseMixProgress(
+            DailyChallengeExerciseMixProgress(
+                id = challenge.id,
+                availableDuringDate = Calendar.getInstance().timeInMillis,
+                exercisesAndCompleted = gamesForChallenge.map { it.name.name to false },
+                isStarted = false,
+            )
+        )
+        cachedChallengeExerciseMix = challenge
+        return cachedChallengeExerciseMix!!
     }
 
     override suspend fun startDailyChallenge() {
@@ -202,7 +271,7 @@ class GameRepositoryImpl @Inject constructor(
                 challengeDataSource.updateChallengeTimeProgress(time)
 
                 if (isLatUpdate) {
-                    prefsRepository.addExperience(cachedChallengeExerciseMix!!.bonusOnComplete)
+                    prefsRepository.addExperience(cachedChallengeTimeLimited!!.bonusOnComplete)
                 }
             }
         }
@@ -219,7 +288,7 @@ class GameRepositoryImpl @Inject constructor(
                     .toSet()
                     .size == 1
 
-                if (isLastUpdate){
+                if (isLastUpdate) {
                     prefsRepository.addExperience(cachedChallengeExerciseMix!!.bonusOnComplete)
                 }
 

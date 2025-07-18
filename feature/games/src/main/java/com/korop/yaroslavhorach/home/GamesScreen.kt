@@ -359,6 +359,7 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
         modifier = Modifier
             .height(50.dp)
             .fillMaxWidth(),
+        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
         progress = progress,
         progressBarHeight = 22.dp
     ) {
@@ -403,6 +404,7 @@ private fun ChallengeStarted(
 
     LinguaProgressBar(
         progress,
+        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
         modifier = Modifier
             .fillMaxWidth()
             .height(32.dp)
