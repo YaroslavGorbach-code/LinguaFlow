@@ -298,6 +298,16 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
+            Game.GameName.WORD_BY_CATEGORY -> {
+                val words = getWords(Word.WordType.ALPHABET)
+                val uniqueAlphabet = words.distinctBy { it.getWordText(lang) }
+
+                val categories = getWords(Word.WordType.CATEGORIES)
+                val uniqueCategories = categories.distinctBy { it.getWordText(lang) }
+
+                listOf(uniqueAlphabet.shuffled().take(1).map { it.getWordText(lang) }.first().toString() +
+                        "\n" + uniqueCategories.shuffled().take(1).map { it.getWordText(lang) }.first().toString())
+            }
             else -> emptyList()
         }
     }

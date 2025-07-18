@@ -67,6 +67,7 @@ data class Game(
         WORST_IN_THE_WORLD,
         FIVE_TO_THE_POINT,
         UNUSUAL_PROBLEM_SOLVER,
+        WORD_BY_CATEGORY,
         VOCABULARY_BURST,
         QUICK_ASSOCIATION,
         TONGUE_TWISTERS_EASY,

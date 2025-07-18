@@ -38,6 +38,7 @@ data class GameUi(
         Game.GameName.FUNNIEST_ANSWER -> R.drawable.im_balloons
         Game.GameName.MADMAN_ANNOUNCEMENT -> R.drawable.im_promote
         Game.GameName.UNUSUAL_PROBLEM_SOLVER -> R.drawable.im_solution
+        Game.GameName.WORD_BY_CATEGORY -> R.drawable.im_list_of_categories
         Game.GameName.FUNNY_EXCUSE -> R.drawable.im_clown
         Game.GameName.ONE_WORD_MANY_MEANINGS -> R.drawable.im_lettering
         Game.GameName.FLIRTING_WITH_OBJECT -> R.drawable.im_lips

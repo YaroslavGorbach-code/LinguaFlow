@@ -1153,5 +1153,34 @@
       "CREATIVE",
       "HUMOR"
     ]
+  },
+  {
+    "id": 42,
+    "nameString": {
+      "uk": "Слово за категорією",
+      "en": "Word by Category",
+      "ru": "Слово по категории"
+    },
+    "task": {
+      "uk": "Отримаєш категорію і літеру. Придумай слово, яке до неї належить і починається з цієї літери.",
+      "en": "You’ll get a category and a letter. Come up with a word from that category starting with the given letter.",
+      "ru": "Ты получишь категорию и букву. Придумай слово из этой категории, начинающееся на эту букву."
+    },
+    "example": {
+      "uk": "Категорія: Тварини\nБуква: С\nВідповідь: Слон\n\nКатегорія: Фрукти\nБуква: М\nВідповідь: Манго",
+      "en": "Category: Animals\nLetter: E\nAnswer: Elephant\n\nCategory: Fruits\nLetter: M\nAnswer: Mango",
+      "ru": "Категория: Животные\nБуква: С\nОтвет: Слон\n\nКатегория: Фрукты\nБуква: М\nОтвет: Манго"
+    },
+    "description": {
+      "uk": "Отримаєш категорію й літеру. Придумай слово, яке належить до цієї категорії та починається на задану літеру. Проста на перший погляд вправа чудово тренує мислення, кмітливість і словниковий запас.",
+      "en": "You’ll get a category and a letter. Come up with a word that belongs to that category and starts with the given letter. It may sound simple, but it’s a great way to sharpen your thinking and vocabulary.",
+      "ru": "Ты получишь категорию и букву. Придумай слово, которое относится к этой категории и начинается на эту букву. Простое на первый взгляд задание отлично тренирует мышление и словарный запас."
+    },
+    "minExperienceRequired": 3000,
+    "maxProgress": 5,
+    "name": "WORD_BY_CATEGORY",
+    "skills": [
+      "VOCABULARY"
+    ]
   }
 ]
