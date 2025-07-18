@@ -101,6 +101,7 @@ fun LingoNavHost(
                 Game.GameName.ONE_WORD_MANY_MEANINGS,
                 Game.GameName.FLIRTING_WITH_OBJECT,
                 Game.GameName.BOTH_THERE_AND_IN_BED,
+                Game.GameName.ONE_LETTER,
                 Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }

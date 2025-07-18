@@ -63,6 +63,7 @@ data class Game(
         FLIRTING_WITH_OBJECT,
         BOTH_THERE_AND_IN_BED,
         HOT_WORD,
+        ONE_LETTER,
         TONGUE_TWISTERS_EASY,
         TONGUE_TWISTERS_MEDIUM,
         TONGUE_TWISTERS_HARD,

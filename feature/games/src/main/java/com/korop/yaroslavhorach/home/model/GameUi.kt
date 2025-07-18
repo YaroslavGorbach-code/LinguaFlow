@@ -42,6 +42,7 @@ data class GameUi(
         Game.GameName.FLIRTING_WITH_OBJECT -> R.drawable.im_lips
         Game.GameName.BOTH_THERE_AND_IN_BED -> R.drawable.im_bed
         Game.GameName.HOT_WORD -> R.drawable.im_fire
+        Game.GameName.ONE_LETTER -> R.drawable.ic_alphabet
         Game.GameName.TONGUE_TWISTERS_EASY -> R.drawable.im_tongue_easy
         Game.GameName.TONGUE_TWISTERS_MEDIUM -> R.drawable.im_tongue_medium
         Game.GameName.TONGUE_TWISTERS_HARD -> R.drawable.im_tongue_hard

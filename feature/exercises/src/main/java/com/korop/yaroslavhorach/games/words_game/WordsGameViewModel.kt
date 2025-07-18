@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.games.words_game
 
+import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
@@ -75,6 +76,7 @@ class WordsGameViewModel @Inject constructor(
 
         viewModelScope.launch {
             game.value = gameRepository.getGame(gameId)
+
             when (game.value?.name) {
                 Game.GameName.RAVEN_LIKE_A_CHAIR,
                 Game.GameName.FOUR_WORDS_ONE_STORY,
@@ -87,6 +89,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.HOT_WORD,
                 Game.GameName.ANTONYM_BATTLE,
                 Game.GameName.RHYME_LIGHTNING,
+                Game.GameName.ONE_LETTER,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)
                 }

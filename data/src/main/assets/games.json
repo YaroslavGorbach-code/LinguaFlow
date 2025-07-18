@@ -965,5 +965,34 @@
     "skills": [
       "DICTION"
     ]
+  },
+  {
+    "id": 36,
+    "nameString": {
+      "uk": "Одна буква",
+      "en": "One Letter",
+      "ru": "Одна буква"
+    },
+    "task": {
+      "uk": "Отримай випадкову літеру й придумай речення, де всі слова починаються з цієї літери.",
+      "en": "Get a random letter and create a sentence where all words start with that letter.",
+      "ru": "Получай случайную букву и придумай предложение, в котором все слова начинаются с неё."
+    },
+    "example": {
+      "uk": "Літера: С\nФраза: «Софія створила свій секретний світ.»",
+      "en": "Letter: S\nPhrase: “Sophie silently shaped secret stories.”",
+      "ru": "Буква: С\nФраза: «София создала свой секретный сад.»"
+    },
+    "description": {
+      "uk": "Розширюй словниковий запас і тренуй мовну гнучкість — складай речення, у якому всі слова починаються з однієї літери",
+      "en": "Expand your vocabulary and train your linguistic flexibility by creating sentences where every word starts with the same letter",
+      "ru": "Расширяй словарный запас и развивай гибкость речи, составляя предложения, в которых все слова начинаются с одной буквы"
+    },
+    "minExperienceRequired": 2400,
+    "maxProgress": 5,
+    "name": "ONE_LETTER",
+    "skills": [
+      "VOCABULARY"
+    ]
   }
 ]

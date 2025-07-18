@@ -1,0 +1,236 @@
+[
+  {
+    "id": "1",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "а",
+      "en": "a",
+      "ru": "а"
+    }
+  },
+  {
+    "id": "2",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "б",
+      "en": "b",
+      "ru": "б"
+    }
+  },
+  {
+    "id": "3",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "в",
+      "en": "c",
+      "ru": "в"
+    }
+  },
+  {
+    "id": "4",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "г",
+      "en": "d",
+      "ru": "г"
+    }
+  },
+  {
+    "id": "5",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "ґ",
+      "en": "e",
+      "ru": "д"
+    }
+  },
+  {
+    "id": "6",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "д",
+      "en": "f",
+      "ru": "е"
+    }
+  },
+  {
+    "id": "7",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "е",
+      "en": "g",
+      "ru": "ж"
+    }
+  },
+  {
+    "id": "8",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "є",
+      "en": "h",
+      "ru": "з"
+    }
+  },
+  {
+    "id": "9",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "ж",
+      "en": "i",
+      "ru": "и"
+    }
+  },
+  {
+    "id": "10",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "з",
+      "en": "j",
+      "ru": "й"
+    }
+  },
+  {
+    "id": "11",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "и",
+      "en": "k",
+      "ru": "к"
+    }
+  },
+  {
+    "id": "12",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "і",
+      "en": "l",
+      "ru": "л"
+    }
+  },
+  {
+    "id": "13",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "ї",
+      "en": "m",
+      "ru": "м"
+    }
+  },
+  {
+    "id": "14",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "й",
+      "en": "n",
+      "ru": "н"
+    }
+  },
+  {
+    "id": "15",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "к",
+      "en": "o",
+      "ru": "о"
+    }
+  },
+  {
+    "id": "16",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "л",
+      "en": "p",
+      "ru": "п"
+    }
+  },
+  {
+    "id": "17",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "м",
+      "en": "q",
+      "ru": "р"
+    }
+  },
+  {
+    "id": "18",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "н",
+      "en": "r",
+      "ru": "с"
+    }
+  },
+  {
+    "id": "19",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "о",
+      "en": "s",
+      "ru": "т"
+    }
+  },
+  {
+    "id": "20",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "п",
+      "en": "t",
+      "ru": "у"
+    }
+  },
+  {
+    "id": "21",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "р",
+      "en": "u",
+      "ru": "ф"
+    }
+  },
+  {
+    "id": "22",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "с",
+      "en": "v",
+      "ru": "х"
+    }
+  },
+  {
+    "id": "23",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "т",
+      "en": "w",
+      "ru": "ц"
+    }
+  },
+  {
+    "id": "24",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "у",
+      "en": "x",
+      "ru": "ч"
+    }
+  },
+  {
+    "id": "25",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "ф",
+      "en": "y",
+      "ru": "ш"
+    }
+  },
+  {
+    "id": "26",
+    "word_type": "ALPHABET",
+    "word": {
+      "uk": "х",
+      "en": "z",
+      "ru": "щ"
+    }
+  }
+]
