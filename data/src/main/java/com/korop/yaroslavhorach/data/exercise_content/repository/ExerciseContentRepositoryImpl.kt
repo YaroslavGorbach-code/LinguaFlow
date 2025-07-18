@@ -262,6 +262,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
+            Game.GameName.FIVE_TO_THE_POINT -> {
+                val words = getWords(Word.WordType.CATEGORIES)
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
+
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
+            }
             Game.GameName.VOCABULARY_BURST -> {
                 val words = getWords(Word.WordType.ALPHABET)
                 val uniqueWords = words.distinctBy { it.getWordText(lang) }
@@ -404,6 +410,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Word.WordType.HOT -> "words/words_hot.json"
                     Word.WordType.ANTONIM -> "words/words_antonims.json"
                     Word.WordType.ALPHABET -> "words/alphabet.json"
+                    Word.WordType.CATEGORIES -> "words/words_categories.json"
                 }
 
                 val words: List<Word> = loadJsonFromAssets(context, fileName)?.let { json ->

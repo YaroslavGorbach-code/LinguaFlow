@@ -25,7 +25,8 @@
     "maxProgress": 5,
     "name": "RAVEN_LIKE_A_CHAIR",
     "skills": [
-      "CREATIVE", "HUMOR"
+      "CREATIVE",
+      "HUMOR"
     ]
   },
   {
@@ -54,7 +55,8 @@
     "maxProgress": 3,
     "name": "FOUR_WORDS_ONE_STORY",
     "skills": [
-      "CREATIVE", "STORYTELLING"
+      "CREATIVE",
+      "STORYTELLING"
     ]
   },
   {
@@ -141,7 +143,8 @@
     "maxProgress": 5,
     "name": "DEFINE_PRECISELY",
     "skills": [
-      "CREATIVE", "VOCABULARY"
+      "CREATIVE",
+      "VOCABULARY"
     ]
   },
   {
@@ -257,7 +260,8 @@
     "maxProgress": 3,
     "name": "DIALOGUE_WITH_SELF",
     "skills": [
-      "STORYTELLING", "CREATIVE"
+      "STORYTELLING",
+      "CREATIVE"
     ]
   },
   {
@@ -286,7 +290,8 @@
     "maxProgress": 3,
     "name": "IMAGINARY_SITUATION",
     "skills": [
-      "CREATIVE", "HUMOR"
+      "CREATIVE",
+      "HUMOR"
     ]
   },
   {
@@ -373,7 +378,8 @@
     "maxProgress": 3,
     "name": "I_AM_EXPERT",
     "skills": [
-      "CREATIVE", "STORYTELLING"
+      "CREATIVE",
+      "STORYTELLING"
     ]
   },
   {
@@ -402,7 +408,8 @@
     "maxProgress": 3,
     "name": "FORBIDDEN_WORDS",
     "skills": [
-      "CREATIVE", "STORYTELLING"
+      "CREATIVE",
+      "STORYTELLING"
     ]
   },
   {
@@ -489,7 +496,8 @@
     "maxProgress": 8,
     "name": "PERSUASIVE_SHOUT",
     "skills": [
-      "DICTION", "CREATIVE"
+      "DICTION",
+      "CREATIVE"
     ]
   },
   {
@@ -576,7 +584,8 @@
     "maxProgress": 5,
     "name": "ONE_SYNONYM_PLEASE",
     "skills": [
-      "VOCABULARY", "CREATIVE"
+      "VOCABULARY",
+      "CREATIVE"
     ]
   },
   {
@@ -605,7 +614,8 @@
     "maxProgress": 5,
     "name": "INTONATION_MASTER",
     "skills": [
-      "CREATIVE", "DICTION"
+      "CREATIVE",
+      "DICTION"
     ]
   },
   {
@@ -634,7 +644,8 @@
     "maxProgress": 10,
     "name": "ANTONYM_BATTLE",
     "skills": [
-      "VOCABULARY", "CREATIVE"
+      "VOCABULARY",
+      "CREATIVE"
     ]
   },
   {
@@ -663,7 +674,8 @@
     "maxProgress": 10,
     "name": "RHYME_LIGHTNING",
     "skills": [
-      "CREATIVE", "VOCABULARY"
+      "CREATIVE",
+      "VOCABULARY"
     ]
   },
   {
@@ -1049,6 +1061,35 @@
     "minExperienceRequired": 2600,
     "maxProgress": 3,
     "name": "VOCABULARY_BURST",
+    "skills": [
+      "VOCABULARY"
+    ]
+  },
+  {
+    "id": 39,
+    "nameString": {
+      "uk": "П’ять в ціль",
+      "en": "Five to the Point",
+      "ru": "Пять в цель"
+    },
+    "task": {
+      "uk": "Отримай тему й наведи щонайменше 5 слів, що точно підходять до неї.",
+      "en": "Get a topic and come up with at least 5 words that clearly match it.",
+      "ru": "Получай тему и назови минимум 5 слов, точно подходящих к ней."
+    },
+    "example": {
+      "uk": "Категорія: Спорт\nСлова: Футбол, Баскетбол, Біг, Теніс, Плавання\nКатегорія: Емоції\nСлова: Радість, Гнів, Смуток, Страх, Захоплення",
+      "en": "Category: Sports\nWords: Football, Basketball, Running, Tennis, Swimming\nCategory: Emotions\nWords: Joy, Anger, Sadness, Fear, Excitement",
+      "ru": "Категория: Спорт\nСлова: Футбол, Баскетбол, Бег, Теннис, Плавание\nКатегория: Эмоции\nСлова: Радость, Гнев, Грусть, Страх, Восторг"
+    },
+    "description": {
+      "uk": "Отримай випадкову тему й наведи щонайменше 5 слів, які їй відповідають. Це тренує швидке мислення та розширює активний словниковий запас.",
+      "en": "Get a random topic and list at least 5 words that match it. This helps train quick thinking and expands your active vocabulary.",
+      "ru": "Получи случайную тему и назови минимум 5 слов, которые к ней подходят. Это упражнение развивает скорость мышления и расширяет активный словарный запас."
+    },
+    "minExperienceRequired": 2700,
+    "maxProgress": 4,
+    "name": "FIVE_TO_THE_POINT",
     "skills": [
       "VOCABULARY"
     ]
