@@ -250,6 +250,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
+            Game.GameName.QUICK_ASSOCIATION -> {
+                val words = getWords(Word.WordType.NOUN)
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
+
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
+            }
             Game.GameName.ONE_LETTER -> {
                 val words = getWords(Word.WordType.ALPHABET)
                 val uniqueWords = words.distinctBy { it.getWordText(lang) }

@@ -994,5 +994,34 @@
     "skills": [
       "VOCABULARY"
     ]
+  },
+  {
+    "id": 37,
+    "nameString": {
+      "uk": "Миттєва асоціація",
+      "en": "Quick Association",
+      "ru": "Мгновенная ассоциация"
+    },
+    "task": {
+      "uk": "Побачив слово — миттєво скажи першу асоціацію, яка спала на думку. Не роздумуй довго!",
+      "en": "See the word — instantly say the first thing that comes to mind. Don’t overthink it!",
+      "ru": "Увидел слово — сразу скажи первую ассоциацию, что пришла в голову. Не раздумывай!"
+    },
+    "example": {
+      "uk": "Слово: Лампочка → Асоціація: Світло\nСлово: Море → Асоціація: Вода\nСлово: Книга → Асоціація: Читання\nСлово: Кава → Асоціація: Ранок\nСлово: Літак → Асоціація: Політ",
+      "en": "Word: Lightbulb → Association: Light\nWord: Sea → Association: Water\nWord: Book → Association: Reading\nWord: Coffee → Association: Morning\nWord: Airplane → Association: Flight",
+      "ru": "Слово: Лампочка → Ассоциация: Свет\nСлово: Море → Ассоциация: Вода\nСлово: Книга → Ассоциация: Чтение\nСлово: Кофе → Ассоциация: Утро\nСлово: Самолёт → Ассоциация: Полёт"
+    },
+    "description": {
+      "uk": "Тренуй словниковий запас і реакцію — вигадуй асоціації до слів швидко й без вагань. Проста, але ефективна вправа для мислення.",
+      "en": "Train your vocabulary and reaction — come up with word associations quickly and without hesitation. A simple but powerful thinking exercise.",
+      "ru": "Прокачивай словарный запас и реакцию — подбирай ассоциации к словам быстро и без раздумий. Простое, но эффективное упражнение для ума."
+    },
+    "minExperienceRequired": 2600,
+    "maxProgress": 10,
+    "name": "QUICK_ASSOCIATION",
+    "skills": [
+      "VOCABULARY"
+    ]
   }
 ]
