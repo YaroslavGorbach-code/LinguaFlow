@@ -26,6 +26,7 @@ data class Sentence(
         INTONATION_MASTER,
         FUNNIEST_ANSWER,
         SELL_THE_MADNESS,
-        FUNNY_EXCUSE
+        FUNNY_EXCUSE,
+        PROBLEMS
     }
 }

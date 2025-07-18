@@ -274,6 +274,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
+            Game.GameName.UNUSUAL_PROBLEM_SOLVER -> {
+                val words = getWords(Word.WordType.CATEGORIES)
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
+
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
+            }
             Game.GameName.VOCABULARY_BURST -> {
                 val words = getWords(Word.WordType.ALPHABET)
                 val uniqueWords = words.distinctBy { it.getWordText(lang) }
@@ -372,6 +378,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueSentences.shuffled().first().getText(lang)
             }
+            Game.GameName.UNUSUAL_PROBLEM_SOLVER -> {
+                val sentences = getSentences(Sentence.SentenceType.PROBLEMS)
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
+
+                uniqueSentences.shuffled().first().getText(lang)
+            }
             Game.GameName.ONE_SYNONYM_PLEASE -> {
                 val sentences = getSentences(Sentence.SentenceType.ONE_SYNONYM_PLEASE)
                 val uniqueSentences = sentences.distinctBy { it.getText(lang) }
@@ -453,6 +465,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Sentence.SentenceType.FUNNIEST_ANSWER -> "sentences/sentences_funniest_answer.json"
                     Sentence.SentenceType.SELL_THE_MADNESS -> "sentences/sentences_sell_the_madness.json"
                     Sentence.SentenceType.FUNNY_EXCUSE -> "sentences/sentences_funny_excuse.json"
+                    Sentence.SentenceType.PROBLEMS -> "sentences/sentences_problems.json"
                 }
 
                 val sentences: List<Sentence> = loadJsonFromAssets(context, fileName)?.let { json ->

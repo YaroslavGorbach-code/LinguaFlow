@@ -1123,5 +1123,35 @@
       "CREATIVE",
       "HUMOR"
     ]
+  },
+  {
+    "id": 41,
+    "nameString": {
+      "uk": "Нестандартне рішення",
+      "en": "Unusual Problem Solver",
+      "ru": "Нестандартное решение"
+    },
+    "task": {
+      "uk": "Тобі дадуть смішну або дивну проблему. Придумай до неї найкумедніше або найнесподіваніше рішення.",
+      "en": "You’ll get a funny or weird problem. Come up with the funniest or most unexpected solution.",
+      "ru": "Тебе ждёт смешная или странная проблема. Придумай к ней самое забавное или неожиданное решение."
+    },
+    "example": {
+      "uk": "Проблема: Саблезубий тигр з’їв мою дружину, поки я полював.\nРішення: Зробити з нього домашнього улюбленця, щоб він більше нікого не їв, а натомість охороняв наше плем’я.\n\nПроблема: На весіллі наречений випадково впав у торт.\nРішення: Оголосити це новим ритуалом на щастя й змусити всіх гостей теж у нього стрибнути.",
+      "en": "Problem: A saber-toothed tiger ate my wife while I was hunting.\nSolution: Turn it into a pet so it stops eating people and guards the tribe instead.\n\nProblem: At the wedding, the groom accidentally fell into the cake.\nSolution: Declare it a new lucky tradition and make all the guests jump into it too.",
+      "ru": "Проблема: Саблезубый тигр съел мою жену, пока я охотился.\nРешение: Приручить его как домашнего питомца, чтобы он больше никого не ел и охранял племя.\n\nПроблема: На свадьбе жених случайно упал в торт.\nРешение: Объявить это новой счастливой традицией и заставить всех гостей тоже прыгнуть в него."
+    },
+    "description": {
+      "uk": "Ти отримаєш дивну або смішну проблему й маєш вигадати найоригінальніше рішення. Можеш бути максимально креативним — навіть абсурдні ідеї підходять! Вправа допомагає розвивати фантазію, гумор і нестандартне мислення.",
+      "en": "You’ll get a weird or funny problem and need to invent the most original solution. Be as creative as you like – even absurd ideas work! This exercise boosts imagination, humor, and out-of-the-box thinking.",
+      "ru": "Ты получишь странную или смешную проблему и должен придумать самое оригинальное решение. Можно быть максимально креативным — даже абсурдные идеи подходят! Упражнение развивает фантазию, юмор и нестандартное мышление."
+    },
+    "minExperienceRequired": 2900,
+    "maxProgress": 3,
+    "name": "UNUSUAL_PROBLEM_SOLVER",
+    "skills": [
+      "CREATIVE",
+      "HUMOR"
+    ]
   }
 ]

@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "1",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Саблезубий тигр з’їв мою дружину, поки я полював.",
+      "en": "Problem: A saber-toothed tiger ate my wife while I was hunting.",
+      "ru": "Проблема: Саблезубый тигр съел мою жену, пока я охотился."
+    }
+  },
+  {
+    "id": "2",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій папуга навчився кричати образи на сусідів, і тепер вони хочуть його здати в поліцію.",
+      "en": "Problem: My parrot learned to shout insults at the neighbors, and now they want to report him to the police.",
+      "ru": "Проблема: Мой попугай научился орать оскорбления на соседей, и теперь они хотят сдать его в полицию."
+    }
+  },
+  {
+    "id": "3",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник почав співати оперу щоразу, коли я його відкриваю.",
+      "en": "Problem: My fridge starts singing opera every time I open it.",
+      "ru": "Проблема: Мой холодильник начинает петь оперу каждый раз, когда я его открываю."
+    }
+  },
+  {
+    "id": "4",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Сусідня коза вкрала мій Wi-Fi і тепер дивиться серіали на даху.",
+      "en": "Problem: The neighbor’s goat stole my Wi-Fi and now watches TV shows on the roof.",
+      "ru": "Проблема: Соседская коза украла мой Wi-Fi и теперь смотрит сериалы на крыше."
+    }
+  },
+  {
+    "id": "5",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій будильник навчився вимикати себе й сміятися з мене щоранку.",
+      "en": "Problem: My alarm clock learned to turn itself off and laugh at me every morning.",
+      "ru": "Проблема: Мой будильник научился сам себя выключать и смеяться надо мной каждое утро."
+    }
+  },
+  {
+    "id": "6",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Ванна заповнилася желе, і тепер я не можу вибратися.",
+      "en": "Problem: The bathtub filled up with jelly, and now I can’t get out.",
+      "ru": "Проблема: Ванна заполнилась желе, и теперь я не могу выбраться."
+    }
+  },
+  {
+    "id": "7",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій кіт записався на онлайн-курси й вимагає новий ноутбук.",
+      "en": "Problem: My cat enrolled in online courses and demands a new laptop.",
+      "ru": "Проблема: Мой кот записался на онлайн-курсы и требует новый ноутбук."
+    }
+  },
+  {
+    "id": "8",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Холодильник закрив мене всередині й відмовляється випускати.",
+      "en": "Problem: The fridge locked me inside and refuses to let me out.",
+      "ru": "Проблема: Холодильник запер меня внутри и отказывается выпускать."
+    }
+  },
+  {
+    "id": "9",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій робот-пилосос втік з дому й тепер живе у сусідів.",
+      "en": "Problem: My robot vacuum ran away from home and now lives with the neighbors.",
+      "ru": "Проблема: Мой робот-пылесос сбежал из дома и теперь живёт у соседей."
+    }
+  },
+  {
+    "id": "10",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Дзеркало почало мене критикувати й дає поради з моди, яких я не просив.",
+      "en": "Problem: My mirror started criticizing me and giving fashion advice I never asked for.",
+      "ru": "Проблема: Зеркало начало меня критиковать и давать советы по моде, которых я не просил."
+    }
+  },
+  {
+    "id": "11",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій тостер вирішив стати художником і випалює на хлібі дивні картини.",
+      "en": "Problem: My toaster decided to become an artist and burns weird pictures on the bread.",
+      "ru": "Проблема: Мой тостер решил стать художником и выжигает странные картины на хлебе."
+    }
+  },
+  {
+    "id": "12",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Дверний дзвінок навчився говорити і не впускає неприємних гостей.",
+      "en": "Problem: My doorbell learned to talk and won’t let unpleasant guests in.",
+      "ru": "Проблема: Мой дверной звонок научился говорить и не пускает неприятных гостей."
+    }
+  },
+  {
+    "id": "13",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя тінь втекла від мене й тепер гуляє по місту.",
+      "en": "Problem: My shadow ran away from me and now wanders around the city.",
+      "ru": "Проблема: Моя тень сбежала от меня и теперь гуляет по городу."
+    }
+  },
+  {
+    "id": "14",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Пральна машина почала прати сусідську білизну замість моєї.",
+      "en": "Problem: My washing machine started washing the neighbor’s laundry instead of mine.",
+      "ru": "Проблема: Моя стиральная машина начала стирать чужое бельё вместо моего."
+    }
+  },
+  {
+    "id": "15",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Ліжко відмовляється мене відпускати зранку й тримає ковдрою.",
+      "en": "Problem: My bed refuses to let me go in the morning and holds me with the blanket.",
+      "ru": "Проблема: Кровать отказывается отпускать меня утром и держит одеялом."
+    }
+  },
+  {
+    "id": "16",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя риба в акваріумі влаштувала страйк і не плаває без музики.",
+      "en": "Problem: My aquarium fish went on strike and won’t swim without music.",
+      "ru": "Проблема: Моя аквариумная рыбка устроила забастовку и не плавает без музыки."
+    }
+  },
+  {
+    "id": "17",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Годинник у квартирі живе власним життям і показує час майбутнього.",
+      "en": "Problem: The clock in my apartment lives its own life and shows the time from the future.",
+      "ru": "Проблема: Часы в квартире живут своей жизнью и показывают время из будущего."
+    }
+  },
+  {
+    "id": "18",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телефон сам телефонує колишнім і розсилає їм смайлики.",
+      "en": "Problem: My phone calls my exes by itself and sends them emojis.",
+      "ru": "Проблема: Мой телефон сам звонит бывшим и рассылает им смайлики."
+    }
+  },
+  {
+    "id": "19",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Кіт навчився відкривати холодильник і тепер запрошує друзів на вечірки.",
+      "en": "Problem: My cat learned to open the fridge and now invites friends to parties.",
+      "ru": "Проблема: Кот научился открывать холодильник и теперь зовёт друзей на вечеринки."
+    }
+  },
+  {
+    "id": "20",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій зонт не хоче розкриватися під дощем, але відкривається в кімнаті.",
+      "en": "Problem: My umbrella refuses to open in the rain but opens indoors.",
+      "ru": "Проблема: Мой зонт не хочет раскрываться под дождём, но открывается дома."
+    }
+  },
+  {
+    "id": "21",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя собака завела блог і тепер критикує мене в інтернеті.",
+      "en": "Problem: My dog started a blog and now criticizes me online.",
+      "ru": "Проблема: Моя собака завела блог и теперь критикует меня в интернете."
+    }
+  },
+  {
+    "id": "22",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Холодна кава почала жити своїм життям і втекла з чашки.",
+      "en": "Problem: My cold coffee came to life and ran away from the cup.",
+      "ru": "Проблема: Мой холодный кофе ожил и сбежал из чашки."
+    }
+  },
+  {
+    "id": "23",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій кактус вирішив переїхати до сусідів, бо їм 'веселіше'.",
+      "en": "Problem: My cactus decided to move to the neighbors because they are 'more fun'.",
+      "ru": "Проблема: Мой кактус решил переехать к соседям, потому что у них 'веселее'."
+    }
+  },
+  {
+    "id": "24",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Сусідський півень співає тільки вночі й не дає спати.",
+      "en": "Problem: The neighbor’s rooster only crows at night and won’t let anyone sleep.",
+      "ru": "Проблема: Соседский петух поёт только ночью и не даёт спать."
+    }
+  },
+  {
+    "id": "25",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телевізор вмикається сам і дивиться серіали без мене.",
+      "en": "Problem: My TV turns itself on and watches shows without me.",
+      "ru": "Проблема: Мой телевизор сам включается и смотрит сериалы без меня."
+    }
+  },
+  {
+    "id": "26",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мої черевики відмовляються йти в офіс і ведуть мене в парк.",
+      "en": "Problem: My shoes refuse to go to the office and take me to the park instead.",
+      "ru": "Проблема: Мои ботинки отказываются идти в офис и ведут меня в парк."
+    }
+  },
+  {
+    "id": "27",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій гаманець з’їв усі гроші, щоб 'схуднути'.",
+      "en": "Problem: My wallet ate all the money to 'lose weight'.",
+      "ru": "Проблема: Мой кошелёк съел все деньги, чтобы 'похудеть'."
+    }
+  },
+  {
+    "id": "28",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій сусід почав розмовляти з моїм холодильником, і вони тепер друзі.",
+      "en": "Problem: My neighbor started talking to my fridge, and now they’re friends.",
+      "ru": "Проблема: Мой сосед начал разговаривать с моим холодильником, и они теперь друзья."
+    }
+  },
+  {
+    "id": "29",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ложка відмовляється брати суп і хоче їсти тільки десерти.",
+      "en": "Problem: My spoon refuses to eat soup and only wants desserts.",
+      "ru": "Проблема: Моя ложка отказывается есть суп и хочет только десерты."
+    }
+  },
+  {
+    "id": "30",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій плед почав ревнувати мене до куртки й тікає.",
+      "en": "Problem: My blanket got jealous of my jacket and runs away.",
+      "ru": "Проблема: Мой плед начал ревновать меня к куртке и убегает."
+    }
+  },
+  {
+    "id": "31",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ложка кави зранку сама стрибає у чай.",
+      "en": "Problem: My morning coffee spoon jumps into the tea by itself.",
+      "ru": "Проблема: Моя утренняя ложка кофе сама прыгает в чай."
+    }
+  },
+  {
+    "id": "32",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шапка вирішила поїхати у відпустку без мене.",
+      "en": "Problem: My hat decided to go on vacation without me.",
+      "ru": "Проблема: Моя шапка решила поехать в отпуск без меня."
+    }
+  },
+  {
+    "id": "33",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Кухонний ніж почав писати вірші і не ріже хліб.",
+      "en": "Problem: The kitchen knife started writing poetry and won’t cut bread.",
+      "ru": "Проблема: Кухонный нож начал писать стихи и не режет хлеб."
+    }
+  },
+  {
+    "id": "34",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник закохався у праску і тепер постійно шепоче їй компліменти.",
+      "en": "Problem: My kettle fell in love with the iron and keeps whispering compliments.",
+      "ru": "Проблема: Мой чайник влюбился в утюг и теперь шепчет ему комплименты."
+    }
+  },
+  {
+    "id": "35",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Всі олівці в домі почали ховатися від мене.",
+      "en": "Problem: All the pencils in the house started hiding from me.",
+      "ru": "Проблема: Все карандаши в доме начали прятаться от меня."
+    }
+  },
+  {
+    "id": "36",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій ліхтарик світить тільки тоді, коли ніхто не дивиться.",
+      "en": "Problem: My flashlight only works when nobody is looking.",
+      "ru": "Проблема: Мой фонарик светит только тогда, когда никто не смотрит."
+    }
+  },
+  {
+    "id": "37",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя подушка почала розмовляти уві сні й видає мої секрети.",
+      "en": "Problem: My pillow started talking in its sleep and revealing my secrets.",
+      "ru": "Проблема: Моя подушка начала разговаривать во сне и выдаёт мои секреты."
+    }
+  },
+  {
+    "id": "38",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій мопед влаштував забіг з велосипедом і програв.",
+      "en": "Problem: My moped raced a bicycle and lost.",
+      "ru": "Проблема: Мой мопед устроил гонку с велосипедом и проиграл."
+    }
+  },
+  {
+    "id": "39",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ложка вирішила стати виделкою і перестала бути зручною.",
+      "en": "Problem: My spoon decided to become a fork and stopped being useful.",
+      "ru": "Проблема: Моя ложка решила стать вилкой и перестала быть удобной."
+    }
+  },
+  {
+    "id": "40",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій кіт навчився замовляти піцу онлайн і витратив усі гроші.",
+      "en": "Problem: My cat learned to order pizza online and spent all my money.",
+      "ru": "Проблема: Мой кот научился заказывать пиццу онлайн и потратил все деньги."
+    }
+  },
+  {
+    "id": "41",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: У моїй шафі живе привид, який вимагає новий одяг.",
+      "en": "Problem: There’s a ghost in my closet demanding new clothes.",
+      "ru": "Проблема: В моём шкафу живёт призрак, который требует новую одежду."
+    }
+  },
+  {
+    "id": "42",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій принтер друкує лише меми замість документів.",
+      "en": "Problem: My printer only prints memes instead of documents.",
+      "ru": "Проблема: Мой принтер печатает только мемы вместо документов."
+    }
+  },
+  {
+    "id": "43",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Сусідський пес влаштував вечірку й запросив усіх котів району.",
+      "en": "Problem: The neighbor’s dog threw a party and invited all the cats in the area.",
+      "ru": "Проблема: Соседская собака устроила вечеринку и пригласила всех котов района."
+    }
+  },
+  {
+    "id": "44",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телефон ревнує до планшета й сам вимикається.",
+      "en": "Problem: My phone gets jealous of the tablet and shuts itself off.",
+      "ru": "Проблема: Мой телефон ревнует к планшету и сам выключается."
+    }
+  },
+  {
+    "id": "45",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя мікрохвильовка влаштувала страйк і гріє тільки повітря.",
+      "en": "Problem: My microwave went on strike and only heats air.",
+      "ru": "Проблема: Моя микроволновка устроила забастовку и греет только воздух."
+    }
+  },
+  {
+    "id": "46",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій рюкзак вирішив подорожувати без мене.",
+      "en": "Problem: My backpack decided to travel without me.",
+      "ru": "Проблема: Мой рюкзак решил путешествовать без меня."
+    }
+  },
+  {
+    "id": "47",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя кішка тепер вважає себе єдинорогом і носить шолом.",
+      "en": "Problem: My cat now thinks she’s a unicorn and wears a helmet.",
+      "ru": "Проблема: Моя кошка теперь считает себя единорогом и носит шлем."
+    }
+  },
+  {
+    "id": "48",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ковдра почала снувати плани захоплення світу.",
+      "en": "Problem: My blanket started plotting to take over the world.",
+      "ru": "Проблема: Мой плед начал строить планы захвата мира."
+    }
+  },
+  {
+    "id": "49",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя кавоварка тепер варить лише чай з лимоном.",
+      "en": "Problem: My coffee machine now only makes lemon tea.",
+      "ru": "Проблема: Моя кофеварка теперь готовит только чай с лимоном."
+    }
+  },
+  {
+    "id": "50",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Пошта прислала мені чужу собаку замість посилки.",
+      "en": "Problem: The post office sent me someone else’s dog instead of a package.",
+      "ru": "Проблема: Почта прислала мне чужую собаку вместо посылки."
+    }
+  },
+  {
+    "id": "51",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник вирішив стати веганом і не зберігає м’ясо.",
+      "en": "Problem: My fridge decided to go vegan and won’t store meat.",
+      "ru": "Проблема: Мой холодильник решил стать веганом и не хранит мясо."
+    }
+  },
+  {
+    "id": "52",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій диван ображається, коли я сиджу на ньому надто довго.",
+      "en": "Problem: My couch gets offended if I sit on it for too long.",
+      "ru": "Проблема: Мой диван обижается, если я сижу на нём слишком долго."
+    }
+  },
+  {
+    "id": "53",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: У мого чайника з’явився блог з порадами, як не кипіти.",
+      "en": "Problem: My kettle started a blog about how not to boil.",
+      "ru": "Проблема: У моего чайника появился блог с советами, как не кипеть."
+    }
+  },
+  {
+    "id": "54",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя кішка навчає мишей бойовим мистецтвам.",
+      "en": "Problem: My cat is teaching the mice martial arts.",
+      "ru": "Проблема: Моя кошка учит мышей боевым искусствам."
+    }
+  },
+  {
+    "id": "55",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Дзеркало відображає мене з зачіскою, якої в мене ніколи не було.",
+      "en": "Problem: The mirror shows me with a hairstyle I’ve never had.",
+      "ru": "Проблема: Зеркало показывает меня с прической, которой у меня никогда не было."
+    }
+  },
+  {
+    "id": "56",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій годинник вирішив жити у своєму часовому поясі й не показує реальний час.",
+      "en": "Problem: My clock chose its own time zone and doesn’t show real time.",
+      "ru": "Проблема: Мои часы выбрали свой часовой пояс и не показывают реальное время."
+    }
+  },
+  {
+    "id": "57",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Сусідський гном викрадає мої шкарпетки вночі.",
+      "en": "Problem: The neighbor’s garden gnome steals my socks at night.",
+      "ru": "Проблема: Соседский гном крадёт мои носки по ночам."
+    }
+  },
+  {
+    "id": "58",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник злився з праскою та створив новий вид техніки.",
+      "en": "Problem: My kettle merged with the iron and created a new type of appliance.",
+      "ru": "Проблема: Мой чайник слился с утюгом и создал новый вид техники."
+    }
+  },
+  {
+    "id": "59",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Квіти на підвіконні почали голосно співати о третій ночі.",
+      "en": "Problem: The flowers on my windowsill started singing loudly at 3 a.m.",
+      "ru": "Проблема: Цветы на подоконнике начали громко петь в три ночи."
+    }
+  },
+  {
+    "id": "60",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чай зранку сам себе розливає на стіл.",
+      "en": "Problem: My morning tea pours itself all over the table.",
+      "ru": "Проблема: Мой утренний чай сам разливается по столу."
+    }
+  },
+  {
+    "id": "61",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій стілець утік на балкон і відмовляється повертатися.",
+      "en": "Problem: My chair ran away to the balcony and refuses to come back.",
+      "ru": "Проблема: Мой стул сбежал на балкон и отказывается возвращаться."
+    }
+  },
+  {
+    "id": "62",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник любить лише холодну воду і грітися відмовляється.",
+      "en": "Problem: My kettle only likes cold water and refuses to heat up.",
+      "ru": "Проблема: Мой чайник любит только холодную воду и отказывается нагреваться."
+    }
+  },
+  {
+    "id": "63",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя пральна машина викидає тільки один шкарпетку з пари.",
+      "en": "Problem: My washing machine only returns one sock from a pair.",
+      "ru": "Проблема: Моя стиральная машина возвращает только один носок из пары."
+    }
+  },
+  {
+    "id": "64",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя лампа читає газету й не дає світла, поки не дочитає.",
+      "en": "Problem: My lamp reads the newspaper and won’t give light until it’s done.",
+      "ru": "Проблема: Моя лампа читает газету и не светит, пока не дочитает."
+    }
+  },
+  {
+    "id": "65",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя каструля вирішила бути музичним інструментом і гримить ночами.",
+      "en": "Problem: My pot decided to become a musical instrument and bangs at night.",
+      "ru": "Проблема: Моя кастрюля решила стать музыкальным инструментом и гремит по ночам."
+    }
+  },
+  {
+    "id": "66",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій робот-пилосос вважає, що він кіт, і спить цілими днями.",
+      "en": "Problem: My robot vacuum thinks it’s a cat and sleeps all day.",
+      "ru": "Проблема: Мой робот-пылесос считает себя котом и спит целыми днями."
+    }
+  },
+  {
+    "id": "67",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя підлога почала бути слизькою лише тоді, коли я поспішаю.",
+      "en": "Problem: My floor only becomes slippery when I’m in a hurry.",
+      "ru": "Проблема: Мой пол становится скользким только когда я спешу."
+    }
+  },
+  {
+    "id": "68",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник тепер свистить мелодії з мультфільмів і не зупиняється.",
+      "en": "Problem: My kettle now whistles cartoon melodies and won’t stop.",
+      "ru": "Проблема: Мой чайник теперь свистит мелодии из мультфильмов и не останавливается."
+    }
+  },
+  {
+    "id": "69",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя клавіатура пише тільки смайлики замість слів.",
+      "en": "Problem: My keyboard types only emojis instead of words.",
+      "ru": "Проблема: Моя клавиатура печатает только смайлики вместо слов."
+    }
+  },
+  {
+    "id": "70",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій рюкзак почав збирати чужі речі на вулиці.",
+      "en": "Problem: My backpack started collecting random things from the street.",
+      "ru": "Проблема: Мой рюкзак начал собирать чужие вещи на улице."
+    }
+  },
+  {
+    "id": "71",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя парасоля тікає, коли бачить хмари.",
+      "en": "Problem: My umbrella runs away when it sees clouds.",
+      "ru": "Проблема: Мой зонт убегает, когда видит тучи."
+    }
+  },
+  {
+    "id": "72",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник їсть шоколад, поки я сплю.",
+      "en": "Problem: My fridge eats chocolate while I’m asleep.",
+      "ru": "Проблема: Мой холодильник ест шоколад, пока я сплю."
+    }
+  },
+  {
+    "id": "73",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шкарпетка завела TikTok і стала популярною.",
+      "en": "Problem: My sock started a TikTok account and became famous.",
+      "ru": "Проблема: Мой носок завёл TikTok и стал популярным."
+    }
+  },
+  {
+    "id": "74",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телевізор коментує фільми і спойлерить фінал.",
+      "en": "Problem: My TV comments on movies and spoils the ending.",
+      "ru": "Проблема: Мой телевизор комментирует фильмы и спойлерит финал."
+    }
+  },
+  {
+    "id": "75",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій пилосос закохався в кіт і не хоче прибирати шерсть.",
+      "en": "Problem: My vacuum fell in love with the cat and won’t clean its fur.",
+      "ru": "Проблема: Мой пылесос влюбился в кота и не хочет убирать его шерсть."
+    }
+  },
+  {
+    "id": "76",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шапка ховається, коли холодно.",
+      "en": "Problem: My hat hides when it’s cold.",
+      "ru": "Проблема: Моя шапка прячется, когда холодно."
+    }
+  },
+  {
+    "id": "77",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя кішка влаштувала на кухні ресторан для мишей.",
+      "en": "Problem: My cat opened a restaurant for mice in the kitchen.",
+      "ru": "Проблема: Моя кошка открыла ресторан для мышей на кухне."
+    }
+  },
+  {
+    "id": "78",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник закохався в кавоварку й більше не свистить.",
+      "en": "Problem: My kettle fell in love with the coffee machine and stopped whistling.",
+      "ru": "Проблема: Мой чайник влюбился в кофеварку и перестал свистеть."
+    }
+  },
+  {
+    "id": "79",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя лампочка блимає тільки тоді, коли я читаю.",
+      "en": "Problem: My light bulb flickers only when I’m reading.",
+      "ru": "Проблема: Моя лампочка мигает только когда я читаю."
+    }
+  },
+  {
+    "id": "80",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шафа ховає одяг, щоб я носив одне й те саме.",
+      "en": "Problem: My wardrobe hides my clothes so I wear the same thing.",
+      "ru": "Проблема: Мой шкаф прячет одежду, чтобы я носил одно и то же."
+    }
+  },
+  {
+    "id": "81",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ложка не хоче торкатись супу, бо він 'нудний'.",
+      "en": "Problem: My spoon doesn’t want to touch soup because it’s 'boring'.",
+      "ru": "Проблема: Моя ложка не хочет прикасаться к супу, потому что он 'скучный'."
+    }
+  },
+  {
+    "id": "82",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя праска більше любить м’яти речі, ніж їх прасувати.",
+      "en": "Problem: My iron prefers wrinkling clothes instead of ironing them.",
+      "ru": "Проблема: Мой утюг больше любит мять одежду, чем гладить."
+    }
+  },
+  {
+    "id": "83",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя тарілка не хоче їсти овочі й викидає їх на підлогу.",
+      "en": "Problem: My plate refuses to hold vegetables and throws them on the floor.",
+      "ru": "Проблема: Моя тарелка не хочет держать овощи и сбрасывает их на пол."
+    }
+  },
+  {
+    "id": "84",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник влаштовує караоке ночами.",
+      "en": "Problem: My kettle does karaoke at night.",
+      "ru": "Проблема: Мой чайник устраивает караоке по ночам."
+    }
+  },
+  {
+    "id": "85",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій ноутбук образився й показує тільки чорний екран.",
+      "en": "Problem: My laptop got offended and shows only a black screen.",
+      "ru": "Проблема: Мой ноутбук обиделся и показывает только чёрный экран."
+    }
+  },
+  {
+    "id": "86",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя зубна щітка кусається, коли я намагаюсь нею користуватись.",
+      "en": "Problem: My toothbrush bites me when I try to use it.",
+      "ru": "Проблема: Моя зубная щётка кусается, когда я пытаюсь ей пользоваться."
+    }
+  },
+  {
+    "id": "87",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник забув, як закриватися, і тепер тримає дверцята відкритими.",
+      "en": "Problem: My fridge forgot how to close and keeps its door open.",
+      "ru": "Проблема: Мой холодильник забыл, как закрываться, и держит дверь открытой."
+    }
+  },
+  {
+    "id": "88",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя чашка почала ділитись чутками про інший посуд.",
+      "en": "Problem: My cup started gossiping about other dishes.",
+      "ru": "Проблема: Моя чашка начала сплетничать о другой посуде."
+    }
+  },
+  {
+    "id": "89",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій ніж вирішив стати художником і ріже тільки папір.",
+      "en": "Problem: My knife decided to be an artist and cuts only paper.",
+      "ru": "Проблема: Мой нож решил стать художником и режет только бумагу."
+    }
+  },
+  {
+    "id": "90",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телефон сам замовив собі новий чохол.",
+      "en": "Problem: My phone ordered itself a new case.",
+      "ru": "Проблема: Мой телефон сам заказал себе новый чехол."
+    }
+  },
+  {
+    "id": "91",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник свариться з мікрохвильовкою через те, хто важливіший.",
+      "en": "Problem: My kettle argues with the microwave over who’s more important.",
+      "ru": "Проблема: Мой чайник ругается с микроволновкой, кто важнее."
+    }
+  },
+  {
+    "id": "92",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ковдра вирішила, що вона модний плащ, і втекла на вулицю.",
+      "en": "Problem: My blanket decided it’s a stylish cape and ran outside.",
+      "ru": "Проблема: Мой плед решил, что он модный плащ, и сбежал на улицу."
+    }
+  },
+  {
+    "id": "93",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник почав робити селфі з продуктами.",
+      "en": "Problem: My fridge started taking selfies with the food inside.",
+      "ru": "Проблема: Мой холодильник начал делать селфи с продуктами."
+    }
+  },
+  {
+    "id": "94",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій календар рахує тільки вихідні й забув про будні.",
+      "en": "Problem: My calendar counts only weekends and forgot weekdays.",
+      "ru": "Проблема: Мой календарь считает только выходные и забыл про будни."
+    }
+  },
+  {
+    "id": "95",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій дзвінок на дверях співає оперу замість сигналу.",
+      "en": "Problem: My doorbell sings opera instead of ringing.",
+      "ru": "Проблема: Мой дверной звонок поёт оперу вместо сигнала."
+    }
+  },
+  {
+    "id": "96",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телевізор дивиться мене, коли я сплю.",
+      "en": "Problem: My TV watches me when I’m asleep.",
+      "ru": "Проблема: Мой телевизор смотрит на меня, когда я сплю."
+    }
+  },
+  {
+    "id": "97",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя пральна машина влаштовує вечірки з піною.",
+      "en": "Problem: My washing machine throws foam parties.",
+      "ru": "Проблема: Моя стиральная машина устраивает пенные вечеринки."
+    }
+  },
+  {
+    "id": "98",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій годинник відмотує час назад тільки по понеділках.",
+      "en": "Problem: My clock rewinds time only on Mondays.",
+      "ru": "Проблема: Мои часы отматывают время назад только по понедельникам."
+    }
+  },
+  {
+    "id": "99",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій віник вимітає лише те, що йому подобається.",
+      "en": "Problem: My broom sweeps only what it likes.",
+      "ru": "Проблема: Мой веник подметает только то, что ему нравится."
+    }
+  },
+  {
+    "id": "100",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя книга сама перегортає сторінки і не дає мені читати.",
+      "en": "Problem: My book turns pages by itself and won’t let me read.",
+      "ru": "Проблема: Моя книга сама перелистывает страницы и не даёт мне читать."
+    }
+  },
+  {
+    "id": "101",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій тостер влаштовує дегустацію й не віддає хліб одразу.",
+      "en": "Problem: My toaster does tastings and won’t give the bread back immediately.",
+      "ru": "Проблема: Мой тостер устраивает дегустацию и не отдаёт хлеб сразу."
+    }
+  },
+  {
+    "id": "102",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій килим намагається втекти щоразу, як я на нього стаю.",
+      "en": "Problem: My carpet tries to escape every time I step on it.",
+      "ru": "Проблема: Мой ковёр пытается убежать каждый раз, когда я на него наступаю."
+    }
+  },
+  {
+    "id": "103",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій олівець сам пише списки покупок, які мені не потрібні.",
+      "en": "Problem: My pencil writes shopping lists I don’t need.",
+      "ru": "Проблема: Мой карандаш сам пишет списки покупок, которые мне не нужны."
+    }
+  },
+  {
+    "id": "104",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій стіл крутиться, коли я намагаюсь сісти працювати.",
+      "en": "Problem: My desk spins when I try to sit down and work.",
+      "ru": "Проблема: Мой стол крутится, когда я пытаюсь сесть работать."
+    }
+  },
+  {
+    "id": "105",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя чашка кави почала писати мені записки мотивації.",
+      "en": "Problem: My coffee cup started leaving me motivational notes.",
+      "ru": "Проблема: Моя чашка кофе начала оставлять мне мотивационные записки."
+    }
+  },
+  {
+    "id": "106",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя подушка шепоче мені дивні сни перед сном.",
+      "en": "Problem: My pillow whispers strange dreams before I sleep.",
+      "ru": "Проблема: Моя подушка шепчет мне странные сны перед сном."
+    }
+  },
+  {
+    "id": "107",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник просить пароль перед тим, як відкритися.",
+      "en": "Problem: My fridge asks for a password before opening.",
+      "ru": "Проблема: Мой холодильник просит пароль перед тем, как открыться."
+    }
+  },
+  {
+    "id": "108",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телефон телефонує моїм друзям без мого дозволу.",
+      "en": "Problem: My phone calls my friends without my permission.",
+      "ru": "Проблема: Мой телефон звонит моим друзьям без моего разрешения."
+    }
+  },
+  {
+    "id": "109",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій дзеркальний шкаф критикує мій одяг.",
+      "en": "Problem: My mirror wardrobe criticizes my outfits.",
+      "ru": "Проблема: Мой зеркальный шкаф критикует мою одежду."
+    }
+  },
+  {
+    "id": "110",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій пилосос збирає лише блискітки і ігнорує пил.",
+      "en": "Problem: My vacuum only picks up glitter and ignores dust.",
+      "ru": "Проблема: Мой пылесос собирает только блёстки и игнорирует пыль."
+    }
+  },
+  {
+    "id": "111",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій будильник сміється і вимикається сам по собі.",
+      "en": "Problem: My alarm clock laughs and turns itself off.",
+      "ru": "Проблема: Мой будильник смеётся и сам выключается."
+    }
+  },
+  {
+    "id": "112",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник закипає тільки тоді, коли я виходжу з кухні.",
+      "en": "Problem: My kettle boils only when I leave the kitchen.",
+      "ru": "Проблема: Мой чайник закипает только тогда, когда я выхожу с кухни."
+    }
+  },
+  {
+    "id": "113",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій рюкзак стягує на себе всю увагу в метро.",
+      "en": "Problem: My backpack attracts all the attention on the subway.",
+      "ru": "Проблема: Мой рюкзак привлекает всё внимание в метро."
+    }
+  },
+  {
+    "id": "114",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя миша для комп’ютера кусається, якщо клікаю забагато.",
+      "en": "Problem: My computer mouse bites if I click too much.",
+      "ru": "Проблема: Моя компьютерная мышь кусается, если я слишком много кликаю."
+    }
+  },
+  {
+    "id": "115",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шафа показує мені одяг, якого я не купував.",
+      "en": "Problem: My closet shows me clothes I never bought.",
+      "ru": "Проблема: Мой шкаф показывает мне одежду, которую я не покупал."
+    }
+  },
+  {
+    "id": "116",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій пульт керування перемикає канали за власним бажанням.",
+      "en": "Problem: My remote control switches channels on its own.",
+      "ru": "Проблема: Мой пульт сам переключает каналы."
+    }
+  },
+  {
+    "id": "117",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник залишає мені загадкові записки на дверцятах.",
+      "en": "Problem: My fridge leaves mysterious notes on the door.",
+      "ru": "Проблема: Мой холодильник оставляет загадочные записки на дверце."
+    }
+  },
+  {
+    "id": "118",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник кипить тільки, якщо я танцюю.",
+      "en": "Problem: My kettle boils only if I dance.",
+      "ru": "Проблема: Мой чайник кипит только если я танцую."
+    }
+  },
+  {
+    "id": "119",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телевізор вмикається лише на рекламі.",
+      "en": "Problem: My TV only turns on for commercials.",
+      "ru": "Проблема: Мой телевизор включается только на рекламе."
+    }
+  },
+  {
+    "id": "120",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шафа ховає взуття в різні кути квартири.",
+      "en": "Problem: My wardrobe hides shoes in random corners of the apartment.",
+      "ru": "Проблема: Мой шкаф прячет обувь в разные углы квартиры."
+    }
+  },
+  {
+    "id": "121",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій ноутбук сам встановлює дивні програми.",
+      "en": "Problem: My laptop installs weird programs by itself.",
+      "ru": "Проблема: Мой ноутбук сам устанавливает странные программы."
+    }
+  },
+  {
+    "id": "122",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник просить дати йому вихідний.",
+      "en": "Problem: My kettle asks for a day off.",
+      "ru": "Проблема: Мой чайник просит дать ему выходной."
+    }
+  },
+  {
+    "id": "123",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій стілець вирішив бути гойдалкою.",
+      "en": "Problem: My chair decided to be a rocking chair.",
+      "ru": "Проблема: Мой стул решил быть качалкой."
+    }
+  },
+  {
+    "id": "124",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій будильник говорить, що понеділок скасовано.",
+      "en": "Problem: My alarm clock says Monday is canceled.",
+      "ru": "Проблема: Мой будильник говорит, что понедельник отменён."
+    }
+  },
+  {
+    "id": "125",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій килим щоночі влаштовує перегони по кімнаті.",
+      "en": "Problem: My carpet races around the room at night.",
+      "ru": "Проблема: Мой ковёр по ночам устраивает гонки по комнате."
+    }
+  },
+  {
+    "id": "126",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя швабра відмовляється мити підлогу без музики.",
+      "en": "Problem: My mop refuses to clean the floor without music.",
+      "ru": "Проблема: Моя швабра отказывается мыть пол без музыки."
+    }
+  },
+  {
+    "id": "127",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник вимагає компліменти перед тим, як закипіти.",
+      "en": "Problem: My kettle demands compliments before boiling.",
+      "ru": "Проблема: Мой чайник требует комплиментов перед тем, как закипеть."
+    }
+  },
+  {
+    "id": "128",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій будильник дзвонить випадкові години вночі.",
+      "en": "Problem: My alarm clock rings at random hours during the night.",
+      "ru": "Проблема: Мой будильник звонит в случайные часы ночью."
+    }
+  },
+  {
+    "id": "129",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя ложка сама перемішує каву і проливає її.",
+      "en": "Problem: My spoon stirs coffee on its own and spills it.",
+      "ru": "Проблема: Моя ложка сама мешает кофе и проливает его."
+    }
+  },
+  {
+    "id": "130",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник залишає всередині тільки кетчуп.",
+      "en": "Problem: My fridge leaves only ketchup inside.",
+      "ru": "Проблема: Мой холодильник оставляет внутри только кетчуп."
+    }
+  },
+  {
+    "id": "131",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя праска вимикається щоразу, коли бачить сорочку.",
+      "en": "Problem: My iron turns off every time it sees a shirt.",
+      "ru": "Проблема: Мой утюг выключается каждый раз, когда видит рубашку."
+    }
+  },
+  {
+    "id": "132",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій диван ховає пульт і телефони у своїх подушках.",
+      "en": "Problem: My sofa hides the remote and phones in its cushions.",
+      "ru": "Проблема: Мой диван прячет пульт и телефоны в подушках."
+    }
+  },
+  {
+    "id": "133",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя чашка вважає, що вона кішка, і падає з полиці.",
+      "en": "Problem: My cup thinks it’s a cat and keeps falling off the shelf.",
+      "ru": "Проблема: Моя чашка думает, что она кошка, и падает с полки."
+    }
+  },
+  {
+    "id": "134",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник розмовляє з мікрохвильовкою про погоду.",
+      "en": "Problem: My kettle chats with the microwave about the weather.",
+      "ru": "Проблема: Мой чайник разговаривает с микроволновкой о погоде."
+    }
+  },
+  {
+    "id": "135",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій стілець гойдається навіть коли я не сиджу.",
+      "en": "Problem: My chair rocks even when I’m not sitting on it.",
+      "ru": "Проблема: Мой стул качается даже когда я на нём не сижу."
+    }
+  },
+  {
+    "id": "136",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя шафа сама обирає мені одяг на день.",
+      "en": "Problem: My wardrobe chooses my outfit for the day on its own.",
+      "ru": "Проблема: Мой шкаф сам выбирает мне одежду на день."
+    }
+  },
+  {
+    "id": "137",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій пилосос почав писати вірші замість прибирання.",
+      "en": "Problem: My vacuum started writing poetry instead of cleaning.",
+      "ru": "Проблема: Мой пылесос начал писать стихи вместо уборки."
+    }
+  },
+  {
+    "id": "138",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник показує температуру в градусах настрою.",
+      "en": "Problem: My kettle shows the temperature in mood degrees.",
+      "ru": "Проблема: Мой чайник показывает температуру в градусах настроения."
+    }
+  },
+  {
+    "id": "139",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій годинник зупиняється щоразу, коли я запізнююсь.",
+      "en": "Problem: My clock stops every time I’m late.",
+      "ru": "Проблема: Мои часы останавливаются каждый раз, когда я опаздываю."
+    }
+  },
+  {
+    "id": "140",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник ображається, якщо його не помити одразу.",
+      "en": "Problem: My kettle sulks if I don’t wash it immediately.",
+      "ru": "Проблема: Мой чайник обижается, если его сразу не помыть."
+    }
+  },
+  {
+    "id": "141",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій холодильник додає спеції до їжі самостійно.",
+      "en": "Problem: My fridge adds spices to the food on its own.",
+      "ru": "Проблема: Мой холодильник сам добавляет специи в еду."
+    }
+  },
+  {
+    "id": "142",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій комп’ютер грає музику тільки на повну гучність.",
+      "en": "Problem: My computer only plays music at full volume.",
+      "ru": "Проблема: Мой компьютер играет музыку только на полной громкости."
+    }
+  },
+  {
+    "id": "143",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя подушка почала змагатися з ковдрою, хто важливіший.",
+      "en": "Problem: My pillow competes with the blanket over who’s more important.",
+      "ru": "Проблема: Моя подушка соревнуется с одеялом, кто важнее."
+    }
+  },
+  {
+    "id": "144",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник закипає, коли йому нудно, навіть без води.",
+      "en": "Problem: My kettle boils when it’s bored, even without water.",
+      "ru": "Проблема: Мой чайник закипает, когда ему скучно, даже без воды."
+    }
+  },
+  {
+    "id": "145",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій телевізор вмикає лише старі кулінарні шоу.",
+      "en": "Problem: My TV only turns on old cooking shows.",
+      "ru": "Проблема: Мой телевизор включает только старые кулинарные шоу."
+    }
+  },
+  {
+    "id": "146",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій дзвінок дверей розмовляє з перехожими.",
+      "en": "Problem: My doorbell chats with passersby.",
+      "ru": "Проблема: Мой дверной звонок разговаривает с прохожими."
+    }
+  },
+  {
+    "id": "147",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Моя лампа світить тільки рожевим світлом.",
+      "en": "Problem: My lamp only shines pink light.",
+      "ru": "Проблема: Моя лампа светит только розовым светом."
+    }
+  },
+  {
+    "id": "148",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій чайник почав співати реп про чай.",
+      "en": "Problem: My kettle started rapping about tea.",
+      "ru": "Проблема: Мой чайник начал читать рэп про чай."
+    }
+  },
+  {
+    "id": "149",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій стілець просить купити йому подушку.",
+      "en": "Problem: My chair asks me to buy it a cushion.",
+      "ru": "Проблема: Мой стул просит купить ему подушку."
+    }
+  },
+  {
+    "id": "150",
+    "sentence_type": "UNUSUAL_PROBLEM_SOLVER",
+    "sentence": {
+      "uk": "Проблема: Мій ноутбук вмикається тільки, коли поруч кіт.",
+      "en": "Problem: My laptop only turns on when the cat is nearby.",
+      "ru": "Проблема: Мой ноутбук включается только когда рядом кот."
+    }
+  }
+]

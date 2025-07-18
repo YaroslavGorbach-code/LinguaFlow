@@ -106,6 +106,7 @@ fun LingoNavHost(
                 Game.GameName.FIVE_TO_THE_POINT,
                 Game.GameName.VOCABULARY_BURST,
                 Game.GameName.QUICK_ASSOCIATION,
+                Game.GameName.UNUSUAL_PROBLEM_SOLVER,
                 Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }
