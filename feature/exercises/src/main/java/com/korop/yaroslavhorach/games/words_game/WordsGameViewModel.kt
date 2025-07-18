@@ -90,6 +90,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.ANTONYM_BATTLE,
                 Game.GameName.RHYME_LIGHTNING,
                 Game.GameName.ONE_LETTER,
+                Game.GameName.VOCABULARY_BURST,
                 Game.GameName.QUICK_ASSOCIATION,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)

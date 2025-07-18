@@ -1017,9 +1017,38 @@
       "en": "Train your vocabulary and reaction — come up with word associations quickly and without hesitation. A simple but powerful thinking exercise.",
       "ru": "Прокачивай словарный запас и реакцию — подбирай ассоциации к словам быстро и без раздумий. Простое, но эффективное упражнение для ума."
     },
-    "minExperienceRequired": 2600,
+    "minExperienceRequired": 2500,
     "maxProgress": 10,
     "name": "QUICK_ASSOCIATION",
+    "skills": [
+      "VOCABULARY"
+    ]
+  },
+  {
+    "id": 38,
+    "nameString": {
+      "uk": "Словниковий вибух",
+      "en": "Vocabulary Burst",
+      "ru": "Словарный взрыв"
+    },
+    "task": {
+      "uk": "Отримай букву й придумай щонайменше 10 слів, що починаються з цієї літери",
+      "en": "Get a letter and come up with at least 10 words that start with it",
+      "ru": "Получай букву и придумай минимум 10 слов, начинающихся на неё"
+    },
+    "example": {
+      "uk": "Буква: К\nСлова: Кіт, Книга, Кава, Корабель, Квітка, Кран, Кошик, Кухня, Кітель, Коло",
+      "en": "Letter: C\nWords: Cat, Cup, Car, Candle, Circle, Coin, Cookie, Clock, Cloud, Cave",
+      "ru": "Буква: К\nСлова: Кот, Книга, Кофе, Корабль, Кран, Картон, Клуб, Карта, Ковер, Кукуруза"
+    },
+    "description": {
+      "uk": "Розширюй словниковий запас і швидкість мовлення — придумуй якомога більше слів на задану літеру. Справжній словниковий спринт!",
+      "en": "Boost your vocabulary and verbal speed — generate as many words as you can starting with a given letter. It's a real vocabulary sprint!",
+      "ru": "Расширяй словарный запас и скорость речи — придумывай как можно больше слов на заданную букву. Настоящий словарный спринт!"
+    },
+    "minExperienceRequired": 2600,
+    "maxProgress": 3,
+    "name": "VOCABULARY_BURST",
     "skills": [
       "VOCABULARY"
     ]

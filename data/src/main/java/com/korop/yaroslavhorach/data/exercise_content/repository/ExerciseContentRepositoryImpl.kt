@@ -262,6 +262,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
             }
+            Game.GameName.VOCABULARY_BURST -> {
+                val words = getWords(Word.WordType.ALPHABET)
+                val uniqueWords = words.distinctBy { it.getWordText(lang) }
+
+                uniqueWords.shuffled().take(1).map { it.getWordText(lang) }
+            }
             Game.GameName.ANTONYM_BATTLE -> {
                 val words = getWords(Word.WordType.ANTONIM)
                 val uniqueWords = words.distinctBy { it.getWordText(lang) }

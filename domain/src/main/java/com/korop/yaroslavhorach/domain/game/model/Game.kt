@@ -64,6 +64,7 @@ data class Game(
         BOTH_THERE_AND_IN_BED,
         HOT_WORD,
         ONE_LETTER,
+        VOCABULARY_BURST,
         QUICK_ASSOCIATION,
         TONGUE_TWISTERS_EASY,
         TONGUE_TWISTERS_MEDIUM,

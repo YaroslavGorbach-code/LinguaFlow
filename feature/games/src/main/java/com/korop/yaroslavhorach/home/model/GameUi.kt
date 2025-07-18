@@ -43,6 +43,7 @@ data class GameUi(
         Game.GameName.BOTH_THERE_AND_IN_BED -> R.drawable.im_bed
         Game.GameName.HOT_WORD -> R.drawable.im_fire
         Game.GameName.ONE_LETTER -> R.drawable.ic_alphabet
+        Game.GameName.VOCABULARY_BURST -> R.drawable.ic_bomb
         Game.GameName.QUICK_ASSOCIATION -> R.drawable.im_acotiation
         Game.GameName.TONGUE_TWISTERS_EASY -> R.drawable.im_tongue_easy
         Game.GameName.TONGUE_TWISTERS_MEDIUM -> R.drawable.im_tongue_medium
