@@ -1,0 +1,632 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я чекав автобус.",
+      "en": "Situation: I was waiting for the bus.",
+      "ru": "Ситуация: Я ждал автобус."
+    },
+    "task": {
+      "uk": "Перетвори цю буденну ситуацію на захопливу історію — додай несподівані події, емоції або драму.",
+      "en": "Turn this ordinary situation into an exciting story — add unexpected events, emotion, or drama.",
+      "ru": "Преврати эту обыденную ситуацию в увлекательную историю — добавь неожиданные события, эмоции или драму."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я складав одяг у шафу.",
+      "en": "Situation: I was putting clothes in the wardrobe.",
+      "ru": "Ситуация: Я складывал одежду в шкаф."
+    },
+    "task": {
+      "uk": "Зроби з цього щось цікаве — можливо, одна річ виявилась зовсім не твоєю?",
+      "en": "Make this interesting — maybe one item turned out not to be yours?",
+      "ru": "Сделай это интересным — может, одна вещь оказалась совсем не твоей?"
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я мив посуд.",
+      "en": "Situation: I was washing the dishes.",
+      "ru": "Ситуация: Я мыл посуду."
+    },
+    "task": {
+      "uk": "Перетвори це заняття на епічну сцену — щось має піти не так!",
+      "en": "Turn this task into an epic scene — something must go wrong!",
+      "ru": "Преврати эту задачу в эпическую сцену — что-то обязательно должно пойти не так!"
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я йшов по хліб.",
+      "en": "Situation: I went to buy bread.",
+      "ru": "Ситуация: Я пошёл за хлебом."
+    },
+    "task": {
+      "uk": "Зроби цю подорож незабутньою — що пішло зовсім не за планом?",
+      "en": "Make this journey unforgettable — what went totally off track?",
+      "ru": "Сделай это путешествие незабываемым — что пошло совершенно не по плану?"
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я витер пил.",
+      "en": "Situation: I was dusting the shelves.",
+      "ru": "Ситуация: Я вытирал пыль."
+    },
+    "task": {
+      "uk": "Уяви, що знайшов щось несподіване під шаром пилу. Що було далі?",
+      "en": "Imagine you found something unexpected under the dust. What happened next?",
+      "ru": "Представь, что ты нашёл нечто неожиданное под слоем пыли. Что было дальше?"
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я стояв у черзі в магазині.",
+      "en": "Situation: I was standing in line at the store.",
+      "ru": "Ситуация: Я стоял в очереди в магазине."
+    },
+    "task": {
+      "uk": "Уяви, що в черзі щось відбувається — знайомство, сварка, змова?",
+      "en": "Imagine something happens in the line — a meeting, a quarrel, a conspiracy?",
+      "ru": "Представь, что-то происходит в очереди — знакомство, ссора, заговор?"
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я чистив взуття.",
+      "en": "Situation: I was cleaning my shoes.",
+      "ru": "Ситуация: Я чистил обувь."
+    },
+    "task": {
+      "uk": "Уяви, що на підошві виявилось щось, що змінило твій день.",
+      "en": "Imagine something on the sole changed your day.",
+      "ru": "Представь, что на подошве оказалось что-то, что изменило твой день."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я слухав прогноз погоди.",
+      "en": "Situation: I was listening to the weather forecast.",
+      "ru": "Ситуация: Я слушал прогноз погоды."
+    },
+    "task": {
+      "uk": "І раптом у прогнозі ти почув щось дуже дивне… Що було далі?",
+      "en": "And suddenly you heard something very strange… What happened next?",
+      "ru": "И вдруг ты услышал в прогнозе нечто странное… Что было дальше?"
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я відкрив холодильник.",
+      "en": "Situation: I opened the fridge.",
+      "ru": "Ситуация: Я открыл холодильник."
+    },
+    "task": {
+      "uk": "Усередині було не те, що ти очікував. Що саме й чим це обернулось?",
+      "en": "Inside was not what you expected. What exactly and what happened next?",
+      "ru": "Внутри было не то, что ты ожидал. Что именно и что случилось дальше?"
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я знімав відео для сторіс.",
+      "en": "Situation: I was filming a story for social media.",
+      "ru": "Ситуация: Я снимал видео для сторис."
+    },
+    "task": {
+      "uk": "Але в кадр потрапило дещо, чого там не мало бути. Що сталося?",
+      "en": "But something appeared in the frame that shouldn’t have. What happened?",
+      "ru": "Но в кадр попало нечто, чего там быть не должно. Что случилось?"
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я запарив чай.",
+      "en": "Situation: I made some tea.",
+      "ru": "Ситуация: Я заварил чай."
+    },
+    "task": {
+      "uk": "Але чай поводився дивно. Що ти помітив і як це вплинуло на день?",
+      "en": "But the tea acted strangely. What did you notice and how did it affect your day?",
+      "ru": "Но чай вёл себя странно. Что ты заметил и как это повлияло на твой день?"
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я повертався додому з роботи.",
+      "en": "Situation: I was coming back home from work.",
+      "ru": "Ситуация: Я возвращался домой с работы."
+    },
+    "task": {
+      "uk": "Раптом усе навколо змінилося. Що сталося й чому це важливо?",
+      "en": "Suddenly, everything around changed. What happened and why does it matter?",
+      "ru": "Вдруг всё вокруг изменилось. Что случилось и почему это важно?"
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я гортав старі фото у телефоні.",
+      "en": "Situation: I was scrolling through old photos on my phone.",
+      "ru": "Ситуация: Я листал старые фото на телефоне."
+    },
+    "task": {
+      "uk": "Аж раптом помітив щось, чого раніше не було. Що це?",
+      "en": "Suddenly, you noticed something that wasn't there before. What was it?",
+      "ru": "Вдруг ты заметил что-то, чего раньше не было. Что это было?"
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я шукав свої навушники.",
+      "en": "Situation: I was looking for my headphones.",
+      "ru": "Ситуация: Я искал свои наушники."
+    },
+    "task": {
+      "uk": "І пошуки вивели тебе кудись зовсім несподівано. Куди й чому?",
+      "en": "And the search led you somewhere completely unexpected. Where and why?",
+      "ru": "И поиски завели тебя совсем не туда. Куда и зачем?"
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я слухав як крапає дощ.",
+      "en": "Situation: I was listening to the rain dripping.",
+      "ru": "Ситуация: Я слушал, как капает дождь."
+    },
+    "task": {
+      "uk": "І з кожною краплею ти починав щось розуміти… Розкажи, що сталося.",
+      "en": "And with every drop, you started to realize something… Tell the story.",
+      "ru": "И с каждой каплей ты начинал что-то понимать… Расскажи, что произошло."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я чекав на чайник, поки закипить вода.",
+      "en": "Situation: I was waiting for the kettle to boil.",
+      "ru": "Ситуация: Я ждал, пока закипит чайник."
+    },
+    "task": {
+      "uk": "Уяви, що під час цього почалося щось містичне або смішне. Як змінився твій день?",
+      "en": "Imagine something mystical or funny started while you waited. How did your day change?",
+      "ru": "Представь, что во время ожидания началось что-то мистическое или забавное. Как это изменило твой день?"
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я відкрив вікно, щоб провітрити кімнату.",
+      "en": "Situation: I opened the window to air out the room.",
+      "ru": "Ситуация: Я открыл окно, чтобы проветрить комнату."
+    },
+    "task": {
+      "uk": "Раптом у кімнату залетів неочікуваний гість. Хто це був і що сталося далі?",
+      "en": "Suddenly, an unexpected visitor flew in. Who was it and what happened next?",
+      "ru": "Вдруг в комнату залетел неожиданный гость. Кто это был и что случилось дальше?"
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я прокинувся рано вранці.",
+      "en": "Situation: I woke up early in the morning.",
+      "ru": "Ситуация: Я проснулся рано утром."
+    },
+    "task": {
+      "uk": "Але щось одразу здалося дивним… У чому річ? Розкажи історію.",
+      "en": "But something immediately felt strange... What was it? Tell the story.",
+      "ru": "Но что-то сразу показалось странным… В чём дело? Расскажи историю."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я переглядав свою пошту.",
+      "en": "Situation: I was checking my email.",
+      "ru": "Ситуация: Я проверял свою почту."
+    },
+    "task": {
+      "uk": "Серед листів ти побачив щось, що змусило серце битись швидше. Що це було?",
+      "en": "Among the emails, you saw something that made your heart race. What was it?",
+      "ru": "Среди писем ты увидел что-то, что заставило сердце забиться чаще. Что это было?"
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я готував сніданок.",
+      "en": "Situation: I was making breakfast.",
+      "ru": "Ситуация: Я готовил завтрак."
+    },
+    "task": {
+      "uk": "Інґредієнти почали поводитися незвично… Як розгорнулась ця дивна пригода?",
+      "en": "The ingredients started acting strangely… How did this odd adventure unfold?",
+      "ru": "Ингредиенты начали вести себя странно… Как развилось это странное приключение?"
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я поливав рослини.",
+      "en": "Situation: I was watering the plants.",
+      "ru": "Ситуация: Я поливал растения."
+    },
+    "task": {
+      "uk": "Одна з рослин відреагувала дуже несподівано. Що сталося?",
+      "en": "One of the plants reacted very unexpectedly. What happened?",
+      "ru": "Одно из растений отреагировало очень неожиданно. Что случилось?"
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я читав інструкцію до приладу.",
+      "en": "Situation: I was reading an appliance manual.",
+      "ru": "Ситуация: Я читал инструкцию к прибору."
+    },
+    "task": {
+      "uk": "Але в інструкції було щось дивне або таємниче. Що саме?",
+      "en": "But there was something strange or mysterious in the manual. What was it?",
+      "ru": "Но в инструкции было что-то странное или таинственное. Что именно?"
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я намагався заснути.",
+      "en": "Situation: I was trying to fall asleep.",
+      "ru": "Ситуация: Я пытался заснуть."
+    },
+    "task": {
+      "uk": "І тут почався дивний внутрішній монолог… або щось зовні порушило спокій?",
+      "en": "And then a strange inner monologue began… or something outside broke the silence?",
+      "ru": "И тут начался странный внутренний монолог… или что-то снаружи нарушило тишину?"
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я натрапив на стару записку в кишені.",
+      "en": "Situation: I found an old note in my pocket.",
+      "ru": "Ситуация: Я нашёл старую записку в кармане."
+    },
+    "task": {
+      "uk": "Що було в записці? І як це змусило тебе діяти?",
+      "en": "What was in the note? And how did it make you act?",
+      "ru": "Что было в записке? И как это заставило тебя действовать?"
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я пройшов повз вітрину магазину.",
+      "en": "Situation: I walked past a shop window.",
+      "ru": "Ситуация: Я прошёл мимо витрины магазина."
+    },
+    "task": {
+      "uk": "Але щось на вітрині змусило мене зупинитися. Що це було?",
+      "en": "But something in the display made me stop. What was it?",
+      "ru": "Но что-то на витрине заставило меня остановиться. Что это было?"
+    }
+  },
+  {
+    "id": "26",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я слухав розмову сусідів через стіну.",
+      "en": "Situation: I was overhearing the neighbors through the wall.",
+      "ru": "Ситуация: Я слушал разговор соседей через стену."
+    },
+    "task": {
+      "uk": "І раптом почув щось дуже незвичайне. Що саме і як ти відреагував?",
+      "en": "And suddenly you heard something very unusual. What was it and how did you react?",
+      "ru": "И вдруг ты услышал нечто очень необычное. Что это было и как ты отреагировал?"
+    }
+  },
+  {
+    "id": "27",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я шукав свій телефон.",
+      "en": "Situation: I was looking for my phone.",
+      "ru": "Ситуация: Я искал свой телефон."
+    },
+    "task": {
+      "uk": "Телефон знайшовся в дуже несподіваному місці. Де і чому це стало пригодою?",
+      "en": "The phone turned up in a very unexpected place. Where, and why was it an adventure?",
+      "ru": "Телефон нашёлся в очень неожиданном месте. Где и почему это стало приключением?"
+    }
+  },
+  {
+    "id": "28",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я купував хліб у пекарні.",
+      "en": "Situation: I was buying bread at the bakery.",
+      "ru": "Ситуация: Я покупал хлеб в пекарне."
+    },
+    "task": {
+      "uk": "Але булка виявилась не зовсім звичайною. Що з нею не так?",
+      "en": "But the loaf turned out to be not quite ordinary. What was strange about it?",
+      "ru": "Но булка оказалась не совсем обычной. Что с ней было не так?"
+    }
+  },
+  {
+    "id": "29",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я чекав, поки з’явиться зелений сигнал світлофора.",
+      "en": "Situation: I was waiting for the traffic light to turn green.",
+      "ru": "Ситуация: Я ждал, пока загорится зелёный сигнал светофора."
+    },
+    "task": {
+      "uk": "І раптом поруч відбувається щось сюрреалістичне… Що саме?",
+      "en": "Suddenly something surreal happens nearby… What is it?",
+      "ru": "И вдруг рядом происходит что-то сюрреалистичное… Что именно?"
+    }
+  },
+  {
+    "id": "30",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я витягнув чек з магазину.",
+      "en": "Situation: I pulled out a store receipt.",
+      "ru": "Ситуация: Я достал чек из магазина."
+    },
+    "task": {
+      "uk": "У чеку була дивна деталь. Що це було і що вона означала?",
+      "en": "There was a strange detail in the receipt. What was it and what did it mean?",
+      "ru": "В чеке была странная деталь. Что это было и что она означала?"
+    }
+  },
+  {
+    "id": "31",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я стояв у черзі в магазині.",
+      "en": "Situation: I was standing in line at the store.",
+      "ru": "Ситуация: Я стоял в очереди в магазине."
+    },
+    "task": {
+      "uk": "Щось у покупцеві перед тобою привернуло твою увагу. Що це було і як змінилася ситуація?",
+      "en": "Something about the person in front of you caught your attention. What was it and how did the situation change?",
+      "ru": "Что-то в человеке перед тобой привлекло твоё внимание. Что это было и как изменилась ситуация?"
+    }
+  },
+  {
+    "id": "32",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я чистив зуби.",
+      "en": "Situation: I was brushing my teeth.",
+      "ru": "Ситуация: Я чистил зубы."
+    },
+    "task": {
+      "uk": "Раптом у дзеркалі ти побачив щось несподіване. Що саме?",
+      "en": "Suddenly, you saw something unexpected in the mirror. What was it?",
+      "ru": "Вдруг ты увидел в зеркале что-то неожиданное. Что это было?"
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я годував кота.",
+      "en": "Situation: I was feeding the cat.",
+      "ru": "Ситуация: Я кормил кота."
+    },
+    "task": {
+      "uk": "Але він раптом почав поводитися дуже незвично. Що сталося далі?",
+      "en": "But suddenly it started acting very strangely. What happened next?",
+      "ru": "Но вдруг он начал вести себя очень странно. Что произошло дальше?"
+    }
+  },
+  {
+    "id": "34",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я слухав музику в навушниках.",
+      "en": "Situation: I was listening to music in my headphones.",
+      "ru": "Ситуация: Я слушал музыку в наушниках."
+    },
+    "task": {
+      "uk": "Одна пісня раптом містила дивне повідомлення. Що це було?",
+      "en": "One song suddenly contained a strange message. What was it?",
+      "ru": "Одна песня вдруг содержала странное сообщение. Что это было?"
+    }
+  },
+  {
+    "id": "35",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я відкрив банку з консервами.",
+      "en": "Situation: I opened a can of food.",
+      "ru": "Ситуация: Я открыл банку консервов."
+    },
+    "task": {
+      "uk": "У середині була не їжа. Що ж там виявилося?",
+      "en": "Inside, there wasn’t food. What was in there?",
+      "ru": "Внутри оказалась не еда. Что же там было?"
+    }
+  },
+  {
+    "id": "36",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я заповнював анкету.",
+      "en": "Situation: I was filling out a form.",
+      "ru": "Ситуация: Я заполнял анкету."
+    },
+    "task": {
+      "uk": "Але питання почали ставати дедалі дивнішими. Що за анкета це була насправді?",
+      "en": "But the questions got stranger and stranger. What kind of form was it really?",
+      "ru": "Но вопросы становились всё страннее. Что это была за анкета на самом деле?"
+    }
+  },
+  {
+    "id": "37",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я переглядав телевізійні новини.",
+      "en": "Situation: I was watching the news on TV.",
+      "ru": "Ситуация: Я смотрел новости по телевизору."
+    },
+    "task": {
+      "uk": "Один із сюжетів почав напряму звертатися до тебе. Що сталося далі?",
+      "en": "One report started speaking directly to you. What happened next?",
+      "ru": "Один сюжет начал обращаться прямо к тебе. Что произошло дальше?"
+    }
+  },
+  {
+    "id": "38",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я записував список покупок.",
+      "en": "Situation: I was making a shopping list.",
+      "ru": "Ситуация: Я писал список покупок."
+    },
+    "task": {
+      "uk": "Але потім список почав сам оновлюватись. Що додавалося і чому?",
+      "en": "But then the list started updating on its own. What was being added and why?",
+      "ru": "Но затем список начал обновляться сам. Что добавлялось и почему?"
+    }
+  },
+  {
+    "id": "39",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я закривав двері.",
+      "en": "Situation: I was closing the door.",
+      "ru": "Ситуация: Я закрывал дверь."
+    },
+    "task": {
+      "uk": "Двері раптом не хотіли зачинятися. У чому причина?",
+      "en": "The door suddenly wouldn’t close. What was the reason?",
+      "ru": "Дверь вдруг не хотела закрываться. В чём причина?"
+    }
+  },
+  {
+    "id": "40",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я переглядав сімейний альбом.",
+      "en": "Situation: I was flipping through a family photo album.",
+      "ru": "Ситуация: Я просматривал семейный альбом."
+    },
+    "task": {
+      "uk": "На одному фото ти побачив щось, чого ніколи не було. Що це було?",
+      "en": "In one photo, you saw something that was never there. What was it?",
+      "ru": "На одном фото ты увидел то, чего там никогда не было. Что это было?"
+    }
+  },
+  {
+    "id": "41",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я запізнився на автобус.",
+      "en": "Situation: I missed the bus.",
+      "ru": "Ситуация: Я опоздал на автобус."
+    },
+    "task": {
+      "uk": "Але це змінило весь мій день. Як саме?",
+      "en": "But it changed my whole day. How exactly?",
+      "ru": "Но это изменило весь мой день. Как именно?"
+    }
+  },
+  {
+    "id": "42",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я пил пилососом.",
+      "en": "Situation: I was vacuuming.",
+      "ru": "Ситуация: Я пылесосил."
+    },
+    "task": {
+      "uk": "Пилосос засмоктав щось абсолютно неймовірне. Що саме?",
+      "en": "The vacuum sucked up something absolutely unbelievable. What was it?",
+      "ru": "Пылесос всосал что-то совершенно невероятное. Что именно?"
+    }
+  },
+  {
+    "id": "43",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я розгрібав старі речі на горищі.",
+      "en": "Situation: I was sorting through old things in the attic.",
+      "ru": "Ситуация: Я разбирал старые вещи на чердаке."
+    },
+    "task": {
+      "uk": "І натрапив на об’єкт, який змінив хід подій. Що це було?",
+      "en": "And I found an object that changed everything. What was it?",
+      "ru": "И я наткнулся на предмет, который всё изменил. Что это было?"
+    }
+  },
+  {
+    "id": "44",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я відкрив холодильник.",
+      "en": "Situation: I opened the fridge.",
+      "ru": "Ситуация: Я открыл холодильник."
+    },
+    "task": {
+      "uk": "Всередині було щось, чого точно не мало бути. Що це таке?",
+      "en": "Inside was something that definitely shouldn't be there. What was it?",
+      "ru": "Внутри было что-то, чего точно не должно быть. Что это было?"
+    }
+  },
+  {
+    "id": "45",
+    "exercise_name": "MAKE_IT_FASCINATING",
+    "situation": {
+      "uk": "Ситуація: Я витирав пил з полиці.",
+      "en": "Situation: I was dusting a shelf.",
+      "ru": "Ситуация: Я вытирал пыль с полки."
+    },
+    "task": {
+      "uk": "Під шаром пилу зʼявилось щось загадкове. Розкажи цю історію.",
+      "en": "Under the layer of dust, something mysterious appeared. Tell the story.",
+      "ru": "Под слоем пыли появилось нечто загадочное. Расскажи эту историю."
+    }
+  }
+]

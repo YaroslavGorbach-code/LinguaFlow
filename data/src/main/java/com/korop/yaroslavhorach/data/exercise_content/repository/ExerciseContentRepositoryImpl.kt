@@ -59,6 +59,10 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.GENTLE_PERSUASION -> "situations/block_four/situations_GENTLE_PERSUASION.json"
                     ExerciseName.EMPATHIC_RESPONSE -> "situations/block_five/situations_EMPATHIC_RESPONSE.json"
                     ExerciseName.EMOTIONAL_TRANSLATOR -> "situations/block_five/situations_EMOTIONAL_TRANSLATOR.json"
+                    ExerciseName.CONSPIRACY_BUILDER -> "situations/block_six/situations_CONSPIRACY_BUILDER.json"
+                    ExerciseName.REVERSE_STORYTELLING -> "situations/block_six/situations_REVERSE_STORYTELLING.json"
+                    ExerciseName.MAKE_IT_FASCINATING -> "situations/block_six/situations_MAKE_IT_FASCINATING.json"
+                    ExerciseName.OVERDRAMATIC_TRIVIALITY -> "situations/block_six/situations_OVERDRAMATIC_TRIVIALITY.json"
                     else -> ""
                 }
 

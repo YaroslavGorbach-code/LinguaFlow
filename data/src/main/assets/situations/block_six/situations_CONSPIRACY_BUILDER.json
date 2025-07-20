@@ -1,0 +1,450 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У кавʼярні чай раптово подорожчав на 2 гривні.",
+      "en": "Event: Tea at the café suddenly became 2 hryvnias more expensive.",
+      "ru": "Событие: В кафе чай внезапно подорожал на 2 гривны."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "52",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У парку зникли всі голуби.",
+      "en": "Event: All pigeons disappeared from the park.",
+      "ru": "Событие: Из парка исчезли все голуби."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "53",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Усі банани в магазині зникли одночасно.",
+      "en": "Event: All bananas in the store disappeared at once.",
+      "ru": "Событие: Все бананы в магазине исчезли одновременно."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "54",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Інтернет по всьому району став повільнішим на 47%.",
+      "en": "Event: Internet in the whole neighborhood became 47% slower.",
+      "ru": "Событие: Интернет во всём районе стал медленнее на 47%."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "55",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Автомат з кавою тепер завжди видає саме латте, незалежно від вибору.",
+      "en": "Event: The coffee machine now always gives latte, no matter what you choose.",
+      "ru": "Событие: Кофемашина теперь всегда выдает латте, независимо от выбора."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "56",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Люди почали знаходити однакові записки з кодами в поштових скриньках.",
+      "en": "Event: People started finding identical notes with codes in their mailboxes.",
+      "ru": "Событие: Люди начали находить одинаковые записки с кодами в почтовых ящиках."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "57",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Вулицями почали пересуватись однакові фургони без номерів.",
+      "en": "Event: Identical unmarked vans began moving around the streets.",
+      "ru": "Событие: По улицам стали ездить одинаковые фургоны без номеров."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "58",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У всіх кав’ярнях перестали подавати цукор.",
+      "en": "Event: All cafés stopped serving sugar.",
+      "ru": "Событие: Во всех кафе перестали подавать сахар."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "59",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Голос у навігаторі несподівано змінився на дитячий.",
+      "en": "Event: The navigation voice suddenly changed to a child’s voice.",
+      "ru": "Событие: Голос в навигаторе внезапно стал детским."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "60",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У школах почали вивчати нову «універсальну мову», якої ніхто раніше не чув.",
+      "en": "Event: Schools started teaching a new 'universal language' no one had heard of before.",
+      "ru": "Событие: В школах начали преподавать новый 'универсальный язык', о котором никто не слышал."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "61",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: На банкоматах з’явилися нові кнопки без підпису.",
+      "en": "Event: New unlabeled buttons appeared on ATMs.",
+      "ru": "Событие: На банкоматах появились новые кнопки без надписей."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "62",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: На фонарях зʼявилися нові пристрої з антенами.",
+      "en": "Event: New devices with antennas appeared on streetlights.",
+      "ru": "Событие: На фонарях появились новые устройства с антеннами."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "63",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: На вулицях почастішали випадки синхронного чхання перехожих.",
+      "en": "Event: More people are sneezing in sync on the streets.",
+      "ru": "Событие: Люди на улицах начали синхронно чихать."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "64",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: З карт міста зник один район.",
+      "en": "Event: One district disappeared from city maps.",
+      "ru": "Событие: Один район исчез с городских карт."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "65",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У супермаркетах усі чеки стали однаково довгими — незалежно від покупок.",
+      "en": "Event: All receipts in supermarkets became the same length, no matter what you buy.",
+      "ru": "Событие: Все чеки в супермаркетах стали одной длины — независимо от покупок."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "66",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Додаток погоди почав показувати +23° незалежно від реальної температури.",
+      "en": "Event: The weather app now always shows +23°, regardless of actual temperature.",
+      "ru": "Событие: Приложение погоды теперь всегда показывает +23°, независимо от реальной температуры."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови навколо цієї події. Додай підозрілих персонажів, секретні мотиви та можливі глобальні наслідки.",
+      "en": "Invent a conspiracy theory around this event. Add suspicious characters, hidden motives, and possible global consequences.",
+      "ru": "Придумай теорию заговора вокруг этого события. Добавь подозрительных персонажей, скрытые мотивы и возможные глобальные последствия."
+    }
+  },
+  {
+    "id": "67",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Автомат із водою видає лише теплу воду.",
+      "en": "Event: The water dispenser only gives warm water.",
+      "ru": "Событие: Автомат с водой выдаёт только тёплую воду."
+    },
+    "task": {
+      "uk": "Вигадай теорію змови: чому автомат не дає холодної води? Хто стоїть за цим, яку вигоду вони отримують і що це може означати в глобальному масштабі? Побудуй повну картину змови.",
+      "en": "Invent a conspiracy theory: why doesn’t the machine provide cold water? Who could be behind it, what’s their gain, and what could it mean on a larger scale? Build the full picture.",
+      "ru": "Придумай теорию заговора: почему автомат не выдаёт холодную воду? Кто за этим стоит, какую выгоду они получают и что это может означать в глобальном масштабе? Построй полную картину заговора."
+    }
+  },
+  {
+    "id": "68",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У місті раптово заборонили вивіски синього кольору.",
+      "en": "Event: The city suddenly banned blue-colored signs.",
+      "ru": "Событие: В городе внезапно запретили вывески синего цвета."
+    },
+    "task": {
+      "uk": "Спробуй пояснити цю заборону через призму глобальної змови. Хто ініціатор? Як це пов’язано з контролем свідомості або прихованою пропагандою? Придумай переконливу версію.",
+      "en": "Try to explain this ban as part of a global conspiracy. Who initiated it? How is it connected to mind control or secret propaganda? Create a convincing version.",
+      "ru": "Объясни этот запрет как часть глобального заговора. Кто инициатор? Как это связано с контролем сознания или скрытой пропагандой? Придумай убедительную версию."
+    }
+  },
+  {
+    "id": "69",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Всі годинники у торговому центрі почали йти на 7 хвилин повільніше.",
+      "en": "Event: All clocks in the mall are running 7 minutes slow.",
+      "ru": "Событие: Все часы в торговом центре отстают на 7 минут."
+    },
+    "task": {
+      "uk": "Поясни, хто і навіщо сповільнює час у торговому центрі. Які у них мотиви? Як це впливає на поведінку людей? Придумай повну теорію змови.",
+      "en": "Explain who and why is slowing down time in the mall. What are their motives? How does this affect people’s behavior? Build a complete theory.",
+      "ru": "Объясни, кто и зачем замедляет время в торговом центре. Какие у них мотивы? Как это влияет на поведение людей? Построй полную теорию заговора."
+    }
+  },
+  {
+    "id": "70",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Додаток погоди постійно показує дощ, навіть коли сонячно.",
+      "en": "Event: The weather app always shows rain, even when it’s sunny.",
+      "ru": "Событие: Приложение погоды всегда показывает дождь, даже если солнечно."
+    },
+    "task": {
+      "uk": "Чому людей змушують думати, що йде дощ? Хто в цьому зацікавлений? Опиши змову, її виконавців і глобальні наслідки для мислення мас.",
+      "en": "Why are people made to think it’s raining? Who benefits from it? Describe the conspiracy, its agents, and the global effects on public mindset.",
+      "ru": "Зачем людям внушают, что идёт дождь? Кому это выгодно? Опиши заговор, его исполнителей и глобальные последствия для сознания масс."
+    }
+  },
+  {
+    "id": "71",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Картопля фрі у всіх кафе стала менш солоною.",
+      "en": "Event: French fries in all cafés became less salty.",
+      "ru": "Событие: Картошка фри во всех кафе стала менее солёной."
+    },
+    "task": {
+      "uk": "Хто хоче, щоб люди менше споживали солі? Який вплив це може мати на націю? Придумай теорію змови з участю корпорацій, уряду або позаземних сил.",
+      "en": "Who wants people to consume less salt? What effect could this have on the population? Create a conspiracy theory involving corporations, the government, or extraterrestrials.",
+      "ru": "Кто хочет, чтобы люди меньше употребляли соли? Как это может повлиять на нацию? Придумай теорию заговора с участием корпораций, правительства или инопланетян."
+    }
+  },
+  {
+    "id": "72",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У всіх магазинах перестали продавати чорні ручки.",
+      "en": "Event: All stores stopped selling black pens.",
+      "ru": "Событие: Все магазины перестали продавать чёрные ручки."
+    },
+    "task": {
+      "uk": "Чому чорні ручки зникли? Як це може впливати на документообіг, підписи чи контроль над населенням? Побудуй глибоку теорію.",
+      "en": "Why did black pens disappear? Could this affect signatures, document control, or population oversight? Build a deep theory.",
+      "ru": "Почему исчезли чёрные ручки? Может ли это повлиять на подписи, документооборот или контроль над населением? Построй глубинную теорию."
+    }
+  },
+  {
+    "id": "73",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Усі кавомашини почали працювати лише з додатком на телефоні.",
+      "en": "Event: All coffee machines now work only through a phone app.",
+      "ru": "Событие: Все кофемашины теперь работают только через приложение на телефоне."
+    },
+    "task": {
+      "uk": "Чи це зручність чи контроль? Хто примушує людей сканувати телефони заради кави? Розроби теорію змови з цифровим слідкуванням, великими даними та таємною корпорацією.",
+      "en": "Is this convenience or control? Who is forcing people to scan phones for coffee? Develop a conspiracy theory involving surveillance, big data, and a shadowy corporation.",
+      "ru": "Это удобство или контроль? Кто заставляет людей сканировать телефоны ради кофе? Разработай теорию заговора с цифровым слежением, большими данными и тайной корпорацией."
+    }
+  },
+  {
+    "id": "74",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У новинах більше не згадують котів.",
+      "en": "Event: The news has stopped mentioning cats.",
+      "ru": "Событие: В новостях больше не упоминают котов."
+    },
+    "task": {
+      "uk": "Що приховують від нас? Чому котів вилучили з інформаційного простору? Створи змову, де коти — або ключ до правди, або надто небезпечна істина.",
+      "en": "What are they hiding? Why have cats been erased from the media? Create a conspiracy where cats are either the key to the truth or too dangerous to mention.",
+      "ru": "Что от нас скрывают? Почему котов исключили из инфопространства? Придумай заговор, где коты — либо ключ к истине, либо слишком опасная правда."
+    }
+  },
+  {
+    "id": "75",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У метро почали грати однакову пісню весь день.",
+      "en": "Event: The same song plays in the subway all day.",
+      "ru": "Событие: В метро целый день играет одна и та же песня."
+    },
+    "task": {
+      "uk": "Чи може це бути спроба навіювання? Хто обрав цю пісню й навіщо? Вигадай змову з аудіоманіпуляціями, підсвідомим впливом і зміненою поведінкою.",
+      "en": "Could this be subliminal messaging? Who chose this song and why? Imagine a conspiracy involving audio manipulation, subconscious influence, and behavioral changes.",
+      "ru": "Может ли это быть внушением? Кто выбрал эту песню и зачем? Придумай заговор с аудиоманипуляциями, подсознательным влиянием и изменением поведения."
+    }
+  },
+  {
+    "id": "76",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У всіх ресторанах раптово перестали подавати лимон.",
+      "en": "Event: All restaurants suddenly stopped serving lemon.",
+      "ru": "Событие: Во всех ресторанах внезапно перестали подавать лимон."
+    },
+    "task": {
+      "uk": "Що сталося з лимонами? Хто зацікавлений у їх зникненні? Створи теорію, де лимони — стратегічний ресурс або символ опору, який треба прибрати.",
+      "en": "What happened to the lemons? Who wants them gone? Create a theory where lemons are either a strategic resource or a symbol of resistance to be suppressed.",
+      "ru": "Что случилось с лимонами? Кому выгодно их исчезновение? Придумай теорию, где лимоны — стратегический ресурс или символ сопротивления, который нужно убрать."
+    }
+  },
+  {
+    "id": "77",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Всі старі фільми на стримінгах замінили новими адаптаціями.",
+      "en": "Event: All old movies on streaming platforms have been replaced with new remakes.",
+      "ru": "Событие: Все старые фильмы на стримингах заменили новыми ремейками."
+    },
+    "task": {
+      "uk": "Хто переписує історію кіно — і навіщо? Створи змову про зміну культурної пам’яті, цензуру та нову ідеологію.",
+      "en": "Who is rewriting cinema history — and why? Build a theory about altered cultural memory, censorship, and ideological control.",
+      "ru": "Кто переписывает историю кино — и зачем? Придумай заговор о замене культурной памяти, цензуре и новой идеологии."
+    }
+  },
+  {
+    "id": "78",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У новому оновленні смартфона зник калькулятор.",
+      "en": "Event: The new phone update removed the calculator.",
+      "ru": "Событие: В новом обновлении телефона исчез калькулятор."
+    },
+    "task": {
+      "uk": "Чи намагаються змусити людей не рахувати? Кому вигідна математична неосвіченість? Створи змову з освітньою деградацією й цифровою залежністю.",
+      "en": "Are they trying to stop people from calculating? Who benefits from mathematical ignorance? Create a conspiracy involving educational decline and tech dependency.",
+      "ru": "Пытаются ли они заставить людей не считать? Кому выгодна математическая неграмотность? Придумай заговор с деградацией образования и цифровой зависимостью."
+    }
+  },
+  {
+    "id": "79",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Люди почали отримувати однакові сни про червону кнопку.",
+      "en": "Event: People started having the same dream about a red button.",
+      "ru": "Событие: Люди начали видеть одинаковый сон про красную кнопку."
+    },
+    "task": {
+      "uk": "Чи це випадковість, чи психічна атака? Опиши масштабну змову, що об’єднує людей на підсвідомому рівні — через сни, сигнали чи нейромережі.",
+      "en": "Is it coincidence or a mental attack? Describe a massive conspiracy connecting people on a subconscious level — through dreams, signals, or neural nets.",
+      "ru": "Это совпадение или психическая атака? Опиши масштабный заговор, соединяющий людей на подсознательном уровне — через сны, сигналы или нейросети."
+    }
+  },
+  {
+    "id": "80",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: У місті з’явились наліпки із QR-кодами без пояснень.",
+      "en": "Event: Stickers with QR codes appeared all over the city with no explanation.",
+      "ru": "Событие: По всему городу появились наклейки с QR-кодами без объяснений."
+    },
+    "task": {
+      "uk": "Що станеться, якщо їх відсканувати? Хто їх розмістив? Створи змову з елементами контролю, кодування поведінки чи вербування в таємну організацію.",
+      "en": "What happens if you scan them? Who placed them? Build a theory involving control, behavioral programming, or recruitment to a secret organization.",
+      "ru": "Что произойдёт, если их отсканировать? Кто их разместил? Придумай заговор с элементами контроля, программирования поведения или вербовки в тайную организацию."
+    }
+  },
+  {
+    "id": "81",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: Люди стали втрачати заряд батареї вдвічі швидше.",
+      "en": "Event: People’s phone batteries started draining twice as fast.",
+      "ru": "Событие: У людей заряд телефона стал садиться в два раза быстрее."
+    },
+    "task": {
+      "uk": "Чи це технічний збій, чи навмисна атака? Хто хоче залишити нас без зв’язку? Вигадай змову з цифровим відключенням і примусовим оновленням.",
+      "en": "Is it a glitch or a targeted attack? Who wants to cut us off from the network? Invent a conspiracy involving digital blackout and forced upgrades.",
+      "ru": "Это сбой или целенаправленная атака? Кто хочет оставить нас без связи? Придумай заговор с цифровым отключением и принудительным обновлением."
+    }
+  },
+  {
+    "id": "82",
+    "exercise_name": "CONSPIRACY_BUILDER",
+    "situation": {
+      "uk": "Подія: На всіх мікрофонах в офісах з’явились зелені індикатори, навіть коли вони вимкнені.",
+      "en": "Event: Green indicators appeared on all office mics even when turned off.",
+      "ru": "Событие: На всех микрофонах в офисах загорелись зелёные индикаторы, даже когда они выключены."
+    },
+    "task": {
+      "uk": "Чи справді вони вимкнені? Хто нас слухає і навіщо? Побудуй змову про тотальне стеження, контроль думок і технологічний нагляд.",
+      "en": "Are they really turned off? Who is listening and why? Build a conspiracy about total surveillance, thought control, and technological monitoring.",
+      "ru": "Действительно ли они выключены? Кто нас слушает и зачем? Придумай заговор о тотальной слежке, контроле мыслей и технологическом надзоре."
+    }
+  }
+]

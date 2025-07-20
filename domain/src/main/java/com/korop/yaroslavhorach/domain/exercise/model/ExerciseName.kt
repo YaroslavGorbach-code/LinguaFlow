@@ -39,7 +39,13 @@ enum class ExerciseName() {
 
     // 5
     EMPATHIC_RESPONSE,
-    EMOTIONAL_TRANSLATOR
+    EMOTIONAL_TRANSLATOR,
+
+    // 6
+    CONSPIRACY_BUILDER,
+    REVERSE_STORYTELLING,
+    MAKE_IT_FASCINATING,
+    OVERDRAMATIC_TRIVIALITY,
 }
 
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {

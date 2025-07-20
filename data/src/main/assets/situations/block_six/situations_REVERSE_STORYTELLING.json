@@ -1,0 +1,632 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тому я більше ніколи не їв кавуни.",
+      "en": "…and that’s why I never ate watermelons again.",
+      "ru": "…и поэтому я больше никогда не ел арбузы."
+    },
+    "task": {
+      "uk": "Придумай, що могло статися, щоб призвести до такого рішення. Історія може бути смішною, дивною або навіть трагічною.",
+      "en": "Imagine what could have happened to lead to such a decision. The story can be funny, weird, or even tragic.",
+      "ru": "Придумай, что могло произойти, чтобы привести к такому решению. История может быть смешной, странной или даже трагичной."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому ми провели всю ніч на даху.",
+      "en": "…and that’s why we spent the whole night on the roof.",
+      "ru": "…и поэтому мы провели всю ночь на крыше."
+    },
+    "task": {
+      "uk": "Придумай, які події змусили героїв опинитися на даху. Що сталося до цього?",
+      "en": "Invent the events that led the characters to end up on a rooftop. What happened before that?",
+      "ru": "Придумай события, которые привели героев на крышу. Что случилось до этого?"
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ось чому я зараз працюю у цирку.",
+      "en": "…and that’s why I now work at a circus.",
+      "ru": "…и вот почему теперь я работаю в цирке."
+    },
+    "task": {
+      "uk": "Поясни, як твій герой потрапив у таку незвичну професію. Що передувало цьому рішенню?",
+      "en": "Explain how your character ended up in such an unusual profession. What led up to this?",
+      "ru": "Объясни, как герой оказался в такой необычной профессии. Что привело к этому?"
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому ми стали друзями з голубом.",
+      "en": "…and that’s how we became friends with a pigeon.",
+      "ru": "…и вот как мы подружились с голубем."
+    },
+    "task": {
+      "uk": "Вигадай дивовижну або кумедну історію, яка завершиться цією фразою.",
+      "en": "Create a surprising or funny story that ends with this phrase.",
+      "ru": "Придумай удивительную или смешную историю, которая закончится этой фразой."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і в цей момент я зрозумів, що це був не мій кіт.",
+      "en": "…and in that moment I realized it wasn’t my cat.",
+      "ru": "…и в этот момент я понял, что это был не мой кот."
+    },
+    "task": {
+      "uk": "Опиши ситуацію, яка виглядала звично — аж до несподіваного повороту. Як герой помилився?",
+      "en": "Describe a situation that seemed normal — until the twist. How did the character make such a mistake?",
+      "ru": "Опиши ситуацию, которая казалась обычной — до внезапного поворота. Как герой так ошибся?"
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми втекли, щойно почали світитися лампочки.",
+      "en": "…and we ran away as soon as the light bulbs started glowing.",
+      "ru": "…и мы сбежали, как только лампочки начали светиться."
+    },
+    "task": {
+      "uk": "Що було не так з цими лампочками? Побудуй напружену або фантастичну історію.",
+      "en": "What was wrong with those light bulbs? Build a suspenseful or sci-fi story.",
+      "ru": "Что не так было с этими лампочками? Построй напряжённую или фантастическую историю."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і так я став офіційним дегустатором морозива.",
+      "en": "…and that’s how I became an official ice cream taster.",
+      "ru": "…и так я стал официальным дегустатором мороженого."
+    },
+    "task": {
+      "uk": "Придумай життєвий шлях, поворот долі чи випадковість, яка до цього привела.",
+      "en": "Invent the life path, twist of fate, or coincidence that led to this.",
+      "ru": "Придумай жизненный путь, поворот судьбы или случайность, приведшую к этому."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тому в нас у ванній стоїть намет.",
+      "en": "…and that’s why we now have a tent in our bathroom.",
+      "ru": "…и поэтому у нас в ванной теперь стоит палатка."
+    },
+    "task": {
+      "uk": "Придумай дивну або кумедну причину, яка могла призвести до такої ситуації.",
+      "en": "Come up with a strange or funny reason that could lead to this situation.",
+      "ru": "Придумай странную или забавную причину, которая могла привести к такой ситуации."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ось чому я прокинувся в кімнаті, повній повітряних кульок.",
+      "en": "…and that’s why I woke up in a room full of balloons.",
+      "ru": "…и вот почему я проснулся в комнате, полной воздушных шаров."
+    },
+    "task": {
+      "uk": "Поясни, як герой потрапив у таке незвичне місце. Що сталося перед цим?",
+      "en": "Explain how the character ended up in such a strange place. What happened before?",
+      "ru": "Объясни, как герой оказался в таком необычном месте. Что случилось до этого?"
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми зрозуміли, що це був не музей.",
+      "en": "…and we realized it wasn’t a museum.",
+      "ru": "…и мы поняли, что это был не музей."
+    },
+    "task": {
+      "uk": "Що змусило героїв так подумати? Що вони побачили, що перевернуло їхні очікування?",
+      "en": "What made the characters think that? What did they see that shattered their expectations?",
+      "ru": "Что заставило героев так подумать? Что они увидели, что разрушило их ожидания?"
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме так я став голосом супермаркету.",
+      "en": "…and that’s how I became the voice of the supermarket.",
+      "ru": "…и так я стал голосом супермаркета."
+    },
+    "task": {
+      "uk": "Як сталося, що герой почав озвучувати оголошення в магазині? Придумай неочікуваний шлях.",
+      "en": "How did the character end up voicing supermarket announcements? Invent an unexpected path.",
+      "ru": "Как герой стал озвучивать объявления в супермаркете? Придумай неожиданный путь."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми зрозуміли, що це був не наш автобус.",
+      "en": "…and we realized it wasn’t our bus.",
+      "ru": "…и мы поняли, что это был не наш автобус."
+    },
+    "task": {
+      "uk": "Що привело героїв у цей транспорт? Чому вони не помітили помилки раніше?",
+      "en": "What led the characters to this vehicle? Why didn’t they notice the mistake earlier?",
+      "ru": "Что привело героев в этот транспорт? Почему они не заметили ошибку раньше?"
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тоді бабуся запропонувала викликати гелікоптер.",
+      "en": "…and then grandma suggested calling a helicopter.",
+      "ru": "…и тогда бабушка предложила вызвать вертолёт."
+    },
+    "task": {
+      "uk": "Що могло трапитися, що навіть бабуся вирішила вдатися до радикальних дій? Побудуй історію з несподіваним розвитком.",
+      "en": "What could have happened that even grandma suggested such a radical move? Build a story with unexpected twists.",
+      "ru": "Что могло случиться, что даже бабушка предложила столь радикальное решение? Построй историю с неожиданными поворотами."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому ми закопали це під деревом.",
+      "en": "…and that’s why we buried it under the tree.",
+      "ru": "…и поэтому мы закопали это под деревом."
+    },
+    "task": {
+      "uk": "Що саме було закопано? Чому? Придумай історію, в якій фінал виглядає єдино правильним рішенням.",
+      "en": "What exactly was buried? Why? Create a story where the ending feels like the only right thing to do.",
+      "ru": "Что именно было закопано? Почему? Придумай историю, где финал кажется единственно верным решением."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тоді ми зрозуміли, що це був весільний торт, а не експонат.",
+      "en": "…and then we realized it was a wedding cake, not an exhibit.",
+      "ru": "…и тогда мы поняли, что это был свадебный торт, а не экспонат."
+    },
+    "task": {
+      "uk": "Як герої потрапили в таку плутанину? Придумай історію з кумедним непорозумінням.",
+      "en": "How did the characters end up in such a mix-up? Come up with a story full of funny misunderstandings.",
+      "ru": "Как герои оказались в такой путанице? Придумай историю с весёлым недоразумением."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме так я опинився у костюмі динозавра посеред бібліотеки.",
+      "en": "…and that’s how I ended up in a dinosaur costume in the middle of the library.",
+      "ru": "…и вот как я оказался в костюме динозавра посреди библиотеки."
+    },
+    "task": {
+      "uk": "Поясни, які події призвели до цього дивного фіналу. Чи це була помилка, виклик, чи щось ще?",
+      "en": "Explain what events led to this strange ending. Was it a mistake, a dare, or something else?",
+      "ru": "Объясни, какие события привели к такому странному финалу. Это была ошибка, спор или нечто другое?"
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тоді ми всі вирішили переїхати у вантажівку з морозивом.",
+      "en": "…and then we all decided to move into the ice cream truck.",
+      "ru": "…и тогда мы все решили переехать в фургон с мороженым."
+    },
+    "task": {
+      "uk": "Придумай історію, яка пояснює, чому вантажівка з морозивом стала новим домом.",
+      "en": "Come up with a story explaining why the ice cream truck became the new home.",
+      "ru": "Придумай историю, объясняющую, почему фургон с мороженым стал новым домом."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тепер ми — офіційна команда зі змагань із перевдягання.",
+      "en": "…and now we’re the official costume-changing competition team.",
+      "ru": "…и теперь мы — официальная команда по переодеваниям."
+    },
+    "task": {
+      "uk": "Яка історія привела героїв до такої незвичної команди? Чи був у цьому випадок?",
+      "en": "What story led the characters to such an unusual team? Was it by accident or by design?",
+      "ru": "Какая история привела героев в такую необычную команду? Это было случайно или специально?"
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і з того часу я щороку святкую День Бруківки.",
+      "en": "…and ever since, I celebrate Cobblestone Day every year.",
+      "ru": "…и с тех пор я каждый год праздную День Брусчатки."
+    },
+    "task": {
+      "uk": "Що за подія могла надати бруківці такого значення в житті героя?",
+      "en": "What could have happened that gave cobblestones such significance in the character’s life?",
+      "ru": "Что могло произойти, чтобы брусчатка стала такой важной в жизни героя?"
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому я більше не ношу червоні шкарпетки.",
+      "en": "…and that’s why I never wear red socks again.",
+      "ru": "…и поэтому я больше никогда не ношу красные носки."
+    },
+    "task": {
+      "uk": "Придумай історію, яка змусила героя ухвалити таке категоричне рішення.",
+      "en": "Invent a story that made the character make such a strong decision.",
+      "ru": "Придумай историю, которая заставила героя принять такое категоричное решение."
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми встигли повернути олівці до того, як хтось помітив.",
+      "en": "…and we returned the pencils just before anyone noticed.",
+      "ru": "…и мы успели вернуть карандаши до того, как кто-то заметил."
+    },
+    "task": {
+      "uk": "Що сталося з олівцями? Чому вони були такі важливі?",
+      "en": "What happened with the pencils? Why were they so important?",
+      "ru": "Что случилось с карандашами? Почему они были так важны?"
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тому мене викликали на розмову до директора.",
+      "en": "…and that’s why I was called in to speak with the principal.",
+      "ru": "…и поэтому меня вызвали к директору."
+    },
+    "task": {
+      "uk": "Що зробив герой, щоб це сталося? Чи була це випадковість чи навмисна дія?",
+      "en": "What did the character do for that to happen? Was it an accident or intentional?",
+      "ru": "Что сделал герой, чтобы это произошло? Это было случайно или специально?"
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тепер у нас є офіційне свято — День Загубленої Ложки.",
+      "en": "…and now we have an official holiday — Lost Spoon Day.",
+      "ru": "…и теперь у нас есть официальный праздник — День Потерянной Ложки."
+    },
+    "task": {
+      "uk": "Придумай, яка подія дала початок такій дивній традиції.",
+      "en": "Invent the event that started such a strange tradition.",
+      "ru": "Придумай событие, которое положило начало такой странной традиции."
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ось чому всі подумали, що я шпигун.",
+      "en": "…and that’s why everyone thought I was a spy.",
+      "ru": "…и вот почему все подумали, что я шпион."
+    },
+    "task": {
+      "uk": "Опиши серію випадків або дій, які могли справити таке враження.",
+      "en": "Describe a series of events or actions that could give such an impression.",
+      "ru": "Опиши серию событий или действий, которые могли создать такое впечатление."
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому я заснув на уроці, обіймаючи глобус.",
+      "en": "…and that’s why I fell asleep in class hugging a globe.",
+      "ru": "…и поэтому я заснул на уроке, обнимая глобус."
+    },
+    "task": {
+      "uk": "Яка дивна або виснажлива історія могла цьому передувати?",
+      "en": "What strange or exhausting story could have come before that?",
+      "ru": "Какая странная или утомительная история могла этому предшествовать?"
+    }
+  },
+  {
+    "id": "26",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми дізналися, що це була не просто піца.",
+      "en": "…and we found out it wasn’t just a pizza.",
+      "ru": "…и мы узнали, что это была не просто пицца."
+    },
+    "task": {
+      "uk": "Що насправді виявилося цією піцою? Побудуй інтригуючу історію з неочікуваним відкриттям.",
+      "en": "What did the pizza turn out to be? Build a story with a surprising twist.",
+      "ru": "Что на самом деле оказалось этой пиццей? Построй историю с неожиданным поворотом."
+    }
+  },
+  {
+    "id": "27",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому ми всі почали говорити шепотом.",
+      "en": "…and that’s why we all started whispering.",
+      "ru": "…и поэтому мы все начали говорить шёпотом."
+    },
+    "task": {
+      "uk": "Що змусило всіх перейти на шепіт? Опиши ланцюг подій.",
+      "en": "What made everyone start whispering? Describe the chain of events.",
+      "ru": "Что заставило всех говорить шёпотом? Опиши цепочку событий."
+    }
+  },
+  {
+    "id": "28",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми ніколи більше не грали в шахи на даху.",
+      "en": "…and we never played rooftop chess again.",
+      "ru": "…и мы больше никогда не играли в шахматы на крыше."
+    },
+    "task": {
+      "uk": "Що сталося під час цієї гри? Вигадуй смішну або драматичну історію.",
+      "en": "What happened during that game? Create a funny or dramatic story.",
+      "ru": "Что произошло во время этой игры? Придумай смешную или драматичную историю."
+    }
+  },
+  {
+    "id": "29",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому я відправив листа сам собі в майбутнє.",
+      "en": "…and that’s why I sent a letter to my future self.",
+      "ru": "…и поэтому я отправил письмо себе в будущее."
+    },
+    "task": {
+      "uk": "Що сталося, що герой вирішив звернутися до себе в майбутньому?",
+      "en": "What happened that made the character write to their future self?",
+      "ru": "Что произошло, что герой решил написать себе в будущее?"
+    }
+  },
+  {
+    "id": "30",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому ця пісня стала нашим гімном на виживання.",
+      "en": "…and that’s why this song became our survival anthem.",
+      "ru": "…и поэтому эта песня стала нашим гимном выживания."
+    },
+    "task": {
+      "uk": "Що за ситуація об’єднала людей настільки, що пісня стала символом? Опиши все від початку.",
+      "en": "What kind of situation united people so much that a song became their symbol? Describe it from the beginning.",
+      "ru": "Что за ситуация так объединила людей, что песня стала символом? Опиши всё с начала."
+    }
+  },
+  {
+    "id": "31",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми всі отримали офіційний титул — почесні рятівники кактусів.",
+      "en": "…and we all received the official title — Honorary Cactus Rescuers.",
+      "ru": "…и мы все получили официальный титул — Почётные Спасатели Кактусов."
+    },
+    "task": {
+      "uk": "Вигадуй події, що призвели до порятунку кактусів та визнання героїв.",
+      "en": "Invent the events that led to saving the cacti and earning recognition.",
+      "ru": "Придумай события, которые привели к спасению кактусов и признанию героев."
+    }
+  },
+  {
+    "id": "32",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тому кожен з нас отримав по зламаному будильнику.",
+      "en": "…and that’s why each of us got a broken alarm clock.",
+      "ru": "…и поэтому каждый из нас получил по сломанному будильнику."
+    },
+    "task": {
+      "uk": "Чому саме будильники? Чому вони всі зламані? Побудуй історію навколо цього.",
+      "en": "Why alarm clocks? Why are they all broken? Build a story around it.",
+      "ru": "Почему будильники? Почему они все сломаны? Построй вокруг этого историю."
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ось чому ми всі почали ходити задом наперед.",
+      "en": "…and that’s why we all started walking backwards.",
+      "ru": "…и вот почему мы все начали ходить задом наперёд."
+    },
+    "task": {
+      "uk": "Що за обставини змусили всіх змінити напрям руху?",
+      "en": "What circumstances made everyone change the way they walk?",
+      "ru": "Какие обстоятельства заставили всех изменить направление движения?"
+    }
+  },
+  {
+    "id": "34",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і ми зрозуміли, що цей папуга — не просто папуга.",
+      "en": "…and we realized this parrot wasn’t just a parrot.",
+      "ru": "…и мы поняли, что этот попугай — не просто попугай."
+    },
+    "task": {
+      "uk": "Що за таємниця ховалася за пір’ям цього птаха?",
+      "en": "What secret was hidden behind this bird’s feathers?",
+      "ru": "Какая тайна скрывалась за перьями этой птицы?"
+    }
+  },
+  {
+    "id": "35",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і з того моменту ми почали носити шоломи навіть у душі.",
+      "en": "…and from that moment, we started wearing helmets even in the shower.",
+      "ru": "…и с того момента мы начали носить шлемы даже в душе."
+    },
+    "task": {
+      "uk": "Придумай абсурдну або небезпечну ситуацію, яка до цього призвела.",
+      "en": "Invent an absurd or dangerous situation that led to this.",
+      "ru": "Придумай абсурдную или опасную ситуацию, которая к этому привела."
+    }
+  },
+  {
+    "id": "36",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тому я більше ніколи не сміюся з жартів про жаб.",
+      "en": "…and that’s why I never laugh at frog jokes again.",
+      "ru": "…и поэтому я больше никогда не смеюсь над шутками про лягушек."
+    },
+    "task": {
+      "uk": "Що за історія змінила твоє ставлення до жаб назавжди?",
+      "en": "What story changed your attitude toward frogs forever?",
+      "ru": "Какая история изменила твоё отношение к лягушкам навсегда?"
+    }
+  },
+  {
+    "id": "37",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тоді я вирішив — досить бути гномом.",
+      "en": "…and that’s when I decided — enough being a gnome.",
+      "ru": "…и тогда я решил — хватит быть гномом."
+    },
+    "task": {
+      "uk": "Що за обставини або події змусили героя залишити це «життя»?",
+      "en": "What events or circumstances made the character leave this 'life'?",
+      "ru": "Какие события или обстоятельства заставили героя покончить с этим 'образом жизни'?"
+    }
+  },
+  {
+    "id": "38",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тому всі огірки в нашому місті — сині.",
+      "en": "…and that’s why all cucumbers in our town are blue.",
+      "ru": "…и поэтому все огурцы в нашем городе — синие."
+    },
+    "task": {
+      "uk": "Придумай фантастичну або науково-комічну історію, яка це пояснює.",
+      "en": "Invent a fantastical or sci-fi comic story that explains this.",
+      "ru": "Придумай фантастическую или научно-комичную историю, объясняющую это."
+    }
+  },
+  {
+    "id": "39",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і все через одну крихітну канцелярську скріпку.",
+      "en": "…and it was all because of one tiny paperclip.",
+      "ru": "…и всё из-за одной крошечной скрепки."
+    },
+    "task": {
+      "uk": "Як одна скріпка запустила цілу хвилю подій? Побудуй історію.",
+      "en": "How did one paperclip start a whole chain of events? Build the story.",
+      "ru": "Как одна скрепка запустила целую цепочку событий? Построй историю."
+    }
+  },
+  {
+    "id": "40",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тоді ми побачили — це була не ковдра, а портал.",
+      "en": "…and then we saw — it wasn’t a blanket, it was a portal.",
+      "ru": "…и тогда мы увидели — это было не одеяло, а портал."
+    },
+    "task": {
+      "uk": "Придумай, як вони це виявили і що було до цього відкриття.",
+      "en": "Create a story about how they discovered it and what happened before.",
+      "ru": "Придумай, как они это обнаружили и что произошло до открытия."
+    }
+  },
+  {
+    "id": "41",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і після цього я назавжди перестав довіряти котам.",
+      "en": "…and after that, I stopped trusting cats forever.",
+      "ru": "…и после этого я навсегда перестал доверять котам."
+    },
+    "task": {
+      "uk": "Що накоїв кіт? Побудуй історію із зрадою, хитрощами чи магією.",
+      "en": "What did the cat do? Build a story of betrayal, trickery, or magic.",
+      "ru": "Что натворил кот? Построй историю с предательством, хитростью или магией."
+    }
+  },
+  {
+    "id": "42",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і тепер у моїй кімнаті стоїть гігантський тостер.",
+      "en": "…and now there’s a giant toaster in my room.",
+      "ru": "…и теперь в моей комнате стоит гигантский тостер."
+    },
+    "task": {
+      "uk": "Як тостер опинився в кімнаті? Чия це ідея і для чого?",
+      "en": "How did the toaster get there? Whose idea was it and why?",
+      "ru": "Как тостер оказался в комнате? Чья это была идея и зачем?"
+    }
+  },
+  {
+    "id": "43",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тоді ми зрозуміли, що той «звичайний» пенал — насправді сейф.",
+      "en": "…and that’s when we realized that the 'ordinary' pencil case was actually a safe.",
+      "ru": "…и тогда мы поняли, что тот 'обычный' пенал — на самом деле сейф."
+    },
+    "task": {
+      "uk": "Що було всередині й як вони це виявили? Побудуй історію.",
+      "en": "What was inside and how did they find out? Build a story.",
+      "ru": "Что было внутри и как они это поняли? Построй историю."
+    }
+  },
+  {
+    "id": "44",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і з того часу мене кличуть просто — Кукурудзяний Король.",
+      "en": "…and since then, they just call me — the Corn King.",
+      "ru": "…и с тех пор меня зовут просто — Кукурузный Король."
+    },
+    "task": {
+      "uk": "Що за пригоди зробили тебе королем кукурудзи?",
+      "en": "What adventures made you the Corn King?",
+      "ru": "Какие приключения сделали тебя Кукурузным Королём?"
+    }
+  },
+  {
+    "id": "45",
+    "exercise_name": "REVERSE_STORYTELLING",
+    "situation": {
+      "uk": "…і саме тоді на небі з’явився напис: “Це ще не кінець.”",
+      "en": "…and that’s when a message appeared in the sky: “This is not the end.”",
+      "ru": "…и тогда в небе появилось послание: “Это ещё не конец.”"
+    },
+    "task": {
+      "uk": "Що трапилось до того, як з’явилося загадкове послання? Хто його надіслав?",
+      "en": "What happened before the mysterious message appeared? Who sent it?",
+      "ru": "Что произошло до появления загадочного послания? Кто его отправил?"
+    }
+  }
+]

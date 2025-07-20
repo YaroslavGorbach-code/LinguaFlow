@@ -1,0 +1,632 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Я розлив каву на підлогу.",
+      "en": "Event: I spilled coffee on the floor.",
+      "ru": "Событие: Я пролил кофе на пол."
+    },
+    "task": {
+      "uk": "Зроби з цього драму вселенського масштабу. Перетвори подію на емоційну катастрофу.",
+      "en": "Turn this into a world-shattering drama. Make the event feel like an emotional catastrophe.",
+      "ru": "Преврати это в драму вселенского масштаба. Сделай событие эмоциональной катастрофой."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Упав шматочок піци обличчям донизу.",
+      "en": "Event: A slice of pizza fell face down.",
+      "ru": "Событие: Кусок пиццы упал начинкой вниз."
+    },
+    "task": {
+      "uk": "Опиши цю трагедію з пристрастю, як фінал великої епохи.",
+      "en": "Describe this tragedy with passion, like the end of a grand era.",
+      "ru": "Опиши эту трагедию с пафосом, как конец великой эпохи."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Закінчився інтернет на телефоні.",
+      "en": "Event: Mobile internet ran out.",
+      "ru": "Событие: Закончился интернет на телефоне."
+    },
+    "task": {
+      "uk": "Розкажи, як це зруйнувало твоє життя і плани.",
+      "en": "Tell how it ruined your life and plans.",
+      "ru": "Расскажи, как это разрушило твою жизнь и планы."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Мій телефон впав між подушками дивана.",
+      "en": "Event: My phone slipped between the sofa cushions.",
+      "ru": "Событие: Мой телефон провалился между подушками дивана."
+    },
+    "task": {
+      "uk": "Зобрази це як драматичну пригоду, гідну кінофільму.",
+      "en": "Portray it as a dramatic adventure worthy of a movie.",
+      "ru": "Опиши это как драматическое приключение, достойное фильма."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Я загубив другу шкарпетку.",
+      "en": "Event: I lost the second sock.",
+      "ru": "Событие: Я потерял второй носок."
+    },
+    "task": {
+      "uk": "Створи монолог з болем, зрадою і глибоким змістом.",
+      "en": "Create a monologue full of pain, betrayal, and deep meaning.",
+      "ru": "Создай монолог с болью, предательством и глубоким смыслом."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Зламався олівець під час письма.",
+      "en": "Event: The pencil broke while I was writing.",
+      "ru": "Событие: Карандаш сломался во время письма."
+    },
+    "task": {
+      "uk": "Перетвори це на метафору про крихкість людських надій.",
+      "en": "Turn it into a metaphor for the fragility of human hopes.",
+      "ru": "Преврати это в метафору о хрупкости человеческих надежд."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Забув пароль до Wi-Fi.",
+      "en": "Event: I forgot the Wi-Fi password.",
+      "ru": "Событие: Я забыл пароль от Wi-Fi."
+    },
+    "task": {
+      "uk": "Опиши цю втрату як початок темної епохи.",
+      "en": "Describe this loss as the beginning of a dark era.",
+      "ru": "Опиши эту потерю как начало тёмной эпохи."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Закінчились серветки.",
+      "en": "Event: Ran out of napkins.",
+      "ru": "Событие: Закончились салфетки."
+    },
+    "task": {
+      "uk": "Уяви, що це зруйнувало весь обід. Розкажи з гіперболою.",
+      "en": "Imagine it ruined the entire meal. Tell it with exaggeration.",
+      "ru": "Представь, что это разрушило весь обед. Расскажи с гиперболой."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Хтось зʼїв останнє печиво.",
+      "en": "Event: Someone ate the last cookie.",
+      "ru": "Событие: Кто-то съел последнее печенье."
+    },
+    "task": {
+      "uk": "Розкажи, як це зруйнувало довіру в родині.",
+      "en": "Explain how it shattered the trust in your household.",
+      "ru": "Расскажи, как это разрушило доверие в семье."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Пролунала реклама посеред відео.",
+      "en": "Event: An ad interrupted the video.",
+      "ru": "Событие: Реклама прервала видео."
+    },
+    "task": {
+      "uk": "Переосмисли це як акт інформаційного терору.",
+      "en": "Reframe it as an act of informational terrorism.",
+      "ru": "Переосмысли это как акт информационного террора."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Зникла ложка зі столу.",
+      "en": "Event: A spoon disappeared from the table.",
+      "ru": "Событие: Ложка исчезла со стола."
+    },
+    "task": {
+      "uk": "Вигадай змову й виклади її як шокуюче зізнання.",
+      "en": "Invent a conspiracy and present it as a shocking confession.",
+      "ru": "Придумай заговор и изложи его как шокирующее признание."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Телефон не зарядився за ніч.",
+      "en": "Event: The phone didn’t charge overnight.",
+      "ru": "Событие: Телефон не зарядился за ночь."
+    },
+    "task": {
+      "uk": "Зобрази це як особисту трагедію, що змінила твоє завтра.",
+      "en": "Portray it as a personal tragedy that changed your tomorrow.",
+      "ru": "Опиши это как личную трагедию, изменившую твоё завтра."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Раптово скінчилась гаряча вода.",
+      "en": "Event: Hot water suddenly ran out.",
+      "ru": "Событие: Вдруг закончилась горячая вода."
+    },
+    "task": {
+      "uk": "Опиши боротьбу з холодом як епічну битву.",
+      "en": "Describe the struggle with cold as an epic battle.",
+      "ru": "Опиши борьбу с холодом как эпическую битву."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Я відкрив банан, а він виявився недозрілим.",
+      "en": "Event: I peeled a banana, and it was unripe.",
+      "ru": "Событие: Я открыл банан, а он оказался неспелым."
+    },
+    "task": {
+      "uk": "Зобрази своє розчарування як втрату сенсу буття.",
+      "en": "Portray your disappointment as the loss of life's meaning.",
+      "ru": "Опиши своё разочарование как потерю смысла жизни."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Молоко в каші було занадто холодним.",
+      "en": "Event: The milk in my cereal was too cold.",
+      "ru": "Событие: Молоко в каше было слишком холодным."
+    },
+    "task": {
+      "uk": "Розкажи, як це зруйнувало твій ранок і віру в гармонію світу.",
+      "en": "Explain how it ruined your morning and your faith in the world's harmony.",
+      "ru": "Расскажи, как это разрушило твоё утро и веру в гармонию мира."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Я наступив у калюжу просто перед входом.",
+      "en": "Event: I stepped into a puddle right before entering.",
+      "ru": "Событие: Я наступил в лужу прямо перед входом."
+    },
+    "task": {
+      "uk": "Розкажи, як ця калюжа зламала тобі настрій і віру в удачу.",
+      "en": "Describe how this puddle broke your mood and your faith in luck.",
+      "ru": "Расскажи, как эта лужа сломала тебе настроение и веру в удачу."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Забув поставити чайник.",
+      "en": "Event: I forgot to turn on the kettle.",
+      "ru": "Событие: Я забыл включить чайник."
+    },
+    "task": {
+      "uk": "Розкажи, як це зруйнувало твою надію на спокійний ранок.",
+      "en": "Explain how it ruined your hope for a peaceful morning.",
+      "ru": "Объясни, как это разрушило твою надежду на спокойное утро."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Пошта на телефоні зависла.",
+      "en": "Event: The email app on my phone froze.",
+      "ru": "Событие: Приложение почты на телефоне зависло."
+    },
+    "task": {
+      "uk": "Описуй це як кіберапокаліпсис особистого масштабу.",
+      "en": "Describe it as a personal-scale cyber apocalypse.",
+      "ru": "Опиши это как киберапокалипсис личного масштаба."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Ліфт приїхав на мій поверх, але був повний.",
+      "en": "Event: The elevator arrived at my floor but was full.",
+      "ru": "Событие: Лифт приехал на мой этаж, но был полный."
+    },
+    "task": {
+      "uk": "Розкажи, як це стало моментом глибокої життєвої кризи.",
+      "en": "Explain how it became a moment of deep personal crisis.",
+      "ru": "Расскажи, как это стало моментом глубочайшего кризиса."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Забув увімкнути улюблений серіал вчасно.",
+      "en": "Event: Forgot to turn on my favorite series on time.",
+      "ru": "Событие: Забыл включить любимый сериал вовремя."
+    },
+    "task": {
+      "uk": "Описуй це як катастрофу в культурному житті.",
+      "en": "Describe it as a catastrophe in your cultural life.",
+      "ru": "Опиши это как катастрофу в культурной жизни."
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Зв'язки шнурків розв’язалися на вулиці.",
+      "en": "Event: My shoelaces came undone on the street.",
+      "ru": "Событие: Шнурки развязались на улице."
+    },
+    "task": {
+      "uk": "Зобрази це як підступ долі, що змусив усе зупинитися.",
+      "en": "Portray it as fate’s trick that made everything fall apart.",
+      "ru": "Опиши это как злую шутку судьбы, из-за которой всё рухнуло."
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Упала виделка на підлогу.",
+      "en": "Event: A fork fell on the floor.",
+      "ru": "Событие: Вилка упала на пол."
+    },
+    "task": {
+      "uk": "Розкажи це як початок хаосу на кухні.",
+      "en": "Tell it as the beginning of kitchen chaos.",
+      "ru": "Расскажи об этом как о начале кухонного хаоса."
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Порожній холодильник вночі.",
+      "en": "Event: The fridge was empty at night.",
+      "ru": "Событие: Пустой холодильник ночью."
+    },
+    "task": {
+      "uk": "Зобрази це як душевну порожнечу, втілену в реальність.",
+      "en": "Portray it as emotional emptiness made real.",
+      "ru": "Опиши это как душевную пустоту, воплощённую в реальность."
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Папір для принтера закінчився на останньому аркуші.",
+      "en": "Event: The printer paper ran out on the last page.",
+      "ru": "Событие: Бумага в принтере закончилась на последнем листе."
+    },
+    "task": {
+      "uk": "Описуй це як момент повного професійного краху.",
+      "en": "Describe it as a moment of total professional collapse.",
+      "ru": "Опиши это как момент полного профессионального краха."
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Закінчився соус до картоплі фрі.",
+      "en": "Event: Ran out of sauce for the fries.",
+      "ru": "Событие: Закончился соус к картошке фри."
+    },
+    "task": {
+      "uk": "Описуй, як це зруйнувало всю магію трапези.",
+      "en": "Explain how it ruined the entire magic of the meal.",
+      "ru": "Расскажи, как это разрушило всю магию еды."
+    }
+  },
+  {
+    "id": "26",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Упав шматочок мила у ванні.",
+      "en": "Event: A piece of soap fell in the bathtub.",
+      "ru": "Событие: Кусок мыла упал в ванну."
+    },
+    "task": {
+      "uk": "Описуй це як фінал ілюзій чистоти й контролю.",
+      "en": "Describe it as the collapse of all illusions of cleanliness and control.",
+      "ru": "Опиши это как крах всех иллюзий чистоты и контроля."
+    }
+  },
+  {
+    "id": "27",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Забув навушники вдома.",
+      "en": "Event: Forgot my headphones at home.",
+      "ru": "Событие: Забыл наушники дома."
+    },
+    "task": {
+      "uk": "Розкажи, як світ став надто гучним, а ти — вразливим.",
+      "en": "Tell how the world became too loud, and you — too exposed.",
+      "ru": "Расскажи, как мир стал слишком громким, а ты — слишком уязвимым."
+    }
+  },
+  {
+    "id": "28",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Програма зависла під час важливої презентації.",
+      "en": "Event: The app froze during an important presentation.",
+      "ru": "Событие: Программа зависла во время важной презентации."
+    },
+    "task": {
+      "uk": "Описуй це як сцену з фільму-катастрофи.",
+      "en": "Describe it like a scene from a disaster movie.",
+      "ru": "Опиши это как сцену из фильма-катастрофы."
+    }
+  },
+  {
+    "id": "29",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Пролив суп на скатертину.",
+      "en": "Event: Spilled soup on the tablecloth.",
+      "ru": "Событие: Пролил суп на скатерть."
+    },
+    "task": {
+      "uk": "Описуй, як це зіпсувало все сімейне свято.",
+      "en": "Describe how it ruined the entire family celebration.",
+      "ru": "Опиши, как это испортило весь семейный праздник."
+    }
+  },
+  {
+    "id": "30",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Забули твій улюблений соус у доставці.",
+      "en": "Event: They forgot your favorite sauce in the delivery.",
+      "ru": "Событие: В доставке забыли твой любимый соус."
+    },
+    "task": {
+      "uk": "Розкажи, як це зламало твою віру в сервіс і турботу.",
+      "en": "Describe how it broke your faith in service and care.",
+      "ru": "Расскажи, как это разрушило твою веру в заботу и сервис."
+    }
+  },
+  {
+    "id": "31",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Закінчився інтернет саме тоді, коли почався фільм.",
+      "en": "Event: The internet went down just as the movie started.",
+      "ru": "Событие: Интернет отключился как раз, когда начался фильм."
+    },
+    "task": {
+      "uk": "Описуй це як кінець цифрової епохи у твоєму домі.",
+      "en": "Describe it as the end of the digital era in your home.",
+      "ru": "Опиши это как конец цифровой эпохи в твоём доме."
+    }
+  },
+  {
+    "id": "32",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Приліпив до себе шматочок скотчу й не можеш відірвати.",
+      "en": "Event: A piece of tape stuck to you and you can’t remove it.",
+      "ru": "Событие: К тебе прилип кусочек скотча, и ты не можешь его снять."
+    },
+    "task": {
+      "uk": "Зобрази це як боротьбу між людиною та машиною.",
+      "en": "Portray it as a battle between man and machine.",
+      "ru": "Представь это как борьбу между человеком и машиной."
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Випав шматочок піци обличчям донизу.",
+      "en": "Event: A slice of pizza fell face down.",
+      "ru": "Событие: Кусок пиццы упал начинкой вниз."
+    },
+    "task": {
+      "uk": "Розкажи, як у цей момент усе втрачене.",
+      "en": "Describe how everything was lost in that moment.",
+      "ru": "Расскажи, как в этот момент было потеряно всё."
+    }
+  },
+  {
+    "id": "34",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Твій улюблений стікер зник із месенджера.",
+      "en": "Event: Your favorite sticker disappeared from the messenger.",
+      "ru": "Событие: Твой любимый стикер исчез из мессенджера."
+    },
+    "task": {
+      "uk": "Описуй це як втрату засобу самовираження.",
+      "en": "Describe it as the loss of a means of self-expression.",
+      "ru": "Опиши это как потерю средства самовыражения."
+    }
+  },
+  {
+    "id": "35",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Помилково поставив лайк на старому пості знайомого.",
+      "en": "Event: You accidentally liked an old post of an acquaintance.",
+      "ru": "Событие: Ты случайно поставил лайк на старом посте знакомого."
+    },
+    "task": {
+      "uk": "Описуй це як соціальний крах і початок втечі.",
+      "en": "Describe it as social collapse and the start of a great escape.",
+      "ru": "Опиши это как социальный крах и начало побега."
+    }
+  },
+  {
+    "id": "36",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Пляшка з водою пролилась у сумці.",
+      "en": "Event: A water bottle spilled in your bag.",
+      "ru": "Событие: Бутылка воды пролилась в твоей сумке."
+    },
+    "task": {
+      "uk": "Розкажи, як це знищило твою ідентичність і майбутнє.",
+      "en": "Describe how it destroyed your identity and future.",
+      "ru": "Расскажи, как это уничтожило твою личность и будущее."
+    }
+  },
+  {
+    "id": "37",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Кіт заліз на клавіатуру й знищив текст.",
+      "en": "Event: The cat stepped on the keyboard and deleted your text.",
+      "ru": "Событие: Кот встал на клавиатуру и удалил твой текст."
+    },
+    "task": {
+      "uk": "Описуй це як зраду з боку найближчого друга.",
+      "en": "Describe it as betrayal by your closest friend.",
+      "ru": "Опиши это как предательство ближайшего друга."
+    }
+  },
+  {
+    "id": "38",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Телефон впав на підлогу й легко подряпався.",
+      "en": "Event: The phone dropped and got slightly scratched.",
+      "ru": "Событие: Телефон упал и немного поцарапался."
+    },
+    "task": {
+      "uk": "Розкажи, як це як удар долі по найціннішому.",
+      "en": "Describe it as fate striking at your most precious thing.",
+      "ru": "Расскажи, как это был удар судьбы по самому ценному."
+    }
+  },
+  {
+    "id": "39",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: На улюблену пісню натрапив у TikTok — але з дурацьким танцем.",
+      "en": "Event: Your favorite song was used in a silly TikTok dance.",
+      "ru": "Событие: Твою любимую песню использовали в глупом танце в TikTok."
+    },
+    "task": {
+      "uk": "Опиши це як кінець естетики та смаку.",
+      "en": "Describe it as the end of aesthetics and taste.",
+      "ru": "Опиши это как конец эстетики и вкуса."
+    }
+  },
+  {
+    "id": "40",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Забув дочекатися каву в кавомашині.",
+      "en": "Event: Forgot to wait for coffee in the machine.",
+      "ru": "Событие: Забыл дождаться кофе в кофемашине."
+    },
+    "task": {
+      "uk": "Описуй це як втрачений шанс на щастя.",
+      "en": "Describe it as a lost chance at happiness.",
+      "ru": "Опиши это как упущенный шанс на счастье."
+    }
+  },
+  {
+    "id": "41",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Не встиг натиснути «Пропустити рекламу».",
+      "en": "Event: Didn’t press ‘Skip Ad’ in time.",
+      "ru": "Событие: Не успел нажать «Пропустить рекламу»."
+    },
+    "task": {
+      "uk": "Розкажи, як це зламало твоє терпіння назавжди.",
+      "en": "Tell how it broke your patience forever.",
+      "ru": "Расскажи, как это навсегда сломало твоё терпение."
+    }
+  },
+  {
+    "id": "42",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Протяг у кімнаті зіпсував ідеальну зачіску.",
+      "en": "Event: A draft in the room ruined your perfect hairstyle.",
+      "ru": "Событие: Сквозняк испортил твою идеальную причёску."
+    },
+    "task": {
+      "uk": "Опиши це як трагедію моди та стилю.",
+      "en": "Describe it as a tragedy of fashion and style.",
+      "ru": "Опиши это как трагедию моды и стиля."
+    }
+  },
+  {
+    "id": "43",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Не було з ким поділитись мемом.",
+      "en": "Event: Had no one to share the meme with.",
+      "ru": "Событие: Некому было отправить мем."
+    },
+    "task": {
+      "uk": "Описуй це як момент соціального вакууму.",
+      "en": "Describe it as a moment of social vacuum.",
+      "ru": "Опиши это как момент социального вакуума."
+    }
+  },
+  {
+    "id": "44",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Система автозаміни зробила з тебе клоуна.",
+      "en": "Event: Autocorrect turned your message into nonsense.",
+      "ru": "Событие: Автозамена превратила твоё сообщение в чушь."
+    },
+    "task": {
+      "uk": "Описуй це як втрату контролю над власним голосом.",
+      "en": "Describe it as a loss of control over your own voice.",
+      "ru": "Опиши это как потерю контроля над своим голосом."
+    }
+  },
+  {
+    "id": "45",
+    "exercise_name": "OVERDRAMATIC_TRIVIALITY",
+    "situation": {
+      "uk": "Подія: Зіпсувалася погода у вихідний день.",
+      "en": "Event: The weather turned bad on a day off.",
+      "ru": "Событие: Погода испортилась в выходной день."
+    },
+    "task": {
+      "uk": "Розкажи, як це знищило твою віру в справедливість.",
+      "en": "Describe how it destroyed your faith in fairness.",
+      "ru": "Расскажи, как это разрушило твою веру в справедливость."
+    }
+  }
+]

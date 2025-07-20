@@ -10,6 +10,8 @@ import com.korop.yaroslavhorach.designsystem.theme.BlockFourDark
 import com.korop.yaroslavhorach.designsystem.theme.BlockFourLight
 import com.korop.yaroslavhorach.designsystem.theme.BlockOneDark
 import com.korop.yaroslavhorach.designsystem.theme.BlockOneLight
+import com.korop.yaroslavhorach.designsystem.theme.BlockSixDark
+import com.korop.yaroslavhorach.designsystem.theme.BlockSixLight
 import com.korop.yaroslavhorach.designsystem.theme.BlockThreeDark
 import com.korop.yaroslavhorach.designsystem.theme.BlockThreeLight
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
@@ -22,7 +24,7 @@ val ExerciseBlock.topBarBgRes: Int
         ExerciseBlock.THREE -> R.drawable.gradient_block_three
         ExerciseBlock.FOUR -> R.drawable.gradient_block_four
         ExerciseBlock.FIVE -> R.drawable.gradient_block_five
-        ExerciseBlock.SIX -> R.drawable.gradient_block_one
+        ExerciseBlock.SIX -> R.drawable.gradient_block_six
     }
 
 fun ExerciseBlock.blockTitle(): UiText {
@@ -32,7 +34,7 @@ fun ExerciseBlock.blockTitle(): UiText {
         ExerciseBlock.THREE -> UiText.FromResource(R.string.block_3_title_text)
         ExerciseBlock.FOUR -> UiText.FromResource(R.string.block_4_title_text)
         ExerciseBlock.FIVE -> UiText.FromResource(R.string.block_5_title_text)
-        ExerciseBlock.SIX -> TODO()
+        ExerciseBlock.SIX ->  UiText.FromResource(R.string.block_6_title_text)
     }
 }
 
@@ -43,7 +45,7 @@ fun ExerciseBlock.blockDescription(): UiText {
         ExerciseBlock.THREE -> UiText.FromResource(R.string.block_3_subtitle_text)
         ExerciseBlock.FOUR -> UiText.FromResource(R.string.block_4_subtitle_text)
         ExerciseBlock.FIVE -> UiText.FromResource(R.string.block_5_subtitle_text)
-        ExerciseBlock.SIX -> TODO()
+        ExerciseBlock.SIX -> UiText.FromResource(R.string.block_6_subtitle_text)
     }
 }
 
@@ -54,7 +56,7 @@ fun ExerciseBlock.blockColorPrimary(): Color {
         ExerciseBlock.THREE -> BlockThreeLight
         ExerciseBlock.FOUR -> BlockFourLight
         ExerciseBlock.FIVE -> BlockFiveLight
-        ExerciseBlock.SIX -> BlockOneLight
+        ExerciseBlock.SIX -> BlockSixLight
     }
 }
 
@@ -65,6 +67,6 @@ fun ExerciseBlock.blockColorSecondary(): Color {
         ExerciseBlock.THREE -> BlockThreeDark
         ExerciseBlock.FOUR -> BlockFourDark
         ExerciseBlock.FIVE -> BlockFiveDark
-        ExerciseBlock.SIX -> BlockOneDark
+        ExerciseBlock.SIX -> BlockSixDark
     }
 }

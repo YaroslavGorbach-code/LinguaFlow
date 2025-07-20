@@ -1082,5 +1082,197 @@
     "isEnable": false,
     "isVisible": true,
     "isLastActive": false
+  },
+  {
+    "id": 43,
+    "nameString": {
+      "uk": "Теорія змови",
+      "en": "Conspiracy Builder",
+      "ru": "Теория заговора"
+    },
+    "description": {
+      "uk": "Отримай просту або буденну подію — і вигадуй навколо неї масштабну теорію змови. Хто стоїть за цим? Які приховані мотиви? Як це впливає на людей? Розвивай уяву, гіперболу та драматичне мислення.",
+      "en": "Get a simple or everyday event — and build a grand conspiracy around it. Who’s behind it? What are the hidden motives? How does it affect people? Boost your imagination, exaggeration, and narrative drama.",
+      "ru": "Получай простое или повседневное событие — и выстраивай вокруг него масштабную теорию заговора. Кто за этим стоит? Каковы скрытые мотивы? Как это влияет на людей? Развивай воображение, гиперболу и драматичное мышление."
+    },
+    "exerciseProgress": {
+      "exerciseId": 43,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "CONSPIRACY_BUILDER",
+    "skill": "COMMUNICATION",
+    "block": "SIX",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 44,
+    "nameString": {
+      "uk": "Історія навпаки",
+      "en": "Reverse Storytelling",
+      "ru": "История наоборот"
+    },
+    "description": {
+      "uk": "Отримай фінальну фразу історії — і вигадуй усе, що могло до неї призвести. Побудуй логіку подій, які пояснюють незвичний або кумедний фінал. Ця вправа тренує креативність, фантазію та вміння створювати інтригу.",
+      "en": "Get the final sentence of a story — and invent everything that could have led to it. Construct the logic behind the unusual or funny ending. This exercise trains creativity, imagination, and the ability to build narrative tension.",
+      "ru": "Получай финальную фразу истории — и придумай, что могло к ней привести. Построй логику событий, которые объясняют необычную или забавную концовку. Это упражнение развивает креативность, фантазию и умение создавать интригу."
+    },
+    "exerciseProgress": {
+      "exerciseId": 44,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "REVERSE_STORYTELLING",
+    "skill": "COMMUNICATION",
+    "block": "SIX",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 45,
+    "nameString": {
+      "uk": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
+    },
+    "description": {
+      "uk": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
+    },
+    "exerciseProgress": {
+      "exerciseId": 45,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_HARD",
+    "skill": "DICTION",
+    "block": "SIX",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 46,
+    "nameString": {
+      "uk": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "uk": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 46,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "SIX",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 47,
+    "nameString": {
+      "uk": "Нудно → Цікаво",
+      "en": "Make It Fascinating",
+      "ru": "Скучно → Увлекательно"
+    },
+    "description": {
+      "uk": "Отримай нудну або звичайну ситуацію — і перетвори її на захопливу історію. Додай напругу, несподівані повороти, яскраві деталі або фантастичні елементи. Вправа тренує драматизацію, емоційність та художність мови.",
+      "en": "Get a boring or ordinary situation — and turn it into a gripping story. Add tension, twists, vivid details or even fantastic elements. This exercise trains dramatization, emotional expression, and narrative creativity.",
+      "ru": "Получай скучную или обычную ситуацию — и преврати её в захватывающую историю. Добавь напряжения, поворотов, ярких деталей или даже фантастики. Упражнение развивает драматизацию, выразительность и художественность речи."
+    },
+    "exerciseProgress": {
+      "exerciseId": 47,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "MAKE_IT_FASCINATING",
+    "skill": "COMMUNICATION",
+    "block": "SIX",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 48,
+    "nameString": {
+      "uk": "Супердраматична дрібниця",
+      "en": "Overdramatic Triviality",
+      "ru": "Супердраматичная мелочь"
+    },
+    "description": {
+      "uk": "Отримай незначну або буденну подію — і зроби з неї драму світового масштабу. Вправа тренує гіперболу, інтонацію, сатиру та здатність надавати значення найменшим деталям.",
+      "en": "Get a trivial or everyday event — and turn it into a global-scale drama. This exercise develops hyperbole, expressive intonation, satire, and the ability to add meaning to small things.",
+      "ru": "Получай незначительное или обыденное событие — и преврати его в драму мирового масштаба. Упражнение развивает гиперболу, выразительную интонацию, сатиру и умение придавать значение мелочам."
+    },
+    "exerciseProgress": {
+      "exerciseId": 48,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "OVERDRAMATIC_TRIVIALITY",
+    "skill": "COMMUNICATION",
+    "block": "SIX",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 49,
+    "nameString": {
+      "uk": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
+    },
+    "description": {
+      "uk": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
+    },
+    "exerciseProgress": {
+      "exerciseId": 49,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_HARD",
+    "skill": "DICTION",
+    "block": "SIX",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 50,
+    "nameString": {
+      "uk": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "uk": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 50,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "SIX",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
   }
 ]
