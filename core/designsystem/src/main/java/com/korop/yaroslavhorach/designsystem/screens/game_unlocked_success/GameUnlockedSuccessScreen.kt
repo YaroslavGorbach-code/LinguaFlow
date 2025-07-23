@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success
 
+import android.app.Activity
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.Column
@@ -17,10 +18,12 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -32,6 +35,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.korop.yaroslavhorach.designsystem.R
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.model.GameUnlockedSuccessAction
+import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.model.GameUnlockedSuccessUiMessage
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.model.GameUnlockedSuccessViewState
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -49,20 +53,31 @@ internal fun GameUnlockedSuccessRoute(
     onNavigateToGame: (id: Long) -> Unit,
 ) {
     val viewState by viewModel.state.collectAsStateWithLifecycle()
+    val activity = LocalContext.current as Activity
 
+    viewState.uiMessage?.let { uiMessage ->
+        when (val message = uiMessage.message) {
+            is GameUnlockedSuccessUiMessage.NavigateToGame -> {
+                LaunchedEffect(uiMessage.id) {
+                    viewModel.adManager.showInterstitial(activity)
+                    viewModel.clearMessage(uiMessage.id)
+                }
+                onNavigateToGame(message.id)
+            }
+            is GameUnlockedSuccessUiMessage.NavigateBack -> {
+                LaunchedEffect(uiMessage.id) {
+                    viewModel.adManager.showInterstitial(activity)
+                    viewModel.clearMessage(uiMessage.id)
+                }
+                onNavigateBack()
+            }
+        }
+    }
     LinguaBackground {
         GameUnlockedSuccessScreen(
             state = viewState,
             actioner = { action ->
-                when (action) {
-                    is GameUnlockedSuccessAction.OnContinueBtnClicked -> {
-                        onNavigateBack()
-                    }
-                    is GameUnlockedSuccessAction.OnTryGameBtnClicked -> {
-                        onNavigateToGame(action.id)
-                    }
-                    else -> viewModel.submitAction(action)
-                }
+                viewModel.submitAction(action)
             },
         )
     }
