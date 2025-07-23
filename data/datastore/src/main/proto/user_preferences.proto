@@ -21,4 +21,6 @@ message UserPreferences {
   string device_language = 11;
   bool is_mix_taring_active = 12;
   bool is_15_minute_taring_active = 13;
+  repeated int64 was_game_unlocked_already_shown_for_game_id = 14;
+
 }

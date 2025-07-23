@@ -3,10 +3,14 @@ package com.korop.yaroslavhorach.linguaflow.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.navOptions
 import com.korop.yaroslavhorach.avatar_change.navigation.avatarChangeScreen
 import com.korop.yaroslavhorach.avatar_change.navigation.navigateToAvatarChange
+import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navigation.gameUnlockedScreen
+import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navigation.navigateToGameUnlockedSuccess
 import com.korop.yaroslavhorach.designsystem.screens.onboarding.navigation.OnboardingRoute
 import com.korop.yaroslavhorach.designsystem.screens.onboarding.navigation.onboardingScreen
 import com.korop.yaroslavhorach.designsystem.screens.premium.navigation.navigateToPremium
@@ -15,6 +19,7 @@ import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.
 import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.premiumSuccessScreen
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
 import com.korop.yaroslavhorach.domain.game.model.Game
+import com.korop.yaroslavhorach.domain.holders.OpenGameDetailsHolder
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.navigateToExerciseCompleted
 import com.korop.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExercise
@@ -28,6 +33,7 @@ import com.korop.yaroslavhorach.games.words_game.navigation.wordsGameScreen
 import com.korop.yaroslavhorach.home.navigation.HomeRoute
 import com.korop.yaroslavhorach.home.navigation.gamesScreen
 import com.korop.yaroslavhorach.home.navigation.homeScreen
+import com.korop.yaroslavhorach.home.navigation.navigateToGames
 import com.korop.yaroslavhorach.profile.navigation.profileScreen
 import com.korop.yaroslavhorach.settings.navigation.navigateToSettings
 import com.korop.yaroslavhorach.settings.navigation.settingsScreen
@@ -61,9 +67,11 @@ fun LingoNavHost(
                 Skill.COMMUNICATION -> {
                     navController.navigateToSpeakingExercise(exercise.id)
                 }
+
                 Skill.VOCABULARY -> {
                     navController.navigateToVocabularyExercise(exercise.id)
                 }
+
                 Skill.DICTION -> {
                     navController.navigateToTongueTwistersExercise(exercise.id)
                 }
@@ -111,15 +119,19 @@ fun LingoNavHost(
                 Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }
+
                 Game.GameName.VOCABULARY -> {
                     navController.navigateToVocabularyExercise(1004)
                 }
+
                 Game.GameName.TONGUE_TWISTERS_EASY -> {
                     navController.navigateToTongueTwistersExercise(1001)
                 }
+
                 Game.GameName.TONGUE_TWISTERS_MEDIUM -> {
                     navController.navigateToTongueTwistersExercise(1002)
                 }
+
                 Game.GameName.TONGUE_TWISTERS_HARD -> {
                     navController.navigateToTongueTwistersExercise(1003)
                 }
@@ -148,9 +160,11 @@ fun LingoNavHost(
         }, onNavigateToExerciseCompleted = { time, xp ->
             navController.navigateToExerciseCompleted(xp, time)
         })
-        exerciseCompletedScreen {
+        exerciseCompletedScreen(onNavigateBack = {
             navController.popBackStack()
-        }
+        }, onNavigateToGameUnlocked = {
+            navController.navigateToGameUnlockedSuccess(it)
+        })
         premiumScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToSuccess = {
@@ -164,5 +178,27 @@ fun LingoNavHost(
         }, navigateToPremium = {
             navController.navigateToPremium()
         })
+        gameUnlockedScreen(onNavigateToGame = {
+            val topLevelNavOptions = navOptions {
+                // Pop up to the start destination of the graph to
+                // avoid building up a large stack of destinations
+                // on the back stack as users select items
+                popUpTo(navController.graph.findStartDestination().id) {
+                    saveState = true
+                }
+                launchSingleTop = true
+                restoreState = true
+            }
+
+            navController.popBackStack()
+            navController.navigateToGames(topLevelNavOptions)
+
+            OpenGameDetailsHolder.gameIdToOpen.value = it
+
+
+        }, onNavigateBack = {
+            navController.popBackStack()
+        }
+        )
     }
 }

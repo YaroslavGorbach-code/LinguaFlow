@@ -47,4 +47,8 @@
 
     <string name="premium_variant_prise_mounthly_format">%1$s/month</string>
     <string name="premium_variant_prise_half_a_year_roemat">%1$s/half year</string>
+    <string name="game_unlocked_title_text">Congratulations!</string>
+    <string name="game_unlocked_message_format">The language game \"%1$s\" has been unlocked!</string>
+    <string name="game_unlocked_continue_btn_text">CONTINUE</string>
+    <string name="game_unlocked_try_btn_text">TRY</string>
 </resources>

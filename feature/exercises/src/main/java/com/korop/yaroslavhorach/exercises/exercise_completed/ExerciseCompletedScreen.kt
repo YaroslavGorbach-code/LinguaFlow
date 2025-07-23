@@ -60,21 +60,25 @@ import com.korop.yaroslavhorach.ui.SpeakingLevel
 
 @Composable
 internal fun ExerciseCompletedRoute(
-    viewModel: ExerciseCompletedViewModel = hiltViewModel(),
-    onNavigateBack: () -> Unit
+    viewModel: ExerciseCompletedViewModel =  hiltViewModel(),
+    onNavigateBack: () -> Unit,
+    onNavigateToGameUnlocked: (gameId: Long) -> Unit
 ) {
     val activity = LocalContext.current as Activity
 
     val state by viewModel.state.collectAsStateWithLifecycle()
 
     state.uiMessage?.let { uiMessage ->
-        when (uiMessage.message) {
+        when (val message = uiMessage.message) {
             is ExerciseCompletedUiMessage.ShowAd -> {
                 LaunchedEffect(uiMessage.id) {
                     viewModel.adManager.showInterstitial(activity)
                     viewModel.clearMessage(uiMessage.id)
                 }
                 onNavigateBack()
+            }
+            is ExerciseCompletedUiMessage.NavigateToGameUnlocked -> {
+                onNavigateToGameUnlocked(message.gameId)
             }
         }
     }

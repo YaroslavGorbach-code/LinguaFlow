@@ -1,0 +1,3 @@
+package com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.model
+
+sealed class GameUnlockedSuccessUiMessage

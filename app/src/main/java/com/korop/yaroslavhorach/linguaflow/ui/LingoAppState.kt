@@ -44,7 +44,8 @@ class LingoAppState(
 
     val isBottomBarAndTopBarVisible: Boolean
         @Composable
-        get() = TopLevelDestination.entries.map { it.route.qualifiedName }.contains(currentDestination?.route)
+        get() = TopLevelDestination.entries.map {
+            it.route.qualifiedName }.contains(currentDestination?.route?.substringBefore("?")?.substringBefore("/"))
 
     val topLevelDestinations: List<TopLevelDestination> = listOf(
         TopLevelDestination.Home,

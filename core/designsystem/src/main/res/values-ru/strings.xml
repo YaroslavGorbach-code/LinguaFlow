@@ -48,4 +48,9 @@
 
     <string name="premium_variant_prise_mounthly_format">%1$s/месяц</string>
     <string name="premium_variant_prise_half_a_year_roemat">%1$s/полгода</string>
+
+    <string name="game_unlocked_title_text">Поздравляем!</string>
+    <string name="game_unlocked_message_format">Языковая игра \"%1$s\" разблокирована!</string>
+    <string name="game_unlocked_continue_btn_text">ПРОДОЛЖИТЬ</string>
+    <string name="game_unlocked_try_btn_text">ПОПРОБОВАТЬ</string>
 </resources>

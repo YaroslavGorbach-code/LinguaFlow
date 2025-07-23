@@ -18,10 +18,18 @@ import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.domain.prefs.model.UserData
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.withContext
 import java.util.Calendar
 import javax.inject.Inject
@@ -37,6 +45,31 @@ class GameRepositoryImpl @Inject constructor(
     private var cachedChallengeTimeLimited: ChallengeTimeLimited? = null
     private var cachedChallengeExerciseMix: ChallengeExerciseMix? = null
 
+    private var newGameUnlocked: MutableStateFlow<Game?> = MutableStateFlow(null)
+    private var lastExperience = 0
+
+    init {
+        prefsRepository.getUserData()
+            .map { it.experience }
+            .distinctUntilChanged()
+            .onEach { xp ->
+                lastExperience = xp
+
+                val newlyUnlockedGame = getGames()
+                    .first()
+                    .sortedBy { it.minExperienceRequired }
+                    .lastOrNull { game ->
+                        xp >= game.minExperienceRequired && game.minExperienceRequired > 0 &&
+                                prefsRepository.getGameUnlockedScreenWasShownIds().first().any { it == game.id }.not()
+
+                    }
+
+                if (newlyUnlockedGame != null) {
+                    newGameUnlocked.value = newlyUnlockedGame
+                }
+            }
+            .launchIn(GlobalScope)
+    }
     override fun getGames(): Flow<List<Game>> {
         return flow {
             prefsRepository.refreshTokens()
@@ -295,6 +328,14 @@ class GameRepositoryImpl @Inject constructor(
                 challengeDataSource.updateChallengeExerciseCompleted(name.name)
             }
         }
+    }
+
+    override fun getLastUnlockedGame(): Flow<Game?> {
+        return newGameUnlocked
+    }
+
+    override suspend fun clearLastUnlockedGame() {
+        newGameUnlocked.value = null
     }
 
     private fun getRawGames(): List<Game> {

@@ -9,10 +9,10 @@ import com.korop.yaroslavhorach.home.GamesRoute
 import kotlinx.serialization.Serializable
 
 @Serializable
-data object GamesRoute
+data class GamesRoute(val gameId: Long? = null)
 
-fun NavController.navigateToGames(navOptions: NavOptions? = null) {
-    this.navigate(GamesRoute, navOptions)
+fun NavController.navigateToGames(navOptions: NavOptions? = null, gameId: Long? = null) {
+    this.navigate(GamesRoute(gameId), navOptions)
 }
 
 fun NavGraphBuilder.gamesScreen(

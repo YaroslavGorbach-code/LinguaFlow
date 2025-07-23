@@ -19,6 +19,8 @@ interface PrefsRepository {
     suspend fun activatePremium()
     suspend fun deactivatePremium()
     suspend fun getUsedContent(name: String): Flow<List<Long>>
+    fun getGameUnlockedScreenWasShownIds(): Flow<List<Long>>
+    suspend fun markScreenGameUnlockedWasShown(gameId: Long)
     suspend fun useExerciseContent(id: Long, name: String)
     suspend fun clearUsedExerciseContent(name: String)
     suspend fun finishOnboarding()

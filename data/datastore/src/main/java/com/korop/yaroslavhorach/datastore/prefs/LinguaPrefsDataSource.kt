@@ -64,6 +64,18 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         }
     }
 
+    suspend fun markGameUnlockedScreenWasShown(gameId: Long) {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .addWasGameUnlockedAlreadyShownForGameId(gameId)
+                .build()
+        }
+    }
+
+    fun getGameUnlockedScreenWasShownIds(): Flow<List<Long>> {
+        return userPreferences.data.map { it.wasGameUnlockedAlreadyShownForGameIdList }
+    }
+
     fun getUsedContent(name: String): Flow<List<Long>> {
         return userPreferences.data.map { it.usedExercisesContentMap[name]?.valuesList ?: emptyList() }
     }

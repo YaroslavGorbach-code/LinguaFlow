@@ -11,4 +11,6 @@ interface GameRepository {
     suspend fun startDailyChallenge()
     suspend fun requestUpdateDailyChallengeCompleteTime(skill: List<Game.Skill>, time: Long)
     suspend fun requestCompleteDailyChallengeGame(name: Game.GameName)
+    fun getLastUnlockedGame(): Flow<Game?>
+    suspend fun clearLastUnlockedGame()
 }

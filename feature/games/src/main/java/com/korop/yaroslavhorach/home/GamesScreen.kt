@@ -100,12 +100,13 @@ internal fun GamesRoute(
     onNavigateToPremium: () -> Unit,
     viewModel: GamesViewModel = hiltViewModel(),
 ) {
-    val homeState by viewModel.state.collectAsStateWithLifecycle()
+    val state by viewModel.state.collectAsStateWithLifecycle()
+    val listState = rememberLazyListState()
 
     LinguaBackground {
         GamesScreen(
-            state = homeState,
-            onMessageShown = viewModel::clearMessage,
+            state = state,
+            listState,
             actioner = { action ->
                 when (action) {
                     is GamesAction.OnPremiumBtnClicked -> {
@@ -116,11 +117,21 @@ internal fun GamesRoute(
             })
     }
 
-    homeState.uiMessage?.let { uiMessage ->
+    state.uiMessage?.let { uiMessage ->
         when (val message = uiMessage.message) {
-            is GamesUiMessage.NavigateToExercise -> {
+            is GamesUiMessage.NavigateToGame -> {
                 onNavigateToGame(message.gameId, message.gameName)
                 viewModel.clearMessage(uiMessage.id)
+            }
+            is GamesUiMessage.ScrollToAndShowDescription -> {
+                val indexToScroll = state.gamesForDisplay.indexOfFirst { it.game.id == message.gameId }
+
+                LaunchedEffect(Unit) {
+                    if (indexToScroll > 1) {
+                        listState.scrollToItem(indexToScroll)
+                    }
+                    viewModel.clearMessage(uiMessage.id)
+                }
             }
         }
     }
@@ -129,11 +140,9 @@ internal fun GamesRoute(
 @Composable
 internal fun GamesScreen(
     state: GamesViewState,
-    onMessageShown: (id: Long) -> Unit,
+    listState: LazyListState,
     actioner: (GamesAction) -> Unit,
 ) {
-    val listState = rememberLazyListState()
-
     Column(
         Modifier
             .fillMaxSize()
@@ -771,8 +780,8 @@ private fun HomePreview() {
         LinguaTheme {
             GamesScreen(
                 GamesViewState.Preview,
+                rememberLazyListState(),
                 {},
-                actioner = { _ -> },
             )
         }
     }

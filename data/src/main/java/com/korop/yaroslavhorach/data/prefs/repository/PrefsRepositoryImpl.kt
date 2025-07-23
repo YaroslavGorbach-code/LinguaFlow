@@ -65,6 +65,14 @@ class PrefsRepositoryImpl @Inject constructor(
         return prefsDataSource.getUsedContent(name)
     }
 
+    override fun getGameUnlockedScreenWasShownIds(): Flow<List<Long>> {
+       return prefsDataSource.getGameUnlockedScreenWasShownIds()
+    }
+
+    override suspend fun markScreenGameUnlockedWasShown(gameId: Long) {
+        prefsDataSource.markGameUnlockedScreenWasShown(gameId)
+    }
+
     override suspend fun useExerciseContent(id: Long, name: String) {
         prefsDataSource.useExerciseContent(id, name)
     }

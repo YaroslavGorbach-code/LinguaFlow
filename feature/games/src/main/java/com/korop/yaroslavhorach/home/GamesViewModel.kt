@@ -9,6 +9,7 @@ import com.korop.yaroslavhorach.domain.game.GameRepository
 import com.korop.yaroslavhorach.domain.game.model.Challenge
 import com.korop.yaroslavhorach.domain.game.model.ChallengeExerciseMix
 import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
+import com.korop.yaroslavhorach.domain.holders.OpenGameDetailsHolder
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.home.model.GameSort
 import com.korop.yaroslavhorach.home.model.GameUi
@@ -27,6 +28,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.time.delay
 import javax.inject.Inject
 
 @HiltViewModel
@@ -98,6 +100,17 @@ class GamesViewModel @Inject constructor(
     )
 
     init {
+        OpenGameDetailsHolder.gameIdToOpen
+            .onEach {
+                if (it != null) {
+                    kotlinx.coroutines.delay(500)
+                    changeDescriptionState(it)
+                    uiMessageManager.emitMessage(UiMessage(GamesUiMessage.ScrollToAndShowDescription(it)))
+                    OpenGameDetailsHolder.gameIdToOpen.value = null
+                }
+            }
+            .launchIn(viewModelScope)
+
         gameRepository.getGames()
             .map { it.map(::GameUi) }
             .onEach { games.value = it }
@@ -113,14 +126,14 @@ class GamesViewModel @Inject constructor(
                         }
                     }
                     is GamesAction.OnGameClicked -> {
-                        changeDescriptionState(event.gameUi)
+                        changeDescriptionState(event.gameUi.game.id)
                     }
                     is GamesAction.OnStartGameClicked -> {
                         if (event.useToken) {
                             if ((state.value.availableTokens > 0)){
                                 uiMessageManager.emitMessage(
                                     UiMessage(
-                                        GamesUiMessage.NavigateToExercise(
+                                        GamesUiMessage.NavigateToGame(
                                             event.gameUi.game.id,
                                             event.gameUi.game.name
                                         )
@@ -131,7 +144,7 @@ class GamesViewModel @Inject constructor(
                         } else {
                             uiMessageManager.emitMessage(
                                 UiMessage(
-                                    GamesUiMessage.NavigateToExercise(
+                                    GamesUiMessage.NavigateToGame(
                                         event.gameUi.game.id,
                                         event.gameUi.game.name
                                     )
@@ -151,7 +164,7 @@ class GamesViewModel @Inject constructor(
                     }
                     is GamesAction.OnRemoveFavoritesClicked -> {
                         if (selectedSort.value == GameSort.FAVORITE && event.game.isDescriptionVisible) {
-                            changeDescriptionState(event.game)
+                            changeDescriptionState(event.game.game.id)
                         }
 
                         prefsRepository.removeGameFromFavorites(event.game.game.id)
@@ -165,10 +178,10 @@ class GamesViewModel @Inject constructor(
             .launchIn(viewModelScope)
     }
 
-    private fun changeDescriptionState(param: GameUi) {
+    private fun changeDescriptionState(id: Long) {
         games.update { gameList ->
             gameList.map { gameUi ->
-                if (gameUi.game.id == param.game.id) {
+                if (gameUi.game.id == id) {
                     gameUi.copy(isDescriptionVisible = gameUi.isDescriptionVisible.not())
                 } else {
                     gameUi.copy(isDescriptionVisible = false)

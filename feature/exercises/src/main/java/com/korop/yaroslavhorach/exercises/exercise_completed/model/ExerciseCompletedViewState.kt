@@ -6,6 +6,7 @@ data class ExerciseCompletedViewState(
     val time: String = "",
     val experience: Int = 0,
     val allUserExperience: Int = 0,
+    val lastUnlockedGameId: Long? = null,
     val uiMessage: UiMessage<ExerciseCompletedUiMessage>? = null
 ) {
 

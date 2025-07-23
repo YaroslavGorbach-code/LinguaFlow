@@ -7,6 +7,8 @@ import com.korop.yaroslavhorach.common.base.BaseViewModel
 import com.korop.yaroslavhorach.common.helpers.AdManager
 import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.common.utill.toMinutesSecondsFormat
+import com.korop.yaroslavhorach.domain.game.GameRepository
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedAction
 import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedUiMessage
@@ -14,9 +16,11 @@ import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompl
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.ExerciseCompletedRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
@@ -26,21 +30,25 @@ import javax.inject.Inject
 @HiltViewModel
 class ExerciseCompletedViewModel @Inject constructor(
     val adManager: AdManager,
+    val gamesRepository: GameRepository,
     savedStateHandle: SavedStateHandle,
     prefsRepository: PrefsRepository,
-) :
-    BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
+) : BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<ExerciseCompletedAction> = MutableSharedFlow()
 
+    private val lastUnlockedGame: MutableStateFlow<Game?> = MutableStateFlow(null)
+
     override val state: StateFlow<ExerciseCompletedViewState> = combine(
         prefsRepository.getUserData(),
+        lastUnlockedGame,
         uiMessageManager.message
-    ) { user, message ->
+    ) { user, lastUnlockedGame, message ->
         ExerciseCompletedViewState(
             savedStateHandle.toRoute<ExerciseCompletedRoute>().time.toMinutesSecondsFormat(),
             savedStateHandle.toRoute<ExerciseCompletedRoute>().experience,
             user.experience,
+            lastUnlockedGame?.id,
             message
         )
     }.stateIn(
@@ -55,11 +63,22 @@ class ExerciseCompletedViewModel @Inject constructor(
             prefsRepository.markCurrentDayAsActive()
         }
 
+        gamesRepository.getLastUnlockedGame()
+            .onEach {
+                lastUnlockedGame.value = it
+                it?.id?.let { it1 -> prefsRepository.markScreenGameUnlockedWasShown(it1) }
+            }
+            .launchIn(viewModelScope)
+
         pendingActions
             .onEach { event ->
                 when (event) {
                     is ExerciseCompletedAction.OnContinueClicked -> {
-                        uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.ShowAd()))
+                        state.value.lastUnlockedGameId?.let { id ->
+                            uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.NavigateToGameUnlocked(id)))
+                        } ?: run {
+                            uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.ShowAd))
+                        }
                     }
                     else -> error("Action $event is not handled")
                 }
