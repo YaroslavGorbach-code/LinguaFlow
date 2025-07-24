@@ -20,7 +20,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
@@ -30,9 +30,9 @@ import javax.inject.Inject
 @HiltViewModel
 class ExerciseCompletedViewModel @Inject constructor(
     val adManager: AdManager,
-    val gamesRepository: GameRepository,
+    private val gamesRepository: GameRepository,
     savedStateHandle: SavedStateHandle,
-    prefsRepository: PrefsRepository,
+    val prefsRepository: PrefsRepository,
 ) : BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<ExerciseCompletedAction> = MutableSharedFlow()
@@ -77,7 +77,11 @@ class ExerciseCompletedViewModel @Inject constructor(
                         state.value.lastUnlockedGameId?.let { id ->
                             uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.NavigateToGameUnlocked(id)))
                         } ?: run {
-                            uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.ShowAd))
+                            if (prefsRepository.getIsRateAppAllowed().first()) {
+                                uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.NavigateToRateApp))
+                            } else {
+                                uiMessageManager.emitMessage(UiMessage(ExerciseCompletedUiMessage.ShowAd))
+                            }
                         }
                     }
                     else -> error("Action $event is not handled")

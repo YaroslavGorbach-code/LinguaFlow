@@ -62,6 +62,7 @@ import com.korop.yaroslavhorach.ui.SpeakingLevel
 internal fun ExerciseCompletedRoute(
     viewModel: ExerciseCompletedViewModel =  hiltViewModel(),
     onNavigateBack: () -> Unit,
+    onNavigateToRateApp: () -> Unit,
     onNavigateToGameUnlocked: (gameId: Long) -> Unit
 ) {
     val activity = LocalContext.current as Activity
@@ -80,6 +81,7 @@ internal fun ExerciseCompletedRoute(
             is ExerciseCompletedUiMessage.NavigateToGameUnlocked -> {
                 onNavigateToGameUnlocked(message.gameId)
             }
+            is ExerciseCompletedUiMessage.NavigateToRateApp -> onNavigateToRateApp()
         }
     }
 

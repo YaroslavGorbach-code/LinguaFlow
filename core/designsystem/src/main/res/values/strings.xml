@@ -51,4 +51,8 @@
     <string name="game_unlocked_message_format">The language game \"%1$s\" has been unlocked!</string>
     <string name="game_unlocked_continue_btn_text">CONTINUE</string>
     <string name="game_unlocked_try_btn_text">TRY</string>
+    <string name="rate_app_title_text">Thank you for using Talksy!</string>
+    <string name="rate_app_message_text">We’d love your rating on Google Play — it helps us grow and improve</string>
+    <string name="rate_app_letter_btn_text">Later</string>
+    <string name="rate_app_rate_btn_text">Rate</string>
 </resources>

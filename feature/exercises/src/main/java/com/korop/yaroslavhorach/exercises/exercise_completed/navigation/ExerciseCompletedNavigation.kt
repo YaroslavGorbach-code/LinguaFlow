@@ -18,11 +18,16 @@ fun NavController.navigateToExerciseCompleted(experience: Int, time: Long) {
     }
 }
 
-fun NavGraphBuilder.exerciseCompletedScreen(onNavigateBack: () -> Unit, onNavigateToGameUnlocked: (gameId: Long) -> Unit) {
+fun NavGraphBuilder.exerciseCompletedScreen(
+    onNavigateBack: () -> Unit,
+    onNavigateToGameUnlocked: (gameId: Long) -> Unit,
+    onNavigateToRateApp: () -> Unit
+) {
     composable<ExerciseCompletedRoute> {
         ExerciseCompletedRoute(
             onNavigateBack = onNavigateBack,
-            onNavigateToGameUnlocked = onNavigateToGameUnlocked
+            onNavigateToGameUnlocked = onNavigateToGameUnlocked,
+            onNavigateToRateApp = onNavigateToRateApp
         )
     }
 }

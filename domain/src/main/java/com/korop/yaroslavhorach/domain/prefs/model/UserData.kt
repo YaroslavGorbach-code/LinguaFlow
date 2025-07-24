@@ -12,4 +12,4 @@ data class UserData(
     val deviceLanguage: String? = null,
     val is15MinutesTrainingAvailable: Boolean = true,
     val isMixTrainingAvailable: Boolean = true,
-)
+    )

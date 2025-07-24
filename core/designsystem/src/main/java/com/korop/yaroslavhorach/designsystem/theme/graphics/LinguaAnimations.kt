@@ -8,5 +8,6 @@ object LinguaAnimations {
     val Premium = R.raw.premium
     val Cup = R.raw.cup
     val CupGameUnlocked = R.raw.trophy
+    val Star = R.raw.star
     val Conversation = R.raw.conversation
 }

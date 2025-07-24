@@ -17,6 +17,8 @@ import com.korop.yaroslavhorach.designsystem.screens.premium.navigation.navigate
 import com.korop.yaroslavhorach.designsystem.screens.premium.navigation.premiumScreen
 import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.navigateToPremiumSuccess
 import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.premiumSuccessScreen
+import com.korop.yaroslavhorach.designsystem.screens.rate.navigation.navigateToRateApp
+import com.korop.yaroslavhorach.designsystem.screens.rate.navigation.rateAppScreen
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.holders.OpenGameDetailsHolder
@@ -164,6 +166,8 @@ fun LingoNavHost(
             navController.popBackStack()
         }, onNavigateToGameUnlocked = {
             navController.navigateToGameUnlockedSuccess(it)
+        }, onNavigateToRateApp = {
+            navController.navigateToRateApp()
         })
         premiumScreen(onNavigateBack = {
             navController.popBackStack()
@@ -177,6 +181,9 @@ fun LingoNavHost(
             navController.popBackStack()
         }, navigateToPremium = {
             navController.navigateToPremium()
+        })
+        rateAppScreen(onNavigateBack = {
+            navController.popBackStack()
         })
         gameUnlockedScreen(onNavigateToGame = {
             val topLevelNavOptions = navOptions {

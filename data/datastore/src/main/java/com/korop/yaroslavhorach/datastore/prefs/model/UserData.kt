@@ -27,5 +27,5 @@ fun UserData.asDomainModel() = DomainUserData(
     isOnboarding = this.isOnboarding,
     deviceLanguage = this.deviceLanguage?.takeIf { it.isNotEmpty() },
     isMixTrainingAvailable = this.isMixTrainingAvailable,
-    is15MinutesTrainingAvailable = this.is15MinutesTrainingAvailable
+    is15MinutesTrainingAvailable = this.is15MinutesTrainingAvailable,
 )

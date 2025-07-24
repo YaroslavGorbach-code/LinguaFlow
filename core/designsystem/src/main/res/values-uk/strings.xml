@@ -55,4 +55,9 @@
     <string name="game_unlocked_message_format">Мовну гру \"%1$s\" розблоковано!</string>
     <string name="game_unlocked_continue_btn_text">ПРОДОВЖИТИ</string>
     <string name="game_unlocked_try_btn_text">СПРОБУВАТИ</string>
+
+    <string name="rate_app_title_text">Дякуємо, що користуєєшся Talksy!</string>
+    <string name="rate_app_message_text">Нам буде приємно отримати твою оцінку в Google Play — це допоможе нам рости та ставати кращими.</string>
+    <string name="rate_app_letter_btn_text">Пізніше</string>
+    <string name="rate_app_rate_btn_text">Оцінити</string>
 </resources>

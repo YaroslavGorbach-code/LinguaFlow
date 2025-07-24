@@ -24,7 +24,10 @@ interface PrefsRepository {
     suspend fun useExerciseContent(id: Long, name: String)
     suspend fun clearUsedExerciseContent(name: String)
     suspend fun finishOnboarding()
+    suspend fun markAppAsRated()
+    suspend fun markRateDelayed()
     fun getSupportedAppLanguages(): List<String>
+    fun getIsRateAppAllowed(): Flow<Boolean>
     suspend fun changeLanguage(lang: String)
     suspend fun change15MinutesTopicDailyTrainingActive(isActive: Boolean)
     suspend fun changeMixDailyTrainingActive(isActive: Boolean)

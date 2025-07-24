@@ -7,7 +7,10 @@ import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.domain.prefs.model.Avatar
 import com.korop.yaroslavhorach.domain.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 class PrefsRepositoryImpl @Inject constructor(
@@ -83,6 +86,26 @@ class PrefsRepositoryImpl @Inject constructor(
 
     override suspend fun finishOnboarding() {
         prefsDataSource.finishOnboarding()
+    }
+
+    override suspend fun markAppAsRated() {
+        prefsDataSource.markAppAsRated()
+    }
+
+    override suspend fun markRateDelayed() {
+        prefsDataSource.setLastTimeAskedUserToRateApp()
+    }
+
+    override fun getIsRateAppAllowed(): Flow<Boolean> {
+        return flow {
+            val isAlreadyRated = prefsDataSource.getIsAppRated().first()
+            val lastTimeAskedMillis = prefsDataSource.getLastTimeAskedUserToRateApp().first()
+            val now = System.currentTimeMillis()
+            val userXp = prefsDataSource.userData.first().experience
+
+            val daysPassed = TimeUnit.MILLISECONDS.toDays(now - lastTimeAskedMillis)
+            emit(isAlreadyRated.not() && daysPassed >= 4 && userXp >= 100)
+        }
     }
 
     override fun getSupportedAppLanguages(): List<String> {

@@ -6,6 +6,7 @@ import com.korop.yaroslavhorach.datastore.IntList
 import com.korop.yaroslavhorach.datastore.UserPreferences
 import com.korop.yaroslavhorach.datastore.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.map
 import java.util.Date
 import javax.inject.Inject
@@ -24,7 +25,7 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 isOnboarding = !it.isOnboarding,
                 deviceLanguage = it.deviceLanguage,
                 isMixTrainingAvailable = !it.isMixTaringActive,
-                is15MinutesTrainingAvailable = !it.is15MinuteTaringActive
+                is15MinutesTrainingAvailable = !it.is15MinuteTaringActive,
             )
         }
 
@@ -116,6 +117,30 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 .setIsOnboarding(true)
                 .build()
         }
+    }
+
+    suspend fun markAppAsRated() {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setIsAppRated(true)
+                .build()
+        }
+    }
+
+    suspend fun setLastTimeAskedUserToRateApp() {
+        userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .setLastTimeAskedUserToRateApp(Date().time)
+                .build()
+        }
+    }
+
+    fun getIsAppRated(): Flow<Boolean> {
+        return userPreferences.data.filterNotNull().map { it.isAppRated }
+    }
+
+    fun getLastTimeAskedUserToRateApp(): Flow<Long> {
+        return userPreferences.data.filterNotNull().map { it.lastTimeAskedUserToRateApp }
     }
 
     suspend fun changeName(name: String) {
