@@ -114,7 +114,7 @@ internal fun OnboardingScreen(
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
                 Spacer(Modifier.height(24.dp))
-                AppBenefit(stringResource(R.string.onboarding_benfit_1_text))
+                AppBenefit(stringResource(R.string.onboarding_benefit_1_text))
                 Spacer(Modifier.height(12.dp))
                 AppBenefit(stringResource(R.string.onboarding_benefit_2_text))
                 Spacer(Modifier.height(12.dp))

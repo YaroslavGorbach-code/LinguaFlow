@@ -23,11 +23,11 @@
     <string name="game_skill_distion_text">diction</string>
     <string name="game_skill_flirt_text">flirting</string>
     <string name="onboarding_title_text">Speaking confidently is a skill — and you’ll build it here 👇</string>
-    <string name="onboarding_benfit_1_text">🗣️ Tongue twisters — clarity, rhythm, confidence</string>
-    <string name="onboarding_benefit_2_text">🎯 Language games — quick thinking, wit</string>
-    <string name="onboarding_benefit_3_text">🎬 Real-life scenes — how to respond in real conversations</string>
-    <string name="onboarding_benefit_4_text">📚 New words — speak with variety and interest</string>
-    <string name="onboarding_benefit_5_text">🎙️ Improvisation — confidence without a script</string>
+    <string name="onboarding_benefit_1_text">🗣️ Speaking course — helps you speak confidently in real-life situations</string>
+    <string name="onboarding_benefit_2_text">🎮 Language games — boost your creativity, humor, improvisation, and clarity</string>
+    <string name="onboarding_benefit_3_text">🎯 Daily challenges — quick tasks that build your speaking habit</string>
+    <string name="onboarding_benefit_4_text">📚 Clear program — guides you step by step from tension to fluent speech</string>
+    <string name="onboarding_benefit_5_text">📈 Visible progress — unlock new levels, topics, and real conversation scenarios</string>
     <string name="onboarding_primary_btn_text">GET STARTED</string>
 
     <string name="premium_title_text">Unlock your full speaking potential with Premium</string>

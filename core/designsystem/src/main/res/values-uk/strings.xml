@@ -24,11 +24,11 @@
     <string name="game_skill_flirt_text">флірт</string>
 
     <string name="onboarding_title_text">Упевнено говорити — це навичка, і ти її прокачаєш тут 👇</string>
-    <string name="onboarding_benfit_1_text">🗣️ Скоромовки — чіткість, ритм, впевненість</string>
-    <string name="onboarding_benefit_2_text">🎯 Мовні ігри — швидкість мислення, дотепність</string>
-    <string name="onboarding_benefit_3_text">🎬 Життєві сцени — як відповідати в реальних розмовах</string>
-    <string name="onboarding_benefit_4_text">📚 Нові слова — говори цікаво й різноманітно</string>
-    <string name="onboarding_benefit_5_text">🎙️ Імпровізація — впевненість без сценарію</string>
+    <string name="onboarding_benefit_1_text">🗣️ Розмовний курс — допоможе заговорити впевнено в реальних ситуаціях</string>
+    <string name="onboarding_benefit_2_text">🎮 Мовні ігри — прокачують креативність, гумор, імпровізацію й дикцію</string>
+    <string name="onboarding_benefit_3_text">🎯 Щоденні виклики — короткі завдання, які формують звичку говорити</string>
+    <string name="onboarding_benefit_4_text">📚 Чітка програма — рухайся по курсу, що веде від скутості до свободи слова</string>
+    <string name="onboarding_benefit_5_text">📈 Видимий прогрес — відкривай нові рівні, теми й сценарії спілкування</string>
     <string name="onboarding_primary_btn_text">ПОЧАТИ</string>
 
     <string name="premium_title_text">Відкрий свій мовний потенціал із Преміум</string>
