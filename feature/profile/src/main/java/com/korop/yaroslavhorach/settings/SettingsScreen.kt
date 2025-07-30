@@ -51,9 +51,11 @@ import com.korop.yaroslavhorach.common.utill.buildRateAppWebIntent
 import com.korop.yaroslavhorach.designsystem.R
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.korop.yaroslavhorach.designsystem.theme.components.LinguaBackground
+import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons.CircleClose
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
+import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.settings.model.SettingsAction
 import com.korop.yaroslavhorach.settings.model.SettingsItemType
@@ -142,6 +144,7 @@ internal fun SettingsScreen(
             .padding(horizontal = 20.dp)
             .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
     ) {
+        Spacer(Modifier.height(20.dp))
         TopBar(actioner)
         LazyColumn {
             itemsIndexed(state.sections) { index, item ->
@@ -270,9 +273,10 @@ private fun TopBar(
     Row(verticalAlignment = Alignment.CenterVertically) {
         Icon(
             modifier = Modifier
-                .size(50.dp)
+                .size(34.dp)
                 .clickable { actioner(SettingsAction.OnBackClicked) },
-            painter = painterResource(CircleClose),
+            tint = MaterialTheme.colorScheme.secondaryIcon(),
+            painter = painterResource(LinguaIcons.Close),
             contentDescription = null
         )
         Spacer(Modifier.width(20.dp))

@@ -11,6 +11,7 @@ import com.korop.yaroslavhorach.domain.exercise.model.Exercise
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -22,6 +23,7 @@ import javax.inject.Singleton
 @Singleton
 class ExerciseRepositoryImpl @Inject constructor(
     private val exerciseProgressDao: ExerciseProgressDao,
+    private val prefsDataSource: LinguaPrefsDataSource,
     @ApplicationContext private val context: Context
 ) : ExerciseRepository {
 
@@ -84,6 +86,14 @@ class ExerciseRepositoryImpl @Inject constructor(
 
     override fun getBlock(): Flow<ExerciseBlock> {
         return currentBLock
+    }
+
+    override suspend fun addStar(name: ExerciseBlock) {
+        prefsDataSource.addStar(name)
+    }
+
+    override fun getStarsForBlock(name: ExerciseBlock): Flow<Int> {
+        return prefsDataSource.getStarsForExercise(name)
     }
 
     private fun getRawExercises(): List<Exercise> {

@@ -15,4 +15,5 @@ sealed class HomeAction {
     class OnExercisesBlockChanged(val block: ExerciseBlock): HomeAction()
     data object OnHideDescription : HomeAction()
     data object OnAvatarClicked : HomeAction()
+    data object OnRepeatBlockClicked: HomeAction()
 }

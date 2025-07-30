@@ -10,7 +10,6 @@ import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseProgress
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
-import com.korop.yaroslavhorach.home.R
 
 data class HomeViewState(
     val userName: String = "",
@@ -18,6 +17,7 @@ data class HomeViewState(
     val exercises: List<ExerciseUi> = emptyList(),
     val descriptionState: DescriptionState = DescriptionState(),
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
+    val stars: Int = 0,
     val uiMessage: UiMessage<HomeUiMessage>? = null
 ) {
     val blockProgress: Float
@@ -29,6 +29,11 @@ data class HomeViewState(
             val totalProgress = blockExercises.sumOf { it.progressPercent.toDouble() }
 
             return (totalProgress / blockExercises.size).toFloat()
+        }
+
+    val blockIsFinished: Boolean
+        get() {
+            return blockProgress >= 1f
         }
 
     data class DescriptionState(

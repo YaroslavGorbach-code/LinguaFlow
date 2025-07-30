@@ -15,8 +15,12 @@ import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
+import com.korop.yaroslavhorach.domain.exercise.model.getExercisesByBlockName
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import java.util.Locale
@@ -81,6 +85,10 @@ class ExerciseContentRepositoryImpl @Inject constructor(
         }
 
         return getAndUseSituation(exerciseName)
+    }
+
+    override suspend fun getSituation(block: ExerciseBlock): Situation {
+        return getSituation(getExercisesByBlockName(block).random())
     }
 
     override suspend fun getTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {

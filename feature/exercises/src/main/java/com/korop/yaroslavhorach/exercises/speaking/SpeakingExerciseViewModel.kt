@@ -55,6 +55,8 @@ class SpeakingExerciseViewModel @Inject constructor(
 
     private val exerciseId = savedStateHandle.toRoute<SpeakingExerciseRoute>().exerciseId
 
+    private val block = savedStateHandle.toRoute<SpeakingExerciseRoute>().blockName
+
     private var currentExercise: MutableStateFlow<Exercise?> = MutableStateFlow(null)
 
     override val pendingActions: MutableSharedFlow<SpeakingExerciseAction> = MutableSharedFlow()
@@ -104,7 +106,7 @@ class SpeakingExerciseViewModel @Inject constructor(
                 )
                 null -> null
             },
-            exerciseBlock = currentExercise?.block ?: ExerciseBlock.ONE,
+            exerciseBlock = currentExercise?.block ?: block ?: ExerciseBlock.ONE,
             btnTooltipText = btnTooltipText,
             progress = progress,
             userAvatarRes = userDsta.avatarResId,
@@ -118,12 +120,6 @@ class SpeakingExerciseViewModel @Inject constructor(
 
     init {
         setUpInitialMode()
-
-        recorder.onStopRecordingFlow
-            .onEach {
-
-            }
-            .launchIn(viewModelScope)
 
         pendingActions
             .onEach { event ->
@@ -171,7 +167,8 @@ class SpeakingExerciseViewModel @Inject constructor(
         overAllProgress.value = overAllProgress.value.inc()
 
         if (overAllProgress.value == overAllMaxProgress.value) {
-            exerciseRepository.markCompleted(exerciseId)
+            exerciseId?.let { exerciseRepository.markCompleted(it) }
+            block?.let { exerciseRepository.addStar(it) }
             timer.stop()
 
             val elapsedTime = timer.getElapsedTimeMillis()
@@ -193,7 +190,9 @@ class SpeakingExerciseViewModel @Inject constructor(
                 )
             )
         } else {
-            val situation = exerciseContentRepository.getSituation(currentExercise.value!!.name)
+            val situation = currentExercise.value?.name?.let { exerciseContentRepository.getSituation(it) }
+                ?: run { exerciseContentRepository.getSituation(block ?: ExerciseBlock.ONE) }
+
             (mode.value as? SpeakingExerciseViewState.ScreenMode.Speaking)?.let { mode ->
                 this.mode.value = mode.copy(situation = situation)
             }
@@ -270,12 +269,11 @@ class SpeakingExerciseViewModel @Inject constructor(
         timer.start()
 
         viewModelScope.launch {
-            currentExercise.value = exerciseRepository.getExercise(exerciseId)
+            currentExercise.value = exerciseId?.let { exerciseRepository.getExercise(it) }
 
-            mode.value = if (currentExercise.value!!.exerciseProgress.progress == 0) {
-                setUpTestsModeIfPossible()
-            } else {
-                setUpSpeakingMode()
+            mode.value = when {
+                currentExercise.value?.exerciseProgress?.progress == 0 -> setUpTestsModeIfPossible()
+                else -> setUpSpeakingMode()
             }
         }
     }
@@ -293,13 +291,16 @@ class SpeakingExerciseViewModel @Inject constructor(
         btnTooltipText.value = UiText.RandomFromResourceArray(R.array.speaking_exercise_motivation)
 
         return SpeakingExerciseViewState.ScreenMode.Speaking(
-            exerciseContentRepository.getSituation(currentExercise.value!!.name),
+            currentExercise.value?.name
+                ?.let { exerciseContentRepository.getSituation(it) }
+                ?: run { exerciseContentRepository.getSituation(block ?: ExerciseBlock.ONE) },
             maxProgress = SPEAKING_MAX_PROGRESS
         )
     }
 
     private suspend fun setUpTestsModeIfPossible(): SpeakingExerciseViewState.ScreenMode {
-        tests = ArrayDeque(exerciseContentRepository.getTests(currentExercise.value!!.name))
+        tests = ArrayDeque(currentExercise.value?.name
+            ?.let { exerciseContentRepository.getTests(it) } ?: emptyList())
 
         return if (tests.isEmpty().not()) {
             overAllMaxProgress.value = tests.size + AFTER_TEST_SPEAKING_MAX_PROGRESS
@@ -310,9 +311,9 @@ class SpeakingExerciseViewModel @Inject constructor(
             btnTooltipText.value = UiText.RandomFromResourceArray(R.array.speaking_exercise_motivation)
 
             SpeakingExerciseViewState.ScreenMode.Speaking(
-                exerciseContentRepository.getSituation(
-                    currentExercise.value!!.name
-                ),
+                currentExercise.value?.name
+                    ?.let { exerciseContentRepository.getSituation(it) }
+                    ?: run { exerciseContentRepository.getSituation(block ?: ExerciseBlock.ONE) },
                 maxProgress = SPEAKING_MAX_PROGRESS
             )
         }

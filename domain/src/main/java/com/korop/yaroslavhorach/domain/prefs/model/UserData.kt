@@ -6,6 +6,7 @@ data class UserData(
     val maxTokens: Int = 0,
     val experience: Int = 0,
     val avatarResId: Int? = null,
+    val stars: Int = 0,
     val isPremium: Boolean = false,
     val isOnboarding: Boolean = false,
     val activeDays: List<Long> = emptyList(),

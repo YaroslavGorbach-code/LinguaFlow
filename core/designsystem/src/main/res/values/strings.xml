@@ -18,6 +18,16 @@
     <string name="block_6_subtitle_text">Learn to tell engaging stories, capture attention, and speak expressively</string>
     <string name="block_7_subtitle_text">Learn to be witty, playful, and emotionally engaging — from casual flirting to making people laugh</string>
 
+    <string name="block_done_subtitle_text">Block completed! Come back to the exercises anytime to refresh your skill — or move on!</string>
+
+    <string name="block_practice_1_message_text">Complete 3 tasks from this block — earn a star and become even more confident in making new connections and conversations!</string>
+    <string name="block_practice_2_message_text">Complete 3 tasks from this block — earn a star and become even more confident talking about yourself, your feelings, and interests!</string>
+    <string name="block_practice_3_message_text">Complete 3 tasks from this block — earn a star and become even more confident in group conversations!</string>
+    <string name="block_practice_4_message_text">Complete 3 tasks from this block — earn a star and become even more confident in arguing your point and expressing polite disagreement!</string>
+    <string name="block_practice_5_message_text">Complete 3 tasks from this block — earn a star and become even more confident in emotional awareness and supporting others!</string>
+    <string name="block_practice_6_message_text">Complete 3 tasks from this block — earn a star and become even more confident in storytelling and expressive speech!</string>
+    <string name="block_practice_7_message_text">Complete 3 tasks from this block — earn a star and become even more confident in flirting, wit, and playful communication!</string>
+
     <string name="game_skill_creativity_text">creativity</string>
     <string name="game_skill_humor_text">humor</string>
     <string name="game_skill_storytelling_title_text">storytelling</string>

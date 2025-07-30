@@ -9,4 +9,7 @@
     <string name="home_start_exercise_btn_text">START</string>
     <string name="home_title_text">🎯 Speaking Course</string>
     <string name="home_subtitle_text">Boost your communication through real-life dialogue simulations</string>
+    <string name="block_practice_title_text">Refresh your skills!</string>
+    <string name="block_practice_primary_btn_text">Practice + ⭐</string>
+    <string name="block_finished_btn_text">Reinforce knowledge ⭐</string>
 </resources>

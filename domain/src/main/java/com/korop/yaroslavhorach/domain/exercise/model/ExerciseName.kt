@@ -53,7 +53,57 @@ enum class ExerciseName() {
     SUPPORT_WITH_HUMOR,
     IRONIC_DOMESTIC_REACTION,
     FLIRTY_REPLY,
-    FLIRT_SUSPECT
+    FLIRT_SUSPECT,
+}
+
+fun getExercisesByBlockName(blockName: ExerciseBlock): List<ExerciseName> {
+    return when (blockName) {
+        ExerciseBlock.ONE -> listOf(
+            ExerciseName.ICEBREAKERS,
+            ExerciseName.WHAT_TO_SAY_NEXT,
+            ExerciseName.THE_KEY_TO_SMALL_TALK,
+            ExerciseName.FAREWELL_REMARK
+        )
+        ExerciseBlock.TWO -> listOf(
+            ExerciseName.THREE_SENTENCES,
+            ExerciseName.STORY_PUZZLE,
+            ExerciseName.SAY_DIFFERENTLY,
+            ExerciseName.ONE_MEMORY,
+        )
+        ExerciseBlock.THREE -> listOf(
+            ExerciseName.JOIN_CONVERSATION,
+            ExerciseName.ASK_MORE,
+            ExerciseName.COMMENT_IN_MOMENT,
+            ExerciseName.SMOOTH_RETURN,
+            ExerciseName.FIND_THE_TOPIC,
+            ExerciseName.I_THINK_SO_TOO
+        )
+        ExerciseBlock.FOUR -> listOf(
+            ExerciseName.GIVE_REASON,
+            ExerciseName.WHY_VALUES_MATTER,
+            ExerciseName.SOFT_DISAGREEMENT,
+            ExerciseName.CALM_POSITION,
+            ExerciseName.GENTLE_PERSUASION
+        )
+        ExerciseBlock.FIVE -> listOf(
+            ExerciseName.EMPATHIC_RESPONSE,
+            ExerciseName.EMOTIONAL_TRANSLATOR
+        )
+        ExerciseBlock.SIX -> listOf(
+            ExerciseName.CONSPIRACY_BUILDER,
+            ExerciseName.REVERSE_STORYTELLING,
+            ExerciseName.MAKE_IT_FASCINATING,
+            ExerciseName.OVERDRAMATIC_TRIVIALITY
+        )
+        ExerciseBlock.SEVEN -> listOf(
+            ExerciseName.IRONIC_RESPONSE,
+            ExerciseName.AWKWARD_SITUATION,
+            ExerciseName.SUPPORT_WITH_HUMOR,
+            ExerciseName.IRONIC_DOMESTIC_REACTION,
+            ExerciseName.FLIRTY_REPLY,
+            ExerciseName.FLIRT_SUSPECT
+        )
+    }
 }
 
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {

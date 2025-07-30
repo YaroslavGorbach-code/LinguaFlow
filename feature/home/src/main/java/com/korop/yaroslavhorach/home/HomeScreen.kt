@@ -40,7 +40,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -58,7 +57,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.changedToDown
 import androidx.compose.ui.input.pointer.pointerInput
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
@@ -80,14 +78,16 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.korop.yaroslavhorach.designsystem.extentions.blockColorPrimary
 import com.korop.yaroslavhorach.designsystem.extentions.blockColorSecondary
 import com.korop.yaroslavhorach.designsystem.extentions.blockDescription
+import com.korop.yaroslavhorach.designsystem.extentions.blockDoneDescription
 import com.korop.yaroslavhorach.designsystem.extentions.blockTitle
-import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
+import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.korop.yaroslavhorach.designsystem.theme.White
 import com.korop.yaroslavhorach.designsystem.theme.White_70
 import com.korop.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.korop.yaroslavhorach.designsystem.theme.components.FloatingTooltip
 import com.korop.yaroslavhorach.designsystem.theme.components.InactiveButton
+import com.korop.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.korop.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.korop.yaroslavhorach.designsystem.theme.components.SecondaryButton
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
@@ -101,6 +101,7 @@ import com.korop.yaroslavhorach.domain.exercise.model.Exercise
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.home.model.ExerciseUi
 import com.korop.yaroslavhorach.home.model.HomeAction
+import com.korop.yaroslavhorach.home.model.HomeUiMessage
 import com.korop.yaroslavhorach.home.model.HomeViewState
 import com.korop.yaroslavhorach.ui.utils.conditional
 import kotlinx.coroutines.flow.distinctUntilChanged
@@ -111,13 +112,27 @@ import java.util.Locale
 internal fun HomeRoute(
     onNavigateToExercise: (Exercise) -> Unit,
     onNavigateToAvatarChange: () -> Unit,
+    onNavigateToRepeatBlock: (block: ExerciseBlock) -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
-    val homeState by viewModel.state.collectAsStateWithLifecycle()
+    val state by viewModel.state.collectAsStateWithLifecycle()
+    val exercisesState = rememberLazyListState()
+
+    state.uiMessage?.let { uiMessage ->
+        when (val message = uiMessage.message) {
+            is HomeUiMessage.ScrollTo -> {
+                LaunchedEffect(uiMessage.id) {
+                    exercisesState.scrollToItem(message.index)
+                    viewModel.clearMessage(uiMessage.id)
+                }
+            }
+        }
+    }
 
     HomeScreen(
-        screenState = homeState,
+        screenState = state,
+        exercisesState = exercisesState,
         onMessageShown = viewModel::clearMessage,
         onChangeColorScheme = onChangeColorScheme,
         actioner = { action ->
@@ -126,11 +141,12 @@ internal fun HomeRoute(
                     viewModel.submitAction(HomeAction.OnHideDescription)
                     onNavigateToExercise(action.exercise)
                 }
-
                 is HomeAction.OnAvatarClicked -> {
                     onNavigateToAvatarChange()
                 }
-
+                is HomeAction.OnRepeatBlockClicked -> {
+                    onNavigateToRepeatBlock(state.exerciseBlock)
+                }
                 else -> viewModel.submitAction(action)
             }
         })
@@ -139,12 +155,12 @@ internal fun HomeRoute(
 @Composable
 internal fun HomeScreen(
     screenState: HomeViewState,
+    exercisesState: LazyListState,
     onMessageShown: (id: Long) -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
     actioner: (HomeAction) -> Unit,
 ) {
     val density = LocalDensity.current
-    val exercisesState = rememberLazyListState()
     val descriptionBlockBounds = remember { mutableStateOf<IntRect?>(null) }
     val animatedTopPadding by animateDpAsState(
         targetValue = screenState.descriptionState.listTopExtraPadding,
@@ -217,16 +233,6 @@ private fun Exercises(
     actioner: (HomeAction) -> Unit,
     density: Density
 ) {
-    val lastActiveIndex = remember(screenState.exercises) {
-        screenState.exercises.indexOfFirst { it.isLastActive }
-    }
-
-    LaunchedEffect(lastActiveIndex) {
-        if (lastActiveIndex > 1) {
-            exercisesState.scrollToItem(lastActiveIndex)
-        }
-    }
-
     LazyColumn(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -386,11 +392,31 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
         ) {
             Row {
                 Column(modifier = Modifier.weight(1f)) {
-                    Text(
-                        text = stringResource(R.string.home_title_text),
-                        color = MaterialTheme.colorScheme.typoPrimary(),
-                        style = LinguaTypography.h3
-                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            modifier = Modifier.weight(1f),
+                            text = stringResource(R.string.home_title_text),
+                            color = MaterialTheme.colorScheme.typoPrimary(),
+                            style = LinguaTypography.h3
+                        )
+                        if (state.stars > 0) {
+                            Icon(
+                                modifier = Modifier
+                                    .size(34.dp),
+                                tint = Golden,
+                                painter = painterResource(LinguaIcons.icStarFilled),
+                                contentDescription = null
+                            )
+                            Text(
+                                text = state.stars.toString(),
+                                style = LinguaTypography.subtitle1,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis,
+                                color = Golden
+                            )
+                        }
+                    }
+
                     Spacer(Modifier.height(8.dp))
                     Text(
                         text = stringResource(R.string.home_subtitle_text),
@@ -409,25 +435,29 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                     .padding(horizontal = 20.dp)
             ) {
                 Spacer(Modifier.height(16.dp))
-                LinguaProgressBar(
-                    progress = state.blockProgress,
-                    progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
-                    progressColor = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(end = 14.dp)
-                        .height(40.dp),
-                ) {
-                    Image(
+
+                if (state.blockIsFinished.not()) {
+                    LinguaProgressBar(
+                        progress = state.blockProgress,
+                        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
+                        progressColor = MaterialTheme.colorScheme.primary,
                         modifier = Modifier
-                            .size(40.dp)
-                            .offset(x = 15.dp)
-                            .align(Alignment.CenterEnd),
-                        painter = painterResource(LinguaIcons.Cup),
-                        contentDescription = ""
-                    )
+                            .fillMaxWidth()
+                            .padding(end = 14.dp)
+                            .height(40.dp),
+                    ) {
+                        Image(
+                            modifier = Modifier
+                                .size(40.dp)
+                                .offset(x = 15.dp)
+                                .align(Alignment.CenterEnd),
+                            painter = painterResource(LinguaIcons.Cup),
+                            contentDescription = ""
+                        )
+                    }
+                    Spacer(Modifier.height(6.dp))
                 }
-                Spacer(Modifier.height(6.dp))
+
                 Text(
                     modifier = Modifier,
                     text = state.exerciseBlock.blockTitle().asString(),
@@ -435,12 +465,27 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                     style = LinguaTypography.h5
                 )
                 Spacer(Modifier.height(4.dp))
-                Text(
-                    modifier = Modifier,
-                    text = state.exerciseBlock.blockDescription().asString(),
-                    color = White,
-                    style = LinguaTypography.body4
-                )
+
+                if (state.blockIsFinished){
+                    Text(
+                        modifier = Modifier,
+                        text = state.exerciseBlock.blockDoneDescription().asString(),
+                        color = White,
+                        style = LinguaTypography.body4
+                    )
+                    Spacer(Modifier.height(16.dp))
+                    SecondaryButton(text = stringResource(R.string.block_finished_btn_text)) {
+                        actioner(HomeAction.OnRepeatBlockClicked)
+                    }
+                } else {
+                    Text(
+                        modifier = Modifier,
+                        text = state.exerciseBlock.blockDescription().asString(),
+                        color = White,
+                        style = LinguaTypography.body4
+                    )
+                }
+
                 Spacer(Modifier.height(16.dp))
             }
         }
@@ -624,43 +669,16 @@ private fun DescriptionTooltip(
     }
 }
 
-@Composable
-private fun UserGreeting(screenState: HomeViewState, actioner: (HomeAction) -> Unit) {
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        Text(
-            modifier = Modifier.weight(1f),
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
-            text = stringResource(id = R.string.home_user_grating_text, screenState.userName),
-            style = LinguaTypography.h2,
-            color = MaterialTheme.colorScheme.typoControlPrimary()
-        )
-        Spacer(Modifier.width(20.dp))
-        screenState.userAvatar?.let {
-            Image(
-                modifier = Modifier
-                    .clickable { actioner(HomeAction.OnAvatarClicked) }
-                    .size(45.dp),
-                painter = painterResource(it),
-                contentDescription = null,
-                contentScale = ContentScale.Crop
-            )
-        }
-    }
-}
-
 @Preview
 @Composable
 private fun HomePreview() {
-
-    LinguaTheme {
-        Surface {
-            HomeScreen(
-                HomeViewState.Preview,
-                {},
-                actioner = { _ -> },
-                onChangeColorScheme = { _, _ -> })
-        }
+    LinguaBackground {
+        HomeScreen(
+            HomeViewState.Preview,
+            rememberLazyListState(),
+            {},
+            actioner = { _ -> },
+            onChangeColorScheme = { _, _ -> })
     }
 }
 

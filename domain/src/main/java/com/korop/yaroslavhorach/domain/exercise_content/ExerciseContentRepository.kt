@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.domain.exercise_content
 
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.korop.yaroslavhorach.domain.exercise_content.model.Situation
 import com.korop.yaroslavhorach.domain.exercise_content.model.Test
@@ -9,6 +10,7 @@ import com.korop.yaroslavhorach.domain.game.model.Game
 
 interface ExerciseContentRepository {
     suspend fun getSituation(exerciseName: ExerciseName): Situation
+    suspend fun getSituation(block: ExerciseBlock): Situation
     suspend fun getTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister
     suspend fun getVocabulary(wordType: Vocabulary.WordType): Vocabulary
     suspend fun getTests(exerciseName: ExerciseName): List<Test>

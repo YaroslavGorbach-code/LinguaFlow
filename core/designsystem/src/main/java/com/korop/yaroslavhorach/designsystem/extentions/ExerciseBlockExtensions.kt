@@ -54,6 +54,22 @@ fun ExerciseBlock.blockDescription(): UiText {
     }
 }
 
+fun ExerciseBlock.blockDoneDescription(): UiText {
+    return UiText.FromResource(R.string.block_done_subtitle_text)
+}
+
+fun ExerciseBlock.blockPracticeMessage(): UiText {
+    return when (this) {
+        ExerciseBlock.ONE -> UiText.FromResource(R.string.block_practice_1_message_text)
+        ExerciseBlock.TWO -> UiText.FromResource(R.string.block_practice_2_message_text)
+        ExerciseBlock.THREE -> UiText.FromResource(R.string.block_practice_3_message_text)
+        ExerciseBlock.FOUR -> UiText.FromResource(R.string.block_practice_4_message_text)
+        ExerciseBlock.FIVE -> UiText.FromResource(R.string.block_practice_5_message_text)
+        ExerciseBlock.SIX -> UiText.FromResource(R.string.block_practice_6_message_text)
+        ExerciseBlock.SEVEN -> UiText.FromResource(R.string.block_practice_7_message_text)
+    }
+}
+
 fun ExerciseBlock.blockColorPrimary(): Color {
     return when (this) {
         ExerciseBlock.ONE -> BlockOneLight

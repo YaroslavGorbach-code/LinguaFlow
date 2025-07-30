@@ -1,0 +1,3 @@
+package com.korop.yaroslavhorach.block_practice.model
+
+sealed class BlockPracticeUiMessage

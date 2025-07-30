@@ -18,6 +18,16 @@
     <string name="block_6_subtitle_text">Навчися цікаво розповідати історії, захоплювати увагу та говорити виразно</string>
     <string name="block_7_subtitle_text">Навчися бути дотепним, грайливим і емоційно залученим — від легкого флірту до вміння розсмішити</string>
 
+    <string name="block_done_subtitle_text">Цей блок пройдено! Повертайся до вправ, коли хочеш освіжити навичку, або рушай далі!</string>
+
+    <string name="block_practice_1_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше у знайомствах та бесідах!</string>
+    <string name="block_practice_2_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше у розмовах про себе, почуття й інтереси!</string>
+    <string name="block_practice_3_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше у груповому спілкуванні!</string>
+    <string name="block_practice_4_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше в аргументації та мʼяких запереченнях!</string>
+    <string name="block_practice_5_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше в емоційному розумінні та підтримці інших!</string>
+    <string name="block_practice_6_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше у сторітелінгу та виразному мовленні!</string>
+    <string name="block_practice_7_message_text">Пройди 3 завдання блоку — забери зірку і стань ще впевненіше у флірті, дотепності та грайливому спілкуванні!</string>
+
     <string name="game_skill_creativity_text">креативність</string>
     <string name="game_skill_humor_text">гумор</string>
     <string name="game_skill_storytelling_title_text">розповідання історій</string>

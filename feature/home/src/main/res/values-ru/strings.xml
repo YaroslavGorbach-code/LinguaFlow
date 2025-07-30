@@ -9,4 +9,7 @@
     <string name="home_start_exercise_btn_text">НАЧАТЬ</string>
     <string name="home_title_text">🎯 Разговорный курс</string>
     <string name="home_subtitle_text">Прокачай общение через имитацию реальных диалогов</string>
+    <string name="block_practice_title_text">Освежи навыки!</string>
+    <string name="block_practice_primary_btn_text">Тренироваться + ⭐</string>
+    <string name="block_finished_btn_text">Закрепить знания ⭐</string>
 </resources>

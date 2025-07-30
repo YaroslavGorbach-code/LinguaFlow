@@ -24,4 +24,5 @@ message UserPreferences {
   repeated int64 was_game_unlocked_already_shown_for_game_id = 14;
   int64 lastTimeAskedUserToRateApp = 15;
   bool isAppRated = 16;
+  map<string, int32> stars = 17;
 }

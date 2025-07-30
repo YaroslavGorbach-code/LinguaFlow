@@ -5,6 +5,7 @@ import com.korop.yaroslavhorach.common.utill.isToday
 import com.korop.yaroslavhorach.datastore.IntList
 import com.korop.yaroslavhorach.datastore.UserPreferences
 import com.korop.yaroslavhorach.datastore.prefs.model.UserData
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.map
@@ -20,6 +21,7 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
                 experience = it.experience,
                 avatarResId = it.avatarRes,
                 activeDays = it.activeDaysList,
+                stars = it.starsMap.values.sum(),
                 userName = it.name ?: "",
                 isPremium = it.isPremium,
                 isOnboarding = !it.isOnboarding,
@@ -161,6 +163,24 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         }
     }
 
+    suspend fun addStar(blockName: ExerciseBlock) {
+        userPreferences.updateData { prefs ->
+            val currentStars = prefs.starsMap[blockName.name] ?: 0
+            val updatedStars = currentStars + 1
+
+            val updatedStarsMap = prefs.starsMap.toMutableMap().apply {
+                this[blockName.name] = updatedStars
+            }
+
+            prefs.toBuilder()
+                .putAllStars(updatedStarsMap)
+                .build()
+        }
+    }
+
+    fun getStarsForExercise(exerciseName: ExerciseBlock): Flow<Int> {
+        return userPreferences.data.map { it.starsMap[exerciseName.name] ?: 0 }
+    }
 
     suspend fun changePremiumState(isPremium: Boolean) {
         userPreferences.updateData { prefs ->

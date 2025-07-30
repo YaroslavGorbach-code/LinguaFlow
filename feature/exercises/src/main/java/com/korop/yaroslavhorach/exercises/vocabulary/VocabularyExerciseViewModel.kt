@@ -14,10 +14,10 @@ import com.korop.yaroslavhorach.domain.exercise_content.model.FeedBack
 import com.korop.yaroslavhorach.domain.exercise_content.model.Vocabulary
 import com.korop.yaroslavhorach.domain.game.GameRepository
 import com.korop.yaroslavhorach.domain.game.model.Game
-import com.korop.yaroslavhorach.exercises.speaking.navigation.SpeakingExerciseRoute
 import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseAction
 import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiMessage
 import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseViewState
+import com.korop.yaroslavhorach.exercises.vocabulary.navigation.VocabularyRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -39,7 +39,7 @@ class VocabularyExerciseViewModel @Inject constructor(
 ) : BaseViewModel<VocabularyExerciseViewState, VocabularyExerciseAction, VocabularyExerciseUiMessage>() {
     private val timer = SimpleTimer()
 
-    private val exerciseId = savedStateHandle.toRoute<SpeakingExerciseRoute>().exerciseId
+    private val exerciseId = savedStateHandle.toRoute<VocabularyRoute>().exerciseId
 
     private var currentExercise: MutableStateFlow<Exercise?> = MutableStateFlow(null)
     private var currentVocabulary: MutableStateFlow<Vocabulary?> = MutableStateFlow(null)

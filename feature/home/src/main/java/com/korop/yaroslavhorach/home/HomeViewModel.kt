@@ -2,6 +2,7 @@ package com.korop.yaroslavhorach.home
 
 import androidx.lifecycle.viewModelScope
 import com.korop.yaroslavhorach.common.base.BaseViewModel
+import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.home.model.ExerciseUi
@@ -15,8 +16,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
@@ -31,8 +34,10 @@ class HomeViewModel @Inject constructor(
         HomeViewState.DescriptionState.EMPTY
     )
 
+    private val exercises: MutableStateFlow<List<ExerciseUi>> = MutableStateFlow(emptyList())
+
     override val state: StateFlow<HomeViewState> = com.korop.yaroslavhorach.common.utill.combine(
-            exerciseRepository.getExercises(),
+            exercises,
             prefsRepository.getUserData(),
             descriptionState,
             exerciseRepository.getBlock(),
@@ -41,18 +46,34 @@ class HomeViewModel @Inject constructor(
             HomeViewState(
                 uiMessage = messages,
                 userName = userData.userName,
+                stars = userData.stars,
                 userAvatar = userData.avatarResId,
                 descriptionState = description,
                 exerciseBlock = exercisesBlock,
-                exercises = exercises.map { ExerciseUi(it) }
+                exercises = exercises
             )
         }.stateIn(
             scope = viewModelScope,
             started = SharingStarted.Eagerly,
             initialValue = HomeViewState.Empty
-        )
+    )
 
     init {
+        exerciseRepository.getExercises()
+            .map { it.map(::ExerciseUi) }
+            .onEach { ex ->
+                exercises.value = ex
+
+                val lastActiveIndex = ex.indexOfFirst { it.isLastActive }
+
+                viewModelScope.launch {
+                    if (lastActiveIndex > 0) {
+                        uiMessageManager.emitMessage(UiMessage(HomeUiMessage.ScrollTo(lastActiveIndex)))
+                    }
+                }
+            }
+            .launchIn(viewModelScope)
+
         pendingActions
             .onEach { event ->
                 when (event) {

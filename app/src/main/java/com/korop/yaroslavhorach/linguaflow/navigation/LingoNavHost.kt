@@ -9,6 +9,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.navOptions
 import com.korop.yaroslavhorach.avatar_change.navigation.avatarChangeScreen
 import com.korop.yaroslavhorach.avatar_change.navigation.navigateToAvatarChange
+import com.korop.yaroslavhorach.block_practice.navigation.blockPracticeScreen
+import com.korop.yaroslavhorach.block_practice.navigation.navigateToBlockPractice
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navigation.gameUnlockedScreen
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navigation.navigateToGameUnlockedSuccess
 import com.korop.yaroslavhorach.designsystem.screens.onboarding.navigation.OnboardingRoute
@@ -19,12 +21,14 @@ import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.
 import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.premiumSuccessScreen
 import com.korop.yaroslavhorach.designsystem.screens.rate.navigation.navigateToRateApp
 import com.korop.yaroslavhorach.designsystem.screens.rate.navigation.rateAppScreen
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.holders.OpenGameDetailsHolder
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.navigateToExerciseCompleted
 import com.korop.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExercise
+import com.korop.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExerciseWithBack
 import com.korop.yaroslavhorach.exercises.speaking.navigation.speakingExerciseScreen
 import com.korop.yaroslavhorach.exercises.tongue_twisters.navigation.navigateToTongueTwistersExercise
 import com.korop.yaroslavhorach.exercises.tongue_twisters.navigation.tongueTwistersExerciseScreen
@@ -67,7 +71,7 @@ fun LingoNavHost(
         homeScreen(onNavigateToExercise = { exercise ->
             when (exercise.skill) {
                 Skill.COMMUNICATION -> {
-                    navController.navigateToSpeakingExercise(exercise.id)
+                    navController.navigateToSpeakingExercise(exercise.id, null)
                 }
 
                 Skill.VOCABULARY -> {
@@ -78,9 +82,10 @@ fun LingoNavHost(
                     navController.navigateToTongueTwistersExercise(exercise.id)
                 }
             }
-        }, onChangeColorScheme = onChangeColorScheme, onNavigateToAvatarChange = {
-            navController.navigateToAvatarChange()
-        })
+        }, onChangeColorScheme = onChangeColorScheme,
+            onNavigateToAvatarChange = { navController.navigateToAvatarChange() },
+            onNavigateToBlockRepeat = { block: ExerciseBlock -> navController.navigateToBlockPractice(block) }
+        )
         gamesScreen(onNavigateToGame = { id, name ->
             when (name) {
                 Game.GameName.RAVEN_LIKE_A_CHAIR,
@@ -207,5 +212,10 @@ fun LingoNavHost(
             navController.popBackStack()
         }
         )
+        blockPracticeScreen(onNavigateExercises = {
+            navController.navigateToSpeakingExerciseWithBack(exerciseId = null, blockName = it)
+        }, onNavigateBack = {
+            navController.popBackStack()
+        })
     }
 }
