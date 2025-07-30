@@ -38,6 +38,8 @@ val BlockFiveLight = Color(0xFFB99795)
 val BlockFiveDark = Color(0xFF8B6D6B)
 val BlockSixLight = Color(0xFF8F8FAD)
 val BlockSixDark = Color(0xFF72658A)
+val BlockSevenLight = Color(0xFFEF7CD3)
+val BlockSevenDark = Color(0xFFB14A99)
 
 internal val Cultured = Color(0xFFF5F5F5)
 internal val DarkLiver = Color(0xFF4D4D4D)

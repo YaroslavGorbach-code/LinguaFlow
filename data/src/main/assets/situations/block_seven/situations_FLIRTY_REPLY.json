@@ -1,0 +1,534 @@
+[
+  {
+    "id": "32",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі: «Ти завжди залишаєш після себе гарний настрій»",
+      "en": "Someone says to you: “You always leave good vibes behind”",
+      "ru": "Тебе кто-то говорит: «Ты всегда оставляешь после себя хорошее настроение»"
+    },
+    "task": {
+      "uk": "Придумай флірт-відповідь — легко, з усмішкою або перебільшенням.",
+      "en": "Come up with a flirty reply — light, smiling, or a bit exaggerated.",
+      "ru": "Придумай флирт-ответ — легко, с улыбкой или немного с преувеличением."
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Друг каже тобі: «Ти завжди вмієш зробити розмову цікавою»",
+      "en": "A friend says to you: “You always make the conversation interesting”",
+      "ru": "Тебе говорит друг: «Ты всегда умеешь сделать разговор интересным»"
+    },
+    "task": {
+      "uk": "Зреагуй грайливо — ніби ти професіонал(ка) у чарівності.",
+      "en": "React playfully — like you’re a charm expert.",
+      "ru": "Ответь игриво — будто ты профи в очаровании."
+    }
+  },
+  {
+    "id": "34",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі: «Як тобі вдається виглядати круто навіть у піжамі?»",
+      "en": "Someone says to you: “How do you manage to look cool even in pajamas?”",
+      "ru": "Тебе кто-то говорит: «Как тебе удаётся выглядеть круто даже в пижаме?»"
+    },
+    "task": {
+      "uk": "Відповідай фліртовно, ніби це твоя суперсила.",
+      "en": "Reply flirtatiously, like it's your superpower.",
+      "ru": "Ответь с флиртом, будто это твоя суперсила."
+    }
+  },
+  {
+    "id": "35",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Знайомий каже тобі: «Якщо б був конкурс харизми — ти б точно виграв(ла)»",
+      "en": "An acquaintance says to you: “If there was a charisma contest, you'd win it”",
+      "ru": "Знакомый говорит тебе: «Если бы был конкурс харизмы — ты бы точно победил(а)»"
+    },
+    "task": {
+      "uk": "Придумай флірт-відповідь — із впевненістю або іронією.",
+      "en": "Come up with a flirty reply — with confidence or irony.",
+      "ru": "Придумай флирт-ответ — с уверенностью или иронией."
+    }
+  },
+  {
+    "id": "36",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Колега каже тобі: «Ти змушуєш людей усміхатись, навіть коли мовчиш»",
+      "en": "A colleague says to you: “You make people smile even when you're silent”",
+      "ru": "Коллега говорит тебе: «Ты заставляешь людей улыбаться, даже когда молчишь»"
+    },
+    "task": {
+      "uk": "Зреагуй фліртовно або з теплою іронією.",
+      "en": "React flirtatiously or with gentle irony.",
+      "ru": "Ответь флиртуя или с мягкой иронией."
+    }
+  },
+  {
+    "id": "37",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі: «Ти як магніт — притягуєш увагу»",
+      "en": "Someone says to you: “You're like a magnet — you attract attention”",
+      "ru": "Кто-то говорит тебе: «Ты как магнит — притягиваешь внимание»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом або грайливим перебільшенням.",
+      "en": "Reply with flirt or playful exaggeration.",
+      "ru": "Ответь с флиртом или игривым преувеличением."
+    }
+  },
+  {
+    "id": "38",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Подруга каже тобі: «У тебе така усмішка, що не можна не закохатись»",
+      "en": "A friend says to you: “Your smile is impossible not to fall for”",
+      "ru": "Подруга говорит тебе: «Твоя улыбка — невозможно не влюбиться»"
+    },
+    "task": {
+      "uk": "Придумай жартівливо-ніжну відповідь.",
+      "en": "Come up with a sweet and witty reply.",
+      "ru": "Придумай нежный и шутливый ответ."
+    }
+  },
+  {
+    "id": "39",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі: «Щось у тобі є... і це щось — дуже привабливе»",
+      "en": "Someone says to you: “There’s something about you… and it’s very attractive”",
+      "ru": "Кто-то говорит тебе: «В тебе что-то есть… и это что-то очень притягательно»"
+    },
+    "task": {
+      "uk": "Зреагуй, ніби це не перший раз, коли це чуєш — але кожного разу приємно.",
+      "en": "React like it’s not the first time you’ve heard it — but it’s still nice.",
+      "ru": "Ответь так, будто слышишь это не впервые — но всё равно приятно."
+    }
+  },
+  {
+    "id": "40",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Друг каже тобі: «Ти як персональний антистрес — завжди піднімаєш настрій»",
+      "en": "A friend says to you: “You're like a personal anti-stress — always cheering me up”",
+      "ru": "Друг говорит тебе: «Ты как личный антистресс — всегда поднимаешь настроение»"
+    },
+    "task": {
+      "uk": "Придумай відповідь з теплим гумором або фліртом.",
+      "en": "Come up with a reply with warm humor or flirtation.",
+      "ru": "Придумай ответ с тёплым юмором или флиртом."
+    }
+  },
+  {
+    "id": "41",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі: «Ти виглядаєш так, ніби щойно вийшов(ла) з реклами»",
+      "en": "Someone says to you: “You look like you just walked out of a commercial”",
+      "ru": "Кто-то говорит тебе: «Ты выглядишь как из рекламы»"
+    },
+    "task": {
+      "uk": "Відповідай з усмішкою — фліртовно або з самоіронією.",
+      "en": "Reply with a smile — flirtatiously or with self-irony.",
+      "ru": "Ответь с улыбкой — флиртуя или с самоиронией."
+    }
+  },
+  {
+    "id": "43",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось жартома каже: «Ти знову крадеш усю увагу!»",
+      "en": "Someone jokingly says: “You’re stealing all the attention again!”",
+      "ru": "Кто-то в шутку говорит: «Ты снова крадёшь всё внимание!»"
+    },
+    "task": {
+      "uk": "Відповідай легко, ніби тобі це подобається, але ти «зовсім не навмисне».",
+      "en": "Reply playfully, as if you love it — but are ‘totally innocent’.",
+      "ru": "Ответь игриво, будто тебе это нравится, но ты «совсем не специально»."
+    }
+  },
+  {
+    "id": "44",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Незнайомець(ка) каже: «З таким голосом можна вести радіо»",
+      "en": "A stranger says: “With a voice like that, you could host a radio show”",
+      "ru": "Незнакомец(ка) говорит: «С таким голосом тебе на радио надо»"
+    },
+    "task": {
+      "uk": "Відповідай фліртовно — ніби вже ведеш вечірнє шоу для особливих слухачів.",
+      "en": "Reply flirtatiously — as if you already host a late-night show for special listeners.",
+      "ru": "Ответь флиртуя — как будто ты уже ведёшь ночное шоу для избранных слушателей."
+    }
+  },
+  {
+    "id": "46",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Ти чуєш: «Такі очі — точно не для повсякденних розмов»",
+      "en": "You hear: “Eyes like that aren’t made for everyday conversation”",
+      "ru": "Ты слышишь: «С такими глазами не о будничных вещах говорят»"
+    },
+    "task": {
+      "uk": "Відповідай, ніби тобі щойно зробили зізнання, і ти готовий(а) підіграти.",
+      "en": "Reply as if they just confessed something — and you’re ready to play along.",
+      "ru": "Ответь так, будто тебе только что признались, и ты готов(а) подыграть."
+    }
+  },
+  {
+    "id": "47",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже: «Твоя енергія — це щось нереальне»",
+      "en": "Someone says: “Your energy is unreal”",
+      "ru": "Кто-то говорит: «У тебя нереальная энергетика»"
+    },
+    "task": {
+      "uk": "Відповідай так, ніби в тобі приховано щось магічне.",
+      "en": "Reply as if there’s something magical about you.",
+      "ru": "Ответь так, будто в тебе что-то волшебное."
+    }
+  },
+  {
+    "id": "47",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі: «Коли ти усміхаєшся — в кімнаті стає тепліше»",
+      "en": "Someone says to you: “When you smile, the room gets warmer”",
+      "ru": "Кто-то говорит тебе: «Когда ты улыбаешься — в комнате становится теплее»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "48",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть: «З тобою навіть буденність виглядає як свято»",
+      "en": "You're told: “Even ordinary days feel like a celebration with you”",
+      "ru": "Тебе говорят: «С тобой даже будни — как праздник»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "50",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Друг каже: «Щоразу, коли ти поруч — все йде не за планом. Але тільки в хорошому сенсі»",
+      "en": "A friend says: “Every time you’re around, plans go out the window — in the best way”",
+      "ru": "Друг говорит: «Когда ты рядом, все идёт не по плану — но это даже лучше»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "51",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже: «З тобою важко зосередитись. Але я не проти»",
+      "en": "Someone says: “It’s hard to focus when you’re around. But I don’t mind”",
+      "ru": "Кто-то говорит: «С тобой сложно сосредоточиться. Но мне это нравится»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "57",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось посміхається і каже: «Ти взагалі розумієш, що з тобою складно не закохатись? Це вже якесь випробування»",
+      "en": "Someone smiles and says: “Do you even realize how hard it is *not* to fall for you? This feels like a challenge”",
+      "ru": "Кто-то улыбается и говорит: «Ты вообще понимаешь, как сложно в тебя не влюбиться? Это уже какое-то испытание»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "58",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть з легкою усмішкою: «Ти завжди з'являєшся в найкращий момент, як сцена з романтичного фільму. Збіг?»",
+      "en": "You’re told with a soft smile: “You always show up at just the right moment — like a scene from a romcom. Coincidence?”",
+      "ru": "Тебе говорят с лёгкой улыбкой: «Ты всегда появляешься в самый удачный момент — как сцена из романтического фильма. Совпадение?»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "59",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Людина дивиться на тебе і каже: «Твоя усмішка — офіційно мій новий улюблений вид залежності»",
+      "en": "Someone looks at you and says: “Your smile is officially my new favorite addiction”",
+      "ru": "Человек смотрит на тебя и говорит: «Твоя улыбка — моя новая любимая зависимость, официально»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "60",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже тобі, ніби ненароком: «Я не знаю, чим ти там користуєшся — але твоє очарування працює якось надто добре»",
+      "en": "Someone says to you, almost casually: “I don’t know what you're doing — but your charm is working *way* too well”",
+      "ru": "Кто-то говорит тебе, как бы между прочим: «Я не знаю, что ты делаешь — но твоё обаяние срабатывает слишком уж хорошо»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "61",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть із примруженим поглядом: «Знаєш, я вже давно не зустрічав когось, хто так легко викликає посмішку. Це небезпечно»",
+      "en": "You’re told with a smirk: “You know, I haven’t met someone who makes me smile this easily in a long time. That’s dangerous”",
+      "ru": "Тебе говорят с прищуром: «Знаешь, я давно не встречал(а) кого-то, кто так легко вызывает улыбку. Это опасно»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "62",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось, ніби жартома, каже: «З тобою будь-яка зустріч закінчується тим, що я не хочу, щоб вона закінчувалась. Це вже не випадковість»",
+      "en": "Someone jokingly says: “Every time we meet, I end up not wanting it to end. That can’t be a coincidence anymore”",
+      "ru": "Кто-то, будто в шутку, говорит: «Каждая встреча с тобой заканчивается тем, что я не хочу, чтобы она заканчивалась. Это уже не совпадение»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "63",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Людина дивиться трохи довше і каже: «Я не знаю, як ти це робиш, але з тобою легко забути про все інше»",
+      "en": "The person looks at you a bit longer and says: “I don’t know how you do it, but you make it easy to forget everything else”",
+      "ru": "Человек смотрит на тебя чуть дольше и говорит: «Не знаю, как ты это делаешь, но с тобой легко забыть обо всём остальном»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "64",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось посміхається і каже: «Ти, випадково, не спеціально тренував(ла) цей погляд? Бо він небезпечно ефективний»",
+      "en": "Someone smiles and says: “You didn’t secretly train that look, did you? Because it’s dangerously effective”",
+      "ru": "Кто-то улыбается и говорит: «Ты, случайно, не тренировался(ась) специально делать такой взгляд? Он слишком уж эффективен»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "65",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже із лукавою посмішкою: «Окей, визнаю. Якщо б ти був(була) персонажем у грі — я б програвав(ла) щоразу»",
+      "en": "Someone says with a cheeky grin: “Okay, I admit it. If you were a video game character, I’d lose every time”",
+      "ru": "Кто-то говорит с хитрой улыбкой: «Ладно, признаю. Если бы ты был(а) героем в игре — я бы каждый раз проигрывал(а)»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "66",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось дивиться тобі в очі і каже: «Я забув(ла), що хотів(ла) сказати. І це не вперше, коли ти так на мене дієш»",
+      "en": "Someone looks into your eyes and says: “I forgot what I was going to say. And it’s not the first time you’ve had that effect on me”",
+      "ru": "Кто-то смотрит тебе в глаза и говорит: «Я забыл(а), что хотел(а) сказать. И это не в первый раз — ты на меня так действуешь»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "67",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось дивиться на тебе й каже з напівусмішкою: «Я думав(ла), що люди з такою харизмою існують тільки в кіно. А потім з’являєшся ти»",
+      "en": "Someone looks at you and says with a smirk: “I thought people with that kind of charisma only existed in movies. And then you showed up”",
+      "ru": "Кто-то смотрит на тебя и с усмешкой говорит: «Я думал(а), что такая харизма бывает только в кино. А потом появился(ась) ты»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "68",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть із легкою іронією: «Ти ж розумієш, що з таким поглядом гріх просто мовчати. Він ніби просить про щось небезпечне»",
+      "en": "Someone tells you playfully: “You do realize that with eyes like that, silence feels illegal? It’s like they’re asking for trouble”",
+      "ru": "Тебе говорят с лёгкой иронией: «Ты же понимаешь, что с таким взглядом молчать — преступление? Он как будто просит о чём-то опасном»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "69",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Людина підморгує і каже: «Ну все, тепер я офіційно не можу тебе ігнорувати. Занадто ти цікаво поводишся»",
+      "en": "The person winks and says: “Alright, it’s official — I can’t ignore you anymore. You’re way too intriguing”",
+      "ru": "Человек подмигивает и говорит: «Всё, официально — я больше не могу тебя игнорировать. Ты слишком уж интересный(ая)»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "70",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось посміхається й каже: «Можеш не робити нічого особливого, але все одно притягуєш, як магніт. Я починаю хвилюватись за свій самоконтроль»",
+      "en": "Someone smiles and says: “You don’t even have to do anything, and still you’re magnetic. I’m starting to worry about my self-control”",
+      "ru": "Кто-то улыбается и говорит: «Ты ничего особенного не делаешь, но всё равно притягиваешь, как магнит. Я начинаю волноваться за свой самоконтроль»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "71",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть, дивлячись знизу вверх: «Це несправедливо — ти виглядаєш так, ніби вийшов(ла) зі сну, який я не хочу прокидатися»",
+      "en": "You’re told, with an upward glance: “It’s unfair — you look like you just walked out of a dream I don’t want to wake up from”",
+      "ru": "Тебе говорят, глядя снизу вверх: «Это нечестно — ты выглядишь, как будто вышел(а) из сна, из которого я не хочу просыпаться»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "72",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось з посмішкою каже: «Твої жарти небезпечні. Можна ж так і закохатись просто від одного повідомлення»",
+      "en": "Someone says with a smile: “Your jokes are dangerous. A person could fall in love just from one message”",
+      "ru": "Кто-то с улыбкой говорит: «Твои шутки опасны. Так можно и влюбиться просто от одного сообщения»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "73",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть, трохи схиливши голову: «Я не знаю, що мене більше бентежить — як ти виглядаєш, чи як ти говориш. Усе разом — це занадто»",
+      "en": "You’re told with a tilted head: “I’m not sure what’s more distracting — how you look or how you talk. Together it’s... a lot”",
+      "ru": "Тебе говорят, слегка склонив голову: «Я не знаю, что меня больше смущает — как ты выглядишь или как говоришь. Всё вместе — это слишком»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "74",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось стиха каже: «Ти взагалі розумієш, що коли ти поруч — світ трохи уповільнюється? Це вже не просто симпатія»",
+      "en": "Someone quietly says: “Do you realize that when you’re around, the world slows down a bit? This is more than just a crush”",
+      "ru": "Кто-то тихо говорит: «Ты вообще понимаешь, что когда ты рядом — мир замедляется? Это не просто симпатия»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "75",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Хтось каже з усмішкою: «Можливо, це буде звучати дивно, але я реально вірю, що ти міг(могла) би вкрасти серце й зробити це красиво»",
+      "en": "Someone says with a grin: “Okay, this might sound weird, but I truly believe you could steal a heart — and make it look elegant”",
+      "ru": "Кто-то говорит с улыбкой: «Может, это прозвучит странно, но я реально думаю, что ты мог(ла) бы украсть сердце — и сделать это красиво»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  },
+  {
+    "id": "76",
+    "exercise_name": "FLIRTY_REPLY",
+    "situation": {
+      "uk": "Тобі кажуть із блиском в очах: «Я все ще не вирішив(ла), що саме в тобі найнебезпечніше — твої очі, голос чи відчуття гумору. Але я вже приречений(а)»",
+      "en": "You’re told with a sparkle in their eyes: “I still haven’t figured out what’s the most dangerous about you — your eyes, your voice, or your sense of humor. But I’m doomed”",
+      "ru": "Тебе говорят с блеском в глазах: «Я всё ещё не решил(а), что в тебе самое опасное — твои глаза, голос или чувство юмора. Но я уже обречён(а)»"
+    },
+    "task": {
+      "uk": "Відповідай з фліртом.",
+      "en": "Reply flirtatiously.",
+      "ru": "Ответь с флиртом."
+    }
+  }
+]

@@ -8,6 +8,7 @@
     <string name="block_4_title_text"><![CDATA[Блок 4: Аргументація та м’які незгоди]]></string>
     <string name="block_5_title_text"><![CDATA[Блок 5: Емпатія та активне слухання]]></string>
     <string name="block_6_title_text"><![CDATA[Блок 6: Сторітелінг та виразне мовлення]]></string>
+    <string name="block_7_title_text"><![CDATA[Блок 7: Гумор, флірт і невимушене спілкування]]></string>
 
     <string name="block_1_subtitle_text">Навчися легко починати розмову, підтримувати її та знайомитися з новими людьми</string>
     <string name="block_2_subtitle_text">Ставай упевненішим, говорячи про себе, свої інтереси, думки та почуття</string>
@@ -15,6 +16,7 @@
     <string name="block_4_subtitle_text">Практикуй ввічливе висловлення думки та аргументацію</string>
     <string name="block_5_subtitle_text">Розвивай чутливість до емоцій інших і вміння підтримати теплим словом</string>
     <string name="block_6_subtitle_text">Навчися цікаво розповідати історії, захоплювати увагу та говорити виразно</string>
+    <string name="block_7_subtitle_text">Навчися бути дотепним, грайливим і емоційно залученим — від легкого флірту до вміння розсмішити</string>
 
     <string name="game_skill_creativity_text">креативність</string>
     <string name="game_skill_humor_text">гумор</string>

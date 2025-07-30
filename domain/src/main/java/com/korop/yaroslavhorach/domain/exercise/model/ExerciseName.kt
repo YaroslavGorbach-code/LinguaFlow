@@ -46,6 +46,14 @@ enum class ExerciseName() {
     REVERSE_STORYTELLING,
     MAKE_IT_FASCINATING,
     OVERDRAMATIC_TRIVIALITY,
+
+    // 7
+    IRONIC_RESPONSE,
+    AWKWARD_SITUATION,
+    SUPPORT_WITH_HUMOR,
+    IRONIC_DOMESTIC_REACTION,
+    FLIRTY_REPLY,
+    FLIRT_SUSPECT
 }
 
 fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {

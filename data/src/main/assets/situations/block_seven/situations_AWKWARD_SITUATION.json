@@ -1,0 +1,436 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково пролив(ла) каву в офісі — прямо на стіл під час наради.",
+      "en": "You accidentally spilled coffee in the office — right on the table during a meeting.",
+      "ru": "Ты случайно пролил(а) кофе в офисе — прямо на стол во время совещания."
+    },
+    "task": {
+      "uk": "Придумай жартівливу або креативну реакцію, яка допоможе розрядити ситуацію, не вибачаючись занадто.",
+      "en": "Come up with a playful or creative reaction that helps defuse the situation without over-apologizing.",
+      "ru": "Придумай шутливую или креативную реакцию, которая поможет разрядить ситуацию, не извиняясь слишком много."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Під час побачення ти випадково перекинув(ла) келих води.",
+      "en": "During a date, you accidentally knocked over a glass of water.",
+      "ru": "Во время свидания ты случайно опрокинул(а) стакан воды."
+    },
+    "task": {
+      "uk": "Придумай дотепну фразу або легкий жарт, щоб не зруйнувати романтичну атмосферу.",
+      "en": "Come up with a witty line or light joke to keep the romantic vibe intact.",
+      "ru": "Придумай остроумную фразу или лёгкую шутку, чтобы сохранить романтическую атмосферу."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти голосно заговорив(ла) під час онлайн-зустрічі, не помітивши, що мікрофон увімкнений.",
+      "en": "You started talking loudly during a video meeting, not realizing your mic was on.",
+      "ru": "Ты начал(а) громко говорить на онлайн-встрече, не заметив, что микрофон включён."
+    },
+    "task": {
+      "uk": "Придумай дотепну або легку відповідь, щоби розрядити момент.",
+      "en": "Come up with a quick or light-hearted reply to defuse the moment.",
+      "ru": "Придумай лёгкий или остроумный ответ, чтобы разрядить момент."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти підійшов(ла) до незнайомця, думаючи, що це твій знайомий.",
+      "en": "You walked up to a stranger, thinking it was your friend.",
+      "ru": "Ты подошёл(шла) к незнакомцу, думая, что это твой знакомый."
+    },
+    "task": {
+      "uk": "Зреагуй з гумором або чарівністю, не вибачаючись надмірно.",
+      "en": "React with humor or charm without over-apologizing.",
+      "ru": "Отреагируй с юмором или обаянием, не извиняясь слишком сильно."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти намагався(лася) привітатися за руку, але інша людина зробила жест для обіймів.",
+      "en": "You went for a handshake, but the other person went in for a hug.",
+      "ru": "Ты потянул(ась) руку для рукопожатия, а другой человек пошёл обниматься."
+    },
+    "task": {
+      "uk": "Придумай легку жартівливу реакцію, яка зробить ситуацію кумедною.",
+      "en": "Come up with a light joke to turn the moment into something funny.",
+      "ru": "Придумай лёгкую шутку, чтобы сделать ситуацию смешной."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково зачепив(ла) стілець, і він гучно гримнув у тиші.",
+      "en": "You accidentally bumped a chair and it clattered loudly in the silence.",
+      "ru": "Ты случайно задел(а) стул, и он громко грохнулся в тишине."
+    },
+    "task": {
+      "uk": "Придумай веселу або іронічну реакцію, щоб зберегти легку атмосферу.",
+      "en": "Think of a funny or ironic reaction to keep things light.",
+      "ru": "Придумай весёлую или ироничную реакцию, чтобы сохранить лёгкую атмосферу."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти сказав(ла) тост, і випадково перевернув(ла) келих.",
+      "en": "You gave a toast and accidentally knocked over your glass.",
+      "ru": "Ты сказал(а) тост и случайно опрокинул(а) бокал."
+    },
+    "task": {
+      "uk": "Зреагуй кумедно, щоби не перетворити момент на драму.",
+      "en": "React playfully so the moment doesn’t turn dramatic.",
+      "ru": "Отреагируй с юмором, чтобы момент не стал неловким."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти махнув(ла) людині, яка не побачила — і ніхто інший теж не відреагував.",
+      "en": "You waved at someone who didn’t see you — and no one else noticed either.",
+      "ru": "Ты помахал(а) кому-то, кто не заметил — и никто другой не отреагировал."
+    },
+    "task": {
+      "uk": "Придумай внутрішній або зовнішній коментар з іронією.",
+      "en": "Think of an internal or spoken ironic comment.",
+      "ru": "Придумай внутренний или внешний ироничный комментарий."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково поставив(ла) їжу не туди на фуршеті.",
+      "en": "You accidentally placed your food in the wrong spot at the buffet.",
+      "ru": "Ты случайно поставил(а) еду не туда на фуршете."
+    },
+    "task": {
+      "uk": "Зреагуй з креативним жартом або коментарем.",
+      "en": "Respond with a creative joke or comment.",
+      "ru": "Ответь с креативной шуткой или комментарием."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти прийшов(ла) на захід у яскравому одязі, а всі інші — в стриманому стилі.",
+      "en": "You showed up to an event in bright clothes while everyone else is in neutrals.",
+      "ru": "Ты пришёл(шла) на мероприятие в яркой одежде, а все остальные — в сдержанных тонах."
+    },
+    "task": {
+      "uk": "Придумай упевнену або іронічну фразу, щоб підкреслити свій стиль.",
+      "en": "Come up with a confident or ironic phrase to highlight your style.",
+      "ru": "Придумай уверенную или ироничную фразу, чтобы подчеркнуть свой стиль."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти забув(ла) ім’я людини, з якою вже кілька разів спілкувався(лася).",
+      "en": "You forgot the name of someone you’ve already talked to several times.",
+      "ru": "Ты забыл(а) имя человека, с которым уже несколько раз общался(ась)."
+    },
+    "task": {
+      "uk": "Зреагуй з шармом і гумором, щоб не поставити себе чи іншу людину в незручне становище.",
+      "en": "React with charm and humor to avoid making it awkward for either of you.",
+      "ru": "Отреагируй с обаянием и юмором, чтобы не создать неловкости для себя или собеседника."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти намагався(лася) відчинити чужі двері, думаючи, що це твій офіс.",
+      "en": "You tried to open someone else’s door, thinking it was your office.",
+      "ru": "Ты попытался(лась) открыть чужую дверь, думая, что это твой офис."
+    },
+    "task": {
+      "uk": "Зреагуй жартівливо або з самоіронією, щоб розрядити момент.",
+      "en": "React with a joke or self-irony to defuse the moment.",
+      "ru": "Отреагируй с шуткой или самоиронией, чтобы разрядить ситуацию."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти зробив(ла) селфі, а потім помітив(ла), що позаду стоїть знайомий і дивиться в камеру.",
+      "en": "You took a selfie, then noticed a friend awkwardly standing in the background.",
+      "ru": "Ты сделал(а) селфи, а потом заметил(а), что на заднем плане стоит знакомый и смотрит в камеру."
+    },
+    "task": {
+      "uk": "Придумай кумедний або добрий коментар, щоб зробити момент веселим.",
+      "en": "Come up with a funny or kind comment to make the moment fun.",
+      "ru": "Придумай весёлый или добрый комментарий, чтобы сделать момент забавным."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти почав(ла) говорити, коли ще хтось не договорив.",
+      "en": "You started talking while someone else was still speaking.",
+      "ru": "Ты начал(а) говорить, пока кто-то ещё не закончил."
+    },
+    "task": {
+      "uk": "Придумай легкий і дружній коментар, який пом’якшить момент.",
+      "en": "Come up with a light, friendly comment to ease the moment.",
+      "ru": "Придумай лёгкий дружелюбный комментарий, чтобы сгладить ситуацию."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково надіслав(ла) повідомлення не тій людині.",
+      "en": "You accidentally sent a message to the wrong person.",
+      "ru": "Ты случайно отправил(а) сообщение не тому человеку."
+    },
+    "task": {
+      "uk": "Придумай веселу або винахідливу відповідь, яка розрядить ситуацію.",
+      "en": "Come up with a fun or clever response to smooth things over.",
+      "ru": "Придумай весёлый или находчивый ответ, чтобы разрядить ситуацию."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти радісно привітав(ла) людину, яка не впізнала тебе.",
+      "en": "You greeted someone enthusiastically, but they didn’t recognize you.",
+      "ru": "Ты радостно поприветствовал(а) человека, а он(а) тебя не узнал(а)."
+    },
+    "task": {
+      "uk": "Зреагуй з шармом і гумором, щоб уникнути незручності.",
+      "en": "React with charm and humor to avoid awkwardness.",
+      "ru": "Отреагируй с обаянием и юмором, чтобы избежать неловкости."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти розповідав(ла) жарт, і тільки одна людина посміялася.",
+      "en": "You told a joke and only one person laughed.",
+      "ru": "Ты рассказал(а) шутку, и только один человек засмеялся."
+    },
+    "task": {
+      "uk": "Придумай іронічну або легку фразу, яка врятує ситуацію.",
+      "en": "Think of an ironic or light phrase to save the moment.",
+      "ru": "Придумай ироничную или лёгкую фразу, чтобы спасти ситуацию."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти надіслав(ла) електронного листа без вкладеного файлу, який згадував(ла).",
+      "en": "You sent an email without the file you mentioned.",
+      "ru": "Ты отправил(а) письмо без вложения, которое упомянул(а)."
+    },
+    "task": {
+      "uk": "Придумай жартівливу відповідь або коментар для наступного листа.",
+      "en": "Come up with a humorous reply or comment for the follow-up email.",
+      "ru": "Придумай шутливый ответ или комментарий для следующего письма."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти голосно засміявся(лася) в момент, коли всі навколо були серйозні.",
+      "en": "You laughed loudly while everyone else was serious.",
+      "ru": "Ты громко засмеялся(лась), когда все вокруг были серьёзными."
+    },
+    "task": {
+      "uk": "Зреагуй так, щоб ситуація стала менш незручною для всіх.",
+      "en": "React in a way that makes the situation less awkward for everyone.",
+      "ru": "Отреагируй так, чтобы ситуация стала менее неловкой для всех."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково увімкнув(ла) камеру під час дзвінка, не помітивши цього.",
+      "en": "You accidentally turned on your camera during a call without realizing it.",
+      "ru": "Ты случайно включил(а) камеру во время звонка, не заметив этого."
+    },
+    "task": {
+      "uk": "Придумай легку й іронічну фразу, яка зменшить напруження.",
+      "en": "Come up with a light, ironic phrase to ease the tension.",
+      "ru": "Придумай лёгкую ироничную фразу, чтобы снять напряжение."
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти натрапив(ла) на двері, які тягнули на себе, але штовхнув(ла) їх.",
+      "en": "You ran into a door that said ‘pull’ — but you pushed.",
+      "ru": "Ты наткнулся(лась) на дверь с надписью «на себя», но толкнул(а) её."
+    },
+    "task": {
+      "uk": "Придумай кумедну або самоіронічну фразу, щоби розсмішити себе і тих, хто бачив.",
+      "en": "Come up with a funny or self-ironic phrase to make yourself and others laugh.",
+      "ru": "Придумай смешную или самоироничную фразу, чтобы рассмешить себя и окружающих."
+    }
+  },
+  {
+    "id": "32",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково всівся(лася) не на своє місце в театрі.",
+      "en": "You accidentally sat in the wrong seat at the theater.",
+      "ru": "Ты случайно сел(села) не на своё место в театре."
+    },
+    "task": {
+      "uk": "Придумай доброзичливу і дотепну фразу, щоб вибачитись із гумором.",
+      "en": "Come up with a friendly and witty line to apologize with humor.",
+      "ru": "Придумай дружелюбную и остроумную фразу, чтобы извиниться с юмором."
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти голосно сказав(ла) «до побачення» людині, яка ще не йшла.",
+      "en": "You loudly said “bye” to someone who wasn’t actually leaving.",
+      "ru": "Ты громко попрощался(лась) с человеком, который никуда не уходил."
+    },
+    "task": {
+      "uk": "Зреагуй з самоіронією або легким жартом, щоб усі посміхнулись.",
+      "en": "React with self-irony or a quick joke to make everyone smile.",
+      "ru": "Отреагируй с самоиронией или лёгкой шуткой, чтобы все улыбнулись."
+    }
+  },
+  {
+    "id": "34",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти тримав(ла) двері відкритими надто довго, очікуючи на людину, яка вирішила піти іншим шляхом.",
+      "en": "You held a door open too long for someone who took another route.",
+      "ru": "Ты держал(а) дверь открытой слишком долго для человека, который пошёл другим путём."
+    },
+    "task": {
+      "uk": "Придумай жартівливий коментар, який зменшить незручність моменту.",
+      "en": "Come up with a playful comment to reduce the awkwardness of the moment.",
+      "ru": "Придумай шутливый комментарий, чтобы уменьшить неловкость момента."
+    }
+  },
+  {
+    "id": "35",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти почав(ла) аплодувати трохи раніше за всіх.",
+      "en": "You started clapping a bit too early before everyone else.",
+      "ru": "Ты начал(а) аплодировать немного раньше всех."
+    },
+    "task": {
+      "uk": "Придумай веселе або креативне пояснення своєї поспішності.",
+      "en": "Come up with a fun or creative explanation for your eagerness.",
+      "ru": "Придумай весёлое или креативное объяснение своей поспешности."
+    }
+  },
+  {
+    "id": "36",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково зробив(ла) скріншот замість фото, коли намагався(лася) когось сфотографувати.",
+      "en": "You accidentally took a screenshot instead of a photo when trying to snap someone.",
+      "ru": "Ты случайно сделал(а) скриншот вместо фото, когда пытался(лась) кого-то сфотографировать."
+    },
+    "task": {
+      "uk": "Зреагуй з гумором або самоіронією, щоб не зіпсувати настрій.",
+      "en": "Respond with humor or self-irony to keep the mood light.",
+      "ru": "Отреагируй с юмором или самоиронией, чтобы не испортить настроение."
+    }
+  },
+  {
+    "id": "37",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти махав(ла) рукою в дзеркальне відображення, думаючи, що це інша людина.",
+      "en": "You waved at your own reflection, thinking it was another person.",
+      "ru": "Ты помахал(а) своему отражению, думая, что это другой человек."
+    },
+    "task": {
+      "uk": "Придумай іронічну або жартівливу фразу про цей момент.",
+      "en": "Come up with an ironic or funny phrase about the moment.",
+      "ru": "Придумай ироничную или шутливую фразу про этот момент."
+    }
+  },
+  {
+    "id": "38",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково натиснув(ла) «Відповісти всім» у робочому листі з особистим коментарем.",
+      "en": "You accidentally hit 'Reply All' in a work email with a personal comment.",
+      "ru": "Ты случайно нажал(а) «Ответить всем» в рабочем письме с личным комментарием."
+    },
+    "task": {
+      "uk": "Зреагуй із дотепністю або самокритичністю, щоб ситуація не стала напруженою.",
+      "en": "Respond with wit or self-awareness to prevent the situation from becoming tense.",
+      "ru": "Отреагируй с остроумием или самокритикой, чтобы избежать напряжённости."
+    }
+  },
+  {
+    "id": "39",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти випадково сказав(ла) комплімент людині, яка стояла позаду того, кому це призначалось.",
+      "en": "You accidentally complimented the wrong person standing nearby.",
+      "ru": "Ты случайно сделал(а) комплимент не тому человеку, который стоял рядом."
+    },
+    "task": {
+      "uk": "Придумай чарівний або жартівливий спосіб вийти з ситуації.",
+      "en": "Come up with a charming or humorous way to get out of the mix-up.",
+      "ru": "Придумай обаятельный или шутливый способ выйти из ситуации."
+    }
+  },
+  {
+    "id": "40",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти подивився(лася) на годинник, коли хтось емоційно щось розповідав.",
+      "en": "You looked at your watch while someone was telling an emotional story.",
+      "ru": "Ты посмотрел(а) на часы, пока кто-то рассказывал эмоциональную историю."
+    },
+    "task": {
+      "uk": "Зреагуй м’яко або з гумором, щоби не виглядати байдужим(ою).",
+      "en": "Respond gently or with humor to avoid seeming indifferent.",
+      "ru": "Отреагируй мягко или с юмором, чтобы не показаться равнодушным(ой)."
+    }
+  },
+  {
+    "id": "41",
+    "exercise_name": "AWKWARD_SITUATION",
+    "situation": {
+      "uk": "Ти надіслав(ла) привітання з днем народження людині, у якої він був учора.",
+      "en": "You sent birthday wishes to someone — a day late.",
+      "ru": "Ты отправил(а) поздравление с днём рождения — на день позже."
+    },
+    "task": {
+      "uk": "Придумай веселе або нестандартне запізніле привітання.",
+      "en": "Come up with a funny or creative belated birthday message.",
+      "ru": "Придумай весёлое или нестандартное запоздалое поздравление."
+    }
+  }
+]

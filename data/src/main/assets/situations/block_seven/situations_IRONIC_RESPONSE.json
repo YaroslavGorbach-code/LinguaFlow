@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Твій бос каже тобі: «Ну що, знову запізнився?»",
+      "en": "Your boss says to you: “Late again, huh?”",
+      "ru": "Твой босс говорит тебе: «Ну что, опять опоздал?»"
+    },
+    "task": {
+      "uk": "Придумай дотепну або самоіронічну відповідь, яка розрядить ситуацію, але не прозвучить зухвало.",
+      "en": "Come up with a witty or self-deprecating reply that defuses the situation without sounding rude.",
+      "ru": "Придумай остроумный или самоироничный ответ, который разрядит ситуацию, но не прозвучит дерзко."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти нарешті вирішив приготувати вечерю для друзів. Один з них після першого шматка весело вигукує: «Та ти взагалі не вмієш готувати!»",
+      "en": "You finally decide to cook dinner for your friends. One of them jokingly exclaims after the first bite: “You seriously can’t cook at all!”",
+      "ru": "Ты наконец-то решил приготовить ужин для друзей. Один из них весело восклицает после первого кусочка: «Да ты вообще готовить не умеешь!»"
+    },
+    "task": {
+      "uk": "Відповідай з гумором або самоіронією, щоб показати, що ти не ображаєшся.",
+      "en": "Reply with humor or self-irony to show you’re not offended.",
+      "ru": "Ответь с юмором или самоиронией, чтобы показать, что ты не обижаешься."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Перед вечіркою ти обираєш оригінальний наряд. Щойно заходиш до кімнати, знайома дивиться на тебе і каже: «Це ти так вдягнувся — серйозно?»",
+      "en": "Before a party, you choose an original outfit. As soon as you walk in, an acquaintance looks at you and says: “Is that really what you're wearing?”",
+      "ru": "Перед вечеринкой ты выбираешь оригинальный наряд. Как только заходишь в комнату, знакомая смотрит и говорит: «Ты серьёзно так оделся?»"
+    },
+    "task": {
+      "uk": "Знайди відповідь з легкою іронією, яка не загострює конфлікт.",
+      "en": "Come up with a lightly ironic reply that doesn't escalate the conflict.",
+      "ru": "Придумай лёгко ироничный ответ, который не обострит ситуацию."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти випадково заходиш до кімнати, де колеги обговорюють проєкт. Один з них із подивом каже: «А що ти тут взагалі робиш?»",
+      "en": "You accidentally walk into a room where colleagues are discussing a project. One of them says, surprised: “What are you even doing here?”",
+      "ru": "Ты случайно заходишь в комнату, где коллеги обсуждают проект. Один из них удивлённо говорит: «А ты тут вообще что забыл?»"
+    },
+    "task": {
+      "uk": "Відповідай з жартом або сатирою, зберігаючи дружню атмосферу.",
+      "en": "Reply with a joke or light sarcasm, keeping a friendly tone.",
+      "ru": "Ответь с шуткой или лёгкой сатирой, сохранив дружелюбный тон."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти давно не з’являвся на зустрічах з друзями. Коли ти нарешті приходиш, хтось вигукує: «Ого, дивіться, привид з минулого!»",
+      "en": "You haven’t shown up to hangouts in a while. When you finally arrive, someone jokes: “Wow, look who the cat dragged in!”",
+      "ru": "Ты давно не появлялся на встречах с друзьями. Когда ты наконец приходишь, кто-то шутит: «О, кого я вижу — призрак из прошлого!»"
+    },
+    "task": {
+      "uk": "Відреагуй з самоіронією або веселим коментарем.",
+      "en": "React with self-irony or a fun comment.",
+      "ru": "Ответь с самоиронией или весёлым комментарием."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Після презентації твого проєкту один з присутніх з сарказмом каже: «Це найгірше, що я бачив сьогодні.»",
+      "en": "After your project presentation, someone sarcastically says: “That was the worst thing I’ve seen today.”",
+      "ru": "После презентации твоего проекта кто-то саркастично говорит: «Это худшее, что я видел сегодня.»"
+    },
+    "task": {
+      "uk": "Придумай відповідь, яка розрядить ситуацію, не ображаючи себе чи інших.",
+      "en": "Come up with a reply that defuses the situation without insulting anyone.",
+      "ru": "Придумай ответ, который разрядит ситуацию и не обидит никого."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Після вечері з батьками тато задумливо каже: «Може, вже час знайти нормальну роботу?»",
+      "en": "After dinner with your parents, your dad thoughtfully says: “Maybe it’s time to get a real job?”",
+      "ru": "После ужина с родителями папа задумчиво говорит: «Может, уже пора найти нормальную работу?»"
+    },
+    "task": {
+      "uk": "Відповідай іронічно, але з повагою.",
+      "en": "Reply ironically, but respectfully.",
+      "ru": "Ответь иронично, но с уважением."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Твій сусід заглядає до тебе і каже з посмішкою: «О, у тебе знову бардак у кімнаті!»",
+      "en": "Your neighbor peeks in and says with a grin: “Oh, your room’s a mess again!”",
+      "ru": "Сосед заглядывает и с улыбкой говорит: «О, у тебя снова бардак в комнате!»"
+    },
+    "task": {
+      "uk": "Відреагуй з гумором або жартівливою відповіддю.",
+      "en": "Respond with humor or a playful answer.",
+      "ru": "Ответь с юмором или шуткой."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти нарешті відповів на повідомлення після кількох днів мовчання. Друг відписує: «О, ти ще живий? Я вже хвилювався!»",
+      "en": "You finally replied to a message after several days of silence. Your friend writes back: “Oh, you’re still alive? I was worried!”",
+      "ru": "Ты наконец-то ответил на сообщение спустя несколько дней. Друг отвечает: «О, ты жив? Я уж начал волноваться!»"
+    },
+    "task": {
+      "uk": "Знайди іронічну або жартівливу відповідь, яка не образить.",
+      "en": "Think of an ironic or humorous reply that won’t offend.",
+      "ru": "Придумай ироничный или шуточный ответ, который не обидит."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "На вечірці ти ділитись своєю думкою, і хтось каже: «Це ти такий розумний, чи просто здається?»",
+      "en": "At a party, you share your opinion, and someone comments: “Are you really that smart, or just pretending?”",
+      "ru": "На вечеринке ты делишься своим мнением, и кто-то говорит: «Ты правда такой умный, или просто притворяешься?»"
+    },
+    "task": {
+      "uk": "Придумай дотепну відповідь із самоіронією, яка не викличе конфлікту.",
+      "en": "Come up with a witty, self-deprecating response that avoids conflict.",
+      "ru": "Придумай остроумный, самоироничный ответ, который не вызовет конфликта."
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти приніс на пікнік лише серветки, а друзі сміються: «О, головний постачальник серветок прибув!»",
+      "en": "You brought only napkins to the picnic, and your friends joke: “The napkin supplier has arrived!”",
+      "ru": "Ты принёс на пикник только салфетки, и друзья шутят: «Прибыл главный поставщик салфеток!»"
+    },
+    "task": {
+      "uk": "Відповідай з доброзичливою іронією або гумором, щоб підтримати веселу атмосферу.",
+      "en": "Reply with friendly irony or humor to keep the mood light and fun.",
+      "ru": "Ответь с дружелюбной иронией или юмором, чтобы поддержать весёлую атмосферу."
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "На святі друзі бачать, як ти набираєш другий шматок торта, і жартують: «О, хтось тут явно не голодував!»",
+      "en": "At a party, your friends see you taking a second slice of cake and joke: “Someone clearly isn’t starving!”",
+      "ru": "На празднике друзья видят, как ты берёшь второй кусок торта, и шутят: «Кто-то явно не голодает!»"
+    },
+    "task": {
+      "uk": "Зреагуй з гумором і самоіронією, не змінюючи позитивного настрою.",
+      "en": "React with humor and self-irony, keeping the cheerful tone.",
+      "ru": "Отреагируй с юмором и самоиронией, не меняя позитивного настроя."
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти приходиш на зустріч у яскравій футболці, і хтось каже: «Твій стиль сьогодні заряджає всіх енергією!»",
+      "en": "You show up to a meeting in a bright T-shirt, and someone says: “Your style is energizing everyone today!”",
+      "ru": "Ты пришёл на встречу в яркой футболке, и кто-то говорит: «Твой стиль сегодня заряжает всех энергией!»"
+    },
+    "task": {
+      "uk": "Придумай іронічну відповідь, яка підтримає жарт і настрій компанії.",
+      "en": "Come up with an ironic response that plays along and keeps the mood up.",
+      "ru": "Придумай ироничный ответ, который поддержит шутку и настроение компании."
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "На фотосесії тебе просять стати модельно. Один з друзів сміється: «Ну все, тепер точно на обкладинку!»",
+      "en": "At a photoshoot, you’re asked to pose like a model. A friend laughs: “Okay, now that’s definitely cover material!”",
+      "ru": "На фотосессии тебя просят встать как модель. Друг смеётся: «Всё, теперь точно на обложку!»"
+    },
+    "task": {
+      "uk": "Відповідай з легким гумором або самоіронією, щоб усім було весело.",
+      "en": "Reply with light humor or self-irony to keep everyone laughing.",
+      "ru": "Ответь с лёгким юмором или самоиронией, чтобы всем было весело."
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти перший прийшов на зустріч, і хтось каже: «О, найпунктуальніший герой нашого часу!»",
+      "en": "You’re the first to arrive at a meeting, and someone says: “Wow, the most punctual hero of our time!”",
+      "ru": "Ты первый пришёл на встречу, и кто-то говорит: «О, самый пунктуальный герой нашего времени!»"
+    },
+    "task": {
+      "uk": "Придумай дотепну відповідь, яка підтримає дружній настрій.",
+      "en": "Think of a witty reply that keeps the friendly vibe going.",
+      "ru": "Придумай остроумный ответ, который сохранит дружелюбную атмосферу."
+    }
+  },
+  {
+    "id": "26",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти приносиш чай у термосі на прогулянку, і хтось каже: «Ого, мобільне кафе з нами!»",
+      "en": "You bring tea in a thermos for a walk, and someone says: “Whoa, we’ve got a mobile café with us!”",
+      "ru": "Ты приносишь чай в термосе на прогулку, и кто-то говорит: «Ого, у нас тут мобильное кафе!»"
+    },
+    "task": {
+      "uk": "Зреагуй з добродушною іронією, яка підтримає атмосферу жарту.",
+      "en": "React with good-natured irony to keep the joking tone going.",
+      "ru": "Отреагируй с доброй иронией, чтобы поддержать шутливую атмосферу."
+    }
+  },
+  {
+    "id": "27",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти граєш у настільну гру й втрачаєш очки. Друг коментує: «О, стратег століття в дії!»",
+      "en": "You’re playing a board game and lose points. A friend jokes: “The strategist of the century in action!”",
+      "ru": "Ты играешь в настольную игру и теряешь очки. Друг шутит: «Стратег века в действии!»"
+    },
+    "task": {
+      "uk": "Придумай відповідь з самоіронією, щоби підтримати веселощі.",
+      "en": "Think of a self-deprecating reply to keep the fun going.",
+      "ru": "Придумай самоироничный ответ, чтобы сохранить весёлую атмосферу."
+    }
+  },
+  {
+    "id": "28",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Під час танців ти вигадуєш несподіваний рух, і друзі реагують: «Ого, це був експромт року!»",
+      "en": "While dancing, you improvise an unexpected move, and friends say: “Wow, that was the freestyle of the year!”",
+      "ru": "Во время танцев ты придумываешь неожиданный движ, и друзья говорят: «Вот это экспромт года!»"
+    },
+    "task": {
+      "uk": "Відповідай з жартом або іронією, щоби додати ще більше позитиву.",
+      "en": "Reply with a joke or irony to add even more positivity.",
+      "ru": "Ответь с шуткой или иронией, чтобы добавить ещё больше позитива."
+    }
+  },
+  {
+    "id": "31",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти з’являєшся на онлайн-дзвінок із горнятком кави. Колега сміється: «О, бачу, до ефіру готувався як зірка!»",
+      "en": "You join a video call with a coffee mug. A colleague laughs: “Looks like you prepped for this like a celebrity!”",
+      "ru": "Ты подключаешься к видеозвонку с кружкой кофе. Коллега смеётся: «Вижу, к эфиру готовился как звезда!»"
+    },
+    "task": {
+      "uk": "Придумай дружню іронічну відповідь, щоб підтримати жарт.",
+      "en": "Come up with a friendly ironic reply to join in the joke.",
+      "ru": "Придумай дружелюбный ироничный ответ, чтобы поддержать шутку."
+    }
+  },
+  {
+    "id": "32",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти зробив фото страви в ресторані, і друг каже: «Шеф точно проситиме рецепт у тебе!»",
+      "en": "You snap a photo of your meal, and a friend says: “The chef is definitely going to ask you for the recipe!”",
+      "ru": "Ты фотографируешь блюдо в ресторане, и друг говорит: «Шеф точно попросит у тебя рецепт!»"
+    },
+    "task": {
+      "uk": "Відповідай з іронією або жартом, щоб підтримати веселий настрій.",
+      "en": "Reply with irony or a joke to keep the fun mood going.",
+      "ru": "Ответь с иронией или шуткой, чтобы сохранить весёлое настроение."
+    }
+  },
+  {
+    "id": "33",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти надіслав десятий стікер у чат, і друг пише: «Схоже, ти вже майстер емоцій!»",
+      "en": "You’ve just sent your tenth sticker in a chat, and a friend writes: “Seems like you’re now a master of emotions!”",
+      "ru": "Ты отправил десятый стикер в чат, и друг пишет: «Похоже, ты теперь мастер эмоций!»"
+    },
+    "task": {
+      "uk": "Зреагуй з добрим гумором і трохи самоіронії.",
+      "en": "React with light humor and a bit of self-irony.",
+      "ru": "Отреагируй с добрым юмором и немного самоиронии."
+    }
+  },
+  {
+    "id": "34",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти поділився своїм списком справ, і хтось каже: «Це що, сценарій до нового фільму?»",
+      "en": "You share your to-do list, and someone says: “Is this a script for a new movie?”",
+      "ru": "Ты поделился своим списком дел, и кто-то говорит: «Это сценарий к новому фильму?»"
+    },
+    "task": {
+      "uk": "Придумай дотепну відповідь, щоби підтримати жартівливу атмосферу.",
+      "en": "Think of a witty response to play along with the joke.",
+      "ru": "Придумай остроумный ответ, чтобы подыграть шутке."
+    }
+  },
+  {
+    "id": "35",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти діловито дивишся в екран, а друг підходить і каже: «Так дивишся, ніби керуєш запуском ракети!»",
+      "en": "You’re staring seriously at the screen, and a friend says: “You look like you’re about to launch a rocket!”",
+      "ru": "Ты серьёзно смотришь в экран, и друг говорит: «Смотришь так, будто запускаешь ракету!»"
+    },
+    "task": {
+      "uk": "Придумай легку іронічну відповідь, не змінюючи доброзичливого тону.",
+      "en": "Come up with a light ironic reply that keeps the friendly tone.",
+      "ru": "Придумай лёгкий ироничный ответ, сохранив дружелюбный тон."
+    }
+  },
+  {
+    "id": "36",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти забув вилучити фоновий шум на дзвінку, і колега каже: «Тепер у нас ще й DJ на нараді!»",
+      "en": "You forget to mute background noise during a call, and a colleague says: “Now we’ve got a DJ in the meeting too!”",
+      "ru": "Ты забыл убрать фоновый шум на звонке, и коллега говорит: «Теперь у нас ещё и диджей на совещании!»"
+    },
+    "task": {
+      "uk": "Зреагуй з самоіронією або жартом, щоби зробити момент приємним.",
+      "en": "React with self-irony or a joke to make the moment pleasant.",
+      "ru": "Ответь с самоиронией или шуткой, чтобы сделать момент приятным."
+    }
+  },
+  {
+    "id": "37",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти довго вибираєш страву в меню, і хтось каже: «Ресторан уже думає про закриття...»",
+      "en": "You take ages picking a meal, and someone says: “The restaurant’s thinking of closing soon...”",
+      "ru": "Ты долго выбираешь блюдо в меню, и кто-то говорит: «Ресторан уже подумывает закрываться...»"
+    },
+    "task": {
+      "uk": "Відповідай із дружнім гумором або іронією, щоби не зіпсувати настрій.",
+      "en": "Reply with friendly humor or irony to keep the good vibe.",
+      "ru": "Ответь с дружелюбным юмором или иронией, чтобы не испортить настроение."
+    }
+  },
+  {
+    "id": "38",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти в черзі з величезним кошиком покупок, і знайомий жартує: «Хтось запасається на кінець світу!»",
+      "en": "You’re in line with a huge basket of groceries, and someone jokes: “Stocking up for the end of the world?”",
+      "ru": "Ты стоишь в очереди с огромной корзиной покупок, и кто-то шутит: «Запас на конец света?»"
+    },
+    "task": {
+      "uk": "Придумай відповідь з легким жартом або самоіронією.",
+      "en": "Think of a reply with a light joke or self-irony.",
+      "ru": "Придумай ответ с лёгкой шуткой или самоиронией."
+    }
+  },
+  {
+    "id": "39",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти записуєш щось у блокнот, а друг каже: «О, класика жанру — нотатки генія!»",
+      "en": "You’re jotting something down, and a friend says: “Classic — notes of a genius!”",
+      "ru": "Ты что-то записываешь в блокнот, а друг говорит: «Классика — заметки гения!»"
+    },
+    "task": {
+      "uk": "Придумай доброзичливу відповідь із ноткою іронії.",
+      "en": "Come up with a friendly response with a touch of irony.",
+      "ru": "Придумай дружелюбный ответ с ноткой иронии."
+    }
+  },
+  {
+    "id": "40",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти викладаєш фото свого сніданку, а хтось коментує: «Це що, рекламна кампанія?»",
+      "en": "You post a photo of your breakfast, and someone comments: “Is this an ad campaign?”",
+      "ru": "Ты выкладываешь фото завтрака, и кто-то комментирует: «Это что, рекламная кампания?»"
+    },
+    "task": {
+      "uk": "Зреагуй із самоіронією або дружнім жартом, щоби зберегти приємну атмосферу.",
+      "en": "React with self-irony or a friendly joke to keep things pleasant.",
+      "ru": "Отреагируй с самоиронией или дружеской шуткой, чтобы сохранить приятную атмосферу."
+    }
+  },
+  {
+    "id": "41",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти випадково облив сорочку водою, і друг сміється: «Ого, новий тренд — волога елегантність?»",
+      "en": "You accidentally spill water on your shirt, and a friend laughs: “Wow, is this the new trend — wet elegance?”",
+      "ru": "Ты случайно пролил воду на рубашку, и друг смеётся: «Ого, новый тренд — мокрая элегантность?»"
+    },
+    "task": {
+      "uk": "Зреагуй з гумором або іронією, щоби зробити момент кумедним.",
+      "en": "React with humor or irony to make the moment funny.",
+      "ru": "Отреагируй с юмором или иронией, чтобы сделать момент смешным."
+    }
+  },
+  {
+    "id": "42",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти почав розповідати історію вже втретє, і хтось жартує: «У тебе точно є підписка на повтори!»",
+      "en": "You’ve started telling the same story for the third time, and someone jokes: “You definitely have a subscription to reruns!”",
+      "ru": "Ты начал рассказывать одну и ту же историю в третий раз, и кто-то шутит: «У тебя точно подписка на повторы!»"
+    },
+    "task": {
+      "uk": "Відповідай з самоіронією та усмішкою.",
+      "en": "Reply with self-irony and a smile.",
+      "ru": "Ответь с самоиронией и улыбкой."
+    }
+  },
+  {
+    "id": "43",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти приніс п'ять ручок на нараду, і колега каже: «Готуєшся до марафону підписів?»",
+      "en": "You bring five pens to a meeting, and a colleague says: “Getting ready for a signing marathon?”",
+      "ru": "Ты принёс пять ручек на совещание, и коллега говорит: «Готовишься к марафону подписей?»"
+    },
+    "task": {
+      "uk": "Придумай легку іронічну відповідь у дружньому стилі.",
+      "en": "Come up with a light ironic reply in a friendly tone.",
+      "ru": "Придумай лёгкий ироничный ответ в дружеском стиле."
+    }
+  },
+  {
+    "id": "44",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти випадково відкрив камеру з фільтром кота, і хтось каже: «О, у нас тут новий гість — Мурчик!»",
+      "en": "You accidentally turn on the camera with a cat filter, and someone says: “Oh, we’ve got a new guest — Mr. Meow!”",
+      "ru": "Ты случайно включил камеру с фильтром кота, и кто-то говорит: «О, у нас новый гость — Мурчик!»"
+    },
+    "task": {
+      "uk": "Зреагуй з жартом або іронією, підтримуючи веселий настрій.",
+      "en": "Respond with a joke or irony to keep the cheerful mood.",
+      "ru": "Ответь с шуткой или иронией, поддерживая весёлое настроение."
+    }
+  },
+  {
+    "id": "45",
+    "exercise_name": "IRONIC_RESPONSE",
+    "situation": {
+      "uk": "Ти надто активно махаєш руками під час розповіді, і хтось жартує: «Обережно, а то зараз злетиш!»",
+      "en": "You’re enthusiastically waving your hands while talking, and someone jokes: “Careful, you might take off!”",
+      "ru": "Ты слишком активно машешь руками во время рассказа, и кто-то шутит: «Осторожно, сейчас взлетишь!»"
+    },
+    "task": {
+      "uk": "Відповідай з усмішкою та легким жартом.",
+      "en": "Reply with a smile and a light joke.",
+      "ru": "Ответь с улыбкой и лёгкой шуткой."
+    }
+  }
+]

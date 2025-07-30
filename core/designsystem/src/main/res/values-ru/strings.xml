@@ -8,6 +8,7 @@
     <string name="block_4_title_text"><![CDATA[Блок 4: Аргументация и мягкие разногласия]]></string>
     <string name="block_5_title_text"><![CDATA[Блок 5: Эмпатия и активное слушание]]></string>
     <string name="block_6_title_text"><![CDATA[Блок 6: Сторителлинг и выразительная речь]]></string>
+    <string name="block_7_title_text"><![CDATA[Блок 7: Юмор, флирт и непринуждённое общение]]></string>
 
     <string name="block_1_subtitle_text">Научись легко начинать разговор, поддерживать его и знакомиться с новыми людьми</string>
     <string name="block_2_subtitle_text">Становись увереннее, когда говоришь о себе, своих интересах, мыслях и чувствах</string>
@@ -15,6 +16,7 @@
     <string name="block_4_subtitle_text">Практикуйся вежливо выражать мнение и подкреплять его аргументами</string>
     <string name="block_5_subtitle_text">Развивай умение чувствовать эмоции других и поддерживать их тёплыми словами</string>
     <string name="block_6_subtitle_text">Научись интересно рассказывать истории, захватывать внимание и говорить выразительно</string>
+    <string name="block_7_subtitle_text">Научись быть остроумным, игривым и эмоционально вовлекающим — от лёгкого флирта до умения рассмешить</string>
 
     <string name="game_skill_creativity_text">креативность</string>
     <string name="game_skill_humor_text">юмор</string>

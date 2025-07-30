@@ -8,6 +8,7 @@
     <string name="block_4_title_text"><![CDATA[Block 4: Argumentation & Soft Disagreements]]></string>
     <string name="block_5_title_text"><![CDATA[Block 5: Empathy & Active Listening]]></string>
     <string name="block_6_title_text"><![CDATA[Block 6: Storytelling and Expressive Speaking]]></string>
+    <string name="block_7_title_text"><![CDATA[Block 7: Humor, Flirting & Playful Communication]]></string>
 
     <string name="block_1_subtitle_text">Learn to start conversations easily, keep them going, and connect with new people</string>
     <string name="block_2_subtitle_text">Build confidence when talking about yourself, your interests, thoughts, and feelings</string>
@@ -15,6 +16,7 @@
     <string name="block_4_subtitle_text">Practice expressing your opinion politely and backing it up with solid arguments</string>
     <string name="block_5_subtitle_text">Train your ability to sense others’ emotions and offer warm, caring verbal support</string>
     <string name="block_6_subtitle_text">Learn to tell engaging stories, capture attention, and speak expressively</string>
+    <string name="block_7_subtitle_text">Learn to be witty, playful, and emotionally engaging — from casual flirting to making people laugh</string>
 
     <string name="game_skill_creativity_text">creativity</string>
     <string name="game_skill_humor_text">humor</string>

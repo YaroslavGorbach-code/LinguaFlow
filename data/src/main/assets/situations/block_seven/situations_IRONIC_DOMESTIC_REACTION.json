@@ -1,0 +1,422 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти відкриваєш шафу за светром, і на тебе падає цілий стос речей.",
+      "en": "You open the closet to get a sweater, and a whole pile of clothes falls on you.",
+      "ru": "Ты открываешь шкаф за свитером, и на тебя падает целая гора вещей."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти поставив(ла) чайник і забув(ла) про нього. Згадав(ла), коли він вже давно охолов.",
+      "en": "You boiled the kettle and forgot about it. You remembered only after it had already cooled down.",
+      "ru": "Ты вскипятил(а) чайник и забыл(а) про него. Вспомнил(а), когда он уже остыл."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти намагався(лася) швидко витерти підлогу, але вилив(ла) ще більше води.",
+      "en": "You tried to quickly wipe the floor, but ended up spilling even more water.",
+      "ru": "Ты пытался(лась) быстро вытереть пол, но только разлил(а) ещё больше воды."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти приготував(ла) їжу, сів(сіла) їсти — і згадав(ла), що не посолив(ла).",
+      "en": "You cooked food, sat down to eat — and remembered you forgot the salt.",
+      "ru": "Ты приготовил(а) еду, сел(а) есть — и вспомнил(а), что не посолил(а)."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти переодягнув(ла) постіль, але через 5 хвилин на неї стрибнув кіт з брудними лапами.",
+      "en": "You changed the bed sheets, and five minutes later your cat jumped on them with dirty paws.",
+      "ru": "Ты поменял(а) постель, и через пять минут на неё запрыгнул кот с грязными лапами."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти запланував(ла) прибирання, але годину вибирав(ла) музику для фону, і більше нічого не зробив(ла).",
+      "en": "You planned to clean, but spent an hour picking background music and did nothing else.",
+      "ru": "Ты собирался(лась) убраться, но час выбирал(а) музыку — и ничего больше не сделал(а)."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти почав(ла) прати — і згадав(ла), що забув(ла) покласти порошок.",
+      "en": "You started the laundry — and remembered you forgot the detergent.",
+      "ru": "Ты запустил(а) стирку — и вспомнил(а), что забыл(а) добавить порошок."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти натиснув(ла) на пульт — і телевізор вмикнувся лише з п’ятого разу.",
+      "en": "You pressed the remote — and the TV only turned on on the fifth try.",
+      "ru": "Ты нажал(а) на пульт — и телевизор включился только с пятой попытки."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти хотів(ла) погладити сорочку, але виявилось, що праска не ввімкнена.",
+      "en": "You wanted to iron your shirt, but realized the iron wasn't plugged in.",
+      "ru": "Ты хотел(а) погладить рубашку, но понял(а), что утюг не включён."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти поставив(ла) каву — і повернувся(лася), коли вона вже вистигла.",
+      "en": "You made coffee — and came back when it was already cold.",
+      "ru": "Ты налил(а) кофе — и вернулся(лась), когда он уже остыл."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти вилив(ла) на себе воду, коли просто хотів(ла) попити.",
+      "en": "You spilled water all over yourself when you just wanted a sip.",
+      "ru": "Ты пролил(а) на себя воду, просто пытаясь попить."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти хотів(ла) вмоститися на диван — і сів(сіла) прямо на пульт.",
+      "en": "You wanted to relax on the couch — and sat right on the remote.",
+      "ru": "Ты хотел(а) развалиться на диване — и сел(а) прямо на пульт."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти хотів(ла) зварити яйця, але поставив(ла) каструлю без води.",
+      "en": "You wanted to boil eggs, but put the pot on the stove without water.",
+      "ru": "Ты хотел(а) сварить яйца, но поставил(а) кастрюлю без воды."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти витер(ла) дзеркало у ванній — і воно одразу знову запітніло.",
+      "en": "You wiped the mirror in the bathroom — and it fogged up again immediately.",
+      "ru": "Ты вытер(ла) зеркало в ванной — и оно тут же снова запотело."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти витяг(ла) білизну з пральної машини — і виявив(ла), що один носок зник.",
+      "en": "You took the laundry out of the washing machine — and realized one sock is missing.",
+      "ru": "Ты достал(а) бельё из стиральной машины — и понял(а), что один носок пропал."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти намагався(лася) вимити тарілку — і вона вислизнула з рук у раковину.",
+      "en": "You tried to wash a plate — and it slipped into the sink.",
+      "ru": "Ты пытался(лась) помыть тарелку — и она выскользнула из рук в раковину."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти довго прибирав(ла) стіл — і пролив(ла) чай одразу після цього.",
+      "en": "You spent time cleaning the table — and immediately spilled tea on it.",
+      "ru": "Ты долго убирал(а) стол — и тут же пролил(а) на него чай."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти натиснув(ла) на вимикач — і перегоріла лампочка.",
+      "en": "You hit the light switch — and the bulb burned out instantly.",
+      "ru": "Ты включил(а) свет — и лампочка тут же перегорела."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти кинув(ла) речі прати — і зрозумів(ла), що серед білого був червоний носок.",
+      "en": "You started the laundry — and realized there was a red sock among the whites.",
+      "ru": "Ты запустил(а) стирку — и понял(а), что среди белого был красный носок."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти відкриваєш холодильник — і бачиш, що забув(ла) купити все, що треба.",
+      "en": "You open the fridge — and realize you forgot to buy everything you needed.",
+      "ru": "Ты открываешь холодильник — и понимаешь, что забыл(а) купить всё, что нужно."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти дістав(ла) останню чисту кружку — і на дні виявилась кавова гуща.",
+      "en": "You grabbed the last clean mug — and found coffee grounds at the bottom.",
+      "ru": "Ты взял(а) последнюю чистую кружку — и на дне оказалась кофейная гуща."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти взяв(ла) пакет з цукром — і він порвався прямо в руках.",
+      "en": "You picked up a bag of sugar — and it ripped right in your hands.",
+      "ru": "Ты взял(а) пакет с сахаром — и он порвался прямо в руках."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти вирішив(ла) зробити тост — і хліб застряг у тостері.",
+      "en": "You decided to make toast — and the bread got stuck in the toaster.",
+      "ru": "Ты решил(а) сделать тост — и хлеб застрял в тостере."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти дістав(ла) з морозилки щось на вечерю — і залишив(ла) на столі на цілий день.",
+      "en": "You took something out of the freezer for dinner — and left it on the table all day.",
+      "ru": "Ты достал(а) что-то из морозилки на ужин — и забыл(а) его на столе на весь день."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти тільки-но прибрав(ла) крихти — і відразу знову впустив(ла) печиво.",
+      "en": "You just cleaned up the crumbs — and immediately dropped another cookie.",
+      "ru": "Ты только что убрал(а) крошки — и тут же уронил(а) ещё одно печенье."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "26",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти довго натирав(ла) сир — і в кінці зрозумів(ла), що макарони вже з’їли без нього.",
+      "en": "You spent time grating cheese — only to realize the pasta was already eaten.",
+      "ru": "Ты долго тёр(ла) сыр — и в итоге понял(а), что макароны уже съели без него."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "27",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти вирішив(ла) полити квіти — і вода розлилась по всьому підвіконню.",
+      "en": "You decided to water the plants — and water spilled all over the windowsill.",
+      "ru": "Ты решил(а) полить цветы — и вода разлилась по всему подоконнику."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "28",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти відкрив(ла) банку огірків — і вся рідина розлилась на підлогу.",
+      "en": "You opened a jar of pickles — and all the brine spilled onto the floor.",
+      "ru": "Ты открыл(а) банку с огурцами — и весь рассол вылился на пол."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "29",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти нарешті дістав(ла) батарейки для пульта — і вони виявились розрядженими.",
+      "en": "You finally found batteries for the remote — and they were dead.",
+      "ru": "Ты наконец-то нашёл(нашла) батарейки для пульта — и они оказались севшими."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  },
+  {
+    "id": "30",
+    "exercise_name": "IRONIC_DOMESTIC_REACTION",
+    "situation": {
+      "uk": "Ти вимкнув(ла) всі вогні та ліг(лягла) в ліжко — і згадав(ла), що залишив(ла) ключі у дверях.",
+      "en": "You turned off all the lights and got into bed — then remembered the keys are still in the door.",
+      "ru": "Ты выключил(а) свет и лёг(легла) в кровать — и вспомнил(а), что ключи остались в двери."
+    },
+    "task": {
+      "uk": "Зреагуй з іронією — спокійно і з гумором.",
+      "en": "React with irony — calmly and humorously.",
+      "ru": "Отреагируй с иронией — спокойно и с юмором."
+    }
+  }
+]

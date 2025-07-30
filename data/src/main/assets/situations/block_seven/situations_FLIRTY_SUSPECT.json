@@ -1,0 +1,562 @@
+[
+  {
+    "id": "1011",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні тобі кажуть: «Твоя усмішка занадто небезпечна, щоб бути випадковою…»",
+      "en": "On a date, someone says: “That smile is way too dangerous to be accidental…”",
+      "ru": "На свидании тебе говорят: «Эта улыбка слишком опасна, чтобы быть случайной…»"
+    },
+    "task": {
+      "uk": "Відповідай фліртовно, ніби справді щось задумав(ла).",
+      "en": "Reply flirtatiously, as if you really are up to something.",
+      "ru": "Ответь флиртуя, будто ты и правда что-то задумал(а)."
+    }
+  },
+  {
+    "id": "1012",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже тобі з усмішкою: «Знаєш, з тобою ніколи не зрозуміло — ти просто милий(а) чи вже починаєш гру?»",
+      "en": "Someone says with a smile: “You know, with you it’s hard to tell — are you just being cute or already playing a game?”",
+      "ru": "Кто-то говорит тебе с улыбкой: «С тобой никогда не ясно — ты просто милый(ая) или уже начинаешь игру?»"
+    },
+    "task": {
+      "uk": "Відповідай з кокетством і натяком.",
+      "en": "Reply playfully with a hint.",
+      "ru": "Ответь кокетливо и с намёком."
+    }
+  },
+  {
+    "id": "1013",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На вечірці до тебе нахиляються і кажуть: «Є щось у твоєму погляді, що обіцяє проблеми. Мені вже цікаво»",
+      "en": "At a party, someone leans in and says: “There’s something in your gaze that promises trouble. I’m already intrigued.”",
+      "ru": "На вечеринке к тебе наклоняются и говорят: «В твоем взгляде что-то, что сулит неприятности. И мне уже интересно»"
+    },
+    "task": {
+      "uk": "Відповідай інтригуюче та зухвало.",
+      "en": "Reply boldly and intriguingly.",
+      "ru": "Ответь дерзко и с интригой."
+    }
+  },
+  {
+    "id": "1014",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Після хвилини мовчання співрозмовник каже: «Твоє мовчання звучить голосніше за слова. Що там у тебе на думці?»",
+      "en": "After a moment of silence, your date says: “Your silence speaks louder than words. What’s on your mind?”",
+      "ru": "После минуты молчания собеседник говорит: «Твоё молчание громче слов. О чём ты думаешь?»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби ти щось ховаєш.",
+      "en": "Flirt as if you’re hiding something.",
+      "ru": "Флиртуй, будто ты что-то скрываешь."
+    }
+  },
+  {
+    "id": "1015",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось дивиться тобі в очі й каже: «Є в тобі щось небезпечно магнетичне. І я не хочу тікати»",
+      "en": "Someone looks you in the eyes and says: “There’s something dangerously magnetic about you. And I don’t want to run.”",
+      "ru": "Кто-то смотрит тебе в глаза и говорит: «В тебе есть что-то опасно-магнитное. И я не хочу убегать»"
+    },
+    "task": {
+      "uk": "Відповідай спокусливо.",
+      "en": "Reply seductively.",
+      "ru": "Ответь соблазнительно."
+    }
+  },
+  {
+    "id": "1016",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні кажуть: «Ти усміхаєшся так, ніби щось плануєш. Зізнавайся — що задумав(ла)?»",
+      "en": "On a date, someone says: “You're smiling like you’re plotting something. Come on, what are you up to?”",
+      "ru": "На свидании говорят: «Ты улыбаешься, как будто что-то замышляешь. Признавайся — что ты задумал(а)?»"
+    },
+    "task": {
+      "uk": "Фліртуй, але залиш таємницю.",
+      "en": "Flirt but keep the secret.",
+      "ru": "Флиртуй, но оставь тайну."
+    }
+  },
+  {
+    "id": "1017",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Під час розмови хтось каже: «Твій погляд — як виклик. Я маю насторожитися?»",
+      "en": "During a conversation, someone says: “That look you’re giving — is it a challenge? Should I be worried?”",
+      "ru": "Во время разговора кто-то говорит: «Твой взгляд — это вызов? Мне стоит насторожиться?»"
+    },
+    "task": {
+      "uk": "Відповідай з гумором і фліртом.",
+      "en": "Reply with humor and flirt.",
+      "ru": "Ответь с юмором и флиртом."
+    }
+  },
+  {
+    "id": "1018",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось тобі каже: «Я ще не зрозумів(ла), в чому саме твоя небезпека, але вже пізно тікати»",
+      "en": "Someone says to you: “I still haven’t figured out what’s dangerous about you, but it’s already too late to run.”",
+      "ru": "Кто-то говорит тебе: «Я ещё не понял(а), в чём именно ты опасен(опасна), но уже поздно убегать»"
+    },
+    "task": {
+      "uk": "Зроби відповідь ефектною і двозначною.",
+      "en": "Make your reply impactful and ambiguous.",
+      "ru": "Сделай ответ эффектным и двусмысленным."
+    }
+  },
+  {
+    "id": "1019",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні ти чуєш: «Це твій спосіб зваблення — робити вигляд, що ти нічого не робиш?»",
+      "en": "On a date, you hear: “Is this your seduction strategy — pretending you’re not doing anything at all?”",
+      "ru": "На свидании ты слышишь: «Это твоя стратегия соблазнения — делать вид, что ты ничего не делаешь?»"
+    },
+    "task": {
+      "uk": "Відповідай як майстер(ка) гри.",
+      "en": "Reply like a true player.",
+      "ru": "Ответь как мастер(ица) игры."
+    }
+  },
+  {
+    "id": "1020",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже тобі: «Ти з тих, хто спочатку зачаровує, а потім зникає, так?»",
+      "en": "Someone says: “You're the type who enchants first — and then disappears, right?”",
+      "ru": "Кто-то говорит тебе: «Ты из тех, кто сначала очаровывает, а потом исчезает, да?»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби це майже правда.",
+      "en": "Flirt like it’s almost true.",
+      "ru": "Флиртуй, будто это почти правда."
+    }
+  },
+  {
+    "id": "1021",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні тобі кажуть: «Я не знаю, що ти задумав(ла), але в мене вже метелики в животі»",
+      "en": "On a date, someone says: “I don’t know what you’re planning, but I already have butterflies.”",
+      "ru": "На свидании тебе говорят: «Я не знаю, что ты задумал(а), но у меня уже бабочки в животе»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби це саме те, чого ти хотів(ла).",
+      "en": "Flirt like that was exactly your plan.",
+      "ru": "Флиртуй, будто ты именно этого и добивался(лась)."
+    }
+  },
+  {
+    "id": "1022",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось тихо каже тобі: «Твоє мовчання говорить більше, ніж чиїсь зізнання…»",
+      "en": "Someone whispers: “Your silence says more than most confessions…”",
+      "ru": "Кто-то тихо говорит тебе: «Твоё молчание говорит больше, чем чьи-то признания…»"
+    },
+    "task": {
+      "uk": "Відповідай загадково, з ледь помітним натяком.",
+      "en": "Reply mysteriously, with a subtle hint.",
+      "ru": "Ответь загадочно, с лёгким намёком."
+    }
+  },
+  {
+    "id": "1023",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Після твого погляду хтось каже: «Добре, я не боюсь... Але варто?»",
+      "en": "After your look, someone says: “Okay, I’m not scared... But should I be?”",
+      "ru": "После твоего взгляда кто-то говорит: «Хорошо, я не боюсь... Но стоит?»"
+    },
+    "task": {
+      "uk": "Зроби відповідь фліртовою з провокацією.",
+      "en": "Make your reply flirtatious and provocative.",
+      "ru": "Ответь флиртово и с провокацией."
+    }
+  },
+  {
+    "id": "1024",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні ти чуєш: «У тебе очі людини, яка точно щось не договорює…»",
+      "en": "On a date, you hear: “You’ve got the eyes of someone definitely hiding something…”",
+      "ru": "На свидании ты слышишь: «У тебя глаза человека, который точно что-то скрывает…»"
+    },
+    "task": {
+      "uk": "Відповідай як таємничий(а) герой(їня) флірту.",
+      "en": "Reply like a mysterious flirt hero(ine).",
+      "ru": "Ответь как загадочный(ая) герой(иня) флирта."
+    }
+  },
+  {
+    "id": "1025",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось підморгує і каже: «Ти сьогодні явно не без гріха. Розкажеш, у чому саме?»",
+      "en": "Someone winks and says: “You’re definitely up to no good today. Care to confess?”",
+      "ru": "Кто-то подмигивает и говорит: «Ты сегодня явно не без греха. Признаешься, в чём именно?»"
+    },
+    "task": {
+      "uk": "Фліртуй і залиш недомовленість.",
+      "en": "Flirt and leave things unsaid.",
+      "ru": "Флиртуй и оставь недосказанность."
+    }
+  },
+  {
+    "id": "1026",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні після тосту хтось каже: «Не знаю, за що саме ми п’ємо — але якщо за твої думки, то я вже заінтригований(а)»",
+      "en": "On a date after a toast, someone says: “I’m not sure what we’re toasting to — but if it’s your thoughts, I’m intrigued.”",
+      "ru": "На свидании после тоста кто-то говорит: «Не знаю, за что мы пьем — но если за твои мысли, я уже заинтригован(а)»"
+    },
+    "task": {
+      "uk": "Відповідай фліртово, ніби твоя думка — таємна пристрасть.",
+      "en": "Reply flirtatiously, as if your thoughts are a secret desire.",
+      "ru": "Ответь флиртово, будто твои мысли — тайное желание."
+    }
+  },
+  {
+    "id": "1027",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже тобі: «В тебе така впевненість, ніби ти завжди отримуєш те, чого хочеш…»",
+      "en": "Someone says: “You’ve got that confidence — like you always get what you want…”",
+      "ru": "Кто-то говорит тебе: «У тебя такая уверенность, будто ты всегда получаешь то, что хочешь…»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби це чиста правда.",
+      "en": "Flirt like that’s absolutely true.",
+      "ru": "Флиртуй, будто это чистая правда."
+    }
+  },
+  {
+    "id": "1028",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні після твоєї усмішки хтось каже: «Здається, я вже програв(ла) гру, правила якої ще навіть не знаю»",
+      "en": "On a date, after your smile, someone says: “Feels like I’ve already lost a game I don’t even know the rules of.”",
+      "ru": "На свидании после твоей улыбки кто-то говорит: «Похоже, я уже проиграл(а) игру, правил которой даже не знаю»"
+    },
+    "task": {
+      "uk": "Відповідай дотепно й грайливо.",
+      "en": "Reply wittily and playfully.",
+      "ru": "Ответь остроумно и игриво."
+    }
+  },
+  {
+    "id": "1029",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже тобі тихо: «Мені здається, ти небезпечний(а) — але саме тому й не можу відірватися»",
+      "en": "Someone says quietly: “I think you’re dangerous — and that’s exactly why I can’t look away.”",
+      "ru": "Кто-то тихо говорит тебе: «Кажется, ты опасен(опасна) — и именно поэтому я не могу отвести взгляд»"
+    },
+    "task": {
+      "uk": "Фліртуй як персонаж спокуси.",
+      "en": "Flirt like a character of temptation.",
+      "ru": "Флиртуй как воплощение соблазна."
+    }
+  },
+  {
+    "id": "1030",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні співрозмовник каже: «Твоя енергія… Вона не просто грайлива. Вона небезпечна»",
+      "en": "On a date, your companion says: “Your vibe… It’s not just playful. It’s dangerous.”",
+      "ru": "На свидании собеседник говорит: «Твоя энергия… Она не просто игривая. Она опасная»"
+    },
+    "task": {
+      "uk": "Відповідай як той(та), хто це знає і використовує.",
+      "en": "Reply like someone who knows it — and uses it.",
+      "ru": "Ответь как тот(та), кто это знает — и пользуется этим."
+    }
+  },
+  {
+    "id": "1031",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні тобі кажуть: «З тобою неможливо розслабитись — постійно відчуття, що ти щось готуєш…»",
+      "en": "On a date, someone says: “I can’t relax around you — it always feels like you’re up to something…”",
+      "ru": "На свидании тебе говорят: «С тобой невозможно расслабиться — всё время ощущение, что ты что-то замышляешь…»"
+    },
+    "task": {
+      "uk": "Відповідай інтригуюче, з ноткою гри.",
+      "en": "Reply intriguingly, with a playful note.",
+      "ru": "Ответь интригующе, с игривой ноткой."
+    }
+  },
+  {
+    "id": "1032",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже тобі, примружившись: «Мені здається, твоя головна зброя — саме ця усмішка. Визнати?»",
+      "en": "Someone squints at you and says: “I think your main weapon is that smile. Admit it?”",
+      "ru": "Кто-то прищурившись говорит: «Мне кажется, твоё главное оружие — это улыбка. Признаешься?»"
+    },
+    "task": {
+      "uk": "Відповідай так, ніби це не єдина твоя зброя.",
+      "en": "Reply as if that’s not your only weapon.",
+      "ru": "Ответь так, будто это не единственное твоё оружие."
+    }
+  },
+  {
+    "id": "1033",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Під час побачення хтось каже: «Ти весь вечір ведеш себе ніби головний герой ромкома. Це стратегія?»",
+      "en": "On a date, someone says: “You’ve been acting like the lead in a rom-com all evening. Is that your strategy?”",
+      "ru": "На свидании кто-то говорит: «Ты весь вечер ведешь себя как герой романтической комедии. Это тактика?»"
+    },
+    "task": {
+      "uk": "Фліртуй з гумором і самоіронією.",
+      "en": "Flirt with humor and self-irony.",
+      "ru": "Флиртуй с юмором и самоиронией."
+    }
+  },
+  {
+    "id": "1034",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже: «У тебе така манера мовчати, ніби ти щойно придумав(ла) щось не зовсім пристойне…»",
+      "en": "Someone says: “The way you go silent — it feels like you’ve just thought of something… inappropriate.”",
+      "ru": "Кто-то говорит: «Ты молчишь так, будто только что придумал(а) что-то… неприличное»"
+    },
+    "task": {
+      "uk": "Відповідай двозначно й фліртово.",
+      "en": "Reply ambiguously and flirtatiously.",
+      "ru": "Ответь двусмысленно и флиртово."
+    }
+  },
+  {
+    "id": "1035",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні співрозмовник каже: «Мені здається, що твої наміри аж занадто приємні, щоб бути невинними»",
+      "en": "On a date, someone says: “I feel like your intentions are far too pleasant to be innocent.”",
+      "ru": "На свидании кто-то говорит: «Мне кажется, твои намерения слишком приятны, чтобы быть невинными»"
+    },
+    "task": {
+      "uk": "Фліртуй так, ніби вони не помиляються.",
+      "en": "Flirt like they’re absolutely right.",
+      "ru": "Флиртуй так, будто они абсолютно правы."
+    }
+  },
+  {
+    "id": "1036",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Після твого жарту хтось каже: «Ого, ти ще й небезпечно дотепний(а)? Це вже забагато»",
+      "en": "After your joke, someone says: “Wow, dangerously witty too? That’s a bit much.”",
+      "ru": "После твоей шутки кто-то говорит: «Ого, ты ещё и опасно остроумен(на)? Это уже перебор»"
+    },
+    "task": {
+      "uk": "Відповідай як майстер(ка) шарму.",
+      "en": "Reply like a master of charm.",
+      "ru": "Ответь как мастер(ица) шарма."
+    }
+  },
+  {
+    "id": "1037",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось сміється і каже: «Я тебе ще навіть не знаю, але вже хочу дізнатися, в чому твій підступ»",
+      "en": "Someone laughs and says: “I don’t even know you yet, but I already want to find out your trick.”",
+      "ru": "Кто-то смеётся и говорит: «Я тебя ещё даже не знаю, но уже хочу узнать, в чём твоя хитрость»"
+    },
+    "task": {
+      "uk": "Фліртуй із натяком, не видаючи всього.",
+      "en": "Flirt with a hint, without revealing everything.",
+      "ru": "Флиртуй с намёком, ничего не раскрывая."
+    }
+  },
+  {
+    "id": "1038",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні тобі кажуть: «Знаєш, твоє “нічого особливого” виглядає дуже особливо»",
+      "en": "On a date, someone says: “You know, your ‘nothing special’ looks very special to me.”",
+      "ru": "На свидании тебе говорят: «Знаешь, твоё “ничего особенного” выглядит очень даже особенно»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби саме цього й домагався(лася).",
+      "en": "Flirt like that was your exact goal.",
+      "ru": "Флиртуй, будто именно этого ты и добивался(лась)."
+    }
+  },
+  {
+    "id": "1039",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже: «Твоя харизма — як небезпечна гра. Але хто ж відмовиться зіграти?»",
+      "en": "Someone says: “Your charisma is like a dangerous game. But who could resist playing?”",
+      "ru": "Кто-то говорит: «Твоя харизма — как опасная игра. Но кто откажется сыграть?»"
+    },
+    "task": {
+      "uk": "Фліртуй, як головний гравець.",
+      "en": "Flirt like the lead player.",
+      "ru": "Флиртуй как главный игрок."
+    }
+  },
+  {
+    "id": "1040",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Після кількох поглядів хтось каже: «Це було зараз флірт… чи я знову все собі вигадав(ла)?»",
+      "en": "After a few glances, someone says: “Was that flirting… or am I just imagining things again?”",
+      "ru": "После нескольких взглядов кто-то говорит: «Это сейчас был флирт… или я опять всё придумал(а)?»"
+    },
+    "task": {
+      "uk": "Відповідай так, щоб залишити сумніви — і зацікавити ще більше.",
+      "en": "Reply to keep them guessing — and more curious.",
+      "ru": "Ответь так, чтобы они сомневались — и хотели ещё больше."
+    }
+  },
+  {
+    "id": "1041",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні співрозмовник каже: «Ти так впевнено поводишся, ніби вже знаєш, чим усе закінчиться…»",
+      "en": "On a date, your companion says: “You act so confidently, like you already know how this will end…”",
+      "ru": "На свидании собеседник говорит: «Ты так уверенно себя ведёшь, будто уже знаешь, чем всё закончится…»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби справді все давно вирішено.",
+      "en": "Flirt like it’s already decided.",
+      "ru": "Флиртуй, будто всё уже решено."
+    }
+  },
+  {
+    "id": "1042",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже з посмішкою: «У твоєму погляді щось між викликом і обіцянкою…»",
+      "en": "Someone says with a smile: “There’s something between a challenge and a promise in your eyes…”",
+      "ru": "Кто-то говорит с улыбкой: «В твоём взгляде что-то между вызовом и обещанием…»"
+    },
+    "task": {
+      "uk": "Відповідай, як той(та), хто може і пообіцяти, і виконати.",
+      "en": "Reply like someone who can both promise and deliver.",
+      "ru": "Ответь как тот(та), кто и пообещает, и выполнит."
+    }
+  },
+  {
+    "id": "1043",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Після твого сміху хтось каже: «Цей сміх — не просто чарівний. Він точно щось задумав»",
+      "en": "After your laugh, someone says: “That laugh — it’s not just charming. It’s definitely hiding something.”",
+      "ru": "После твоего смеха кто-то говорит: «Этот смех — не просто очаровательный. Он явно что-то скрывает»"
+    },
+    "task": {
+      "uk": "Відповідай із кокетством і натяком на гру.",
+      "en": "Reply playfully with a hint of a game.",
+      "ru": "Ответь кокетливо с намёком на игру."
+    }
+  },
+  {
+    "id": "1044",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні тобі кажуть: «Я ще не вирішив(ла), що небезпечніше — твоя посмішка чи твої ідеї»",
+      "en": "On a date, someone says: “I still haven’t decided what’s more dangerous — your smile or your ideas.”",
+      "ru": "На свидании тебе говорят: «Я ещё не решил(а), что опаснее — твоя улыбка или твои идеи»"
+    },
+    "task": {
+      "uk": "Фліртуй, ніби це комбінація обох.",
+      "en": "Flirt like it’s the perfect mix of both.",
+      "ru": "Флиртуй, будто это идеальное сочетание обоих."
+    }
+  },
+  {
+    "id": "1045",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже з підозрою: «Ти з тих людей, після яких залишаються історії, так?»",
+      "en": "Someone says with suspicion: “You’re one of those people others end up telling stories about, aren’t you?”",
+      "ru": "Кто-то говорит с подозрением: «Ты из тех людей, после которых остаются истории, да?»"
+    },
+    "task": {
+      "uk": "Відповідай як легенда… або майже.",
+      "en": "Reply like a legend… or close enough.",
+      "ru": "Ответь как легенда… или почти."
+    }
+  },
+  {
+    "id": "1046",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні хтось каже: «Я тобі ще нічого не сказав(ла), а ти вже мене роззброїв(ла)»",
+      "en": "On a date, someone says: “I haven’t even said anything yet, and you’ve already disarmed me.”",
+      "ru": "На свидании кто-то говорит: «Я ещё ничего не сказал(а), а ты уже меня разоружил(а)»"
+    },
+    "task": {
+      "uk": "Фліртуй ніжно, але з натяком на силу впливу.",
+      "en": "Flirt softly but hint at your power.",
+      "ru": "Флиртуй мягко, но с намёком на силу воздействия."
+    }
+  },
+  {
+    "id": "1047",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Після компліменту хтось додає: «Але є щось у тобі, що змушує насторожитися. І це подобається»",
+      "en": "After a compliment, someone adds: “But there’s something about you that keeps me on edge. And I like it.”",
+      "ru": "После комплимента кто-то добавляет: «Но в тебе есть что-то, что держит в напряжении. И мне это нравится»"
+    },
+    "task": {
+      "uk": "Фліртуй так, ніби саме це і було метою.",
+      "en": "Flirt like that was your goal all along.",
+      "ru": "Флиртуй, будто именно этого ты и добивался(лась)."
+    }
+  },
+  {
+    "id": "1048",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні співрозмовник каже: «Ти не просто цікава(ий). Ти небезпечно цікава(ий). І тепер я в пастці»",
+      "en": "On a date, your companion says: “You’re not just interesting. You’re dangerously interesting. And now I’m trapped.”",
+      "ru": "На свидании собеседник говорит: «Ты не просто интересный(ая). Ты опасно интересный(ая). И теперь я в ловушке»"
+    },
+    "task": {
+      "uk": "Фліртуй, як той(та), хто ставить пастки зі смаком.",
+      "en": "Flirt like someone who sets traps tastefully.",
+      "ru": "Флиртуй как тот(та), кто ставит ловушки со вкусом."
+    }
+  },
+  {
+    "id": "1049",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "Хтось каже з посмішкою: «Твоя поява — це як поява головного героя в серіалі: одразу ясно — буде драма»",
+      "en": "Someone says with a grin: “You showing up feels like the main character just walked into the show. Drama incoming.”",
+      "ru": "Кто-то говорит с улыбкой: «Твоё появление — как выход главного героя: сразу ясно — будет драма»"
+    },
+    "task": {
+      "uk": "Фліртуй як зірка сцени.",
+      "en": "Flirt like the star of the scene.",
+      "ru": "Флиртуй как звезда сцены."
+    }
+  },
+  {
+    "id": "1050",
+    "exercise_name": "FLIRT_SUSPECT",
+    "situation": {
+      "uk": "На побаченні хтось каже: «Твої фрази — це як пастки: милі, але не без наслідків»",
+      "en": "On a date, someone says: “Your lines are like traps — sweet, but with consequences.”",
+      "ru": "На свидании кто-то говорит: «Твои фразы — как ловушки: милые, но с последствиями»"
+    },
+    "task": {
+      "uk": "Фліртуй з дотепністю й легкою загрозою.",
+      "en": "Flirt with wit and a hint of danger.",
+      "ru": "Флиртуй с остроумием и лёгкой угрозой."
+    }
+  }
+]

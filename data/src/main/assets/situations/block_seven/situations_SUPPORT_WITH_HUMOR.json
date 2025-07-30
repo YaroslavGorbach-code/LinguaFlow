@@ -1,0 +1,352 @@
+[
+  {
+    "id": "1",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Твій друг каже: «Мені здається, я знову все зіпсував(ла)».",
+      "en": "Your friend says: “I think I messed it up again.”",
+      "ru": "Твой друг говорит: «Кажется, я снова всё испортил(а)»."
+    },
+    "task": {
+      "uk": "Підтримай людину з гумором, щоб розвіяти напругу і допомогти їй не надто перейматися.",
+      "en": "Support the person with humor to ease the tension and help them not overthink it.",
+      "ru": "Поддержи человека с юмором, чтобы снять напряжение и помочь не переживать."
+    }
+  },
+  {
+    "id": "2",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Колега зітхає: «Мабуть, це була повна дурниця…»",
+      "en": "A colleague sighs: “That was probably totally stupid…”",
+      "ru": "Коллега вздыхает: «Наверное, это была полная глупость…»"
+    },
+    "task": {
+      "uk": "Придумай доброзичливу і дотепну фразу, яка полегшить настрій і змусить посміхнутись.",
+      "en": "Come up with a kind and witty line to lighten the mood and make them smile.",
+      "ru": "Придумай доброжелательную и остроумную фразу, чтобы поднять настроение и вызвать улыбку."
+    }
+  },
+  {
+    "id": "3",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Подруга каже: «У мене нічого не виходить, як завжди…»",
+      "en": "Your friend says: “Nothing ever works out for me, as usual…”",
+      "ru": "Подруга говорит: «У меня ничего не получается, как всегда…»"
+    },
+    "task": {
+      "uk": "Відповідай з теплим жартом або іронією, щоби допомогти їй не втратити впевненість.",
+      "en": "Reply with a warm joke or irony to help her stay confident.",
+      "ru": "Ответь тёплой шуткой или иронией, чтобы помочь ей не терять уверенность."
+    }
+  },
+  {
+    "id": "4",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Товариш каже: «Мені здається, всі думають, що я дивак...»",
+      "en": "A friend says: “I think everyone thinks I’m weird...”",
+      "ru": "Товарищ говорит: «Мне кажется, все думают, что я странный…»"
+    },
+    "task": {
+      "uk": "Придумай веселу або самоіронічну відповідь, яка змусить його посміятись і прийняти себе.",
+      "en": "Come up with a fun or self-ironic response to make them laugh and feel accepted.",
+      "ru": "Придумай весёлый или самоироничный ответ, чтобы рассмешить и помочь принять себя."
+    }
+  },
+  {
+    "id": "5",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Знайомий каже: «Чомусь мені завжди так ніяково...»",
+      "en": "An acquaintance says: “For some reason I always feel awkward…”",
+      "ru": "Знакомый говорит: «Почему-то мне всегда неловко…»"
+    },
+    "task": {
+      "uk": "Придумай легкий, дружній жарт, щоби показати, що це нормально і навіть симпатично.",
+      "en": "Come up with a light, friendly joke to show it's okay and even endearing.",
+      "ru": "Придумай лёгкую, дружелюбную шутку, чтобы показать, что это нормально и даже мило."
+    }
+  },
+  {
+    "id": "6",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Твій друг каже: «Я, напевно, сказав щось дурне...»",
+      "en": "Your friend says: “I probably said something dumb...”",
+      "ru": "Твой друг говорит: «Наверное, я сказал(а) какую-то глупость…»"
+    },
+    "task": {
+      "uk": "Зреагуй з гумором або легким перебільшенням, щоб розвеселити його.",
+      "en": "React with humor or gentle exaggeration to make them laugh.",
+      "ru": "Отреагируй с юмором или лёгким преувеличением, чтобы развеселить друга."
+    }
+  },
+  {
+    "id": "7",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Подруга каже: «Моя презентація була просто жахлива...»",
+      "en": "Your friend says: “My presentation was a disaster...”",
+      "ru": "Подруга говорит: «Моя презентация была ужасной…»"
+    },
+    "task": {
+      "uk": "Пожартуй або перебільши, щоб зменшити драму й повернути їй настрій.",
+      "en": "Joke or exaggerate a little to reduce the drama and lift her spirits.",
+      "ru": "Пошути или немного преувеличь, чтобы снизить драму и поднять ей настроение."
+    }
+  },
+  {
+    "id": "8",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Твій колега каже: «Я знову все забув(ла)!»",
+      "en": "Your colleague says: “I forgot everything again!”",
+      "ru": "Твой коллега говорит: «Я снова всё забыл(а)!»"
+    },
+    "task": {
+      "uk": "Відповідай з іронією або веселим перебільшенням, щоб не здавалося катастрофою.",
+      "en": "Reply with irony or a playful exaggeration to show it’s no big deal.",
+      "ru": "Ответь с иронией или шутливым преувеличением, чтобы это не выглядело катастрофой."
+    }
+  },
+  {
+    "id": "9",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Друг каже: «Мені здається, я всім набрид(ла)...»",
+      "en": "A friend says: “I think everyone’s tired of me...”",
+      "ru": "Друг говорит: «Мне кажется, я всем надоел(а)…»"
+    },
+    "task": {
+      "uk": "Зреагуй дотепно, щоб розвіяти ці думки і показати, що це не так.",
+      "en": "Respond wittily to dispel this thought and show it’s not true.",
+      "ru": "Ответь остроумно, чтобы развеять эти мысли и показать, что это не так."
+    }
+  },
+  {
+    "id": "10",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Хтось каже: «Ну все, тепер я точно виглядаю безглуздо.»",
+      "en": "Someone says: “Well, now I definitely look ridiculous.”",
+      "ru": "Кто-то говорит: «Ну всё, теперь я точно выгляжу глупо.»"
+    },
+    "task": {
+      "uk": "Придумай смішну або несподівано компліментарну відповідь.",
+      "en": "Come up with a funny or unexpectedly complimentary reply.",
+      "ru": "Придумай смешной или неожиданно комплиментарный ответ."
+    }
+  },
+  {
+    "id": "11",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Знайомий каже: «Я завжди роблю дурниці на публіці...»",
+      "en": "An acquaintance says: “I always do silly things in public...”",
+      "ru": "Знакомый говорит: «Я всегда делаю глупости на людях…»"
+    },
+    "task": {
+      "uk": "Пожартуй над ситуацією так, щоб це виглядало мило й по-людськи.",
+      "en": "Make a joke that makes it seem cute and human.",
+      "ru": "Пошути так, чтобы это выглядело мило и по-человечески."
+    }
+  },
+  {
+    "id": "12",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Друг каже: «Я ж сказав(ла) щось дурне, правда?»",
+      "en": "A friend says: “I said something dumb, didn’t I?”",
+      "ru": "Друг говорит: «Я же сказал(а) что-то глупое, да?»"
+    },
+    "task": {
+      "uk": "Відповідай із дружнім гумором, щоб він не соромився своїх слів.",
+      "en": "Respond with friendly humor to make them not feel embarrassed.",
+      "ru": "Ответь дружелюбно и с юмором, чтобы человек не стеснялся своих слов."
+    }
+  },
+  {
+    "id": "13",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Твій друг знітився й каже: «Я зараз виглядаю, як клоун...»",
+      "en": "Your friend, feeling awkward, says: “I look like a clown right now...”",
+      "ru": "Твой друг, смущённо, говорит: «Я сейчас выгляжу, как клоун…»"
+    },
+    "task": {
+      "uk": "Придумай дотепну відповідь, яка перетворить цю фразу на комплімент.",
+      "en": "Think of a witty reply that turns this phrase into a compliment.",
+      "ru": "Придумай остроумный ответ, который превратит это в комплимент."
+    }
+  },
+  {
+    "id": "14",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Колега каже: «Ну що ж, ще один провал у скарбничку...»",
+      "en": "A colleague says: “Well, another failure in the collection…”",
+      "ru": "Коллега говорит: «Ну что ж, ещё один провал в копилку…»"
+    },
+    "task": {
+      "uk": "Придумай відповідь з оптимізмом і гумором — як у героя комедії.",
+      "en": "Respond with optimism and humor — like a character in a comedy.",
+      "ru": "Ответь с оптимизмом и юмором — как герой комедии."
+    }
+  },
+  {
+    "id": "15",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Знайома каже: «У всіх виходить, а я знову щось не так зробила…»",
+      "en": "An acquaintance says: “Everyone else can do it, and I messed it up again…”",
+      "ru": "Знакомая говорит: «У всех получается, а я снова сделала что-то не так…»"
+    },
+    "task": {
+      "uk": "Пожартуй, щоб показати: помилки — це нормально і навіть весело.",
+      "en": "Make a joke to show that mistakes are normal — even fun.",
+      "ru": "Пошути, чтобы показать: ошибки — это нормально и даже весело."
+    }
+  },
+  {
+    "id": "16",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Твоя подруга виходить з кафе і каже: «Я щойно пролила каву на стіл перед офіціантом… Тепер думаю, чи залишити чайові за шоу?»",
+      "en": "Your friend leaves the café and says: “I just spilled coffee all over the table in front of the waiter… Should I tip extra for the performance?”",
+      "ru": "Твоя подруга выходит из кафе и говорит: «Я только что пролила кофе на весь стол при официанте… Теперь думаю, не оставить ли чаевые за представление?»"
+    },
+    "task": {
+      "uk": "Відповідай з теплим гумором, щоб розсмішити і зняти напругу.",
+      "en": "Respond with warm humor to make her laugh and defuse the tension.",
+      "ru": "Ответь с тёплым юмором, чтобы развеселить и снять напряжение."
+    }
+  },
+  {
+    "id": "17",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Колега повертається з презентації і каже: «Я забув(ла) найважливіший слайд… стояв(ла) там, як герой немого кіно.»",
+      "en": "A colleague returns from a presentation and says: “I forgot the most important slide… stood there like a silent film star.”",
+      "ru": "Коллега возвращается с презентации и говорит: «Я забыл(а) самый важный слайд… стоял(а), как герой немого кино.»"
+    },
+    "task": {
+      "uk": "Придумай веселу відповідь, яка покаже, що це буває з усіма.",
+      "en": "Come up with a funny reply to show it happens to everyone.",
+      "ru": "Придумай весёлый ответ, чтобы показать, что такое бывает со всеми."
+    }
+  },
+  {
+    "id": "18",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Друг виходить із спортзалу і каже: «Я впав(ла) з бігової доріжки, ще й перед усіма! Можна вже записуватись на циркове шоу?»",
+      "en": "Your friend leaves the gym and says: “I fell off the treadmill in front of everyone! Should I sign up for a circus act now?”",
+      "ru": "Друг выходит из спортзала и говорит: «Я упал(а) с беговой дорожки на глазах у всех! Может, пора записываться в цирк?»"
+    },
+    "task": {
+      "uk": "Підтримай жартом, який зробить ситуацію менш ніяковою.",
+      "en": "Support them with a joke that makes the situation feel less awkward.",
+      "ru": "Поддержи шуткой, чтобы ситуация выглядела менее неловкой."
+    }
+  },
+  {
+    "id": "19",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Подруга каже після дзвінка: «Я 10 хвилин говорила, а виявилось, що не натиснула “Відправити” на голосовому…»",
+      "en": "After a call, your friend says: “I talked for 10 minutes, only to realize I never hit 'Send' on the voice message…”",
+      "ru": "Подруга говорит после звонка: «Я 10 минут говорила, а потом поняла, что не нажала «Отправить» на голосовом…»"
+    },
+    "task": {
+      "uk": "Придумай самоіронічну або жартівливу відповідь, яка допоможе прийняти ситуацію з усмішкою.",
+      "en": "Come up with a self-ironic or funny response to help embrace the moment with a smile.",
+      "ru": "Придумай самоироничный или шутливый ответ, чтобы принять ситуацию с улыбкой."
+    }
+  },
+  {
+    "id": "20",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Знайома після побачення каже: «Я назвала його іменем свого кота… прямо в очі!»",
+      "en": "An acquaintance says after a date: “I called him my cat’s name… right to his face!”",
+      "ru": "Знакомая говорит после свидания: «Я назвала его именем своего кота… прямо в глаза!»"
+    },
+    "task": {
+      "uk": "Придумай дружню і дотепну відповідь, яка перетворить ситуацію на кумедну історію.",
+      "en": "Come up with a friendly and witty response that turns the moment into a funny story.",
+      "ru": "Придумай дружелюбный и остроумный ответ, чтобы превратить ситуацию в забавную историю."
+    }
+  },
+  {
+    "id": "21",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Товариш виходить з інтерв'ю і каже: «Я сказав “дякую вам, кохаю вас”… замість “радий був познайомитись”! Що зі мною?»",
+      "en": "A friend leaves an interview and says: “I said ‘thank you, I love you’ instead of ‘nice to meet you’! What’s wrong with me?”",
+      "ru": "Товарищ выходит с собеседования и говорит: «Я сказал(а) «спасибо, я вас люблю» вместо «рад был познакомиться»! Что со мной?»"
+    },
+    "task": {
+      "uk": "Зреагуй так, щоб зняти напругу і дати відчути, що це навіть мило.",
+      "en": "Respond in a way that eases the tension and makes it seem cute.",
+      "ru": "Ответь так, чтобы снять напряжение и показать, что это даже мило."
+    }
+  },
+  {
+    "id": "22",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Подруга знітилася і каже: «Я на зустрічі говорила з кнопкою на пульті, думаючи, що то мікрофон…»",
+      "en": "A friend, embarrassed, says: “I spent the whole meeting talking to the remote button, thinking it was a mic…”",
+      "ru": "Подруга смущённо говорит: «Я всю встречу говорила в кнопку на пульте, думая, что это микрофон…»"
+    },
+    "task": {
+      "uk": "Придумай добру відповідь, яка покаже, що це тільки додає їй шарму.",
+      "en": "Come up with a kind reply showing that it only adds to her charm.",
+      "ru": "Придумай добрый ответ, показывающий, что это только добавляет ей обаяния."
+    }
+  },
+  {
+    "id": "23",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Друг після вечірки каже: «Я чхнув під час тосту… всі подумали, що я щось не те проковтнув...»",
+      "en": "After a party, your friend says: “I sneezed during the toast… they all thought I choked on my drink…”",
+      "ru": "После вечеринки друг говорит: «Я чихнул во время тоста… все подумали, что я поперхнулся…»"
+    },
+    "task": {
+      "uk": "Пожартуй, щоб перетворити це на веселий спогад.",
+      "en": "Make a joke to turn it into a funny memory.",
+      "ru": "Пошути, чтобы превратить это в весёлое воспоминание."
+    }
+  },
+  {
+    "id": "24",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Колега каже: «Я переплутав звіт і випадково надіслав презентацію з дня народження… босу!»",
+      "en": "A colleague says: “I mixed up the files and sent my birthday slideshow… to the boss!”",
+      "ru": "Коллега говорит: «Я перепутал(а) файлы и отправил(а) слайдшоу с дня рождения… начальнику!»"
+    },
+    "task": {
+      "uk": "Придумай дотепну фразу, яка зменшить паніку й змусить посміхнутись.",
+      "en": "Come up with a witty line that reduces panic and brings a smile.",
+      "ru": "Придумай остроумную фразу, чтобы снять панику и вызвать улыбку."
+    }
+  },
+  {
+    "id": "25",
+    "exercise_name": "SUPPORT_WITH_HUMOR",
+    "situation": {
+      "uk": "Друг після смол-току каже: «Я побажав “приємного польоту” продавчині в магазині…»",
+      "en": "After small talk, your friend says: “I wished ‘have a nice flight’ to the cashier…”",
+      "ru": "После смол-тока друг говорит: «Я пожелал(а) «приятного полета» кассиру…»"
+    },
+    "task": {
+      "uk": "Зреагуй весело або з дружньою іронією, щоби зробити з цього анекдот.",
+      "en": "Respond playfully or with friendly irony to turn it into a fun anecdote.",
+      "ru": "Отреагируй весело или с дружелюбной иронией, чтобы получился анекдот."
+    }
+  }
+]

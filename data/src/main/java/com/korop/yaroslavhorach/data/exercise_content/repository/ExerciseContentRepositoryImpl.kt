@@ -63,6 +63,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     ExerciseName.REVERSE_STORYTELLING -> "situations/block_six/situations_REVERSE_STORYTELLING.json"
                     ExerciseName.MAKE_IT_FASCINATING -> "situations/block_six/situations_MAKE_IT_FASCINATING.json"
                     ExerciseName.OVERDRAMATIC_TRIVIALITY -> "situations/block_six/situations_OVERDRAMATIC_TRIVIALITY.json"
+                    ExerciseName.IRONIC_RESPONSE -> "situations/block_seven/situations_IRONIC_RESPONSE.json"
+                    ExerciseName.AWKWARD_SITUATION -> "situations/block_seven/situations_AWKWARD_SITUATION.json"
+                    ExerciseName.SUPPORT_WITH_HUMOR -> "situations/block_seven/situations_SUPPORT_WITH_HUMOR.json"
+                    ExerciseName.IRONIC_DOMESTIC_REACTION -> "situations/block_seven/situations_IRONIC_DOMESTIC_REACTION.json"
+                    ExerciseName.FLIRTY_REPLY -> "situations/block_seven/situations_FLIRTY_REPLY.json"
+                    ExerciseName.FLIRT_SUSPECT -> "situations/block_seven/situations_FLIRTY_SUSPECT.json"
                     else -> ""
                 }
 

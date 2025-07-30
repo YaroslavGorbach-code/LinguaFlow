@@ -1274,5 +1274,293 @@
     "isEnable": false,
     "isVisible": true,
     "isLastActive": false
+  },
+  {
+    "id": 51,
+    "nameString": {
+      "uk": "Іронічна відповідь",
+      "en": "Make It Ironic",
+      "ru": "Ответ с иронией"
+    },
+    "description": {
+      "uk": "Отримаєш фразу з реального життя — наприклад, зауваження, докір чи легкий укол. Твоя задача — відповісти з гумором, самоіронією або легкою сатирою, щоб розрядити ситуацію і зберегти дружній тон.",
+      "en": "You'll get a real-life phrase — a remark, a tease, or a comment. Your task is to reply with humor, self-irony, or light sarcasm to ease the tension and keep things friendly.",
+      "ru": "Ты услышишь фразу из реальной жизни — замечание, подкол или комментарий. Твоя задача — ответить с юмором, самоиронией или лёгкой сатирой, чтобы разрядить ситуацию и сохранить дружелюбный тон."
+    },
+    "exerciseProgress": {
+      "exerciseId": 51,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "IRONIC_RESPONSE",
+    "skill": "COMMUNICATION",
+    "block": "SEVEN",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 52,
+    "nameString": {
+      "uk": "Незручна ситуація",
+      "en": "Awkward Moment",
+      "ru": "Неловкая ситуация"
+    },
+    "description": {
+      "uk": "Трапилась дрібна халепа — наприклад, ти пролив(ла) каву чи щось упустив(ла). Твоє завдання — відреагувати з гумором або креативно, не вибачаючись занадто, щоб зберегти впевненість і доброзичливу атмосферу.",
+      "en": "A little mishap happens — like spilling coffee or dropping something. Your task is to respond with humor or creativity, without over-apologizing, to stay confident and keep things friendly.",
+      "ru": "Случилась мелкая неудача — например, ты пролил(а) кофе или что-то уронил(а). Твоя задача — отреагировать с юмором или креативно, не извиняясь слишком много, чтобы сохранить уверенность и дружелюбную атмосферу."
+    },
+    "exerciseProgress": {
+      "exerciseId": 52,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "AWKWARD_SITUATION",
+    "skill": "COMMUNICATION",
+    "block": "SEVEN",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 53,
+    "nameString": {
+      "uk": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
+    },
+    "description": {
+      "uk": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
+    },
+    "exerciseProgress": {
+      "exerciseId": 53,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_HARD",
+    "skill": "DICTION",
+    "block": "SEVEN",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 54,
+    "nameString": {
+      "uk": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "uk": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 54,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "SEVEN",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 55,
+    "nameString": {
+      "uk": "Підтримай співрозмовника гумором",
+      "en": "Support with Humor",
+      "ru": "Поддержи с юмором"
+    },
+    "description": {
+      "uk": "Ти отримаєш фразу від людини, яка переживає або сумнівається в собі. Твоя задача — відповісти з гумором або легкою іронією, щоб підбадьорити її та зняти напругу.",
+      "en": "You'll get a phrase from someone feeling insecure or upset. Your task is to respond with humor or gentle irony to cheer them up and ease the tension.",
+      "ru": "Ты услышишь фразу от человека, который переживает или сомневается в себе. Твоя задача — ответить с юмором или лёгкой иронией, чтобы подбодрить и снять напряжение."
+    },
+    "exerciseProgress": {
+      "exerciseId": 55,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "SUPPORT_WITH_HUMOR",
+    "skill": "COMMUNICATION",
+    "block": "SEVEN",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 56,
+    "nameString": {
+      "uk": "Іронічна реакція на побут",
+      "en": "Ironic Reaction to Everyday Life",
+      "ru": "Ироничная реакция на быт"
+    },
+    "description": {
+      "uk": "Тобі буде запропоновано побутову ситуацію, яка пішла не за планом — наприклад, щось розлилось, зламалось або впало. Твоя задача — зреагувати з легкою іронією або самоіронією, ніби ти ділишся цим у дружньому чаті.",
+      "en": "You’ll get an everyday situation that didn’t go as planned — something spilled, broke, or fell. Your task is to respond with light irony or self-irony, as if you're sharing it in a friendly chat.",
+      "ru": "Ты получишь бытовую ситуацию, которая пошла не по плану — что-то пролилось, сломалось или упало. Твоя задача — отреагировать с лёгкой иронией или самоиронией, будто ты рассказываешь об этом друзьям в чате."
+    },
+    "exerciseProgress": {
+      "exerciseId": 56,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "IRONIC_DOMESTIC_REACTION",
+    "skill": "COMMUNICATION",
+    "block": "SEVEN",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 57,
+    "nameString": {
+      "uk": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
+    },
+    "description": {
+      "uk": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
+    },
+    "exerciseProgress": {
+      "exerciseId": 57,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_HARD",
+    "skill": "DICTION",
+    "block": "SEVEN",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 58,
+    "nameString": {
+      "uk": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "uk": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 58,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "SEVEN",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 59,
+    "nameString": {
+      "uk": "Грайлива відповідь",
+      "en": "Playful Reply",
+      "ru": "Игривый ответ"
+    },
+    "description": {
+      "uk": "Отримаєш просту фразу — комплімент або легкий жарт. Твоя задача — відповісти фліртовно, з гумором або перебільшенням, ніби тобі щойно зізналися в коханні. Відповідь має бути легкою, дотепною та залишати простір для продовження розмови.",
+      "en": "You’ll get a simple phrase — a compliment or a light tease. Your task is to reply playfully, with humor or exaggeration, as if someone just confessed their love. Keep it light, clever, and open for further conversation.",
+      "ru": "Ты получишь простую фразу — комплимент или лёгкую шутку. Твоя задача — ответить флиртуя, с юмором или преувеличением, как будто тебе только что признались в любви. Ответ должен быть лёгким, остроумным и оставлять пространство для продолжения общения."
+    },
+    "exerciseProgress": {
+      "exerciseId": 59,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "FLIRTY_REPLY",
+    "skill": "COMMUNICATION",
+    "block": "SEVEN",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 60,
+    "nameString": {
+      "uk": "Флірт із підозрою",
+      "en": "Suspicious Flirt",
+      "ru": "Флирт с подозрением"
+    },
+    "description": {
+      "uk": "Отримаєш репліку на кшталт загадкового спостереження: «У тебе якась підозріло грайлива усмішка… Що задумав(ла)?». Твоя задача — відповісти фліртовно, зухвало або хитро, ніби ти справді щось замислив(ла), але поки не готовий(а) розкрити всі карти. Відповідь має бути дотепною, інтригуючою і залишати простір для продовження гри.",
+      "en": "You’ll get a teasing line like: “That smile looks suspiciously playful… What are you plotting?”. Your task is to reply flirtatiously — boldly, slyly, or with a smirk, as if you're up to something but keeping it secret for now. Make your answer clever, intriguing, and open-ended.",
+      "ru": "Ты услышишь фразу вроде: «Что-то в твоей улыбке слишком игривое… Что ты задумал(а)?». Твоя задача — ответить с флиртом: дерзко, хитро или с намёком, будто ты что-то замыслил(а), но пока не раскрываешь. Ответ должен быть остроумным, интригующим и с продолжением."
+    },
+    "exerciseProgress": {
+      "exerciseId": 60,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "FLIRT_SUSPECT",
+    "skill": "COMMUNICATION",
+    "block": "SEVEN",
+    "isEnable": true,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 61,
+    "nameString": {
+      "uk": "Скоромовки: Важкий рівень",
+      "en": "Tongue Twisters: Hard",
+      "ru": "Скороговорки: Сложный уровень"
+    },
+    "description": {
+      "uk": "Складні скоромовки для тих, хто не боїться заплутатись у власному язику. Прокачай дикцію, швидкість і витримку – буде складно, але весело!",
+      "en": "Hard tongue twisters for those brave enough to get tangled in their own tongue. Train your clarity, speed, and stamina – it’s tough but fun!",
+      "ru": "Сложные скороговорки для тех, кто не боится запутаться в собственном языке. Прокачай дикцию, скорость и выдержку – будет сложно, но весело!"
+    },
+    "exerciseProgress": {
+      "exerciseId": 57,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "TONGUE_TWISTERS_HARD",
+    "skill": "DICTION",
+    "block": "SEVEN",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
+  },
+  {
+    "id": 62,
+    "nameString": {
+      "uk": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "uk": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 58,
+      "progress": 0,
+      "maxProgress": 3
+    },
+    "name": "VOCABULARY",
+    "skill": "VOCABULARY",
+    "block": "SEVEN",
+    "isEnable": false,
+    "isVisible": true,
+    "isLastActive": false
   }
 ]
