@@ -90,7 +90,7 @@ internal fun RateAppScreen(
             .padding(horizontal = 20.dp)
             .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
     ) {
-        val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(LinguaAnimations.Star))
+        val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(LinguaAnimations.StarRating))
         Spacer(Modifier.weight(1f))
         LottieAnimation(
             modifier = Modifier
