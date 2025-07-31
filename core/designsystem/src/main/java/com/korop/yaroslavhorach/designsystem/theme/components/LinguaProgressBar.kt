@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import com.korop.yaroslavhorach.designsystem.theme.BrightGray
 import com.korop.yaroslavhorach.designsystem.theme.KellyGreen
-import com.korop.yaroslavhorach.designsystem.theme.Menthol
+import com.korop.yaroslavhorach.designsystem.theme.White_20
 
 @Composable
 fun LinguaProgressBar(
@@ -31,7 +31,7 @@ fun LinguaProgressBar(
     modifier: Modifier = Modifier,
     progressBackgroundColor: Color = BrightGray,
     progressColor: Color = KellyGreen,
-    progressShadow: Color = Menthol,
+    progressShadow: Color = White_20,
     minValue: Float = 0f,
     content: @Composable BoxScope.() -> Unit = {}
 ) {

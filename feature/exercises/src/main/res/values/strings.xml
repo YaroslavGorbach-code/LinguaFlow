@@ -8,6 +8,20 @@
         <item>🔄 The more you practice, the less awkward it feels</item>
     </array>
 
+    <string-array name="exercise_success_messages">
+        <item>Your speaking level just went up! Keep it up 👏</item>
+        <item>Step by step — you\'re climbing that mountain 🏔️</item>
+        <item>Your efforts are paying off! 🌱</item>
+        <item>Well done! Another step forward 💪</item>
+        <item>Another win in your collection 🏅</item>
+        <item>You nailed it! 🎉</item>
+        <item>Your progress is impressive! 🚀</item>
+        <item>Keep it up! Your confidence is growing ✨</item>
+        <item>That was a solid push! Don’t stop now 😎</item>
+        <item>With every exercise, you\'re getting more confident 💬</item>
+        <item>🔓 Level complete. XP earned. Your speech skills are leveling up!</item>
+    </string-array>
+
     <array name="speaking_exercise_intro_text">
         <item>Now it’s your turn to say it your way. 🗣️ Try to voice the idea out loud.</item>
         <item>Your turn to speak up. 🗣️ Say it in your own words — that’s how real confidence and communication skills are built.</item>
@@ -58,4 +72,6 @@
     <string name="words_game_example_title_text">📋 Example:</string>
     <string name="words_game_finish_btn_text">Finish</string>
     <string name="words_game_next_btn_text">Next</string>
+
+    <string name="exercise_completed_title_text">Exercise completed!</string>
 </resources>

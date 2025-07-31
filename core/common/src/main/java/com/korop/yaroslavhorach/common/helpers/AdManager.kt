@@ -2,6 +2,8 @@ package com.korop.yaroslavhorach.common.helpers
 
 import android.app.Activity
 import android.app.Application
+import android.view.WindowManager
+import androidx.core.view.WindowCompat
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
@@ -34,26 +36,11 @@ class AdManager @Inject constructor(
             if (prefsRepository.getUserData().first().isPremium.not()) {
                 InterstitialAd.load(
                     app,
-                    INTERSTITIAL_AD_ID,
+                    INTERSTITIAL_TEST_AD_ID,
                     AdRequest.Builder().build(),
                     object : InterstitialAdLoadCallback() {
                         override fun onAdLoaded(interstitialAd: InterstitialAd) {
                             _interstitialAd = interstitialAd
-
-                            interstitialAd.fullScreenContentCallback =
-                                object : FullScreenContentCallback() {
-                                    override fun onAdDismissedFullScreenContent() {
-                                        _interstitialAd = null
-                                    }
-
-                                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
-                                        _interstitialAd = null
-                                    }
-
-                                    override fun onAdShowedFullScreenContent() {
-
-                                    }
-                                }
                         }
 
                         override fun onAdFailedToLoad(loadAdError: LoadAdError) {
@@ -69,7 +56,22 @@ class AdManager @Inject constructor(
             prefsRepository.getUserData()
                 .onEach { userData ->
                     if (userData.isPremium.not()) {
-                        _interstitialAd?.show(activity)
+                        _interstitialAd?.apply {
+                            show(activity)
+                            fullScreenContentCallback =
+                                object : FullScreenContentCallback() {
+                                    override fun onAdDismissedFullScreenContent() {
+                                        _interstitialAd = null
+                                    }
+                                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                                        _interstitialAd = null
+                                    }
+                                    override fun onAdShowedFullScreenContent() {
+
+                                    }
+                                }
+                        }
+
                         loadInterstitial()
                     }
                 }.collect()
