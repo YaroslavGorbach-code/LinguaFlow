@@ -114,6 +114,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.FUNNIEST_ANSWER,
                 Game.GameName.MADMAN_ANNOUNCEMENT,
                 Game.GameName.FUNNY_EXCUSE,
+                Game.GameName.BREATHLINE_CHALLENGE,
                 Game.GameName.UNUSUAL_PROBLEM_SOLVER,
                 Game.GameName.EMOTIONAL_TRANSLATOR -> {
                     game.value?.let(::getGameSentence)

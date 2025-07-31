@@ -127,6 +127,7 @@ fun LingoNavHost(
                 Game.GameName.QUICK_ASSOCIATION,
                 Game.GameName.WORD_BY_CATEGORY,
                 Game.GameName.UNUSUAL_PROBLEM_SOLVER,
+                Game.GameName.BREATHLINE_CHALLENGE,
                 Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }

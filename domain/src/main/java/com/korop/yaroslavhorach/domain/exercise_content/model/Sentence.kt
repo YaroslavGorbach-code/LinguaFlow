@@ -27,6 +27,7 @@ data class Sentence(
         FUNNIEST_ANSWER,
         SELL_THE_MADNESS,
         FUNNY_EXCUSE,
+        BREATHLINE_CHALLENGE,
         PROBLEMS
     }
 }

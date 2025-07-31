@@ -1,0 +1,1532 @@
+[
+  {
+    "id": 1001,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У ранковій тиші лунає спів пташок, що пробуджують усе довкола своїми мелодійними трелями.",
+      "en": "In the morning silence, the birds sing melodies that awaken everything around them.",
+      "ru": "В утренней тишине раздаётся пение птиц, пробуждающее всё вокруг своими мелодичными трелями."
+    }
+  },
+  {
+    "id": 1002,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Після дощу в повітрі відчувається свіжа волога прохолода, що огортає місто легкою імлою.",
+      "en": "After the rain, the air is filled with a fresh, moist coolness that wraps the city in a gentle haze.",
+      "ru": "После дождя в воздухе чувствуется свежая влажная прохлада, окутывающая город лёгкой дымкой."
+    }
+  },
+  {
+    "id": 1003,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Далеко за горизонтом хмари повільно пливуть, змінюючи форми й кольори під променями вечірнього сонця.",
+      "en": "Far beyond the horizon, clouds slowly drift, changing shapes and colors under the rays of the evening sun.",
+      "ru": "Далеко за горизонтом облака медленно плывут, меняя формы и цвета под лучами вечернего солнца."
+    }
+  },
+  {
+    "id": 1004,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожен день — це новий шанс змінити своє життя, зробити щось значуще й стати кращою версією себе.",
+      "en": "Every day is a new chance to change your life, do something meaningful, and become a better version of yourself.",
+      "ru": "Каждый день — это новый шанс изменить свою жизнь, сделать что-то значимое и стать лучшей версией себя."
+    }
+  },
+  {
+    "id": 1005,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли осіннє листя шурхотить під ногами, відчувається затишок і спокій, який несе з собою прохолодна пора.",
+      "en": "When autumn leaves rustle underfoot, you feel the comfort and calm that the cool season brings with it.",
+      "ru": "Когда осенние листья шуршат под ногами, ощущается уют и спокойствие, которые приносит с собой прохладная пора."
+    }
+  },
+  {
+    "id": 1006,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Старий годинник на ратуші пробив полудень, і площа наповнилася рухом, сміхом і ароматами свіжої випічки з навколишніх кав’ярень.",
+      "en": "The old town hall clock struck noon, and the square filled with movement, laughter, and the aromas of fresh pastries from nearby cafés.",
+      "ru": "Старые часы на ратуше пробили полдень, и площадь наполнилась движением, смехом и ароматами свежей выпечки из ближайших кафе."
+    }
+  },
+  {
+    "id": 1007,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли навколо панує тиша, навіть найменший шелест листя стає голосним нагадуванням про присутність життя в кожному куточку природи.",
+      "en": "When silence reigns around you, even the slightest rustle of leaves becomes a loud reminder of life’s presence in every corner of nature.",
+      "ru": "Когда вокруг царит тишина, даже самый тихий шорох листвы становится громким напоминанием о присутствии жизни в каждом уголке природы."
+    }
+  },
+  {
+    "id": 1008,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Часом найважливіші слова буває складно вимовити, але саме вони здатні змінити не лише стосунки, а й хід усього життя.",
+      "en": "Sometimes the most important words are the hardest to say, yet they can change not only relationships but the course of your entire life.",
+      "ru": "Иногда самые важные слова труднее всего произнести, но именно они могут изменить не только отношения, но и ход всей жизни."
+    }
+  },
+  {
+    "id": 1009,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Легкий вітерець розгойдує гілки дерев, змушуючи тіні танцювати на землі, немов природа грає в свою власну повільну симфонію.",
+      "en": "A gentle breeze sways the tree branches, making shadows dance on the ground, as if nature is playing its own slow symphony.",
+      "ru": "Лёгкий ветерок покачивает ветви деревьев, заставляя тени танцевать на земле, словно природа играет свою собственную медленную симфонию."
+    }
+  },
+  {
+    "id": 1010,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Спогади, які ми носимо в серці, іноді зринають несподівано, даруючи тепло або легкий смуток за тим, що вже не повернеться.",
+      "en": "The memories we carry in our hearts sometimes surface unexpectedly, bringing warmth or a gentle sorrow for what will never return.",
+      "ru": "Воспоминания, которые мы храним в сердце, иногда всплывают неожиданно, даря тепло или лёгкую грусть по тому, что уже не вернётся."
+    }
+  },
+  {
+    "id": 1011,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть у найтемніші ночі зірки нагадують нам, що світло завжди є, просто іноді його потрібно пошукати уважніше.",
+      "en": "Even on the darkest nights, the stars remind us that light always exists — sometimes we just need to look more carefully to find it.",
+      "ru": "Даже в самые тёмные ночи звёзды напоминают нам, что свет всегда есть — просто иногда его нужно поискать внимательнее."
+    }
+  },
+  {
+    "id": 1012,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Ранкове місто повільно прокидається, відкриваючи очі разом із першими променями сонця, що ковзають дахами будинків.",
+      "en": "The morning city slowly awakens, opening its eyes along with the first rays of sunlight sliding across the rooftops.",
+      "ru": "Утренний город медленно просыпается, открывая глаза вместе с первыми солнечными лучами, скользящими по крышам домов."
+    }
+  },
+  {
+    "id": 1013,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна подорож, якою б короткою вона не була, відкриває нові горизонти — зовнішні чи внутрішні, фізичні або душевні.",
+      "en": "Every journey, no matter how short, opens new horizons — whether external or internal, physical or emotional.",
+      "ru": "Каждое путешествие, каким бы коротким оно ни было, открывает новые горизонты — внешние или внутренние, физические или душевные."
+    }
+  },
+  {
+    "id": 1014,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Справжнє натхнення з’являється не тоді, коли ми його чекаємо, а тоді, коли серце готове почути щось нове.",
+      "en": "True inspiration comes not when we expect it, but when the heart is ready to hear something new.",
+      "ru": "Истинное вдохновение приходит не тогда, когда мы его ждём, а тогда, когда сердце готово услышать что-то новое."
+    }
+  },
+  {
+    "id": 1015,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти дивишся на світ з відкритим серцем, навіть найбуденніші речі набувають особливого змісту й краси.",
+      "en": "When you look at the world with an open heart, even the most ordinary things gain special meaning and beauty.",
+      "ru": "Когда ты смотришь на мир с открытым сердцем, даже самые обыденные вещи обретают особый смысл и красоту."
+    }
+  },
+  {
+    "id": 1016,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "На вершині гори повітря здається чистішим, думки — яснішими, а світ — таким, якого тобі завжди хотілося.",
+      "en": "At the top of the mountain, the air feels purer, thoughts become clearer, and the world seems like the one you've always wanted.",
+      "ru": "На вершине горы воздух кажется чище, мысли — яснее, а мир — таким, каким ты всегда его хотел видеть."
+    }
+  },
+  {
+    "id": 1017,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Шепіт дерев у лісі здається давньою мовою природи, яка зберігає в собі мудрість поколінь.",
+      "en": "The whisper of trees in the forest seems like an ancient language of nature, carrying the wisdom of generations.",
+      "ru": "Шёпот деревьев в лесу кажется древним языком природы, хранящим в себе мудрость поколений."
+    }
+  },
+  {
+    "id": 1018,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді одна усмішка здатна змінити настрій людини краще, ніж тисяча слів чи складні пояснення.",
+      "en": "Sometimes one smile can change a person's mood more effectively than a thousand words or complicated explanations.",
+      "ru": "Иногда одна улыбка может изменить настроение человека лучше, чем тысяча слов или сложные объяснения."
+    }
+  },
+  {
+    "id": 1019,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Хвилі, що б’ються об берег, невпинно нагадують, що все в світі змінюється, навіть якщо здається вічним.",
+      "en": "The waves crashing on the shore constantly remind us that everything in the world changes, even if it seems eternal.",
+      "ru": "Волны, бьющиеся о берег, постоянно напоминают нам, что всё в мире меняется, даже если кажется вечным."
+    }
+  },
+  {
+    "id": 1020,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть коротка розмова з близькою людиною може принести спокій і віру в те, що все буде добре.",
+      "en": "Even a short conversation with someone close can bring peace and restore faith that everything will be all right.",
+      "ru": "Даже короткий разговор с близким человеком может принести спокойствие и вернуть веру в то, что всё будет хорошо."
+    }
+  },
+  {
+    "id": 1021,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Під зоряним небом легко забути про клопоти дня, просто вдивляючись у безмежність і відчуваючи тишу всередині себе.",
+      "en": "Under a starry sky, it's easy to forget the worries of the day by simply gazing into the vastness and feeling the silence within.",
+      "ru": "Под звёздным небом легко забыть заботы дня, просто вглядываясь в бесконечность и ощущая тишину внутри себя."
+    }
+  },
+  {
+    "id": 1022,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли йдеш старовинною вулицею, здається, що кожен камінь пам’ятає історії, які розповідалися тут сотні років тому.",
+      "en": "Walking down an ancient street, it feels as though every stone remembers stories told here hundreds of years ago.",
+      "ru": "Когда идёшь по старинной улице, кажется, что каждый камень помнит истории, рассказанные здесь сотни лет назад."
+    }
+  },
+  {
+    "id": 1023,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть проста чашка чаю в тиші може стати моментом спокою, якого так не вистачає у повсякденному житті.",
+      "en": "Even a simple cup of tea in silence can become a moment of peace that's so often missing in everyday life.",
+      "ru": "Даже простая чашка чая в тишине может стать моментом покоя, которого так не хватает в повседневной жизни."
+    }
+  },
+  {
+    "id": 1024,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Музика, що лунає здалеку, часом пробуджує спогади, які давно спали десь у глибині серця.",
+      "en": "Music drifting from afar can sometimes awaken memories long asleep deep within the heart.",
+      "ru": "Музыка, доносящаяся издалека, порой пробуждает воспоминания, давно уснувшие в глубине сердца."
+    }
+  },
+  {
+    "id": 1025,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти вперше зустрічаєш світанок в горах, розумієш, наскільки могутня й водночас ніжна природа навколо нас.",
+      "en": "When you witness your first sunrise in the mountains, you realize how powerful and yet gentle nature around us truly is.",
+      "ru": "Когда ты впервые встречаешь рассвет в горах, понимаешь, насколько могущественна и в то же время нежна природа вокруг нас."
+    }
+  },
+  {
+    "id": 1026,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді варто просто зупинитися, глибоко вдихнути і згадати, що навіть у метушні життя є місце для тиші та вдячності.",
+      "en": "Sometimes it's worth simply stopping, taking a deep breath, and remembering that even in life's rush there's space for stillness and gratitude.",
+      "ru": "Иногда стоит просто остановиться, глубоко вдохнуть и вспомнить, что даже в суете жизни есть место тишине и благодарности."
+    }
+  },
+  {
+    "id": 1027,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Світ змінюється щосекунди, і єдиний спосіб йти в ногу з ним — це навчитися змінюватися разом із ним.",
+      "en": "The world changes every second, and the only way to keep up is to learn how to change with it.",
+      "ru": "Мир меняется каждую секунду, и единственный способ не отставать — это научиться меняться вместе с ним."
+    }
+  },
+  {
+    "id": 1028,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Після дощу все навколо наче оживає: земля дихає вологістю, а листя блищить свіжими краплями світла.",
+      "en": "After the rain, everything seems to come alive: the earth breathes moisture, and the leaves glisten with fresh drops of light.",
+      "ru": "После дождя всё вокруг словно оживает: земля дышит влагой, а листья сверкают свежими каплями света."
+    }
+  },
+  {
+    "id": 1029,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Часом важливо не шукати відповідей, а просто слухати себе, довіряючи внутрішньому голосу, що знає більше, ніж здається.",
+      "en": "Sometimes it’s more important not to seek answers but to simply listen to yourself, trusting the inner voice that knows more than it seems.",
+      "ru": "Порой важнее не искать ответы, а просто слушать себя, доверяя внутреннему голосу, который знает больше, чем кажется."
+    }
+  },
+  {
+    "id": 1030,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Дивлячись, як захід забарвлює небо, починаєш розуміти, що краса живе в миттєвостях, які ми часто не помічаємо.",
+      "en": "Watching the sunset paint the sky, you begin to understand that beauty lives in fleeting moments we often overlook.",
+      "ru": "Наблюдая, как закат окрашивает небо, начинаешь понимать, что красота живёт в мимолётных моментах, которые мы часто не замечаем."
+    }
+  },
+  {
+    "id": 1031,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти втомлений, але щасливий, розумієш, що день був наповнений чимось справді вартісним.",
+      "en": "When you're tired but happy, you realize the day was filled with something truly worthwhile.",
+      "ru": "Когда ты устал, но счастлив, ты понимаешь, что день был наполнен чем-то по-настоящему ценным."
+    }
+  },
+  {
+    "id": 1032,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть проста прогулянка парком може наповнити тебе енергією, якщо дивитися на світ із вдячністю.",
+      "en": "Even a simple walk through the park can fill you with energy if you look at the world with gratitude.",
+      "ru": "Даже простая прогулка по парку может наполнить тебя энергией, если смотреть на мир с благодарностью."
+    }
+  },
+  {
+    "id": 1033,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Усередині кожної людини є невидиме світло, яке спалахує щоразу, коли ми робимо щось щиро й з любов’ю.",
+      "en": "Inside every person is an invisible light that sparks each time we act sincerely and with love.",
+      "ru": "Внутри каждого человека есть невидимый свет, который вспыхивает всякий раз, когда мы делаем что-то искренне и с любовью."
+    }
+  },
+  {
+    "id": 1034,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Світло лампи в темній кімнаті створює затишок, що захищає від зовнішнього галасу й дарує відчуття дому.",
+      "en": "The light of a lamp in a dark room creates a sense of coziness that shields you from the outside noise and gives the feeling of home.",
+      "ru": "Свет лампы в тёмной комнате создаёт уют, который защищает от внешнего шума и дарит ощущение дома."
+    }
+  },
+  {
+    "id": 1035,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Дитячий сміх — це один із найчистіших звуків, здатних миттєво зняти напругу й нагадати про прості радощі життя.",
+      "en": "A child’s laughter is one of the purest sounds, instantly easing tension and reminding us of life’s simple joys.",
+      "ru": "Детский смех — один из самых чистых звуков, способный мгновенно снять напряжение и напомнить о простых радостях жизни."
+    }
+  },
+  {
+    "id": 1036,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Справжнє щастя часто приходить не гучно, а тихо, коли ми цього найменше очікуємо.",
+      "en": "True happiness often arrives not loudly, but quietly, when we least expect it.",
+      "ru": "Истинное счастье часто приходит не громко, а тихо, когда мы этого меньше всего ожидаем."
+    }
+  },
+  {
+    "id": 1037,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Сила слова вимірюється не гучністю, а здатністю торкнутися серця й залишитися в пам’яті назавжди.",
+      "en": "The power of a word is not in its volume but in its ability to touch the heart and stay in memory forever.",
+      "ru": "Сила слова измеряется не громкостью, а способностью коснуться сердца и остаться в памяти навсегда."
+    }
+  },
+  {
+    "id": 1038,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли зима приносить тишу снігу, весь світ здається сповільненим, немов запрошуючи нас зупинитися й прислухатися.",
+      "en": "When winter brings the hush of snow, the whole world seems to slow down, as if inviting us to stop and listen.",
+      "ru": "Когда зима приносит тишину снега, весь мир словно замедляется, приглашая нас остановиться и прислушаться."
+    }
+  },
+  {
+    "id": 1039,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Пісня, що лунає здалеку, може перенести тебе в інший час і нагадати про щось давно забуте.",
+      "en": "A song drifting from afar can transport you to another time and remind you of something long forgotten.",
+      "ru": "Песня, доносящаяся издалека, может перенести тебя в другое время и напомнить о чём-то давно забытом."
+    }
+  },
+  {
+    "id": 1040,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна ніч закінчується світанком, і це найкраще нагадування, що навіть після темряви завжди приходить світло.",
+      "en": "Every night ends with a sunrise, and that’s the best reminder that even after darkness, light always comes.",
+      "ru": "Каждая ночь заканчивается рассветом — и это лучшее напоминание, что даже после темноты всегда приходит свет."
+    }
+  },
+  {
+    "id": 1041,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли вечірнє світло падає на старовинні фасади будинків, здається, ніби саме місто розповідає свої давні історії пошепки.",
+      "en": "When the evening light falls on the old building facades, it feels like the city itself is whispering its ancient stories.",
+      "ru": "Когда вечерний свет падает на старинные фасады зданий, кажется, будто сам город шепчет свои древние истории."
+    }
+  },
+  {
+    "id": 1042,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Гарячий чай у холодний вечір повертає спокій і тепло, огортаючи серце затишком і приємними спогадами з дитинства.",
+      "en": "Hot tea on a cold evening brings back peace and warmth, wrapping the heart in comfort and pleasant childhood memories.",
+      "ru": "Горячий чай в холодный вечер возвращает спокойствие и тепло, окутывая сердце уютом и приятными воспоминаниями из детства."
+    }
+  },
+  {
+    "id": 1043,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Величні гори здіймаються над світом, немов мовчазні гіганти, що зберігають таємниці часу і спокій вічності.",
+      "en": "Majestic mountains rise above the world like silent giants, guarding the secrets of time and the peace of eternity.",
+      "ru": "Величественные горы возвышаются над миром, словно молчаливые гиганты, хранящие тайны времени и покой вечности."
+    }
+  },
+  {
+    "id": 1044,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Місячне світло ковзає поверхнею озера, ніби срібна стрічка, розпущена з небес, торкається води і зникає в тиші ночі.",
+      "en": "Moonlight slides over the lake like a silver ribbon dropped from the sky, touching the water and vanishing into the night’s silence.",
+      "ru": "Лунный свет скользит по поверхности озера, словно серебряная лента, спущенная с небес, прикасается к воде и исчезает в ночной тишине."
+    }
+  },
+  {
+    "id": 1045,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Запах свіжоскошеної трави і теплий вітер створюють відчуття нескінченного літа, в якому хочеться залишитися назавжди.",
+      "en": "The smell of freshly cut grass and the warm wind create a feeling of endless summer you never want to leave.",
+      "ru": "Запах свежескошенной травы и тёплый ветер создают ощущение бесконечного лета, из которого не хочется уходить."
+    }
+  },
+  {
+    "id": 1046,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Світло ліхтарів на мокрому асфальті грає барвами, мов акварельна картина, розмита дощем і часом.",
+      "en": "The streetlight glow on the wet asphalt shimmers with hues like a watercolor painting blurred by rain and time.",
+      "ru": "Свет фонарей на мокром асфальте играет красками, словно акварельная картина, размытая дождём и временем."
+    }
+  },
+  {
+    "id": 1047,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли очі зустрічаються в натовпі, а серце б’ється швидше, ніби світ на мить завмирає, забуваючи про все довкола.",
+      "en": "When eyes meet in a crowd and the heart beats faster, it feels like the world pauses for a moment, forgetting everything else.",
+      "ru": "Когда взгляды встречаются в толпе, а сердце начинает биться быстрее, кажется, что весь мир замирает, забывая обо всём остальном."
+    }
+  },
+  {
+    "id": 1048,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Перші сніжинки, що кружляють у повітрі, ніби ніжне нагадування про новий цикл, тишу і чистоту зими.",
+      "en": "The first snowflakes swirling in the air feel like a gentle reminder of a new cycle, the quiet, and the purity of winter.",
+      "ru": "Первые снежинки, кружащиеся в воздухе, словно нежное напоминание о новом цикле, тишине и чистоте зимы."
+    }
+  },
+  {
+    "id": 1049,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Під зоряним небом кожна думка здається глибшою, кожне бажання — щирішим, а кожне серце — ближчим до істини.",
+      "en": "Under the starry sky, every thought feels deeper, every wish more sincere, and every heart closer to the truth.",
+      "ru": "Под звёздным небом каждая мысль кажется глубже, каждое желание — искреннее, а каждое сердце — ближе к истине."
+    }
+  },
+  {
+    "id": 1050,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Під дощем, що ллє мов з відра, вулиці спорожніли, лишивши по собі ритмічне постукування крапель по бруківці.",
+      "en": "Under a heavy downpour, the streets emptied, leaving behind only the rhythmic tapping of raindrops on the cobblestones.",
+      "ru": "Под проливным дождём улицы опустели, оставив лишь ритмичные удары капель по мостовой."
+    }
+  },
+  {
+    "id": 1051,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Старі фотографії оживляють миті, які здавалося давно забуті, але збереглися у пам’яті з ароматом часу і теплом сердець.",
+      "en": "Old photographs bring back moments thought long forgotten, yet preserved in memory with the scent of time and the warmth of hearts.",
+      "ru": "Старые фотографии оживляют моменты, казавшиеся давно забытыми, но сохранившиеся в памяти с ароматом времени и теплом сердец."
+    }
+  },
+  {
+    "id": 1052,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Ранкове місто повільно прокидається під шелест сторінок газети, запах кави і приглушені кроки перехожих.",
+      "en": "The morning city slowly wakes up to the rustle of newspaper pages, the smell of coffee, and the muffled footsteps of passersby.",
+      "ru": "Утренний город медленно просыпается под шелест страниц газеты, запах кофе и приглушённые шаги прохожих."
+    }
+  },
+  {
+    "id": 1053,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли слова не потрібні, і погляд каже більше, ніж тисячі речень, настає момент справжнього розуміння між душами.",
+      "en": "When words are no longer needed and a glance says more than a thousand sentences, a moment of true understanding between souls arrives.",
+      "ru": "Когда слова не нужны, и взгляд говорит больше тысячи фраз, наступает момент истинного понимания между душами."
+    }
+  },
+  {
+    "id": 1054,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Крізь шепіт вітру в кронах дерев доноситься спокій, що вчить слухати природу і бути вдячним за її мовчазну мудрість.",
+      "en": "Through the whisper of wind in the treetops comes a calm that teaches you to listen to nature and be grateful for its silent wisdom.",
+      "ru": "Сквозь шепот ветра в кронах деревьев доносится покой, который учит слушать природу и быть благодарным за её безмолвную мудрость."
+    }
+  },
+  {
+    "id": 1055,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У момент, коли перший промінь сонця торкається землі, народжується надія, що розганяє нічні сумніви і страхи.",
+      "en": "The moment the first ray of sunlight touches the ground, hope is born, dispersing the doubts and fears of the night.",
+      "ru": "В тот момент, когда первый солнечный луч касается земли, рождается надежда, рассеивающая ночные сомнения и страхи."
+    }
+  },
+  {
+    "id": 1056,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли душа втомлена, а серце мовчить, варто просто піти туди, де чути шум хвиль і де не потрібно говорити вголос.",
+      "en": "When the soul is tired and the heart is silent, it’s enough to go where the waves are heard and no words are needed.",
+      "ru": "Когда душа устала, а сердце молчит, стоит просто уйти туда, где слышен шум волн и не нужно говорить вслух."
+    }
+  },
+  {
+    "id": 1057,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть у найбільш метушливий день можна знайти хвилину тиші, де все стає на свої місця і думки знову знаходять сенс.",
+      "en": "Even on the most hectic day, you can find a moment of silence where everything falls into place and thoughts regain their meaning.",
+      "ru": "Даже в самый суетливый день можно найти минуту тишины, где всё становится на свои места и мысли снова обретают смысл."
+    }
+  },
+  {
+    "id": 1058,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти смієшся щиро, з глибини душі, весь світ ніби відповідає тобі тим самим — радістю, теплом і легкістю буття.",
+      "en": "When you laugh sincerely, from the depth of your soul, the whole world seems to respond in kind — with joy, warmth, and ease of being.",
+      "ru": "Когда ты смеёшься искренне, из глубины души, весь мир будто отвечает тебе тем же — радостью, теплом и лёгкостью бытия."
+    }
+  },
+  {
+    "id": 1059,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Шлях до себе починається з тиші, коли перестаєш тікати від думок і починаєш слухати власне серце без страху.",
+      "en": "The path to yourself begins with silence, when you stop running from thoughts and start listening to your own heart without fear.",
+      "ru": "Путь к себе начинается с тишины, когда ты перестаёшь убегать от мыслей и начинаешь слушать своё сердце без страха."
+    }
+  },
+  {
+    "id": 1060,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли вулиці міста наповнюються золотим сяйвом заходу, здається, що навіть час зупиняється, аби просто помилуватись красою.",
+      "en": "When the city streets are filled with the golden glow of sunset, it feels as if even time stops just to admire the beauty.",
+      "ru": "Когда улицы города наполняются золотым сиянием заката, кажется, что даже время замирает, чтобы просто полюбоваться красотой."
+    }
+  },
+  {
+    "id": 1061,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "День, коли ти дозволяєш собі бути собою, без масок і очікувань, стає початком найщирішого життя.",
+      "en": "The day you allow yourself to be truly you, without masks or expectations, becomes the beginning of the most genuine life.",
+      "ru": "День, когда ты позволяешь себе быть собой, без масок и ожиданий, становится началом самой искренней жизни."
+    }
+  },
+  {
+    "id": 1062,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Шепіт старих книг у затишній бібліотеці здатен перенести тебе в іншу епоху, де кожне слово має вагу століть.",
+      "en": "The whisper of old books in a cozy library can transport you to another era, where every word carries the weight of centuries.",
+      "ru": "Шёпот старых книг в уютной библиотеке способен перенести тебя в другую эпоху, где каждое слово несёт вес столетий."
+    }
+  },
+  {
+    "id": 1063,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли пальці торкаються клавіш піаніно, і музика ллється зсередини, ти забуваєш про реальність і зливаєшся з емоцією.",
+      "en": "When fingers touch the piano keys and music flows from within, you forget reality and merge with pure emotion.",
+      "ru": "Когда пальцы касаются клавиш пианино, и музыка льётся изнутри, ты забываешь о реальности и сливаешься с эмоцией."
+    }
+  },
+  {
+    "id": 1064,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "В осінньому парку, де вітер жене листя колами, виникає відчуття, що ти частина танцю, що ніколи не зупиняється.",
+      "en": "In an autumn park, where the wind chases leaves in circles, you feel like part of a dance that never ends.",
+      "ru": "В осеннем парке, где ветер гонит листья по кругу, возникает ощущение, что ты часть танца, который никогда не останавливается."
+    }
+  },
+  {
+    "id": 1065,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Пізній вечір пахне вугіллям і нічними розмовами, що залишають слід у пам’яті сильніше, ніж будь-які промови вдень.",
+      "en": "Late evening smells like coal and night talks that leave a mark in memory stronger than any speech in daylight.",
+      "ru": "Поздний вечер пахнет углём и ночными разговорами, которые остаются в памяти сильнее любых дневных речей."
+    }
+  },
+  {
+    "id": 1066,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Несподіваний сміх у тиші здатен змінити настрій так само швидко, як промінь сонця прорізає сірість хмар.",
+      "en": "Unexpected laughter in silence can change the mood as quickly as a ray of sunlight cuts through the grey clouds.",
+      "ru": "Неожиданный смех в тишине способен изменить настроение так же быстро, как луч солнца пронзает серость облаков."
+    }
+  },
+  {
+    "id": 1067,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Дощ на даху створює ритм, під який хочеться роздумувати, згадувати, писати або просто бути собою у моменті.",
+      "en": "Rain on the roof creates a rhythm that makes you want to reflect, remember, write, or just be yourself in the moment.",
+      "ru": "Дождь на крыше создаёт ритм, под который хочется размышлять, вспоминать, писать или просто быть собой в моменте."
+    }
+  },
+  {
+    "id": 1068,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Розпашіла ніч у великому місті сповнена таємниць, що ховаються у вікнах, світлі неону і тінях незнайомців.",
+      "en": "A sultry night in the big city is full of secrets hidden in windows, neon lights, and the shadows of strangers.",
+      "ru": "Знойная ночь в большом городе полна тайн, скрывающихся в окнах, неоновом свете и тенях незнакомцев."
+    }
+  },
+  {
+    "id": 1069,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти довго мовчиш у присутності когось, і це мовчання не тисне, а лікує — значить, це справжній зв’язок.",
+      "en": "When you stay silent with someone for a long time and the silence doesn’t press but heals — that’s a real connection.",
+      "ru": "Когда ты долго молчишь с кем-то, и это молчание не давит, а лечит — значит, это настоящая связь."
+    }
+  },
+  {
+    "id": 1070,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У передранковій темряві, коли все ще спить, навіть слабке світло вікна здається маяком для тих, хто не спить душею.",
+      "en": "In the pre-dawn darkness, while everything still sleeps, even the faint glow of a window feels like a beacon to sleepless souls.",
+      "ru": "В предрассветной темноте, когда всё ещё спит, даже слабый свет в окне кажется маяком для тех, чья душа не спит."
+    }
+  },
+  {
+    "id": 1071,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти йдеш знайомими вулицями після довгої розлуки, кожен камінь під ногами ніби вітає тебе мовчазним спогадом.",
+      "en": "When you walk familiar streets after a long separation, every stone underfoot seems to greet you with a silent memory.",
+      "ru": "Когда ты идёшь по знакомым улицам после долгой разлуки, каждый камень под ногами словно приветствует тебя молчаливым воспоминанием."
+    }
+  },
+  {
+    "id": 1072,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Літній вечір дарує спокійний настрій, коли повітря насичене ароматом липи, а небо повільно змінює відтінки.",
+      "en": "A summer evening brings calm when the air is filled with the scent of linden, and the sky slowly shifts its shades.",
+      "ru": "Летний вечер дарит спокойствие, когда воздух насыщен ароматом липы, а небо медленно меняет оттенки."
+    }
+  },
+  {
+    "id": 1073,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Справжня сила проявляється тоді, коли ти залишаєшся добрим, навіть коли світ кидає у відповідь лише байдужість.",
+      "en": "True strength shows when you remain kind, even as the world responds with nothing but indifference.",
+      "ru": "Истинная сила проявляется тогда, когда ты остаёшься добрым, даже если мир отвечает только равнодушием."
+    }
+  },
+  {
+    "id": 1074,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Пахощі свіжого хліба на світанку нагадують про дім, про ранки без поспіху, і про любов, що живе в дрібницях.",
+      "en": "The smell of fresh bread at dawn reminds you of home, of unhurried mornings, and of love living in the little things.",
+      "ru": "Запах свежего хлеба на рассвете напоминает о доме, о неспешных утратах и о любви, живущей в мелочах."
+    }
+  },
+  {
+    "id": 1075,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожен світанок — це новий шанс зробити інакше, промовчати, де слід, і сказати те, що давно відкладалося.",
+      "en": "Every sunrise is a new chance to do things differently, to stay silent where needed, and say what was long postponed.",
+      "ru": "Каждый рассвет — это новый шанс поступить иначе, промолчать там, где нужно, и сказать то, что давно откладывалось."
+    }
+  },
+  {
+    "id": 1076,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Тиша зимового лісу така глибока, що здається — навіть власне дихання лунає голосом, який не хочеться порушувати.",
+      "en": "The silence of the winter forest is so deep, it feels like even your own breath speaks aloud, not to be disturbed.",
+      "ru": "Тишина зимнего леса настолько глубокая, что кажется — даже собственное дыхание звучит вслух и не должно быть нарушено."
+    }
+  },
+  {
+    "id": 1077,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Несподівана зустріч з людиною з минулого здатна за мить пробудити ті емоції, які ти вважав давно забутими.",
+      "en": "An unexpected encounter with someone from the past can instantly awaken emotions you thought were long forgotten.",
+      "ru": "Неожиданная встреча с человеком из прошлого может за мгновение пробудить эмоции, которые ты считал давно забытыми."
+    }
+  },
+  {
+    "id": 1078,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Сонце, що пробивається крізь хмари після бурі, нагадує, що за кожною темрявою обов’язково буде світло.",
+      "en": "The sun breaking through the clouds after a storm reminds you that light always follows darkness.",
+      "ru": "Солнце, пробивающееся сквозь облака после бури, напоминает, что за любой тьмой обязательно придёт свет."
+    }
+  },
+  {
+    "id": 1079,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти чекаєш когось у порожній кав’ярні, хвилини здаються довшими, а аромати — яскравішими, ніж будь-коли.",
+      "en": "When you wait for someone in an empty café, the minutes stretch longer and the aromas seem stronger than ever.",
+      "ru": "Когда ты ждёшь кого-то в пустом кафе, минуты тянутся дольше, а ароматы кажутся ярче, чем когда-либо."
+    }
+  },
+  {
+    "id": 1080,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти дивишся на вогонь, що повільно горить у каміні, думки стихають, а душа немов знаходить своє тепло.",
+      "en": "When you gaze at the slow-burning fire in a fireplace, your thoughts quiet down and your soul seems to find warmth.",
+      "ru": "Когда ты смотришь на медленно горящий огонь в камине, мысли стихают, а душа будто находит своё тепло."
+    }
+  },
+  {
+    "id": 1081,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Вночі, коли місто засинає, чути, як серце б’ється в такт спогадам, що зринають ніби з глибини мрії.",
+      "en": "At night, when the city sleeps, you can hear your heart beating in rhythm with memories rising like a dream.",
+      "ru": "Ночью, когда город засыпает, слышно, как сердце бьётся в такт воспоминаниям, всплывающим словно из глубины сна."
+    }
+  },
+  {
+    "id": 1082,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У поїзді, що мчить крізь поля, відчувається дивна свобода — ніби ти залишаєш щось позаду, не озираючись.",
+      "en": "On a train speeding through the fields, there’s a strange sense of freedom — as if you're leaving something behind without looking back.",
+      "ru": "В поезде, мчащемся сквозь поля, ощущается странная свобода — будто ты оставляешь что-то позади, не оглядываясь."
+    }
+  },
+  {
+    "id": 1083,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Шелест сторінок у книзі, яку давно не відкривали, пробуджує цікавість, що колись надихала мріяти без страху.",
+      "en": "The rustle of pages in a book long left closed awakens the curiosity that once inspired fearless dreaming.",
+      "ru": "Шелест страниц в книге, которую давно не открывали, пробуждает ту самую любознательность, что когда-то вдохновляла мечтать без страха."
+    }
+  },
+  {
+    "id": 1084,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Відлуння голосів у підземці нагадує про історії, що розгортались у цих стінах — мов уривки чужого життя.",
+      "en": "The echo of voices in the subway reminds you of stories once unfolding there — like fragments of someone else's life.",
+      "ru": "Эхо голосов в метро напоминает об историях, разворачивавшихся в этих стенах — как обрывки чужой жизни."
+    }
+  },
+  {
+    "id": 1085,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна крапля роси на траві — це цілий мікросвіт, де живе світло, форма і спокій, що минає разом із ранком.",
+      "en": "Every dewdrop on the grass is a tiny world where light, shape, and morning peace quietly live and fade.",
+      "ru": "Каждая капля росы на траве — это целый микромир, где живёт свет, форма и утренний покой, ускользающий вместе с рассветом."
+    }
+  },
+  {
+    "id": 1086,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти споглядаєш захід над морем, здається, що горизонт відкриває двері до нескінченності і спокою.",
+      "en": "When you watch the sunset over the sea, it feels like the horizon opens a doorway to infinity and peace.",
+      "ru": "Когда ты смотришь на закат над морем, кажется, что горизонт открывает двери к бесконечности и покою."
+    }
+  },
+  {
+    "id": 1087,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "В нічних роздумах на самоті народжуються найчесніші відповіді, яких не чути вдень у метушні думок і справ.",
+      "en": "In nighttime solitude, the most honest answers are born — ones you can't hear amid the daytime noise and rush.",
+      "ru": "В ночных размышлениях наедине рождаются самые честные ответы, которых не слышно днём в суете мыслей и дел."
+    }
+  },
+  {
+    "id": 1088,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Тепле повітря літнього ранку наповнене очікуванням пригод, що ще не почались, але вже пульсують у серці.",
+      "en": "The warm air of a summer morning is filled with the anticipation of adventures not yet begun but already pulsing in your heart.",
+      "ru": "Тёплый воздух летнего утра наполнен ожиданием приключений, которые ещё не начались, но уже пульсируют в сердце."
+    }
+  },
+  {
+    "id": 1089,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Звук далекого грому в літню ніч нагадує, що природа може бути величною і тривожною водночас.",
+      "en": "The sound of distant thunder on a summer night reminds us that nature can be both majestic and unsettling.",
+      "ru": "Звук далёкого грома в летнюю ночь напоминает, что природа может быть одновременно величественной и тревожной."
+    }
+  },
+  {
+    "id": 1090,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти довго дивишся в небо, розумієш, що твої турботи — лише хмари, які скоро зникнуть без сліду.",
+      "en": "When you gaze at the sky long enough, you realize your worries are just clouds that will soon disappear without a trace.",
+      "ru": "Когда ты долго смотришь в небо, понимаешь, что твои тревоги — это просто облака, которые вскоре исчезнут без следа."
+    }
+  },
+  {
+    "id": 1091,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли перші сніжинки падають на землю, світ ніби затримує подих, щоб привітати початок нової пори тиші.",
+      "en": "When the first snowflakes fall to the ground, the world seems to hold its breath to welcome the beginning of a new season of silence.",
+      "ru": "Когда первые снежинки падают на землю, мир словно затаивает дыхание, чтобы поприветствовать начало нового сезона тишины."
+    }
+  },
+  {
+    "id": 1092,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У світлі ліхтарів нічне місто виглядає як сцена, де кожен перехожий — герой своєї невидимої драми.",
+      "en": "In the light of street lamps, the night city looks like a stage where every passerby is the hero of their invisible drama.",
+      "ru": "В свете фонарей ночной город выглядит как сцена, где каждый прохожий — герой своей невидимой драмы."
+    }
+  },
+  {
+    "id": 1093,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді варто просто зупинитися, вдихнути глибше і згадати, що життя — не список справ, а потік моментів.",
+      "en": "Sometimes you just need to stop, take a deeper breath, and remember that life is not a to-do list, but a stream of moments.",
+      "ru": "Иногда стоит просто остановиться, вдохнуть глубже и вспомнить, что жизнь — это не список дел, а поток мгновений."
+    }
+  },
+  {
+    "id": 1094,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Відблиски ліхтарів на мокрому асфальті малюють картини, які зникають швидше, ніж встигаєш їх запам’ятати.",
+      "en": "Reflections of streetlights on wet asphalt paint pictures that vanish faster than you can remember them.",
+      "ru": "Отблески фонарей на мокром асфальте рисуют картины, которые исчезают быстрее, чем ты успеваешь их запомнить."
+    }
+  },
+  {
+    "id": 1095,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У кожній краплі дощу зберігається частинка неба, що падає на землю, аби знову піднятись у вигляді пари.",
+      "en": "Every raindrop holds a piece of the sky falling to the ground only to rise again as mist.",
+      "ru": "В каждой капле дождя хранится часть неба, что падает на землю, чтобы снова подняться в виде пара."
+    }
+  },
+  {
+    "id": 1096,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Світ повільно змінюється, коли ти навчаєшся бачити більше, ніж очима, і чути більше, ніж вухами.",
+      "en": "The world slowly changes when you learn to see more than with your eyes and hear more than with your ears.",
+      "ru": "Мир медленно меняется, когда ты учишься видеть больше, чем глазами, и слышать больше, чем ушами."
+    }
+  },
+  {
+    "id": 1097,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Невимовлені слова залишаються між людьми, як невидимі мости, які можна перетнути лише мовчанням.",
+      "en": "Unspoken words remain between people like invisible bridges that can only be crossed in silence.",
+      "ru": "Невысказанные слова остаются между людьми, как невидимые мосты, которые можно перейти лишь молчанием."
+    }
+  },
+  {
+    "id": 1098,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна звичка — це цеглина у будівництві твого завтра, і саме ти вирішуєш, яким буде цей дім.",
+      "en": "Every habit is a brick in the construction of your tomorrow, and it's up to you what that home will be like.",
+      "ru": "Каждая привычка — это кирпич в строительстве твоего завтра, и только тебе решать, каким будет этот дом."
+    }
+  },
+  {
+    "id": 1099,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Нічне небо з тисячами зірок нагадує, що навіть у темряві завжди знайдеться щось, що світиться.",
+      "en": "The night sky with its thousands of stars reminds us that even in darkness, there’s always something that shines.",
+      "ru": "Ночное небо с тысячами звёзд напоминает, что даже в темноте всегда найдётся что-то, что светится."
+    }
+  },
+  {
+    "id": 1100,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Мовчазний ранок у горах вчить цінувати спокій, у якому народжується найглибша внутрішня ясність.",
+      "en": "A silent morning in the mountains teaches you to value the peace where the deepest inner clarity is born.",
+      "ru": "Молчаливое утро в горах учит ценить тишину, в которой рождается самая глубокая внутренняя ясность."
+    }
+  },
+  {
+    "id": 1101,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Серце часто говорить раніше за розум, особливо тоді, коли правда не потребує доказів.",
+      "en": "The heart often speaks before the mind, especially when the truth requires no proof.",
+      "ru": "Сердце часто говорит раньше разума, особенно тогда, когда истина не нуждается в доказательствах."
+    }
+  },
+  {
+    "id": 1102,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Мелодія, почута випадково, здатна повернути тебе до моменту, якого ти вже не сподівався згадати.",
+      "en": "A melody heard by chance can return you to a moment you never expected to remember again.",
+      "ru": "Мелодия, услышанная случайно, способна вернуть тебя в момент, который ты уже не надеялся вспомнить."
+    }
+  },
+  {
+    "id": 1103,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти дозволяєш собі помилятись, ти відкриваєш двері до зростання, а не до провалу.",
+      "en": "When you allow yourself to make mistakes, you open the door to growth, not to failure.",
+      "ru": "Когда ты позволяешь себе ошибаться, ты открываешь дверь к росту, а не к провалу."
+    }
+  },
+  {
+    "id": 1104,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У промінні вечірнього сонця кожен предмет набуває значення, ніби світ на мить зупинився, щоб запам’ятати його таким.",
+      "en": "In the evening sunbeam, every object gains meaning as if the world paused to remember it just as it is.",
+      "ru": "В луче вечернего солнца каждый предмет обретает значение, будто мир на миг остановился, чтобы запомнить его таким."
+    }
+  },
+  {
+    "id": 1105,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Запах старої деревини в майстерні навіює спогади, ніби руки предків все ще творять поруч із тобою.",
+      "en": "The scent of old wood in the workshop evokes memories, as if the hands of ancestors still craft beside you.",
+      "ru": "Запах старого дерева в мастерской навевает воспоминания, будто руки предков всё ещё творят рядом с тобой."
+    }
+  },
+  {
+    "id": 1106,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть один чесний погляд може сказати більше, ніж довгі промови, і залишити в душі слід на все життя.",
+      "en": "Even a single honest glance can say more than long speeches and leave a mark on your soul for life.",
+      "ru": "Даже один честный взгляд может сказать больше длинных речей и оставить след в душе на всю жизнь."
+    }
+  },
+  {
+    "id": 1107,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Випадкове слово, сказане з теплом, здатне змінити день, а іноді — й ціле життя незнайомої людини.",
+      "en": "A random word spoken with warmth can change a day, and sometimes even a stranger’s entire life.",
+      "ru": "Случайное слово, сказанное с теплом, может изменить день, а иногда — и всю жизнь незнакомца."
+    }
+  },
+  {
+    "id": 1108,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У найтемніші миті пам’ятай, що світло не зникає — воно просто чекає свого моменту знову засяяти.",
+      "en": "In the darkest moments, remember that light doesn’t disappear — it just waits for the right time to shine again.",
+      "ru": "В самые тёмные моменты помни, что свет не исчезает — он просто ждёт своего часа, чтобы снова засиять."
+    }
+  },
+  {
+    "id": 1109,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Справжня тиша не гнітить — вона лікує, коли ти вмієш слухати її без страху і потреби щось сказати.",
+      "en": "True silence doesn't suffocate — it heals, if you can listen to it without fear or the need to speak.",
+      "ru": "Истинная тишина не подавляет — она исцеляет, если уметь слушать её без страха и без желания говорить."
+    }
+  },
+  {
+    "id": 1110,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Дивлячись на зоряне небо, ти розумієш, що кожна твоя думка — лише одна з мільярдів іскор у Всесвіті.",
+      "en": "Looking at the starry sky, you realize that each of your thoughts is just one of billions of sparks in the Universe.",
+      "ru": "Смотря на звёздное небо, ты понимаешь, что каждая твоя мысль — лишь одна из миллиардов искр во Вселенной."
+    }
+  },
+  {
+    "id": 1111,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Стара лавка в парку, покрита мохом і листям, зберігає тишу тисячі розмов, які колись лунали поруч.",
+      "en": "An old bench in the park, covered in moss and leaves, holds the silence of a thousand conversations once spoken nearby.",
+      "ru": "Старая скамейка в парке, покрытая мхом и листвой, хранит тишину тысяч разговоров, что когда-то звучали рядом."
+    }
+  },
+  {
+    "id": 1112,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти пливеш під відкритим небом, вода здається частиною неба, а тіло — частиною вільного простору.",
+      "en": "When you swim under the open sky, the water feels like part of the sky, and your body like part of open space.",
+      "ru": "Когда ты плывёшь под открытым небом, вода кажется частью неба, а тело — частью свободного пространства."
+    }
+  },
+  {
+    "id": 1113,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У південному вітрі завжди є щось заспокійливе — ніби він приносить тепло чужих історій здалеку.",
+      "en": "There’s always something calming in the southern wind — as if it carries the warmth of distant stories.",
+      "ru": "В южном ветре всегда есть что-то успокаивающее — будто он приносит тепло далёких историй."
+    }
+  },
+  {
+    "id": 1114,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді лише одна думка здатна змінити настрій дня, як промінь сонця крізь щільні хмари.",
+      "en": "Sometimes a single thought can change the mood of the day like a ray of sun through heavy clouds.",
+      "ru": "Иногда одна-единственная мысль может изменить настроение дня, как солнечный луч сквозь плотные тучи."
+    }
+  },
+  {
+    "id": 1115,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Звук гітари у тиші вечора проникає прямо в душу, наче відкриваючи двері до внутрішнього світу.",
+      "en": "The sound of a guitar in the evening silence penetrates straight into the soul, as if opening the door to the inner world.",
+      "ru": "Звук гитары в вечерней тишине проникает прямо в душу, словно открывая дверь во внутренний мир."
+    }
+  },
+  {
+    "id": 1116,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У момент, коли ти забуваєш про час, і залишається лише зараз — починається справжнє життя.",
+      "en": "The moment you forget about time and only now remains — that’s when real life begins.",
+      "ru": "В тот момент, когда ты забываешь о времени и остаётся только сейчас — начинается настоящая жизнь."
+    }
+  },
+  {
+    "id": 1117,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Вогонь у вогнищі тріщить не гірше за стару платівку, розповідаючи історії, які чуєш лише серцем.",
+      "en": "The campfire crackles like an old record, telling stories you can only hear with your heart.",
+      "ru": "Огонь в костре трещит не хуже старой пластинки, рассказывая истории, которые можно услышать только сердцем."
+    }
+  },
+  {
+    "id": 1118,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Порожній перон у нічному місті — це місце, де очікування має власну музику і темп.",
+      "en": "An empty platform in the night city is a place where waiting has its own music and rhythm.",
+      "ru": "Пустой перрон в ночном городе — это место, где ожидание имеет свою музыку и ритм."
+    }
+  },
+  {
+    "id": 1119,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Найчастіше ми шукаємо відповіді там, де насправді потрібна не логіка, а тиша й відчуття.",
+      "en": "Most often we look for answers where logic rules, but what we really need is silence and feeling.",
+      "ru": "Чаще всего мы ищем ответы там, где царит логика, а на самом деле нам нужны тишина и ощущение."
+    }
+  },
+  {
+    "id": 1120,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Гілки дерев на вітрі гнуться, як і люди в житті — не ламаються, якщо мають гнучкість і силу всередині.",
+      "en": "Tree branches bend in the wind just like people in life — they don’t break if they have flexibility and strength inside.",
+      "ru": "Ветви деревьев гнутся на ветру, как и люди в жизни — они не ломаются, если внутри есть гибкость и сила."
+    }
+  },
+  {
+    "id": 1121,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна звичайна мить має в собі потенціал стати спогадом, який ти нестимеш усе життя.",
+      "en": "Every ordinary moment holds the potential to become a memory you’ll carry your whole life.",
+      "ru": "Каждое обыденное мгновение может стать воспоминанием, которое ты пронесёшь через всю жизнь."
+    }
+  },
+  {
+    "id": 1122,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У кожній подорожі більше запитань, ніж відповідей, але саме в цьому й полягає її справжній сенс.",
+      "en": "In every journey there are more questions than answers, and that’s exactly where its true meaning lies.",
+      "ru": "В каждом путешествии больше вопросов, чем ответов, и именно в этом заключается его истинный смысл."
+    }
+  },
+  {
+    "id": 1123,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть найменша дія, зроблена з любов’ю, здатна змінити чийсь настрій, день чи навіть долю.",
+      "en": "Even the smallest act done with love can change someone’s mood, day, or even destiny.",
+      "ru": "Даже малейшее действие, совершённое с любовью, способно изменить чьё-то настроение, день или даже судьбу."
+    }
+  },
+  {
+    "id": 1124,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли хмари повільно пливуть над головою, здається, що час також уповільнює свій хід заради тебе.",
+      "en": "When the clouds slowly drift above, it feels like time itself slows down just for you.",
+      "ru": "Когда облака медленно плывут над головой, кажется, что и время замедляет ход специально для тебя."
+    }
+  },
+  {
+    "id": 1125,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Шелест трави під ногами нагадує, що земля жива і слухає, навіть коли ми про це забуваємо.",
+      "en": "The rustle of grass underfoot reminds us that the earth is alive and listening, even when we forget it.",
+      "ru": "Шелест травы под ногами напоминает, что земля жива и слушает, даже когда мы об этом забываем."
+    }
+  },
+  {
+    "id": 1126,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Раптове усвідомлення, що ти щасливий саме зараз, приходить тихо, як легкий подих вечірнього вітру.",
+      "en": "The sudden realization that you’re happy right now comes quietly, like a gentle breath of the evening breeze.",
+      "ru": "Внезапное осознание, что ты счастлив именно сейчас, приходит тихо, как лёгкое дыхание вечернего ветра."
+    }
+  },
+  {
+    "id": 1127,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Дивлячись у вікно нічного потяга, можна побачити не лише ландшафти, а й відображення власних думок.",
+      "en": "Looking through the window of a night train, you see not only the landscape but also reflections of your own thoughts.",
+      "ru": "Смотря в окно ночного поезда, можно увидеть не только пейзажи, но и отражения собственных мыслей."
+    }
+  },
+  {
+    "id": 1128,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Найщиріші розмови часто трапляються тоді, коли ти не плануєш говорити нічого особливого.",
+      "en": "The most sincere conversations often happen when you don’t plan to say anything special.",
+      "ru": "Самые искренние разговоры часто случаются тогда, когда ты не собираешься говорить ничего особенного."
+    }
+  },
+  {
+    "id": 1129,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Під звуки дощу за вікном легше приймати себе, бо світ здається м’якшим і ближчим до душі.",
+      "en": "Under the sound of rain outside the window, it’s easier to accept yourself — the world feels softer and closer to the soul.",
+      "ru": "Под звуки дождя за окном легче принять себя, ведь мир кажется мягче и ближе к душе."
+    }
+  },
+  {
+    "id": 1130,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді найкращою відповіддю на хаос є просто спокій, який ти носиш у собі, незалежно від обставин.",
+      "en": "Sometimes the best answer to chaos is simply the calm you carry within you, regardless of circumstances.",
+      "ru": "Иногда лучшим ответом на хаос является просто спокойствие, которое ты носишь в себе, независимо от обстоятельств."
+    }
+  },
+  {
+    "id": 1131,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли розквітає перша весняна квітка, здається, що сама земля усміхається крізь залишки снігу.",
+      "en": "When the first spring flower blooms, it feels like the earth itself is smiling through the remnants of snow.",
+      "ru": "Когда расцветает первый весенний цветок, кажется, будто сама земля улыбается сквозь остатки снега."
+    }
+  },
+  {
+    "id": 1132,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Думки, які приходять на заході сонця, завжди глибші, бо тиша вечора додає їм ваги.",
+      "en": "Thoughts that come at sunset are always deeper, because the silence of evening gives them weight.",
+      "ru": "Мысли, приходящие на закате, всегда глубже, потому что тишина вечера придаёт им вес."
+    }
+  },
+  {
+    "id": 1133,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть найспокійніше море зберігає в собі силу бурі, яку воно колись пережило.",
+      "en": "Even the calmest sea holds the power of the storm it once endured.",
+      "ru": "Даже самое спокойное море хранит в себе силу шторма, который оно когда-то пережило."
+    }
+  },
+  {
+    "id": 1134,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Тиша між словами іноді говорить більше, ніж найдовші речення у найщирішій розмові.",
+      "en": "The silence between words sometimes speaks louder than the longest sentences in the most sincere conversation.",
+      "ru": "Тишина между словами иногда говорит больше, чем самые длинные предложения в самой искренней беседе."
+    }
+  },
+  {
+    "id": 1135,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна зірка на небі — це нагадування, що навіть у темряві можна бути джерелом світла для інших.",
+      "en": "Each star in the sky is a reminder that even in darkness, you can be a source of light for others.",
+      "ru": "Каждая звезда на небе — напоминание о том, что даже во тьме можно быть источником света для других."
+    }
+  },
+  {
+    "id": 1136,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Щастя іноді приходить не гучно, а тихо — як теплий вітер у вікно на світанку.",
+      "en": "Happiness sometimes arrives not loudly, but quietly — like warm wind through the window at dawn.",
+      "ru": "Счастье иногда приходит не громко, а тихо — как тёплый ветер в окно на рассвете."
+    }
+  },
+  {
+    "id": 1137,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Нерозказані історії зберігаються в очах тих, хто ще чекає свого слухача.",
+      "en": "Untold stories are stored in the eyes of those still waiting for someone to listen.",
+      "ru": "Нерассказанные истории хранятся в глазах тех, кто всё ещё ждёт своего слушателя."
+    }
+  },
+  {
+    "id": 1138,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У глибокій ночі навіть найменше світло здається маяком для загублених думок.",
+      "en": "In the deep night, even the faintest light feels like a beacon for lost thoughts.",
+      "ru": "В глубокой ночи даже слабейший свет кажется маяком для заблудших мыслей."
+    }
+  },
+  {
+    "id": 1139,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Життя часто ховає відповіді в деталях, які ми помічаємо лише тоді, коли зупиняємось.",
+      "en": "Life often hides answers in the details we only notice when we slow down.",
+      "ru": "Жизнь часто прячет ответы в деталях, которые мы замечаем только тогда, когда останавливаемся."
+    }
+  },
+  {
+    "id": 1140,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді один глибокий подих змінює настрій, ніби ти встиг перестрибнути власну втому.",
+      "en": "Sometimes one deep breath changes your mood, as if you’ve just leapt over your own fatigue.",
+      "ru": "Иногда один глубокий вдох меняет настроение, будто ты перепрыгнул собственную усталость."
+    }
+  },
+  {
+    "id": 1141,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Сніг, що тихо падає вночі, має здатність огортати світ новою чистотою й мовчазним перезавантаженням.",
+      "en": "Snow falling silently at night has the power to wrap the world in new purity and a quiet reset.",
+      "ru": "Снег, тихо падающий ночью, умеет окутывать мир новой чистотой и молчаливой перезагрузкой."
+    }
+  },
+  {
+    "id": 1142,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Відлуння минулого іноді звучить у снах, залишаючи після себе відчуття чогось важливого й недосказаного.",
+      "en": "Echoes of the past sometimes appear in dreams, leaving behind a sense of something important and unsaid.",
+      "ru": "Эхо прошлого иногда звучит во снах, оставляя ощущение чего-то важного и недосказанного."
+    }
+  },
+  {
+    "id": 1143,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Часом найкраще, що ти можеш зробити — це бути поруч мовчки, але з відкритим серцем.",
+      "en": "Sometimes the best thing you can do is be quietly present, but with an open heart.",
+      "ru": "Иногда лучшее, что ты можешь сделать — это быть рядом молча, но с открытым сердцем."
+    }
+  },
+  {
+    "id": 1144,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти дивишся на небо без слів, воно відповідає тобі своєю безмежністю і спокоєм.",
+      "en": "When you look at the sky without words, it answers you with its vastness and calm.",
+      "ru": "Когда ты смотришь на небо без слов, оно отвечает тебе своей безграничностью и спокойствием."
+    }
+  },
+  {
+    "id": 1145,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть найменший крок у правильному напрямку здатен змінити весь маршрут життя.",
+      "en": "Even the smallest step in the right direction can change the entire course of your life.",
+      "ru": "Даже самый маленький шаг в верном направлении способен изменить весь маршрут жизни."
+    }
+  },
+  {
+    "id": 1146,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли музика звучить у тиші, вона стає не просто звуком, а відлунням твого власного ритму.",
+      "en": "When music plays in silence, it becomes not just sound but the echo of your own rhythm.",
+      "ru": "Когда музыка звучит в тишине, она становится не просто звуком, а эхом твоего собственного ритма."
+    }
+  },
+  {
+    "id": 1147,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Усмішка, подарована випадково, іноді має силу зцілити те, про що ніхто не здогадувався.",
+      "en": "A smile given by chance can sometimes heal what no one even knew was hurting.",
+      "ru": "Улыбка, подаренная случайно, иногда способна исцелить то, о чём никто и не догадывался."
+    }
+  },
+  {
+    "id": 1148,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Нічне місто з усіма своїми вогнями схоже на карту мрій, які ще тільки чекають на здійснення.",
+      "en": "The night city with all its lights resembles a map of dreams still waiting to come true.",
+      "ru": "Ночной город со всеми своими огнями похож на карту мечт, которые ещё только ждут своего часа."
+    }
+  },
+  {
+    "id": 1149,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Внутрішній спокій не приходить сам — його треба вирощувати, як сад, крок за кроком, день за днем.",
+      "en": "Inner peace doesn’t arrive on its own — it must be cultivated like a garden, step by step, day by day.",
+      "ru": "Внутренний покой не приходит сам — его нужно выращивать, как сад, шаг за шагом, день за днём."
+    }
+  },
+  {
+    "id": 1150,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Розмова, в якій тебе слухають по-справжньому, іноді цінніша за всі відповіді світу.",
+      "en": "A conversation where you are truly listened to is sometimes more valuable than all the answers in the world.",
+      "ru": "Разговор, в котором тебя по-настоящему слушают, порой ценнее всех ответов на свете."
+    }
+  },
+  {
+    "id": 1151,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти ступаєш босоніж по ранковій росі, світ здається новим, ніби ти знову навчився відчувати.",
+      "en": "When you walk barefoot on the morning dew, the world feels new, as if you’ve learned to feel again.",
+      "ru": "Когда ты идёшь босиком по утренней росе, мир кажется новым, будто ты снова научился чувствовать."
+    }
+  },
+  {
+    "id": 1152,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Справжнє розуміння народжується не в суперечках, а в тиші після того, як усі аргументи вже сказані.",
+      "en": "True understanding is born not in arguments, but in the silence after all the points have been made.",
+      "ru": "Истинное понимание рождается не в спорах, а в тишине после того, как все аргументы уже сказаны."
+    }
+  },
+  {
+    "id": 1153,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть коротка мить тепла між двома людьми може залишити слід на все життя.",
+      "en": "Even a brief moment of warmth between two people can leave a mark for a lifetime.",
+      "ru": "Даже короткое мгновение тепла между двумя людьми может оставить след на всю жизнь."
+    }
+  },
+  {
+    "id": 1154,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У спогадах завжди більше фарб, ніж у реальності, бо серце додає своє світло до кожної сцени.",
+      "en": "Memories always have more color than reality because the heart adds its own light to every scene.",
+      "ru": "В воспоминаниях всегда больше красок, чем в реальности, потому что сердце добавляет свой свет к каждой сцене."
+    }
+  },
+  {
+    "id": 1155,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна ніч приносить шанс почати знову — із чистого аркуша, без вчорашніх сумнівів.",
+      "en": "Every night brings a chance to start again — with a blank page, free of yesterday’s doubts.",
+      "ru": "Каждая ночь приносит шанс начать заново — с чистого листа, без вчерашних сомнений."
+    }
+  },
+  {
+    "id": 1156,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Тіні дерев на стінах старого будинку рухаються в такт вітру, мовчки переповідаючи історії минулого.",
+      "en": "The shadows of trees on the walls of the old house move with the wind, silently retelling stories of the past.",
+      "ru": "Тени деревьев на стенах старого дома движутся в такт ветру, молча пересказывая истории прошлого."
+    }
+  },
+  {
+    "id": 1157,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Усередині кожного спокійного ранку ховається обіцянка чогось доброго, навіть якщо ти ще не знаєш, чого саме.",
+      "en": "Inside every calm morning lies a promise of something good, even if you don’t yet know what it is.",
+      "ru": "В каждом спокойном утре скрыта надежда на что-то хорошее, даже если ты ещё не знаешь, на что именно."
+    }
+  },
+  {
+    "id": 1158,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Іноді найглибші емоції проявляються в простих жестах — у погляді, дотику чи тривалому мовчанні.",
+      "en": "Sometimes the deepest emotions show themselves in simple gestures — a glance, a touch, or prolonged silence.",
+      "ru": "Иногда самые глубокие эмоции проявляются в простых жестах — взгляде, прикосновении или затянувшемся молчании."
+    }
+  },
+  {
+    "id": 1159,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти слухаєш дощ уночі, здається, що світ очищується від зайвого, залишаючи тільки справжнє.",
+      "en": "When you listen to the rain at night, it feels like the world is being cleansed of the unnecessary, leaving only what’s real.",
+      "ru": "Когда ты слушаешь дождь ночью, кажется, что мир очищается от лишнего, оставляя только настоящее."
+    }
+  },
+  {
+    "id": 1160,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У далекому світлі маяка завжди є надія — навіть якщо ти загубився, тебе ще можуть знайти.",
+      "en": "In the distant light of a lighthouse there is always hope — even if you’re lost, you can still be found.",
+      "ru": "В далёком свете маяка всегда есть надежда — даже если ты заблудился, тебя всё ещё могут найти."
+    }
+  },
+  {
+    "id": 1161,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Спокійне море після шторму нагадує, що навіть найбурхливіші емоції з часом вщухають.",
+      "en": "A calm sea after the storm reminds us that even the wildest emotions settle with time.",
+      "ru": "Спокойное море после шторма напоминает, что даже самые бурные эмоции со временем утихают."
+    }
+  },
+  {
+    "id": 1162,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть старі фотографії здатні оживити ті миті, які здавалося, вже давно загублені у пам’яті.",
+      "en": "Even old photographs can bring back moments that seemed long lost in memory.",
+      "ru": "Даже старые фотографии способны вернуть моменты, которые казались давно потерянными в памяти."
+    }
+  },
+  {
+    "id": 1163,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "У вечірньому повітрі є щось заспокійливе — як обійми, що не вимагають слів чи пояснень.",
+      "en": "There’s something soothing in the evening air — like an embrace that needs no words or explanations.",
+      "ru": "В вечернем воздухе есть что-то успокаивающее — как объятие, не требующее слов или объяснений."
+    }
+  },
+  {
+    "id": 1164,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Коли ти відпускаєш контроль, світ іноді веде тебе туди, куди ти боявся навіть заглянути.",
+      "en": "When you let go of control, the world sometimes leads you where you were too afraid to look.",
+      "ru": "Когда отпускаешь контроль, мир иногда ведёт тебя туда, куда ты боялся даже заглянуть."
+    }
+  },
+  {
+    "id": 1165,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожен світанок — це шанс почати заново, з новими думками, мріями і спокоєм у серці.",
+      "en": "Every sunrise is a chance to start over, with new thoughts, dreams, and peace in your heart.",
+      "ru": "Каждый рассвет — это шанс начать сначала, с новыми мыслями, мечтами и спокойствием в сердце."
+    }
+  },
+  {
+    "id": 1166,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Навіть найменше полум’я здатне освітити темряву, якщо йому дати трохи часу і віри.",
+      "en": "Even the smallest flame can light the darkness if given a little time and faith.",
+      "ru": "Даже самое маленькое пламя способно осветить тьму, если дать ему немного времени и веры."
+    }
+  },
+  {
+    "id": 1167,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Найважливіше — це не швидкість, з якою ти рухаєшся, а напрямок, у якому веде тебе серце.",
+      "en": "What matters most isn’t the speed you move with, but the direction your heart is guiding you.",
+      "ru": "Самое важное — не скорость, с которой ты движешься, а направление, в котором ведёт тебя сердце."
+    }
+  },
+  {
+    "id": 1168,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Кожна зима закінчується весною, навіть якщо здається, що холод триває вічно.",
+      "en": "Every winter ends in spring, even if it feels like the cold will last forever.",
+      "ru": "Каждая зима заканчивается весной, даже если кажется, что холод будет вечным."
+    }
+  },
+  {
+    "id": 1169,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Спостерігаючи за вогнем, ти розумієш, що краса — це часто просто рух у тиші.",
+      "en": "Watching fire, you realize that beauty is often just movement in silence.",
+      "ru": "Наблюдая за огнём, понимаешь, что красота — это часто просто движение в тишине."
+    }
+  },
+  {
+    "id": 1170,
+    "sentence_type": "BREATHLINE_CHALLENGE",
+    "sentence": {
+      "uk": "Поки серце б’ється, завжди є можливість щось виправити, сказати, обійняти, відчути.",
+      "en": "As long as the heart beats, there’s always a chance to fix, to speak, to hug, to feel.",
+      "ru": "Пока сердце бьётся, всегда есть возможность что-то исправить, сказать, обнять, почувствовать."
+    }
+  }
+]

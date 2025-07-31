@@ -442,6 +442,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueSentences.shuffled().first().getText(lang)
             }
+            Game.GameName.BREATHLINE_CHALLENGE -> {
+                val sentences = getSentences(Sentence.SentenceType.BREATHLINE_CHALLENGE)
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
+
+                uniqueSentences.shuffled().first().getText(lang)
+            }
             else -> ""
         }
     }
@@ -494,6 +500,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Sentence.SentenceType.SELL_THE_MADNESS -> "sentences/sentences_sell_the_madness.json"
                     Sentence.SentenceType.FUNNY_EXCUSE -> "sentences/sentences_funny_excuse.json"
                     Sentence.SentenceType.PROBLEMS -> "sentences/sentences_problems.json"
+                    Sentence.SentenceType.BREATHLINE_CHALLENGE -> "sentences/sentences_breahline_challenge.json"
                 }
 
                 val sentences: List<Sentence> = loadJsonFromAssets(context, fileName)?.let { json ->
