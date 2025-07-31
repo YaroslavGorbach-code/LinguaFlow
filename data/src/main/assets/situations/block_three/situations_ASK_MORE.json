@@ -3,9 +3,9 @@
     "id": "1",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я нещодавно почав вивчати гру на гітарі.",
-      "en": "I recently started learning to play the guitar.",
-      "ru": "Я недавно начал учиться играть на гитаре."
+      "uk": "Твій друг каже: «Я нещодавно почав вивчати гру на гітарі. Спочатку складно, але мені дуже подобається!»",
+      "en": "Your friend says: “I recently started learning to play the guitar. It's a bit hard at first, but I really enjoy it!”",
+      "ru": "Твой друг говорит: «Я недавно начал учиться играть на гитаре. Сначала сложно, но мне очень нравится!»"
     },
     "task": {
       "uk": "Запитай щось цікаве, щоб дізнатися більше про те, як у нього/неї йде навчання.",
@@ -17,9 +17,9 @@
     "id": "2",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я нещодавно побував у Карпатах — неймовірні краєвиди!",
-      "en": "I recently visited the Carpathians — the views were incredible!",
-      "ru": "Я недавно побывал в Карпатах — невероятные виды!"
+      "uk": "Подруга розповідає: «Я нещодавно побувала в Карпатах — неймовірні краєвиди, свіже повітря, просто вау!»",
+      "en": "Your friend tells you: “I recently visited the Carpathians — the views were incredible, the air was so fresh. Just wow!”",
+      "ru": "Подруга рассказывает: «Я недавно побывала в Карпатах — невероятные виды, свежий воздух, просто вау!»"
     },
     "task": {
       "uk": "Запитай щось, що допоможе дізнатися про найяскравіші моменти поїздки.",
@@ -31,9 +31,9 @@
     "id": "3",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я почав готувати здорову їжу вдома.",
-      "en": "I started cooking healthy meals at home.",
-      "ru": "Я начал готовить здоровую еду дома."
+      "uk": "Хтось ділиться: «Я почав готувати здорову їжу вдома. Навіть купив пару нових книжок із рецептами!»",
+      "en": "Someone tells you: “I started cooking healthy meals at home. I even bought a couple of new recipe books!”",
+      "ru": "Кто-то делится: «Я начал готовить здоровую еду дома. Даже купил пару новых книг с рецептами!»"
     },
     "task": {
       "uk": "Запитай щось цікаве про улюблені рецепти або корисні звички в харчуванні.",
@@ -45,9 +45,9 @@
     "id": "4",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я почав займатися йогою, і це дуже допомагає розслабитись.",
-      "en": "I started practicing yoga, and it really helps me relax.",
-      "ru": "Я начал заниматься йогой, и это очень помогает расслабиться."
+      "uk": "Твоя подруга каже: «Я почала займатись йогою — і це неймовірно допомагає мені розслабитись після напруженого дня.»",
+      "en": "Your friend says: “I started practicing yoga — and it really helps me relax after a stressful day.”",
+      "ru": "Твоя подруга говорит: «Я начала заниматься йогой — и это невероятно помогает расслабиться после напряжённого дня.»"
     },
     "task": {
       "uk": "Постав одне запитання, щоб дізнатися більше і показати свою зацікавленість.",
@@ -59,9 +59,9 @@
     "id": "5",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я нещодавно прочитав цікаву книгу про космос.",
-      "en": "I recently read an interesting book about space.",
-      "ru": "Я недавно прочитал интересную книгу про космос."
+      "uk": "Друг каже: «Я нещодавно прочитав цікаву книгу про космос — про життя на МКС і майбутні місії на Марс!»",
+      "en": "Your friend says: “I recently read an interesting book about space — it talked about life on the ISS and future missions to Mars!”",
+      "ru": "Друг говорит: «Я недавно прочитал интересную книгу про космос — о жизни на МКС и будущих миссиях на Марс!»"
     },
     "task": {
       "uk": "Постав одне живе запитання, щоб розвинути тему та продовжити розмову.",
@@ -73,9 +73,9 @@
     "id": "6",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я почав вчитися готувати італійські страви.",
-      "en": "I started learning to cook Italian dishes.",
-      "ru": "Я начал учиться готовить итальянские блюда."
+      "uk": "Твоя знайома каже: «Я почала вчитися готувати італійські страви — вчора зробила свою першу пасту!»",
+      "en": "Your friend says: “I started learning to cook Italian dishes — yesterday I made my first pasta from scratch!”",
+      "ru": "Знакомая говорит: «Я начала учиться готовить итальянские блюда — вчера приготовила свою первую пасту!»"
     },
     "task": {
       "uk": "Постав одне запитання, щоб підтримати розмову і показати, що тобі цікаво.",
@@ -87,9 +87,9 @@
     "id": "7",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Минулого тижня я побував на концерті свого улюбленого гурту.",
-      "en": "Last week, I went to a concert of my favorite band.",
-      "ru": "На прошлой неделе я побывал на концерте своей любимой группы."
+      "uk": "Друг захоплено розповідає: «Минулого тижня я був на концерті своєї улюбленої групи — атмосфера була просто бомбезна!»",
+      "en": "Your friend excitedly says: “Last week, I went to a concert of my favorite band — the atmosphere was amazing!”",
+      "ru": "Друг с восторгом рассказывает: «На прошлой неделе я был на концерте своей любимой группы — атмосфера была просто супер!»"
     },
     "task": {
       "uk": "Задай запитання або зроби коментар, щоб розвинути тему і показати, що тобі цікаво.",
@@ -101,9 +101,9 @@
     "id": "8",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я почав ходити в тренажерний зал і вже бачу перші результати.",
-      "en": "I started going to the gym and I’m already seeing results.",
-      "ru": "Я начал ходить в спортзал и уже вижу первые результаты."
+      "uk": "Хтось каже тобі: «Я почав ходити в тренажерний зал і вже бачу перші результати — це мотивує!»",
+      "en": "Someone tells you: “I started going to the gym and I’m already seeing results — it’s so motivating!”",
+      "ru": "Кто-то говорит тебе: «Я начал ходить в спортзал и уже вижу первые результаты — это так мотивирует!»"
     },
     "task": {
       "uk": "Вислови зацікавленість і постав запитання, яке допоможе співрозмовнику розповісти більше.",
@@ -115,9 +115,9 @@
     "id": "9",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я збираюся в подорож до Японії наступного місяця.",
-      "en": "I’m planning a trip to Japan next month.",
-      "ru": "Я планирую поездку в Японию в следующем месяце."
+      "uk": "Твій знайомий каже: «Я збираюся в подорож до Японії наступного місяця. Планую побачити цвітіння сакури й спробувати автентичну їжу!»",
+      "en": "Your acquaintance says: “I’m planning a trip to Japan next month. I want to see the cherry blossoms and try authentic food!”",
+      "ru": "Знакомый говорит: «Я планирую поездку в Японию в следующем месяце. Хочу увидеть цветение сакуры и попробовать настоящую японскую еду!»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
@@ -129,9 +129,9 @@
     "id": "10",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я випадково натрапив на кав’ярню, де роблять лате з лавандою — несподівано смачно.",
-      "en": "I accidentally found a café that makes lavender lattes — surprisingly tasty.",
-      "ru": "Случайно нашёл кафе, где делают лавандовый латте — неожиданно вкусно."
+      "uk": "Друг каже: «Я випадково натрапив на кав’ярню, де роблять лате з лавандою — це несподівано смачно!»",
+      "en": "Your friend says: “I accidentally found a café that makes lavender lattes — surprisingly tasty!”",
+      "ru": "Друг говорит: «Случайно нашёл кафе, где делают лавандовый латте — неожиданно вкусно!»"
     },
     "task": {
       "uk": "Прояви цікавість і підтримай тему — коментарем або питанням.",
@@ -143,9 +143,9 @@
     "id": "11",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Нещодавно почав(-ла) вивчати жестову мову — це зовсім інший світ.",
-      "en": "I recently started learning sign language — it's a whole different world.",
-      "ru": "Недавно начал(а) учить жестовый язык — это совсем другой мир."
+      "uk": "Твій знайомий каже: «Нещодавно почав вивчати жестову мову — це зовсім інший світ. Навіть не уявляв(-ла), наскільки це цікаво!»",
+      "en": "Your acquaintance says: “I recently started learning sign language — it's a whole different world. I had no idea it could be so fascinating!”",
+      "ru": "Твой знакомый говорит: «Недавно начал(а) учить жестовый язык — это совсем другой мир. Даже не представлял(а), насколько это интересно!»"
     },
     "task": {
       "uk": "Відреагуй щиро — спробуй дізнатися більше або поділись власною думкою.",
@@ -157,9 +157,9 @@
     "id": "12",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "У мене вдома тепер живе кіт із притулку — дуже харизматичний тип.",
-      "en": "I’ve adopted a cat from a shelter — such a charismatic little guy.",
-      "ru": "Я взял(а) кота из приюта — очень харизматичный персонаж."
+      "uk": "Подруга каже: «У мене вдома тепер живе кіт із притулку — дуже харизматичний тип. Уже хазяїн квартири!»",
+      "en": "Your friend says: “I’ve adopted a cat from a shelter — such a charismatic little guy. He already acts like he owns the place!”",
+      "ru": "Подруга говорит: «Я взяла кота из приюта — очень харизматичный тип. Уже как хозяин себя ведёт!»"
     },
     "task": {
       "uk": "Знайди, як відгукнутись на це — з інтересом, дружньо і невимушено.",
@@ -171,9 +171,9 @@
     "id": "13",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Учора вперше готував гаспачо — неочікувано сподобалось.",
-      "en": "Yesterday I made gazpacho for the first time — surprisingly liked it.",
-      "ru": "Вчера впервые приготовил гаспачо — неожиданно понравилось."
+      "uk": "Друг розповідає: «Учора вперше готував гаспачо — неочікувано сподобалось. Холодний суп, а такий смачний!»",
+      "en": "Your friend says: “Yesterday I made gazpacho for the first time — surprisingly liked it. A cold soup, but it was so tasty!”",
+      "ru": "Друг рассказывает: «Вчера впервые приготовил гаспачо — неожиданно понравилось. Холодный суп, а такой вкусный!»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
@@ -185,9 +185,9 @@
     "id": "14",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Я майже закінчив(-ла) читати «Сто років самотності». Це щось.",
-      "en": "I’m almost done reading ‘One Hundred Years of Solitude’. What a book.",
-      "ru": "Я почти дочитал(а) «Сто лет одиночества». Это нечто."
+      "uk": "Знайома каже: «Я майже закінчила читати “Сто років самотності”. Це щось неймовірне — і стиль, і сюжет!»",
+      "en": "Your acquaintance says: “I’m almost done reading ‘One Hundred Years of Solitude’. The writing and the story are just incredible!”",
+      "ru": "Знакомая говорит: «Я почти дочитала “Сто лет одиночества”. Это нечто — и стиль, и сюжет!»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
@@ -199,9 +199,9 @@
     "id": "15",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "У вихідні випадково потрапив(-ла) на фестиваль стріт-арту — класна атмосфера.",
-      "en": "I randomly ended up at a street art festival this weekend — great vibe.",
-      "ru": "На выходных случайно попал(а) на фестиваль уличного искусства — классная атмосфера."
+      "uk": "Друг каже: «У вихідні випадково потрапив на фестиваль стріт-арту — класна атмосфера, музика, люди, графіті…»",
+      "en": "Your friend says: “This weekend I randomly ended up at a street art festival — the vibe was great: music, people, graffiti...”",
+      "ru": "Друг говорит: «На выходных случайно попал на фестиваль уличного искусства — атмосфера супер: музыка, люди, граффити…»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
@@ -213,9 +213,9 @@
     "id": "16",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Мене запросили спробувати кераміку — взагалі не думав(-ла), що це так затягує.",
-      "en": "I got invited to try pottery — never thought it’d be so absorbing.",
-      "ru": "Меня пригласили на керамику — не думал(а), что это так затягивает."
+      "uk": "Подруга каже: «Мене запросили спробувати кераміку — взагалі не думала, що це так затягує. Хочу ще!»",
+      "en": "Your friend says: “I got invited to try pottery — never thought it’d be so absorbing. I want to go again!”",
+      "ru": "Подруга говорит: «Меня пригласили на керамику — не думала, что это так затянет. Хочу ещё!»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
@@ -227,9 +227,9 @@
     "id": "17",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Сусіди почали грати джаз вечорами — іноді прямо з балкона чутно саксофон.",
-      "en": "My neighbors started playing jazz in the evenings — sometimes you can hear the sax from the balcony.",
-      "ru": "Соседи стали играть джаз по вечерам — иногда с балкона слышен саксофон."
+      "uk": "Знайомий каже: «Сусіди почали грати джаз вечорами — іноді прямо з балкона чутно саксофон. Несподівано приємно.»",
+      "en": "Your neighbor says: “My neighbors started playing jazz in the evenings — sometimes you can hear the sax from the balcony. Surprisingly nice.”",
+      "ru": "Знакомый говорит: «Соседи стали играть джаз по вечерам — с балкона слышен саксофон. Неожиданно приятно.»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
@@ -241,14 +241,14 @@
     "id": "18",
     "exercise_name": "ASK_MORE",
     "situation": {
-      "uk": "Мій пес вчора сам навчився відкривати двері. Я шокований(-а).",
-      "en": "My dog figured out how to open doors yesterday. I’m shocked.",
-      "ru": "Моя собака вчера сама научилась открывать двери. Я в шоке."
+      "uk": "Друг каже: «Мій пес вчора сам навчився відкривати двері. Я в шоці, чесно!»",
+      "en": "Your friend says: “My dog figured out how to open doors yesterday. I’m honestly shocked!”",
+      "ru": "Друг говорит: «Моя собака вчера сама научилась открывать двери. Я в шоке, честно!»"
     },
     "task": {
       "uk": "Покажи свій інтерес, постав запитання чи коментар, щоб дізнатись більше деталей.",
       "en": "Show your interest by asking a question or making a comment to find out more details.",
       "ru": "Прояви интерес, задав вопрос или сделав комментарий, чтобы узнать больше деталей."
     }
-  }
+  },
 ]
