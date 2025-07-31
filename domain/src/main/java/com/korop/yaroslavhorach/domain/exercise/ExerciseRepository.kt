@@ -11,5 +11,6 @@ interface ExerciseRepository {
      suspend fun changeBlock(exerciseBlock: ExerciseBlock)
      suspend fun addStar(name: ExerciseBlock)
      fun getStarsForBlock(name: ExerciseBlock): Flow<Int>
-     fun getBlock() : Flow<ExerciseBlock>
+     fun getBlock(): Flow<ExerciseBlock>
+     suspend fun unlockBlock(exerciseBlock: ExerciseBlock)
 }

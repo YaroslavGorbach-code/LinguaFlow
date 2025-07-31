@@ -12,4 +12,9 @@
     <string name="block_practice_title_text">Refresh your skills!</string>
     <string name="block_practice_primary_btn_text">Practice + ⭐</string>
     <string name="block_finished_btn_text">Reinforce knowledge ⭐</string>
+    <string name="blok_is_locked_title_text">This block is locked</string>
+    <string name="blok_is_locked_subtitle_text">To access it, complete all exercises in the previous block. Or unlock it now with Premium.</string>
+    <string name="block_is_locked_secondary_btn_text">KEEP PRACTICING</string>
+    <string name="block_is_locked_primary_btn_text">UNLOCK WITH PREMIUM</string>
+    <string name="home_unlock_block_btn_text">Go here</string>
 </resources>

@@ -1,0 +1,3 @@
+package com.korop.yaroslavhorach.block_is_locked.model
+
+sealed class BlockIsLockedUiiMessage

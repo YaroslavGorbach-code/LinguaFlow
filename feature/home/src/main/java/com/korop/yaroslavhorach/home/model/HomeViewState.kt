@@ -18,6 +18,7 @@ data class HomeViewState(
     val descriptionState: DescriptionState = DescriptionState(),
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
     val stars: Int = 0,
+    val isPremium: Boolean = false,
     val uiMessage: UiMessage<HomeUiMessage>? = null
 ) {
     val blockProgress: Float
@@ -34,6 +35,16 @@ data class HomeViewState(
     val blockIsFinished: Boolean
         get() {
             return blockProgress >= 1f
+        }
+
+    val blockIsInProgress: Boolean
+        get() {
+            return blockProgress > 0 && blockProgress < 1f
+        }
+
+    val isBlockUnlocked: Boolean
+        get() {
+            return exercises.filter { it.exercise.block == exerciseBlock }.any { it.isEnable }
         }
 
     data class DescriptionState(

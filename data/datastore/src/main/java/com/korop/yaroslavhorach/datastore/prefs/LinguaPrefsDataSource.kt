@@ -59,6 +59,18 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
         return userPreferences.data.map { it.favoriteGamesList }
     }
 
+   suspend fun forceBlockUnlock(block: ExerciseBlock){
+       userPreferences.updateData { prefs ->
+            prefs.toBuilder()
+                .addForceUnlockedBlocks(block.name)
+                .build()
+       }
+    }
+
+    fun getForceUnlockedBlocks(): Flow<List<ExerciseBlock>> {
+        return userPreferences.data.map { it.forceUnlockedBlocksList.map { ExerciseBlock.valueOf(it) } }
+    }
+
     suspend fun addGameToFavorites(gameId: Long) {
         userPreferences.updateData { prefs ->
             prefs.toBuilder()

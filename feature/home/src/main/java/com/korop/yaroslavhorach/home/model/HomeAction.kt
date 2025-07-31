@@ -16,4 +16,5 @@ sealed class HomeAction {
     data object OnHideDescription : HomeAction()
     data object OnAvatarClicked : HomeAction()
     data object OnRepeatBlockClicked: HomeAction()
+    data object OnUnlockBlock: HomeAction()
 }

@@ -21,9 +21,16 @@ fun NavGraphBuilder.homeScreen(
     onNavigateToExercise: (Exercise) -> Unit,
     onNavigateToAvatarChange: () -> Unit,
     onNavigateToBlockRepeat: (block: ExerciseBlock) -> Unit,
+    onNavigateToBlockIsLocked: (block: ExerciseBlock) -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit
 ) {
     composable<HomeRoute> {
-        HomeRoute(onNavigateToExercise, onNavigateToAvatarChange, onNavigateToBlockRepeat, onChangeColorScheme)
+        HomeRoute(
+            onNavigateToExercise,
+            onNavigateToAvatarChange,
+            onNavigateToBlockRepeat,
+            onNavigateToBlockIsLocked,
+            onChangeColorScheme
+        )
     }
 }

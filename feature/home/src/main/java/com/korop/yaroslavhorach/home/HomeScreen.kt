@@ -113,6 +113,7 @@ internal fun HomeRoute(
     onNavigateToExercise: (Exercise) -> Unit,
     onNavigateToAvatarChange: () -> Unit,
     onNavigateToRepeatBlock: (block: ExerciseBlock) -> Unit,
+    onNavigateToBlockIsLocked: (block: ExerciseBlock) -> Unit,
     onChangeColorScheme: (primary: Color, secondary: Color) -> Unit,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
@@ -127,6 +128,10 @@ internal fun HomeRoute(
                     viewModel.clearMessage(uiMessage.id)
                 }
             }
+           is HomeUiMessage.NavigateToBlockIsLocked -> {
+               onNavigateToBlockIsLocked(state.exerciseBlock)
+               viewModel.clearMessage(uiMessage.id)
+           }
         }
     }
 
@@ -436,7 +441,7 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
             ) {
                 Spacer(Modifier.height(16.dp))
 
-                if (state.blockIsFinished.not()) {
+                if (state.blockIsInProgress) {
                     LinguaProgressBar(
                         progress = state.blockProgress,
                         progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
@@ -466,7 +471,7 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                 )
                 Spacer(Modifier.height(4.dp))
 
-                if (state.blockIsFinished){
+                if (state.blockIsFinished) {
                     Text(
                         modifier = Modifier,
                         text = state.exerciseBlock.blockDoneDescription().asString(),
@@ -484,6 +489,14 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                         color = White,
                         style = LinguaTypography.body4
                     )
+                }
+
+                if (state.isBlockUnlocked.not()) {
+                    Spacer(Modifier.height(16.dp))
+
+                    SecondaryButton(text = stringResource(R.string.home_unlock_block_btn_text)) {
+                        actioner(HomeAction.OnUnlockBlock)
+                    }
                 }
 
                 Spacer(Modifier.height(16.dp))

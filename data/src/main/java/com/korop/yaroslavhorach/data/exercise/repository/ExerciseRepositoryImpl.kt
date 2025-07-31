@@ -2,16 +2,16 @@ package com.korop.yaroslavhorach.data.exercise.repository
 
 import android.content.Context
 import androidx.compose.ui.util.fastFilter
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.korop.yaroslavhorach.common.utill.loadJsonFromAssets
 import com.korop.yaroslavhorach.database.dao.ExerciseProgressDao
 import com.korop.yaroslavhorach.database.task.model.asDomainModel
 import com.korop.yaroslavhorach.database.task.model.asEntityModel
+import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
 import com.korop.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.korop.yaroslavhorach.domain.exercise.model.Exercise
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -30,33 +30,50 @@ class ExerciseRepositoryImpl @Inject constructor(
     private var currentBLock: MutableStateFlow<ExerciseBlock> = MutableStateFlow(ExerciseBlock.ONE)
 
     override fun getExercises(): Flow<List<Exercise>> {
-        return exerciseProgressDao.getExerciseProgressEntities()
-            .flatMapLatest { progressList ->
-                val progressMap = progressList.associateBy { it.exerciseId }
-                val exercises = getRawExercises().fastFilter { it.isVisible }
+        return kotlinx.coroutines.flow.combine(
+            exerciseProgressDao.getExerciseProgressEntities(),
+            prefsDataSource.getForceUnlockedBlocks()
+        ) { progressList, forcedOpenedBlocks ->
+            Pair(progressList, forcedOpenedBlocks)
+        }.flatMapLatest { (progressList, forcedOpenedBlocks) ->
+            val progressMap = progressList.associateBy { it.exerciseId }
+            val exercises = getRawExercises().fastFilter { it.isVisible }
 
-                flowOf(
-                    exercises.mapIndexed { index, exercise ->
-                        val progress = progressMap[exercise.id]
+            val firstExerciseByBlock = exercises.groupBy { it.block }
+                .mapValues { it.value.first() }
 
-                        val lastActive = exercises
-                            .indexOfLast { ex -> (progressMap[ex.id]?.progress ?: 0) > 0 }
-                            .takeIf { it != -1 } ?: 0
+            flowOf(
+                exercises.mapIndexed { index, exercise ->
+                    val progress = progressMap[exercise.id]
 
-                        if (progress != null) {
-                            exercise.copy(exerciseProgress = progress.asDomainModel(), isEnable = true, isLastActive = lastActive == index)
+                    val lastActive = exercises
+                        .indexOfLast { ex -> (progressMap[ex.id]?.progress ?: 0) > 0 }
+                        .takeIf { it != -1 } ?: 0
+
+                    if (progress != null) {
+                        exercise.copy(
+                            exerciseProgress = progress.asDomainModel(),
+                            isEnable = true,
+                            isLastActive = lastActive == index
+                        )
+                    } else {
+                        val isForcedOpen = forcedOpenedBlocks.contains(exercise.block) &&
+                                firstExerciseByBlock[exercise.block]?.id == exercise.id
+
+                        val previousExerciseIsFinished = if (index == 0) {
+                            true
                         } else {
-                            val previousExerciseIsFinished = if (index == 0){
-                                true
-                            } else {
-                                progressMap[exercises[index.dec()].id]?.isFinished == true
-                            }
-
-                            exercise.copy(isEnable = previousExerciseIsFinished, isLastActive = lastActive == index)
+                            progressMap[exercises[index - 1].id]?.isFinished == true
                         }
+
+                        exercise.copy(
+                            isEnable = previousExerciseIsFinished || isForcedOpen,
+                            isLastActive = lastActive == index
+                        )
                     }
-                )
-            }
+                }
+            )
+        }
     }
 
     override suspend fun getExercise(exerciseId: Long): Exercise? {
@@ -86,6 +103,10 @@ class ExerciseRepositoryImpl @Inject constructor(
 
     override fun getBlock(): Flow<ExerciseBlock> {
         return currentBLock
+    }
+
+    override suspend fun unlockBlock(exerciseBlock: ExerciseBlock) {
+        prefsDataSource.forceBlockUnlock(exerciseBlock)
     }
 
     override suspend fun addStar(name: ExerciseBlock) {

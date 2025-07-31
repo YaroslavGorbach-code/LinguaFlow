@@ -12,4 +12,9 @@
     <string name="block_practice_title_text">Освежи навыки!</string>
     <string name="block_practice_primary_btn_text">Тренироваться + ⭐</string>
     <string name="block_finished_btn_text">Закрепить знания ⭐</string>
+    <string name="blok_is_locked_title_text">Блок недоступен</string>
+    <string name="blok_is_locked_subtitle_text">Чтобы получить доступ, пройди все упражнения предыдущего блока. Или открой его прямо сейчас с Premium</string>
+    <string name="block_is_locked_secondary_btn_text">ТРЕНИРОВАТЬСЯ</string>
+    <string name="block_is_locked_primary_btn_text">ОТКРЫТЬ С PREMIUM</string>
+    <string name="home_unlock_block_btn_text">Перейти сюда</string>
 </resources>

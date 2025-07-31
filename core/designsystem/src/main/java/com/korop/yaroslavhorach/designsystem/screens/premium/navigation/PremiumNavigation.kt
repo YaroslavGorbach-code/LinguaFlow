@@ -15,6 +15,13 @@ fun NavController.navigateToPremium() {
         navOptions {}
     }
 }
+fun NavController.navigateToPremiumWithPopBack() {
+    navigate(route = PremiumRoute) {
+        navOptions {
+            popBackStack()
+        }
+    }
+}
 
 fun NavGraphBuilder.premiumScreen(onNavigateBack: () -> Unit, onNavigateToSuccess: ()-> Unit) {
     composable<PremiumRoute> {

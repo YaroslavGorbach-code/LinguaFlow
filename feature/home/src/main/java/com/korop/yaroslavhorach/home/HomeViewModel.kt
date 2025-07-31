@@ -50,7 +50,8 @@ class HomeViewModel @Inject constructor(
                 userAvatar = userData.avatarResId,
                 descriptionState = description,
                 exerciseBlock = exercisesBlock,
-                exercises = exercises
+                exercises = exercises,
+                isPremium = userData.isPremium
             )
         }.stateIn(
             scope = viewModelScope,
@@ -112,6 +113,23 @@ class HomeViewModel @Inject constructor(
                     }
                     is HomeAction.OnExercisesBlockChanged -> {
                         exerciseRepository.changeBlock(event.block)
+                    }
+                    is HomeAction.OnUnlockBlock -> {
+                        if (state.value.isPremium) {
+                            exerciseRepository.unlockBlock(state.value.exerciseBlock)
+
+                            val firstEnableIndex = exercises.value.indexOfFirst {
+                                it.exercise.block == state.value.exerciseBlock
+                            }
+
+                            viewModelScope.launch {
+                                if (firstEnableIndex > 0) {
+                                    uiMessageManager.emitMessage(UiMessage(HomeUiMessage.ScrollTo(firstEnableIndex)))
+                                }
+                            }
+                        } else {
+                            uiMessageManager.emitMessage(UiMessage(HomeUiMessage.NavigateToBlockIsLocked))
+                        }
                     }
                     else -> {}
                 }

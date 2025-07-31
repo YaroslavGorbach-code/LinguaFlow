@@ -9,6 +9,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.navOptions
 import com.korop.yaroslavhorach.avatar_change.navigation.avatarChangeScreen
 import com.korop.yaroslavhorach.avatar_change.navigation.navigateToAvatarChange
+import com.korop.yaroslavhorach.block_is_locked.navigation.blockIsLockedScreen
+import com.korop.yaroslavhorach.block_is_locked.navigation.navigateToBlockIsLocked
 import com.korop.yaroslavhorach.block_practice.navigation.blockPracticeScreen
 import com.korop.yaroslavhorach.block_practice.navigation.navigateToBlockPractice
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navigation.gameUnlockedScreen
@@ -16,6 +18,7 @@ import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navig
 import com.korop.yaroslavhorach.designsystem.screens.onboarding.navigation.OnboardingRoute
 import com.korop.yaroslavhorach.designsystem.screens.onboarding.navigation.onboardingScreen
 import com.korop.yaroslavhorach.designsystem.screens.premium.navigation.navigateToPremium
+import com.korop.yaroslavhorach.designsystem.screens.premium.navigation.navigateToPremiumWithPopBack
 import com.korop.yaroslavhorach.designsystem.screens.premium.navigation.premiumScreen
 import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.navigateToPremiumSuccess
 import com.korop.yaroslavhorach.designsystem.screens.premium_success.navigation.premiumSuccessScreen
@@ -84,7 +87,8 @@ fun LingoNavHost(
             }
         }, onChangeColorScheme = onChangeColorScheme,
             onNavigateToAvatarChange = { navController.navigateToAvatarChange() },
-            onNavigateToBlockRepeat = { block: ExerciseBlock -> navController.navigateToBlockPractice(block) }
+            onNavigateToBlockRepeat = { block: ExerciseBlock -> navController.navigateToBlockPractice(block) },
+            onNavigateToBlockIsLocked = { block: ExerciseBlock -> navController.navigateToBlockIsLocked(block) },
         )
         gamesScreen(onNavigateToGame = { id, name ->
             when (name) {
@@ -214,6 +218,11 @@ fun LingoNavHost(
         )
         blockPracticeScreen(onNavigateExercises = {
             navController.navigateToSpeakingExerciseWithBack(exerciseId = null, blockName = it)
+        }, onNavigateBack = {
+            navController.popBackStack()
+        })
+        blockIsLockedScreen(onNavigateToPremium = {
+            navController.navigateToPremiumWithPopBack()
         }, onNavigateBack = {
             navController.popBackStack()
         })
