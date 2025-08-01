@@ -49,32 +49,32 @@ class PremiumViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             val currency = mapCurrencySymbol(billingManager.queryMonthSubscriptions()
-                .first()
-                .subscriptionOfferDetails
-                ?.first()
+                .firstOrNull()
+                ?.subscriptionOfferDetails
+                ?.firstOrNull()
                 ?.pricingPhases?.pricingPhaseList
-                ?.first()
+                ?.firstOrNull()
                 ?.priceCurrencyCode)
 
             val permanentSubscriptionPrice = billingManager.queryPermanentSubscriptionProduct()
-                .first()
-                .oneTimePurchaseOfferDetails
+                .firstOrNull()
+                ?.oneTimePurchaseOfferDetails
                 ?.priceAmountMicros?.div(1_000_000.0)
 
             val sixMonthSubscriptionPrice = billingManager.query6MonthSubscriptions()
-                .first()
-                .subscriptionOfferDetails
-                ?.first()
+                .firstOrNull()
+                ?.subscriptionOfferDetails
+                ?.firstOrNull()
                 ?.pricingPhases?.pricingPhaseList
-                ?.first()
+                ?.firstOrNull()
                 ?.priceAmountMicros?.div(1_000_000.0)
 
             val monthSubscriptionPrice = billingManager.queryMonthSubscriptions()
-                .first()
-                .subscriptionOfferDetails
-                ?.first()
+                .firstOrNull()
+                ?.subscriptionOfferDetails
+                ?.firstOrNull()
                 ?.pricingPhases?.pricingPhaseList
-                ?.first()
+                ?.firstOrNull()
                 ?.priceAmountMicros?.div(1_000_000.0)
 
 
