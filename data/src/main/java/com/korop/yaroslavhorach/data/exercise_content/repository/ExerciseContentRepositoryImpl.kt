@@ -15,12 +15,10 @@ import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.domain.exercise.model.getExercisesByBlockName
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import java.util.Locale
@@ -448,6 +446,12 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 uniqueSentences.shuffled().first().getText(lang)
             }
+            Game.GameName.CONSONANT_BATTLE -> {
+                val sentences = getSentences(Sentence.SentenceType.CONSONANT_BATTLE)
+                val uniqueSentences = sentences.distinctBy { it.getText(lang) }
+
+                uniqueSentences.shuffled().first().getText(lang)
+            }
             else -> ""
         }
     }
@@ -501,6 +505,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Sentence.SentenceType.FUNNY_EXCUSE -> "sentences/sentences_funny_excuse.json"
                     Sentence.SentenceType.PROBLEMS -> "sentences/sentences_problems.json"
                     Sentence.SentenceType.BREATHLINE_CHALLENGE -> "sentences/sentences_breahline_challenge.json"
+                    Sentence.SentenceType.CONSONANT_BATTLE -> "sentences/sentences_CONSONANT_BATTLE.json"
                 }
 
                 val sentences: List<Sentence> = loadJsonFromAssets(context, fileName)?.let { json ->

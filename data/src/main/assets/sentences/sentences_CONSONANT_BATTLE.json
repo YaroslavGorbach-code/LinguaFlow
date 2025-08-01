@@ -1,0 +1,1427 @@
+[
+  {
+    "id": 2001,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Бурий борсук блукав берегами безупину.",
+      "en": "Brad briskly brushed broken bricks behind the barn.",
+      "ru": "Бурый барсук бродил по берегам без остановки."
+    }
+  },
+  {
+    "id": 2002,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Жваві жуки жонглювали жолудями в жовтні.",
+      "en": "Chuck chased cheerful chicks through chilly church chambers.",
+      "ru": "Живые жуки жонглировали жёлудями в октябре."
+    }
+  },
+  {
+    "id": 2003,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Дощ дріботів дахами, дивуючи денне місто.",
+      "en": "Greg grabbed the grand green grapes greedily.",
+      "ru": "Дождь дробил по крышам, удивляя дневной город."
+    }
+  },
+  {
+    "id": 2004,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Старий скрипаль скрадався скелястою стежкою.",
+      "en": "Brad grabbed the grand green grapes greedily.",
+      "ru": "Старый скрипач скрадывался по скалистой тропе."
+    }
+  },
+  {
+    "id": 2005,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Троє туристів тягнули тюки через туманний тунель.",
+      "en": "Split the plastic strap straight through the slot.",
+      "ru": "Трое туристов тащили тюки через туманный туннель."
+    }
+  },
+  {
+    "id": 2006,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Змії зсувалися з заростей з загрозливим звуком.",
+      "en": "Craig cracked crisp crackers quickly.",
+      "ru": "Змеи соскальзывали из зарослей с угрожающим звуком."
+    }
+  },
+  {
+    "id": 2007,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шершень шурхотів шторкою шалено швидко.",
+      "en": "She shouted sharply, shaking the shutters shut.",
+      "ru": "Шершень шуршал шторкой с безумной скоростью."
+    }
+  },
+  {
+    "id": 2008,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Петро притягнув повний пакет печива.",
+      "en": "Petro pulled a packed pouch of pastries.",
+      "ru": "Пётр притащил полный пакет печенья."
+    }
+  },
+  {
+    "id": 2009,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гуркіт грому гнав гусей геть.",
+      "en": "The swift fox skipped silently through the shrubs." ,
+      "ru": "Грохот грома гнал гусей прочь."
+    }
+  },
+  {
+    "id": 2010,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Федір фарбував фасад фактурно й вперто.",
+      "en": "Big Ben banged boldly behind the building.",
+      "ru": "Фёдор красил фасад фактурно и упорно."
+    }
+  },
+  {
+    "id": 2011,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Хитрий хортист ховався у хвилях хмизу.",
+      "en": "Greg’s gloves gripped the glass with grit.",
+      "ru": "Хитрый гончатник прятался в волнах хвороста."
+    }
+  },
+  {
+    "id": 2012,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чарівник чаклував чітко, чаруючи чуття.",
+      "en": "Tiny Tim tapped ten times on the tabletop.",
+      "ru": "Чародей чётко колдовал, чаруя чувства."
+    }
+  },
+  {
+    "id": 2013,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Кіт ковзав кабінетом, клацаючи кігтями.",
+      "en": "Skip the step, stack the sticks straight.",
+      "ru": "Кот крался по кабинету, клацая когтями."
+    }
+  },
+  {
+    "id": 2014,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Ганна гортала грубий зошит голчастими пальцями.",
+      "en": "Jack jumped joyfully, juggling jelly jars.",
+      "ru": "Ганна листала грубую тетрадь игольчатыми пальцами."
+    }
+  },
+  {
+    "id": 2015,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Цвяхи цокотіли в центрі цеху цілу ніч.",
+      "en": "Freddy flicked the flashlight fiercely in the fog.",
+      "ru": "Гвозди цокали в центре цеха всю ночь."
+    }
+  },
+  {
+    "id": 2016,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Щука штовхала щупаками щебетливих щиглів.",
+      "en": "Black boots beat the bricks beneath the bridge.",
+      "ru": "Щука толкала щебечущих щеглов щупаками."
+    }
+  },
+  {
+    "id": 2017,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Цапці цокали цементом цілими днями.",
+      "en": "Cheryl chose a chilly cherry cheesecake." ,
+      "ru": "Козлики цокали по цементу целыми днями."
+    }
+  },
+  {
+    "id": 2018,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Рибалки рвучко розгорнули рибальські рушниці.",
+      "en": "Zane zipped his jacket, zigzagging to the zoo." },
+      "ru": "Рыбаки резко развернули рыбацкие ружья."
+    },
+  {
+    "id": 2019,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Зграя зухвало зіштовхнула дзеркальні зірки.",
+      "en": "Steve’s steps scraped sharply on the stone stairs.",
+      "ru": "Стая дерзко столкнула зеркальные звёзды."
+    }
+  },
+  {
+    "id": 2020,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тихі тексти тонули в темних тінях театру.",
+      "en": "They threw three thick threads through the thruster.",
+      "ru": "Тихие тексты тонули в тёмных тенях театра."
+    }
+  },
+  {
+    "id": 3021,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Петля підскочила й впала прямо на плитку.",
+      "en": "Brian briskly broke branches beneath the bridge.",
+      "ru": "Петля подпрыгнула и упала прямо на плитку."
+    }
+  },
+  {
+    "id": 3022,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гілка тріснула, коли вітер грюкнув ворітьми.",
+      "en": "Clara’s clumsy clicks clattered across the chrome counter.",
+      "ru": "Ветка треснула, когда ветер хлопнул воротами."
+    }
+  },
+  {
+    "id": 3023,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тарас тихо торкав тріснуту трубу.",
+      "en": "Derek dashed down the dusty, dim driveway.",
+      "ru": "Тарас тихо трогал треснувшую трубу."
+    }
+  },
+  {
+    "id": 3024,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Блискавка блиснула біля будівлі без попередження.",
+      "en": "Felix flicked five flat files from the folder.",
+      "ru": "Молния сверкнула у здания без предупреждения."
+    }
+  },
+  {
+    "id": 3025,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гуркіт грому гойдав гілля густих дерев.",
+      "en": "Gina grabbed the gray gloves from the ground.",
+      "ru": "Грохот грома качал ветки густых деревьев."
+    }
+  },
+  {
+    "id": 3026,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Скляна скринька стояла серед сірого складу.",
+      "en": "Harvey’s hammer hit the hard, hollow hinge.",
+      "ru": "Стеклянная шкатулка стояла среди серого склада."
+    }
+  },
+  {
+    "id": 3027,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Хлопець хвацько хапав холодні хустки.",
+      "en": "Jenny juggled jars of jam in July.",
+      "ru": "Парень лихо хватал холодные платки."
+    }
+  },
+  {
+    "id": 3028,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Підвіконня потріскувало під пальцями Петра.",
+      "en": "Kara kept kicking the cracked kitchen cupboard.",
+      "ru": "Подоконник потрескивал под пальцами Петра."
+    }
+  },
+  {
+    "id": 3029,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Жмут жоржин жбурнули жартома в жбан.",
+      "en": "Leo’s loud laugh lingered in the long lobby.",
+      "ru": "Пучок георгинов бросили в кувшин в шутку."
+    }
+  },
+  {
+    "id": 3030,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Степан склеїв скалки старої скрині.",
+      "en": "Mason made messy marks on the marble mantel.",
+      "ru": "Степан склеил осколки старого сундука."
+    }
+  },
+  {
+    "id": 3031,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Човен човгав через чисту частину затоки.",
+      "en": "Nina knocked nine nails near the narrow notch.",
+      "ru": "Лодка скреблась по чистой части залива."
+    }
+  },
+  {
+    "id": 3032,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тонкий топірець торкнувся товстої тичини.",
+      "en": "Oscar’s old oven opened with a sharp snap.",
+      "ru": "Тонкий топорик коснулся толстой жерди."
+    }
+  },
+  {
+    "id": 3033,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітрина виблискувала вузькими вузлами візерунку.",
+      "en": "Paula pushed the painted plank past the porch.",
+      "ru": "Витрина сверкала узкими узлами узора."
+    }
+  },
+  {
+    "id": 3034,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Зозуля зазвучала з-за зелених заростей.",
+      "en": "Quinn quickly quilted quiet, quirky squares.",
+      "ru": "Кукушка закуковала из-за зелёных зарослей."
+    }
+  },
+  {
+    "id": 3035,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Фіранка фуркотіла від флюгерного фону.",
+      "en": "Rita raked rusty rods right by the ramp.",
+      "ru": "Занавеска фыркала от ветра флюгера."
+    }
+  },
+  {
+    "id": 3036,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гвинтик гойдався на гвинтовій гайці.",
+      "en": "Sam silently stacked six smooth stones.",
+      "ru": "Винтик качался на винтовой гайке."
+    }
+  },
+  {
+    "id": 3037,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Денис друкував дані до другої доби.",
+      "en": "Trent twisted the tight, torn tarp ten times.",
+      "ru": "Денис печатал данные до второй зари."
+    }
+  },
+  {
+    "id": 3038,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чайник чмихав через щілину в чащі.",
+      "en": "Will whipped wet wipes with wild whooshes.",
+      "ru": "Чайник фыркал сквозь щель в чащобе."
+    }
+  },
+  {
+    "id": 3039,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Зграя зграбо штовхнула зотлілий зошит за завісу.",
+      "en": "Zoe zipped zigzagging zippers on the zebra-striped jacket.",
+      "ru": "Стая ловко затолкала сгоревшую тетрадь за занавес."
+    }
+  },
+  {
+    "id": 3040,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шарудіння шишок ширилось шостою шеренгою.",
+      "en": "Victor’s van vibrated violently over the valley.",
+      "ru": "Шелест шишек ширился шестым рядом."
+    }
+  },
+  {
+    "id": 4001,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітер віяв вітряками, вдаряючи в вікна будинків.",
+      "en": "The flow of song echoed among the hills.",
+      "ru": "Ветер вращал ветряки, стуча в окна домов."
+    }
+  },
+  {
+    "id": 4002,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Твердий тріснув гілля, торкаючись товстого дерева.",
+      "en": "The wind whispered wildly through the willows.",
+      "ru": "Твёрдая ветка треснула, касаясь толстого дерева."
+    }
+  },
+  {
+    "id": 4003,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Петро підписав папір, потужно постукуючи пальцями.",
+      "en": "Sharp shadows shifted silently on the street.",
+      "ru": "Пётр подписал бумагу, мощно постукивая пальцами."
+    }
+  },
+  {
+    "id": 4004,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шипіння шланга штовхнуло шум води.",
+      "en": "Bright birds boldly brushed beside the brook.",
+      "ru": "Шипение шланга заглушило шум воды."
+    }
+  },
+  {
+    "id": 4005,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гуркіт грому гучно грав по горах.",
+      "en": "Cold clouds covered the clear, calm sky.",
+      "ru": "Грохот грома громко гремел по горам."
+    }
+  },
+  {
+    "id": 4006,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Блискавка блиснула близько, блимаючи блиском.",
+      "en": "Fast frogs flipped frequently near the forest.",
+      "ru": "Молния вспыхнула близко, ярко мигая."
+    }
+  },
+  {
+    "id": 4007,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітряк важко вертівся, видаючи вібрації.",
+      "en": "Green grasses grew gently on the garden grounds.",
+      "ru": "Ветряк тяжело вращался, издавая вибрации."
+    }
+  },
+  {
+    "id": 4008,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тиша тривала, торкаючись тонких тіней.",
+      "en": "Hard hands held heavy hammers tightly.",
+      "ru": "Тишина длилась, касаясь тонких теней."
+    }
+  },
+  {
+    "id": 4009,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пісня птиці пролунала під покривом пагорбів.",
+      "en": "Loud leaves rustled lightly in the late breeze.",
+      "ru": "Песня птицы прозвучала под покровом холмов."
+    }
+  },
+  {
+    "id": 4010,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисте чекання чарувало чистотою чарів.",
+      "en": "Quick quails quietly quivered in the quarry.",
+      "ru": "Чистое ожидание очаровало чистотой чар."
+    }
+  },
+  {
+    "id": 4011,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітер вигнув вишню, викликаючи вібрації.",
+      "en": "Rough rocks rested rigidly by the river.",
+      "ru": "Ветер согнул вишню, вызывая вибрации."
+    }
+  },
+  {
+    "id": 4012,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Твердий тростина торкалася темного тіла.",
+      "en": "Soft snow silently settled on the sleepy streets.",
+      "ru": "Твёрдая трость коснулась тёмного предмета."
+    }
+  },
+  {
+    "id": 4013,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Птахи пурхали поміж пахучих пагорбів.",
+      "en": "Tall trees trembled through the thick thunder.",
+      "ru": "Птицы порхали среди пахучих холмов."
+    }
+  },
+  {
+    "id": 4014,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шум струмка шепотів серед старих стовбурів.",
+      "en": "Wild winds whipped wildly across the wide wetlands.",
+      "ru": "Шум ручья шептал среди старых стволов."
+    }
+  },
+  {
+    "id": 4015,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тінистий тракт торкався темного тіла.",
+      "en": "Young yaks yawned yearly in the yellow yard.",
+      "ru": "Тенистая тропа касалась тёмного предмета."
+    }
+  },
+  {
+    "id": 4016,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Відгомін вітру виливав вогонь в вікна.",
+      "en": "Blue birds built bright nests beneath branches.",
+      "ru": "Отзвук ветра вливал огонь в окна."
+    }
+  },
+  {
+    "id": 4017,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гілля гойдалося гучно, гупаючи по ґанку.",
+      "en": "Clear clouds climbed calmly over the cliffs.",
+      "ru": "Ветки громко качались, грохоча по крыльцу."
+    }
+  },
+  {
+    "id": 4018,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Потік пісні пролунав поміж пагорбів.",
+      "en": "Dark doors closed deeply during dusk.",
+      "ru": "Поток песни прозвучал среди холмов."
+    }
+  },
+  {
+    "id": 4019,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тихий тин торкався темних тіней.",
+      "en": "Fresh flowers flourished freely in the field.",
+      "ru": "Тихий забор касался тёмных теней."
+    }
+  },
+  {
+    "id": 4020,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чіткий чепурний чотирикутник чистив частини.",
+      "en": "Strong storms struck suddenly near the shore.",
+      "ru": "Чёткий аккуратный квадрат чистил детали."
+    }
+  },
+  {
+    "id": 5001,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітер вивіяв волошкові вітки в вікні.",
+      "en": "Wind whisked wild wheat waves across the wold.",
+      "ru": "Ветер выдул васильковые ветки в окне."
+    }
+  },
+  {
+    "id": 5002,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Птахи пурхали поміж пагорбів під пальмою.",
+      "en": "Birds briskly brushed by the blooming bushes.",
+      "ru": "Птицы порхали между холмами под пальмой."
+    }
+  },
+  {
+    "id": 5003,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гарячий грім гупає гучно в горах.",
+      "en": "Thunder thumped through the thick trees tonight.",
+      "ru": "Громкий гром грохочет громко в горах."
+    }
+  },
+  {
+    "id": 5004,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чистий чеканний чек чекав чітко.",
+      "en": "Clear clicks clicked clearly close by.",
+      "ru": "Чистый чек чекал чётко."
+    }
+  },
+  {
+    "id": 5005,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Друзі дружно дзвеніли дзвінкими дзвінками.",
+      "en": "Friends firmly flashed fresh, full flashes.",
+      "ru": "Друзья дружно звенели звонкими звонками."
+    }
+  },
+  {
+    "id": 5006,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогні виблискують в вогкій вітальні.",
+      "en": "Lights lightly lit the lively lounge.",
+      "ru": "Огни блестят в влажной веранде."
+    }
+  },
+  {
+    "id": 5007,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тиша тривала, торкаючись тонких тіней.",
+      "en": "Silence softly swept shadowy streets.",
+      "ru": "Тишина длилась, касаясь тонких теней."
+    }
+  },
+  {
+    "id": 5008,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Човен човгав через чисту частину затоки.",
+      "en": "Boat brushed by bright blue bay.",
+      "ru": "Лодка скреблась по чистой части залива."
+    }
+  },
+  {
+    "id": 5009,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шум струмка шепотів серед старих стовбурів.",
+      "en": "Stream softly sang songs among stones.",
+      "ru": "Шум ручья шептал среди старых стволов."
+    }
+  },
+  {
+    "id": 5010,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Хмарний холод ховався за хатами.",
+      "en": "Cloudy cold crept quietly close.",
+      "ru": "Облачный холод скрывался за домами."
+    }
+  },
+  {
+    "id": 5011,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тверді тіні торкалися темних тростин.",
+      "en": "Tough trees twisted through thick thickets.",
+      "ru": "Твёрдые тени касались тёмных тростей."
+    }
+  },
+  {
+    "id": 5012,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Свіжий сніг скрипів під старими сапанами.",
+      "en": "Fresh frost formed firmly on frozen fields.",
+      "ru": "Свежий снег скрипел под старыми сапогами."
+    }
+  },
+  {
+    "id": 5013,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гострі гілки гойдаються гучно у грі.",
+      "en": "Sharp shrubs shook sharply in the storm.",
+      "ru": "Острые ветки громко качались в грозу."
+    }
+  },
+  {
+    "id": 5014,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Птахи плавно пурхають поміж пагорбів.",
+      "en": "Birds boldly bounced between bright bushes.",
+      "ru": "Птицы плавно порхали между холмами."
+    }
+  },
+  {
+    "id": 5015,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чаші чистилися чесною часткою.",
+      "en": "Clean cups clinked clearly in close company.",
+      "ru": "Чистые чаши чистились честной частью."
+    }
+  },
+  {
+    "id": 5016,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Блискучий блиск блискавки блимає близько.",
+      "en": "Bright bolts blinked boldly beside bushes.",
+      "ru": "Блестящие вспышки молний мерцали близко."
+    }
+  },
+  {
+    "id": 5017,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Густі гілки гулко гойдалися в гаю.",
+      "en": "Greedy groves growl gently in the garden.",
+      "ru": "Густые ветки громко качались в роще."
+    }
+  },
+  {
+    "id": 5018,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тиша тривала тихо, торкаючись тіней.",
+      "en": "Tranquil thoughts trembled through the trees.",
+      "ru": "Тишина длилась тихо, касаясь теней."
+    }
+  },
+  {
+    "id": 5019,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Срібні струмки співали серед сосен.",
+      "en": "Silver streams sang softly through the silent woods.",
+      "ru": "Серебряные ручьи пели среди сосен."
+    }
+  },
+  {
+    "id": 5020,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чіткий чепурний чотирикутник чистив частини.",
+      "en": "Strong storms struck suddenly near the shore.",
+      "ru": "Чёткий аккуратный квадрат чистил детали."
+    }
+  },
+  {
+    "id": 5021,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогняні вогні виблискували в вогкому вечорі.",
+      "en": "Fiery flames flickered fiercely in the foggy forest.",
+      "ru": "Огненные огни ярко мерцали в влажном вечере."
+    }
+  },
+  {
+    "id": 5022,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Потоки повітря проштовхували пелюстки поволі.",
+      "en": "Puffs of wind pushed petals gently past the pond.",
+      "ru": "Потоки воздуха медленно толкали лепестки возле пруда."
+    }
+  },
+  {
+    "id": 5023,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Горобці гомоніли гучно на гілках густих дерев.",
+      "en": "Sparrows sang sharply on the shady shrubs.",
+      "ru": "Воробьи громко щебетали на ветках густых деревьев."
+    }
+  },
+  {
+    "id": 5024,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Товсті троянди торкалися тонких трав.",
+      "en": "Thick thorny roses touched tender twigs.",
+      "ru": "Толстые шиповники касались тонких трав."
+    }
+  },
+  {
+    "id": 5025,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пісня птиці пролунав поміж пагорбів.",
+      "en": "The bird’s song rang beneath the rolling hills.",
+      "ru": "Песня птицы прозвучала среди холмов."
+    }
+  },
+  {
+    "id": 5026,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Світанок сяяв світлом синього неба.",
+      "en": "Sunrise shone softly under the sapphire sky.",
+      "ru": "Рассвет светил мягко под сапфировым небом."
+    }
+  },
+  {
+    "id": 5027,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чистий чай тихо тремтів у чашках.",
+      "en": "Fresh flowers flourished freely in the field.",
+      "ru": "Чистый чай тихо дрожал в чашках."
+    }
+  },
+  {
+    "id": 5028,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гарячі глини гойдалися гулко у горщику.",
+      "en": "Brisk breezes blew boldly beside blooming bushes.",
+      "ru": "Горячая глина громко звенела в горшке."
+    }
+  },
+  {
+    "id": 5029,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітер віяв вітрилами величезних човнів.",
+      "en": "Cold cliffs creaked clearly under crashing clouds.",
+      "ru": "Ветер дул сильно по большим парусам."
+    }
+  },
+  {
+    "id": 5030,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тонкі тіні танцювали тихо на траві.",
+      "en": "Deep drums drummed daringly during dusk.",
+      "ru": "Тонкие тени тихо танцевали на траве."
+    }
+  },
+  {
+    "id": 5031,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шум струмка шелестів серед старих стовбурів.",
+      "en": "Fresh frost formed fiercely on fallen foliage.",
+      "ru": "Шум ручья тихо шелестел среди старых стволов."
+    }
+  },
+  {
+    "id": 5032,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гілки гойдаються гучно у глибокому гаю.",
+      "en": "Zesty zucchinis zipped zealously through zones.",
+      "ru": "Ветки громко качались в густой роще."
+    }
+  },
+  {
+    "id": 5033,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пташине пір’я плавно падало під пагорби.",
+      "en": "Heavy horses hurried hastily homeward.",
+      "ru": "Птичье перо плавно падало под холмы."
+    }
+  },
+  {
+    "id": 5034,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чашки чекали чистого чаю.",
+      "en": "Jolly jays jumped jauntily from jagged junipers.",
+      "ru": "Чистые чашки ждали чистого чая."
+    }
+  },
+  {
+    "id": 5035,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогняний вітер віяв вогняні віхри.",
+      "en": "Fiery winds waved fiery whirlwinds.",
+      "ru": "Огненный ветер дул огненные вихри."
+    }
+  },
+  {
+    "id": 5036,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Потік пісень пролягав поміж пагорбів.",
+      "en": "Keen koalas kept kicking kindling quietly.",
+      "ru": "Поток песен протекал между холмов."
+    }
+  },
+  {
+    "id": 5037,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тихий тин торкався темних тіней.",
+      "en": "Lively lions leapt lightly over large logs.",
+      "ru": "Тихий забор касался тёмных теней."
+    }
+  },
+  {
+    "id": 5038,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чіткий чек лунко чувся у чарівному чаї.",
+      "en": "Misty mountains murmured mysterious melodies.",
+      "ru": "Чёткий щелчок четко слышался в чарующем чае."
+    }
+  },
+  {
+    "id": 5039,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гарячі гори гойдалися гучними грозами.",
+      "en": "Nimble nightingales nested near narrow niches.",
+      "ru": "Горячие горы гремели громкими грозами."
+    }
+  },
+  {
+    "id": 5040,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогні виблискували в вітряних вікнах.",
+      "en": "Orange owls observed ominous open oceans.",
+      "ru": "Огни мерцали в ветреных окнах."
+    }
+  },
+  {
+    "id": 5041,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пурхають павичі під палючим полуднем.",
+      "en": "Bold bears bravely battled beside big boulders.",
+      "ru": "Павлины пурхают под палящим полднем."
+    }
+  },
+  {
+    "id": 5042,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Сонце сіяло серед сріблястих сосен.",
+      "en": "Silent snakes slid slowly southward silently.",
+      "ru": "Солнце сияло среди серебристых сосен."
+    }
+  },
+  {
+    "id": 5043,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тихі тіні торкалися темних трав.",
+      "en": "Tiny turtles trudged tirelessly through thickets.",
+      "ru": "Тихие тени касались темных трав."
+    }
+  },
+  {
+    "id": 5044,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Відлуння вітру ввібрало велику вологу.",
+      "en": "Vast valleys vibrated vividly under violet vistas.",
+      "ru": "Эхо ветра впитало великую влагу."
+    }
+  },
+  {
+    "id": 5045,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Крепкі корені кликали крізь каміння.",
+      "en": "Fresh feathers floated freely from flying falcons.",
+      "ru": "Крепкие корни кричали сквозь камни."
+    }
+  },
+  {
+    "id": 5046,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пухнасті пташки плавно пурхали поміж пагорбів.",
+      "en": "Playful puppies pounced promptly past the park.",
+      "ru": "Пушистые птички плавно порхали между холмами."
+    }
+  },
+  {
+    "id": 5047,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Гомін гучний гуркотів у глибокій гущавині.",
+      "en": "Deep deserts danced dangerously during dusk.",
+      "ru": "Громкий гул гремел в глубокой глуши."
+    }
+  },
+  {
+    "id": 5048,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Свіжі світанкові сни сяяли серед садів.",
+      "en": "Fresh frogs flipped fast from forest floors.",
+      "ru": "Свежие рассветные сны сияли среди садов."
+    }
+  },
+  {
+    "id": 5049,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Грайливі гуси гуляли гомінко на галявині.",
+      "en": "Bright beams bounced boldly beyond boundaries.",
+      "ru": "Игристые гуси громко гуляли на поляне."
+    }
+  },
+  {
+    "id": 5050,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чаші чекали чаю серед чащі.",
+      "en": "Clear clouds crossed calmly over calm cliffs.",
+      "ru": "Чистые чаши ждали чая среди чащи."
+    }
+  },
+  {
+    "id": 5051,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Птахи поважно пурхали поміж пагорбів.",
+      "en": "Proud peacocks paraded past peaceful ponds.",
+      "ru": "Птицы важно порхали между холмами."
+    }
+  },
+  {
+    "id": 5052,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогні весело вигравали в вечірньому вітрі.",
+      "en": "Vivid violets vibrated vividly in valleys.",
+      "ru": "Огни весело играли в вечернем ветре."
+    }
+  },
+  {
+    "id": 5053,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тонкі тіні торкалися тихої трави.",
+      "en": "Tender trees twisted through thick thickets.",
+      "ru": "Тонкие тени касались тихой травы."
+    }
+  },
+  {
+    "id": 5054,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шум струмка шелестів серед старих стовбурів.",
+      "en": "Swift streams slipped silently beside stones.",
+      "ru": "Шум ручья шелестел среди старых стволов."
+    }
+  },
+  {
+    "id": 5055,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пухнасті пелюстки плавно падали на поле.",
+      "en": "Playful puppies pranced proudly past playgrounds.",
+      "ru": "Пушистые лепестки плавно падали на поле."
+    }
+  },
+  {
+    "id": 5056,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Глибокі глибини гомоніли гарячими голосами.",
+      "en": "Chilly clouds chased chilly chilly children.",
+      "ru": "Глубокие глубины гудели громкими голосами."
+    }
+  },
+  {
+    "id": 5057,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Світлі світанки сяяли серед соснових садів.",
+      "en": "Soft sounds sang softly beneath silver skies.",
+      "ru": "Светлые рассветы сияли среди сосновых садов."
+    }
+  },
+  {
+    "id": 5058,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пісні пташок плавно пролунали поміж пагорбів.",
+      "en": "Peaceful pigeons perched politely on pale pines.",
+      "ru": "Песни птиц плавно прозвучали среди холмов."
+    }
+  },
+  {
+    "id": 5059,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тихі трелі торкалися темної тиші.",
+      "en": "Tender twigs tapped tenaciously through twilight.",
+      "ru": "Тихие трели касались темной тишины."
+    }
+  },
+  {
+    "id": 5060,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чашки чекали чергового чаю.",
+      "en": "Bold bulls bellowed beside bubbling brooks.",
+      "ru": "Чистые чашки ждали следующего чая."
+    }
+  },
+  {
+    "id": 5063,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Бурхливі берези бентежать безмежні береги.",
+      "en": "Tall trees trembled tirelessly toward twilight.",
+      "ru": "Буйные берёзы бушуют вдоль берегов."
+    }
+  },
+  {
+    "id": 5064,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Глибокі гори гуділи гучним гулом.",
+      "en": "Nimble nightingales nestled near narrow nests.",
+      "ru": "Глубокие горы гудели громко."
+    }
+  },
+  {
+    "id": 5065,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Товсті дерева торкалися туманних тіней.",
+      "en": "Misty mountains masked many mighty moose.",
+      "ru": "Толстые деревья касались туманных теней."
+    }
+  },
+  {
+    "id": 5066,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Соковиті сливи спокусливо сяяли серед саду.",
+      "en": "Sweet strawberries softly swayed in sunlight.",
+      "ru": "Сочные сливы сияли среди сада."
+    }
+  },
+  {
+    "id": 5067,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Широкі шляхи шурхотіли шелестом.",
+      "en": "Sharp shadows shifted silently on streets.",
+      "ru": "Широкие дороги шуршали шелестом."
+    }
+  },
+  {
+    "id": 5068,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Птахи плавно пурхали поміж пагорбів.",
+      "en": "Keen kids kicked kites keenly in kind weather.",
+      "ru": "Птицы плавно порхали среди холмов."
+    }
+  },
+  {
+    "id": 5069,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чаші чекали чаю в чащі.",
+      "en": "Heavy hooves hammered hard on hollow hills.",
+      "ru": "Чистые чаши ждали чая в чащобе."
+    }
+  },
+  {
+    "id": 5070,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогняні вогні виблискували в вікнах.",
+      "en": "Fiery flames flickered fiercely in forests.",
+      "ru": "Огненные огни мерцали в окнах."
+    }
+  },
+  {
+    "id": 5071,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Сонячні світанки сяяли серед сосен.",
+      "en": "Sunny skies shone softly over seas.",
+      "ru": "Солнечные рассветы сияли среди сосен."
+    }
+  },
+  {
+    "id": 5072,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тихі тіні танцювали на траві.",
+      "en": "Thin twigs tapped tenaciously through thickets.",
+      "ru": "Тихие тени танцевали на траве."
+    }
+  },
+  {
+    "id": 5073,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шум струмка шелестів серед стовбурів.",
+      "en": "Swift streams slipped silently beside stones.",
+      "ru": "Шум ручья шелестел среди стволов."
+    }
+  },
+  {
+    "id": 5074,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Грайливі гуси гуляли гомінко на галявині.",
+      "en": "Graceful geese grazed gently on grasslands.",
+      "ru": "Игривые гуси громко гуляли на поляне."
+    }
+  },
+  {
+    "id": 5075,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чашки чекали чаю.",
+      "en": "Clear cups clinked clearly.",
+      "ru": "Чистые чашки ждали чая."
+    }
+  },
+  {
+    "id": 5076,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пташині пісні пролунали поміж пагорбів.",
+      "en": "Peaceful parrots perched politely on pines.",
+      "ru": "Птичьи песни прозвучали среди холмов."
+    }
+  },
+  {
+    "id": 5077,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогні весело вигравали в вечірньому вітрі.",
+      "en": "Vivid violets vibrated vividly in valleys.",
+      "ru": "Огни весело играли в вечернем ветре."
+    }
+  },
+  {
+    "id": 5078,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тонкі тіні торкалися тихої трави.",
+      "en": "Tender trees twisted through thick thickets.",
+      "ru": "Тонкие тени касались тихой травы."
+    }
+  },
+  {
+    "id": 5079,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пухнасті пелюстки плавно падали на поле.",
+      "en": "Playful puppies pranced proudly past playgrounds.",
+      "ru": "Пушистые лепестки плавно падали на поле."
+    }
+  },
+  {
+    "id": 5080,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Глибокі глибини гомоніли гарячими голосами.",
+      "en": "Great giants growled gently near glowing groves.",
+      "ru": "Глубокие глубины гудели громкими голосами."
+    }
+  },
+  {
+    "id": 5081,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Світлі світанки сяяли серед соснових садів.",
+      "en": "Soft sounds sang softly beneath silver skies.",
+      "ru": "Светлые рассветы сияли среди сосновых садов."
+    }
+  },
+  {
+    "id": 5082,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вітер вигинав високі верби в вечірньому парку.",
+      "en": "Whispering winds whipped wildly within woods.",
+      "ru": "Ветер изгибал высокие вербы в вечернем парке."
+    }
+  },
+  {
+    "id": 5083,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Крихітні краплини крапали кришталево чисто.",
+      "en": "Keen kittens kept knocking kindly on kettles.",
+      "ru": "Крошечные капли капали кристально чисто."
+    }
+  },
+  {
+    "id": 5084,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Світло світанку сяяло серед соснового лісу.",
+      "en": "Silent streams slid smoothly through shadows.",
+      "ru": "Свет рассвета сиял среди соснового леса."
+    }
+  },
+  {
+    "id": 5085,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чарівні черешні чекали червневого тепла.",
+      "en": "Cheerful children chased chirping chicks cheerfully.",
+      "ru": "Очаровательные черешни ждали июньского тепла."
+    }
+  },
+  {
+    "id": 5086,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Павуки поволі плели павутиння поміж пагорбів.",
+      "en": "Playful puppies pounced past pretty ponds.",
+      "ru": "Пауки медленно плели паутину между холмами."
+    }
+  },
+  {
+    "id": 5087,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Теплі тіні торкалися темної трави.",
+      "en": "Tender twigs tapped tenaciously through trees.",
+      "ru": "Теплые тени касались темной травы."
+    }
+  },
+  {
+    "id": 5088,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Світло сяяло серед старих стін.",
+      "en": "Soft sounds sang softly beside still streams.",
+      "ru": "Свет сиял среди старых стен."
+    }
+  },
+  {
+    "id": 5089,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Крики крилатих кротів луною лунали в лісі.",
+      "en": "Keen kestrels kept keenly kicking kites.",
+      "ru": "Крики крылатых кротов эхом разносились по лесу."
+    }
+  },
+  {
+    "id": 5090,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пісні птахів плавно пролунали поміж пагорбів.",
+      "en": "Peaceful parrots perched politely on pines.",
+      "ru": "Песни птиц плавно прозвучали среди холмов."
+    }
+  },
+  {
+    "id": 5091,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Тонкі трелі торкалися тихої тиші.",
+      "en": "Tender twigs tapped tenaciously through twilight.",
+      "ru": "Тонкие трели касались тихой тишины."
+    }
+  },
+  {
+    "id": 5092,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чашки чекали чергового чаю.",
+      "en": "Clear cups clinked clearly close by.",
+      "ru": "Чистые чашки ждали следующего чая."
+    }
+  },
+  {
+    "id": 5093,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Буйні берези бентежать безкрайні береги.",
+      "en": "Brisk breezes blew boldly beside blooming bushes.",
+      "ru": "Буйные берёзы бушуют вдоль берегов."
+    }
+  },
+  {
+    "id": 5094,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Вогняні вогні вибухали в вогких вікнах.",
+      "en": "Fiery flames flickered fiercely in forests.",
+      "ru": "Огненные огни мерцали в окнах."
+    }
+  },
+  {
+    "id": 5095,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Пухнасті пелюстки плавно падали на поле.",
+      "en": "Playful puppies pranced proudly past playgrounds.",
+      "ru": "Пушистые лепестки плавно падали на поле."
+    }
+  },
+  {
+    "id": 5096,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Глибокі глибини гомоніли гарячими голосами.",
+      "en": "Gentle giants glided gracefully over green gardens.",
+
+      "ru": "Глубокие глубины гудели громкими голосами."
+    }
+  },
+  {
+    "id": 5097,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Світлі світанки сяяли серед соснових садів.",
+      "en": "Fresh flakes fluttered freely from frozen fields.",
+
+      "ru": "Светлые рассветы сияли среди сосновых садов."
+    }
+  },
+  {
+    "id": 5098,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Птахи поважно пурхали поміж пагорбів.",
+      "en": "Deep drums drummed during dawn’s dim light.",
+
+      "ru": "Птицы важно порхали между холмами."
+    }
+  },
+  {
+    "id": 5099,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Чисті чаші чекали чаю в чащі.",
+      "en": "Calm cats cautiously crept close by.",
+
+      "ru": "Чистые чаши ждали чая в чащобе."
+    }
+  },
+  {
+    "id": 5100,
+    "sentence_type": "CONSONANT_BATTLE",
+    "sentence": {
+      "uk": "Шум струмка шелестів серед старих стовбурів.",
+      "en": "Brisk breezes brushed bright blue branches.",
+      "ru": "Шум ручья шелестел среди старых стволов."
+    }
+  }
+]

@@ -41,6 +41,7 @@ data class GameUi(
         Game.GameName.WORD_BY_CATEGORY -> R.drawable.im_list_of_categories
         Game.GameName.FUNNY_EXCUSE -> R.drawable.im_clown
         Game.GameName.BREATHLINE_CHALLENGE -> R.drawable.im_breathing
+        Game.GameName.CONSONANT_BATTLE -> R.drawable.im_buttle
         Game.GameName.ONE_WORD_MANY_MEANINGS -> R.drawable.im_lettering
         Game.GameName.FLIRTING_WITH_OBJECT -> R.drawable.im_lips
         Game.GameName.BOTH_THERE_AND_IN_BED -> R.drawable.im_bed

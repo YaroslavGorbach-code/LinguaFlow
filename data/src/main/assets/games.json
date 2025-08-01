@@ -1211,5 +1211,34 @@
       "STORYTELLING",
       "CREATIVE"
     ]
+  },
+  {
+    "id": 44,
+    "nameString": {
+      "uk": "Битва приголосних",
+      "en": "Consonant Battle",
+      "ru": "Битва согласных"
+    },
+    "task": {
+      "uk": "Промовляй речення чітко й впевнено. Усі приголосні мають «пробиватися» крізь мікрофон — без змазаних звуків!",
+      "en": "Say the sentence clearly and confidently. Every consonant should hit hard and punch through the mic — no muffled sounds!",
+      "ru": "Произноси фразы чётко и уверенно. Все согласные должны звучать отчётливо — без смазанных звуков!"
+    },
+    "example": {
+      "uk": "Дзвенів дзвін, доки Дмитро дивився в далечінь.",
+      "en": "Zoe zipped zigzagging zippers on the zebra-striped jacket.",
+      "ru": "Стая ловко затолкала сгоревшую тетрадь за занавес."
+    },
+    "description": {
+      "uk": "Це тренування для дикції й сили вимови. Ти отримаєш речення з твердими, дзвінкими чи шиплячими звуками. Завдання — вимовити їх так, щоб кожен звук звучав чітко, без ковтання й розмазування.",
+      "en": "This is a drill for your diction and vocal power. You'll get sentences full of hard, voiced, or sibilant consonants. Your job is to pronounce them crisply — no swallowed or smeared sounds.",
+      "ru": "Это тренировка дикции и силы произношения. Ты получишь фразы с твёрдыми, звонкими или шипящими звуками. Произнеси их так, чтобы каждый звук звучал отчётливо — без глотания и смазывания."
+    },
+    "minExperienceRequired": 3200,
+    "maxProgress": 5,
+    "name": "CONSONANT_BATTLE",
+    "skills": [
+      "DICTION"
+    ]
   }
 ]

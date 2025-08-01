@@ -50,6 +50,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.rememberLottieAnimatable
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -69,6 +70,8 @@ import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompl
 import com.korop.yaroslavhorach.exercises.exercise_completed.model.ExerciseCompletedViewState
 import com.korop.yaroslavhorach.ui.SpeakingLevel
 import com.korop.yaroslavhorach.ui.UiText
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 @Composable
 internal fun ExerciseCompletedRoute(
@@ -130,7 +133,7 @@ internal fun ExerciseCompletedScreen(
         MainAnimation()
         Spacer(Modifier.weight(1f))
         TitleWithProgress(state)
-        Spacer(Modifier.weight(0.7f))
+        Spacer(Modifier.weight(0.3f))
         TimeAndXp(state)
         Spacer(Modifier.weight(1f))
         Spacer(Modifier.height(20.dp))
@@ -157,14 +160,18 @@ private fun TimeAndXp(state: ExerciseCompletedViewState) {
     val xpAlpha = remember { Animatable(0f) }
 
     LaunchedEffect(Unit) {
-        timeAlpha.animateTo(
-            targetValue = 1f,
-            animationSpec = tween(durationMillis = 1000, delayMillis = 0)
-        )
-        xpAlpha.animateTo(
-            targetValue = 1f,
-            animationSpec = tween(durationMillis = 1000, delayMillis = 0)
-        )
+        launch {
+            timeAlpha.animateTo(
+                targetValue = 1f,
+                animationSpec = tween(durationMillis = 600, delayMillis = 600)
+            )
+        }
+        launch {
+            xpAlpha.animateTo(
+                targetValue = 1f,
+                animationSpec = tween(durationMillis = 600, delayMillis = 600)
+            )
+        }
     }
 
     Row(
@@ -253,13 +260,28 @@ private fun TitleWithProgress(state: ExerciseCompletedViewState) {
 @Composable
 private fun MainAnimation() {
     val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(LinguaAnimations.congrats))
+    val animationState = rememberLottieAnimatable()
+
+    LaunchedEffect(composition) {
+        while (true) {
+            if (composition != null) {
+                animationState.animate(
+                    composition = composition,
+                    iterations = 1
+                )
+            }
+            delay(3000)
+        }
+    }
+
     LottieAnimation(
         modifier = Modifier
             .fillMaxWidth()
             .height(200.dp)
             .padding(horizontal = 40.dp),
-        contentScale = ContentScale.Crop,
-        composition = composition
+        composition = composition,
+        progress = { animationState.progress },
+        contentScale = ContentScale.Crop
     )
 }
 

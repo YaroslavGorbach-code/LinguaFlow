@@ -28,6 +28,7 @@ data class Sentence(
         SELL_THE_MADNESS,
         FUNNY_EXCUSE,
         BREATHLINE_CHALLENGE,
+        CONSONANT_BATTLE,
         PROBLEMS
     }
 }
