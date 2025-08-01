@@ -129,6 +129,7 @@ fun LingoNavHost(
                 Game.GameName.UNUSUAL_PROBLEM_SOLVER,
                 Game.GameName.BREATHLINE_CHALLENGE,
                 Game.GameName.CONSONANT_BATTLE,
+                Game.GameName.WORD_CANNON,
                 Game.GameName.HOT_WORD -> {
                     navController.navigateToWordsGame(id)
                 }

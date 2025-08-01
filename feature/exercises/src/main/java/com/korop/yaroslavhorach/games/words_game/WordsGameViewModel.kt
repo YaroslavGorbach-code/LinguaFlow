@@ -95,6 +95,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.QUICK_ASSOCIATION,
                 Game.GameName.WORST_IN_THE_WORLD,
                 Game.GameName.WORD_BY_CATEGORY,
+                Game.GameName.WORD_CANNON,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)
                 }

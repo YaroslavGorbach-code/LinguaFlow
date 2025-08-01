@@ -9,6 +9,6 @@ data class Word(
     }
 
     enum class WordType {
-        NOUN, PLACE, HOT, ANTONIM, ALPHABET, CATEGORIES, PROFESSIONS
+        NOUN, PLACE, HOT, ANTONIM, ALPHABET, CATEGORIES, PROFESSIONS, HARD_TO_PRONOUNCE
     }
 }
