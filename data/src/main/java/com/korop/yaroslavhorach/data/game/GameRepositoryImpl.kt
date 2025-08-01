@@ -82,7 +82,7 @@ class GameRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getGame(gameId: Long): Game {
-        return cachedGames.find { it.id == gameId }!!
+        return getGames().first().find { it.id == gameId }!!
     }
 
     override fun getTodayChallenge(): Flow<Challenge> {
