@@ -10,8 +10,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
-import com.korop.yaroslavhorach.home.navigation.navigateToGames
-import com.korop.yaroslavhorach.home.navigation.navigateToHome
+import com.korop.yaroslavhorach.games.navigation.navigateToGames
+import com.korop.yaroslavhorach.games.navigation.navigateToHome
 import com.korop.yaroslavhorach.profile.navigation.navigateToProfile
 import com.korop.yaroslavhorach.linguaflow.navigation.TopLevelDestination
 import kotlinx.coroutines.CoroutineScope

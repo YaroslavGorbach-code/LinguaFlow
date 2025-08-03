@@ -39,10 +39,10 @@ import com.korop.yaroslavhorach.exercises.vocabulary.navigation.navigateToVocabu
 import com.korop.yaroslavhorach.exercises.vocabulary.navigation.vocabularyExerciseScreen
 import com.korop.yaroslavhorach.games.words_game.navigation.navigateToWordsGame
 import com.korop.yaroslavhorach.games.words_game.navigation.wordsGameScreen
-import com.korop.yaroslavhorach.home.navigation.HomeRoute
-import com.korop.yaroslavhorach.home.navigation.gamesScreen
-import com.korop.yaroslavhorach.home.navigation.homeScreen
-import com.korop.yaroslavhorach.home.navigation.navigateToGames
+import com.korop.yaroslavhorach.games.navigation.HomeRoute
+import com.korop.yaroslavhorach.games.navigation.gamesScreen
+import com.korop.yaroslavhorach.games.navigation.homeScreen
+import com.korop.yaroslavhorach.games.navigation.navigateToGames
 import com.korop.yaroslavhorach.profile.navigation.profileScreen
 import com.korop.yaroslavhorach.settings.navigation.navigateToSettings
 import com.korop.yaroslavhorach.settings.navigation.settingsScreen

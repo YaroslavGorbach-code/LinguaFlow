@@ -56,7 +56,7 @@ import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
-import com.korop.yaroslavhorach.home.R
+import com.korop.yaroslavhorach.games.R
 
 @Composable
 internal fun BlockPracticeRoute(

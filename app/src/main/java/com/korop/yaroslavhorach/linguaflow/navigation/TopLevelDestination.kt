@@ -5,8 +5,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
-import com.korop.yaroslavhorach.home.navigation.GamesRoute
-import com.korop.yaroslavhorach.home.navigation.HomeRoute
+import com.korop.yaroslavhorach.games.navigation.GamesRoute
+import com.korop.yaroslavhorach.games.navigation.HomeRoute
 import com.korop.yaroslavhorach.lingoFlow.R
 import com.korop.yaroslavhorach.profile.navigation.ProfileRoute
 import kotlin.reflect.KClass
