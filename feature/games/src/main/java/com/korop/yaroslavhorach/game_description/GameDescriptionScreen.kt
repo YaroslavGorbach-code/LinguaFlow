@@ -2,11 +2,6 @@ package com.korop.yaroslavhorach.game_description
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.FastOutSlowInEasing
-import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.core.animateFloat
-import androidx.compose.animation.core.infiniteRepeatable
-import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -28,7 +23,9 @@ import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -122,6 +119,7 @@ internal fun GameDescriptionScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .verticalScroll(rememberScrollState())
             .padding(horizontal = 20.dp)
             .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Vertical))
     ) {
@@ -322,7 +320,8 @@ private fun ColumnScope.Description(
         contentDescription = null,
     )
     AnimatedStarsRow(game)
-    Spacer(Modifier.Companion.weight(1f))
+    Spacer(Modifier.weight(1f))
+    Spacer(Modifier.height(20.dp))
     Text(
         modifier = Modifier
             .fillMaxWidth(),
@@ -340,9 +339,8 @@ private fun ColumnScope.Description(
         style = LinguaTypography.body3,
         color = MaterialTheme.colorScheme.typoPrimary()
     )
-
     Spacer(Modifier.weight(1f))
-
+    Spacer(Modifier.height(20.dp))
     if ((state.game?.game?.stars ?: 0) >= 3) {
         Text(
             text = stringResource(R.string.game_description_got_all_stars_text, state.game?.game?.getNameText(lang).toString()),
@@ -388,10 +386,10 @@ private fun ColumnScope.Description(
         stringResource(R.string.game_desctiption_start_with_no_tokens_btn_text)
     }
 
+    Spacer(Modifier.height(20.dp))
     PrimaryButton(text = btnText) {
         actioner(GameDescriptionAction.OnStartGameClicked)
     }
-
 }
 
 @Composable
@@ -459,6 +457,7 @@ fun ColumnScope.AnimatedStarsRow(game: GameUi) {
             tint = if (game.game.stars >= 3) Golden else MaterialTheme.colorScheme.secondaryIcon()
         )
     }
+    Spacer(Modifier.height(20.dp))
 }
 
 @Preview
