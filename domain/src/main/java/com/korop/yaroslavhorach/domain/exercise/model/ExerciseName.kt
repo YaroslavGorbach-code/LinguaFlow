@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.domain.exercise.model
 
 import com.korop.yaroslavhorach.domain.exercise_content.model.TongueTwister
+import com.korop.yaroslavhorach.domain.game.model.Game
 
 enum class ExerciseName() {
     // Block 1: start conversation
@@ -111,6 +112,15 @@ fun ExerciseName.mapToTongueTwistDifficulty(): TongueTwister.Difficulty {
         ExerciseName.TONGUE_TWISTERS_EASY -> TongueTwister.Difficulty.EASY
         ExerciseName.TONGUE_TWISTERS_MEDIUM -> TongueTwister.Difficulty.MEDIUM
         ExerciseName.TONGUE_TWISTERS_HARD -> TongueTwister.Difficulty.HARD
+        else -> error(this.name + "is not a tongue twister")
+    }
+}
+
+fun ExerciseName.mapToTongueTwistExerciseNameToGameName(): Game.GameName {
+    return when (this) {
+        ExerciseName.TONGUE_TWISTERS_EASY -> Game.GameName.TONGUE_TWISTERS_EASY
+        ExerciseName.TONGUE_TWISTERS_MEDIUM -> Game.GameName.TONGUE_TWISTERS_MEDIUM
+        ExerciseName.TONGUE_TWISTERS_HARD ->Game.GameName.TONGUE_TWISTERS_HARD
         else -> error(this.name + "is not a tongue twister")
     }
 }

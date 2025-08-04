@@ -5,6 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navOptions
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.GameUnlockedSuccessRoute
+import com.korop.yaroslavhorach.domain.game.model.Game
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -20,7 +21,7 @@ fun NavController.navigateToGameUnlockedSuccess(gameId: Long) {
 
 fun NavGraphBuilder.gameUnlockedScreen(
     onNavigateBack: () -> Unit,
-    onNavigateToGame: (id: Long) -> Unit,
+    onNavigateToGame: (id: Long, name: Game.GameName) -> Unit,
 ) {
     composable<GameUnlockedSuccessNavigation> {
         GameUnlockedSuccessRoute(

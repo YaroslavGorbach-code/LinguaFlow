@@ -8,6 +8,7 @@ import com.korop.yaroslavhorach.common.helpers.SimpleTimer
 import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.korop.yaroslavhorach.domain.exercise.model.Exercise
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.korop.yaroslavhorach.domain.exercise.model.mapToTongueTwistDifficulty
 import com.korop.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.korop.yaroslavhorach.domain.exercise_content.model.TongueTwister
@@ -57,18 +58,20 @@ class TongueTwisterExerciseViewModel @Inject constructor(
             (overAllProgress.toFloat() / overAllMaxProgress.toFloat())
         }
 
-    override val state: StateFlow<TongueTwisterExerciseViewState> = combine(
+    override val state: StateFlow<TongueTwisterExerciseViewState> = com.korop.yaroslavhorach.common.utill.combine(
         twistSpeakingMod,
         overAllProgressValue,
         currentTwist,
         exerciseRepository.getBlock(),
+        currentExercise,
         uiMessageManager.message
-    ) { speakingMod, progress, twist, block, message ->
+    ) { speakingMod, progress, twist, block, exercise, message ->
         TongueTwisterExerciseViewState(
             progress = progress,
             twistSpeakingMod = speakingMod,
             block = block,
             twist = twist,
+            exerciseName = exercise?.name ?: ExerciseName.TONGUE_TWISTERS_EASY,
             uiMessage = message
         )
     }.stateIn(

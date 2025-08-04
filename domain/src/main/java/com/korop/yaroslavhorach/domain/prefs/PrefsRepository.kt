@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.domain.prefs
 
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.model.Avatar
 import com.korop.yaroslavhorach.domain.prefs.model.UserData
 import kotlinx.coroutines.flow.Flow
@@ -31,4 +32,5 @@ interface PrefsRepository {
     suspend fun changeLanguage(lang: String)
     suspend fun change15MinutesTopicDailyTrainingActive(isActive: Boolean)
     suspend fun changeMixDailyTrainingActive(isActive: Boolean)
+    suspend fun markGameAsCompleted(game: Game.GameName)
 }

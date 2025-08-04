@@ -61,6 +61,7 @@ import com.korop.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.games.words_game.model.WordsGameAction
 import com.korop.yaroslavhorach.games.words_game.model.WordsGameUiMessage
@@ -71,7 +72,7 @@ import java.util.Locale
 internal fun WordsGameRoute(
     viewModel: WordsGameViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
-    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit
+    onNavigateToExerciseResult: (time: Long, experience: Int, gameName: Game.GameName) -> Unit
 ) {
     val wordsGameViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -93,13 +94,19 @@ internal fun WordsGameRoute(
 internal fun WordsGameScreen(
     screenState: WordsGameViewState,
     onMessageShown: (id: Long) -> Unit,
-    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit,
+    onNavigateToExerciseResult: (time: Long, experience: Int, gameName: Game.GameName) -> Unit,
     actioner: (WordsGameAction) -> Unit
 ) {
     screenState.uiMessage?.let { uiMessage ->
         when (val message = uiMessage.message) {
             is WordsGameUiMessage.NavigateToExerciseResult -> {
-                onNavigateToExerciseResult(message.time, message.experience)
+                screenState.game?.name?.let { name ->
+                    onNavigateToExerciseResult(
+                        message.time,
+                        message.experience,
+                        name
+                    )
+                }
                 onMessageShown(uiMessage.id)
             }
         }
@@ -582,7 +589,7 @@ private fun SpeakingExercisePreview() {
                 WordsGameScreen(
                     screenState = WordsGameViewState.PreviewSpeaking,
                     {},
-                    { _, _ -> },
+                    { _, _, _-> },
                     {})
             }
         }

@@ -6,6 +6,7 @@ import com.korop.yaroslavhorach.datastore.IntList
 import com.korop.yaroslavhorach.datastore.UserPreferences
 import com.korop.yaroslavhorach.datastore.prefs.model.UserData
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
+import com.korop.yaroslavhorach.domain.game.model.Game
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.map
@@ -192,6 +193,25 @@ class LinguaPrefsDataSource @Inject constructor(private val userPreferences: Dat
 
     fun getStarsForExercise(exerciseName: ExerciseBlock): Flow<Int> {
         return userPreferences.data.map { it.starsMap[exerciseName.name] ?: 0 }
+    }
+
+    suspend fun increaseGameCompletedTimes(gameName: Game.GameName) {
+        userPreferences.updateData { prefs ->
+            val currentTimes = prefs.gamesCompletedTimesMap[gameName.name] ?: 0
+            val updatedGameCompletedTimes = currentTimes + 1
+
+            val updatedMap = prefs.gamesCompletedTimesMap.toMutableMap().apply {
+                this[gameName.name] = updatedGameCompletedTimes
+            }
+
+            prefs.toBuilder()
+                .putAllGamesCompletedTimes(updatedMap)
+                .build()
+        }
+    }
+
+    fun getCompletedTimesForGame(name: Game.GameName): Flow<Int> {
+        return userPreferences.data.map { it.gamesCompletedTimesMap[name.name] ?: 0 }
     }
 
     suspend fun changePremiumState(isPremium: Boolean) {

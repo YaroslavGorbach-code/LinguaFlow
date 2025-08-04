@@ -1,4 +1,4 @@
-package com.korop.yaroslavhorach.games.model
+package com.korop.yaroslavhorach.game_description.model
 
 import com.korop.yaroslavhorach.designsystem.R
 import com.korop.yaroslavhorach.designsystem.extentions.nameString
@@ -6,7 +6,6 @@ import com.korop.yaroslavhorach.domain.game.model.Game
 
 data class GameUi(
     val game: Game,
-    val isDescriptionVisible: Boolean = false,
     val isChallengeGame: Boolean = false,
     val isChallengeGameCompleted: Boolean = false
 ) {

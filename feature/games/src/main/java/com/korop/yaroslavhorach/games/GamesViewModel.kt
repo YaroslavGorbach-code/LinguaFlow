@@ -11,7 +11,7 @@ import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.holders.OpenGameDetailsHolder
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.games.model.GameSort
-import com.korop.yaroslavhorach.games.model.GameUi
+import com.korop.yaroslavhorach.game_description.model.GameUi
 import com.korop.yaroslavhorach.games.model.GamesAction
 import com.korop.yaroslavhorach.games.model.GamesUiMessage
 import com.korop.yaroslavhorach.games.model.GamesViewState
@@ -52,6 +52,9 @@ class GamesViewModel @Inject constructor(
         val sorts = getPermanentSorts().toMutableList().apply {
             if (favorites.isEmpty().not()) {
                 add(0, GameSort.FAVORITE)
+            }
+            if (selectedSort == GameSort.FAVORITE && favorites.isEmpty()) {
+                this@GamesViewModel.selectedSort.value = null
             }
             if (todayChallenge.status.started && todayChallenge.status.completed.not()) {
                 add(0, GameSort.DAILY_CHALLENGE)
@@ -98,17 +101,6 @@ class GamesViewModel @Inject constructor(
     )
 
     init {
-        OpenGameDetailsHolder.gameIdToOpen
-            .onEach {
-                if (it != null) {
-                    kotlinx.coroutines.delay(500)
-                    changeDescriptionState(it)
-                    uiMessageManager.emitMessage(UiMessage(GamesUiMessage.ScrollToAndShowDescription(it)))
-                    OpenGameDetailsHolder.gameIdToOpen.value = null
-                }
-            }
-            .launchIn(viewModelScope)
-
         gameRepository.getGames()
             .map { it.map(::GameUi) }
             .onEach { games.value = it }
@@ -124,31 +116,19 @@ class GamesViewModel @Inject constructor(
                         }
                     }
                     is GamesAction.OnGameClicked -> {
-                        changeDescriptionState(event.gameUi.game.id)
-                    }
-                    is GamesAction.OnStartGameClicked -> {
-                        if (event.useToken) {
-                            if ((state.value.availableTokens > 0)){
-                                uiMessageManager.emitMessage(
-                                    UiMessage(
-                                        GamesUiMessage.NavigateToGame(
-                                            event.gameUi.game.id,
-                                            event.gameUi.game.name
-                                        )
-                                    )
-                                )
-                            }
-                            prefsRepository.useToken()
-                        } else {
-                            uiMessageManager.emitMessage(
-                                UiMessage(
-                                    GamesUiMessage.NavigateToGame(
-                                        event.gameUi.game.id,
-                                        event.gameUi.game.name
-                                    )
-                                )
-                            )
+                        val isChallengeExercise = when (state.value.challenge) {
+                            is ChallengeExerciseMix -> event.gameUi.isChallengeGame && event.gameUi.isChallengeGameCompleted.not()
+                            is ChallengeTimeLimited -> event.gameUi.game.skills.contains((state.value.challenge as ChallengeTimeLimited).theme)
+                            null -> false
                         }
+
+                        val useToken = if (state.value.challenge?.status?.inProgress == true) {
+                            state.value.isUserPremium.not() && isChallengeExercise.not()
+                        } else {
+                            state.value.isUserPremium.not()
+                        }
+
+                        uiMessageManager.emitMessage(UiMessage(GamesUiMessage.NavigateToGameDescription(event.gameUi.game.id, useToken)))
                     }
                     is GamesAction.OnSortSelected -> {
                         if (selectedSort.value == event.item) {
@@ -157,16 +137,6 @@ class GamesViewModel @Inject constructor(
                             selectedSort.value = event.item
                         }
                     }
-                    is GamesAction.OnAddToFavoritesClicked -> {
-                        prefsRepository.addGameToFavorites(event.game.game.id)
-                    }
-                    is GamesAction.OnRemoveFavoritesClicked -> {
-                        if (selectedSort.value == GameSort.FAVORITE && event.game.isDescriptionVisible) {
-                            changeDescriptionState(event.game.game.id)
-                        }
-
-                        prefsRepository.removeGameFromFavorites(event.game.game.id)
-                    }
                     is GamesAction.OnGoToDailyChallengeExercises -> {
                         selectedSort.value = GameSort.DAILY_CHALLENGE
                     }
@@ -174,18 +144,6 @@ class GamesViewModel @Inject constructor(
                 }
             }
             .launchIn(viewModelScope)
-    }
-
-    private fun changeDescriptionState(id: Long) {
-        games.update { gameList ->
-            gameList.map { gameUi ->
-                if (gameUi.game.id == id) {
-                    gameUi.copy(isDescriptionVisible = gameUi.isDescriptionVisible.not())
-                } else {
-                    gameUi.copy(isDescriptionVisible = false)
-                }
-            }
-        }
     }
 
     private fun filterGames(

@@ -44,13 +44,14 @@ import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.components.TextButton
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaAnimations
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
+import com.korop.yaroslavhorach.domain.game.model.Game
 import java.util.Locale
 
 @Composable
 internal fun GameUnlockedSuccessRoute(
     viewModel: GameUnlockedSuccessViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
-    onNavigateToGame: (id: Long) -> Unit,
+    onNavigateToGame: (id: Long, name: Game.GameName) -> Unit,
 ) {
     val viewState by viewModel.state.collectAsStateWithLifecycle()
     val activity = LocalContext.current as Activity
@@ -62,7 +63,7 @@ internal fun GameUnlockedSuccessRoute(
                     viewModel.adManager.showInterstitial(activity)
                     viewModel.clearMessage(uiMessage.id)
                 }
-                onNavigateToGame(message.id)
+                viewState.game?.name?.let { onNavigateToGame(message.id, it) }
             }
             is GameUnlockedSuccessUiMessage.NavigateBack -> {
                 LaunchedEffect(uiMessage.id) {

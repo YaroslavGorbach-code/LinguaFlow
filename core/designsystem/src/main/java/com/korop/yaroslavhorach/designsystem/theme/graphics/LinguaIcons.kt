@@ -22,4 +22,7 @@ object LinguaIcons {
     val Token = R.drawable.ic_token
     val icStar = R.drawable.ic_star
     val icStarFilled = R.drawable.ic_star_filled
+    val LockColor = R.drawable.ic_lock_color
+    val Favorite = R.drawable.ic_favorite
+    val FavoriteFilled = R.drawable.ic_favorite_filled
 }

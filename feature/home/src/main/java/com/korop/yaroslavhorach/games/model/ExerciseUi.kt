@@ -2,7 +2,7 @@ package com.korop.yaroslavhorach.games.model
 
 import com.korop.yaroslavhorach.domain.exercise.model.Exercise
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
-import com.korop.yaroslavhorach.games.R
+import com.korop.yaroslavhorach.home.R
 
 class ExerciseUi(
     val exercise: Exercise

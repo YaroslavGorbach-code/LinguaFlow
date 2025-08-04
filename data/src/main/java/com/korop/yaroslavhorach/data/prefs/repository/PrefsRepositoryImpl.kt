@@ -3,6 +3,7 @@ package com.korop.yaroslavhorach.data.prefs.repository
 import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
 import com.korop.yaroslavhorach.datastore.prefs.model.asDomainModel
 import com.korop.yaroslavhorach.designsystem.R
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import com.korop.yaroslavhorach.domain.prefs.model.Avatar
 import com.korop.yaroslavhorach.domain.prefs.model.UserData
@@ -122,6 +123,10 @@ class PrefsRepositoryImpl @Inject constructor(
 
     override suspend fun changeMixDailyTrainingActive(isActive: Boolean) {
         prefsDataSource.changeMixTrainingAvailable(isActive)
+    }
+
+    override suspend fun markGameAsCompleted(game: Game.GameName) {
+        prefsDataSource.increaseGameCompletedTimes(game)
     }
 
     override fun getAvatars(): List<Avatar> {

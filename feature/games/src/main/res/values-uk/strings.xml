@@ -6,7 +6,7 @@
     <string name="not_active_exercise_description_text">Пройди всі попередні рівні, щоб відкрити доступ</string>
     <string name="not_active_exercise_btn_text">Недоступно</string>
     <string name="sort_daily_chalange_text">🔥 Щоденне завдання</string>
-    <string name="sort_favorite_text">⭐ Улюблене</string>
+    <string name="sort_favorite_text">❤️ Улюблене</string>
     <string name="sort_creativity_text">🧠 Креативність</string>
     <string name="sort_humor_text">😄 Почуття гумору</string>
     <string name="sort_story_text">📖 Розповідання історій</string>
@@ -33,4 +33,13 @@
     <string name="game_description_xp_requried_title_text">Заробіть ще трохи XP або відкрийте Преміум, щоб грати без обмежень!</string>
     <string name="xp_postfix_text"> XP.</string>
     <string name="game_description_no_tokens_premium_btn_text">👑 ВІДКРИТИ З ПРЕМІУМ</string>
+    <plurals name="complete_more_times_to_star">
+        <item quantity="one">Пройди вправу ще %d раз, щоб отримати зірку!</item>
+        <item quantity="few">Пройди вправу ще %d рази, щоб отримати зірку!</item>
+        <item quantity="many">Пройди вправу ще %d разів, щоб отримати зірку!</item>
+        <item quantity="other">Пройди вправу ще %d рази, щоб отримати зірку!</item>
+    </plurals>
+    <string name="game_description_got_all_stars_text">🎉 Чудово! Ти отримав усі 3 зірки — тепер ти справжній профі в %1$s!</string>
+    <string name="game_description_locked_message_text">Зароби ще %1$s XP, щоб відкрити цю гру</string>
+    <string name="game_description_locked_title_text">Зароби трохи більше XP або оформи Premium, щоб грати без обмежень!</string>
 </resources>

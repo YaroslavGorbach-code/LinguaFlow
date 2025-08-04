@@ -13,7 +13,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -63,7 +62,6 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.KellyGreen
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -72,7 +70,6 @@ import com.korop.yaroslavhorach.designsystem.theme.components.BoxWithStripes
 import com.korop.yaroslavhorach.designsystem.theme.components.InactiveButton
 import com.korop.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.korop.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
-import com.korop.yaroslavhorach.designsystem.theme.components.PremiumButton
 import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.components.StaticTooltip
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
@@ -84,8 +81,8 @@ import com.korop.yaroslavhorach.domain.game.model.Challenge
 import com.korop.yaroslavhorach.domain.game.model.ChallengeExerciseMix
 import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
 import com.korop.yaroslavhorach.domain.game.model.Game
+import com.korop.yaroslavhorach.game_description.model.GameUi
 import com.korop.yaroslavhorach.games.model.GameSort
-import com.korop.yaroslavhorach.games.model.GameUi
 import com.korop.yaroslavhorach.games.model.GamesAction
 import com.korop.yaroslavhorach.games.model.GamesUiMessage
 import com.korop.yaroslavhorach.games.model.GamesViewState
@@ -95,8 +92,7 @@ import java.util.Locale
 
 @Composable
 internal fun GamesRoute(
-    onNavigateToGame: (gameId: Long, gameName: Game.GameName) -> Unit,
-    onNavigateToPremium: () -> Unit,
+    onNavigateToGameDescription: (gameId: Long, useToken: Boolean) -> Unit,
     viewModel: GamesViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -108,9 +104,6 @@ internal fun GamesRoute(
             listState,
             actioner = { action ->
                 when (action) {
-                    is GamesAction.OnPremiumBtnClicked -> {
-                        onNavigateToPremium()
-                    }
                     else -> viewModel.submitAction(action)
                 }
             })
@@ -118,19 +111,9 @@ internal fun GamesRoute(
 
     state.uiMessage?.let { uiMessage ->
         when (val message = uiMessage.message) {
-            is GamesUiMessage.NavigateToGame -> {
-                onNavigateToGame(message.gameId, message.gameName)
+            is GamesUiMessage.NavigateToGameDescription -> {
                 viewModel.clearMessage(uiMessage.id)
-            }
-            is GamesUiMessage.ScrollToAndShowDescription -> {
-                val indexToScroll = state.gamesForDisplay.indexOfFirst { it.game.id == message.gameId }
-
-                LaunchedEffect(Unit) {
-                    if (indexToScroll > 1) {
-                        listState.scrollToItem(indexToScroll)
-                    }
-                    viewModel.clearMessage(uiMessage.id)
-                }
+                onNavigateToGameDescription(message.gameId, message.useToken)
             }
         }
     }
@@ -292,7 +275,7 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
     LaunchedEffect(listState) {
 
         snapshotFlow {
-             listState.firstVisibleItemScrollOffset == 0
+            listState.firstVisibleItemScrollOffset == 0
         }.collect { atTop ->
             isCollapsed.value = !atTop
         }
@@ -314,9 +297,11 @@ private fun Challenge(state: GamesViewState, listState: LazyListState, actioner:
                 state.challenge?.status?.started?.not() == true -> {
                     ChallengeNotStarted(state, state.challenge, actioner)
                 }
+
                 state.challenge?.status?.started == true && state.challenge.status.completed.not() -> {
                     ChallengeStarted(state, state.challenge, actioner)
                 }
+
                 state.challenge?.status?.completed == true -> {
                     ChallengeCompleted(state, state.challenge)
                 }
@@ -390,7 +375,7 @@ private fun ChallengeStarted(
     actioner: (GamesAction) -> Unit
 ) {
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
-    val challengeGames =  state.allGames
+    val challengeGames = state.allGames
         .filter { it.isChallengeGame }
         .joinToString(separator = "\n") { "• ${it.game.getNameText(lang)}" }
 
@@ -405,6 +390,7 @@ private fun ChallengeStarted(
                 0f
             }
         }
+
         is ChallengeTimeLimited -> {
             challenge.progressInMinutes.toFloat() / challenge.durationMinutes.toFloat()
         }
@@ -417,10 +403,10 @@ private fun ChallengeStarted(
             .fillMaxWidth()
             .height(32.dp)
     ) {
-        if (challenge is ChallengeTimeLimited){
+        if (challenge is ChallengeTimeLimited) {
             Text(
                 modifier = Modifier.align(Alignment.Center),
-                text = challenge.progressInMinutes.toString() + " "+  stringResource(R.string.minute_short_text),
+                text = challenge.progressInMinutes.toString() + " " + stringResource(R.string.minute_short_text),
                 color = MaterialTheme.colorScheme.typoPrimary(),
                 textAlign = TextAlign.Center,
                 style = LinguaTypography.body5
@@ -493,7 +479,6 @@ private fun Game(
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
     Column {
-        GameDescription(state, game, actioner)
         val isEnable = state.experience >= game.game.minExperienceRequired || state.isUserPremium
 
         BoxWithStripes(
@@ -544,7 +529,8 @@ private fun Game(
                     )
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = stringResource(R.string.game_item_skill_sufix_text) + " " + game.skills.map { it.asString() }.joinToString(separator = ", "),
+                        text = stringResource(R.string.game_item_skill_sufix_text) + " " + game.skills.map { it.asString() }
+                            .joinToString(separator = ", "),
                         color = MaterialTheme.colorScheme.typoSecondary(),
                         style = LinguaTypography.body4
                     )
@@ -557,7 +543,7 @@ private fun Game(
                         painter = painterResource(game.iconResId),
                         contentDescription = ""
                     )
-                    if (isEnable.not()){
+                    if (isEnable.not()) {
                         Icon(
                             modifier = Modifier
                                 .align(Alignment.TopEnd)
@@ -572,202 +558,6 @@ private fun Game(
                     }
                 }
             }
-        }
-    }
-}
-
-@Composable
-private fun ColumnScope.GameDescription(
-    state: GamesViewState,
-    game: GameUi,
-    actioner: (GamesAction) -> Unit
-) {
-    val isChallengeExercise = when (state.challenge) {
-        is ChallengeExerciseMix -> game.isChallengeGame && game.isChallengeGameCompleted.not()
-        is ChallengeTimeLimited -> game.game.skills.contains(state.challenge.theme)
-        null -> false
-    }
-
-    val useToken = if (state.challenge?.status?.inProgress == true) {
-        state.isUserPremium.not() && isChallengeExercise.not()
-    } else {
-        state.isUserPremium.not()
-    }
-
-    AnimatedVisibility(
-        visible = game.isDescriptionVisible,
-        enter = fadeIn() + expandVertically(),
-        exit = fadeOut() + shrinkVertically()
-    ) {
-        when {
-            state.experience < game.game.minExperienceRequired && state.isUserPremium.not() -> {
-                GameDescriptionNotEnable(state, game, actioner)
-            }
-            state.availableTokens <= 0 && useToken -> {
-                DameDescriptionNoTokens(actioner)
-            }
-            else -> {
-                GameDescriptionEnable(game, state, actioner)
-            }
-        }
-    }
-
-    if (game.isDescriptionVisible) Spacer(Modifier.height(14.dp))
-}
-
-@Composable
-private fun GameDescriptionEnable(
-    game: GameUi,
-    state: GamesViewState,
-    actioner: (GamesAction) -> Unit
-) {
-    val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
-
-    StaticTooltip(
-        enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.surface,
-        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-        triangleAlignment = Alignment.Start,
-        contentPadding = 20.dp,
-        cornerRadius = 12.dp,
-        paddingHorizontal = 0.dp,
-        borderSize = 1.dp
-    ) {
-        Row(modifier = Modifier.fillMaxWidth()) {
-            Text(
-                modifier = Modifier
-                    .align(Alignment.CenterVertically)
-                    .weight(1f),
-                text = game.game.getNameText(lang),
-                color = MaterialTheme.colorScheme.typoPrimary(),
-                style = LinguaTypography.subtitle2
-            )
-            if (state.favorites.contains(game.game.id)) {
-                Icon(
-                    modifier = Modifier
-                        .size(24.dp)
-                        .clickable { actioner(GamesAction.OnRemoveFavoritesClicked(game)) },
-                    painter = painterResource(LinguaIcons.icStarFilled),
-                    contentDescription = null,
-                    tint = Golden
-                )
-            } else {
-                Icon(
-                    modifier = Modifier
-                        .size(24.dp)
-                        .clickable { actioner(GamesAction.OnAddToFavoritesClicked(game)) },
-                    painter = painterResource(LinguaIcons.icStar),
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primaryIcon()
-                )
-            }
-        }
-
-        Spacer(Modifier.height(6.dp))
-        Text(
-            text = game.game.getDescriptionText(lang),
-            color = MaterialTheme.colorScheme.typoSecondary(),
-            style = LinguaTypography.body4
-        )
-        Spacer(Modifier.height(20.dp))
-
-        val isChallengeExercise = when (state.challenge) {
-            is ChallengeExerciseMix -> game.isChallengeGame && game.isChallengeGameCompleted.not()
-            is ChallengeTimeLimited -> game.game.skills.contains(state.challenge.theme)
-            null -> false
-        }
-
-        val useToken = if (state.challenge?.status?.inProgress == true) {
-            state.isUserPremium.not() && isChallengeExercise.not()
-        } else {
-            state.isUserPremium.not()
-        }
-
-        val btnText = if (useToken) {
-            stringResource(R.string.game_description_start_btn_text)
-        } else {
-            stringResource(R.string.game_desctiption_start_with_no_tokens_btn_text)
-        }
-
-        PrimaryButton(text = btnText) {
-            actioner(GamesAction.OnStartGameClicked(game, useToken))
-        }
-    }
-}
-
-@Composable
-private fun DameDescriptionNoTokens(actioner: (GamesAction) -> Unit) {
-    StaticTooltip(
-        enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.onBackground,
-        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
-        triangleAlignment = Alignment.Start,
-        contentPadding = 20.dp,
-        cornerRadius = 12.dp,
-        paddingHorizontal = 0.dp,
-        borderSize = 0.dp
-    ) {
-        Text(
-            text = stringResource(R.string.game_description_tokens_are_out_text),
-            color = MaterialTheme.colorScheme.typoPrimary(),
-            textAlign = TextAlign.Center,
-            style = LinguaTypography.subtitle2
-        )
-        Spacer(Modifier.height(6.dp))
-        Text(
-            text = stringResource(R.string.game_desctiption_tokens_are_out_subtitle_text),
-            color = MaterialTheme.colorScheme.typoSecondary(),
-            textAlign = TextAlign.Center,
-            style = LinguaTypography.body4
-        )
-        Spacer(Modifier.height(20.dp))
-
-        PremiumButton(text = stringResource(R.string.game_description_premium_btn_text)) {
-            actioner(GamesAction.OnPremiumBtnClicked)
-        }
-    }
-}
-
-@Composable
-private fun GameDescriptionNotEnable(
-    state: GamesViewState,
-    game: GameUi,
-    actioner: (GamesAction) -> Unit
-) {
-    StaticTooltip(
-        enableFloatAnimation = true,
-        backgroundColor = MaterialTheme.colorScheme.surface,
-        triangleAlignment = Alignment.Start,
-        contentPadding = 20.dp,
-        cornerRadius = 12.dp,
-        paddingHorizontal = 0.dp,
-        borderSize = 1.dp
-    ) {
-        Text(
-            text = stringResource(R.string.game_description_xp_requried_title_text),
-            color = MaterialTheme.colorScheme.typoPrimary(),
-            textAlign = TextAlign.Center,
-            style = LinguaTypography.body3
-        )
-        Spacer(Modifier.height(20.dp))
-
-        LinguaProgressBar(
-            modifier = Modifier.fillMaxWidth(),
-            progress = (state.experience.toFloat() / game.game.minExperienceRequired.toFloat()),
-            progressColor = Golden,
-            progressShadow = Color(0xFFE8BC02)
-        ) {
-            Text(
-                modifier = Modifier.align(Alignment.Center),
-                text = state.experience.toString() + "/" + game.game.minExperienceRequired.toString() + stringResource(R.string.xp_postfix_text),
-                color = MaterialTheme.colorScheme.typoPrimary(),
-                textAlign = TextAlign.Center,
-                style = LinguaTypography.body5
-            )
-        }
-        Spacer(Modifier.height(20.dp))
-        PremiumButton(text = stringResource(R.string.game_description_no_tokens_premium_btn_text)) {
-            actioner(GamesAction.OnPremiumBtnClicked)
         }
     }
 }

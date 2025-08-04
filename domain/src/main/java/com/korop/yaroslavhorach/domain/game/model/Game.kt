@@ -8,9 +8,37 @@ data class Game(
     private val description: Map<String, String>,
     val minExperienceRequired: Int = 0,
     val maxProgress: Int = 10,
+    val completedTimes: Int,
     val name: GameName,
     val skills: List<Skill>,
 ) {
+    val stars: Int
+        get() =
+            when {
+                completedTimes >= 15 -> 3
+                completedTimes >= 10 -> 2
+                completedTimes >= 5 -> 1
+                else -> 0
+            }
+
+    val progressTillNextStar: Float
+        get() {
+            return when {
+                stars >= 3 -> 1f
+                else -> {
+                    val base = stars * 5
+                    ((completedTimes - base).toFloat() / 5).coerceIn(0f, 1f)
+                }
+            }
+        }
+
+    val triesLeftTillNextStar: Int
+        get() {
+            return when {
+                stars >= 3 -> 0
+                else -> ((stars + 1) * 5 - completedTimes).coerceAtLeast(0)
+            }
+        }
 
     fun getNameText(lang: String): String {
         return nameString[lang] ?: nameString["en"] ?: ""

@@ -5,6 +5,7 @@ import com.korop.yaroslavhorach.domain.game.model.Challenge
 import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.domain.game.model.Game.GameName
 import com.korop.yaroslavhorach.domain.game.model.Game.Skill
+import com.korop.yaroslavhorach.game_description.model.GameUi
 
 data class GamesViewState(
     val gamesForDisplay: List<GameUi>,
@@ -31,6 +32,7 @@ data class GamesViewState(
                 maxProgress = 10,
                 name = GameName.HOT_WORD,
                 skills = listOf(Skill.CREATIVE, Skill.STORYTELLING),
+                completedTimes = 1,
             )
         )
         private val game2 = GameUi(
@@ -43,6 +45,7 @@ data class GamesViewState(
                 maxProgress = 10,
                 name = GameName.HOT_WORD,
                 skills = listOf(Skill.CREATIVE, Skill.STORYTELLING),
+                completedTimes = 0
             )
         )
 

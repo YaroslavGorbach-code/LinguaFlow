@@ -51,7 +51,7 @@ import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
-import com.korop.yaroslavhorach.games.R
+import com.korop.yaroslavhorach.home.R
 
 @Composable
 internal fun BlockIsLockedRoute(

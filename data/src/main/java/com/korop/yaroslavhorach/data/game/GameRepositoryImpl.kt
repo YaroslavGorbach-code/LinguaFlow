@@ -9,6 +9,7 @@ import com.korop.yaroslavhorach.common.utill.loadJsonFromAssets
 import com.korop.yaroslavhorach.datastore.challenge.LinguaChallengeDataSource
 import com.korop.yaroslavhorach.datastore.challenge.model.DailyChallengeExerciseMixProgress
 import com.korop.yaroslavhorach.datastore.challenge.model.DailyChallengeTimeLimitedProgress
+import com.korop.yaroslavhorach.datastore.prefs.LinguaPrefsDataSource
 import com.korop.yaroslavhorach.domain.game.GameRepository
 import com.korop.yaroslavhorach.domain.game.model.Challenge
 import com.korop.yaroslavhorach.domain.game.model.ChallengeExerciseMix
@@ -20,13 +21,12 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
@@ -39,7 +39,8 @@ import javax.inject.Singleton
 class GameRepositoryImpl @Inject constructor(
     @ApplicationContext private val context: Context,
     private val prefsRepository: PrefsRepository,
-    private val challengeDataSource: LinguaChallengeDataSource
+    private val challengeDataSource: LinguaChallengeDataSource,
+    private val prefsDataSource: LinguaPrefsDataSource
 ) : GameRepository {
     private var cachedGames: List<Game> = emptyList()
     private var cachedChallengeTimeLimited: ChallengeTimeLimited? = null
@@ -70,6 +71,7 @@ class GameRepositoryImpl @Inject constructor(
             }
             .launchIn(GlobalScope)
     }
+
     override fun getGames(): Flow<List<Game>> {
         return flow {
             prefsRepository.refreshTokens()
@@ -77,8 +79,12 @@ class GameRepositoryImpl @Inject constructor(
             emit(cachedGames.ifEmpty {
                 cachedGames = getRawGames()
                 cachedGames
+            }.map { game ->
+                val times = prefsDataSource.getCompletedTimesForGame(game.name)
+
+                game.copy(completedTimes = times.first())
             })
-        }
+        }.flowOn(Dispatchers.IO)
     }
 
     override suspend fun getGame(gameId: Long): Game {
@@ -294,16 +300,18 @@ class GameRepositoryImpl @Inject constructor(
     }
 
     override suspend fun requestUpdateDailyChallengeCompleteTime(skill: List<Game.Skill>, time: Long) {
+        if (cachedChallengeTimeLimited?.status?.inProgress?.not() == true) return
+
         if (skill.contains(cachedChallengeTimeLimited?.theme)) {
 
             withContext(Dispatchers.IO) {
                 val currentProgress = cachedChallengeTimeLimited?.progressInMinutes ?: 0
                 val newProgress = currentProgress + time
-                val isLatUpdate = newProgress >= (cachedChallengeTimeLimited?.durationMinutes ?: 0) * 60 * 1000
+                val isLastUpdate = newProgress >= (cachedChallengeTimeLimited?.durationMinutes ?: 0) * 60 * 1000
 
                 challengeDataSource.updateChallengeTimeProgress(time)
 
-                if (isLatUpdate) {
+                if (isLastUpdate) {
                     prefsRepository.addExperience(cachedChallengeTimeLimited!!.bonusOnComplete)
                 }
             }
@@ -311,15 +319,15 @@ class GameRepositoryImpl @Inject constructor(
     }
 
     override suspend fun requestCompleteDailyChallengeGame(name: Game.GameName) {
+        if (cachedChallengeExerciseMix?.status?.inProgress?.not() == true) return
+
         if (cachedChallengeExerciseMix?.exercisesAndCompletedMark
                 ?.any { it.first.name == name.name && it.second.not() } == true
         ) {
             withContext(Dispatchers.IO) {
                 val isLastUpdate = challengeDataSource.getChallengeExerciseMixProgress()
                     .first().exercisesAndCompleted
-                    .map { it.second }
-                    .toSet()
-                    .size == 1
+                    .count { it.second.not() } == 1
 
                 if (isLastUpdate) {
                     prefsRepository.addExperience(cachedChallengeExerciseMix!!.bonusOnComplete)
@@ -336,6 +344,10 @@ class GameRepositoryImpl @Inject constructor(
 
     override suspend fun clearLastUnlockedGame() {
         newGameUnlocked.value = null
+    }
+
+    override suspend fun markGameAsCompleted(it: Game.GameName) {
+        prefsRepository.markGameAsCompleted(it)
     }
 
     private fun getRawGames(): List<Game> {

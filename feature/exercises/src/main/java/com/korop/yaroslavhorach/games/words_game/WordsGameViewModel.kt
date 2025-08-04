@@ -181,8 +181,4 @@ class WordsGameViewModel @Inject constructor(
             screenMode.value = WordsGameViewState.ScreenMode.Sentence(exerciseContentRepository.getGameSentence(game.name))
         }
     }
-
-    companion object {
-        private const val EXPERIENCE_REWORD = 25
-    }
 }

@@ -13,4 +13,5 @@ interface GameRepository {
     suspend fun requestCompleteDailyChallengeGame(name: Game.GameName)
     fun getLastUnlockedGame(): Flow<Game?>
     suspend fun clearLastUnlockedGame()
+    suspend fun markGameAsCompleted(it: Game.GameName)
 }

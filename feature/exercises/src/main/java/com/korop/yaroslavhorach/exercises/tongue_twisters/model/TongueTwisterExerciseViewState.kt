@@ -2,6 +2,7 @@ package com.korop.yaroslavhorach.exercises.tongue_twisters.model
 
 import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.korop.yaroslavhorach.domain.exercise_content.model.TongueTwister
 import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.ui.UiText
@@ -11,6 +12,7 @@ data class TongueTwisterExerciseViewState(
     val block: ExerciseBlock = ExerciseBlock.ONE,
     val progress: Float = 0f,
     val twistSpeakingMod: TwistSpeakingMod = TwistSpeakingMod.SLOW,
+    val exerciseName: ExerciseName = ExerciseName.TONGUE_TWISTERS_EASY,
     val uiMessage: UiMessage<TongueTwisterExerciseUiMessage>? = null
 ) {
     val title: UiText

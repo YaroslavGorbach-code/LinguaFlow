@@ -54,6 +54,8 @@ import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.extentions.topBarBgRes
+import com.korop.yaroslavhorach.domain.exercise.model.mapToTongueTwistExerciseNameToGameName
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseAction
 import com.korop.yaroslavhorach.exercises.tongue_twisters.model.TongueTwisterExerciseUiMessage
@@ -64,7 +66,7 @@ import java.util.Locale
 internal fun TongueTwisterExerciseRoute(
     viewModel: TongueTwisterExerciseViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
-    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit
+    onNavigateToExerciseResult: (time: Long, experience: Int, gameName: Game.GameName) -> Unit
 ) {
     val tongueTwisterExerciseViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -86,13 +88,17 @@ internal fun TongueTwisterExerciseRoute(
 internal fun TongueTwisterExerciseScreen(
     screenState: TongueTwisterExerciseViewState,
     onMessageShown: (id: Long) -> Unit,
-    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit,
+    onNavigateToExerciseResult: (time: Long, experience: Int, gameName: Game.GameName) -> Unit,
     actioner: (TongueTwisterExerciseAction) -> Unit
 ) {
     screenState.uiMessage?.let { uiMessage ->
         when (val message = uiMessage.message) {
             is TongueTwisterExerciseUiMessage.NavigateToExerciseResult -> {
-                onNavigateToExerciseResult(message.time, message.experience)
+                onNavigateToExerciseResult(
+                    message.time,
+                    message.experience,
+                    screenState.exerciseName.mapToTongueTwistExerciseNameToGameName()
+                )
                 onMessageShown(uiMessage.id)
             }
         }
@@ -231,7 +237,7 @@ private fun SpeakingExercisePreview() {
                 TongueTwisterExerciseScreen(
                     screenState = TongueTwisterExerciseViewState.PreviewSpeaking,
                     {},
-                    { _, _ -> },
+                    { _, _, _ -> },
                     {})
             }
         }

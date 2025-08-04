@@ -26,4 +26,6 @@ message UserPreferences {
   bool isAppRated = 16;
   map<string, int32> stars = 17;
   repeated string force_unlocked_blocks = 18;
+  map<string, int32> gamesCompletedTimes = 19;
+
 }

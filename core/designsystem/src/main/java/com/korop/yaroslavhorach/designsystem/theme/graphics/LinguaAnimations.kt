@@ -11,4 +11,5 @@ object LinguaAnimations {
     val Star = R.raw.star
     val StarRating = R.raw.star_rating
     val Conversation = R.raw.conversation
+    val Clock = R.raw.clock
 }

@@ -3,7 +3,6 @@ package com.korop.yaroslavhorach.linguaflow.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.navOptions
@@ -27,7 +26,6 @@ import com.korop.yaroslavhorach.designsystem.screens.rate.navigation.rateAppScre
 import com.korop.yaroslavhorach.domain.exercise.model.ExerciseBlock
 import com.korop.yaroslavhorach.domain.exercise.model.Skill
 import com.korop.yaroslavhorach.domain.game.model.Game
-import com.korop.yaroslavhorach.domain.holders.OpenGameDetailsHolder
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.exerciseCompletedScreen
 import com.korop.yaroslavhorach.exercises.exercise_completed.navigation.navigateToExerciseCompleted
 import com.korop.yaroslavhorach.exercises.speaking.navigation.navigateToSpeakingExercise
@@ -37,12 +35,13 @@ import com.korop.yaroslavhorach.exercises.tongue_twisters.navigation.navigateToT
 import com.korop.yaroslavhorach.exercises.tongue_twisters.navigation.tongueTwistersExerciseScreen
 import com.korop.yaroslavhorach.exercises.vocabulary.navigation.navigateToVocabularyExercise
 import com.korop.yaroslavhorach.exercises.vocabulary.navigation.vocabularyExerciseScreen
-import com.korop.yaroslavhorach.games.words_game.navigation.navigateToWordsGame
-import com.korop.yaroslavhorach.games.words_game.navigation.wordsGameScreen
+import com.korop.yaroslavhorach.game_description.navigation.gameDescriptionScreen
+import com.korop.yaroslavhorach.game_description.navigation.navigateToGameDescription
 import com.korop.yaroslavhorach.games.navigation.HomeRoute
 import com.korop.yaroslavhorach.games.navigation.gamesScreen
 import com.korop.yaroslavhorach.games.navigation.homeScreen
-import com.korop.yaroslavhorach.games.navigation.navigateToGames
+import com.korop.yaroslavhorach.games.words_game.navigation.navigateToWordsGame
+import com.korop.yaroslavhorach.games.words_game.navigation.wordsGameScreen
 import com.korop.yaroslavhorach.profile.navigation.profileScreen
 import com.korop.yaroslavhorach.settings.navigation.navigateToSettings
 import com.korop.yaroslavhorach.settings.navigation.settingsScreen
@@ -90,89 +89,36 @@ fun LingoNavHost(
             onNavigateToBlockRepeat = { block: ExerciseBlock -> navController.navigateToBlockPractice(block) },
             onNavigateToBlockIsLocked = { block: ExerciseBlock -> navController.navigateToBlockIsLocked(block) },
         )
-        gamesScreen(onNavigateToGame = { id, name ->
-            when (name) {
-                Game.GameName.RAVEN_LIKE_A_CHAIR,
-                Game.GameName.FOUR_WORDS_ONE_STORY,
-                Game.GameName.TALK_TILL_EXHAUSTED,
-                Game.GameName.SELL_THIS_THING,
-                Game.GameName.DEFINE_PRECISELY,
-                Game.GameName.BIG_ANSWER,
-                Game.GameName.EMOTIONAL_TRANSLATOR,
-                Game.GameName.DEVILS_ADVOCATE,
-                Game.GameName.DIALOGUE_WITH_SELF,
-                Game.GameName.IMAGINARY_SITUATION,
-                Game.GameName.EMOTION_TO_FACT,
-                Game.GameName.WHO_AM_I_MONOLOGUE,
-                Game.GameName.I_AM_EXPERT,
-                Game.GameName.FORBIDDEN_WORDS,
-                Game.GameName.BODY_LANGUAGE_EXPRESS,
-                Game.GameName.RAP_IMPROV,
-                Game.GameName.PERSUASIVE_SHOUT,
-                Game.GameName.SUBTLE_MANIPULATION,
-                Game.GameName.ONE_SYNONYM_PLEASE,
-                Game.GameName.INTONATION_MASTER,
-                Game.GameName.ANTONYM_BATTLE,
-                Game.GameName.RHYME_LIGHTNING,
-                Game.GameName.FUNNIEST_ANSWER,
-                Game.GameName.MADMAN_ANNOUNCEMENT,
-                Game.GameName.FUNNY_EXCUSE,
-                Game.GameName.ONE_WORD_MANY_MEANINGS,
-                Game.GameName.FLIRTING_WITH_OBJECT,
-                Game.GameName.BOTH_THERE_AND_IN_BED,
-                Game.GameName.ONE_LETTER,
-                Game.GameName.WORST_IN_THE_WORLD,
-                Game.GameName.FIVE_TO_THE_POINT,
-                Game.GameName.VOCABULARY_BURST,
-                Game.GameName.QUICK_ASSOCIATION,
-                Game.GameName.WORD_BY_CATEGORY,
-                Game.GameName.UNUSUAL_PROBLEM_SOLVER,
-                Game.GameName.BREATHLINE_CHALLENGE,
-                Game.GameName.CONSONANT_BATTLE,
-                Game.GameName.WORD_CANNON,
-                Game.GameName.HOT_WORD -> {
-                    navController.navigateToWordsGame(id)
-                }
-
-                Game.GameName.VOCABULARY -> {
-                    navController.navigateToVocabularyExercise(1004)
-                }
-
-                Game.GameName.TONGUE_TWISTERS_EASY -> {
-                    navController.navigateToTongueTwistersExercise(1001)
-                }
-
-                Game.GameName.TONGUE_TWISTERS_MEDIUM -> {
-                    navController.navigateToTongueTwistersExercise(1002)
-                }
-
-                Game.GameName.TONGUE_TWISTERS_HARD -> {
-                    navController.navigateToTongueTwistersExercise(1003)
-                }
-            }
+        gamesScreen(onNavigateToGameDescription = { id, useToken ->
+            navController.navigateToGameDescription(id, useToken, {})
+        })
+        gameDescriptionScreen(
+            onNavigateBack = {
+            navController.popBackStack()
+        }, onNavigateToGame = { id, name ->
+                navigateToGame(name, navController, id)
         }, onNavigateToPremium = {
             navController.navigateToPremium()
-        }
-        )
+        })
         wordsGameScreen(onNavigateBack = {
             navController.popBackStack()
-        }, onNavigateToExerciseCompleted = { time, xp ->
-            navController.navigateToExerciseCompleted(xp, time)
+        }, onNavigateToExerciseCompleted = { time, xp, name ->
+            navController.navigateToExerciseCompleted(xp, time, name)
         })
         speakingExerciseScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToExerciseCompleted = { time, xp ->
-            navController.navigateToExerciseCompleted(xp, time)
+            navController.navigateToExerciseCompleted(xp, time, completedGameName = null)
         })
         tongueTwistersExerciseScreen(onNavigateBack = {
             navController.popBackStack()
-        }, onNavigateToExerciseCompleted = { time, xp ->
-            navController.navigateToExerciseCompleted(xp, time)
+        }, onNavigateToExerciseCompleted = { time, xp, name ->
+            navController.navigateToExerciseCompleted(xp, time, name)
         })
         vocabularyExerciseScreen(onNavigateBack = {
             navController.popBackStack()
         }, onNavigateToExerciseCompleted = { time, xp ->
-            navController.navigateToExerciseCompleted(xp, time)
+            navController.navigateToExerciseCompleted(xp, time, Game.GameName.VOCABULARY)
         })
         exerciseCompletedScreen(onNavigateBack = {
             navController.popBackStack()
@@ -197,27 +143,16 @@ fun LingoNavHost(
         rateAppScreen(onNavigateBack = {
             navController.popBackStack()
         })
-        gameUnlockedScreen(onNavigateToGame = {
-            val topLevelNavOptions = navOptions {
-                // Pop up to the start destination of the graph to
-                // avoid building up a large stack of destinations
-                // on the back stack as users select items
-                popUpTo(navController.graph.findStartDestination().id) {
-                    saveState = true
+        gameUnlockedScreen(
+            onNavigateToGame = { id, name ->
+                navController.navigateToGameDescription(id, true) {
+                    navOptions {
+                        navController.popBackStack()
+                    }
                 }
-                launchSingleTop = true
-                restoreState = true
+            }, onNavigateBack = {
+                navController.popBackStack()
             }
-
-            navController.popBackStack()
-            navController.navigateToGames(topLevelNavOptions)
-
-            OpenGameDetailsHolder.gameIdToOpen.value = it
-
-
-        }, onNavigateBack = {
-            navController.popBackStack()
-        }
         )
         blockPracticeScreen(onNavigateExercises = {
             navController.navigateToSpeakingExerciseWithBack(exerciseId = null, blockName = it)
@@ -229,5 +164,87 @@ fun LingoNavHost(
         }, onNavigateBack = {
             navController.popBackStack()
         })
+    }
+}
+
+private fun navigateToGame(
+    name: Game.GameName,
+    navController: NavHostController,
+    id: Long
+) {
+    when (name) {
+        Game.GameName.RAVEN_LIKE_A_CHAIR,
+        Game.GameName.FOUR_WORDS_ONE_STORY,
+        Game.GameName.TALK_TILL_EXHAUSTED,
+        Game.GameName.SELL_THIS_THING,
+        Game.GameName.DEFINE_PRECISELY,
+        Game.GameName.BIG_ANSWER,
+        Game.GameName.EMOTIONAL_TRANSLATOR,
+        Game.GameName.DEVILS_ADVOCATE,
+        Game.GameName.DIALOGUE_WITH_SELF,
+        Game.GameName.IMAGINARY_SITUATION,
+        Game.GameName.EMOTION_TO_FACT,
+        Game.GameName.WHO_AM_I_MONOLOGUE,
+        Game.GameName.I_AM_EXPERT,
+        Game.GameName.FORBIDDEN_WORDS,
+        Game.GameName.BODY_LANGUAGE_EXPRESS,
+        Game.GameName.RAP_IMPROV,
+        Game.GameName.PERSUASIVE_SHOUT,
+        Game.GameName.SUBTLE_MANIPULATION,
+        Game.GameName.ONE_SYNONYM_PLEASE,
+        Game.GameName.INTONATION_MASTER,
+        Game.GameName.ANTONYM_BATTLE,
+        Game.GameName.RHYME_LIGHTNING,
+        Game.GameName.FUNNIEST_ANSWER,
+        Game.GameName.MADMAN_ANNOUNCEMENT,
+        Game.GameName.FUNNY_EXCUSE,
+        Game.GameName.ONE_WORD_MANY_MEANINGS,
+        Game.GameName.FLIRTING_WITH_OBJECT,
+        Game.GameName.BOTH_THERE_AND_IN_BED,
+        Game.GameName.ONE_LETTER,
+        Game.GameName.WORST_IN_THE_WORLD,
+        Game.GameName.FIVE_TO_THE_POINT,
+        Game.GameName.VOCABULARY_BURST,
+        Game.GameName.QUICK_ASSOCIATION,
+        Game.GameName.WORD_BY_CATEGORY,
+        Game.GameName.UNUSUAL_PROBLEM_SOLVER,
+        Game.GameName.BREATHLINE_CHALLENGE,
+        Game.GameName.CONSONANT_BATTLE,
+        Game.GameName.WORD_CANNON,
+        Game.GameName.HOT_WORD -> {
+            navController.navigateToWordsGame(id)
+        }
+
+        Game.GameName.VOCABULARY -> {
+            navController.navigateToVocabularyExercise(1004) {
+                navOptions {
+                    navController.popBackStack()
+                }
+            }
+        }
+
+        Game.GameName.TONGUE_TWISTERS_EASY -> {
+            navController.navigateToTongueTwistersExercise(1001) {
+                navOptions {
+                    navController.popBackStack()
+                }
+            }
+        }
+
+        Game.GameName.TONGUE_TWISTERS_MEDIUM -> {
+            navController.navigateToTongueTwistersExercise(1002) {
+                navOptions {
+                    navController.popBackStack()
+                }
+            }
+        }
+
+        Game.GameName.TONGUE_TWISTERS_HARD -> {
+            navController.navigateToTongueTwistersExercise(1003) {
+                navOptions {
+                    navController.popBackStack()
+                }
+            }
+        }
     }
 }

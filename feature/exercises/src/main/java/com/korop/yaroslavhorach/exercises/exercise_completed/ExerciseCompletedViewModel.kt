@@ -32,12 +32,14 @@ class ExerciseCompletedViewModel @Inject constructor(
     val adManager: AdManager,
     private val gamesRepository: GameRepository,
     savedStateHandle: SavedStateHandle,
-    val prefsRepository: PrefsRepository,
+    private val prefsRepository: PrefsRepository,
 ) : BaseViewModel<ExerciseCompletedViewState, ExerciseCompletedAction, ExerciseCompletedUiMessage>() {
 
     override val pendingActions: MutableSharedFlow<ExerciseCompletedAction> = MutableSharedFlow()
 
     private val lastUnlockedGame: MutableStateFlow<Game?> = MutableStateFlow(null)
+
+   private val gameName = savedStateHandle.toRoute<ExerciseCompletedRoute>().completedGameName
 
     override val state: StateFlow<ExerciseCompletedViewState> = combine(
         prefsRepository.getUserData(),
@@ -61,6 +63,9 @@ class ExerciseCompletedViewModel @Inject constructor(
         viewModelScope.launch {
             prefsRepository.addExperience(savedStateHandle.toRoute<ExerciseCompletedRoute>().experience)
             prefsRepository.markCurrentDayAsActive()
+            gameName?.let {
+                gamesRepository.markGameAsCompleted(it)
+            }
         }
 
         gamesRepository.getLastUnlockedGame()
