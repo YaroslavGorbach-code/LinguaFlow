@@ -445,7 +445,6 @@ private fun TopBar(state: HomeViewState, modifier: Modifier, actioner: (HomeActi
                 if (state.blockIsInProgress) {
                     LinguaProgressBar(
                         progress = state.blockProgress,
-                        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
                         progressColor = MaterialTheme.colorScheme.primary,
                         modifier = Modifier
                             .fillMaxWidth()

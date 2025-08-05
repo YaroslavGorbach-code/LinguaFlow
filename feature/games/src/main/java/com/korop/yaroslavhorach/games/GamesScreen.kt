@@ -75,6 +75,8 @@ import com.korop.yaroslavhorach.designsystem.theme.components.StaticTooltip
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
+import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
+import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
 import com.korop.yaroslavhorach.domain.game.model.Challenge
@@ -352,7 +354,6 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
         modifier = Modifier
             .height(50.dp)
             .fillMaxWidth(),
-        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
         progress = progress,
         progressBarHeight = 22.dp
     ) {
@@ -551,7 +552,7 @@ private fun Game(
                                 .size(35.dp)
                                 .background(MaterialTheme.colorScheme.surface, CircleShape)
                                 .padding(6.dp),
-                            tint = MaterialTheme.colorScheme.primaryIcon(),
+                            tint = MaterialTheme.colorScheme.typoDisabled(),
                             painter = painterResource(com.korop.yaroslavhorach.designsystem.R.drawable.ic_lock),
                             contentDescription = ""
                         )

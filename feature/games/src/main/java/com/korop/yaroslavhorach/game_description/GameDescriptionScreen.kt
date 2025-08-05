@@ -49,6 +49,7 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
+import com.korop.yaroslavhorach.designsystem.theme.BrightGray
 import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -60,9 +61,9 @@ import com.korop.yaroslavhorach.designsystem.theme.components.PremiumButton
 import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaAnimations
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
-import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
+import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
 import com.korop.yaroslavhorach.domain.game.model.Game
@@ -182,7 +183,7 @@ private fun FavoriteMark(
                 .clickable { actioner(GameDescriptionAction.OnAddToFavoritesClicked) },
             painter = painterResource(LinguaIcons.Favorite),
             contentDescription = null,
-            tint = MaterialTheme.colorScheme.primaryIcon()
+            tint = MaterialTheme.colorScheme.secondaryIcon(),
         )
     }
 }
@@ -208,7 +209,7 @@ private fun ColumnScope.DescriptionNotEnable(
                 .size(65.dp)
                 .background(MaterialTheme.colorScheme.surface, CircleShape)
                 .padding(6.dp),
-            tint = MaterialTheme.colorScheme.primaryIcon(),
+            tint = MaterialTheme.colorScheme.typoDisabled(),
             painter = painterResource(com.korop.yaroslavhorach.designsystem.R.drawable.ic_lock),
             contentDescription = ""
         )
@@ -243,7 +244,6 @@ private fun ColumnScope.DescriptionNotEnable(
     )
     LinguaProgressBar(
         progress = (state.experience.toFloat() / game.game.minExperienceRequired.toFloat()),
-        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
         progressColor = Golden,
         progressBarHeight = 22.dp,
         modifier = Modifier
@@ -359,7 +359,6 @@ private fun ColumnScope.Description(
 
     LinguaProgressBar(
         progress = game.game.progressTillNextStar,
-        progressBackgroundColor = MaterialTheme.colorScheme.onBackgroundDark(),
         progressColor = MaterialTheme.colorScheme.primary,
         progressBarHeight = 22.dp,
         modifier = Modifier
@@ -429,7 +428,7 @@ fun ColumnScope.AnimatedStarsRow(game: GameUi) {
                 .size(width = 72.dp, height = 70.dp),
             painter = painterResource(LinguaIcons.icStarFilled),
             contentDescription = null,
-            tint = if (game.game.stars >= 1) Golden else MaterialTheme.colorScheme.secondaryIcon()
+            tint = if (game.game.stars >= 1) Golden else BrightGray
         )
         Spacer(Modifier.width(24.dp))
         Icon(
@@ -442,7 +441,7 @@ fun ColumnScope.AnimatedStarsRow(game: GameUi) {
                 .size(width = 72.dp, height = 70.dp),
             painter = painterResource(LinguaIcons.icStarFilled),
             contentDescription = null,
-            tint = if (game.game.stars >= 2) Golden else MaterialTheme.colorScheme.secondaryIcon()
+            tint = if (game.game.stars >= 2) Golden else BrightGray
         )
         Spacer(Modifier.width(24.dp))
         Icon(
@@ -454,7 +453,7 @@ fun ColumnScope.AnimatedStarsRow(game: GameUi) {
                 .size(width = 72.dp, height = 70.dp),
             painter = painterResource(LinguaIcons.icStarFilled),
             contentDescription = null,
-            tint = if (game.game.stars >= 3) Golden else MaterialTheme.colorScheme.secondaryIcon()
+            tint = if (game.game.stars >= 3) Golden else BrightGray
         )
     }
     Spacer(Modifier.height(20.dp))
