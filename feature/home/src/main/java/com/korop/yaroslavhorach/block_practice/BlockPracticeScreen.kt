@@ -45,6 +45,7 @@ import com.korop.yaroslavhorach.block_practice.model.BlockPracticeAction
 import com.korop.yaroslavhorach.block_practice.model.BlockPracticeViewState
 import com.korop.yaroslavhorach.designsystem.extentions.blockPracticeMessage
 import com.korop.yaroslavhorach.designsystem.extentions.blockTitle
+import com.korop.yaroslavhorach.designsystem.theme.BrightGray
 import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
@@ -148,7 +149,7 @@ fun StarCounter(
     )
 
     val starColor = if (animatedCount == 0) {
-        MaterialTheme.colorScheme.secondaryIcon()
+        BrightGray
     } else {
         Golden
     }
