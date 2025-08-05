@@ -69,6 +69,7 @@ import com.korop.yaroslavhorach.designsystem.theme.components.LinguaBackground
 import com.korop.yaroslavhorach.designsystem.theme.components.LinguaProgressBar
 import com.korop.yaroslavhorach.designsystem.theme.components.TextButton
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
+import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoControlPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoControlSecondary
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
@@ -411,11 +412,9 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
             .fillMaxWidth()
             .wrapContentHeight()
     ) {
-        Image(
-            painter = painterResource(R.drawable.im_profile_gradient),
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
+        Box(
             modifier = Modifier
+                .background(Color(0xFFE3E3E3))
                 .matchParentSize()
         )
         Column(
@@ -432,7 +431,7 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
                     modifier = Modifier.size(40.dp)
                         .clickable { actioner(ProfileAction.OnSettingsClicked) },
                     painter = painterResource(R.drawable.ic_settings),
-                    tint = MaterialTheme.colorScheme.typoControlPrimary(),
+                    tint = MaterialTheme.colorScheme.primaryIcon(),
                     contentDescription = null
                 )
             }
