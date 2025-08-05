@@ -7,9 +7,11 @@ import android.media.AudioManager
 import android.media.AudioRecord
 import android.media.AudioTrack
 import android.media.MediaRecorder
+import android.util.Log
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -17,9 +19,13 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import java.io.File
 import java.io.FileInputStream
+import java.io.FileNotFoundException
 import java.io.FileOutputStream
+import java.io.IOException
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import javax.inject.Inject
@@ -37,6 +43,7 @@ class AudioRecorder @Inject constructor() {
     private var outputStream: FileOutputStream? = null
     private var outputFile: File? = null
     private var attemptsToAutoReconnoitring = 0
+    private val outputMutex = Mutex()
 
     private var canIncreasAutoRecordingAttempts = true
 
@@ -109,8 +116,9 @@ class AudioRecorder @Inject constructor() {
                     val byteBuffer = ByteBuffer.allocate(read * 2).order(ByteOrder.LITTLE_ENDIAN)
 
                     for (i in 0 until read) byteBuffer.putShort(buffer[i])
-                    outputStream?.write(byteBuffer.array())
-
+                    outputMutex.withLock {
+                        outputStream?.write(byteBuffer.array())
+                    }
                     val minAmplitude = 1200
                     if (max < minAmplitude) {
                         _isSpeakingFlow.value = false
@@ -157,11 +165,17 @@ class AudioRecorder @Inject constructor() {
     }
 
     fun playLastRecording() {
-        if (_isPlayingPausedFlow.value ) {
+        if (_isPlayingPausedFlow.value) {
             resumePlayback()
+            return
         }
 
-        val file = outputFile ?: return
+        val file = outputFile
+        if (file == null || !file.exists()) {
+            Log.w("AudioRecorder", "No recording file found to play.")
+            return
+        }
+
         if (playbackJob != null) return
 
         val playBufferSize = AudioTrack.getMinBufferSize(
@@ -179,7 +193,13 @@ class AudioRecorder @Inject constructor() {
             AudioTrack.MODE_STREAM
         )
 
-        inputStream = FileInputStream(file)
+        inputStream = try {
+            FileInputStream(file)
+        } catch (e: FileNotFoundException) {
+            e.printStackTrace()
+            return
+        }
+
         val totalBytes = file.length()
         val buffer = ByteArray(playBufferSize)
 
@@ -192,7 +212,7 @@ class AudioRecorder @Inject constructor() {
             try {
                 while ((inputStream?.read(buffer).also { read = it ?: -1 } ?: -1) > 0) {
                     while (_isPlayingPausedFlow.value) {
-                        delay(100) // wait if paused
+                        delay(100)
                     }
 
                     audioTrack?.write(buffer, 0, read)
@@ -218,7 +238,7 @@ class AudioRecorder @Inject constructor() {
         if (!_isRecordingFlow.value) return
         _isRecordingFlow.value = false
 
-        recordingJob?.cancel()
+        recordingJob?.cancelAndJoin()
         recordingJob = null
 
         silenceTimerJob?.cancel()
@@ -228,13 +248,20 @@ class AudioRecorder @Inject constructor() {
         audioRecord?.release()
         audioRecord = null
 
-        outputStream?.close()
-        outputStream = null
+        outputMutex.withLock {
+            try {
+                outputStream?.flush()
+                outputStream?.close()
+            } catch (e: IOException) {
+                e.printStackTrace()
+            } finally {
+                outputStream = null
+            }
+        }
 
         _secondsLeftFlow.value = 0
         _onStopRecordingFlow.emit(Unit)
         attemptsToAutoReconnoitring = 0
-//        _isRationalToAllowStopManually.value = false
     }
 
     private fun resumePlayback() {

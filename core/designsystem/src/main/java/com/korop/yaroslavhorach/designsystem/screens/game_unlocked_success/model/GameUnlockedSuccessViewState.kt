@@ -5,6 +5,7 @@ import com.korop.yaroslavhorach.domain.game.model.Game
 
 data class GameUnlockedSuccessViewState(
     val game: Game? = null,
+    val isPremium: Boolean = false,
     val uiMessage: UiMessage<GameUnlockedSuccessUiMessage>? = null
 ) {
 

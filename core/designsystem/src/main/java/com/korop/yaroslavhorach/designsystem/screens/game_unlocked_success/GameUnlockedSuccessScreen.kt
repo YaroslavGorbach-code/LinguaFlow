@@ -51,7 +51,7 @@ import java.util.Locale
 internal fun GameUnlockedSuccessRoute(
     viewModel: GameUnlockedSuccessViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
-    onNavigateToGame: (id: Long, name: Game.GameName) -> Unit,
+    onNavigateToGame: (id: Long, name: Game.GameName, useToken: Boolean) -> Unit,
 ) {
     val viewState by viewModel.state.collectAsStateWithLifecycle()
     val activity = LocalContext.current as Activity
@@ -63,7 +63,7 @@ internal fun GameUnlockedSuccessRoute(
                     viewModel.adManager.showInterstitial(activity)
                     viewModel.clearMessage(uiMessage.id)
                 }
-                viewState.game?.name?.let { onNavigateToGame(message.id, it) }
+                viewState.game?.name?.let { onNavigateToGame(message.id, it, message.useToken) }
             }
             is GameUnlockedSuccessUiMessage.NavigateBack -> {
                 LaunchedEffect(uiMessage.id) {

@@ -11,6 +11,7 @@ import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.model
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.model.GameUnlockedSuccessViewState
 import com.korop.yaroslavhorach.designsystem.screens.game_unlocked_success.navigation.GameUnlockedSuccessNavigation
 import com.korop.yaroslavhorach.domain.game.GameRepository
+import com.korop.yaroslavhorach.domain.prefs.PrefsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -27,6 +28,7 @@ import javax.inject.Inject
 class GameUnlockedSuccessViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val gameRepository: GameRepository,
+    private val prefsRepository: PrefsRepository,
     val adManager: AdManager
 ) : BaseViewModel<GameUnlockedSuccessViewState, GameUnlockedSuccessAction, GameUnlockedSuccessUiMessage>() {
 
@@ -36,9 +38,10 @@ class GameUnlockedSuccessViewModel @Inject constructor(
 
     override val state: StateFlow<GameUnlockedSuccessViewState> = combine(
         flow{ emit(gameRepository.getGame(gameId)) },
+        prefsRepository.getUserData(),
         uiMessageManager.message,
-    ) { game, message ->
-        GameUnlockedSuccessViewState(game, message)
+    ) { game, userData, message ->
+        GameUnlockedSuccessViewState(game, userData.isPremium, message)
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),
@@ -57,7 +60,8 @@ class GameUnlockedSuccessViewModel @Inject constructor(
                         uiMessageManager.emitMessage(UiMessage(GameUnlockedSuccessUiMessage.NavigateBack))
                     }
                     is GameUnlockedSuccessAction.OnTryGameBtnClicked -> {
-                        uiMessageManager.emitMessage(UiMessage(GameUnlockedSuccessUiMessage.NavigateToGame(event.id)))
+
+                        uiMessageManager.emitMessage(UiMessage(GameUnlockedSuccessUiMessage.NavigateToGame(event.id, state.value.isPremium.not())))
                     }
                     else -> error("Action $event is not handled")
                 }

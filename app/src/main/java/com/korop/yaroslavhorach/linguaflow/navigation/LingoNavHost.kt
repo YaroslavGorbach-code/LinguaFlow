@@ -144,8 +144,8 @@ fun LingoNavHost(
             navController.popBackStack()
         })
         gameUnlockedScreen(
-            onNavigateToGame = { id, name ->
-                navController.navigateToGameDescription(id, true) {
+            onNavigateToGame = { id, name, useToken ->
+                navController.navigateToGameDescription(id, useToken) {
                     navOptions {
                         navController.popBackStack()
                     }

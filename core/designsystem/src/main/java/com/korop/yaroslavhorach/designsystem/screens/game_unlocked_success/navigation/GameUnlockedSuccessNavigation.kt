@@ -21,7 +21,7 @@ fun NavController.navigateToGameUnlockedSuccess(gameId: Long) {
 
 fun NavGraphBuilder.gameUnlockedScreen(
     onNavigateBack: () -> Unit,
-    onNavigateToGame: (id: Long, name: Game.GameName) -> Unit,
+    onNavigateToGame: (id: Long, name: Game.GameName, useToken: Boolean) -> Unit,
 ) {
     composable<GameUnlockedSuccessNavigation> {
         GameUnlockedSuccessRoute(

@@ -48,68 +48,70 @@ class PremiumViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            val currency = mapCurrencySymbol(billingManager.queryMonthSubscriptions()
-                .firstOrNull()
-                ?.subscriptionOfferDetails
-                ?.firstOrNull()
-                ?.pricingPhases?.pricingPhaseList
-                ?.firstOrNull()
-                ?.priceCurrencyCode)
+            try {
+                val currency = mapCurrencySymbol(billingManager.queryMonthSubscriptions()
+                    .firstOrNull()
+                    ?.subscriptionOfferDetails
+                    ?.firstOrNull()
+                    ?.pricingPhases?.pricingPhaseList
+                    ?.firstOrNull()
+                    ?.priceCurrencyCode)
 
-            val permanentSubscriptionPrice = billingManager.queryPermanentSubscriptionProduct()
-                .firstOrNull()
-                ?.oneTimePurchaseOfferDetails
-                ?.priceAmountMicros?.div(1_000_000.0)
+                val permanentSubscriptionPrice = billingManager.queryPermanentSubscriptionProduct()
+                    .firstOrNull()
+                    ?.oneTimePurchaseOfferDetails
+                    ?.priceAmountMicros?.div(1_000_000.0)
 
-            val sixMonthSubscriptionPrice = billingManager.query6MonthSubscriptions()
-                .firstOrNull()
-                ?.subscriptionOfferDetails
-                ?.firstOrNull()
-                ?.pricingPhases?.pricingPhaseList
-                ?.firstOrNull()
-                ?.priceAmountMicros?.div(1_000_000.0)
+                val sixMonthSubscriptionPrice = billingManager.query6MonthSubscriptions()
+                    .firstOrNull()
+                    ?.subscriptionOfferDetails
+                    ?.firstOrNull()
+                    ?.pricingPhases?.pricingPhaseList
+                    ?.firstOrNull()
+                    ?.priceAmountMicros?.div(1_000_000.0)
 
-            val monthSubscriptionPrice = billingManager.queryMonthSubscriptions()
-                .firstOrNull()
-                ?.subscriptionOfferDetails
-                ?.firstOrNull()
-                ?.pricingPhases?.pricingPhaseList
-                ?.firstOrNull()
-                ?.priceAmountMicros?.div(1_000_000.0)
+                val monthSubscriptionPrice = billingManager.queryMonthSubscriptions()
+                    .firstOrNull()
+                    ?.subscriptionOfferDetails
+                    ?.firstOrNull()
+                    ?.pricingPhases?.pricingPhaseList
+                    ?.firstOrNull()
+                    ?.priceAmountMicros?.div(1_000_000.0)
 
 
-            variants.value = listOf(
-                PremiumVariant.Month(
-                    UiText.FromResource(R.string.premium_variant_mounth_title_text),
-                    UiText.FromResource(
-                        R.string.premium_variant_prise_mounthly_format,
-                        monthSubscriptionPrice.toString()
-                                + " " + mapCurrencySymbol(currency)
+                variants.value = listOf(
+                    PremiumVariant.Month(
+                        UiText.FromResource(R.string.premium_variant_mounth_title_text),
+                        UiText.FromResource(
+                            R.string.premium_variant_prise_mounthly_format,
+                            monthSubscriptionPrice.toString()
+                                    + " " + mapCurrencySymbol(currency)
+                        ),
+                        UiText.Empty
                     ),
-                    UiText.Empty
-                ),
-                PremiumVariant.SixMonth(
-                    UiText.FromResource(R.string.premium_variant_6_mounth_title_text),
-                    UiText.FromResource(
-                        R.string.premium_variant_prise_half_a_year_roemat,
-                        sixMonthSubscriptionPrice.toString()
-                                + " " +  mapCurrencySymbol(currency)
+                    PremiumVariant.SixMonth(
+                        UiText.FromResource(R.string.premium_variant_6_mounth_title_text),
+                        UiText.FromResource(
+                            R.string.premium_variant_prise_half_a_year_roemat,
+                            sixMonthSubscriptionPrice.toString()
+                                    + " " +  mapCurrencySymbol(currency)
+                        ),
+                        UiText.FromResource(
+                            R.string.premium_variant_prise_mounthly_format,
+                            ((sixMonthSubscriptionPrice ?: 0.0) / 6).roundToInt()
+                                .toString() + " " +  mapCurrencySymbol(currency)
+                        )
                     ),
-                    UiText.FromResource(
-                        R.string.premium_variant_prise_mounthly_format,
-                        ((sixMonthSubscriptionPrice ?: 0.0) / 6).roundToInt()
-                            .toString() + " " +  mapCurrencySymbol(currency)
+                    PremiumVariant.Forever(
+                        UiText.FromResource(R.string.premium_variant_permanent_title_text),
+                        UiText.FromString(
+                            permanentSubscriptionPrice.toString()
+                                    + " " +  mapCurrencySymbol(currency) + "/∞"
+                        ),
+                        UiText.FromResource(R.string.premium_variant_the_best_bage_title_text)
                     )
-                ),
-                PremiumVariant.Forever(
-                    UiText.FromResource(R.string.premium_variant_permanent_title_text),
-                    UiText.FromString(
-                        permanentSubscriptionPrice.toString()
-                                + " " +  mapCurrencySymbol(currency) + "/∞"
-                    ),
-                    UiText.FromResource(R.string.premium_variant_the_best_bage_title_text)
                 )
-            )
+            } catch (e: Exception){ }
         }
 
         pendingActions

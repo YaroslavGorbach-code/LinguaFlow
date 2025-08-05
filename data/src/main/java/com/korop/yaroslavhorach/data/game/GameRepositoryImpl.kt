@@ -60,7 +60,7 @@ class GameRepositoryImpl @Inject constructor(
                     .first()
                     .sortedBy { it.minExperienceRequired }
                     .lastOrNull { game ->
-                        xp >= game.minExperienceRequired && game.minExperienceRequired > 0 &&
+                        prefsRepository.getUserData().first().isPremium.not() && xp >= game.minExperienceRequired && game.minExperienceRequired > 0 &&
                                 prefsRepository.getGameUnlockedScreenWasShownIds().first().any { it == game.id }.not()
 
                     }

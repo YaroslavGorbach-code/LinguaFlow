@@ -36,7 +36,7 @@ class AdManager @Inject constructor(
             if (prefsRepository.getUserData().first().isPremium.not()) {
                 InterstitialAd.load(
                     app,
-                    INTERSTITIAL_AD_ID,
+                    INTERSTITIAL_TEST_AD_ID,
                     AdRequest.Builder().build(),
                     object : InterstitialAdLoadCallback() {
                         override fun onAdLoaded(interstitialAd: InterstitialAd) {
