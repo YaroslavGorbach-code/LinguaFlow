@@ -256,14 +256,12 @@ private fun TopBar(screenState: AvatarChangeViewState, actioner: (AvatarChangeAc
             .fillMaxWidth()
             .wrapContentHeight()
     ) {
-        Image(
-            painter = painterResource(R.drawable.im_profile_gradient),
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
+        Box(
             modifier = Modifier
+                .background(Color(0xFFE3E3E3))
                 .matchParentSize()
         )
-        
+
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -291,15 +289,19 @@ private fun TopBar(screenState: AvatarChangeViewState, actioner: (AvatarChangeAc
                     contentScale = ContentScale.Crop,
                 )
             }
-            Spacer(Modifier.height(22.dp))
-            Text(
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center,
-                text = screenState.userName,
-                style = LinguaTypography.h2,
-                color = MaterialTheme.colorScheme.typoPrimary()
-            )
-            Spacer(Modifier.height(40.dp))
+            if (screenState.userName.isEmpty().not()) {
+                Spacer(Modifier.height(22.dp))
+                Text(
+                    modifier = Modifier.fillMaxWidth(),
+                    textAlign = TextAlign.Center,
+                    text = screenState.userName,
+                    style = LinguaTypography.h2,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.height(20.dp))
+            } else {
+                Spacer(Modifier.height(40.dp))
+            }
         }
     }
 }

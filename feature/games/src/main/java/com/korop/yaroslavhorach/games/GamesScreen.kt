@@ -74,15 +74,12 @@ import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.components.StaticTooltip
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
-import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
-import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.theme.typoSecondary
 import com.korop.yaroslavhorach.domain.game.model.Challenge
 import com.korop.yaroslavhorach.domain.game.model.ChallengeExerciseMix
 import com.korop.yaroslavhorach.domain.game.model.ChallengeTimeLimited
-import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.game_description.model.GameUi
 import com.korop.yaroslavhorach.games.model.GameSort
 import com.korop.yaroslavhorach.games.model.GamesAction

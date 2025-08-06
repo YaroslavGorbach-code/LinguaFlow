@@ -425,10 +425,13 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(Modifier.height(10.dp))
-            Row(Modifier.fillMaxWidth().padding(end = 20.dp)) {
+            Row(Modifier
+                .fillMaxWidth()
+                .padding(end = 20.dp)) {
                 Spacer(Modifier.weight(1f))
                 Icon(
-                    modifier = Modifier.size(40.dp)
+                    modifier = Modifier
+                        .size(40.dp)
                         .clickable { actioner(ProfileAction.OnSettingsClicked) },
                     painter = painterResource(R.drawable.ic_settings),
                     tint = MaterialTheme.colorScheme.primaryIcon(),
@@ -445,15 +448,19 @@ private fun TopBar(screenState: ProfileViewState, actioner: (ProfileAction) -> U
                     contentScale = ContentScale.Crop,
                 )
             }
-            Spacer(Modifier.height(22.dp))
-            Text(
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center,
-                text = screenState.userName,
-                style = LinguaTypography.h2,
-                color = MaterialTheme.colorScheme.typoPrimary()
-            )
-            Spacer(Modifier.height(40.dp))
+            if (screenState.userName.isEmpty().not()) {
+                Spacer(Modifier.height(22.dp))
+                Text(
+                    modifier = Modifier.fillMaxWidth(),
+                    textAlign = TextAlign.Center,
+                    text = screenState.userName,
+                    style = LinguaTypography.h2,
+                    color = MaterialTheme.colorScheme.typoPrimary()
+                )
+                Spacer(Modifier.height(20.dp))
+            } else {
+                Spacer(Modifier.height(40.dp))
+            }
         }
     }
 }
