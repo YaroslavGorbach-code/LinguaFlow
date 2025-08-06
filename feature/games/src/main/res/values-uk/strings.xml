@@ -39,7 +39,7 @@
         <item quantity="many">Пройди вправу ще %d разів, щоб отримати зірку!</item>
         <item quantity="other">Пройди вправу ще %d рази, щоб отримати зірку!</item>
     </plurals>
-    <string name="game_description_got_all_stars_text">🎉 Чудово! Ти отримав усі 3 зірки — тепер ти справжній профі в %1$s!</string>
+    <string name="game_description_got_all_stars_text">🎉 Чудово! Ти отримав усі 3 зірки — тепер ти справжній профі в \"%1$s\"!</string>
     <string name="game_description_locked_message_text">Зароби ще %1$s XP, щоб відкрити цю гру</string>
     <string name="game_description_locked_title_text">Зароби трохи більше XP або оформи Premium, щоб грати без обмежень!</string>
 </resources>

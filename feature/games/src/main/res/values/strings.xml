@@ -33,7 +33,7 @@
     <string name="game_description_xp_requried_title_text">Earn a bit more XP or go Premium to play without limits!</string>
     <string name="xp_postfix_text"> xp.</string>
     <string name="game_description_no_tokens_premium_btn_text">👑 UNLOCK WITH PREMIUM</string>
-    <string name="game_description_got_all_stars_text">🎉 Awesome! You\'ve earned all 3 stars — you\'re officially a %1$s pro!</string>
+    <string name="game_description_got_all_stars_text">🎉 Awesome! You\'ve earned all 3 stars — you\'re officially a \"%1$s\" pro!</string>
     <string name="game_description_locked_message_text">Earn %1$s xp more to unlock this game</string>
     <string name="game_description_locked_title_text">Earn a bit more XP or go Premium to play without limits!</string>
     <plurals name="complete_more_times_to_star">

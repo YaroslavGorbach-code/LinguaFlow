@@ -2,6 +2,8 @@ package com.korop.yaroslavhorach.game_description
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -61,7 +63,6 @@ import com.korop.yaroslavhorach.designsystem.theme.components.PremiumButton
 import com.korop.yaroslavhorach.designsystem.theme.components.PrimaryButton
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaAnimations
 import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
-import com.korop.yaroslavhorach.designsystem.theme.primaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.secondaryIcon
 import com.korop.yaroslavhorach.designsystem.theme.typoDisabled
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
@@ -393,69 +394,80 @@ private fun ColumnScope.Description(
 
 @Composable
 fun ColumnScope.AnimatedStarsRow(game: GameUi) {
-    val scale1 = remember { Animatable(1f) }
-    val scale2 = remember { Animatable(1f) }
-    val scale3 = remember { Animatable(1f) }
+    val starCount = game.game.stars
 
-    LaunchedEffect(Unit) {
-        while (true) {
-            delay(500)
+    val animatedStarIndex = when {
+        starCount < 1 -> 0
+        starCount < 2 -> 1
+        starCount < 3 -> 2
+        else -> null
+    }
 
-            scale1.animateTo(1.2f, animationSpec = tween(300))
-            scale1.animateTo(1f, animationSpec = tween(300))
-            delay(300)
+    val scale = remember { Animatable(1f) }
+    val rotation = remember { Animatable(0f) }
 
-            scale2.animateTo(1.2f, animationSpec = tween(300))
-            scale2.animateTo(1f, animationSpec = tween(300))
-            delay(300)
+    LaunchedEffect(animatedStarIndex) {
+        while (animatedStarIndex != null) {
+            scale.animateTo(
+                1.4f,
+                animationSpec = tween(durationMillis = 300, easing = FastOutSlowInEasing, delayMillis = 700)
+            )
 
-            scale3.animateTo(1.2f, animationSpec = tween(300))
-            scale3.animateTo(1f, animationSpec = tween(300))
+            repeat(3) {
+                rotation.animateTo(
+                    7f,
+                    animationSpec = tween(100, easing = LinearEasing)
+                )
+                rotation.animateTo(
+                    -7f,
+                    animationSpec = tween(100, easing = LinearEasing)
+                )
+            }
+            rotation.animateTo(0f, animationSpec = tween(100))
 
-            delay(3500)
+            scale.animateTo(
+                1f,
+                animationSpec = tween(durationMillis = 300, easing = FastOutSlowInEasing)
+            )
+
+            delay(2500)
         }
     }
 
     Row(
         modifier = Modifier.align(Alignment.CenterHorizontally)
     ) {
-        Icon(
-            modifier = Modifier
-                .graphicsLayer {
-                    scaleX = scale1.value
-                    scaleY = scale1.value
-                }
-                .size(width = 72.dp, height = 70.dp),
-            painter = painterResource(LinguaIcons.icStarFilled),
-            contentDescription = null,
-            tint = if (game.game.stars >= 1) Golden else BrightGray
-        )
-        Spacer(Modifier.width(24.dp))
-        Icon(
-            modifier = Modifier
-                .graphicsLayer {
-                    scaleX = scale2.value
-                    scaleY = scale2.value
-                }
-                .offset(y = 36.dp)
-                .size(width = 72.dp, height = 70.dp),
-            painter = painterResource(LinguaIcons.icStarFilled),
-            contentDescription = null,
-            tint = if (game.game.stars >= 2) Golden else BrightGray
-        )
-        Spacer(Modifier.width(24.dp))
-        Icon(
-            modifier = Modifier
-                .graphicsLayer {
-                    scaleX = scale3.value
-                    scaleY = scale3.value
-                }
-                .size(width = 72.dp, height = 70.dp),
-            painter = painterResource(LinguaIcons.icStarFilled),
-            contentDescription = null,
-            tint = if (game.game.stars >= 3) Golden else BrightGray
-        )
+        (0..2).forEach { index ->
+            val isFilled = starCount >= index + 1
+
+            val modifier = if (index == animatedStarIndex) {
+                Modifier
+                    .graphicsLayer {
+                        scaleX = scale.value
+                        scaleY = scale.value
+                        rotationZ = rotation.value
+                    }
+            } else {
+                Modifier
+            }
+
+            val offsetModifier = if (index == 1) Modifier.offset(y = 36.dp) else Modifier
+
+            Icon(
+                modifier = modifier
+                    .then(offsetModifier)
+                    .size(width = 72.dp, height = 70.dp),
+                painter = painterResource(LinguaIcons.icStarFilled),
+                contentDescription = null,
+                tint = if (isFilled) Golden else BrightGray
+            )
+
+            if (index != 2) {
+              Spacer(Modifier.width(12.dp))
+            }
+        }
     }
+
     Spacer(Modifier.height(20.dp))
 }
 

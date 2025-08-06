@@ -22,9 +22,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
@@ -76,15 +78,21 @@ class GameRepositoryImpl @Inject constructor(
         return flow {
             prefsRepository.refreshTokens()
 
-            emit(cachedGames.ifEmpty {
+            val baseGames = cachedGames.ifEmpty {
                 cachedGames = getRawGames()
                 cachedGames
-            }.map { game ->
-                val times = prefsDataSource.getCompletedTimesForGame(game.name)
+            }
 
-                game.copy(completedTimes = times.first())
-            })
-        }.flowOn(Dispatchers.IO)
+            emit(baseGames)
+        }.flatMapLatest { games ->
+                combine(
+                    games.map { game ->
+                        prefsDataSource.getCompletedTimesForGame(game.name)
+                            .map { times -> game.copy(completedTimes = times) }
+                    }
+                ) { updatedGames -> updatedGames.toList() }
+            }
+            .flowOn(Dispatchers.IO)
     }
 
     override suspend fun getGame(gameId: Long): Game {
@@ -348,6 +356,8 @@ class GameRepositoryImpl @Inject constructor(
 
     override suspend fun markGameAsCompleted(it: Game.GameName) {
         prefsRepository.markGameAsCompleted(it)
+
+        getGames().first()
     }
 
     private fun getRawGames(): List<Game> {

@@ -62,7 +62,9 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.korop.yaroslavhorach.designsystem.theme.Golden
 import com.korop.yaroslavhorach.designsystem.theme.KellyGreen
+import com.korop.yaroslavhorach.designsystem.theme.LightSilver
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTheme
 import com.korop.yaroslavhorach.designsystem.theme.LinguaTypography
 import com.korop.yaroslavhorach.designsystem.theme.White_40
@@ -131,7 +133,7 @@ internal fun GamesScreen(
         TopBar(state, listState, actioner)
         Spacer(Modifier.height(20.dp))
         Sorts(state, actioner)
-        Spacer(Modifier.height(20.dp))
+        Spacer(Modifier.height(18.dp))
         Games(listState, state, actioner)
     }
 }
@@ -144,7 +146,7 @@ private fun Games(
 ) {
     LazyColumn(modifier = Modifier.padding(horizontal = 20.dp), state = listState) {
         itemsIndexed(state.gamesForDisplay, key = { _, game -> game.game.id }) { index, item ->
-            if (index == 0) Spacer(Modifier.height(8.dp))
+            if (index == 0) Spacer(Modifier.height(12.dp))
             Game(state, item, listState, actioner)
             Spacer(Modifier.height(20.dp))
         }
@@ -329,7 +331,7 @@ private fun ChallengeCompleted(state: GamesViewState, challenge: Challenge) {
         modifier = Modifier.fillMaxWidth(),
         enableFloatAnimation = false,
         backgroundColor = Color.Transparent,
-        borderColor = MaterialTheme.colorScheme.onBackgroundDark(),
+        borderColor = LightSilver,
         borderSize = 1.dp,
         paddingHorizontal = 0.dp,
         triangleAlignment = Alignment.Start,
@@ -476,7 +478,7 @@ private fun Game(
 ) {
     val lang: String = (AppCompatDelegate.getApplicationLocales()[0] ?: Locale.getDefault()).language
 
-    Column {
+    Box {
         val isEnable = state.experience >= game.game.minExperienceRequired || state.isUserPremium
 
         BoxWithStripes(
@@ -554,6 +556,44 @@ private fun Game(
                             contentDescription = ""
                         )
                     }
+                }
+            }
+        }
+        if (game.game.stars >= 3) {
+            Box(
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .offset(y = (-10).dp)
+                    .background(
+                        color = Golden,
+                        shape = RoundedCornerShape(
+                            bottomStart = 8.dp,
+                            topEnd = 8.dp
+                        )
+                    )
+                    .padding(horizontal = 8.dp, vertical = 4.dp)
+            ) {
+                Text(
+                    text = "PRO",
+                    color = Color.White,
+                    style = LinguaTypography.subtitle6
+                )
+
+            }
+        } else {
+            Row(
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .offset(y = (-17).dp)
+            ) {
+                repeat(game.game.stars) { i ->
+                    Icon(
+                        modifier = Modifier
+                            .size(width = 32.dp, height = 30.dp),
+                        painter = painterResource(LinguaIcons.icStarFilled),
+                        contentDescription = null,
+                        tint = Golden
+                    )
                 }
             }
         }
