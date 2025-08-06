@@ -79,6 +79,7 @@ data class Game(
         RAP_IMPROV,
         PERSUASIVE_SHOUT,
         VOCABULARY,
+        CHAIN_OF_ASSOCIATIONS,
         SUBTLE_MANIPULATION,
         ONE_SYNONYM_PLEASE,
         INTONATION_MASTER,

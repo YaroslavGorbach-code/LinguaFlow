@@ -50,6 +50,10 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -73,6 +77,7 @@ import com.korop.yaroslavhorach.designsystem.theme.graphics.LinguaIcons
 import com.korop.yaroslavhorach.designsystem.theme.onBackgroundDark
 import com.korop.yaroslavhorach.designsystem.theme.typoPrimary
 import com.korop.yaroslavhorach.designsystem.extentions.topBarBgRes
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.exercises.R
 import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseAction
 import com.korop.yaroslavhorach.exercises.vocabulary.model.VocabularyExerciseUiMessage
@@ -85,7 +90,7 @@ import java.util.Locale
 internal fun VocabularyExerciseRoute(
     viewModel: VocabularyExerciseViewModel = hiltViewModel(),
     onNavigateBack: () -> Unit,
-    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit
+    onNavigateToExerciseResult: (time: Long, experience: Int, gameName: Game.GameName) -> Unit
 ) {
     val vocabularyExerciseViewState by viewModel.state.collectAsStateWithLifecycle()
 
@@ -107,7 +112,7 @@ internal fun VocabularyExerciseRoute(
 internal fun VocabularyExerciseScreen(
     screenState: VocabularyExerciseViewState,
     onMessageShown: (id: Long) -> Unit,
-    onNavigateToExerciseResult: (time: Long, experience: Int) -> Unit,
+    onNavigateToExerciseResult: (time: Long, experience: Int, name: Game.GameName) -> Unit,
     actioner: (VocabularyExerciseAction) -> Unit
 ) {
     Box(Modifier.fillMaxSize()) {
@@ -132,7 +137,7 @@ internal fun VocabularyExerciseScreen(
                         BadResult(uiMessage, message, onMessageShown, actioner)
                     }
                     is VocabularyExerciseUiMessage.NavigateToExerciseResult -> {
-                        onNavigateToExerciseResult(message.time, message.experience)
+                        onNavigateToExerciseResult(message.time, message.experience, message.gameName)
                         onMessageShown(uiMessage.id)
                     }
                 }
@@ -173,7 +178,8 @@ private fun TopBar(screenState: VocabularyExerciseViewState, actioner: (Vocabula
 
             SectionedLinguaProgressBar(
                 currentValue = screenState.wordsAmount,
-                sections = screenState.vocabulary?.getProgressRangeValues() ?: emptyList()
+                sections = screenState.vocabulary?.getProgressRangeValues() ?: emptyList(),
+                maxValue = screenState.vocabulary?.correctAnswer?.maxValue?:100,
             )
         }
     }
@@ -208,8 +214,22 @@ private fun VocabularyContent(
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
                 Spacer(Modifier.height(10.dp))
+                val word = screenState.wordForTask
+                val rawText = screenState.vocabulary.getTaskText(lang)
+
+                val annotatedText = buildAnnotatedString {
+                    val parts = rawText.split("{{word}}")
+                    append(parts[0])
+                    word?.let {
+                        withStyle(style = SpanStyle(fontWeight = FontWeight.Bold)) {
+                            append(it)
+                        }
+                    }
+                    if (parts.size > 1) append(parts[1])
+                }
+
                 Text(
-                    screenState.vocabulary.getTaskText(lang),
+                    text = annotatedText,
                     style = LinguaTypography.body3,
                     color = MaterialTheme.colorScheme.typoPrimary()
                 )
@@ -556,7 +576,7 @@ private fun SpeakingExercisePreview() {
                 VocabularyExerciseScreen(
                     VocabularyExerciseViewState.Preview,
                     {},
-                    { _, _ -> },
+                    { _, _, _ -> },
                     {}
                 )
             }

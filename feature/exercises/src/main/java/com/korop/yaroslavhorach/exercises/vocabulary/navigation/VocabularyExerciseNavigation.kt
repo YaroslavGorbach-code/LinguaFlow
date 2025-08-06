@@ -4,7 +4,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptionsBuilder
 import androidx.navigation.compose.composable
-import androidx.navigation.navOptions
+import com.korop.yaroslavhorach.domain.game.model.Game
 import com.korop.yaroslavhorach.exercises.vocabulary.VocabularyExerciseRoute
 import kotlinx.serialization.Serializable
 
@@ -17,13 +17,13 @@ fun NavController.navigateToVocabularyExercise(exerciseId: Long, builder: NavOpt
 
 fun NavGraphBuilder.vocabularyExerciseScreen(
     onNavigateBack: () -> Unit,
-    onNavigateToExerciseCompleted: (time: Long, experience: Int) -> Unit
+    onNavigateToExerciseCompleted: (time: Long, experience: Int, gameName: Game.GameName) -> Unit
 ) {
     composable<VocabularyRoute> {
         VocabularyExerciseRoute(
             onNavigateBack = onNavigateBack,
-            onNavigateToExerciseResult = { time, xp ->
-                onNavigateToExerciseCompleted(time, xp)
+            onNavigateToExerciseResult = { time, xp, gameName ->
+                onNavigateToExerciseCompleted(time, xp, gameName)
             })
     }
 }

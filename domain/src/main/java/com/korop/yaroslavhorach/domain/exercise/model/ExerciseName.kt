@@ -14,6 +14,7 @@ enum class ExerciseName() {
     THE_KEY_TO_SMALL_TALK,
     DATING_ROUTE,
     VOCABULARY,
+    CHAIN_OF_ASSOCIATIONS,
     FAREWELL_REMARK,
 
     // 2

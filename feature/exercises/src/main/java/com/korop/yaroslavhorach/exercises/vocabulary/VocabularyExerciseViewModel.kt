@@ -9,6 +9,7 @@ import com.korop.yaroslavhorach.common.helpers.SimpleTimer
 import com.korop.yaroslavhorach.common.utill.UiMessage
 import com.korop.yaroslavhorach.domain.exercise.ExerciseRepository
 import com.korop.yaroslavhorach.domain.exercise.model.Exercise
+import com.korop.yaroslavhorach.domain.exercise.model.ExerciseName
 import com.korop.yaroslavhorach.domain.exercise_content.ExerciseContentRepository
 import com.korop.yaroslavhorach.domain.exercise_content.model.FeedBack
 import com.korop.yaroslavhorach.domain.exercise_content.model.Vocabulary
@@ -48,19 +49,22 @@ class VocabularyExerciseViewModel @Inject constructor(
 
     private val isExerciseStarted: MutableStateFlow<Boolean> = MutableStateFlow(false)
     private val userWordsCount: MutableStateFlow<Int> = MutableStateFlow(0)
+    private val wordForTask: MutableStateFlow<String> = MutableStateFlow("")
 
     override val state: StateFlow<VocabularyExerciseViewState> = com.korop.yaroslavhorach.common.utill.combine(
         exerciseRepository.getBlock(),
         currentVocabulary,
         isExerciseStarted,
         userWordsCount,
+        wordForTask,
         uiMessageManager.message
-    ) { block, currentVocabulary, isTimerStarted, wordsCount, message ->
+    ) { block, currentVocabulary, isTimerStarted, wordsCount, wordForTask, message ->
         VocabularyExerciseViewState(
             exerciseBlock = block,
             wordsAmount = wordsCount,
             vocabulary = currentVocabulary,
             isExerciseActive = isTimerStarted,
+            wordForTask = wordForTask,
             uiMessage = message
         )
     }.stateIn(
@@ -72,11 +76,21 @@ class VocabularyExerciseViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             currentExercise.value = exerciseRepository.getExercise(exerciseId)
-            currentVocabulary.value = exerciseContentRepository.getVocabulary(
-                Vocabulary.WordType.entries.getOrElse(currentExercise.value?.exerciseProgress?.progress ?: 0) {
-                    Vocabulary.WordType.entries.random()
+            when (currentExercise.value?.name) {
+                ExerciseName.CHAIN_OF_ASSOCIATIONS -> {
+                    currentVocabulary.value = exerciseContentRepository.getVocabulary(Vocabulary.WordType.ASSOCIATION)
+                    // raven like a chair because words are nouns there
+                    wordForTask.value = exerciseContentRepository.getGameWords(Game.GameName.RAVEN_LIKE_A_CHAIR).first()
                 }
-            )
+
+                else -> {
+                    currentVocabulary.value = exerciseContentRepository.getVocabulary(
+                        Vocabulary.WordType.entries.getOrElse(currentExercise.value?.exerciseProgress?.progress ?: 0) {
+                            Vocabulary.WordType.entries.random()
+                        }
+                    )
+                }
+            }
         }
 
         pendingActions
@@ -99,7 +113,10 @@ class VocabularyExerciseViewModel @Inject constructor(
                             UiMessage(
                                 VocabularyExerciseUiMessage.NavigateToExerciseResult(
                                     time = timer.getElapsedTimeMillis(),
-                                    EXPERIENCE_REWARD
+                                    EXPERIENCE_REWARD,
+                                    gameName = Game.GameName.valueOf(
+                                        currentExercise.value?.name?.name ?: Game.GameName.VOCABULARY.name
+                                    )
                                 )
                             )
                         )

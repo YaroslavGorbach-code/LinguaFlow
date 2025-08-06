@@ -100,6 +100,32 @@
   },
 
   {
+    "id": 1005,
+    "nameString": {
+      "uk": "Словниковий запас",
+      "en": "Vocabulary",
+      "ru": "Словарный запас"
+    },
+    "description": {
+      "uk": "У цій вправі тобі потрібно швидко згадувати слова за заданою частиною мови — іменники, дієслова або прикметники. Завдання на час допоможуть розвинути словниковий запас, мовну реакцію та гнучкість мислення.",
+      "en": "In this exercise, you’ll quickly recall words based on a given part of speech — nouns, verbs, or adjectives. These timed challenges help build vocabulary, linguistic agility, and mental flexibility.",
+      "ru": "В этом упражнении тебе нужно быстро вспоминать слова по заданной части речи — существительные, глаголы или прилагательные. Задания на время развивают словарный запас, языковую реакцию и гибкость мышления."
+    },
+    "exerciseProgress": {
+      "exerciseId": 1005,
+      "progress": 1,
+      "maxProgress": 1
+    },
+    "name": "CHAIN_OF_ASSOCIATIONS",
+    "skill": "VOCABULARY",
+    "block": "ONE",
+    "isEnable": false,
+    "isVisible": false,
+    "isLastActive": false
+  },
+
+
+  {
     "id": 1,
     "nameString": {
       "uk": "Айсбрейкери",

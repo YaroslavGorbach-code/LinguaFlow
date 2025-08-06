@@ -117,8 +117,8 @@ fun LingoNavHost(
         })
         vocabularyExerciseScreen(onNavigateBack = {
             navController.popBackStack()
-        }, onNavigateToExerciseCompleted = { time, xp ->
-            navController.navigateToExerciseCompleted(xp, time, Game.GameName.VOCABULARY)
+        }, onNavigateToExerciseCompleted = { time, xp, gameName ->
+            navController.navigateToExerciseCompleted(xp, time, gameName)
         })
         exerciseCompletedScreen(onNavigateBack = {
             navController.popBackStack()
@@ -217,6 +217,14 @@ private fun navigateToGame(
 
         Game.GameName.VOCABULARY -> {
             navController.navigateToVocabularyExercise(1004) {
+                navOptions {
+                    navController.popBackStack()
+                }
+            }
+        }
+
+        Game.GameName.CHAIN_OF_ASSOCIATIONS -> {
+            navController.navigateToVocabularyExercise(1005) {
                 navOptions {
                     navController.popBackStack()
                 }

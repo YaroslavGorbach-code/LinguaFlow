@@ -10,7 +10,7 @@ data class Vocabulary(
     val correctAnswer: ScoreFeedback,
 ) {
     enum class WordType {
-        NOUN, ADJECTIVE, VERB
+        NOUN, ADJECTIVE, VERB, ASSOCIATION
     }
 
     fun getTaskText(lang: String): String {

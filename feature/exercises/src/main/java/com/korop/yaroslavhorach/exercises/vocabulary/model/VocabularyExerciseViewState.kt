@@ -10,6 +10,7 @@ data class VocabularyExerciseViewState(
     val vocabulary: Vocabulary? = null,
     val isExerciseActive: Boolean = false,
     val exerciseBlock: ExerciseBlock = ExerciseBlock.ONE,
+    val wordForTask: String? = null,
     val uiMessage: UiMessage<VocabularyExerciseUiMessage>? = null
 ) {
 

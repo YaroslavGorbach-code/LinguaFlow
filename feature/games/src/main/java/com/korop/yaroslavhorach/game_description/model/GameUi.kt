@@ -29,6 +29,7 @@ data class GameUi(
         Game.GameName.RAP_IMPROV -> R.drawable.im_rap
         Game.GameName.PERSUASIVE_SHOUT -> R.drawable.im_bloger
         Game.GameName.VOCABULARY -> R.drawable.im_scrabble
+        Game.GameName.CHAIN_OF_ASSOCIATIONS -> R.drawable.im_chain
         Game.GameName.SUBTLE_MANIPULATION -> R.drawable.im_manipulation
         Game.GameName.ONE_SYNONYM_PLEASE -> R.drawable.im_equal
         Game.GameName.INTONATION_MASTER -> R.drawable.im_intonation
