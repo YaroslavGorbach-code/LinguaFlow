@@ -97,6 +97,7 @@ class WordsGameViewModel @Inject constructor(
                 Game.GameName.WORD_BY_CATEGORY,
                 Game.GameName.WORD_CANNON,
                 Game.GameName.EMOJI_STORY,
+                Game.GameName.CODENAMES,
                 Game.GameName.DEFINE_PRECISELY -> {
                     game.value?.let(::getGameWords)
                 }

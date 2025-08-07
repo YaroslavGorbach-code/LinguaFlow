@@ -20,6 +20,6 @@ data class WordsGameViewState(
 
     companion object {
         val Empty = WordsGameViewState()
-        val PreviewSpeaking = WordsGameViewState(screenMode = ScreenMode.Words(listOf("Alo", "Eto", "Alo")))
+        val PreviewSpeaking = WordsGameViewState(screenMode = ScreenMode.Words(listOf("Alo", "Eto")))
     }
 }

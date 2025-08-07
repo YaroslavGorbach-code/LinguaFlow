@@ -250,6 +250,14 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 words.take(Random.nextInt(2, 6)).toSet().toList()
             }
+            Game.GameName.CODENAMES -> {
+                val words = getWords(Word.WordType.EMOJI)
+                    .distinctBy { it.getWordText(lang) }
+                    .shuffled()
+                    .map { it.getWordText(lang) }
+
+                words.take(2).toList()
+            }
             Game.GameName.ONE_WORD_MANY_MEANINGS -> {
                 val words = getWords(Word.WordType.NOUN)
                 val uniqueWords = words.distinctBy { it.getWordText(lang) }

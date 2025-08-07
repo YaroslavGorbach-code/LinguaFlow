@@ -102,6 +102,7 @@ data class Game(
         CONSONANT_BATTLE,
         WORD_CANNON,
         EMOJI_STORY,
+        CODENAMES,
         QUICK_ASSOCIATION,
         TONGUE_TWISTERS_EASY,
         TONGUE_TWISTERS_MEDIUM,

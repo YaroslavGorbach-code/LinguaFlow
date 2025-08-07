@@ -1064,6 +1064,35 @@
     ]
   },
   {
+    "id": 48,
+    "nameString": {
+      "uk": "Кодове слово",
+      "en": "Codenames",
+      "ru": "Кодовое слово"
+    },
+    "task": {
+      "uk": "Отримаєш два емодзі. Придумай одне слово або коротку фразу, яка їх поєднує за змістом, темою або асоціацією.",
+      "en": "You’ll get two emojis. Come up with one word or a short phrase that connects them by meaning, theme, or association.",
+      "ru": "Ты получишь два эмодзи. Придумай одно слово или короткую фразу, которая объединяет их по смыслу, теме или ассоциации."
+    },
+    "example": {
+      "uk": "🔥🎸 → «рок» або «концерт»",
+      "en": "🔥🎸 → “rock” or “concert”",
+      "ru": "🔥🎸 → «рок» или «концерт»"
+    },
+    "description": {
+      "uk": "🧠 У цій вправі два емодзі — твої підказки. Твоя задача — знайти між ними смислову або емоційну спільність і назвати її одним словом або короткою фразою.\n\n🎯 Тренує: асоціативне мислення | креативність",
+      "en": "🧠 In this exercise, the two emojis are your clues. Your task is to find a semantic or emotional connection between them and express it in one word or a short phrase.\n\n🎯 Trains: associative thinking | creativity",
+      "ru": "🧠 В этом упражнении два эмодзи — это твои подсказки. Твоя задача — найти между ними смысловую или эмоциональную связь и выразить её одним словом или короткой фразой.\n\n🎯 Тренирует: ассоциативное мышление | креативность"
+    },
+    "name": "CODENAMES",
+    "maxProgress": 5,
+    "minExperienceRequired": 5900,
+    "skills": [
+      "CREATIVE"
+    ]
+  },
+  {
     "id": 40,
     "nameString": {
       "uk": "Найгірший у світі",
@@ -1085,7 +1114,7 @@
       "en": "😬 In this exercise, you imagine the worst-ever representative of a profession — like a hairdresser who burns hair instead of cutting it. Your task: get a profession and describe its ultimate anti-professional.\n\n🎯 Trains: creativity | sense of humor",
       "ru": "😬 В этом упражнении ты представляешь худшего в мире представителя какой-то профессии — например, парикмахера, который поджигает волосы вместо того, чтобы их стричь. Задача: получи профессию и опиши её полного антипрофессионала.\n\n🎯 Тренирует: креативность | чувство юмора"
     },
-    "minExperienceRequired": 5900,
+    "minExperienceRequired": 6100,
     "maxProgress": 5,
     "name": "WORST_IN_THE_WORLD",
     "skills": [
@@ -1115,7 +1144,7 @@
       "en": "🧠 In this exercise, you’ll face a funny or weird problem. Your task: come up with an unexpected, creative, or totally absurd solution.\n\n🎯 Trains: imagination | creativity | out-of-the-box thinking",
       "ru": "🧠 В этом упражнении тебя ждёт странная или забавная проблема. Задача: придумать к ней неожиданное, креативное или совершенно абсурдное решение.\n\n🎯 Тренирует: воображение | креативность | нестандартное мышление"
     },
-    "minExperienceRequired": 6100,
+    "minExperienceRequired": 6300,
     "maxProgress": 3,
     "name": "UNUSUAL_PROBLEM_SOLVER",
     "skills": [
@@ -1145,7 +1174,7 @@
       "en": "🔤 In this exercise, you’ll get a random category and a letter. Your task: quickly think of a word that fits the category and starts with that letter — like a fruit starting with “M” or an animal with “E”.\n\n🎯 Trains: vocabulary | quick thinking | verbal agility",
       "ru": "🔤 В этом упражнении ты получишь случайную категорию и букву. Задача: быстро придумать слово, которое подходит по смыслу и начинается на эту букву — например, фрукт на «М» или животное на «С».\n\n🎯 Тренирует: словарный запас | сообразительность | речевую гибкость"
     },
-    "minExperienceRequired": 6300,
+    "minExperienceRequired": 6500,
     "maxProgress": 10,
     "name": "WORD_BY_CATEGORY",
     "skills": [
@@ -1174,7 +1203,7 @@
       "en": "🗣️ In this exercise, you create a dialogue where you play both roles — yourself and your imaginary conversation partner. You’ll get the first line, then it’s your turn to improvise and keep the conversation going naturally and logically.\n\n🎯 Trains: conversational flow | dialogue style | creativity\n\nThink of it as a one-person show — and have fun with it!",
       "ru": "🗣️ В этом упражнении ты создаёшь диалог, играя обе роли — свою и воображаемого собеседника. Получишь первую реплику, а дальше — импровизируй, отвечай, развивай разговор. Главное — чтобы диалог звучал естественно и логично.\n\n🎯 Тренирует: гибкость речи | стиль диалога | креативность\n\nЭто твой персональный мини-спектакль — наслаждайся сценой!"
     },
-    "minExperienceRequired": 6500,
+    "minExperienceRequired": 6800,
     "maxProgress": 3,
     "name": "DIALOGUE_WITH_SELF",
     "skills": [
@@ -1204,7 +1233,7 @@
       "en": "🎙️ This exercise is all about clarity. You’ll get a sentence packed with consonants and your goal is to pronounce each sound so clearly it punches through the mic. No smudging — only crisp, confident articulation!\n\n🎯 Trains: diction | speech clarity | vocal confidenc",
       "ru": "🎙️ В этом упражнении главное — чёткость. Ты получишь фразу с множеством согласных, и твоя задача — произнести её так, чтобы каждый звук звучал отчётливо и уверенно. Никакой смазанности — только чистая артикуляция!\n\n🎯 Тренирует: дикцию | ясность речи | уверенность в голосе"
     },
-    "minExperienceRequired": 6700,
+    "minExperienceRequired": 7000,
     "maxProgress": 5,
     "name": "CONSONANT_BATTLE",
     "skills": [
@@ -1233,7 +1262,7 @@
       "en": "💘 In this exercise, you flirt with an inanimate object as if it were a living being. A flirty line for a toaster? A seductive phrase for a vacuum cleaner? Why not! Play with words, use your imagination, and make object-flirting unforgettable.\n\n🎯 Trains: creativity | flirting | humor\n\nLet yourself get romantic… even with a lamp 😉",
       "ru": "💘 В этом упражнении ты флиртуешь с неодушевлённым предметом, будто он — живой. Кокетливая фраза для тостера? Соблазнительное признание пылесосу? Почему бы и нет! Игра слов, фантазия и веселье — всё в одном.\n\n🎯 Тренирует: креативность | флирт | юмор\n\nПозволь себе немного романтики… даже с лампой 😉"
     },
-    "minExperienceRequired": 6900,
+    "minExperienceRequired": 7200,
     "maxProgress": 5,
     "name": "FLIRTING_WITH_OBJECT",
     "skills": [
@@ -1264,7 +1293,7 @@
       "en": "🎭 In this exercise, you’ll receive a neutral phrase and a specific emotion. Your task is to say the phrase so that the emotion is clearly felt in your voice. A simple phrase becomes your tool — play with tone, pauses, pace, and imagined context. The key is to make the emotion sound sincere and convincing.\n\n🎯 Trains: dramatic intonation | emotional sensitivity | vocal expressiveness",
       "ru": "🎭 В этом упражнении ты получаешь нейтральную фразу и заданную эмоцию. Твоя задача — произнести фразу так, чтобы эмоция ясно чувствовалась в голосе. Простая фраза становится инструментом — играй с интонацией, паузами, ритмом и воображаемыми обстоятельствами. Главное — чтобы эмоция звучала искренне и убедительно.\n\n🎯 Тренирует: актёрскую интонацию | чувствительность к эмоциям | выразительность речи"
     },
-    "minExperienceRequired": 7100,
+    "minExperienceRequired": 7400,
     "maxProgress": 5,
     "name": "EMOTIONAL_TRANSLATOR",
     "skills": [
@@ -1293,7 +1322,7 @@
       "en": "⛓ In this exercise, you train your ability to think fast and see connections between ideas. You start with one concept and create an associative chain — word by word — until time runs out.\n\n🎯 Trains: quick thinking | verbal improvisation | communication flexibility\n\nIt’s not about precision — it’s about flow. Let your brain jump freely from idea to idea!",
       "ru": "⛓ В этом упражнении ты тренируешь способность быстро думать и находить связи между понятиями. Начинаешь с одного слова и строишь ассоциативную цепочку — слово за словом, пока не закончится время.\n\n🎯 Тренирует: скорость мышления | речевую импровизацию | гибкость в общении\n\nЗдесь важен не результат, а поток — позволь мозгу свободно перескакивать с идеи на идею!"
     },
-    "minExperienceRequired": 7300,
+    "minExperienceRequired": 7600,
     "maxProgress": 46,
     "name": "CHAIN_OF_ASSOCIATIONS",
     "skills": [
@@ -1324,7 +1353,7 @@
     },
     "name": "EMOJI_STORY",
     "maxProgress": 3,
-    "minExperienceRequired": 7600,
+    "minExperienceRequired": 7800,
     "skills": [
       "CREATIVE",
       "STORYTELLING"

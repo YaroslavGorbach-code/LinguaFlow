@@ -212,6 +212,7 @@ private fun navigateToGame(
         Game.GameName.CONSONANT_BATTLE,
         Game.GameName.WORD_CANNON,
         Game.GameName.EMOJI_STORY,
+        Game.GameName.CODENAMES,
         Game.GameName.HOT_WORD -> {
             navController.navigateToWordsGame(id)
         }
