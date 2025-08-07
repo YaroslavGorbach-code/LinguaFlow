@@ -2,8 +2,6 @@ package com.korop.yaroslavhorach.common.helpers
 
 import android.app.Activity
 import android.app.Application
-import android.view.WindowManager
-import androidx.core.view.WindowCompat
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
