@@ -559,42 +559,20 @@ private fun Game(
                 }
             }
         }
-        if (game.game.stars >= 3) {
-            Box(
-                modifier = Modifier
-                    .align(Alignment.TopEnd)
-                    .offset(y = (-10).dp)
-                    .background(
-                        color = Golden,
-                        shape = RoundedCornerShape(
-                            bottomStart = 8.dp,
-                            topEnd = 8.dp
-                        )
-                    )
-                    .padding(horizontal = 8.dp, vertical = 4.dp)
-            ) {
-                Text(
-                    text = "PRO",
-                    color = Color.White,
-                    style = LinguaTypography.subtitle6
-                )
 
-            }
-        } else {
-            Row(
-                modifier = Modifier
-                    .align(Alignment.TopEnd)
-                    .offset(y = (-17).dp)
-            ) {
-                repeat(game.game.stars) { i ->
-                    Icon(
-                        modifier = Modifier
-                            .size(width = 32.dp, height = 30.dp),
-                        painter = painterResource(LinguaIcons.icStarFilled),
-                        contentDescription = null,
-                        tint = Golden
-                    )
-                }
+        Row(
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .offset(y = (-17).dp)
+        ) {
+            repeat(game.game.stars) { i ->
+                Icon(
+                    modifier = Modifier
+                        .size(width = 32.dp, height = 30.dp),
+                    painter = painterResource(LinguaIcons.icStarFilled),
+                    contentDescription = null,
+                    tint = Golden
+                )
             }
         }
     }

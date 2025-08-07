@@ -242,6 +242,14 @@ class ExerciseContentRepositoryImpl @Inject constructor(
 
                 words.take(Random.nextInt(3, 6)).toSet().toList()
             }
+            Game.GameName.EMOJI_STORY -> {
+                val words = getWords(Word.WordType.EMOJI)
+                    .distinctBy { it.getWordText(lang) }
+                    .shuffled()
+                    .map { it.getWordText(lang) }
+
+                words.take(Random.nextInt(2, 6)).toSet().toList()
+            }
             Game.GameName.ONE_WORD_MANY_MEANINGS -> {
                 val words = getWords(Word.WordType.NOUN)
                 val uniqueWords = words.distinctBy { it.getWordText(lang) }
@@ -475,6 +483,7 @@ class ExerciseContentRepositoryImpl @Inject constructor(
                     Word.WordType.CATEGORIES -> "words/words_categories.json"
                     Word.WordType.PROFESSIONS -> "words/words_proffesions.json"
                     Word.WordType.HARD_TO_PRONOUNCE -> "words/words_hard_pronounce.json"
+                    Word.WordType.EMOJI -> "words/words_emoji.json"
                 }
 
                 val words: List<Word> = loadJsonFromAssets(context, fileName)?.let { json ->

@@ -312,6 +312,7 @@ private fun ColumnScope.WordsContent(
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(horizontal = 20.dp),
+                        textAlign = TextAlign.Center,
                         text = words.joinToString(", "),
                         style = LinguaTypography.body1.copy(fontSize = 28.sp),
                         color = MaterialTheme.colorScheme.typoPrimary()

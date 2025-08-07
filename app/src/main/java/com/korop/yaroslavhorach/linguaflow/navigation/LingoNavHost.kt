@@ -211,6 +211,7 @@ private fun navigateToGame(
         Game.GameName.BREATHLINE_CHALLENGE,
         Game.GameName.CONSONANT_BATTLE,
         Game.GameName.WORD_CANNON,
+        Game.GameName.EMOJI_STORY,
         Game.GameName.HOT_WORD -> {
             navController.navigateToWordsGame(id)
         }

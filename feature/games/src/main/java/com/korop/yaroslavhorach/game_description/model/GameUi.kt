@@ -40,6 +40,7 @@ data class GameUi(
         Game.GameName.UNUSUAL_PROBLEM_SOLVER -> R.drawable.im_solution
         Game.GameName.WORD_BY_CATEGORY -> R.drawable.im_list_of_categories
         Game.GameName.WORD_CANNON -> R.drawable.im_diamond
+        Game.GameName.EMOJI_STORY -> R.drawable.im_emoji_story
         Game.GameName.FUNNY_EXCUSE -> R.drawable.im_clown
         Game.GameName.BREATHLINE_CHALLENGE -> R.drawable.im_breathing
         Game.GameName.CONSONANT_BATTLE -> R.drawable.im_buttle
