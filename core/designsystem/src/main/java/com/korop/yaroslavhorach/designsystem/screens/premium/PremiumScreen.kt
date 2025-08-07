@@ -1,6 +1,7 @@
 package com.korop.yaroslavhorach.designsystem.screens.premium
 
 import android.app.Activity
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -105,6 +106,9 @@ internal fun PremiumRoute(
             is PremiumUiMessage.ShowMonthSubscriptionDialog -> {
                 viewModel.billingManager.showSubscription(activity, subscriptionId = IN_MONTHLY_SUBSCRIPTION)
                 viewModel.clearMessage(uiMessage.id)
+            }
+            is PremiumUiMessage.ShowBillingErrorToast -> {
+                Toast.makeText(activity, stringResource(R.string.billing_error_text), Toast.LENGTH_LONG).show()
             }
         }
     }

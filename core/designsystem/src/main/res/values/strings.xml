@@ -67,4 +67,5 @@
     <string name="rate_app_message_text">We’d love your rating on Google Play — it helps us grow and improve</string>
     <string name="rate_app_letter_btn_text">Later</string>
     <string name="rate_app_rate_btn_text">Rate</string>
+    <string name="billing_error_text">Billing error. Please try again later.</string>
 </resources>

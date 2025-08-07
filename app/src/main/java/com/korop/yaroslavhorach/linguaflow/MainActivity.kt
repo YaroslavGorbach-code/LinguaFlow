@@ -45,12 +45,13 @@ class MainActivity : AppCompatActivity() {
             addManager.loadInterstitial()
         }
         appScope.launch {
-
-            if (billingManager.getAllActivePurchases().isEmpty()) {
-                prefsRepository.deactivatePremium()
-            } else {
-                prefsRepository.activatePremium()
-            }
+            try {
+                if (billingManager.getAllActivePurchases().isEmpty()) {
+                    prefsRepository.deactivatePremium()
+                } else {
+                    prefsRepository.activatePremium()
+                }
+            } catch (e: Exception){ }
 
             // FOR TEST ONLY
 //            billingManager.billingClient?.consumeAsync(

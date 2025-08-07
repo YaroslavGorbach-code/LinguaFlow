@@ -78,7 +78,6 @@ class PremiumViewModel @Inject constructor(
                     ?.firstOrNull()
                     ?.priceAmountMicros?.div(1_000_000.0)
 
-
                 variants.value = listOf(
                     PremiumVariant.Month(
                         UiText.FromResource(R.string.premium_variant_mounth_title_text),
@@ -111,7 +110,9 @@ class PremiumViewModel @Inject constructor(
                         UiText.FromResource(R.string.premium_variant_the_best_bage_title_text)
                     )
                 )
-            } catch (e: Exception){ }
+            } catch (e: Exception){
+                uiMessageManager.emitMessage(UiMessage(PremiumUiMessage.ShowBillingErrorToast))
+            }
         }
 
         pendingActions
