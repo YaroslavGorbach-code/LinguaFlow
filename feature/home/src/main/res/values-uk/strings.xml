@@ -16,5 +16,5 @@
     <string name="blok_is_locked_subtitle_text">Щоб отримати доступ, заверши всі вправи попереднього блоку. Або відкрий його просто зараз з Premium</string>
     <string name="block_is_locked_secondary_btn_text">ТРЕНУВАТИСЬ</string>
     <string name="block_is_locked_primary_btn_text">ВІДКРИТИ З PREMIUM</string>
-    <string name="home_unlock_block_btn_text">Перейти до блоку</string>
+    <string name="home_unlock_block_btn_text">Перейти сюди</string>
 </resources>
