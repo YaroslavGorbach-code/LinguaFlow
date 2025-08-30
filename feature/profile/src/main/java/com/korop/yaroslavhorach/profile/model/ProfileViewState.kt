@@ -11,7 +11,7 @@ data class ProfileViewState(
     val lasActiveDays: List<CalendarDay> = emptyList(),
     val activeDays: Int = 0,
     val experience: Int = 0,
-    val levelOfSpeaking: SpeakingLevel = SpeakingLevel.Listener(),
+    val levelOfSpeaking: SpeakingLevel? = null,
     val activeDaysInRow: Int = 0,
     val avatarResId: Int? = null,
     val uiMessage: UiMessage<ProfileUiMessage>? = null

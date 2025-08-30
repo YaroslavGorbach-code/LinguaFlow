@@ -112,24 +112,22 @@ class ExerciseContentRepositoryImpl @Inject constructor(
     private suspend fun getAndUseSituation(exerciseName: ExerciseName): Situation {
         val used = prefsRepository.getUsedContent(exerciseName.name).first()
 
-        val unusedSituations = cashedSituations[exerciseName]
-            ?.filter { sit -> sit.id !in used }
-
-        if (unusedSituations.isNullOrEmpty()) {
-            prefsRepository.clearUsedExerciseContent(exerciseName.name)
-
-            val allSituations = cashedSituations[exerciseName].orEmpty()
-            val situation = allSituations.random()
-
-            prefsRepository.useExerciseContent(situation.id, exerciseName.name)
-
-            return situation
-        } else {
-            val situation = unusedSituations.random()
-            prefsRepository.useExerciseContent(situation.id, exerciseName.name)
-
-            return situation
+        val allSituations = cashedSituations[exerciseName].orEmpty()
+        if (allSituations.isEmpty()) {
+            throw IllegalStateException("No situations found for $exerciseName")
         }
+
+        val unusedSituations = allSituations.filter { sit -> sit.id !in used }
+
+        val situation = if (unusedSituations.isEmpty()) {
+            prefsRepository.clearUsedExerciseContent(exerciseName.name)
+            allSituations.random()
+        } else {
+            unusedSituations.random()
+        }
+
+        prefsRepository.useExerciseContent(situation.id, exerciseName.name)
+        return situation
     }
 
     private suspend fun getAndUseTongueTwister(difficulty: TongueTwister.Difficulty): TongueTwister {

@@ -1,5 +1,6 @@
 package com.korop.yaroslavhorach.profile
 
+import android.util.Log
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
@@ -169,7 +170,11 @@ private fun Achievements() {
                     modifier = Modifier
                         .clip(RoundedCornerShape(16.dp))
                         .background(color = MaterialTheme.colorScheme.surface)
-                        .border(1.dp, MaterialTheme.colorScheme.onBackgroundDark(), RoundedCornerShape(16.dp))
+                        .border(
+                            1.dp,
+                            MaterialTheme.colorScheme.onBackgroundDark(),
+                            RoundedCornerShape(16.dp)
+                        )
                 ) {
                     val images = listOf(
                         R.drawable.im_achevement_1,
@@ -252,7 +257,7 @@ private fun SectionProgress(state: ProfileViewState) {
         Spacer(Modifier.width(20.dp))
         InfoItem(
             modifier = Modifier.weight(1f),
-            title = state.levelOfSpeaking.level.toString() + ": " + state.levelOfSpeaking.title.asString(),
+            title = state.levelOfSpeaking?.level.toString() + ": " + state.levelOfSpeaking?.title?.asString(),
             subtitle = stringResource(com.korop.yaroslavhorach.profile.R.string.profile_level_of_speaking_title_text),
             iconRes = R.drawable.ic_brain
         )
@@ -272,37 +277,49 @@ private fun SpeakerLevelProgress(state: ProfileViewState) {
             .background(color = MaterialTheme.colorScheme.surface)
             .border(1.dp, MaterialTheme.colorScheme.onBackgroundDark(), RoundedCornerShape(16.dp))
     ) {
+        val nextLevel = SpeakingLevel.nextLevel(state.levelOfSpeaking?.level ?: 0)?.level
+
         Row(
             modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 20.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(
-                text = state.levelOfSpeaking.level.toString(),
-                color = MaterialTheme.colorScheme.typoPrimary(),
-                style = LinguaTypography.h6
-            )
-            Spacer(Modifier.width(12.dp))
+        Log.v("asdasdasd", nextLevel.toString())
+            if (nextLevel != null) {
+                Text(
+                    text = state.levelOfSpeaking?.level.toString(),
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.h6
+                )
+                Spacer(Modifier.width(12.dp))
+            }
+
             LinguaProgressBar(
                 progress,
                 modifier = Modifier
                     .weight(1f)
                     .height(18.dp)
             )
-            Spacer(Modifier.width(12.dp))
-            Text(
-                text = SpeakingLevel.nextLevel(state.levelOfSpeaking.level)?.level.toString(),
-                color = MaterialTheme.colorScheme.typoPrimary(),
-                style = LinguaTypography.h6
-            )
+            if (nextLevel != null) {
+                Spacer(Modifier.width(12.dp))
+                Text(
+                    text = SpeakingLevel.nextLevel(
+                        state.levelOfSpeaking?.level ?: 0
+                    )?.level.toString(),
+                    color = MaterialTheme.colorScheme.typoPrimary(),
+                    style = LinguaTypography.h6
+                )
+            }
         }
+
         Spacer(Modifier.height(12.dp))
         Text(
             modifier = Modifier.padding(horizontal = 20.dp),
-            text = state.levelOfSpeaking.description.asString(),
+            text = state.levelOfSpeaking?.description?.asString()?:"",
             color = MaterialTheme.colorScheme.typoPrimary(),
             style = LinguaTypography.body4,
             textAlign = TextAlign.Justify
         )
+
         Spacer(Modifier.height(20.dp))
     }
 }
