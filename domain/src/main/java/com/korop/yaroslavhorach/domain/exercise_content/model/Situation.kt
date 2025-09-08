@@ -6,10 +6,10 @@ data class Situation(
     private val task: Map<String, String>,
 ) {
     fun getSituationText(lang: String): String {
-        return situation[lang]  ?: ""
+        return situation[lang] ?: situation["en"] ?: ""
     }
 
     fun getTaskText(lang: String): String {
-        return this.task[lang] ?: ""
+        return this.task[lang] ?: this.task["en"] ?: ""
     }
 }

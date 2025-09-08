@@ -11,7 +11,7 @@ sealed class Challenge(
     open var status: Status = Status(),
 ) {
     fun getTitle(lang: String): String {
-        return titleText[lang] ?: ""
+        return titleText[lang] ?: titleText["en"] ?: ""
     }
 
     fun getDescription(lang: String, arguments: String = ""): String {
@@ -23,7 +23,7 @@ sealed class Challenge(
     }
 
     fun getCompleteMessage(lang: String): String {
-        return completeText[lang] ?: ""
+        return completeText[lang] ?: titleText["en"] ?: ""
     }
 
     data class Status(
