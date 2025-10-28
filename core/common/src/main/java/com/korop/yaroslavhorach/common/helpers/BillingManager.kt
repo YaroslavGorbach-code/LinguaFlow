@@ -36,7 +36,7 @@ class BillingManager @Inject constructor(
 
     companion object {
         const val IN_APP_PERMANENT_SUBSCRIPTION = "talksy_permanent_access"
-        const val IN_MONTHLY_SUBSCRIPTION = "mounth"
+        const val IN_MONTHLY_SUBSCRIPTION = "mounthly"
         const val IN_6_MONTHLY_SUBSCRIPTION = "6_mounths"
     }
 
